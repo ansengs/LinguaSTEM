@@ -123,6 +123,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .vocab-item:target,.root-box:target{border-color:var(--tinfo);box-shadow:0 0 0 2px rgba(122,171,207,.18)}
 .download-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 
+/* Reading/Writing Strategy module */
+.strategy-title{font-size:22px;font-weight:600;color:var(--tx);margin-bottom:6px}.strategy-sub{font-size:13px;color:var(--ts);line-height:1.55;margin-bottom:10px}.strategy-jump{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.strategy-jump a{font-size:11px;padding:4px 9px;border:0.5px solid var(--bd);border-radius:20px;background:var(--c2);color:var(--tinfo);text-decoration:none}.mini-formula{white-space:pre-line;background:var(--c2);border:0.5px solid var(--bd);border-radius:8px;padding:10px 12px;margin:8px 0;font-size:12px;line-height:1.55;color:var(--tx)}.method-list{padding-left:1.15rem;margin-top:6px;color:var(--ts);font-size:13px;line-height:1.55}.method-list li{margin-bottom:7px}.strategy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;margin-top:8px}.strategy-card{background:var(--c2);border:0.5px solid var(--bd);border-radius:10px;padding:11px 12px;font-size:12px;line-height:1.5;color:var(--ts)}.strategy-card strong{display:block;color:var(--tx);font-size:13px;margin-bottom:4px}.topic-row{background:var(--c2);border-left:2px solid var(--tinfo);border-radius:0 8px 8px 0;padding:10px 12px;margin-bottom:8px;font-size:12px;line-height:1.55;color:var(--ts)}.topic-row b{display:block;color:var(--tx);font-size:13px;margin-bottom:3px}.write-box{background:var(--info);border:0.5px solid rgba(122,171,207,.25);border-radius:10px;padding:11px 12px;font-size:13px;line-height:1.55;color:var(--tinfo);margin:8px 0}.pill-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.pill{font-size:11px;padding:3px 8px;border-radius:20px;background:var(--succ);color:var(--tsucc)}
+
 </style>
 </head>
 <body>
@@ -130,7 +133,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Daily alphabet root language exercise — Hebrew, IPA, and cross-language vocabulary</h2>
 <div class="top-bar">
   <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">
-    <span style="font-size:14px;font-weight:500;color:var(--tx)">Alphabet Roots</span>
+    <span style="font-size:14px;font-weight:500;color:var(--tx)">Alphabet Roots + Strategy</span>
     <span class="streak" id="streak-display">streak: 0</span>
   </div>
   <div class="mode-bar">
@@ -139,6 +142,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <button class="mode-btn" onclick="setMode('quiz')" id="mode-quiz">Quiz</button>
     <button class="mode-btn" onclick="setMode('morph')" id="mode-morph">Morphemes</button>
     <button class="mode-btn" onclick="setMode('counts')" id="mode-counts">Counts</button>
+    <button class="mode-btn" onclick="setMode('strategy')" id="mode-strategy">Strategy</button>
   </div>
   <div class="timer-box" id="timer">10:00</div>
 </div>
@@ -843,6 +847,44 @@ let cur=0,mode='explore',activeLang='English',quizState=null,streak=0;
 let q='',cat='all',origin='all',kind='all';
 let timerSec=600,timerRunning=false,timerInterval=null;
 
+
+const STRATEGY_TOPICS=[
+['Phonology / Sound','Use sound to make words memorable: break unfamiliar terms into syllables, notice stress, and say the word once before moving on.','Read sentences aloud to test rhythm, clarity, and word choice.'],
+['Morphology / Word Parts','Decode unfamiliar words by checking prefix, base/root, and suffix, then confirm the guess with context.','Choose the correct word form: analysis, analyze, analytical, analytically.'],
+['Syntax / Sentence Grammar','Find the subject, verb, object, and modifiers. Long sentences become easier when you locate the main clause.','Build from a clear subject and verb first, then add evidence, phrases, clauses, and conditions.'],
+['Semantics / Meaning','Ask what key words mean in this specific context, especially in academic, legal, and technical texts.','Define important terms early and use them consistently.'],
+['Pragmatics / Purpose','Ask why the author wrote the text: inform, argue, warn, instruct, entertain, analyze, or sell.','Match tone and detail to purpose.'],
+['Discourse / Paragraph Flow','Track sentence jobs: claim, reason, evidence, example, contrast, result, conclusion.','Use topic sentence, evidence, explanation, and link.'],
+['Rhetoric / Argument','Separate claim, evidence, assumption, counterargument, and conclusion.','Make a debatable thesis, support it, explain it, and answer objections.'],
+['Genre / Text Type','Use the structure of the genre before reading every word.','Follow the expected structure of the genre while keeping sentences direct.'],
+['Vocabulary / Roots','Notice repeated terms, definitions, signal words, and word families.','Repeat key terms intentionally; keep technical terms consistent.'],
+['Revision / Editing','Reread your notes first, not the whole text, unless confusion remains.','Revise in passes: idea, organization, evidence, clarity, grammar, spelling, format.']
+];
+const GENRE_METHODS=[
+['College textbook','Preview headings, learning objectives, bold terms, summaries, diagrams, and review questions.','Definitions, formulas, cause-effect chains, instructor-emphasized examples.','Term → definition → example → why it matters.'],
+['Academic research paper','Read title, abstract, conclusion, introduction, figures/tables, then methods/results.','Research question, hypothesis, sample, method, findings, limitations.','Question → method → finding → limitation → value.'],
+['News article','Read the headline cautiously, then the first 2–3 paragraphs; identify who, what, when, where, why, how.','Quotes, statistics, named sources, dates, corrections, emotional claims.','Event → source → evidence → missing context.'],
+['Blog / opinion','Find the problem, promise, personal angle, list structure, and call to action.','Action steps, definitions, warnings, and unsupported claims.','Advice → reason → step → caution.'],
+['Journal / scholarly review','Read abstract, headings, topic sentences, literature gap, and conclusion.','Key terms, cited debates, consensus, disagreement, limits.','Debate → evidence pattern → current conclusion.'],
+['Legal / policy document','Scan section titles and definitions; locate parties, duties, rights, conditions, deadlines, exceptions, penalties.','Shall, must, may, unless, except, provided that, subject to, within.','Party → duty/right → condition → deadline → exception → consequence.'],
+['Fiction / entertainment book','Read for scene change, character goal, conflict, decision, consequence, and emotional shift.','Dialogue, revelations, turning points, symbolism, repeated motifs.','Character → goal → obstacle → change → theme.'],
+['Everyday livelihood reading','Find the action required, date, cost, risk, contact, location, and proof needed.','Deadlines, eligibility, fees, requirements, warnings, cancellation/refund terms.','Action → deadline → requirement → consequence.']
+];
+function renderStrategy(){
+  const nav=document.getElementById('letter-nav'), bottom=document.querySelector('.bottom-nav');
+  if(nav)nav.style.display='none'; if(bottom)bottom.style.display='none';
+  document.getElementById('prog').style.width='100%';
+  document.getElementById('pos-label').textContent='Reading/Writing Strategy';
+  document.getElementById('main-content').innerHTML=`
+<div class="card" id="strategy-top"><div class="strategy-title">Rapid Reading/Writing Strategy</div><div class="strategy-sub">A textbook-style system for efficient reading and writing: purpose, preview, structure, grammar, recall, compression, application, and review.</div><div class="mini-formula"><strong>MASTER METHOD</strong>\nPurpose → Preview → Predict → Read in Chunks → Mark Structure → Recall → Compress → Apply → Review</div><div class="strategy-jump"><a href="#process">9-Step Process</a><a href="#linguistic-topics">Linguistic Topics</a><a href="#genre-reading">Genres</a><a href="#writing-system">Writing</a><a href="#memory-drills">Memory</a><a href="#daily-routine">Daily Routine</a></div></div>
+<div class="card" id="process"><div class="section-title">The 9-step process for any topic</div><ol class="method-list"><li><strong>Set purpose:</strong> Decide whether you are reading to pass a test, write a paper, make a decision, follow directions, enjoy a story, or verify facts.</li><li><strong>Preview structure:</strong> Inspect title, headings, introduction, conclusion, visuals, bold words, citations, summaries, questions, and repeated terms.</li><li><strong>Predict the map:</strong> Guess the organization: problem/solution, cause/effect, compare/contrast, sequence, argument, narrative, or legal rule.</li><li><strong>Read in chunks:</strong> Read one paragraph or section at a time. Stop and state the point in one sentence.</li><li><strong>Mark grammar:</strong> Identify subject, verb, object, modifiers, prepositions, conditions, and conclusion words.</li><li><strong>Separate main from support:</strong> Main idea tells what the text says; support explains, proves, illustrates, qualifies, or limits it.</li><li><strong>Recall without looking:</strong> Close the text and explain the point aloud. Reread only the confusing part.</li><li><strong>Compress:</strong> Turn a paragraph into one sentence, a section into a note, and a source into a 3-line summary.</li><li><strong>Apply:</strong> Use the idea in a sentence, outline, answer, essay paragraph, discussion, or real-life decision.</li></ol></div>
+<div class="card" id="linguistic-topics"><div class="section-title">Concise structure for each linguistic topic</div>${STRATEGY_TOPICS.map(t=>`<div class="topic-row"><b>${t[0]}</b><span style="color:var(--tinfo)">Read:</span> ${t[1]}<br><span style="color:var(--twarn)">Write:</span> ${t[2]}</div>`).join('')}</div>
+<div class="card" id="genre-reading"><div class="section-title">High-speed reading method by subject / genre</div><div class="strategy-grid">${GENRE_METHODS.map(x=>`<div class="strategy-card"><strong>${x[0]}</strong><p><span style="color:var(--tinfo)">Fast path:</span> ${x[1]}</p><p><span style="color:var(--twarn)">Slow down for:</span> ${x[2]}</p><div class="mini-formula">${x[3]}</div></div>`).join('')}</div></div>
+<div class="card" id="writing-system"><div class="section-title">Efficient writing structure</div><div class="mini-formula"><strong>Sentence:</strong> Subject → Verb → Object/Complement → Modifier\n<strong>Paragraph:</strong> Topic sentence → Evidence → Explanation → Link\n<strong>Essay:</strong> Thesis → Reasons → Evidence → Counterpoint → Conclusion\n<strong>Research:</strong> Question → Gap → Method → Finding → Meaning → Limit</div><div class="write-box"><strong>Academic paragraph formula:</strong> Claim the point in the first sentence. Give evidence in the middle. Explain how the evidence proves the claim. End by linking back to the thesis or forward to the next paragraph.</div><ol class="method-list"><li><strong>Plan:</strong> Write the purpose, audience, thesis/main point, and required format.</li><li><strong>Outline:</strong> Arrange ideas before polishing sentences.</li><li><strong>Draft fast:</strong> Write simple sentences first; improve style later.</li><li><strong>Add evidence:</strong> Use facts, examples, quotes, data, definitions, scenes, or legal clauses.</li><li><strong>Explain evidence:</strong> Never drop evidence without explaining its meaning.</li><li><strong>Revise by passes:</strong> idea, organization, paragraph unity, sentence clarity, grammar, mechanics.</li></ol></div>
+<div class="card" id="memory-drills"><div class="section-title">Rapid memory drills</div><div class="strategy-grid"><div class="strategy-card"><strong>3-2-1 Recall</strong><p>Write 3 key points, 2 useful terms, and 1 question.</p></div><div class="strategy-card"><strong>One-Sentence Compression</strong><p>Reduce every paragraph to: “This paragraph says ___ because ___.”</p></div><div class="strategy-card"><strong>Root Decode</strong><p>Split prefix/root/suffix, guess meaning, check context, then use the word.</p></div><div class="strategy-card"><strong>Teach Back</strong><p>Explain the idea as if teaching a beginner.</p></div><div class="strategy-card"><strong>Spacing</strong><p>Review after 10 minutes, 1 day, 3 days, and 1 week.</p></div><div class="strategy-card"><strong>Interleaving</strong><p>Practice several genres so structure recognition gets faster.</p></div></div></div>
+<div class="card" id="daily-routine"><div class="section-title">10-minute daily routine</div><div class="mini-formula">1 minute: Preview headings and key terms\n2 minutes: Read one small section\n2 minutes: Mark subject/verb/object + main/support\n2 minutes: Write a 3-line note\n2 minutes: Decode 3 vocabulary words by roots\n1 minute: Recall aloud without looking</div><div class="pill-row"><span class="pill">Fast</span><span class="pill">Memorable</span><span class="pill">College-ready</span><span class="pill">Research-ready</span><span class="pill">Everyday practical</span></div></div>`;
+}
+
 function startTimer(){
   if(timerRunning)return;
   timerRunning=true;
@@ -865,7 +907,7 @@ function jumpTo(i){cur=i;render();startTimer();}
 function go(dir){cur=(cur+dir+26)%26;render();}
 function setMode(m){
   mode=m;
-  ['explore','vocab','quiz','morph','counts'].forEach(x=>{const b=document.getElementById('mode-'+x); if(b)b.classList.toggle('active',x===m);});
+  ['explore','vocab','quiz','morph','counts','strategy'].forEach(x=>{const b=document.getElementById('mode-'+x); if(b)b.classList.toggle('active',x===m);});
   if(m==='quiz')generateQuiz();
   render();
 }
@@ -893,10 +935,14 @@ function answerQuiz(opt){
 }
 function render(){
   buildNav();
+  const nav=document.getElementById('letter-nav'), bottom=document.querySelector('.bottom-nav');
+  if(nav)nav.style.display=(mode==='strategy')?'none':'flex';
+  if(bottom)bottom.style.display=(mode==='strategy')?'none':'flex';
   const d=DATA[cur];
   document.getElementById('prog').style.width=((cur+1)/26*100)+'%';
   document.getElementById('pos-label').textContent=`${d.l} — ${cur+1} of 26`;
-  if(mode==='explore')renderExplore(d);
+  if(mode==='strategy')renderStrategy();
+  else if(mode==='explore')renderExplore(d);
   else if(mode==='vocab')renderVocab(d);
   else if(mode==='quiz')renderQuiz(d);
   else if(mode==='morph')renderMorph(d);
