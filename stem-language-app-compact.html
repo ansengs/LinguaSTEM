@@ -151,19 +151,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .formula-card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.28);border-color:rgba(122,171,207,.38)}
 /* Colour-coded top stripe by subject */
 .formula-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:14px 14px 0 0}
-.formula-card[data-cat='Quick Start']::before{background:linear-gradient(90deg,#7aabcf,#c9a060)}
-.formula-card[data-cat='Arithmetic']::before{background:linear-gradient(90deg,#5ab0d8,#7aabcf)}
-.formula-card[data-cat='All Algebra']::before{background:linear-gradient(90deg,#7ab060,#5ab0d8)}
-.formula-card[data-cat='Analytic Geometry']::before,.formula-card[data-cat='All Geometry']::before{background:linear-gradient(90deg,#c07070,#c9a060)}
+.formula-card[data-cat='Problem-Solving']::before{background:linear-gradient(90deg,#7aabcf,#c9a060)}
+.formula-card[data-cat='Numbers & Operations']::before{background:linear-gradient(90deg,#5ab0d8,#7aabcf)}
+.formula-card[data-cat='Algebra']::before{background:linear-gradient(90deg,#7ab060,#5ab0d8)}
+.formula-card[data-cat='Coordinate Geometry']::before,.formula-card[data-cat='Geometry']::before{background:linear-gradient(90deg,#c07070,#c9a060)}
 .formula-card[data-cat='Trigonometry']::before{background:linear-gradient(90deg,#a060c0,#7aabcf)}
-.formula-card[data-cat='Differential Calculus']::before,.formula-card[data-cat='Integral Calculus']::before,.formula-card[data-cat='Multivariable Calculus']::before{background:linear-gradient(90deg,#c9a060,#c07070)}
-.formula-card[data-cat='Linear Algebra']::before,.formula-card[data-cat='Complex Math']::before,.formula-card[data-cat='Differential Equations']::before{background:linear-gradient(90deg,#7060c0,#a060c0)}
-.formula-card[data-cat='Statistics + Data']::before,.formula-card[data-cat='Computer/Data']::before{background:linear-gradient(90deg,#60a0c0,#7ab060)}
+.formula-card[data-cat='Derivatives & Limits']::before,.formula-card[data-cat='Integration']::before,.formula-card[data-cat='Multivariable Calculus']::before{background:linear-gradient(90deg,#c9a060,#c07070)}
+.formula-card[data-cat='Matrices & Vectors']::before,.formula-card[data-cat='Complex Numbers']::before,.formula-card[data-cat='ODEs']::before{background:linear-gradient(90deg,#7060c0,#a060c0)}
+.formula-card[data-cat='Statistics']::before,.formula-card[data-cat='Computer/Data']::before{background:linear-gradient(90deg,#60a0c0,#7ab060)}
 .formula-card[data-cat='Chemistry']::before{background:linear-gradient(90deg,#7ab060,#c07070)}
 .formula-card[data-cat='Physics']::before{background:linear-gradient(90deg,#c07070,#c9a060)}
-.formula-card[data-cat='Finance']::before{background:linear-gradient(90deg,#c9a060,#7ab060)}
-.formula-card[data-cat='Engineering']::before{background:linear-gradient(90deg,#5ab0d8,#c07070)}
-.formula-card[data-cat='Conversions']::before,.formula-card[data-cat='Daily Use']::before{background:linear-gradient(90deg,#7aabcf,#7ab060)}
+.formula-card[data-cat='Finance & Commerce']::before{background:linear-gradient(90deg,#c9a060,#7ab060)}
+.formula-card[data-cat='Engineering & Statics']::before{background:linear-gradient(90deg,#5ab0d8,#c07070)}
+.formula-card[data-cat='Unit Conversions']::before,.formula-card[data-cat='Everyday Math']::before{background:linear-gradient(90deg,#7aabcf,#7ab060)}
 /* Card inner layout */
 .fc-head{padding:14px 14px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-top:4px}
 .fc-title{font-size:13px;font-weight:700;color:var(--tx);line-height:1.3;flex:1}
@@ -244,7 +244,7 @@ const QUICK_STEM_METHODS=[
 /* ── ARITHMETIC ─────────────────────────────────── */
 {
   subject:'Vedic Multiplication — Nikhilam (Base Method)',
-  area:'Arithmetic',
+  area:'Numbers & Operations',
   theory:'Numbers near a base (10, 100, 1000) have small deviations. Multiply the deviations — which are tiny — instead of the full numbers.',
   reality:'Mental math competitions, fast arithmetic on no-calculator exams. Numbers near 100 reduce to single-digit multiplications.',
   url:'',
@@ -721,7 +721,7 @@ function renderQuickStemMethods(){
     const steps=x.steps.map((s,i)=>`<div class="fc-step-row"><div class="fc-step-num">${i+1}</div><div class="fc-step-text">${s}</div></div>`).join('');
     const link=x.url?`<div style="padding:0 14px 10px"><a class="video-link" href="${x.url}" target="_blank" rel="noopener">▶ Watch tutorial</a></div>`:'';
     const svg=x.svg?`<div class="fc-diagram">${x.svg}<div class="fc-diagram-caption">${x.caption||''}</div></div>`:'';
-    return `<div class="formula-card" data-cat="Quick Start" data-tags="quick arithmetic algebra calculus statistics">
+    return `<div class="formula-card" data-cat="Problem-Solving" data-tags="quick arithmetic algebra calculus statistics">
   <div class="fc-head"><div class="fc-title">${x.subject}</div><span class="fc-badge">${x.area}</span></div>
   <span class="fc-method-tag">🔬 ${x.method.split(':')[0]}</span>
   <div class="fc-purpose">
@@ -1796,7 +1796,7 @@ function renderStrategy(){
 
 const STEM_TOPICS=[
 /* ── QUICK START ───────────────────────────────── */
-{cat:'Quick Start',tags:['all','daily','math'],
+{cat:'Problem-Solving',tags:['all','daily','math'],
  title:'Universal Problem-Solving Loop (K-U-D)',
  theory:'Used in every STEM field to prevent random formula guessing and unit errors.',
  reality:'Exam shortcut: 80% of lost points come from skipping the diagram and not checking units.',
@@ -1826,7 +1826,7 @@ const STEM_TOPICS=[
  example:'Find the acceleration of a 5 kg block under 20 N. Given: m=5 kg, F=20 N. Unknown: a. Formula: F=ma → a=F/m=20/5=4 m/s². Check: units kg·m/s²/kg = m/s². ✓'},
 
 /* ── ARITHMETIC ─────────────────────────────────── */
-{cat:'Arithmetic',tags:['arithmetic','daily','finance'],
+{cat:'Numbers & Operations',tags:['arithmetic','daily','finance'],
  title:'Number Operations, Fractions & Percents',
  theory:'Foundation of all quantitative reasoning — every higher STEM formula reduces to arithmetic at the calculation step.',
  reality:'ACCUPLACER QAS, CLEP College Math, and AP exams all include fraction and percent problems worth quick points.',
@@ -1849,7 +1849,7 @@ const STEM_TOPICS=[
  steps:['Estimate the answer first to catch errors.','For fractions: find the LCD, convert, then add/subtract numerators.','For percent: write part/whole as a decimal then multiply by 100.','For percent change: (new − old) / old — a negative means decrease.','Use chunking for mental multiplication: round one factor to a nearby easy number, multiply, then correct.'],
  example:'Tax on a $48 item at 25%: 25% = 0.25. $48 × 0.25 = $12.00. (Chunk: 50×0.25=$12.50, minus 2×0.25=$0.50 → $12.00 ✓)'},
 
-{cat:'Arithmetic',tags:['arithmetic','chemistry','physics','engineering'],
+{cat:'Numbers & Operations',tags:['arithmetic','chemistry','physics','engineering'],
  title:'Scientific Notation, Sig Figs & SI Prefixes',
  theory:'Compact representation of very large or very small quantities; significant figures track precision.',
  reality:'AP Chemistry, AP Physics, and CLEP Natural Sciences test scientific notation in stoichiometry and physics problems every year.',
@@ -1883,7 +1883,7 @@ const STEM_TOPICS=[
  example:'Avogadro: 602,200,000,000,000,000,000,000 = 6.022 × 10²³. Nanometer: 1 nm = 1 × 10⁻⁹ m. Error: measured=9.81, accepted=9.80 → |9.81−9.80|/9.80×100 = 0.10%'},
 
 /* ── ALL ALGEBRA ────────────────────────────────── */
-{cat:'All Algebra',tags:['algebra','math'],
+{cat:'Algebra',tags:['algebra','math'],
  title:'Linear Equations, Inequalities & Systems',
  theory:'A linear equation is any relationship where every variable appears to the first power. Systems find where two or more linear relationships intersect.',
  reality:'CLEP College Algebra, SAT, ACCUPLACER AAF — linear equations are the single most tested algebra topic.',
@@ -1907,7 +1907,7 @@ const STEM_TOPICS=[
  steps:['Distribute and clear all parentheses.','Move all variable terms to one side and constants to the other.','For systems: choose elimination when coefficients align easily, substitution when a variable has coefficient 1.','After elimination, substitute the found value back into either original equation.','Check: plug both values into BOTH original equations to confirm.'],
  example:'Solve: x + y = 10 and x − y = 2. Add equations: 2x = 12 → x = 6. Then 6+y=10 → y=4. Check: 6+4=10 ✓ and 6−4=2 ✓'},
 
-{cat:'All Algebra',tags:['algebra','physics','finance'],
+{cat:'Algebra',tags:['algebra','physics','finance'],
  title:'Quadratics, Factoring & the Quadratic Formula',
  theory:'Any equation where the highest power is 2 is quadratic. Solutions are x-intercepts; vertex is max or min.',
  reality:'CLEP College Algebra, AP Calc prerequisites, SAT — factoring and the quadratic formula appear in every algebra exam. AP Physics uses projectile motion = quadratic.',
@@ -1933,7 +1933,7 @@ const STEM_TOPICS=[
  steps:['Always try to factor first — faster when it works.','Check for special patterns: difference of squares, perfect square trinomial.','AC method: compute a×c, find factors of ac that sum to b, split bx, then group.','If factoring fails, use quadratic formula — works for any quadratic.','Interpret: x values are x-intercepts; vertex is max/min height, revenue, or area.'],
  example:'2x²+7x+3=0. AC: 2×3=6, factors of 6 that sum to 7 → 1 and 6. Split: 2x²+x+6x+3 = x(2x+1)+3(2x+1) = (x+3)(2x+1). Roots: x=−3, x=−1/2.'},
 
-{cat:'All Algebra',tags:['algebra','finance','chemistry','data'],
+{cat:'Algebra',tags:['algebra','finance','chemistry','data'],
  title:'Functions, Exponents, Logs & Sequences',
  theory:'Functions map inputs to unique outputs. Exponentials and logarithms are inverse operations governing growth, decay, pH, and decibels.',
  reality:'CLEP Precalculus, CLEP College Algebra, AP Calculus — exponentials and logs are in every practice exam. Compound interest and half-life are direct applications.',
@@ -1955,7 +1955,7 @@ const STEM_TOPICS=[
  example:'Solve 3^x = 81. Take log₃: x = log₃(81) = 4 (since 3⁴=81). Or: compound interest $1000 at 5% for 3 years: A=1000(1.05)³ = $1157.63'},
 
 /* ── ANALYTIC GEOMETRY ──────────────────────────── */
-{cat:'Analytic Geometry',tags:['geometry','math','engineering'],
+{cat:'Coordinate Geometry',tags:['geometry','math','engineering'],
  title:'Lines, Circles, Distance & Midpoint',
  theory:'Analytic geometry converts geometric shapes into algebraic equations so that algebra can describe positions, paths, and shapes precisely.',
  reality:'CLEP College Algebra, SAT, ACCUPLACER AAF — coordinate geometry is tested in every standardized math exam.',
@@ -1978,7 +1978,7 @@ const STEM_TOPICS=[
  steps:['Plot the given points or center to set up the geometry visually.','Use slope formula to find steepness; slope of perpendicular = −1/m.','Distance formula comes from the Pythagorean theorem applied to Δx and Δy.','For a circle from general form, complete the square in x and y separately.','Midpoint is the average of the x-coordinates and the average of the y-coordinates.'],
  example:'Circle: x²+y²−6x+4y−3=0. Complete square: (x²−6x+9)+(y²+4y+4)=3+9+4. So (x−3)²+(y+2)²=16. Center (3,−2), radius 4.'},
 
-{cat:'Analytic Geometry',tags:['geometry','physics','engineering'],
+{cat:'Coordinate Geometry',tags:['geometry','physics','engineering'],
  title:'Conics: Parabola, Ellipse & Hyperbola',
  theory:'Conic sections are curves produced by slicing a double cone. Each has distinctive geometric properties used in optics, satellite orbits, and architecture.',
  reality:'CLEP Precalculus, AP Precalculus — conic equations appear directly in tests. Parabolic reflectors, elliptical orbits, and hyperbolic navigation are real engineering uses.',
@@ -1998,7 +1998,7 @@ const STEM_TOPICS=[
  example:'9x²+4y²=36 → x²/4+y²/9=1. Ellipse: a=3 (y-axis), b=2 (x-axis), c=√(9−4)=√5. Foci at (0,±√5).'},
 
 /* ── ALL GEOMETRY ───────────────────────────────── */
-{cat:'All Geometry',tags:['geometry','daily','engineering'],
+{cat:'Geometry',tags:['geometry','daily','engineering'],
  title:'Plane Geometry: Angles, Area & Similarity',
  theory:'Plane geometry establishes the rules of shape, size, and position in 2D space. Similarity and congruence let you scale or match shapes.',
  reality:'CLEP College Math, SAT, ACCUPLACER — area and angle problems are consistently tested. Architecture, carpentry, and robotics depend on plane geometry daily.',
@@ -2021,7 +2021,7 @@ const STEM_TOPICS=[
  steps:['Label the shape — mark base, height, and all known sides and angles.','Use complementary (sum 90°), supplementary (sum 180°), and vertical angles (equal) to find missing angles.','For similar triangles: set up a proportion of corresponding sides and solve.','Apply the correct area formula — height must be perpendicular to the base.','For composite figures, split into simpler shapes, find each area, then add or subtract.'],
  example:'Triangle with base 8 cm and height 5 cm: A = ½(8)(5) = 20 cm². Circle with radius 7: A = π(49) ≈ 153.94 cm².'},
 
-{cat:'All Geometry',tags:['geometry','chemistry','engineering','daily'],
+{cat:'Geometry',tags:['geometry','chemistry','engineering','daily'],
  title:'Solid Geometry: Volume, Surface Area & Density',
  theory:'Three-dimensional geometry quantifies the space inside and around objects. Density connects mass to the volume of any material.',
  reality:'AP Chemistry (density), engineering design (tank sizing), CLEP College Math — 3D geometry questions appear in every applied science context.',
@@ -2095,7 +2095,7 @@ const STEM_TOPICS=[
  example:'y = 3 sin(2x − π/2) + 1. Amplitude=3, Period=2π/2=π, Phase shift=π/4 right, Vertical shift=1 up. Five key x-values: start at π/4, then add π/4 each step.'},
 
 /* ── DIFFERENTIAL CALCULUS ─────────────────────── */
-{cat:'Differential Calculus',tags:['calculus','physics','finance','engineering'],
+{cat:'Derivatives & Limits',tags:['calculus','physics','finance','engineering'],
  title:'Limits, Derivatives & Rates of Change',
  theory:'A derivative measures the instantaneous rate of change of a function — the slope of the curve at a single point.',
  reality:'AP Calculus AB/BC, CLEP Calculus — derivatives are the core of the exam. Velocity, acceleration, marginal cost, and optimization all use derivatives.',
@@ -2118,7 +2118,7 @@ const STEM_TOPICS=[
  steps:['Simplify the function before differentiating — combine like terms, rewrite radicals as powers.','Apply power rule term by term: bring exponent down, reduce exponent by 1.','Memorize the standard derivatives: trig, exponential, and logarithm.','Interpret result: derivative units = output units per input unit (e.g., m/s is derivative of meters with respect to seconds).','For limits: try direct substitution first; if 0/0, factor/cancel or use L\'Hôpital\'s Rule.'],
  example:'f(x) = 3x⁴ − 5x² + 2. f′(x) = 12x³ − 10x. At x=1: f′(1) = 12−10 = 2. This is the slope of f at x=1.'},
 
-{cat:'Differential Calculus',tags:['calculus','engineering','finance'],
+{cat:'Derivatives & Limits',tags:['calculus','engineering','finance'],
  title:'Product, Quotient, Chain Rule & Optimization',
  theory:'Composite and combined functions require chain, product, and quotient rules. Optimization uses critical points where the derivative equals zero.',
  reality:'AP Calculus AB/BC — chain rule is the most frequently tested derivative technique. Every related rates and optimization problem uses it.',
@@ -2149,7 +2149,7 @@ const STEM_TOPICS=[
  example:'Differentiate h(x)=sin(x³). Outer=sin, inner=x³. h′(x)=cos(x³)·3x². Optimization: maximize area A=x(100−x). A′=100−2x=0 → x=50. A″=−2<0 (max). Max area=50×50=2500 m².'},
 
 /* ── INTEGRAL CALCULUS ─────────────────────────── */
-{cat:'Integral Calculus',tags:['calculus','physics','engineering'],
+{cat:'Integration',tags:['calculus','physics','engineering'],
  title:'Antiderivatives, Area & the Fundamental Theorem',
  theory:'Integration is the inverse of differentiation. A definite integral accumulates the area between a curve and the x-axis from a to b.',
  reality:'AP Calculus AB/BC — FTC and basic integrals make up 30–40% of the FRQ score. Physics uses integrals for displacement, work, charge, and impulse.',
@@ -2172,7 +2172,7 @@ const STEM_TOPICS=[
  steps:['Identify whether the integral is indefinite (+ C) or definite (bounded).','For indefinite integrals, reverse the derivative rules: power rule in reverse, standard forms.','For definite integrals: find antiderivative F(x), then evaluate F(b) − F(a).','Always attach units: if integrating velocity (m/s) over time (s), result is meters.','Average value of f on [a,b] = (1/(b−a)) times the definite integral.'],
  example:'∫₀² 3x² dx. Antiderivative: x³. Evaluate: 2³ − 0³ = 8. Area under 3x² from x=0 to x=2 is 8 square units.'},
 
-{cat:'Integral Calculus',tags:['calculus','engineering','physics'],
+{cat:'Integration',tags:['calculus','engineering','physics'],
  title:'Integration Techniques: u-Sub, Parts & Applications',
  theory:'u-substitution reverses the chain rule; integration by parts reverses the product rule. Together they handle almost every integral on CLEP/AP exams.',
  reality:'AP Calculus BC — parts and u-sub together cover >80% of integration technique questions. Volume of revolution (disk/washer method) is a core AP FRQ topic.',
@@ -2196,7 +2196,7 @@ const STEM_TOPICS=[
  example:'∫x·eˣ dx. By parts: u=x, dv=eˣdx → du=dx, v=eˣ. Result: xeˣ − ∫eˣdx = xeˣ − eˣ + C = eˣ(x−1)+C.'},
 
 /* ── LINEAR ALGEBRA ─────────────────────────────── */
-{cat:'Linear Algebra',tags:['linear algebra','physics','engineering'],
+{cat:'Matrices & Vectors',tags:['linear algebra','physics','engineering'],
  title:'Vectors, Matrices & Systems of Equations',
  theory:'Linear algebra organizes and solves systems of equations using matrices. Vectors represent direction and magnitude in any number of dimensions.',
  reality:'AP Calculus BC, college linear algebra CLEP, engineering — matrix methods solve circuit networks, structural systems, data fitting, and robotics kinematics.',
@@ -2225,7 +2225,7 @@ const STEM_TOPICS=[
  example:'System: 2x+y=5, x+3y=10. Matrix: [2 1|5][1 3|10] → RREF → [1 0|1][0 1|3]. Solution: x=1, y=3. Check: 2(1)+3=5 ✓, 1+9=10 ✓'},
 
 /* ── DIFFERENTIAL EQUATIONS ────────────────────── */
-{cat:'Differential Equations',tags:['calculus','chemistry','physics'],
+{cat:'ODEs',tags:['calculus','chemistry','physics'],
  title:'Separable ODEs: Growth, Decay & Cooling',
  theory:'An ordinary differential equation (ODE) relates a function to its own rate of change. Separable ODEs can be solved by isolating y-terms and x-terms on opposite sides.',
  reality:'AP Calculus BC — separable differential equations are a required FRQ topic. Exponential growth/decay appears in biology, chemistry, finance, and nuclear physics.',
@@ -2246,7 +2246,7 @@ const STEM_TOPICS=[
  example:'Carbon-14 decay: dA/dt = −0.000121A. Separate: dA/A = −0.000121 dt. Integrate: ln|A| = −0.000121t+C. Exponentiate: A = A₀e^(−0.000121t). Half-life = ln(2)/0.000121 ≈ 5,730 years.'},
 
 /* ── STATISTICS + DATA ─────────────────────────── */
-{cat:'Statistics + Data',tags:['data','finance','science'],
+{cat:'Statistics',tags:['data','finance','science'],
  title:'Descriptive Statistics, Distributions & Probability',
  theory:'Statistics summarizes data (descriptive) and makes inferences about populations from samples. Probability quantifies likelihood of outcomes.',
  reality:'CLEP College Math, AP Statistics — every standardized exam has statistics questions. Data science, quality control, medical research, and finance all rely on these core concepts.',
@@ -2269,7 +2269,7 @@ const STEM_TOPICS=[
  steps:['Always plot data first — histogram, dotplot, or boxplot reveals shape, center, spread, and outliers.','Calculate mean for symmetric data; use median when the distribution is skewed or has outliers.','Use standard deviation for spread on bell-shaped data; use IQR for skewed data.','For probability: identify sample space, list favorable outcomes, apply addition/multiplication rules.','Check independence before using P(A)·P(B) — events must not influence each other.'],
  example:'Scores: 70,75,80,80,85,90,95. Mean=82.1. Median=80. Mode=80. Range=25. IQR=90−75=15. z-score for 95: (95−82.1)/8.4 ≈ 1.54 standard deviations above mean.'},
 
-{cat:'Statistics + Data',tags:['data','finance','engineering'],
+{cat:'Statistics',tags:['data','finance','engineering'],
  title:'Regression, Inference, Confidence & Hypothesis Testing',
  theory:'Inferential statistics draws conclusions about populations from sample data. Linear regression models the relationship between two quantitative variables.',
  reality:'AP Statistics — inference (confidence intervals and hypothesis tests) accounts for 30–40% of exam points. Research scientists, engineers, and business analysts use hypothesis testing daily.',
@@ -2441,7 +2441,7 @@ const STEM_TOPICS=[
  example:'V=12 V, R₁=3 Ω, R₂=6 Ω in series: R_total=9 Ω. I=12/9=1.33 A. V₁=1.33×3=4 V, V₂=1.33×6=8 V. Check: 4+8=12 ✓'},
 
 /* ── FINANCE ────────────────────────────────────── */
-{cat:'Finance',tags:['finance','daily'],
+{cat:'Finance & Commerce',tags:['finance','daily'],
  title:'Interest, Compound Growth & Loan Payments',
  theory:'Time-value of money: a dollar today is worth more than a dollar in the future because money can earn interest. All financial comparisons must adjust to the same point in time.',
  reality:'CLEP College Math, personal finance, business — understanding compound interest prevents costly loan mistakes and explains retirement savings growth.',
@@ -2464,7 +2464,7 @@ const STEM_TOPICS=[
  example:'$1000 at 6% compounded monthly for 5 years: r=0.06/12=0.005, n=60. A=1000(1.005)^60≈$1348.85. Rule of 72: doubles in 72/6=12 years.'},
 
 /* ── ENGINEERING ────────────────────────────────── */
-{cat:'Engineering',tags:['engineering','physics'],
+{cat:'Engineering & Statics',tags:['engineering','physics'],
  title:'Statics, Stress, Strain & Safety Factors',
  theory:'Statics applies Newton\'s first law to structures that are not accelerating: the sum of all forces AND all moments (torques) must equal zero.',
  reality:'Engineering mechanics, materials science — these formulas are used every day by mechanical, civil, and structural engineers to ensure structures will not fail.',
@@ -2493,7 +2493,7 @@ const STEM_TOPICS=[
  example:'Beam with load F=1000 N at center, span=4 m. Take torque about R₁: R₂×4=1000×2 → R₂=500 N. Then R₁=500 N. Column cross-section A=0.01 m², σ=1000/0.01=100,000 Pa = 100 kPa.'},
 
 /* ── CONVERSIONS ────────────────────────────────── */
-{cat:'Conversions',tags:['conversion','daily','chemistry','engineering'],
+{cat:'Unit Conversions',tags:['conversion','daily','chemistry','engineering'],
  title:'Unit Conversions: Factor-Label Method',
  theory:'Unit conversion is multiplication by 1 — written as a ratio where old units cancel and new units remain. Every conversion chain is a series of such multiplications.',
  reality:'AP Chemistry, AP Physics, engineering — dimensional analysis (factor-label) prevents the most common exam errors: dividing when you should multiply and using wrong units.',
@@ -2522,7 +2522,7 @@ const STEM_TOPICS=[
  example:'Convert 60 mph to m/s: 60 mi/hr × (1609 m/mi) × (1 hr/3600 s) = 96,540/3600 = 26.8 m/s. Check: 60 mph is highway speed; 26.8 m/s is reasonable ✓'},
 
 /* ── DAILY USE ──────────────────────────────────── */
-{cat:'Daily Use',tags:['daily','finance','conversion'],
+{cat:'Everyday Math',tags:['daily','finance','conversion'],
  title:'Everyday Math: Scaling, Rates, Bills & Estimates',
  theory:'Real-world math is mostly ratios, rates, and proportions applied to familiar contexts.',
  reality:'CLEP College Math includes applied arithmetic problems. Every consumer decision — grocery comparisons, fuel costs, recipe scaling — uses this math.',
@@ -2547,6 +2547,1108 @@ const STEM_TOPICS=[
  caption:'Unit price comparison: divide total cost by quantity. Fuel: divide miles by mpg for gallons, then multiply by price.',
  steps:['Define the rate or ratio using the correct units (cost per ounce, miles per gallon).','For scaling: multiply the rate by the new quantity — never add rates together.','For proportion problems: write a/b = c/x and cross-multiply to solve for x.','For electric bills: convert wattage to kilowatts (÷1000), multiply by hours used to get kWh, then multiply by rate.','Estimate before calculating: if the answer is far from your estimate, recheck your setup.'],
  example:'Scale a recipe from 4 to 10 servings: scale factor = 10/4 = 2.5. If original uses 2 cups flour, new amount = 2×2.5 = 5 cups. Electric: 100W bulb × 8 hrs = 0.8 kWh × $0.12/kWh = $0.096/day ≈ $2.88/month.'}
+,
+
+/* ── REAL NUMBERS & NUMBER SETS ─────────────────── */
+{cat:'Algebra',tags:['arithmetic','algebra','math'],
+ title:'Real Number Sets, Intervals & Absolute Value',
+ theory:'The real number system is hierarchically nested: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Intervals describe continuous subsets of ℝ. Absolute value measures distance from zero on the number line.',
+ reality:'CLEP College Math, ACCUPLACER, every algebra exam — number sets and interval notation appear in domain/range questions, inequality solutions, and function definitions.',
+ formula:'ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ\n|x| = x if x≥0; −x if x<0\n|x| < a  ↔  −a < x < a\n|x| > a  ↔  x < −a  or  x > a\nOpen: (a,b)  Closed: [a,b]\nHalf-open: [a,b)  or  (a,b]\nUnbounded: (−∞,a] or [b,+∞)',
+ method:'Absolute value equations: split into two cases (positive and negative). Absolute value inequalities: |x|<a → single interval; |x|>a → union of two intervals. Always check solutions satisfy original equation.',
+ svg:`<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="8" width="252" height="104" rx="8" fill="rgba(90,176,216,.06)" stroke="#5ab0d8" stroke-width="1"/>
+  <rect x="12" y="16" width="236" height="88" rx="7" fill="rgba(122,171,207,.08)" stroke="#7aabcf" stroke-width="1"/>
+  <rect x="22" y="24" width="216" height="72" rx="6" fill="rgba(201,160,96,.08)" stroke="#c9a060" stroke-width="1"/>
+  <rect x="34" y="32" width="192" height="56" rx="5" fill="rgba(122,176,96,.10)" stroke="#7ab060" stroke-width="1"/>
+  <rect x="48" y="40" width="164" height="40" rx="4" fill="rgba(192,112,112,.10)" stroke="#c07070" stroke-width="1"/>
+  <text x="62" y="64" text-anchor="middle" font-size="9.5" fill="#c07070" font-weight="700">ℕ ℤ</text>
+  <text x="62" y="74" text-anchor="middle" font-size="7.5" fill="#c07070">integers</text>
+  <text x="130" y="58" text-anchor="middle" font-size="9" fill="#7ab060" font-weight="700">ℚ  rationals</text>
+  <text x="195" y="52" text-anchor="middle" font-size="9" fill="#c9a060" font-weight="700">ℝ\irrational</text>
+  <text x="220" y="28" text-anchor="middle" font-size="9" fill="#7aabcf">ℝ reals</text>
+  <text x="238" y="16" text-anchor="middle" font-size="9" fill="#5ab0d8">ℂ</text>
+  <line x1="4" y1="100" x2="256" y2="100" stroke="#7aabcf" stroke-width="2"/>
+  <line x1="80" y1="96" x2="80" y2="104" stroke="#c9a060" stroke-width="2"/>
+  <line x1="180" y1="96" x2="180" y2="104" stroke="#c9a060" stroke-width="2"/>
+  <circle cx="80" cy="100" r="4" fill="none" stroke="#c9a060" stroke-width="2"/>
+  <circle cx="180" cy="100" r="4" fill="#c9a060"/>
+  <text x="80" y="116" text-anchor="middle" font-size="8" fill="#c9a060">a open (</text>
+  <text x="180" y="116" text-anchor="middle" font-size="8" fill="#c9a060">b closed ]</text>
+ </svg>`,
+ caption:'Number sets nest inside each other. Open circle = excluded endpoint. Filled circle = included endpoint.',
+ steps:['Identify which number set a value belongs to: check divisibility (ℤ), ratio form (ℚ), or irrationality (ℝ\\ℚ).','For |ax+b|=c: set ax+b=c AND ax+b=−c; solve both; check both solutions.','For |x|<a (a>0): rewrite as −a<x<a; solution is a single interval (a,b).','For |x|>a: rewrite as x<−a OR x>a; solution is a union of two rays.','Write solution sets using interval notation: use ( ) for strict inequalities, [ ] for ≤ or ≥.'],
+ example:'Solve |2x−3|≤5: −5≤2x−3≤5 → −2≤2x≤8 → −1≤x≤4. Solution: [−1,4]. Check endpoints: |2(−1)−3|=5 ✓, |2(4)−3|=5 ✓'},
+
+/* ── POLYNOMIALS & ALGEBRAIC FRACTIONS ───────────── */
+{cat:'Algebra',tags:['algebra','math','calculus'],
+ title:'Polynomial Operations, Division & Remainder Theorem',
+ theory:'Polynomials are algebraic expressions with non-negative integer exponents. Every polynomial of degree n has at most n real roots. The remainder theorem connects division to function evaluation.',
+ reality:'CLEP College Algebra, AP Calculus prerequisite — polynomial long division, factoring, and the remainder/factor theorems appear on every algebra exam and underpin rational function analysis in calculus.',
+ formula:'Division algorithm: P(x) = Q(x)·D(x) + R(x)\nRemainder Theorem: P(a) = remainder when P÷(x−a)\nFactor Theorem: (x−a) is a factor ↔ P(a)=0\nNewton binomial: (a+b)ⁿ = Σ C(n,k)·aⁿ⁻ᵏ·bᵏ\n(a+b)² = a²+2ab+b²\n(a−b)² = a²−2ab+b²\n(a+b)(a−b) = a²−b²\n(a±b)³ = a³±3a²b+3ab²±b³',
+ method:'Ruffini\'s Rule (synthetic division): for divisor (x−a), write a and the coefficients; bring down the first, multiply by a, add — faster than full polynomial long division for linear divisors.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <text x="130" y="13" text-anchor="middle" font-size="9" fill="#7aabcf" font-weight="700">P(x)=2x³−3x²+x−5 ÷ (x−2), Ruffini</text>
+  <rect x="4" y="18" width="252" height="56" rx="7" fill="rgba(122,171,207,.07)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="22" y="36" font-size="9.5" fill="#c9a060" font-weight="700">a=2 |</text>
+  <text x="72"  y="36" text-anchor="middle" font-size="10" fill="#9ecef0" font-family="monospace">2</text>
+  <text x="102" y="36" text-anchor="middle" font-size="10" fill="#9ecef0" font-family="monospace">-3</text>
+  <text x="132" y="36" text-anchor="middle" font-size="10" fill="#9ecef0" font-family="monospace">1</text>
+  <text x="162" y="36" text-anchor="middle" font-size="10" fill="#9ecef0" font-family="monospace">-5</text>
+  <line x1="58" y1="40" x2="180" y2="40" stroke="#7aabcf" stroke-width="1"/>
+  <text x="102" y="52" text-anchor="middle" font-size="9" fill="#c9a060" font-family="monospace">+4</text>
+  <text x="132" y="52" text-anchor="middle" font-size="9" fill="#c9a060" font-family="monospace">+2</text>
+  <text x="162" y="52" text-anchor="middle" font-size="9" fill="#c9a060" font-family="monospace">+6</text>
+  <line x1="58" y1="56" x2="180" y2="56" stroke="#7aabcf" stroke-width="1"/>
+  <text x="72"  y="68" text-anchor="middle" font-size="10" fill="#7ab060" font-family="monospace" font-weight="700">2</text>
+  <text x="102" y="68" text-anchor="middle" font-size="10" fill="#7ab060" font-family="monospace" font-weight="700">1</text>
+  <text x="132" y="68" text-anchor="middle" font-size="10" fill="#7ab060" font-family="monospace" font-weight="700">3</text>
+  <text x="162" y="68" text-anchor="middle" font-size="10" fill="#c07070" font-family="monospace" font-weight="700">1</text>
+  <text x="72"  y="79" text-anchor="middle" font-size="7.5" fill="#7ab060">x²</text>
+  <text x="102" y="79" text-anchor="middle" font-size="7.5" fill="#7ab060">x</text>
+  <text x="132" y="79" text-anchor="middle" font-size="7.5" fill="#7ab060">+3</text>
+  <text x="162" y="79" text-anchor="middle" font-size="7.5" fill="#c07070">R=1</text>
+  <text x="130" y="97" text-anchor="middle" font-size="8.5" fill="#c9a060">P(2)=1 (Remainder Theorem check)</text>
+  <text x="130" y="110" text-anchor="middle" font-size="8" fill="#888">If R=0: (x−2) is a factor of P(x)</text>
+ </svg>`,
+ caption:'Ruffini: bring down → multiply by a → add. Remainder = P(a). If R=0, (x−a) is a factor.',
+ steps:['Write all polynomial coefficients including zeros for missing powers.','Apply Ruffini\'s rule: bring first coefficient down, multiply by a, add to next coefficient, repeat.','The last value is the remainder R = P(a); all others are quotient coefficients (degree one less).','Factor Theorem: if P(a)=0 then (x−a) is a factor — use to find rational roots.','For algebraic fractions: factor numerator and denominator fully, cancel common factors, then simplify.'],
+ example:'Is (x+2) a factor of P(x)=x³+3x²−4? Test P(−2): (−2)³+3(−2)²−4=−8+12−4=0. Yes! So (x+2) is a factor. Divide to get x²+x−2=(x+2)(x−1). Roots: x=−2, x=1.'},
+
+/* ── EQUATIONS — EXTENDED ───────────────────────── */
+{cat:'Algebra',tags:['algebra','math'],
+ title:'Irrational, Logarithmic & Exponential Equations',
+ theory:'Irrational equations contain variables under radicals; logarithmic equations contain variables as arguments of logs; exponential equations have variables in exponents. Each requires a specific isolation technique.',
+ reality:'CLEP College Algebra, AP Precalculus — all three equation types appear in every advanced algebra exam. Extraneous solution checking is mandatory for irrational and logarithmic equations.',
+ formula:'Irrational: isolate radical → raise both sides to power → check\nLogarithmic: log_b(x)=y ↔ bʸ=x\nlog(A)+log(B)=log(AB)\nlog(A)−log(B)=log(A/B)\nn·log(A)=log(Aⁿ)\nExponential same base: aᵐ=aⁿ → m=n\nExponential diff base: take log of both sides',
+ method:'For irrational equations: isolate the radical, square both sides (squaring can introduce extraneous solutions), solve the resulting polynomial, and verify ALL solutions in the ORIGINAL equation.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="6" width="120" height="106" rx="7" fill="rgba(122,171,207,.07)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="64" y="20" text-anchor="middle" font-size="8.5" fill="#7aabcf" font-weight="700">Irrational</text>
+  <text x="64" y="34" text-anchor="middle" font-size="9" fill="#9ecef0">√(7x+42) = x+3</text>
+  <text x="14" y="48" font-size="8" fill="#9ecef0">Square: 7x+42=(x+3)²</text>
+  <text x="14" y="60" font-size="8" fill="#9ecef0">x²−x−30=0</text>
+  <text x="14" y="72" font-size="8" fill="#9ecef0">(x−6)(x+5)=0</text>
+  <text x="14" y="84" font-size="8" fill="#7ab060">x=6 ✓  check!</text>
+  <text x="14" y="96" font-size="8" fill="#c07070">x=−5 ✗ extraneous</text>
+  <text x="14" y="108" font-size="7.5" fill="#888">always verify in original</text>
+  <rect x="136" y="6" width="120" height="106" rx="7" fill="rgba(201,160,96,.07)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="196" y="20" text-anchor="middle" font-size="8.5" fill="#c9a060" font-weight="700">Exponential</text>
+  <text x="196" y="34" text-anchor="middle" font-size="9" fill="#d4b87a">3ˣ = 9  same base</text>
+  <text x="196" y="46" text-anchor="middle" font-size="8.5" fill="#d4b87a">3ˣ = 3² → x=2</text>
+  <line x1="144" y1="54" x2="248" y2="54" stroke="#c9a060" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="196" y="66" text-anchor="middle" font-size="9" fill="#d4b87a">2ˣ = 5  diff base</text>
+  <text x="196" y="78" text-anchor="middle" font-size="8.5" fill="#d4b87a">x·ln2 = ln5</text>
+  <text x="196" y="90" text-anchor="middle" font-size="8.5" fill="#c9a060">x = ln5/ln2 ≈ 2.32</text>
+  <text x="196" y="108" text-anchor="middle" font-size="7.5" fill="#888">injective property</text>
+ </svg>`,
+ caption:'Irrational: isolate radical, square, check. Exponential: match bases or take logarithm.',
+ steps:['Irrational: isolate the radical on one side, square both sides, solve, then CHECK every solution in the original — squaring can create false solutions.','Logarithmic: use log properties to consolidate to a single log, convert to exponential form, solve, then check that all arguments are positive.','Exponential (same base): if bˣ=bⁿ then x=n (injective property).','Exponential (different bases): take ln of both sides, use ln(aˣ)=x·ln(a), isolate x.','For equations with both exponential and logarithmic terms: substitute t=bˣ to reduce to a polynomial.'],
+ example:'log₂(x+3)+log₂(x−1)=5: combine → log₂((x+3)(x−1))=5 → (x+3)(x−1)=32 → x²+2x−35=0 → x=5 or x=−7. Check: x=−7 gives log₂(−4) undefined. Answer: x=5 only.'},
+
+/* ── INEQUALITIES ───────────────────────────────── */
+{cat:'Algebra',tags:['algebra','math','calculus'],
+ title:'Polynomial & Rational Inequalities — Sign Chart Method',
+ theory:'Polynomial and rational inequalities are solved by finding where the expression changes sign. The sign chart method is systematic and applies to any factored expression.',
+ reality:'CLEP College Algebra, AP Calculus (domain, critical point analysis, first derivative test) — sign chart method is the universal tool for both inequalities and f\'(x) analysis.',
+ formula:'Steps: Factor → Find zeros/excluded pts → Sign chart → Read intervals\nPolynomial: (x−a)ⁿ factor: odd n = sign change; even n = no sign change\nRational: include zeros of numerator AND excluded values of denominator\nFlip inequality when multiplying/dividing by negative',
+ method:'Sign chart (tableau des signes): list all critical values in order on a number line, test one point in each interval, record + or − for the whole expression. Read off the solution intervals directly. This is the method used in French/Spanish baccalauréat and AP Calculus.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <text x="130" y="13" text-anchor="middle" font-size="9" fill="#7aabcf" font-weight="700">Solve (x−1)(x+3) > 0</text>
+  <line x1="10" y1="30" x2="250" y2="30" stroke="#7aabcf" stroke-width="1.5"/>
+  <line x1="10" y1="50" x2="250" y2="50" stroke="#7aabcf" stroke-width="1"/>
+  <line x1="10" y1="70" x2="250" y2="70" stroke="#7aabcf" stroke-width="1"/>
+  <line x1="10" y1="90" x2="250" y2="90" stroke="#7aabcf" stroke-width="1"/>
+  <line x1="80" y1="18" x2="80" y2="100" stroke="#c9a060" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="160" y1="18" x2="160" y2="100" stroke="#c9a060" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="45"  y="26" text-anchor="middle" font-size="8" fill="#888">x→</text>
+  <text x="80"  y="26" text-anchor="middle" font-size="9" fill="#c9a060" font-weight="700">−3</text>
+  <text x="120" y="26" text-anchor="middle" font-size="8" fill="#888">−3&lt;x&lt;1</text>
+  <text x="160" y="26" text-anchor="middle" font-size="9" fill="#c9a060" font-weight="700">1</text>
+  <text x="210" y="26" text-anchor="middle" font-size="8" fill="#888">x&gt;1</text>
+  <text x="16"  y="44" font-size="8" fill="#7aabcf">(x+3)</text>
+  <text x="45"  y="44" text-anchor="middle" font-size="9" fill="#c07070">−</text>
+  <text x="80"  y="44" text-anchor="middle" font-size="9" fill="#888">0</text>
+  <text x="120" y="44" text-anchor="middle" font-size="9" fill="#7ab060">+</text>
+  <text x="160" y="44" text-anchor="middle" font-size="9" fill="#7ab060">+</text>
+  <text x="210" y="44" text-anchor="middle" font-size="9" fill="#7ab060">+</text>
+  <text x="16"  y="64" font-size="8" fill="#7aabcf">(x−1)</text>
+  <text x="45"  y="64" text-anchor="middle" font-size="9" fill="#c07070">−</text>
+  <text x="80"  y="64" text-anchor="middle" font-size="9" fill="#c07070">−</text>
+  <text x="120" y="64" text-anchor="middle" font-size="9" fill="#c07070">−</text>
+  <text x="160" y="64" text-anchor="middle" font-size="9" fill="#888">0</text>
+  <text x="210" y="64" text-anchor="middle" font-size="9" fill="#7ab060">+</text>
+  <text x="16"  y="84" font-size="8.5" fill="#c9a060" font-weight="700">Product</text>
+  <text x="45"  y="84" text-anchor="middle" font-size="9" fill="#7ab060" font-weight="700">+</text>
+  <text x="120" y="84" text-anchor="middle" font-size="9" fill="#c07070" font-weight="700">−</text>
+  <text x="210" y="84" text-anchor="middle" font-size="9" fill="#7ab060" font-weight="700">+</text>
+  <text x="130" y="110" text-anchor="middle" font-size="9" fill="#7ab060" font-weight="700">Solution: x∈(−∞,−3) ∪ (1,+∞)</text>
+ </svg>`,
+ caption:'Sign chart: list critical values, test sign of each factor in each interval, multiply signs for the product.',
+ steps:['Move everything to one side so the other side is 0.','Factor completely; for rational expressions, factor numerator and denominator separately.','Find all zeros (where numerator=0) and excluded values (where denominator=0).','Place these values in order on a number line; they divide ℝ into intervals.','Test any one point in each interval, determine the sign of the whole expression, then read off which intervals satisfy the inequality.'],
+ example:'Solve (x²−4)/(x+1)≥0: factor → (x−2)(x+2)/(x+1)≥0. Critical values: x=−2,−1,2. Sign chart gives + on (−2,−1) and [2,+∞). Since ≥0, include zeros x=−2 and x=2 but not x=−1 (excluded). Solution: [−2,−1)∪[2,+∞).'},
+
+/* ── COMPLEX NUMBERS ────────────────────────────── */
+{cat:'Complex Numbers',tags:['algebra','math','engineering'],
+ title:'Complex Numbers: Cartesian, Polar & Operations',
+ theory:'Complex numbers extend ℝ by introducing i=√(−1). Every complex number z=a+bi has a real part, imaginary part, modulus (distance from origin), and argument (angle). The polar form links complex numbers to trigonometry.',
+ reality:'AP Precalculus, CLEP Precalculus, electrical engineering (AC circuits use j=i), and every course that involves roots of negative numbers or rotating vectors.',
+ formula:'z = a+bi   a=Re(z),  b=Im(z)\n|z| = √(a²+b²)  (modulus)\nconjugate: z̄ = a−bi\nz·z̄ = |z|²\nPolar: z = |z|(cosθ + i sinθ) = |z|eⁱᶿ\narg(z) = θ = arctan(b/a) (check quadrant)\nMoivre: zⁿ = |z|ⁿ(cos nθ + i sin nθ)\nDivision: z₁/z₂ → multiply by conjugate of z₂',
+ method:'Moivre\'s Theorem: raise polar form to nth power by raising |z| to the nth power and multiplying the argument by n. Finding nth roots: divide argument by n and add 2πk/n for k=0,1,...,n−1 — gives n equally spaced roots on a circle of radius |z|^(1/n).',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <line x1="130" y1="10" x2="130" y2="108" stroke="#444" stroke-width="1"/>
+  <line x1="10" y1="64" x2="250" y2="64" stroke="#444" stroke-width="1"/>
+  <line x1="130" y1="64" x2="200" y2="30" stroke="#7aabcf" stroke-width="2"/>
+  <circle cx="200" cy="30" r="4" fill="#7aabcf"/>
+  <line x1="200" y1="30" x2="200" y2="64" stroke="#c9a060" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="130" y1="64" x2="200" y2="64" stroke="#c07070" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <path d="M152 64 A22 22 0 0 0 144 46" fill="none" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="204" y="28" font-size="8.5" fill="#7aabcf">z=a+bi</text>
+  <text x="204" y="50" font-size="8" fill="#c9a060">b=Im</text>
+  <text x="162" y="76" font-size="8" fill="#c07070">a=Re</text>
+  <text x="145" y="54" font-size="8" fill="#7ab060">θ</text>
+  <text x="130" y="106" text-anchor="middle" font-size="8.5" fill="#7aabcf">|z|=√(a²+b²)</text>
+  <text x="42" y="30" font-size="8" fill="#9ecef0">Imaginary</text>
+  <text x="220" y="76" font-size="8" fill="#9ecef0">Real</text>
+  <text x="34" y="90" font-size="7.5" fill="#888">z̄=a−bi (reflect over real axis)</text>
+ </svg>`,
+ caption:'Argand plane: real axis horizontal, imaginary axis vertical. |z| is distance from origin; θ is angle from positive real axis.',
+ steps:['Write z=a+bi; compute modulus |z|=√(a²+b²) and argument θ=arctan(b/a) (adjust for correct quadrant).','Convert to polar: z=|z|(cosθ+i sinθ). Useful for multiplication and powers.','Multiply: multiply moduli, add arguments. Divide: divide moduli, subtract arguments.','To divide in Cartesian form: multiply numerator and denominator by the conjugate of the denominator.','Moivre for powers: |z|ⁿ∠nθ. For nth roots: n solutions at angles θ/n + 2πk/n for k=0…n−1.'],
+ example:'z=1+i: |z|=√2, θ=π/4. Polar: √2·(cos45°+i sin45°). z⁴ by Moivre: (√2)⁴∠4·45°=4∠180°=4(cos180°+i sin180°)=−4. Check: (1+i)⁴=((1+i)²)²=(2i)²=−4 ✓'},
+
+/* ── VECTORS IN SPACE ───────────────────────────── */
+{cat:'Matrices & Vectors',tags:['linear algebra','physics','engineering'],
+ title:'Vectors in Space: Dot Product, Cross Product & Applications',
+ theory:'3D vectors extend 2D operations. The dot product measures alignment (scalar output); the cross product produces a perpendicular vector (vector output). Together they solve problems in 3D geometry and physics.',
+ reality:'AP Physics C, engineering statics and electromagnetism, CLEP Calculus — 3D vector operations are required for torque, magnetic force, plane equations, and line-plane intersections.',
+ formula:'→u = (u₁,u₂,u₃)\n|→u| = √(u₁²+u₂²+u₃²)\nDot: →u·→v = u₁v₁+u₂v₂+u₃v₃ = |u||v|cosθ\nCross: →u×→v = |i  j  k |\n              |u₁ u₂ u₃|\n              |v₁ v₂ v₃|\n|→u×→v| = |u||v|sinθ  (area of parallelogram)\n→u⊥→v ↔ →u·→v=0\n→u∥→v ↔ →u×→v=→0',
+ method:'Cross product via the 3×3 determinant expansion: cofactor of i = (u₂v₃−u₃v₂), cofactor of j = −(u₁v₃−u₃v₁), cofactor of k = (u₁v₂−u₂v₁). The resulting vector is perpendicular to both u and v — the right-hand rule gives the direction.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="va" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7aabcf"/></marker>
+  <marker id="vb" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#c9a060"/></marker>
+  <marker id="vc" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7ab060"/></marker></defs>
+  <line x1="80" y1="80" x2="160" y2="40" stroke="#7aabcf" stroke-width="2" marker-end="url(#va)"/>
+  <line x1="80" y1="80" x2="180" y2="70" stroke="#c9a060" stroke-width="2" marker-end="url(#vb)"/>
+  <line x1="80" y1="80" x2="80" y2="18" stroke="#7ab060" stroke-width="2" marker-end="url(#vc)"/>
+  <text x="163" y="36" font-size="8.5" fill="#7aabcf" font-weight="700">→u</text>
+  <text x="183" y="70" font-size="8.5" fill="#c9a060" font-weight="700">→v</text>
+  <text x="68" y="14" font-size="8.5" fill="#7ab060" font-weight="700">→u×→v</text>
+  <path d="M100 70 A22 22 0 0 0 105 60" fill="none" stroke="#888" stroke-width="1.2"/>
+  <text x="108" y="67" font-size="8" fill="#888">θ</text>
+  <text x="185" y="35" font-size="8" fill="#7aabcf">u·v=|u||v|cosθ</text>
+  <text x="185" y="48" font-size="8" fill="#c9a060">|u×v|=|u||v|sinθ</text>
+  <text x="185" y="61" font-size="8" fill="#7ab060">⊥ to both u and v</text>
+  <text x="130" y="105" text-anchor="middle" font-size="8" fill="#888">Area of parallelogram = |u×v|  ·  Area of triangle = ½|u×v|</text>
+ </svg>`,
+ caption:'Dot product: scalar, measures angle. Cross product: vector, perpendicular to both, magnitude = parallelogram area.',
+ steps:['Compute dot product: multiply matching components and sum — result is a scalar.','Test perpendicularity: if u·v=0, vectors are perpendicular.','Compute cross product using the determinant: i(u₂v₃−u₃v₂) − j(u₁v₃−u₃v₁) + k(u₁v₂−u₂v₁).','Test parallelism: if u×v=0⃗, vectors are parallel (one is a scalar multiple of the other).','Applications: area of parallelogram=|u×v|; torque τ=r×F; normal vector to a plane containing two vectors.'],
+ example:'u=(1,2,3), v=(4,5,6). Dot: 1·4+2·5+3·6=4+10+18=32. Cross: i(2·6−3·5)−j(1·6−3·4)+k(1·5−2·4) = i(−3)−j(−6)+k(−3) = (−3,6,−3). Check: (−3,6,−3)·(1,2,3)=−3+12−9=0 ✓'},
+
+/* ── FUNCTION ANALYSIS ──────────────────────────── */
+{cat:'Derivatives & Limits',tags:['calculus','math','engineering'],
+ title:'Complete Function Analysis — Curve Sketching',
+ theory:'Systematic function analysis extracts all geometric information from a function: domain, intercepts, symmetry, asymptotes, monotonicity, extrema, concavity, and inflection points.',
+ reality:'AP Calculus AB/BC FRQ — the full function analysis is a standard free-response question type. Mastering the complete scheme earns maximum partial credit even when calculations contain minor errors.',
+ formula:'Domain: where f is defined\nAsymptotes: vertical (denom=0), horizontal (lim x→±∞), oblique (degree num = degree den +1)\nf′(x)=0 → critical points → max/min (sign change)\nf″(x)=0 → inflection point candidates\nf″>0 → concave up; f″<0 → concave down\nMonotonicity: f′>0 → increasing; f′<0 → decreasing',
+ method:'Seven-step scheme: (1) Domain, (2) Intercepts, (3) Symmetry, (4) Asymptotes, (5) First derivative → monotonicity + extrema, (6) Second derivative → concavity + inflection, (7) Sketch. Never skip steps — each informs the next.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <line x1="14" y1="100" x2="246" y2="100" stroke="#444" stroke-width="1"/>
+  <line x1="130" y1="8" x2="130" y2="104" stroke="#444" stroke-width="1"/>
+  <path d="M20 95 Q50 92 80 60 Q110 28 130 30 Q150 32 170 55 Q195 80 220 85 Q235 86 244 84" fill="none" stroke="#7aabcf" stroke-width="2.5"/>
+  <circle cx="80" cy="60" r="4" fill="#c9a060"/>
+  <circle cx="130" cy="30" r="4" fill="#7ab060"/>
+  <circle cx="180" cy="55" r="4" fill="#c9a060"/>
+  <circle cx="105" cy="44" r="3.5" fill="#c07070"/>
+  <circle cx="155" cy="44" r="3.5" fill="#c07070"/>
+  <text x="78" y="56" font-size="7.5" fill="#c9a060">local min</text>
+  <text x="132" y="28" font-size="7.5" fill="#7ab060">local max</text>
+  <text x="182" y="53" font-size="7.5" fill="#c9a060">local min</text>
+  <text x="92" y="40" font-size="7.5" fill="#c07070">infl</text>
+  <text x="157" y="40" font-size="7.5" fill="#c07070">infl</text>
+  <text x="130" y="114" text-anchor="middle" font-size="8" fill="#8a8a8a">f′=0 at extrema · f″=0 at inflection · f″ sign gives concavity</text>
+ </svg>`,
+ caption:'Extrema: f′=0 with sign change. Inflection: f″=0 with concavity change. Full curve requires both derivatives.',
+ steps:['Domain: exclude values where denominator=0, log argument ≤0, or even root of negative.','Intercepts: set x=0 for y-intercept; set f(x)=0 for x-intercepts.','Asymptotes: vertical where denominator→0; horizontal via limit x→±∞; oblique if degree(num)=degree(den)+1 via polynomial division.','f′(x): find critical points (f′=0 or undefined), use sign chart to determine increasing/decreasing intervals and identify local max/min.','f″(x): find inflection point candidates (f″=0), confirm sign change of f″, determine concave up (f″>0) and concave down (f″<0) intervals.'],
+ example:'f(x)=x³−3x: f′=3x²−3=3(x−1)(x+1)=0 → x=±1. Sign chart: f′>0 on (−∞,−1)∪(1,∞) [increasing], f′<0 on (−1,1) [decreasing]. f″=6x=0 at x=0 → inflection. f(−1)=2 local max; f(1)=−2 local min.'},
+
+/* ── MATRICES & DETERMINANTS ────────────────────── */
+{cat:'Matrices & Vectors',tags:['linear algebra','engineering','physics'],
+ title:'Matrices: Operations, Determinants & Inverse',
+ theory:'A matrix is a rectangular array of numbers. Matrix algebra extends scalar arithmetic to arrays, enabling compact representation of linear systems, transformations, and data structures.',
+ reality:'AP Calculus BC, CLEP Precalculus, engineering — matrix operations solve large systems, represent rotations/transformations, and are the foundation of machine learning and computer graphics.',
+ formula:'A+B: add matching elements\nkA: multiply every element by k\nAB: row i of A · column j of B  (requires inner dims match)\nAB ≠ BA  (not commutative)\ndet 2×2: |a b|=ad−bc\n         |c d|\ndet 3×3: Sarrus rule or cofactor expansion\nA⁻¹ exists iff det(A)≠0\nA⁻¹=(1/det)·adj(A)',
+ method:'Gauss-Jordan for inverse: write augmented matrix [A|I], row-reduce until the left side becomes I — the right side is then A⁻¹. Faster than adjoint method for 3×3 and larger matrices.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="8" width="120" height="100" rx="7" fill="rgba(122,171,207,.07)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="64" y="22" text-anchor="middle" font-size="8.5" fill="#7aabcf" font-weight="700">2×2 Determinant</text>
+  <text x="64" y="40" text-anchor="middle" font-size="14" fill="#9ecef0" font-family="monospace">|a  b|</text>
+  <text x="64" y="57" text-anchor="middle" font-size="14" fill="#9ecef0" font-family="monospace">|c  d|</text>
+  <line x1="20" y1="65" x2="108" y2="65" stroke="#7aabcf" stroke-width="1"/>
+  <text x="64" y="78" text-anchor="middle" font-size="11" fill="#7ab060" font-weight="700">= ad − bc</text>
+  <path d="M38 40 L90 57" stroke="#7ab060" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <path d="M90 40 L38 57" stroke="#c07070" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="38" y="100" font-size="7.5" fill="#7ab060">ad (+)</text>
+  <text x="74" y="100" font-size="7.5" fill="#c07070">bc (−)</text>
+  <rect x="136" y="8" width="120" height="100" rx="7" fill="rgba(201,160,96,.07)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="196" y="22" text-anchor="middle" font-size="8.5" fill="#c9a060" font-weight="700">Matrix Multiply</text>
+  <text x="196" y="36" text-anchor="middle" font-size="8" fill="#888">(m×n)·(n×p) → (m×p)</text>
+  <text x="196" y="52" text-anchor="middle" font-size="8.5" fill="#d4b87a">C[i,j] = row i of A</text>
+  <text x="196" y="64" text-anchor="middle" font-size="8.5" fill="#d4b87a">      · col j of B</text>
+  <text x="196" y="78" text-anchor="middle" font-size="8" fill="#c9a060">dot product</text>
+  <text x="196" y="94" text-anchor="middle" font-size="8" fill="#c07070">AB ≠ BA  (order matters)</text>
+ </svg>`,
+ caption:'2×2 determinant = ad−bc (main diagonal minus off-diagonal). Matrix product: row × column dot products.',
+ steps:['Matrix addition: only defined for same-size matrices — add element by element.','Matrix multiplication: (m×n)·(n×p) → (m×p). Element C[i,j] = dot product of row i of A with column j of B.','Determinant 2×2: ad−bc. Determinant 3×3: cofactor expansion along any row or column, or Sarrus rule.','If det(A)=0, the matrix is singular (no inverse, system has no unique solution).','Inverse: Gauss-Jordan — augment [A|I] and row-reduce to [I|A⁻¹]. Or 2×2 formula: A⁻¹=(1/(ad−bc))·[d −b; −c a].'],
+ example:'A=[2 1; 3 4]. det=2·4−1·3=5≠0. A⁻¹=(1/5)[4 −1; −3 2]. Check: A·A⁻¹=(1/5)[2·4+1·(−3) 2·(−1)+1·2; 3·4+4·(−3) 3·(−1)+4·2]=(1/5)[5 0; 0 5]=I ✓'},
+
+/* ── COMBINATORICS & PROBABILITY ────────────────── */
+{cat:'Statistics',tags:['data','math','daily'],
+ title:'Combinatorics: Permutations, Combinations & Probability',
+ theory:'Combinatorics counts arrangements and selections. Probability quantifies likelihood. These two fields connect through the sample space: probability = favorable outcomes / total equally-likely outcomes.',
+ reality:'CLEP College Math, AP Statistics, SAT — counting problems and probability appear in every standardized exam. The binomial theorem and Pascal\'s triangle are directly tied to combinations.',
+ formula:'Permutations (order matters): P(n,r) = n!/(n−r)!\nCombinations (order doesn\'t matter): C(n,r) = n!/(r!(n−r)!)\nC(n,r) = C(n,n−r)  (symmetry)\nBinomial: (a+b)ⁿ = Σ C(n,k)·aⁿ⁻ᵏ·bᵏ\nP(A∪B)=P(A)+P(B)−P(A∩B)\nP(A|B)=P(A∩B)/P(B)  (conditional)\nBinomial dist: P(X=k)=C(n,k)pᵏ(1−p)ⁿ⁻ᵏ',
+ method:'Decision tree for counting: (1) Does ORDER matter? Yes → permutation. No → combination. (2) Is REPETITION allowed? Adjust formula accordingly. (3) Are there RESTRICTIONS? Multiply restricted cases or subtract forbidden cases from total.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="6" width="252" height="36" rx="6" fill="rgba(122,171,207,.08)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="130" y="19" text-anchor="middle" font-size="8.5" fill="#7aabcf" font-weight="700">Does ORDER matter?</text>
+  <text x="70" y="34" text-anchor="middle" font-size="8.5" fill="#7ab060">YES → Permutation</text>
+  <text x="195" y="34" text-anchor="middle" font-size="8.5" fill="#c9a060">NO → Combination</text>
+  <rect x="4" y="52" width="120" height="58" rx="6" fill="rgba(122,176,96,.08)" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="64" y="66" text-anchor="middle" font-size="8.5" fill="#7ab060" font-weight="700">P(n,r) = n!/(n−r)!</text>
+  <text x="64" y="80" text-anchor="middle" font-size="8" fill="#a0c888">5 runners, top 3 places</text>
+  <text x="64" y="92" text-anchor="middle" font-size="8" fill="#a0c888">P(5,3)=5·4·3=60</text>
+  <text x="64" y="104" text-anchor="middle" font-size="7.5" fill="#888">arrangements counted</text>
+  <rect x="136" y="52" width="120" height="58" rx="6" fill="rgba(201,160,96,.08)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="196" y="66" text-anchor="middle" font-size="8.5" fill="#c9a060" font-weight="700">C(n,r) = n!/(r!(n−r)!)</text>
+  <text x="196" y="80" text-anchor="middle" font-size="8" fill="#d4b87a">5 people, choose 3</text>
+  <text x="196" y="92" text-anchor="middle" font-size="8" fill="#d4b87a">C(5,3)=10</text>
+  <text x="196" y="104" text-anchor="middle" font-size="7.5" fill="#888">groups, not orders</text>
+ </svg>`,
+ caption:'Order matters → permutation. Order does not matter → combination. C(n,r) is always smaller than P(n,r).',
+ steps:['Determine if order matters: selecting a president/VP (order matters, P); selecting a committee (order doesn\'t, C).','Permutation: P(n,r)=n!/(n−r)! — number of ways to arrange r items from n.','Combination: C(n,r)=n!/(r!(n−r)!) — number of ways to choose r items from n regardless of order.','Probability: define sample space S, identify favorable event E, P(E)=|E|/|S| for equally likely outcomes.','For conditional probability: P(A|B)=P(A∩B)/P(B). For independent events: P(A∩B)=P(A)·P(B).'],
+ example:'Lottery: 6 numbers from 1–49, no order. C(49,6)=49!/(6!·43!)=13,983,816. P(win)=1/13,983,816. Committee of 3 from 10: C(10,3)=120. P(specific 3 chosen)=1/120.'},
+
+/* ── LINEAR PROGRAMMING ─────────────────────────── */
+{cat:'Engineering & Statics',tags:['engineering','finance','math'],
+ title:'Linear Programming — Graphical & Simplex',
+ theory:'Linear programming optimises a linear objective function subject to linear constraints. The optimal solution always occurs at a vertex (corner point) of the feasible region — this is the Fundamental Theorem of Linear Programming.',
+ reality:'CLEP College Math, AP Statistics, operations research, business, and engineering — LP problems test inequality systems, vertex identification, and objective function evaluation simultaneously.',
+ formula:'Objective: maximise/minimise Z = ax + by\nSubject to: linear inequality constraints\nFeasible region: intersection of all constraint half-planes\nFundamental Theorem: optimal Z occurs at a vertex\nVertex test: evaluate Z at every corner point → pick max or min\nSimplex (algebraic): pivot operations on augmented tableau',
+ method:'Graphical method (2 variables): (1) Graph each constraint as a line, shade the feasible side, (2) identify the feasible region as the intersection, (3) list every vertex (corner point) by solving pairs of boundary equations, (4) evaluate Z at each vertex, (5) report the optimal vertex.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="100" x2="240" y2="100" stroke="#444" stroke-width="1"/>
+  <line x1="20" y1="100" x2="20" y2="10" stroke="#444" stroke-width="1"/>
+  <polygon points="20,100 160,100 100,40 20,70" fill="rgba(122,171,207,.18)" stroke="#7aabcf" stroke-width="2"/>
+  <circle cx="20"  cy="100" r="5" fill="#c07070"/>
+  <circle cx="160" cy="100" r="5" fill="#c07070"/>
+  <circle cx="100" cy="40"  r="5" fill="#7ab060"/>
+  <circle cx="20"  cy="70"  r="5" fill="#c07070"/>
+  <text x="22"  cy="96" x="22" y="96" font-size="8" fill="#c07070">(0,0)</text>
+  <text x="148" y="96" font-size="8" fill="#c07070">(x₂,0)</text>
+  <text x="103" y="37" font-size="8.5" fill="#7ab060" font-weight="700">OPTIMAL</text>
+  <text x="22"  y="66" font-size="8" fill="#c07070">(0,y₁)</text>
+  <text x="60" y="78" font-size="8.5" fill="#7aabcf">Feasible</text>
+  <text x="60" y="88" font-size="8.5" fill="#7aabcf">Region</text>
+  <text x="130" y="114" text-anchor="middle" font-size="8" fill="#8a8a8a">Evaluate Z = ax+by at each vertex → optimal is max or min</text>
+ </svg>`,
+ caption:'Feasible region (shaded polygon). Optimal solution is always at a vertex — evaluate Z at every corner point.',
+ steps:['Write the objective function Z=ax+by and list all constraints as linear inequalities.','Graph each constraint: convert to equation (=), draw the line, shade the feasible side (inequality direction).','Identify the feasible region as the intersection of all shaded half-planes.','Find every vertex: solve each pair of boundary lines as a 2×2 system to get exact corner coordinates.','Evaluate Z at every vertex; the maximum or minimum value is the answer. State the optimal point and optimal value.'],
+ example:'Maximise Z=3x+5y subject to x≤4, y≤6, x+y≤8, x≥0, y≥0. Vertices: (0,0)→0, (4,0)→12, (4,4)→32, (2,6)→36★, (0,6)→30. Maximum Z=36 at (2,6).'}
+
+,
+
+/* ── TRIG: SUM/DIFF, DOUBLE & HALF ANGLE ───────── */
+{cat:'Trigonometry',tags:['geometry','calculus','physics','engineering'],
+ title:'Trig Identities: Sum, Difference, Double & Half Angle',
+ theory:'These identities derive from the unit circle addition formulas and allow any compound angle expression to be rewritten in simpler form. They are the engine behind integral calculus trig substitutions.',
+ reality:'AP Calculus BC (trig integrals, trig substitution), AP Physics (wave superposition), CLEP Precalculus — these identities are tested both as standalone algebra and inside calculus problems.',
+ formula:'sin(A±B) = sinA cosB ± cosA sinB\ncos(A±B) = cosA cosB ∓ sinA sinB\ntan(A±B) = (tanA ± tanB)/(1 ∓ tanA tanB)\n\nDouble angle:\nsin 2A = 2 sinA cosA\ncos 2A = cos²A−sin²A = 2cos²A−1 = 1−2sin²A\ntan 2A = 2tanA/(1−tan²A)\n\nHalf angle:\nsin(A/2) = ±√((1−cosA)/2)\ncos(A/2) = ±√((1+cosA)/2)\ntan(A/2) = sinA/(1+cosA) = (1−cosA)/sinA',
+ method:'Power-reduction (from double angle): cos²A=(1+cos2A)/2 and sin²A=(1−cos2A)/2. These are the key substitutions for integrating even powers of sin and cos in AP Calculus BC.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="6" width="252" height="106" rx="8" fill="rgba(122,171,207,.06)" stroke="#7aabcf" stroke-width="1.5"/>
+  <circle cx="130" cy="62" r="44" fill="none" stroke="rgba(122,171,207,.3)" stroke-width="1.2"/>
+  <line x1="130" y1="10" x2="130" y2="108" stroke="#444" stroke-width="1"/>
+  <line x1="82" y1="62" x2="178" y2="62" stroke="#444" stroke-width="1"/>
+  <line x1="130" y1="62" x2="165" y2="26" stroke="#7aabcf" stroke-width="2"/>
+  <line x1="130" y1="62" x2="174" y2="62" stroke="#c9a060" stroke-width="2"/>
+  <line x1="174" y1="62" x2="165" y2="26" stroke="#c07070" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <path d="M150 62 A20 20 0 0 0 143 46" fill="none" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="152" y="58" font-size="8" fill="#7ab060">A</text>
+  <text x="167" y="22" font-size="8" fill="#7aabcf">(cosA,sinA)</text>
+  <text x="165" y="74" font-size="8" fill="#c9a060">cosA</text>
+  <text x="170" y="46" font-size="8" fill="#c07070">sinA</text>
+  <text x="8" y="22" font-size="8.5" fill="#7aabcf">sin(A+B)=sinAcosB+cosAsinB</text>
+  <text x="8" y="34" font-size="8.5" fill="#c9a060">cos(A+B)=cosAcosB−sinAsinB</text>
+  <text x="8" y="46" font-size="8.5" fill="#7ab060">sin2A=2sinAcosA</text>
+  <text x="8" y="58" font-size="8.5" fill="#c07070">cos2A=1−2sin²A</text>
+  <text x="8" y="108" font-size="8" fill="#888">Power reduction: cos²A=(1+cos2A)/2  sin²A=(1−cos2A)/2</text>
+ </svg>`,
+ caption:'All compound angle identities derive from the unit circle. Double angle = apply sum formula with B=A.',
+ steps:['Derive double angle: set B=A in the sum formula — sin(A+A)=sinAcosA+cosAsinA=2sinAcosA.','Three forms of cos2A: use the Pythagorean identity to substitute cos²A=1−sin²A or sin²A=1−cos²A as needed.','Power reduction: rearrange cos2A=2cos²A−1 → cos²A=(1+cos2A)/2 — essential for integrating cos²x.','For half-angle: replace A with A/2 in power-reduction formulas; sign depends on the quadrant of A/2.','To verify an identity: work one side only; substitute known identities; simplify to match the other side.'],
+ example:'Integrate ∫cos²x dx: use power reduction → ∫(1+cos2x)/2 dx = x/2 + sin2x/4 + C. Without this identity the integral would require integration by parts twice.'},
+
+/* ── NON-LINEAR SYSTEMS ─────────────────────────── */
+{cat:'Algebra',tags:['algebra','math','calculus'],
+ title:'Non-Linear Systems of Equations',
+ theory:'Non-linear systems contain at least one equation of degree ≥ 2. Solutions represent intersection points of curves — these may be 0, 1, 2, or more points depending on the geometry.',
+ reality:'CLEP College Algebra, AP Precalculus — non-linear systems appear wherever circles, parabolas, or ellipses intersect lines or each other. Substitution is almost always the fastest method.',
+ formula:'Common types:\n• Line + parabola: y=mx+b and y=ax²+bx+c\n• Line + circle: y=mx+b and x²+y²=r²\n• Two conics: substitute one into the other\n\nSubstitution: isolate y (or x) from the simpler\nequation → substitute into the other\n→ polynomial equation → solve → back-substitute\n\nSolution = (x,y) pair satisfying BOTH equations',
+ method:'Substitution is the standard method for non-linear systems. Elimination works only when both equations have matching quadratic terms (e.g. x²+y²). Always verify each solution satisfies BOTH original equations — extra solutions can appear after squaring.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <line x1="14" y1="100" x2="246" y2="100" stroke="#444" stroke-width="1"/>
+  <line x1="130" y1="10" x2="130" y2="104" stroke="#444" stroke-width="1"/>
+  <path d="M30 95 Q80 90 120 65 Q150 45 185 30 Q205 22 240 18" fill="none" stroke="#7aabcf" stroke-width="2.2"/>
+  <line x1="30" y1="80" x2="220" y2="30" stroke="#c9a060" stroke-width="2"/>
+  <circle cx="90" cy="74" r="4.5" fill="#7ab060" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="185" cy="30" r="4.5" fill="#7ab060" stroke="#fff" stroke-width="1.5"/>
+  <text x="93" y="70" font-size="8" fill="#7ab060" font-weight="700">(x₁,y₁)</text>
+  <text x="188" y="28" font-size="8" fill="#7ab060" font-weight="700">(x₂,y₂)</text>
+  <text x="20" y="20" font-size="8" fill="#7aabcf">y = ax²+bx+c</text>
+  <text x="186" y="94" font-size="8" fill="#c9a060">y = mx+b</text>
+  <text x="130" y="114" text-anchor="middle" font-size="8" fill="#888">Solutions = intersection points — 0, 1, or 2 for line+parabola</text>
+ </svg>`,
+ caption:'Line meets parabola: substitute y=mx+b into y=ax²+bx+c → solve quadratic → up to 2 intersection points.',
+ steps:['Identify which equation is simpler to isolate a variable from (prefer the linear equation if one exists).','Substitute the expression into the other equation to get a single-variable polynomial equation.','Solve the polynomial — may give 0, 1, or 2 real solutions for quadratic systems.','For each x-value found, back-substitute into the simpler equation to find the corresponding y.','Verify each solution pair in BOTH original equations — substitution can introduce extraneous solutions.'],
+ example:'Solve: y=x²−2x and y=x+4. Substitute: x²−2x=x+4 → x²−3x−4=0 → (x−4)(x+1)=0 → x=4 or x=−1. Then y=4+4=8 and y=−1+4=3. Solutions: (4,8) and (−1,3). Verify in original: 4²−2(4)=8 ✓ and (−1)²−2(−1)=3 ✓'},
+
+/* ── 1D DESCRIPTIVE STATISTICS ──────────────────── */
+{cat:'Statistics',tags:['data','math','science','engineering'],
+ title:'1D Descriptive Statistics: Central Tendency, Dispersion & Quartiles',
+ theory:'Descriptive statistics summarises a dataset with a few key numbers: where the centre is (mean, median, mode), how spread out the data is (range, variance, standard deviation), and the five-number summary for outlier detection.',
+ reality:'AP Statistics, CLEP College Math, every science and engineering lab report — descriptive statistics is the entry point to all data analysis. The five-number summary and box plot are standard EDA tools.',
+ formula:'Mean: x̄ = Σxᵢ/n  (ungrouped)\nx̄ = Σfᵢxᵢ/N  (grouped, N=Σfᵢ)\nVariance: σ² = Σ(xᵢ−x̄)²/n = Σxᵢ²/n − x̄²\nStd dev: σ = √σ²\nCoeff of variation: CV = σ/x̄ × 100%\nMedian: middle value (odd n) or avg of middle 2 (even n)\nQ1=P25, Q2=P50 (median), Q3=P75\nIQR = Q3−Q1\nOutlier: x < Q1−1.5·IQR  or  x > Q3+1.5·IQR',
+ method:'Grouped data shortcut: use the midpoint of each class interval as xᵢ. Variance computing formula Σxᵢ²/n − x̄² avoids computing each (xᵢ−x̄)² individually — much faster on a calculator.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Box plot -->
+  <text x="130" y="13" text-anchor="middle" font-size="9" fill="#7aabcf" font-weight="700">Five-Number Summary + Box Plot</text>
+  <line x1="30" y1="60" x2="230" y2="60" stroke="#444" stroke-width="1.5"/>
+  <!-- whiskers -->
+  <line x1="50" y1="50" x2="50" y2="70" stroke="#7aabcf" stroke-width="2"/>
+  <line x1="50" y1="60" x2="90" y2="60" stroke="#7aabcf" stroke-width="2"/>
+  <line x1="200" y1="50" x2="200" y2="70" stroke="#7aabcf" stroke-width="2"/>
+  <line x1="200" y1="60" x2="165" y2="60" stroke="#7aabcf" stroke-width="2"/>
+  <!-- box Q1 to Q3 -->
+  <rect x="90" y="44" width="75" height="32" rx="4" fill="rgba(122,171,207,.2)" stroke="#7aabcf" stroke-width="2"/>
+  <!-- median line -->
+  <line x1="140" y1="44" x2="140" y2="76" stroke="#c9a060" stroke-width="2.5"/>
+  <text x="50"  y="84" text-anchor="middle" font-size="8" fill="#7aabcf">Min</text>
+  <text x="90"  y="84" text-anchor="middle" font-size="8" fill="#7aabcf">Q1</text>
+  <text x="140" y="84" text-anchor="middle" font-size="9" fill="#c9a060" font-weight="700">Med</text>
+  <text x="165" y="84" text-anchor="middle" font-size="8" fill="#7aabcf">Q3</text>
+  <text x="200" y="84" text-anchor="middle" font-size="8" fill="#7aabcf">Max</text>
+  <line x1="15" y1="60" x2="50" y2="60" stroke="#888" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="200" y1="60" x2="245" y2="60" stroke="#888" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="12" cy="60" r="4" fill="#c07070"/>
+  <circle cx="248" cy="60" r="4" fill="#c07070"/>
+  <text x="12" y="50" font-size="7.5" fill="#c07070">outlier</text>
+  <text x="235" y="50" font-size="7.5" fill="#c07070">outlier</text>
+  <text x="130" y="106" text-anchor="middle" font-size="8" fill="#888">IQR = Q3−Q1 · Outlier fence: Q1−1.5·IQR and Q3+1.5·IQR</text>
+ </svg>`,
+ caption:'Box plot: box spans Q1 to Q3, median line inside, whiskers to min/max. Points beyond fences are outliers.',
+ steps:['Sort data ascending. Find Q2 (median) by splitting dataset at the middle value.','Q1 = median of the lower half; Q3 = median of the upper half (do not include Q2 itself in either half for odd n).','Compute IQR = Q3−Q1. Outlier fences: lower = Q1−1.5·IQR, upper = Q3+1.5·IQR.','Variance: use the computing formula σ² = (Σxᵢ²)/n − x̄² — compute Σxᵢ² and x̄ separately, then subtract.','CV = σ/x̄ × 100% allows comparison of spread across datasets with different units or scales.'],
+ example:'Data: 2,4,5,7,8,10,12. n=7. Median=7. Lower half: 2,4,5 → Q1=4. Upper half: 8,10,12 → Q3=10. IQR=6. Fences: 4−9=−5 and 10+9=19 — no outliers. Mean=48/7≈6.86. Σxᵢ²=4+16+25+49+64+100+144=402. σ²=402/7−6.86²=57.43−47.06=10.37. σ≈3.22.'},
+
+/* ── 2D STATISTICS & REGRESSION ─────────────────── */
+{cat:'Statistics',tags:['data','math','science','engineering'],
+ title:'2D Statistics: Covariance, Correlation & Regression Lines',
+ theory:'Two-dimensional statistics analyses the relationship between two quantitative variables. Covariance measures direction of the relationship; correlation measures both direction and strength; regression provides the prediction equation.',
+ reality:'AP Statistics — bivariate data, correlation, and linear regression are core exam topics. Engineering and science lab reports require regression analysis for every data experiment.',
+ formula:'Covariance: σₓᵧ = Σxᵢyᵢ/n − x̄·ȳ\nCorrelation: r = σₓᵧ/(σₓ·σᵧ)   −1 ≤ r ≤ 1\nRegression y on x:  ŷ = ȳ + r(σᵧ/σₓ)(x − x̄)\n  slope: b = σₓᵧ/σₓ²  intercept: a = ȳ − b·x̄\nRegression x on y:  x̂ = x̄ + r(σₓ/σᵧ)(y − ȳ)\nBoth lines pass through (x̄, ȳ)\nr=+1 or −1: perfect linear fit\nr=0: no linear relationship',
+ method:'Regression y on x minimises the sum of squared vertical residuals (least squares). Use this line to predict y from a known x. The regression x on y minimises horizontal residuals — use it to predict x from a known y. They are different lines unless r=±1.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="100" x2="240" y2="100" stroke="#444" stroke-width="1"/>
+  <line x1="20" y1="10" x2="20" y2="104" stroke="#444" stroke-width="1"/>
+  <circle cx="50"  cy="85" r="3" fill="#7aabcf"/><circle cx="68" cy="78" r="3" fill="#7aabcf"/>
+  <circle cx="88"  cy="68" r="3" fill="#7aabcf"/><circle cx="110" cy="60" r="3" fill="#7aabcf"/>
+  <circle cx="128" cy="52" r="3" fill="#7aabcf"/><circle cx="150" cy="44" r="3" fill="#7aabcf"/>
+  <circle cx="170" cy="36" r="3" fill="#7aabcf"/><circle cx="195" cy="28" r="3" fill="#7aabcf"/>
+  <!-- regression line y on x -->
+  <line x1="38" y1="92" x2="210" y2="22" stroke="#c9a060" stroke-width="2.2"/>
+  <!-- mean point -->
+  <circle cx="123" cy="55" r="5" fill="#7ab060" stroke="#fff" stroke-width="1.5"/>
+  <text x="128" y="50" font-size="8" fill="#7ab060" font-weight="700">(x̄,ȳ)</text>
+  <!-- residual line example -->
+  <line x1="150" y1="44" x2="150" y2="37" stroke="#c07070" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="155" y="36" font-size="7.5" fill="#c07070">residual</text>
+  <text x="192" y="18" font-size="8" fill="#c9a060">ŷ=a+bx</text>
+  <text x="22" y="17" font-size="8" fill="#7aabcf">r≈0.98</text>
+  <text x="130" y="114" text-anchor="middle" font-size="8" fill="#888">Least squares: minimise Σ(yᵢ−ŷᵢ)². Both lines cross (x̄,ȳ).</text>
+ </svg>`,
+ caption:'Regression line minimises squared residuals. Green dot = centroid (x̄,ȳ): both regression lines always pass through it.',
+ steps:['Compute summary statistics: x̄, ȳ, σₓ, σᵧ, and covariance σₓᵧ = (Σxᵢyᵢ)/n − x̄ȳ.','Correlation: r = σₓᵧ/(σₓ·σᵧ). Interpret: |r|>0.9 strong, 0.5–0.9 moderate, <0.5 weak.','Slope of regression y on x: b = σₓᵧ/σₓ². Intercept: a = ȳ − b·x̄.','Use ŷ=a+bx to predict y for a given x. Only interpolate (within the data range) — extrapolation is unreliable.','R² = r² = coefficient of determination — percentage of variance in y explained by x.'],
+ example:'n=5 pairs: Σx=15, Σy=25, Σxy=83, Σx²=55, Σy²=135. x̄=3, ȳ=5. σₓᵧ=83/5−15=1.6. σₓ²=55/5−9=2. b=1.6/2=0.8. a=5−0.8(3)=2.6. Regression: ŷ=2.6+0.8x. At x=4: ŷ=5.8.'},
+
+/* ── NORMAL DISTRIBUTION & INFERENCE ─────────────── */
+{cat:'Statistics',tags:['data','science','engineering'],
+ title:'Normal Distribution, z-Scores & Confidence Intervals',
+ theory:'The normal distribution is the most important probability distribution in statistics. The Central Limit Theorem guarantees that sample means follow a normal distribution for large n, regardless of the population shape. This underpins all classical inference.',
+ reality:'AP Statistics — normal distribution and confidence intervals are tested in both MCQ and FRQ. They appear in biology, chemistry, physics, engineering quality control, and every research paper.',
+ formula:'Z = (X−μ)/σ  (standardise)\nN(0,1): 68% within 1σ, 95% within 2σ, 99.7% within 3σ\nCI for mean: x̄ ± z*(σ/√n)\nCI for proportion: p̂ ± z*(√(p̂(1−p̂)/n))\nz* values: 90%→1.645, 95%→1.96, 99%→2.576\nMargin of error: E = z*·σ/√n\nMin sample size: n ≥ (z*·σ/E)²',
+ method:'Standardisation procedure: convert any normal X~N(μ,σ²) to standard normal Z~N(0,1) using Z=(X−μ)/σ, then use the standard normal table (z-table) to find probabilities. For sample means, replace σ with σ/√n (standard error of the mean).',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 100 Q65 100 130 18 Q195 100 246 100" fill="rgba(122,171,207,.10)" stroke="#7aabcf" stroke-width="2"/>
+  <line x1="14" y1="100" x2="246" y2="100" stroke="#444" stroke-width="1"/>
+  <line x1="130" y1="14" x2="130" y2="104" stroke="#c9a060" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <!-- 1 sigma -->
+  <line x1="91"  y1="68" x2="91"  y2="100" stroke="#7ab060" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="169" y1="68" x2="169" y2="100" stroke="#7ab060" stroke-width="1" stroke-dasharray="2,2"/>
+  <!-- 2 sigma -->
+  <line x1="52"  y1="94" x2="52"  y2="100" stroke="#c07070" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="208" y1="94" x2="208" y2="100" stroke="#c07070" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="130" y="108" text-anchor="middle" font-size="8" fill="#c9a060">μ</text>
+  <text x="91"  y="108" text-anchor="middle" font-size="8" fill="#7ab060">μ−σ</text>
+  <text x="169" y="108" text-anchor="middle" font-size="8" fill="#7ab060">μ+σ</text>
+  <text x="52"  y="108" text-anchor="middle" font-size="8" fill="#c07070">μ−2σ</text>
+  <text x="208" y="108" text-anchor="middle" font-size="8" fill="#c07070">μ+2σ</text>
+  <text x="130" y="60" text-anchor="middle" font-size="8.5" fill="#7ab060">68%</text>
+  <text x="130" y="78" text-anchor="middle" font-size="8" fill="#c07070">95%</text>
+  <text x="22"  y="18" font-size="8" fill="#7aabcf">Z=(X−μ)/σ</text>
+  <text x="168" y="18" font-size="8" fill="#c9a060">SE=σ/√n</text>
+  <text x="22"  y="32" font-size="7.5" fill="#9ecef0">99.7% within 3σ</text>
+ </svg>`,
+ caption:'68-95-99.7 rule. Standardise with Z=(X−μ)/σ to use z-table. For sample means, use σ/√n (standard error).',
+ steps:['Standardise: compute z=(x−μ)/σ. Use the z-table to find P(Z<z) (cumulative probability from the left).','For P(a<X<b): find P(Z<z_b)−P(Z<z_a). For P(X>a): find 1−P(Z<z_a).','For sample means: replace σ with SE=σ/√n before standardising.','Confidence interval: x̄ ± z*(σ/√n). Wider CI → more confidence but less precision.','To find minimum n for a given margin of error E: n≥(z*σ/E)² — always round UP.'],
+ example:'IQ ~ N(100,15²). P(X>115): z=(115−100)/15=1.0. P(Z>1.0)=1−0.8413=0.1587 ≈ 15.87%. 95% CI for mean of n=100: x̄±1.96·15/√100 = x̄±2.94. If x̄=102: CI=(99.06, 104.94).'},
+
+/* ── AREAS & VOLUMES REFERENCE ──────────────────── */
+{cat:'Geometry',tags:['geometry','engineering','daily','physics'],
+ title:'Complete Areas & Volumes Reference',
+ theory:'Area formulas quantify 2D surface; volume formulas quantify 3D space. These derive from integration but are memorised as standard results for rapid use. Most complex shapes decompose into these primitives.',
+ reality:'AP Calculus (volume of revolution), AP Physics (density, fluid pressure), CLEP College Math, engineering design — knowing these results prevents lengthy re-derivation in time-pressured exams.',
+ formula:'FLAT AREAS:\nTriangle: A=bh/2   Equilateral: A=√3L²/4\nTrapezoid: A=(B+b)h/2   Circle: A=πr²\nSector: A=r²α/2 (α radians)\nRegular polygon: A=perimeter·apothem/2\n\nSOLID VOLUMES:\nCube: V=L³   Box: V=abc\nCylinder: V=πr²h\nCone: V=πr²h/3\nSphere: V=4πr³/3\nPyramid: V=A_base·h/3\nTorus: V=2π²Rr²',
+ method:'Lateral vs total surface area: lateral area (Aₗ) excludes the base(s); total area (Aₜ) includes all faces. For cylinders: Aₗ=2πrh, Aₜ=2πr(h+r). For cones: Aₗ=πrg (slant height g=√(h²+r²)), Aₜ=πr(g+r).',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Triangle -->
+  <polygon points="30,90 10,90 20,70" fill="rgba(122,171,207,.15)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="20" y="100" text-anchor="middle" font-size="7.5" fill="#7aabcf">½bh</text>
+  <!-- Rectangle -->
+  <rect x="38" y="70" width="28" height="20" rx="2" fill="rgba(122,171,207,.15)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="52" y="100" text-anchor="middle" font-size="7.5" fill="#7aabcf">bh</text>
+  <!-- Circle -->
+  <circle cx="90" cy="80" r="12" fill="rgba(201,160,96,.15)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="90" y="100" text-anchor="middle" font-size="7.5" fill="#c9a060">πr²</text>
+  <!-- Trapezoid -->
+  <polygon points="118,90 148,90 143,70 123,70" fill="rgba(201,160,96,.15)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="133" y="100" text-anchor="middle" font-size="7.5" fill="#c9a060">(B+b)h/2</text>
+  <!-- Cylinder -->
+  <ellipse cx="178" cy="70" rx="14" ry="5" fill="rgba(122,176,96,.15)" stroke="#7ab060" stroke-width="1.5"/>
+  <rect x="164" y="70" width="28" height="20" fill="rgba(122,176,96,.10)" stroke="none"/>
+  <ellipse cx="178" cy="90" rx="14" ry="5" fill="rgba(122,176,96,.15)" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="178" y="104" text-anchor="middle" font-size="7.5" fill="#7ab060">πr²h</text>
+  <!-- Sphere -->
+  <circle cx="222" cy="78" r="14" fill="rgba(192,112,112,.12)" stroke="#c07070" stroke-width="1.5"/>
+  <text x="222" y="104" text-anchor="middle" font-size="7.5" fill="#c07070">4πr³/3</text>
+  <!-- Cone -->
+  <polygon points="248,90 232,90 240,68" fill="rgba(192,112,112,.12)" stroke="#c07070" stroke-width="1.5"/>
+  <text x="240" y="104" text-anchor="middle" font-size="7.5" fill="#c07070">πr²h/3</text>
+  <!-- Sector arc -->
+  <path d="M30 30 L50 18 A22 22 0 0 1 52 40 Z" fill="rgba(160,96,192,.15)" stroke="#a060c0" stroke-width="1.5"/>
+  <text x="44" y="54" text-anchor="middle" font-size="7.5" fill="#a060c0">r²α/2</text>
+  <!-- Pyramid -->
+  <polygon points="92,48 80,60 104,60" fill="rgba(160,96,192,.12)" stroke="#a060c0" stroke-width="1.5"/>
+  <line x1="92" y1="48" x2="86" y2="60" stroke="#a060c0" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="92" y="66" text-anchor="middle" font-size="7.5" fill="#a060c0">Bh/3</text>
+  <!-- Labels row -->
+  <text x="130" y="14" text-anchor="middle" font-size="9" fill="#888" font-weight="700">2D (top) and 3D (bottom) key formulas</text>
+ </svg>`,
+ caption:'All shapes decompose into these primitives. Sector uses radians. Cone and pyramid share the ⅓ factor.',
+ steps:['For composite shapes: decompose into recognised primitives, compute each area/volume, then add or subtract.','Slant height of a cone g=√(h²+r²) — required for lateral area Aₗ=πrg.','Sphere surface area SA=4πr² and volume V=4πr³/3 — both involve r only.','For a sector with central angle in degrees: A=πr²·(θ°/360). For radians: A=r²α/2.','Volume of revolution (disk method): V=π∫[f(x)]²dx — connects geometry to integration.'],
+ example:'Composite: cylinder (r=3, h=10) capped with hemisphere (r=3). V=πr²h + (2/3)πr³ = 90π + 18π = 108π ≈ 339.3 cm³. SA = lateral cylinder + base circle + hemisphere = 2πrh + πr² + 2πr² = 60π + 9π + 18π = 87π ≈ 273.3 cm².'},
+
+/* ── COMMERCIAL ARITHMETIC ──────────────────────── */
+{cat:'Finance & Commerce',tags:['finance','daily','math'],
+ title:'Commercial Arithmetic: Interest, Annuities & APR',
+ theory:'Commercial arithmetic governs money over time. Simple interest grows linearly; compound interest grows exponentially. Annuities are structured streams of equal periodic payments. APR (Annual Percentage Rate) is the standardised cost of credit.',
+ reality:'CLEP College Math, personal finance, business — every loan, mortgage, savings account, and credit card uses these formulas. Understanding them is the single most financially valuable mathematical skill.',
+ formula:'Simple: I = C·r·t;  C_t = C(1 + rt)\nCompound: C_t = C(1 + r/m)^(mt)\nContinuous: C_t = C·eʳᵗ\nAnnuity (future): M = a·((1+r)ⁿ−1)/r\nAnnuity (present value): PV = a·(1−(1+r)^(−n))/r\nInstalment: a = C·r(1+r)ⁿ/((1+r)ⁿ−1)\nAPR/TAE: (1+r/m)^m − 1\nHalf-yearly: m=2  Quarterly: m=4  Monthly: m=12',
+ method:'APR (Tasa Anual Equivalente in Spanish/European context, or Annual Effective Rate): converts any compounding frequency to a single annual rate for fair comparison. Always compare loans using APR, not nominal rate.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <line x1="14" y1="100" x2="246" y2="100" stroke="#444" stroke-width="1"/>
+  <line x1="14" y1="10" x2="14" y2="104" stroke="#444" stroke-width="1"/>
+  <!-- Simple interest line -->
+  <line x1="20" y1="96" x2="220" y2="36" stroke="#7aabcf" stroke-width="2" stroke-dasharray="5,3"/>
+  <!-- Compound interest curve -->
+  <path d="M20 96 Q80 92 130 72 Q180 50 220 20" fill="none" stroke="#c9a060" stroke-width="2.5"/>
+  <!-- Continuous -->
+  <path d="M20 96 Q80 90 130 66 Q180 44 220 14" fill="none" stroke="#7ab060" stroke-width="1.8"/>
+  <text x="225" y="32" font-size="8" fill="#c9a060" font-weight="700">Compound</text>
+  <text x="225" y="44" font-size="8" fill="#7aabcf">Simple</text>
+  <text x="225" y="18" font-size="8" fill="#7ab060">Continuous</text>
+  <text x="16" y="22" font-size="7.5" fill="#888">C₀</text>
+  <text x="130" y="114" text-anchor="middle" font-size="8" fill="#888">Same nominal rate, different compounding → different final amounts</text>
+ </svg>`,
+ caption:'Compound grows faster than simple at the same nominal rate. More frequent compounding → higher effective rate.',
+ steps:['Identify: is interest simple (grows on original principal only) or compound (interest earns interest)?','For compound: identify m (compounding periods per year) and convert nominal rate r to period rate r/m.','APR = (1+r/m)^m − 1 — this is the true annual cost for comparing different loan products.','Annuity future value: if you save $a per period for n periods at rate r per period, total = a·((1+r)ⁿ−1)/r.','Loan instalment formula gives the equal periodic payment a needed to fully repay principal C in n periods.'],
+ example:'$10,000 loan at 6% nominal, monthly compounding, 5 years. Period rate r=0.005, n=60. Monthly payment: a=10000·0.005·(1.005)⁶⁰/((1.005)⁶⁰−1)=10000·0.005·1.3489/0.3489=$193.33. APR=(1.005)¹²−1=6.168%.'}
+
+,
+
+/* ══════════════════════════════════════════════════
+   PHYSICS — new cards from Physics handbook
+══════════════════════════════════════════════════ */
+
+/* ── KINEMATICS ─────────────────────────────────── */
+{cat:'Physics',tags:['physics','engineering'],
+ title:'Kinematics: UARM, Projectile & Circular Motion',
+ theory:'Kinematics describes motion without asking why it happens. Uniform acceleration (UARM) applies whenever net force is constant. Projectile motion is UARM in 2D — horizontal (constant v) and vertical (constant g) are fully independent.',
+ reality:'AP Physics 1, CLEP Natural Sciences — kinematics is the most tested topic. Every dynamics and energy problem begins with kinematics setup.',
+ formula:'UARM (Uniformly Accelerated Rectilinear Motion):\nv = v₀ + at\nx = x₀ + v₀t + ½at²\nv² = v₀² + 2a(x − x₀)\n\nProjectile (launch angle α, v₀):\nvₓ = v₀cosα  (constant)\nvᵧ = v₀sinα − gt\nx = v₀cosα·t\ny = v₀sinα·t − ½gt²\nRange: R = v₀²sin2α/g\nMax height: H = v₀²sin²α/(2g)\n\nCircular Motion:\nω = 2π/T = 2πf   v = ωR\naₙ = v²/R = ω²R  (centripetal)\nT = 2π/ω   f = 1/T',
+ method:'Projectile method: always resolve into x (no acceleration) and y (a=−g) components and treat as two independent 1D problems. Identify unknowns in each axis, match the shared time variable t to link them.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ka" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#7aabcf"/></marker></defs>
+  <line x1="10" y1="100" x2="250" y2="100" stroke="#444" stroke-width="1"/>
+  <line x1="10" y1="100" x2="10" y2="10" stroke="#444" stroke-width="1"/>
+  <!-- Parabola path -->
+  <path d="M10 100 Q100 10 190 100" fill="none" stroke="#7aabcf" stroke-width="2.5"/>
+  <!-- launch vector -->
+  <line x1="10" y1="100" x2="52" y2="64" stroke="#c9a060" stroke-width="2" marker-end="url(#ka)"/>
+  <text x="30" y="78" font-size="8" fill="#c9a060">v₀</text>
+  <!-- angle arc -->
+  <path d="M30 100 A20 20 0 0 1 26 82" fill="none" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="32" y="96" font-size="8" fill="#7ab060">α</text>
+  <!-- height label -->
+  <line x1="100" y1="10" x2="100" y2="100" stroke="#c07070" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="103" y="55" font-size="8" fill="#c07070">H</text>
+  <!-- range label -->
+  <line x1="10" y1="106" x2="190" y2="106" stroke="#888" stroke-width="1"/>
+  <text x="100" y="116" text-anchor="middle" font-size="8" fill="#888">R = v₀²sin2α/g</text>
+  <!-- Circular inset -->
+  <circle cx="230" cy="55" r="30" fill="none" stroke="#7ab060" stroke-width="1.5"/>
+  <circle cx="230" cy="55" r="3" fill="#7ab060"/>
+  <line x1="230" y1="55" x2="252" y2="35" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="243" y="43" font-size="7.5" fill="#c9a060">R</text>
+  <text x="213" y="52" font-size="7.5" fill="#7ab060">aₙ=v²/R</text>
+ </svg>`,
+ caption:'Projectile: parabolic path from independent x (constant v) and y (constant −g). Circular: centripetal acceleration points inward.',
+ steps:['Resolve initial velocity: vₓ=v₀cosα (stays constant), vᵧ=v₀sinα (decreases at rate g).','For range and flight time: set y=0, solve for t → T=2v₀sinα/g, then R=vₓ·T.','For max height: set vᵧ=0, solve for t → H=v₀²sin²α/(2g).','For circular motion: centripetal acceleration aₙ=v²/R always points toward the centre — it is NOT tangential.','Angular frequency ω=2πf. Linear and angular quantities: v=ωR, aₙ=ω²R.'],
+ example:'Ball launched at 30 m/s, 45°. H=900·sin²45°/(2·10)=22.5 m. T=2·30·sin45°/10=4.24 s. R=30·cos45°·4.24=90 m. Circular: car at v=20 m/s, R=50 m. aₙ=400/50=8 m/s².'},
+
+/* ── DYNAMICS & NEWTON'S LAWS ───────────────────── */
+{cat:'Physics',tags:['physics','engineering'],
+ title:'Dynamics: Newton\'s Laws, Weight, Friction & Torque',
+ theory:'Newton\'s three laws connect force to motion. The free-body diagram is the universal entry point for every dynamics problem — it makes all forces visible before writing any equation.',
+ reality:'AP Physics 1, AP Physics C Mechanics — Newton\'s laws underpin every dynamics, energy, and momentum problem. Torque and equilibrium extend Newton\'s laws to rotation.',
+ formula:'1st Law: ΣF=0 ↔ a=0 (inertia)\n2nd Law: ΣF=ma  (vector equation)\n3rd Law: F₁₂=−F₂₁\nWeight: W = mg  (g=9.8 m/s²)\nFriction: Fₓ ≤ μₛN (static); Fₖ=μₖN (kinetic)\nNormal N: reaction from surface ⊥ to surface\nTorque: τ = F·d = F·r·sinθ  (N·m)\nEquilibrium: ΣF=0  AND  Στ=0\nHooke\'s Law: F = −kx  (spring)',
+ method:'FBD protocol for inclined planes: rotate axes so x is along the slope, y is perpendicular. Decompose weight: W∥=mgsinθ (down slope), W⊥=mgcosθ (into surface). Then N=mgcosθ and Ffriction=μmgcosθ.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="fa" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#c9a060"/></marker>
+  <marker id="fb" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#c07070"/></marker>
+  <marker id="fc" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#7ab060"/></marker>
+  <marker id="fd" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#7aabcf"/></marker></defs>
+  <!-- Inclined plane -->
+  <polygon points="10,100 130,100 130,50" fill="rgba(122,171,207,.08)" stroke="#7aabcf" stroke-width="1.5"/>
+  <rect x="80" y="64" width="28" height="22" rx="3" fill="rgba(201,160,96,.15)" stroke="#c9a060" stroke-width="1.5" transform="rotate(-24,94,75)"/>
+  <text x="88" y="78" font-size="8" fill="#c9a060" transform="rotate(-24,88,78)">m</text>
+  <!-- weight -->
+  <line x1="94" y1="75" x2="94" y2="100" stroke="#c07070" stroke-width="2" marker-end="url(#fb)"/>
+  <text x="97" y="90" font-size="8" fill="#c07070">W=mg</text>
+  <!-- normal -->
+  <line x1="94" y1="75" x2="72" y2="53" stroke="#7ab060" stroke-width="2" marker-end="url(#fc)"/>
+  <text x="60" y="60" font-size="8" fill="#7ab060">N</text>
+  <!-- friction -->
+  <line x1="94" y1="75" x2="120" y2="65" stroke="#7aabcf" stroke-width="2" marker-end="url(#fd)"/>
+  <text x="116" y="62" font-size="8" fill="#7aabcf">f</text>
+  <!-- angle -->
+  <path d="M115 100 A18 18 0 0 1 125 84" fill="none" stroke="#888" stroke-width="1.2"/>
+  <text x="118" y="97" font-size="8" fill="#888">θ</text>
+  <!-- Torque diagram -->
+  <circle cx="210" cy="75" r="25" fill="rgba(122,171,207,.06)" stroke="#7aabcf" stroke-width="1.2"/>
+  <circle cx="210" cy="75" r="3" fill="#7aabcf"/>
+  <line x1="210" y1="75" x2="230" y2="75" stroke="#888" stroke-width="1"/>
+  <line x1="230" y1="55" x2="230" y2="95" stroke="#c9a060" stroke-width="2.5" marker-end="url(#fa)"/>
+  <text x="233" y="76" font-size="8" fill="#c9a060">F</text>
+  <text x="215" y="56" font-size="7.5" fill="#888">d</text>
+  <text x="160" y="110" font-size="7.5" fill="#c9a060">τ = F·d</text>
+ </svg>`,
+ caption:'Inclined plane: rotate axes to align with slope. Torque = force × perpendicular distance from pivot.',
+ steps:['Draw the FBD: one dot for each body, every force as a labelled arrow.','For inclined planes: tilt your axes so x is along the slope — this eliminates one unknown from each equation.','Write ΣFₓ=maₓ and ΣFy=may separately. On a flat surface with no vertical motion, N=mg.','Friction force: static friction adjusts to prevent motion up to μₛN; once sliding, kinetic friction = μₖN (always opposing motion).','For torque equilibrium: choose the pivot at an unknown force to eliminate it from the moment equation.'],
+ example:'Block m=5 kg on θ=30° slope, μₖ=0.2. N=5·10·cos30°=43.3 N. Friction=0.2·43.3=8.66 N. Net force down slope=5·10·sin30°−8.66=25−8.66=16.34 N. a=16.34/5=3.27 m/s².'},
+
+/* ── WORK, ENERGY & MOMENTUM ────────────────────── */
+{cat:'Physics',tags:['physics','engineering'],
+ title:'Work, Energy, Power & Momentum–Collisions',
+ theory:'Work-energy theorem: the net work done on an object equals its change in kinetic energy. Conservation of mechanical energy holds when only conservative forces act. Conservation of momentum holds in every collision.',
+ reality:'AP Physics 1 & C — work/energy/momentum together account for about 35% of the exam. Energy conservation eliminates the need for force analysis in many problems.',
+ formula:'Work: W = F·d·cosθ  (J)\nKE = ½mv²   PE = mgh (gravitational)\nPE_spring = ½kx²\nWork-Energy Thm: W_net = ΔKE\nConservation: KE₁+PE₁ = KE₂+PE₂ (conservative forces)\nPower: P = W/t = F·v  (W = J/s)\nMomentum: p = mv\nImpulse: J = FΔt = Δp\nConservation of p: Σpᵢ = Σpf\nElastic: KE conserved, p conserved\nInelastic: only p conserved\nPerfectly inelastic: bodies stick → v_f=(m₁v₁+m₂v₂)/(m₁+m₂)',
+ method:'Energy method vs Newton method: use energy when you want speed at a point without knowing time or intermediate forces. Use Newton when you need forces, time, or acceleration. They give the same answer — choose whichever gives fewer unknowns.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <line x1="14" y1="108" x2="246" y2="108" stroke="#444" stroke-width="1"/>
+  <!-- incline energy -->
+  <polygon points="14,108 130,108 130,40" fill="rgba(122,171,207,.06)" stroke="#7aabcf" stroke-width="1"/>
+  <circle cx="30" cy="105" r="7" fill="rgba(201,160,96,.3)" stroke="#c9a060" stroke-width="1.5"/>
+  <circle cx="120" cy="44" r="7" fill="rgba(122,176,96,.3)" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="22" y="98" font-size="7.5" fill="#c9a060">KE₁=½mv²</text>
+  <text x="88" y="38" font-size="7.5" fill="#7ab060">PE₂=mgh</text>
+  <path d="M37 100 Q80 60 112 50" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="65" y="78" font-size="8" fill="#888">KE₁→PE₂</text>
+  <!-- collision -->
+  <rect x="148" y="82" width="36" height="22" rx="4" fill="rgba(122,171,207,.2)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="166" y="97" text-anchor="middle" font-size="8.5" fill="#7aabcf" font-weight="700">m₁</text>
+  <rect x="192" y="82" width="36" height="22" rx="4" fill="rgba(201,160,96,.2)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="210" y="97" text-anchor="middle" font-size="8.5" fill="#c9a060" font-weight="700">m₂</text>
+  <line x1="186" y1="93" x2="196" y2="93" stroke="#c07070" stroke-width="2"/>
+  <text x="190" y="88" font-size="7.5" fill="#c07070">→</text>
+  <text x="166" y="78" font-size="7.5" fill="#7aabcf">v₁→</text>
+  <text x="204" y="78" font-size="7.5" fill="#c9a060">←v₂</text>
+  <text x="190" y="116" text-anchor="middle" font-size="8" fill="#888">m₁v₁+m₂v₂=const</text>
+ </svg>`,
+ caption:'Energy conserved along frictionless path: KE at bottom = PE at top. Collision: momentum always conserved regardless of type.',
+ steps:['Identify all forces — label conservative (gravity, spring) and non-conservative (friction, applied).','If only conservative forces act: KE₁+PE₁=KE₂+PE₂. If friction acts: KE₁+PE₁=KE₂+PE₂+W_friction.','For collisions: always write momentum conservation p_before=p_after.','For elastic collisions: also write KE conservation or use elastic collision formulas.','Perfectly inelastic: bodies stick together after collision. Use momentum conservation to find v_f.'],
+ example:'Ball m=0.5 kg dropped from h=5 m: v=√(2gh)=√100=10 m/s on impact. Elastic collision m₁=2 kg, v₁=4 m/s hits m₂=2 kg at rest: v₁_f=0, v₂_f=4 m/s (equal masses exchange velocities). ✓ KE: ½(2)(16)=½(2)(16).'},
+
+/* ── HEAT & THERMODYNAMICS ──────────────────────── */
+{cat:'Physics',tags:['physics','chemistry','engineering'],
+ title:'Heat, Thermodynamics & Thermal Machines',
+ theory:'Thermodynamics governs energy transfer as heat and work. The First Law (ΔU=Q−W) is energy conservation for a thermal system. The Second Law limits efficiency — no engine can be 100% efficient.',
+ reality:'AP Physics 2, AP Chemistry — thermodynamics is tested in both. Heat transfer, gas processes (isothermal, adiabatic, isobaric, isochoric), and Carnot efficiency appear in FRQ problems.',
+ formula:'Temperature: K = °C + 273.15\nHeat: Q = mcΔT  (specific heat)\nLatent heat: Q = m·L\nFirst Law: ΔU = Q − W\nW (gas expanding): W = pΔV (isobaric)\nProcesses:\n  Isothermal (T=const): ΔU=0, Q=W\n  Adiabatic (Q=0): ΔU=−W\n  Isochoric (V=const): W=0, ΔU=Q\n  Isobaric (p=const): W=pΔV\nCarnot efficiency: η=1−T_cold/T_hot\nCOP (heat pump): COP=Q_hot/W = T_hot/(T_hot−T_cold)',
+ method:'Thermal equilibrium problem: set Qgained=Qlost (heat gained by cooler body = heat lost by warmer body). Q=mcΔT for each component. The final temperature is found by solving the equation — it must lie between the initial temperatures.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Carnot engine diagram -->
+  <rect x="90" y="10" width="80" height="28" rx="6" fill="rgba(192,112,112,.15)" stroke="#c07070" stroke-width="1.5"/>
+  <text x="130" y="28" text-anchor="middle" font-size="9" fill="#c07070" font-weight="700">T_hot (source)</text>
+  <rect x="90" y="80" width="80" height="28" rx="6" fill="rgba(122,171,207,.15)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="130" y="98" text-anchor="middle" font-size="9" fill="#7aabcf" font-weight="700">T_cold (sink)</text>
+  <rect x="106" y="44" width="48" height="30" rx="6" fill="rgba(122,176,96,.15)" stroke="#7ab060" stroke-width="2"/>
+  <text x="130" y="62" text-anchor="middle" font-size="9" fill="#7ab060" font-weight="700">ENGINE</text>
+  <line x1="130" y1="38" x2="130" y2="44" stroke="#c07070" stroke-width="2"/>
+  <line x1="130" y1="74" x2="130" y2="80" stroke="#7aabcf" stroke-width="2"/>
+  <line x1="154" y1="59" x2="190" y2="59" stroke="#c9a060" stroke-width="2.5"/>
+  <text x="196" y="63" font-size="10" fill="#c9a060" font-weight="700">W</text>
+  <text x="112" y="40" font-size="8" fill="#c07070">Q_hot</text>
+  <text x="112" y="78" font-size="8" fill="#7aabcf">Q_cold</text>
+  <text x="10" y="30" font-size="8" fill="#888">η=1−T_c/T_h</text>
+  <text x="10" y="44" font-size="8" fill="#888">W=Q_hot−Q_cold</text>
+  <text x="10" y="58" font-size="8" fill="#888">ΔU=Q−W</text>
+  <text x="10" y="72" font-size="8" fill="#7aabcf">Isothermal: T=const</text>
+  <text x="10" y="86" font-size="8" fill="#c9a060">Adiabatic: Q=0</text>
+  <text x="10" y="100" font-size="8" fill="#7ab060">Isochoric: V=const</text>
+ </svg>`,
+ caption:'Carnot engine: takes Q_hot from hot source, outputs W, dumps Q_cold to cold sink. η=1−T_c/T_h is the theoretical maximum.',
+ steps:['Convert all temperatures to Kelvin before using gas law or efficiency formulas.','For Q=mcΔT: m in kg, c in J/(kg·K), ΔT=T_final−T_initial (sign gives heat direction).','For phase changes: Q=mL (no temperature change during the phase transition).','First Law: ΔU=Q−W. For an ideal gas: ΔU=(n·Cv·ΔT) and depends only on temperature.','Carnot efficiency is the upper bound — real engines are always less efficient due to irreversible processes.'],
+ example:'Carnot engine between 500 K and 300 K: η=1−300/500=40%. For every 100 J from hot source, maximum 40 J can become work; 60 J goes to the cold sink. Thermal equilibrium: 0.5 kg water at 20°C + 2 kg at 80°C: 0.5·4200·(T−20)=2·4200·(80−T) → T=68°C.'},
+
+/* ── HYDROSTATICS & HYDRODYNAMICS ───────────────── */
+{cat:'Physics',tags:['physics','engineering'],
+ title:'Fluid Mechanics: Pascal, Archimedes & Bernoulli',
+ theory:'Fluids (liquids and gases) transmit pressure in all directions. Three foundational principles — Pascal\'s, Archimedes\', and Bernoulli\'s — govern pressure, buoyancy, and flow in every fluid system.',
+ reality:'AP Physics 2 — fluid mechanics is a dedicated topic. Engineering hydraulics, aerodynamics (Bernoulli), and buoyancy calculations all use these three principles.',
+ formula:'Hydrostatic pressure: P = P₀ + ρgh\nPascal: ΔP transmitted uniformly → F₁/A₁ = F₂/A₂\nArchimedes: E = ρ_fluid·V_submerged·g\nFloating: ρ_object/ρ_fluid = V_submerged/V_total\nContinuity: S₁v₁ = S₂v₂  (A·v = Q)\nBernoulli: p + ½ρv² + ρgh = constant\nToricelli: v_exit = √(2gh)\nReynolds: Re = ρvL/η',
+ method:'Bernoulli application: identify two points along a streamline, write p₁+½ρv₁²+ρgh₁=p₂+½ρv₂²+ρgh₂. If the pipe is horizontal, ρgh terms cancel. Combine with continuity S₁v₁=S₂v₂ to eliminate one unknown.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Venturi tube / Bernoulli -->
+  <path d="M10 45 L70 45 Q90 45 95 55 L165 55 Q170 45 190 45 L250 45" fill="none" stroke="#7aabcf" stroke-width="2"/>
+  <path d="M10 75 L70 75 Q90 75 95 65 L165 65 Q170 75 190 75 L250 75" fill="none" stroke="#7aabcf" stroke-width="2"/>
+  <text x="40" y="63" text-anchor="middle" font-size="8" fill="#7aabcf">S₁,v₁,p₁</text>
+  <text x="130" y="62" text-anchor="middle" font-size="8" fill="#c9a060">S₂,v₂,p₂</text>
+  <text x="220" y="63" text-anchor="middle" font-size="8" fill="#7aabcf">S₁,v₁</text>
+  <!-- pressure gauges -->
+  <line x1="40" y1="45" x2="40" y2="20" stroke="#888" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="40" y="16" text-anchor="middle" font-size="8" fill="#888">p₁ high</text>
+  <line x1="130" y1="55" x2="130" y2="30" stroke="#888" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="130" y="26" text-anchor="middle" font-size="8" fill="#c07070">p₂ low</text>
+  <!-- Archimedes inset -->
+  <rect x="176" y="80" width="70" height="36" rx="4" fill="rgba(122,171,207,.12)" stroke="#7aabcf" stroke-width="1"/>
+  <rect x="195" y="88" width="30" height="20" rx="3" fill="rgba(201,160,96,.2)" stroke="#c9a060" stroke-width="1.5"/>
+  <line x1="210" y1="88" x2="210" y2="76" stroke="#7ab060" stroke-width="2"/>
+  <text x="200" y="73" font-size="7.5" fill="#7ab060">E=ρ_f·V·g</text>
+  <text x="130" y="108" text-anchor="middle" font-size="8" fill="#888">Bernoulli: p+½ρv²+ρgh=const · Narrow→fast→low pressure</text>
+ </svg>`,
+ caption:'Venturi effect: narrowing increases v, decreases p. Archimedes buoyancy = weight of displaced fluid.',
+ steps:['For hydrostatic problems: P=P₀+ρgh — pressure increases linearly with depth.','Pascal\'s principle: F₁/A₁=F₂/A₂ — a hydraulic press multiplies force by area ratio.','Archimedes: buoyant force = weight of fluid displaced. Object floats if ρ_object < ρ_fluid.','Continuity equation: in an incompressible fluid, volume flow rate Q=Av is constant — narrower means faster.','Bernoulli: apply at two points on the same streamline. Combine with continuity when both v and A are given.'],
+ example:'Water flows through pipe: A₁=0.04 m², v₁=2 m/s. Narrows to A₂=0.01 m². Continuity: v₂=v₁A₁/A₂=8 m/s. Bernoulli (horizontal): p₁+½ρv₁²=p₂+½ρv₂². Δp=½·1000·(64−4)=30,000 Pa.'},
+
+/* ── SIMPLE HARMONIC MOTION & WAVES ─────────────── */
+{cat:'Physics',tags:['physics','engineering'],
+ title:'SHM, Waves, Sound & Doppler Effect',
+ theory:'Simple harmonic motion (SHM) is oscillation where restoring force is proportional to displacement. Mechanical waves transport energy without transporting matter. Sound is a longitudinal pressure wave; light is a transverse electromagnetic wave.',
+ reality:'AP Physics 1 & 2 — SHM, wave properties, and the Doppler effect are standard exam topics. Springs, pendulums, standing waves on strings, and sound in pipes appear in both MCQ and FRQ.',
+ formula:'SHM: x(t) = A·cos(ωt+φ₀)\nω = 2πf = 2π/T\nSpring: ω=√(k/m), T=2π√(m/k)\nPendulum: T=2π√(L/g)\nWave: v=λf,  y(x,t)=A·sin(kx−ωt)\nWave number: k=2π/λ\nSound intensity: β=10·log(I/I₀)  dB\nDoppler: f\'=f·(v±v_observer)/(v∓v_source)\nStanding waves (string, fixed both ends):\nλₙ=2L/n,  fₙ=nv/(2L)',
+ method:'Doppler sign rule: numerator +v_observer when observer moves toward source; denominator −v_source when source moves toward observer. Invert these signs for moving away. Remember: a stationary reference = denominator v±0.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- SHM sinusoid -->
+  <line x1="10" y1="60" x2="160" y2="60" stroke="#444" stroke-width="1"/>
+  <path d="M10 60 Q32 20 55 60 Q78 100 100 60 Q122 20 145 60" fill="none" stroke="#7aabcf" stroke-width="2.5"/>
+  <line x1="10"  y1="20" x2="10"  y2="100" stroke="#444" stroke-width="1"/>
+  <line x1="55"  y1="20" x2="55"  y2="60"  stroke="#c9a060" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="145" y1="20" x2="145" y2="60"  stroke="#c9a060" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="55"  y1="18" x2="145" y2="18"  stroke="#c9a060" stroke-width="1.2"/>
+  <text x="100" y="15" text-anchor="middle" font-size="8" fill="#c9a060">T = period</text>
+  <line x1="10"  y1="22" x2="55"  y2="22"  stroke="#7ab060" stroke-width="1.2"/>
+  <text x="32"   y="18" text-anchor="middle" font-size="8" fill="#7ab060">A</text>
+  <text x="90"   y="50" font-size="8" fill="#7aabcf">x=Acos(ωt)</text>
+  <!-- Standing wave inset -->
+  <rect x="168" y="8" width="88" height="102" rx="6" fill="rgba(122,171,207,.06)" stroke="#7aabcf" stroke-width="1"/>
+  <text x="212" y="20" text-anchor="middle" font-size="8" fill="#7aabcf" font-weight="700">Standing Waves</text>
+  <line x1="176" y1="50" x2="248" y2="50" stroke="#888" stroke-width="1"/>
+  <path d="M176 50 Q212 25 248 50" fill="none" stroke="#7ab060" stroke-width="2"/>
+  <text x="212" y="40" text-anchor="middle" font-size="8" fill="#7ab060">n=1, λ=2L</text>
+  <line x1="176" y1="80" x2="248" y2="80" stroke="#888" stroke-width="1"/>
+  <path d="M176 80 Q194 64 212 80 Q230 96 248 80" fill="none" stroke="#c9a060" stroke-width="2"/>
+  <text x="212" y="97" text-anchor="middle" font-size="8" fill="#c9a060">n=2, λ=L</text>
+ </svg>`,
+ caption:'SHM: amplitude A, period T. Standing wave: n=1 has half-wavelength = L (one loop). Harmonics at multiples of f₁.',
+ steps:['SHM: identify k (spring constant) or L (pendulum length) and compute ω=√(k/m) or ω=√(g/L), then T=2π/ω.','Wave speed: v=λf. In a medium, v is fixed — if f increases, λ decreases proportionally.','For standing waves on a string of length L fixed at both ends: allowed wavelengths λₙ=2L/n, so f_n=nf₁.','Sound intensity level in dB: β=10·log(I/I₀) where I₀=10⁻¹² W/m². Every 10 dB = 10× intensity.','Doppler: observer moving toward source → higher f. Source moving toward observer → higher f. Both increase f_observed.'],
+ example:'Spring m=0.2 kg, k=80 N/m: ω=√(80/0.2)=20 rad/s, T=2π/20=0.314 s. Sound source f=400 Hz, v_sound=340 m/s, source approaches at 34 m/s: f\'=400·340/(340−34)=400·340/306≈444 Hz.'},
+
+/* ── OPTICS ─────────────────────────────────────── */
+{cat:'Physics',tags:['physics','engineering'],
+ title:'Geometric Optics: Reflection, Refraction & Lenses',
+ theory:'Geometric optics treats light as rays that travel in straight lines, reflect off surfaces, and refract at interfaces between media. Thin lens and mirror equations connect object distance, image distance, and focal length.',
+ reality:'AP Physics 2 — optics appears in every exam. Snell\'s law, the mirror/lens equation, and sign conventions for real vs virtual images are all tested.',
+ formula:'Reflection: θᵢ = θᵣ  (angle of incidence = angle of reflection)\nSnell\'s Law: n₁sinθ₁ = n₂sinθ₂\nRefractive index: n = c/v\nCritical angle: sinθ_c = n₂/n₁  (n₁ > n₂)\nMirror/Lens: 1/f = 1/s + 1/s\'\nMagnification: m = −s\'/s = y\'/y\nLens power: P = 1/f  (dioptres, f in metres)\nConvex lens/concave mirror: f > 0\nConcave lens/convex mirror: f < 0',
+ method:'Sign convention: distances measured from the optical centre. Object distance s > 0 (always). Image distance s\' > 0 → real image (same side as outgoing light for lenses, same side as incoming for mirrors). s\' < 0 → virtual image. Magnification m < 0 → inverted image.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Convex lens -->
+  <line x1="130" y1="8" x2="130" y2="110" stroke="#7aabcf" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="10"  y1="60" x2="250" y2="60" stroke="#444" stroke-width="1"/>
+  <!-- Lens shape -->
+  <path d="M126 20 Q118 60 126 100" fill="rgba(122,171,207,.18)" stroke="#7aabcf" stroke-width="1.5"/>
+  <path d="M134 20 Q142 60 134 100" fill="rgba(122,171,207,.18)" stroke="#7aabcf" stroke-width="1.5"/>
+  <!-- Object -->
+  <line x1="60" y1="60" x2="60" y2="30" stroke="#c9a060" stroke-width="2.5"/>
+  <text x="50" y="28" font-size="8" fill="#c9a060">obj</text>
+  <!-- Rays -->
+  <line x1="60" y1="30" x2="130" y2="30" stroke="#c07070" stroke-width="1.2"/>
+  <line x1="130" y1="30" x2="200" y2="90" stroke="#c07070" stroke-width="1.2"/>
+  <line x1="60" y1="30" x2="130" y2="60" stroke="#7ab060" stroke-width="1.2"/>
+  <line x1="130" y1="60" x2="200" y2="90" stroke="#7ab060" stroke-width="1.2"/>
+  <!-- Image -->
+  <line x1="200" y1="60" x2="200" y2="90" stroke="#c07070" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="204" y="88" font-size="8" fill="#c07070">img</text>
+  <!-- focal points -->
+  <circle cx="172" cy="60" r="3" fill="#888"/>
+  <text x="172" y="56" text-anchor="middle" font-size="8" fill="#888">F</text>
+  <circle cx="88"  cy="60" r="3" fill="#888"/>
+  <text x="88"  y="56" text-anchor="middle" font-size="8" fill="#888">F</text>
+  <text x="20" y="108" font-size="8" fill="#888">1/f = 1/s + 1/s'  ·  m = −s'/s</text>
+ </svg>`,
+ caption:'Convex lens: rays parallel to axis converge at focal point F. Real inverted image forms on far side. 1/f=1/s+1/s\'.',
+ steps:['Apply Snell\'s law at every interface: n₁sinθ₁=n₂sinθ₂. Angles are measured from the normal, not the surface.','Total internal reflection occurs when light goes from dense to less-dense medium and θ > θ_critical = arcsin(n₂/n₁).','Mirror/lens equation: 1/f=1/s+1/s\'. Rearrange for the unknown. A positive s\' means real image (inverted, m<0).','For diverging lenses (f<0) or convex mirrors: the equation still works — just use negative f.','Magnification |m|>1 → image is enlarged; |m|<1 → reduced. m<0 → inverted; m>0 → upright.'],
+ example:'Convex lens f=20 cm, object at s=30 cm: 1/s\'=1/20−1/30=3/60−2/60=1/60. s\'=60 cm (real). m=−60/30=−2 (inverted, twice as tall). Snell: light enters glass (n=1.5) at 30°: sinθ₂=sin30°/1.5=0.333 → θ₂=19.5°.'},
+
+/* ── ELECTRICITY & MAGNETISM ────────────────────── */
+{cat:'Physics',tags:['physics','engineering'],
+ title:'Electricity: Coulomb, Electric Field, Capacitors & Circuits',
+ theory:'Electric charge creates electric fields and forces. Potential difference drives current through resistance. Capacitors store charge; the relationship Q=CV connects them. Kirchhoff\'s laws govern any circuit.',
+ reality:'AP Physics C: E&M, AP Physics 2 — electricity is half of the E&M curriculum. Coulomb\'s law, Gauss\'s law, and circuit analysis appear in every exam.',
+ formula:'Coulomb: F = kq₁q₂/r²  (k=9×10⁹ N·m²/C²)\nElectric field: E = kQ/r²  (from point charge)\nGauss: ∮E·dA = Q_enclosed/ε₀\nPotential: V = kQ/r  (J/C = V)\nCapacitor: Q = CV,  U = Q²/(2C) = ½CV²\nParallel plates: C = ε₀A/d\nOhm: V = IR\nPower: P = IV = I²R = V²/R\nSeries R: R_total = ΣRᵢ\nParallel R: 1/R = Σ(1/Rᵢ)\nKVL: Σ voltages around loop = 0\nKCL: Σ currents into node = 0',
+ method:'Gauss\'s law shortcut: for high-symmetry charge distributions (sphere, cylinder, plane) the flux integral reduces to E·(surface area) = Q_enclosed/ε₀. This gives E directly without integration.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Field lines around positive charge -->
+  <circle cx="70" cy="60" r="8" fill="rgba(201,160,96,.3)" stroke="#c9a060" stroke-width="2"/>
+  <text x="70" y="64" text-anchor="middle" font-size="9" fill="#c9a060" font-weight="700">+Q</text>
+  <line x1="80" y1="54" x2="102" y2="38" stroke="#c9a060" stroke-width="1.2"/>
+  <line x1="78" y1="60" x2="104" y2="60" stroke="#c9a060" stroke-width="1.2"/>
+  <line x1="80" y1="66" x2="102" y2="80" stroke="#c9a060" stroke-width="1.2"/>
+  <line x1="70" y1="52" x2="70" y2="28" stroke="#c9a060" stroke-width="1.2"/>
+  <line x1="60" y1="54" x2="38" y2="38" stroke="#c9a060" stroke-width="1.2"/>
+  <line x1="62" y1="60" x2="36" y2="60" stroke="#c9a060" stroke-width="1.2"/>
+  <text x="70" y="108" text-anchor="middle" font-size="8" fill="#888">E=kQ/r²  radially outward</text>
+  <!-- Capacitor -->
+  <line x1="150" y1="30" x2="150" y2="90" stroke="#7aabcf" stroke-width="3"/>
+  <line x1="170" y1="30" x2="170" y2="90" stroke="#7aabcf" stroke-width="3"/>
+  <line x1="130" y1="60" x2="150" y2="60" stroke="#888" stroke-width="1.5"/>
+  <line x1="170" y1="60" x2="190" y2="60" stroke="#888" stroke-width="1.5"/>
+  <text x="160" y="110" text-anchor="middle" font-size="8" fill="#7aabcf">C=ε₀A/d  Q=CV</text>
+  <!-- Series-parallel -->
+  <rect x="198" y="30" width="25" height="15" rx="3" fill="none" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="210" y="42" text-anchor="middle" font-size="8" fill="#7ab060">R₁</text>
+  <rect x="198" y="55" width="25" height="15" rx="3" fill="none" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="210" y="67" text-anchor="middle" font-size="8" fill="#7ab060">R₂</text>
+  <line x1="210" y1="30" x2="210" y2="20" stroke="#7ab060" stroke-width="1.2"/>
+  <line x1="210" y1="70" x2="210" y2="80" stroke="#7ab060" stroke-width="1.2"/>
+  <text x="210" y="95" text-anchor="middle" font-size="8" fill="#7ab060">parallel</text>
+ </svg>`,
+ caption:'Electric field lines point outward from positive charges. Parallel plate capacitor: E=σ/ε₀ between plates, uniform field.',
+ steps:['Coulomb\'s law gives force between two point charges; electric field E=F/q is the force per unit charge.','For multiple charges: E fields add as vectors (superposition) — compute x and y components separately.','Circuit analysis: identify series (same current) vs parallel (same voltage) connections.','KVL: sum of all voltage drops and rises around any closed loop = 0.','KCL: current into a node = current out. Use these to write equations for unknown currents.'],
+ example:'Two charges q₁=+2μC, q₂=−3μC, 0.3 m apart: F=9×10⁹·2×10⁻⁶·3×10⁻⁶/0.09=0.6 N (attractive). Capacitor C=10 μF, V=12 V: Q=120 μC, U=½·10⁻⁵·144=7.2×10⁻⁴ J.'},
+
+/* ── MAGNETISM & INDUCTION ──────────────────────── */
+{cat:'Physics',tags:['physics','engineering'],
+ title:'Magnetism: Lorentz Force, Biot-Savart & Induction',
+ theory:'Moving charges create magnetic fields. A magnetic field exerts force on moving charges (Lorentz force). Changing magnetic flux induces an EMF (Faraday\'s law) — the basis of every electric generator and transformer.',
+ reality:'AP Physics C: E&M, AP Physics 2 — magnetic force, magnetic field of wires, Faraday\'s law, and Lenz\'s law appear in both courses. The Lorentz force is used in mass spectrometers and cyclotrons.',
+ formula:'Lorentz force: F = qv×B  |F|=qvBsinθ\nBiot-Savart (long wire): B = μ₀I/(2πr)\nSolenoid: B = μ₀nI  (n=turns/length)\nMagnetic flux: Φ = B·A·cosθ\nFaraday: ε = −dΦ/dt = −N·dΦ/dt (N turns)\nLenz: induced current opposes the change in flux\nForce on wire: F = BIL·sinθ\nTransformer: V₁/V₂ = N₁/N₂  (ideal)',
+ method:'Lenz\'s law right-hand rule: point thumb in direction of increasing flux — induced current flows in the direction your curled fingers resist that change (always opposes the change). For the force on a moving charge: use F=qv×B with the right-hand rule.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Solenoid -->
+  <rect x="8" y="38" width="120" height="40" rx="5" fill="rgba(122,171,207,.08)" stroke="#7aabcf" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="8"  y1="38" x2="8"  y2="78" stroke="#7aabcf" stroke-width="2"/>
+  <line x1="128" y1="38" x2="128" y2="78" stroke="#7aabcf" stroke-width="2"/>
+  <text x="68" y="62" text-anchor="middle" font-size="8.5" fill="#7aabcf">B = μ₀nI →</text>
+  <line x1="24" y1="58" x2="104" y2="58" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="68" y="88" text-anchor="middle" font-size="8" fill="#888">Solenoid: uniform B inside</text>
+  <!-- Moving charge Lorentz -->
+  <line x1="148" y1="60" x2="210" y2="60" stroke="#c9a060" stroke-width="2"/>
+  <text x="215" y="64" font-size="8.5" fill="#c9a060" font-weight="700">v→</text>
+  <text x="190" y="44" font-size="8.5" fill="#7aabcf">⊗ B (into page)</text>
+  <line x1="183" y1="60" x2="183" y2="28" stroke="#c07070" stroke-width="2"/>
+  <text x="186" y="25" font-size="8" fill="#c07070">F=qvB ↑</text>
+  <circle cx="183" cy="60" r="5" fill="rgba(201,160,96,.3)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="183" y="64" text-anchor="middle" font-size="7" fill="#c9a060">q</text>
+  <!-- Faraday loop -->
+  <rect x="148" y="80" width="70" height="30" rx="4" fill="rgba(122,176,96,.10)" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="183" y="93" text-anchor="middle" font-size="8" fill="#7ab060">ε = −dΦ/dt</text>
+  <text x="183" y="106" text-anchor="middle" font-size="7.5" fill="#7ab060">Lenz opposes ΔΦ</text>
+ </svg>`,
+ caption:'Solenoid: uniform field inside B=μ₀nI. Lorentz force F=qvB⊥v and ⊥B. Faraday: changing flux induces EMF opposing the change.',
+ steps:['Lorentz force direction: use right-hand rule for positive charges (F=qv×B). For negative charges, reverse direction.','Magnetic force on a current-carrying wire: F=BIL·sinθ. Two parallel wires carrying current attract if in same direction, repel if opposite.','Magnetic flux Φ=BAcosθ — only the component of B perpendicular to the area matters.','Faraday\'s law: EMF=−dΦ/dt. A changing B, changing area, or rotation all change flux.','Transformer: ideal → V₁/V₂=N₁/N₂ and I₁/I₂=N₂/N₁ (power conserved: V₁I₁=V₂I₂).'],
+ example:'Solenoid n=1000 turns/m, I=2 A: B=4π×10⁻⁷·1000·2≈2.51×10⁻³ T. Loop area=0.05 m², B changes from 0.2 to 0.5 T in 0.1 s: ε=−(0.5−0.2)·0.05/0.1=−0.15 V. Transformer 220 V/110 V: N₁/N₂=2. If I₁=1 A, then I₂=2 A.'},
+
+/* ── RELATIVITY & QUANTUM ───────────────────────── */
+{cat:'Physics',tags:['physics','science'],
+ title:'Special Relativity, Quantum Physics & Nuclear Basics',
+ theory:'At speeds approaching c, Newtonian mechanics fails. Special relativity introduces time dilation, length contraction, and E=mc². Quantum mechanics governs sub-atomic scales where energy is quantised and wave-particle duality holds.',
+ reality:'AP Physics C (E=mc² context), CLEP Natural Sciences, nuclear engineering — these topics connect classical physics to modern physics and explain energy from nuclear reactions.',
+ formula:'Lorentz factor: γ = 1/√(1−v²/c²)\nTime dilation: Δt = γΔt₀\nLength contraction: L = L₀/γ\nMass-energy: E = mc²  (rest energy)\nRelativistic KE: K = (γ−1)mc²\nPhotoelectric: E = hf − W  (h=6.63×10⁻³⁴ J·s)\nDe Broglie: λ = h/mv = h/p\nHeisenberg: Δx·Δp ≥ h/(4π)\nBohr hydrogen: Eₙ = −13.6/n²  eV\nRadioactive decay: N = N₀e^(−λt)\nHalf-life: T½ = ln2/λ',
+ method:'Radioactive decay: activity A=λN. After n half-lives, N=N₀/2ⁿ. For carbon dating or half-life problems, identify initial amount, current amount, and solve for t using N=N₀e^(−λt) with λ=ln2/T½.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Photoelectric -->
+  <rect x="4" y="8" width="118" height="106" rx="7" fill="rgba(122,171,207,.06)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="63" y="22" text-anchor="middle" font-size="8.5" fill="#7aabcf" font-weight="700">Photoelectric Effect</text>
+  <rect x="16" y="60" width="88" height="40" rx="4" fill="rgba(122,171,207,.12)" stroke="#7aabcf" stroke-width="1"/>
+  <text x="60" y="84" text-anchor="middle" font-size="8.5" fill="#9ecef0">Metal surface</text>
+  <line x1="34" y1="32" x2="34" y2="60" stroke="#c9a060" stroke-width="2"/>
+  <line x1="50" y1="32" x2="50" y2="60" stroke="#c9a060" stroke-width="2"/>
+  <text x="60" y="30" text-anchor="middle" font-size="8" fill="#c9a060">hf photons</text>
+  <line x1="60" y1="60" x2="80" y2="40" stroke="#7ab060" stroke-width="2"/>
+  <text x="84" y="38" font-size="8" fill="#7ab060">e⁻</text>
+  <text x="14" y="106" font-size="8" fill="#888">KE=hf−W</text>
+  <!-- Decay curve -->
+  <rect x="138" y="8" width="118" height="106" rx="7" fill="rgba(201,160,96,.06)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="197" y="22" text-anchor="middle" font-size="8.5" fill="#c9a060" font-weight="700">Radioactive Decay</text>
+  <line x1="148" y1="100" x2="248" y2="100" stroke="#444" stroke-width="1"/>
+  <line x1="148" y1="28" x2="148" y2="104" stroke="#444" stroke-width="1"/>
+  <path d="M148 32 Q168 32 178 52 Q188 72 198 80 Q218 88 248 94" fill="none" stroke="#c9a060" stroke-width="2.5"/>
+  <line x1="148" y1="62" x2="178" y2="62" stroke="#c07070" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="178" y1="62" x2="178" y2="100" stroke="#c07070" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="163" y="58" font-size="8" fill="#c07070">T½</text>
+  <text x="163" y="96" font-size="8" fill="#c07070">N₀/2</text>
+  <text x="148" y="116" font-size="7.5" fill="#888">N=N₀e^(−λt), T½=ln2/λ</text>
+ </svg>`,
+ caption:'Photoelectric: photon energy hf must exceed work function W to eject electron. Decay: exponential decrease, halving every T½.',
+ steps:['Lorentz factor γ≥1; at v=0, γ=1 (no relativistic effects). At v=0.99c, γ≈7.','Time dilation: moving clocks run slow. Δt=γΔt₀ — proper time Δt₀ is measured in the rest frame.','Photoelectric: incident photon must have f>f_threshold. Extra energy goes into kinetic energy of ejected electron.','De Broglie: all matter has wave properties. λ=h/p — significant only for very small masses (electrons, not baseballs).','Radioactive decay: identify T½ from problem, compute λ=ln2/T½, then apply N=N₀e^(−λt) or use N₀/2ⁿ for integer n half-lives.'],
+ example:'Carbon-14 T½=5730 years. Fossil has 25% of original C-14: N/N₀=0.25=e^(−λt). ln(0.25)=−λt → t=2·T½=11,460 years (since 0.25=(1/2)²). Photoelectric: hf=6.63×10⁻³⁴·8×10¹⁴=5.3×10⁻¹⁹ J. W=2 eV=3.2×10⁻¹⁹ J. KE=5.3−3.2=2.1×10⁻¹⁹ J.'},
+
+/* ── GRAVITATIONAL FIELD ────────────────────────── */
+{cat:'Physics',tags:['physics','engineering'],
+ title:'Gravitational Field, Kepler\'s Laws & Orbital Mechanics',
+ theory:'Newton\'s law of universal gravitation gives the force between any two masses. Kepler\'s three laws describe planetary motion. Conservation of energy and angular momentum fully determine orbital mechanics.',
+ reality:'AP Physics C Mechanics, AP Physics 1 — Kepler\'s laws and orbital speed are tested. Satellites, escape velocity, and gravitational potential energy appear in FRQ problems.',
+ formula:'Newton: F = Gm₁m₂/r²  (G=6.67×10⁻¹¹ N·m²/kg²)\nGravitational field: g = GM/r²\nGravitational PE: U = −GMm/r\nOrbital speed: v = √(GM/r)\nEscape velocity: v_e = √(2GM/r)\nKepler 1st: elliptical orbits, Sun at focus\nKepler 2nd: equal areas in equal times (L conserved)\nKepler 3rd: T² ∝ r³  →  T²=4π²r³/(GM)',
+ method:'For satellite orbit problems: set gravitational force equal to centripetal force. GMm/r²=mv²/r → v=√(GM/r). This gives orbital speed at any radius. Total orbital energy = KE+PE = −GMm/(2r) — always negative for a bound orbit.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Elliptical orbit -->
+  <ellipse cx="120" cy="62" rx="95" ry="50" fill="none" stroke="#7aabcf" stroke-width="2"/>
+  <!-- Sun at focus -->
+  <circle cx="82" cy="62" r="8" fill="rgba(201,160,96,.5)" stroke="#c9a060" stroke-width="2"/>
+  <text x="82" y="66" text-anchor="middle" font-size="7.5" fill="#c9a060">☉</text>
+  <!-- Satellite positions -->
+  <circle cx="215" cy="62" r="5" fill="rgba(122,171,207,.5)" stroke="#7aabcf" stroke-width="1.5"/>
+  <circle cx="25"  cy="62" r="5" fill="rgba(122,171,207,.5)" stroke="#7aabcf" stroke-width="1.5"/>
+  <!-- Kepler 2nd law areas -->
+  <path d="M82 62 L215 62 A95 50 0 0 0 200 25 Z" fill="rgba(122,176,96,.15)" stroke="none"/>
+  <path d="M82 62 L25  62 A95 50 0 0 1 60  25 Z" fill="rgba(192,112,112,.15)" stroke="none"/>
+  <text x="182" y="52" font-size="7.5" fill="#7ab060">equal</text>
+  <text x="38"  y="48" font-size="7.5" fill="#c07070">areas</text>
+  <text x="120" y="118" text-anchor="middle" font-size="8" fill="#888">T²∝r³  ·  v=√(GM/r)  ·  v_e=√(2GM/r)</text>
+ </svg>`,
+ caption:'Kepler 2nd law: equal shaded areas swept in equal times (same orbit). Perihelion (close) → fast; aphelion (far) → slow.',
+ steps:['Gravitational force follows inverse-square law: doubling the distance → ¼ the force.','Orbital speed: set F_grav = F_centripetal → GMm/r²=mv²/r → v=√(GM/r). Speed decreases with larger orbit.','Kepler\'s 3rd law: T²/r³=4π²/(GM) — same constant for all satellites orbiting the same central body.','Escape velocity: v_e=√(2GM/r) — set total energy to zero (KE+PE=0). At Earth\'s surface ≈11.2 km/s.','Gravitational PE is negative: U=−GMm/r. As r→∞, U→0. Binding energy = |U|−KE = GMm/(2r).'],
+ example:'Geostationary orbit (T=24 h=86400 s): r³=GMT²/(4π²)=6.67×10⁻¹¹·6×10²⁴·(86400)²/(4π²). r≈4.2×10⁷ m ≈ 42,000 km. Orbital speed: v=√(6.67×10⁻¹¹·6×10²⁴/4.2×10⁷)≈3.07 km/s.'},
+
+/* ══════════════════════════════════════════════════
+   CHEMISTRY — new cards from Chemistry handbook
+══════════════════════════════════════════════════ */
+
+/* ── ATOMIC STRUCTURE & PERIODIC TABLE ─────────── */
+{cat:'Chemistry',tags:['chemistry','physics','science'],
+ title:'Atomic Structure, Electronic Configuration & Periodic Trends',
+ theory:'The atom\'s electronic structure determines all chemical behaviour. Electrons fill orbitals by three rules: Aufbau (lowest energy first), Pauli exclusion (max 2 electrons per orbital with opposite spins), and Hund\'s rule (maximise parallel spins before pairing).',
+ reality:'AP Chemistry — atomic structure and periodic trends appear in every exam. Electron configuration connects to bonding, reactivity, and spectroscopy.',
+ formula:'Atomic number Z = number of protons\nMass number A = protons + neutrons\nElectronic config: 1s² 2s² 2p⁶ 3s² 3p⁶...\nMax electrons per sublevel: s=2, p=6, d=10, f=14\nBohr energy: Eₙ = −13.6/n² eV (hydrogen)\nRydberg: 1/λ = Rₕ(1/n₁² − 1/n₂²)\nIonisation energy trend: increases → across period, ↓ down group\nAtomic radius trend: decreases → across period, ↑ down group\nElectronegativity: increases → and ↑ (except noble gases)',
+ method:'Electron configuration shortcut: use the noble gas core in brackets, then continue from after it. For transition metals, remember Cr=[Ar]3d⁵4s¹ and Cu=[Ar]3d¹⁰4s¹ (half-filled and fully-filled d shells are extra stable).',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Periodic table trends arrows -->
+  <rect x="10" y="10" width="240" height="96" rx="8" fill="rgba(122,171,207,.06)" stroke="#7aabcf" stroke-width="1.5"/>
+  <!-- Simplified periodic table block -->
+  <text x="130" y="26" text-anchor="middle" font-size="9" fill="#7aabcf" font-weight="700">Periodic Trends</text>
+  <!-- Period arrow (left to right) -->
+  <line x1="30" y1="50" x2="200" y2="50" stroke="#c9a060" stroke-width="2.5"/>
+  <polygon points="200,46 210,50 200,54" fill="#c9a060"/>
+  <text x="120" y="44" text-anchor="middle" font-size="8.5" fill="#c9a060">→ IE ↑  radius ↓  EN ↑</text>
+  <!-- Group arrow (top to bottom) -->
+  <line x1="228" y1="30" x2="228" y2="96" stroke="#c07070" stroke-width="2.5"/>
+  <polygon points="224,96 228,106 232,96" fill="#c07070"/>
+  <text x="228" y="26" text-anchor="middle" font-size="8" fill="#c07070">↓</text>
+  <text x="246" y="65" font-size="8" fill="#c07070" transform="rotate(90,228,65)">IE ↓  radius ↑</text>
+  <!-- Orbital filling -->
+  <text x="25" y="72" font-size="8" fill="#7ab060">Aufbau: 1s 2s 2p 3s 3p 4s 3d 4p...</text>
+  <text x="25" y="86" font-size="8" fill="#9ecef0">Pauli: max 2 e⁻/orbital (↑↓)</text>
+  <text x="25" y="100" font-size="8" fill="#c9a060">Hund: fill empty first (↑↑↑ before ↑↓)</text>
+ </svg>`,
+ caption:'Trends across period: IE and EN increase, radius decreases. Down a group: opposite. Orbital filling follows Aufbau, Pauli, Hund.',
+ steps:['Write electron configuration: fill sublevels in Aufbau order (1s 2s 2p 3s 3p 4s 3d...).','Use noble gas core shorthand: Na=[Ne]3s¹ (Ne ends at Z=10, Na adds one 3s electron).','Note exceptions: Cr=[Ar]3d⁵4s¹ and Cu=[Ar]3d¹⁰4s¹ — half-filled and full d shells gain extra stability.','Periodic trends: ionisation energy increases left→right (nuclear charge increases, same shielding); decreases top→bottom (more shielding, larger radius).','Electronegativity highest at F (3.98); increases across periods and up groups following the same logic as IE.'],
+ example:'Fe (Z=26): [Ar]3d⁶4s². Fe²⁺ loses 4s first: [Ar]3d⁶. Fe³⁺: [Ar]3d⁵. Rydberg: light emitted when H transitions n=3→n=2: 1/λ=1.097×10⁷(1/4−1/9)=1.524×10⁶ m⁻¹ → λ=656 nm (red, visible).'},
+
+/* ── CHEMICAL BONDING ───────────────────────────── */
+{cat:'Chemistry',tags:['chemistry','science'],
+ title:'Chemical Bonding: Ionic, Covalent, VSEPR & Hybridisation',
+ theory:'Chemical bonds form when atoms achieve lower energy states. Ionic bonds transfer electrons; covalent bonds share them. VSEPR theory predicts molecular geometry from electron pairs; hybridisation explains orbital mixing.',
+ reality:'AP Chemistry — bonding, Lewis structures, VSEPR, and polarity appear in the first third of every AP Chem exam. Hybridisation connects bonding to molecular geometry and physical properties.',
+ formula:'Ionic: Δ electronegativity > 1.7 → ionic\nCovalent: ΔEN < 1.7 → covalent (< 0.5 nonpolar)\nBond order = (bonding e⁻ − antibonding e⁻)/2\nFormal charge = valence e⁻ − lone e⁻ − ½ bonding e⁻\nVSEPR pairs → geometry:\n  2 → linear (180°)\n  3 → trigonal planar (120°)\n  4 → tetrahedral (109.5°)\n  5 → trigonal bipyramidal\n  6 → octahedral (90°)\nHybridisation: sp(2 regions), sp²(3), sp³(4)\nσ bond: head-on overlap; π bond: side-on',
+ method:'Lewis structure method: (1) count total valence electrons, (2) connect atoms with single bonds, (3) fill octets on outer atoms first, (4) give remaining electrons to central atom, (5) convert lone pairs to multiple bonds if central atom lacks octet. Minimise formal charges.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="4" width="118" height="110" rx="7" fill="rgba(122,171,207,.06)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="63" y="18" text-anchor="middle" font-size="8.5" fill="#7aabcf" font-weight="700">VSEPR Geometries</text>
+  <!-- Linear -->
+  <circle cx="28" cy="36" r="7" fill="rgba(122,171,207,.3)" stroke="#7aabcf" stroke-width="1"/>
+  <circle cx="63" cy="36" r="7" fill="rgba(201,160,96,.3)" stroke="#c9a060" stroke-width="1.5"/>
+  <circle cx="98" cy="36" r="7" fill="rgba(122,171,207,.3)" stroke="#7aabcf" stroke-width="1"/>
+  <line x1="35" y1="36" x2="56" y2="36" stroke="#888" stroke-width="1.5"/>
+  <line x1="70" y1="36" x2="91" y2="36" stroke="#888" stroke-width="1.5"/>
+  <text x="63" y="52" text-anchor="middle" font-size="8" fill="#888">linear 180°</text>
+  <!-- Tetrahedral -->
+  <circle cx="63" cy="78" r="7" fill="rgba(201,160,96,.3)" stroke="#c9a060" stroke-width="1.5"/>
+  <circle cx="32" cy="68" r="5" fill="rgba(192,112,112,.3)" stroke="#c07070" stroke-width="1"/>
+  <circle cx="94" cy="68" r="5" fill="rgba(192,112,112,.3)" stroke="#c07070" stroke-width="1"/>
+  <circle cx="45" cy="98" r="5" fill="rgba(192,112,112,.3)" stroke="#c07070" stroke-width="1"/>
+  <circle cx="81" cy="98" r="5" fill="rgba(192,112,112,.3)" stroke="#c07070" stroke-width="1"/>
+  <line x1="57" y1="73" x2="37" y2="70" stroke="#888" stroke-width="1.2"/>
+  <line x1="69" y1="73" x2="89" y2="70" stroke="#888" stroke-width="1.2"/>
+  <line x1="58" y1="83" x2="48" y2="95" stroke="#888" stroke-width="1.2"/>
+  <line x1="68" y1="83" x2="78" y2="95" stroke="#888" stroke-width="1.2"/>
+  <text x="63" y="112" text-anchor="middle" font-size="8" fill="#888">tetrahedral 109.5°</text>
+  <!-- Right panel: hybridisation -->
+  <rect x="134" y="4" width="122" height="110" rx="7" fill="rgba(201,160,96,.06)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="195" y="18" text-anchor="middle" font-size="8.5" fill="#c9a060" font-weight="700">Hybridisation</text>
+  <text x="142" y="34" font-size="8" fill="#d4b87a">sp  → 2 σ bonds, linear</text>
+  <text x="142" y="48" font-size="8" fill="#d4b87a">sp² → 3 σ bonds, 1 π bond</text>
+  <text x="142" y="62" font-size="8" fill="#d4b87a">sp³ → 4 σ bonds, tetrahedral</text>
+  <text x="142" y="78" font-size="8" fill="#c9a060">σ bonds: overlap along axis</text>
+  <text x="142" y="92" font-size="8" fill="#c9a060">π bonds: side-on, above/below</text>
+  <text x="142" y="106" font-size="8" fill="#888">C₂H₂: sp  C₂H₄: sp²  CH₄: sp³</text>
+ </svg>`,
+ caption:'VSEPR: electron pairs (bonding + lone) repel → geometry. Lone pairs compress angles. sp³=tetrahedral, sp²=trigonal planar.',
+ steps:['Count total valence electrons from the periodic table, accounting for charge (add e⁻ for negative, subtract for positive).','Draw skeleton with central atom; connect all atoms with single bonds.','Distribute remaining electrons to outer atoms to complete octets; place leftover on central atom.','Determine electron pair geometry (all pairs) and molecular geometry (bonding pairs only).','Assign hybridisation: count electron pair regions around central atom → sp(2), sp²(3), sp³(4), sp³d(5), sp³d²(6).'],
+ example:'CO₂: C has 4 valence e⁻, each O has 6 → total=16. C connects to 2 O (4 e⁻ used). Each O needs 4 more → 8 lone pair e⁻. But C has 0 — promote lone pairs to double bonds. Result: O=C=O, 2 regions → sp hybridisation, linear, 180°. Nonpolar (symmetric).'},
+
+/* ── CHEMICAL REACTIONS & STOICHIOMETRY ─────────── */
+{cat:'Chemistry',tags:['chemistry','science'],
+ title:'Reaction Types, Balancing, Redox & Electrochemistry',
+ theory:'Chemical equations must be balanced (atoms and charge). Redox reactions involve electron transfer — oxidation is electron loss, reduction is electron gain (OIL RIG). Electrochemistry quantifies the electrical energy of redox reactions.',
+ reality:'AP Chemistry — balancing equations, identifying redox, and calculating cell potential and electrolysis appear in every AP Chem exam. Faraday\'s laws connect electrochemistry to stoichiometry.',
+ formula:'Balancing: atoms and charge equal on both sides\nOxidation state rules:\n  free element = 0; monoatomic ion = charge\n  O usually −2; H usually +1; F always −1\nOIL RIG: Oxidation Is Loss, Reduction Is Gain\nCell potential: E°cell = E°cathode − E°anode\nΔG° = −nFE°  (F=96,485 C/mol)\nNernst: E = E° − (RT/nF)·lnQ\nElectrolysis: m = (M·I·t)/(n·F)  (Faraday\'s law)\nActivity series: more active metal displaces less active',
+ method:'Half-reaction method for balancing redox in acidic solution: (1) separate into oxidation and reduction half-reactions, (2) balance atoms (use H₂O for O, H⁺ for H), (3) balance charge with electrons, (4) multiply to equalise electrons transferred, (5) add half-reactions and cancel electrons.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Galvanic cell diagram -->
+  <rect x="10" y="18" width="100" height="80" rx="6" fill="rgba(122,171,207,.08)" stroke="#7aabcf" stroke-width="1.5"/>
+  <rect x="150" y="18" width="100" height="80" rx="6" fill="rgba(201,160,96,.08)" stroke="#c9a060" stroke-width="1.5"/>
+  <!-- electrodes -->
+  <rect x="40" y="28" width="12" height="58" rx="3" fill="rgba(192,112,112,.25)" stroke="#c07070" stroke-width="1.5"/>
+  <text x="46" y="24" text-anchor="middle" font-size="8" fill="#c07070">Anode</text>
+  <text x="46" y="96" text-anchor="middle" font-size="7.5" fill="#c07070">oxidation</text>
+  <rect x="208" y="28" width="12" height="58" rx="3" fill="rgba(122,176,96,.25)" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="214" y="24" text-anchor="middle" font-size="8" fill="#7ab060">Cathode</text>
+  <text x="214" y="96" text-anchor="middle" font-size="7.5" fill="#7ab060">reduction</text>
+  <!-- electron flow -->
+  <path d="M52 28 Q130 4 208 28" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="130" y="10" text-anchor="middle" font-size="8" fill="#888">e⁻ flow →</text>
+  <!-- salt bridge -->
+  <rect x="108" y="30" width="44" height="24" rx="4" fill="rgba(128,128,128,.2)" stroke="#888" stroke-width="1.5"/>
+  <text x="130" y="46" text-anchor="middle" font-size="8" fill="#888">salt bridge</text>
+  <text x="60" y="60" text-anchor="middle" font-size="8" fill="#7aabcf">Zn→Zn²⁺</text>
+  <text x="200" y="60" text-anchor="middle" font-size="8" fill="#7ab060">Cu²⁺→Cu</text>
+  <text x="130" y="108" text-anchor="middle" font-size="8" fill="#888">E°cell = E°cathode − E°anode = 0.34−(−0.76) = 1.10 V</text>
+ </svg>`,
+ caption:'Galvanic cell: electrons flow from anode (oxidation, −) to cathode (reduction, +). Salt bridge maintains charge balance.',
+ steps:['Assign oxidation states to all atoms. Identify what is oxidised (OS increases) and reduced (OS decreases).','Write separate half-reactions. Balance atoms, then balance oxygen with H₂O, hydrogen with H⁺.','Balance charge with electrons (e⁻). Multiply half-reactions so electrons cancel when added.','Add half-reactions; cancel electrons and anything appearing on both sides.','For cell potential: E°cell=E°cathode−E°anode. Positive E°cell → spontaneous. ΔG°=−nFE°.'],
+ example:'Zn/Cu galvanic cell: Anode: Zn→Zn²⁺+2e⁻ (E°=−0.76 V). Cathode: Cu²⁺+2e⁻→Cu (E°=+0.34 V). E°cell=0.34−(−0.76)=+1.10 V. ΔG°=−2·96485·1.10=−212,270 J=−212.3 kJ. Spontaneous ✓'},
+
+/* ── ORGANIC CHEMISTRY ──────────────────────────── */
+{cat:'Chemistry',tags:['chemistry','science'],
+ title:'Organic Chemistry: Functional Groups, Reactions & Nomenclature',
+ theory:'Organic chemistry studies carbon compounds. Carbon\'s four bonds and ability to chain give rise to millions of compounds. Functional groups determine reactivity; IUPAC nomenclature provides systematic names.',
+ reality:'AP Chemistry — organic chemistry appears at the end of the AP curriculum and in FRQ problems about reaction predictions and mechanisms. Identifying functional groups from names and structures is essential.',
+ formula:'Alkane: CₙH₂ₙ₊₂  (only C−C single bonds)\nAlkene: CₙH₂ₙ   (C=C double bond)\nAlkyne: CₙH₂ₙ₋₂ (C≡C triple bond)\nKey functional groups:\n  −OH: alcohol\n  −COOH: carboxylic acid\n  −COO−: ester\n  −CO−: ketone; −CHO: aldehyde\n  −NH₂: amine\nCombustion: CₓHᵧ + O₂ → CO₂ + H₂O\nAddition (alkene): Br₂ adds across C=C\nSaponification: ester + NaOH → acid salt + alcohol',
+ method:'IUPAC naming: (1) find the longest carbon chain containing the principal functional group, (2) number from the end closest to the functional group, (3) name substituents as prefixes with their position numbers. Suffix for functional group: -ol, -al, -one, -oic acid, -amine.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="4" width="252" height="110" rx="8" fill="rgba(122,176,96,.05)" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="130" y="18" text-anchor="middle" font-size="9" fill="#7ab060" font-weight="700">Key Functional Groups</text>
+  <!-- Alcohol -->
+  <text x="22" y="36" font-size="8.5" fill="#7aabcf" font-weight="700">−OH</text>
+  <text x="22" y="48" font-size="8" fill="#9ecef0">Alcohol</text>
+  <text x="22" y="58" font-size="7.5" fill="#888">polar, H-bond</text>
+  <!-- Carboxylic acid -->
+  <text x="80" y="36" font-size="8.5" fill="#c9a060" font-weight="700">−COOH</text>
+  <text x="80" y="48" font-size="8" fill="#d4b87a">Carboxylic acid</text>
+  <text x="80" y="58" font-size="7.5" fill="#888">acidic, H-bond</text>
+  <!-- Amine -->
+  <text x="160" y="36" font-size="8.5" fill="#c07070" font-weight="700">−NH₂</text>
+  <text x="160" y="48" font-size="8" fill="#c07070">Amine</text>
+  <text x="160" y="58" font-size="7.5" fill="#888">basic</text>
+  <!-- Ester -->
+  <text x="22" y="80" font-size="8.5" fill="#7ab060" font-weight="700">−COO−</text>
+  <text x="22" y="92" font-size="8" fill="#a0c888">Ester</text>
+  <text x="22" y="102" font-size="7.5" fill="#888">fragrant</text>
+  <!-- Aldehyde/Ketone -->
+  <text x="100" y="80" font-size="8.5" fill="#a060c0" font-weight="700">C=O</text>
+  <text x="100" y="92" font-size="8" fill="#a060c0">Carbonyl</text>
+  <text x="100" y="102" font-size="7.5" fill="#888">aldehyde (end)</text>
+  <text x="100" y="112" font-size="7.5" fill="#888">ketone (middle)</text>
+  <!-- Alkene/Alkyne -->
+  <text x="180" y="80" font-size="8.5" fill="#c9a060" font-weight="700">C=C / C≡C</text>
+  <text x="180" y="92" font-size="8" fill="#d4b87a">Alkene/Alkyne</text>
+  <text x="180" y="102" font-size="7.5" fill="#888">addition rxns</text>
+ </svg>`,
+ caption:'Functional groups determine reactivity and physical properties. The carbonyl group (C=O) is found in aldehydes, ketones, esters, and carboxylic acids.',
+ steps:['Identify the functional group from the molecular formula or structure — it determines the compound type and reactions.','For IUPAC naming: find the parent chain (longest containing the principal group), number to give the group the lowest number, name substituents alphabetically with position numbers.','Alkene reactions: electrophilic addition. HX adds by Markovnikov\'s rule (H adds to less substituted C).','Alcohol oxidation: primary → aldehyde → carboxylic acid; secondary → ketone; tertiary → cannot be oxidised easily.','Ester formation: carboxylic acid + alcohol → ester + H₂O (condensation reaction). Saponification reverses this with NaOH.'],
+ example:'Ethanol (CH₃CH₂OH) oxidised by K₂Cr₂O₇: primary alcohol → ethanal (acetaldehyde, CH₃CHO) → ethanoic acid (acetic acid, CH₃COOH). Saponification: ethyl acetate + NaOH → sodium acetate + ethanol.'},
+
+/* ── NUCLEAR & RADIOACTIVITY ────────────────────── */
+{cat:'Chemistry',tags:['chemistry','physics','science'],
+ title:'Nuclear Chemistry: Radioactivity, Decay & Nuclear Energy',
+ theory:'Unstable nuclei emit radiation to achieve stability. Nuclear reactions involve changes to the nucleus itself — unlike chemical reactions which only involve electrons. The energy released from mass defect (E=mc²) is millions of times greater than chemical energy.',
+ reality:'AP Chemistry and AP Physics — nuclear reactions, half-life calculations, and applications of radioactivity (carbon dating, medical applications, nuclear energy) are tested in both courses.',
+ formula:'Alpha: ᴬZX → ᴬ⁻⁴Z⁻₂Y + ⁴₂He\nBeta⁻: ᴬZX → ᴬZ+1Y + e⁻ + ν̄_e\nBeta⁺: ᴬZX → ᴬZ-1Y + e⁺ + νe\nGamma: nucleus loses energy as γ ray (no mass/charge change)\nBinding energy: E_b = Δm·c²  (Δm=mass defect)\nN(t) = N₀·e^(−λt)\nT½ = ln2/λ ≈ 0.693/λ\nActivity: A = λN  (Bq = decays/s)\nFission: heavy nucleus splits (U-235, Pu-239)\nFusion: light nuclei combine (H→He in stars)',
+ method:'Conservation laws in nuclear reactions: atomic number Z (proton number) and mass number A are both conserved. Always check that ΣZ and ΣA are equal on both sides of the nuclear equation. Use mass defect to calculate energy released.',
+ svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nuclear decay types -->
+  <rect x="4" y="4" width="252" height="56" rx="7" fill="rgba(192,112,112,.06)" stroke="#c07070" stroke-width="1.5"/>
+  <text x="130" y="18" text-anchor="middle" font-size="8.5" fill="#c07070" font-weight="700">Radiation Types</text>
+  <!-- Alpha -->
+  <rect x="16" y="26" width="60" height="26" rx="5" fill="rgba(201,160,96,.15)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="46" y="37" text-anchor="middle" font-size="8.5" fill="#c9a060" font-weight="700">α alpha</text>
+  <text x="46" y="48" text-anchor="middle" font-size="7.5" fill="#d4b87a">⁴₂He, −2Z −4A</text>
+  <!-- Beta -->
+  <rect x="100" y="26" width="60" height="26" rx="5" fill="rgba(122,171,207,.15)" stroke="#7aabcf" stroke-width="1.5"/>
+  <text x="130" y="37" text-anchor="middle" font-size="8.5" fill="#7aabcf" font-weight="700">β beta</text>
+  <text x="130" y="48" text-anchor="middle" font-size="7.5" fill="#9ecef0">e⁻ or e⁺, ±1Z</text>
+  <!-- Gamma -->
+  <rect x="184" y="26" width="60" height="26" rx="5" fill="rgba(122,176,96,.15)" stroke="#7ab060" stroke-width="1.5"/>
+  <text x="214" y="37" text-anchor="middle" font-size="8.5" fill="#7ab060" font-weight="700">γ gamma</text>
+  <text x="214" y="48" text-anchor="middle" font-size="7.5" fill="#a0c888">photon, no ΔZ ΔA</text>
+  <!-- Fission diagram -->
+  <circle cx="60" cy="90" r="14" fill="rgba(192,112,112,.18)" stroke="#c07070" stroke-width="2"/>
+  <text x="60" y="87" text-anchor="middle" font-size="7.5" fill="#c07070">U-235</text>
+  <text x="60" y="97" text-anchor="middle" font-size="7" fill="#c07070">+n</text>
+  <line x1="76" y1="90" x2="94" y2="80" stroke="#888" stroke-width="1.5"/>
+  <line x1="76" y1="90" x2="94" y2="100" stroke="#888" stroke-width="1.5"/>
+  <circle cx="104" cy="78" r="9" fill="rgba(122,171,207,.2)" stroke="#7aabcf" stroke-width="1.5"/>
+  <circle cx="104" cy="102" r="9" fill="rgba(201,160,96,.2)" stroke="#c9a060" stroke-width="1.5"/>
+  <text x="104" y="81" text-anchor="middle" font-size="6.5" fill="#7aabcf">Ba-141</text>
+  <text x="104" y="105" text-anchor="middle" font-size="6.5" fill="#c9a060">Kr-92</text>
+  <text x="115" y="90" font-size="8" fill="#c07070">+3n+E</text>
+  <text x="160" y="80" font-size="8.5" fill="#7ab060">Fusion: H+H→He</text>
+  <text x="160" y="93" font-size="8" fill="#a0c888">Stars, H-bomb</text>
+  <text x="160" y="106" font-size="8" fill="#888">E=Δmc² enormous</text>
+ </svg>`,
+ caption:'Alpha: loses ⁴He (−2Z, −4A). Beta: neutron→proton (−, +1Z) or proton→neutron (+, −1Z). Fission splits heavy nuclei; fusion joins light ones.',
+ steps:['Identify decay type from context or the change in Z and A.','Write balanced nuclear equation: ΣZ left = ΣZ right; ΣA left = ΣA right.','For half-life: determine what fraction of original material remains, then n=log₂(N₀/N) half-lives have passed.','Mass defect: Δm = (mass of nucleons separate) − (actual nuclear mass). E_b=Δm·c².','Applications: carbon-14 dating (T½=5730 yr, biological material), uranium-235 fission (nuclear power), iodine-131 (medical imaging).'],
+ example:'²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He. Check: Z: 92=90+2 ✓, A: 238=234+4 ✓. Radioactive iodine I-131, T½=8 days. After 24 days (3 half-lives): N=N₀/2³=N₀/8=12.5% remains. Fission: 1 kg U-235 releases energy equivalent to ~20,000 tonnes of TNT.'}
+
+
 ];
 
 function stemFilter(cat){
@@ -2604,7 +3706,7 @@ function downloadCurrentHTML(){
 
 function renderSTEM(){
   document.getElementById('pos-label').textContent='STEM Formula Lab';
-  const cats=['All','Quick Start','Arithmetic','All Algebra','Analytic Geometry','All Geometry','Trigonometry','Differential Calculus','Integral Calculus','Linear Algebra','Differential Equations','Statistics + Data','Chemistry','Physics','Finance','Engineering','Conversions','Daily Use'];
+  const cats=['All','Problem-Solving','Numbers & Operations','Algebra','Coordinate Geometry','Geometry','Trigonometry','Derivatives & Limits','Integration','Matrices & Vectors','Complex Numbers','ODEs','Statistics','Chemistry','Physics','Finance & Commerce','Engineering & Statics','Unit Conversions','Everyday Math'];
   document.getElementById('main-content').innerHTML=`
 <div class="card">
   <div class="stem-title">STEM Formula Lab</div>
@@ -2934,7 +4036,7 @@ function answerQuiz(opt){
 const QUIZ_CATS=[
   {id:'alphabet',label:'Alphabet'},
   {id:'morphemes',label:'Morphemes'},
-  {id:'arithmetic',label:'Arithmetic'},
+  {id:'arithmetic',label:'Numbers & Operations'},
   {id:'algebra',label:'Algebra'},
   {id:'geometry',label:'Geometry'},
   {id:'calculus',label:'Calculus'},
