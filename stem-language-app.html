@@ -222,16 +222,21 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <button class="btn download-app" onclick="downloadCurrentHTML()" title="Download this app as an HTML file">Download</button>
   </div>
   <div class="mode-bar" role="tablist" aria-label="Study modes">
-    <button class="mode-btn active" onclick="setMode('explore')" id="mode-explore" title="Per-letter alphabet view">Alphabet</button>
-    <button class="mode-btn" onclick="setMode('vocab')" id="mode-vocab" title="Per-letter vocabulary">Vocab</button>
-    <button class="mode-btn" onclick="setMode('quiz')" id="mode-quiz" title="Per-letter quiz">Quiz</button>
-    <button class="mode-btn" onclick="setMode('morph')" id="mode-morph" title="Per-letter morphemes">Morphemes</button>
+    <button class="mode-btn active" onclick="setMode('explore')" id="mode-explore" title="Alphabet view">Alphabet</button>
+    <button class="mode-btn" onclick="setMode('vocab')" id="mode-vocab" title="Vocabulary">Vocab</button>
+    <button class="mode-btn" onclick="setMode('morph')" id="mode-morph" title="Morphemes">Morphemes</button>
+    
+    
     <span class="mode-divider" aria-hidden="true"></span>
-    <button class="mode-btn" onclick="setMode('counts')" id="mode-counts" title="Global morpheme overview">Counts</button>
-    <button class="mode-btn" onclick="setMode('stem')" id="mode-stem" title="Global STEM reference">STEM</button>
-    <button class="mode-btn" onclick="setMode('strategy')" id="mode-strategy" title="Global reading/writing strategy">Strategy</button>
+    <button class="mode-btn" onclick="openQuizLab()" id="mode-quiz" title="Quiz">Quiz</button>
+    <button class="mode-btn" onclick="openExamLab('ap')" id="mode-ap" title="AP exam practice">AP</button>
+    <button class="mode-btn" onclick="openExamLab('clep')" id="mode-clep" title="CLEP exam practice">CLEP</button>
+    <span class="mode-divider" aria-hidden="true"></span>
+    <button class="mode-btn" onclick="setMode('counts')" id="mode-counts" title="Morpheme overview">Counts</button>
+    <button class="mode-btn" onclick="setMode('stem')" id="mode-stem" title="STEM reference">STEM</button>
+    <button class="mode-btn" onclick="setMode('strategy')" id="mode-strategy" title="Reading/writing strategy">Strategy</button>
   </div>
-  <div class="timer-box" id="timer" role="button" tabindex="0" title="Click to pause/resume; double-click to reset" onclick="toggleTimer()" ondblclick="resetTimer()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleTimer();}">10:00</div>
+  <div class="timer-box" id="timer" role="button" tabindex="0" title="Click to pause/resume; double-click to reset" onclick="toggleTimer()" ondblclick="resetTimer()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleTimer();}">0:00</div>
 </div>
 <div class="progress-bar"><div class="progress-fill" id="prog" style="width:3.8%"></div></div>
 <div class="nav" id="letter-nav"></div>
@@ -1804,6 +1809,264 @@ const STEM_TOPICS=[
  caption:'Read → Draw → Solve symbolically → Check units and magnitude',
  steps:['Underline exactly what the question asks for.','List every given quantity with its unit.','Sketch a diagram, table, or flow chart — never skip this step.','Rearrange the formula for the unknown before substituting numbers.','After calculating, check units, sign, and whether the number is a reasonable real-world size.'],
  example:'Find the acceleration of a 5 kg block under 20 N. Given: m=5 kg, F=20 N. Unknown: a. Formula: F=ma → a=F/m=20/5=4 m/s². Check: units kg·m/s²/kg = m/s². ✓'},
+
+/* ── BEGINNER FOUNDATIONS — added 2026-04 ─────── */
+{cat:'Numbers & Operations',tags:['arithmetic','beginner','daily'],
+ title:'Order of Operations — PEMDAS Step-by-Step',
+ theory:'',
+ reality:'When you compute a tip, follow a recipe doubled, or read a price-with-tax sign, the order in which you apply each operation changes the answer. PEMDAS is the rule that keeps everyone\'s answer the same.',
+ formula:'P  Parentheses\nE  Exponents\nMD Multiplication & Division (left → right)\nAS Addition & Subtraction (left → right)',
+ method:'Tip: when M and D appear together, do them in the order they appear (left to right). Same for A and S.',
+ svg:`<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="pe1" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7aabcf"/></marker></defs>
+  <rect x="6" y="14" width="44" height="22" rx="6" fill="rgba(122,171,207,.18)" stroke="#7aabcf" stroke-width="1"/>
+  <text x="28" y="29" text-anchor="middle" font-size="11" fill="#7aabcf" font-weight="700">P</text>
+  <line x1="51" y1="25" x2="62" y2="25" stroke="#7aabcf" marker-end="url(#pe1)"/>
+  <rect x="63" y="14" width="44" height="22" rx="6" fill="rgba(122,171,207,.18)" stroke="#7aabcf" stroke-width="1"/>
+  <text x="85" y="29" text-anchor="middle" font-size="11" fill="#7aabcf" font-weight="700">E</text>
+  <line x1="108" y1="25" x2="119" y2="25" stroke="#c9a060" marker-end="url(#pe1)"/>
+  <rect x="120" y="14" width="58" height="22" rx="6" fill="rgba(201,160,96,.15)" stroke="#c9a060" stroke-width="1"/>
+  <text x="149" y="29" text-anchor="middle" font-size="10" fill="#c9a060" font-weight="700">M / D</text>
+  <line x1="179" y1="25" x2="190" y2="25" stroke="#7ab060" marker-end="url(#pe1)"/>
+  <rect x="191" y="14" width="58" height="22" rx="6" fill="rgba(122,176,96,.15)" stroke="#7ab060" stroke-width="1"/>
+  <text x="220" y="29" text-anchor="middle" font-size="10" fill="#7ab060" font-weight="700">A / S</text>
+  <text x="130" y="62" text-anchor="middle" font-size="10" fill="#9ecef0">Example: 3 + 4 × 2² = ?</text>
+  <text x="130" y="76" text-anchor="middle" font-size="10" fill="#c9a060">Step 1: 2² = 4   →   3 + 4 × 4</text>
+  <text x="130" y="90" text-anchor="middle" font-size="10" fill="#c9a060">Step 2: 4 × 4 = 16   →   3 + 16</text>
+  <text x="130" y="104" text-anchor="middle" font-size="10" fill="#7ab060">Step 3: 3 + 16 = 19  ✓</text>
+ </svg>`,
+ caption:'Always work P → E → MD (L→R) → AS (L→R)',
+ steps:['Scan the expression for parentheses; do everything inside them first.','Next, evaluate every exponent (powers and roots).','Now sweep left to right and do every × or ÷ in the order they appear.','Finally sweep left to right and do every + or − in the order they appear.','Check: did you do M before A? If yes, you followed PEMDAS.'],
+ example:'Compute 8 ÷ 2 × (1+3). Step 1: (1+3)=4. Step 2: 8 ÷ 2 = 4. Step 3: 4 × 4 = 16. Answer: 16.'},
+
+{cat:'Numbers & Operations',tags:['arithmetic','beginner','fractions'],
+ title:'Adding & Subtracting Fractions',
+ theory:'',
+ reality:'When you split a recipe in half, combine partial gas-tank fills, or add up time worked across days, you are adding fractions. Same denominators? Easy. Different? Find a common one.',
+ formula:'Same denom:  a/b ± c/b = (a ± c) / b\nDifferent:    a/b ± c/d = (a·d ± c·b) / (b·d)\n(then simplify)',
+ method:'LCD shortcut: if denominators share factors, use the LCM (lowest common multiple). If not, just multiply them — bigger numbers but you can simplify at the end.',
+ svg:`<svg viewBox="0 0 260 100" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="14" width="60" height="60" rx="6" fill="rgba(122,171,207,.10)" stroke="#7aabcf" stroke-width="1"/>
+  <line x1="8" y1="44" x2="68" y2="44" stroke="#7aabcf" stroke-width="1.2"/>
+  <text x="38" y="36" text-anchor="middle" font-size="13" fill="#7aabcf" font-weight="700">2</text>
+  <text x="38" y="60" text-anchor="middle" font-size="13" fill="#7aabcf" font-weight="700">3</text>
+  <text x="78" y="48" text-anchor="middle" font-size="14" fill="#c9a060">+</text>
+  <rect x="92" y="14" width="60" height="60" rx="6" fill="rgba(201,160,96,.10)" stroke="#c9a060" stroke-width="1"/>
+  <line x1="92" y1="44" x2="152" y2="44" stroke="#c9a060" stroke-width="1.2"/>
+  <text x="122" y="36" text-anchor="middle" font-size="13" fill="#c9a060" font-weight="700">1</text>
+  <text x="122" y="60" text-anchor="middle" font-size="13" fill="#c9a060" font-weight="700">4</text>
+  <text x="162" y="48" text-anchor="middle" font-size="14" fill="#7ab060">=</text>
+  <rect x="176" y="14" width="76" height="60" rx="6" fill="rgba(122,176,96,.10)" stroke="#7ab060" stroke-width="1"/>
+  <line x1="176" y1="44" x2="252" y2="44" stroke="#7ab060" stroke-width="1.2"/>
+  <text x="214" y="36" text-anchor="middle" font-size="13" fill="#7ab060" font-weight="700">8 + 3</text>
+  <text x="214" y="60" text-anchor="middle" font-size="13" fill="#7ab060" font-weight="700">12</text>
+  <text x="130" y="92" text-anchor="middle" font-size="9" fill="#8a8a8a">LCD = 12 → 2/3 = 8/12,  1/4 = 3/12</text>
+ </svg>`,
+ caption:'Find the common denominator, then add the numerators',
+ steps:['Look at the two denominators. If they match, skip to step 4.','If they differ, find the LCD (least common multiple of the denominators).','Convert each fraction so its bottom equals the LCD — multiply top AND bottom by the same number.','Add (or subtract) the numerators only. Keep the denominator.','Simplify by dividing top and bottom by their greatest common factor.'],
+ example:'5/6 − 1/4 = ? LCD of 6 and 4 is 12. 5/6 = 10/12, 1/4 = 3/12. Subtract: 10/12 − 3/12 = 7/12. Already in lowest terms.'},
+
+{cat:'Numbers & Operations',tags:['arithmetic','beginner','fractions'],
+ title:'Multiplying & Dividing Fractions',
+ theory:'',
+ reality:'Half of a half-pizza is a quarter-pizza. Doubling 3/4 cup is 1½ cups. Splitting a 3/4-mile route into 1/8-mile segments is a division problem. These come up daily.',
+ formula:'Multiply:  a/b × c/d = (a·c) / (b·d)\nDivide:    a/b ÷ c/d = a/b × d/c   (flip & multiply)',
+ method:'For division, "Keep, Change, Flip": keep the first fraction, change ÷ to ×, flip the second. Cancel common factors BEFORE multiplying to keep numbers small.',
+ svg:`<svg viewBox="0 0 260 100" xmlns="http://www.w3.org/2000/svg">
+  <text x="14" y="32" font-size="11" fill="#7aabcf" font-weight="700">×</text>
+  <rect x="28" y="20" width="48" height="22" rx="5" fill="rgba(122,171,207,.10)" stroke="#7aabcf" stroke-width="1"/>
+  <text x="52" y="35" text-anchor="middle" font-size="10" fill="#9ecef0">2/3 × 4/5</text>
+  <text x="80" y="33" font-size="10" fill="#7aabcf">→</text>
+  <rect x="96" y="20" width="68" height="22" rx="5" fill="rgba(122,176,96,.12)" stroke="#7ab060" stroke-width="1"/>
+  <text x="130" y="35" text-anchor="middle" font-size="10" fill="#a0c888" font-weight="700">(2·4)/(3·5)</text>
+  <text x="170" y="33" font-size="10" fill="#7ab060">=</text>
+  <rect x="184" y="20" width="48" height="22" rx="5" fill="rgba(122,176,96,.18)" stroke="#7ab060" stroke-width="1"/>
+  <text x="208" y="35" text-anchor="middle" font-size="11" fill="#7ab060" font-weight="700">8/15</text>
+
+  <text x="14" y="74" font-size="11" fill="#c9a060" font-weight="700">÷</text>
+  <rect x="28" y="62" width="48" height="22" rx="5" fill="rgba(201,160,96,.10)" stroke="#c9a060" stroke-width="1"/>
+  <text x="52" y="77" text-anchor="middle" font-size="10" fill="#d4b87a">3/4 ÷ 1/2</text>
+  <text x="80" y="75" font-size="10" fill="#c9a060">→</text>
+  <rect x="96" y="62" width="68" height="22" rx="5" fill="rgba(201,160,96,.18)" stroke="#c9a060" stroke-width="1"/>
+  <text x="130" y="77" text-anchor="middle" font-size="10" fill="#d4b87a" font-weight="700">3/4 × 2/1</text>
+  <text x="170" y="75" font-size="10" fill="#7ab060">=</text>
+  <rect x="184" y="62" width="48" height="22" rx="5" fill="rgba(122,176,96,.18)" stroke="#7ab060" stroke-width="1"/>
+  <text x="208" y="77" text-anchor="middle" font-size="11" fill="#7ab060" font-weight="700">6/4 = 3/2</text>
+ </svg>`,
+ caption:'Multiply straight across; divide = flip & multiply',
+ steps:['For multiplying: multiply the tops together, then the bottoms together.','Look for common factors between any top and any bottom — cancel them BEFORE multiplying.','For dividing: keep the first fraction; change the sign to ×; flip the second fraction (its reciprocal).','Now follow the multiply steps on the rewritten expression.','Simplify the final result if needed.'],
+ example:'3/8 ÷ 9/16. Keep-Change-Flip: 3/8 × 16/9. Cancel: 3/9 → 1/3, 16/8 → 2/1. Now: (1·2)/(3·1) = 2/3.'},
+
+{cat:'Numbers & Operations',tags:['arithmetic','beginner','percents'],
+ title:'Decimals ↔ Fractions ↔ Percents',
+ theory:'',
+ reality:'Sale signs say "25% off". Test scores say "0.85". Recipes say "1/2". They\'re all the same kind of number — the unit just changed. Knowing how to switch between them is essential.',
+ formula:'Decimal → Percent:  ×100  (move decimal 2 right)\nPercent → Decimal:  ÷100  (move decimal 2 left)\nFraction → Decimal: divide top by bottom\nDecimal → Fraction: write over a power of 10, simplify',
+ method:'Memorize 4 anchors: 1/2 = 0.5 = 50%, 1/4 = 0.25 = 25%, 3/4 = 0.75 = 75%, 1/10 = 0.1 = 10%. Most percent problems on tests reduce to one of these.',
+ svg:`<svg viewBox="0 0 260 100" xmlns="http://www.w3.org/2000/svg">
+  <rect x="14" y="20" width="68" height="60" rx="8" fill="rgba(122,171,207,.10)" stroke="#7aabcf" stroke-width="1"/>
+  <text x="48" y="38" text-anchor="middle" font-size="10" fill="#7aabcf" font-weight="700">FRACTION</text>
+  <text x="48" y="58" text-anchor="middle" font-size="14" fill="#9ecef0">3/4</text>
+  <line x1="84" y1="50" x2="98" y2="50" stroke="#c9a060" stroke-width="1.2"/>
+  <polygon points="98,50 95,47 95,53" fill="#c9a060"/>
+  <rect x="100" y="20" width="68" height="60" rx="8" fill="rgba(201,160,96,.10)" stroke="#c9a060" stroke-width="1"/>
+  <text x="134" y="38" text-anchor="middle" font-size="10" fill="#c9a060" font-weight="700">DECIMAL</text>
+  <text x="134" y="58" text-anchor="middle" font-size="14" fill="#d4b87a">0.75</text>
+  <line x1="170" y1="50" x2="184" y2="50" stroke="#7ab060" stroke-width="1.2"/>
+  <polygon points="184,50 181,47 181,53" fill="#7ab060"/>
+  <rect x="186" y="20" width="68" height="60" rx="8" fill="rgba(122,176,96,.10)" stroke="#7ab060" stroke-width="1"/>
+  <text x="220" y="38" text-anchor="middle" font-size="10" fill="#7ab060" font-weight="700">PERCENT</text>
+  <text x="220" y="58" text-anchor="middle" font-size="14" fill="#a0c888">75%</text>
+ </svg>`,
+ caption:'All three are the same number in different clothes',
+ steps:['Decimal → Percent: shift the decimal point two places to the right (or multiply by 100).','Percent → Decimal: shift the decimal point two places to the left (or divide by 100).','Fraction → Decimal: divide the top number by the bottom number using long division.','Decimal → Fraction: write the digits after the decimal over the matching power of 10 (one digit → /10, two digits → /100). Simplify.','To find a percent of a number: convert the percent to a decimal first, then multiply.'],
+ example:'What is 35% of 80?  Convert 35% → 0.35.  Multiply: 0.35 × 80 = 28.'},
+
+{cat:'Algebra',tags:['algebra','beginner'],
+ title:'One-Step & Two-Step Equations',
+ theory:'',
+ reality:'When you reverse-engineer a phone bill, find the original price after a discount, or figure out how many hours you worked from your paycheck — you\'re solving a one- or two-step equation.',
+ formula:'Goal: isolate x.\n• Undo addition with subtraction (and vice-versa).\n• Undo multiplication with division (and vice-versa).\n• Whatever you do to one side, do to the other.',
+ method:'Two-step rule: undo addition/subtraction FIRST, then undo multiplication/division. (Reverse order of PEMDAS.) This rule almost never fails.',
+ svg:`<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
+  <text x="130" y="22" text-anchor="middle" font-size="11" fill="#9ecef0" font-weight="700">3x + 7 = 22</text>
+  <line x1="50" y1="32" x2="210" y2="32" stroke="#7aabcf" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="14" y="50" font-size="10" fill="#c9a060" font-weight="700">Step 1:</text>
+  <text x="60" y="50" font-size="10" fill="#d4b87a">subtract 7 from both sides</text>
+  <text x="180" y="50" font-size="10" fill="#d4b87a">→ 3x = 15</text>
+  <text x="14" y="70" font-size="10" fill="#7ab060" font-weight="700">Step 2:</text>
+  <text x="60" y="70" font-size="10" fill="#a0c888">divide both sides by 3</text>
+  <text x="180" y="70" font-size="10" fill="#a0c888">→ x = 5</text>
+  <rect x="60" y="84" width="140" height="20" rx="5" fill="rgba(122,176,96,.18)" stroke="#7ab060" stroke-width="1"/>
+  <text x="130" y="98" text-anchor="middle" font-size="11" fill="#7ab060" font-weight="700">Check: 3(5)+7 = 22 ✓</text>
+ </svg>`,
+ caption:'Undo +/− first, then undo ×/÷. Always check.',
+ steps:['Identify which operations are being done to x (addition? multiplication? both?).','Undo addition or subtraction first by doing the opposite to BOTH sides.','Then undo multiplication or division by doing the opposite to BOTH sides.','You should now have x = (some number).','CHECK by substituting your answer back into the original equation. Both sides equal? You\'re done.'],
+ example:'Solve 5x − 3 = 17.  Step 1: add 3 to both sides → 5x = 20.  Step 2: divide by 5 → x = 4.  Check: 5(4) − 3 = 17 ✓.'},
+
+{cat:'Coordinate Geometry',tags:['algebra','beginner','geometry'],
+ title:'Slope-Intercept Form  y = mx + b',
+ theory:'',
+ reality:'Phone plans cost a flat fee (b) plus a per-minute rate (m). Distance during a road trip = starting odometer (b) + speed × time (mx). Slope-intercept lines are how rates show up in the real world.',
+ formula:'y = m x + b\n  m = slope    (rise over run)\n  b = y-intercept   (where the line crosses the y-axis)\nSlope between two points: m = (y₂ − y₁) / (x₂ − x₁)',
+ method:'Plot the y-intercept first (the line\'s anchor point on the y-axis). From there, use slope as "rise over run" — up = positive rise, right = positive run.',
+ svg:`<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="100" x2="240" y2="100" stroke="#5e5e5e" stroke-width="0.6"/>
+  <line x1="40" y1="10" x2="40" y2="110" stroke="#5e5e5e" stroke-width="0.6"/>
+  <text x="234" y="113" font-size="9" fill="#8a8a8a">x</text>
+  <text x="30" y="14" font-size="9" fill="#8a8a8a">y</text>
+  <line x1="20" y1="80" x2="240" y2="20" stroke="#7aabcf" stroke-width="1.5"/>
+  <circle cx="40" cy="74" r="3" fill="#c9a060"/>
+  <text x="48" y="72" font-size="9" fill="#c9a060" font-weight="700">b = 2  (y-intercept)</text>
+  <line x1="100" y1="58" x2="160" y2="58" stroke="#7ab060" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <line x1="160" y1="58" x2="160" y2="42" stroke="#7ab060" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <text x="124" y="55" font-size="8" fill="#a0c888">run = 2</text>
+  <text x="164" y="52" font-size="8" fill="#a0c888">rise = 1</text>
+  <text x="174" y="98" font-size="9" fill="#7aabcf" font-weight="700">slope m = 1/2</text>
+ </svg>`,
+ caption:'Start at b on the y-axis, then climb by m for every step right',
+ steps:['If the equation is not yet in y = mx + b form, solve it for y first.','Identify m (the coefficient on x) and b (the constant alone).','Plot the point (0, b) on the y-axis — this is your starting anchor.','From that anchor, count "rise" up and "run" right based on m. (Slope of 2 = up 2, right 1. Slope of 3/4 = up 3, right 4.)','Mark the second point and connect with a straight line.'],
+ example:'Graph y = 2x − 3. Start at (0, −3). Slope 2 = up 2, right 1, so next point is (1, −1). Connect.'},
+
+{cat:'Trigonometry',tags:['geometry','beginner','trigonometry'],
+ title:'SOH-CAH-TOA — Right Triangle Trig',
+ theory:'',
+ reality:'You see a tall building, walk back 50 ft, look up at a 60° angle — how tall is it? You know one leg of a right triangle and the angle, so trig finds the other leg. SOH-CAH-TOA solves angle-of-elevation, ramp problems, and roof pitches.',
+ formula:'sin θ = Opposite / Hypotenuse\ncos θ = Adjacent / Hypotenuse\ntan θ = Opposite / Adjacent\n\nMnemonic: SOH · CAH · TOA',
+ method:'Step 1: identify which side is opposite the angle, which is adjacent (next to it, NOT the hypotenuse), and which is the hypotenuse (always opposite the right angle). Then pick the ratio that uses the two sides you know/want.',
+ svg:`<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="40,100 200,100 200,30" fill="rgba(122,171,207,.08)" stroke="#7aabcf" stroke-width="1.4"/>
+  <rect x="190" y="90" width="10" height="10" fill="none" stroke="#7aabcf" stroke-width="0.7"/>
+  <path d="M 70,100 A 30,30 0 0,0 60,84" fill="none" stroke="#c9a060" stroke-width="1"/>
+  <text x="76" y="92" font-size="10" fill="#c9a060" font-weight="700">θ</text>
+  <text x="120" y="113" text-anchor="middle" font-size="10" fill="#9ecef0">Adjacent</text>
+  <text x="208" y="68" font-size="10" fill="#a0c888">Opposite</text>
+  <text x="100" y="60" font-size="10" fill="#d4b87a" font-weight="700" transform="rotate(-25 100 60)">Hypotenuse</text>
+  <rect x="6" y="14" width="48" height="14" rx="3" fill="rgba(122,171,207,.18)" stroke="#7aabcf" stroke-width="0.5"/>
+  <text x="30" y="24" text-anchor="middle" font-size="9" fill="#7aabcf" font-weight="700">SOH</text>
+  <rect x="6" y="32" width="48" height="14" rx="3" fill="rgba(201,160,96,.18)" stroke="#c9a060" stroke-width="0.5"/>
+  <text x="30" y="42" text-anchor="middle" font-size="9" fill="#c9a060" font-weight="700">CAH</text>
+  <rect x="6" y="50" width="48" height="14" rx="3" fill="rgba(122,176,96,.18)" stroke="#7ab060" stroke-width="0.5"/>
+  <text x="30" y="60" text-anchor="middle" font-size="9" fill="#7ab060" font-weight="700">TOA</text>
+ </svg>`,
+ caption:'Identify Opposite, Adjacent, Hypotenuse — then pick the ratio',
+ steps:['Find the right angle (the small square). The side opposite to it is the HYPOTENUSE — always the longest.','Locate the angle θ you care about. The side directly across from θ is the OPPOSITE side.','The remaining leg, touching θ but not the hypotenuse, is the ADJACENT side.','Look at which two sides you have or need. SOH if you need O and H. CAH if A and H. TOA if O and A.','Set up the ratio, plug in known values, solve for the unknown using a calculator.'],
+ example:'A ramp rises 4 ft over a horizontal run of 10 ft. Find θ. tan θ = O/A = 4/10 = 0.4. θ = arctan(0.4) ≈ 21.8°.'},
+
+{cat:'Statistics',tags:['data','beginner','statistics'],
+ title:'Mean, Median, & Mode — The Three Averages',
+ theory:'',
+ reality:'Your "average grade" (mean), the "middle income" of a town (median), and the "most popular shoe size" (mode) are three different ways to describe a typical value. Each tells a different story.',
+ formula:'Mean   = (sum of all values) ÷ (count)\nMedian = middle value once sorted\n         (with even count: mean of the two middle values)\nMode   = the value that appears most often\nRange  = max − min',
+ method:'Outliers (extreme values) drag the mean but barely move the median. Use median when data is skewed (incomes, house prices). Use mean when data is symmetric (test scores).',
+ svg:`<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
+  <text x="14" y="20" font-size="10" fill="#9ecef0" font-weight="700">Data: 4, 7, 7, 9, 13</text>
+  <rect x="14" y="32" width="74" height="22" rx="5" fill="rgba(122,171,207,.18)" stroke="#7aabcf" stroke-width="1"/>
+  <text x="51" y="46" text-anchor="middle" font-size="10" fill="#7aabcf" font-weight="700">MEAN = 8</text>
+  <rect x="92" y="32" width="74" height="22" rx="5" fill="rgba(201,160,96,.18)" stroke="#c9a060" stroke-width="1"/>
+  <text x="129" y="46" text-anchor="middle" font-size="10" fill="#c9a060" font-weight="700">MEDIAN = 7</text>
+  <rect x="170" y="32" width="74" height="22" rx="5" fill="rgba(122,176,96,.18)" stroke="#7ab060" stroke-width="1"/>
+  <text x="207" y="46" text-anchor="middle" font-size="10" fill="#7ab060" font-weight="700">MODE = 7</text>
+  <text x="14" y="74" font-size="9" fill="#7aabcf">sum 40 ÷ count 5</text>
+  <text x="92" y="74" font-size="9" fill="#c9a060">middle of 5 values</text>
+  <text x="170" y="74" font-size="9" fill="#7ab060">7 appears twice</text>
+  <text x="14" y="100" font-size="9" fill="#8a8a8a">Range = 13 − 4 = 9   (spread of the data)</text>
+ </svg>`,
+ caption:'Mean: the balance point. Median: the middle. Mode: the most common.',
+ steps:['SORT the data from smallest to largest. (Always step 1.)','MEAN: add every value, then divide by how many there are.','MEDIAN: pick the middle value. If there are two middle values, take their average.','MODE: count how many times each value appears; the most frequent is the mode. (Data can have no mode, one mode, or multiple modes.)','RANGE: subtract the smallest from the largest.'],
+ example:'Data: 3, 6, 6, 7, 10, 12. Mean = (3+6+6+7+10+12)/6 = 44/6 ≈ 7.33. Median = (6+7)/2 = 6.5. Mode = 6.'},
+
+{cat:'Statistics',tags:['data','beginner','probability'],
+ title:'Probability Basics — Counting Possibilities',
+ theory:'',
+ reality:'Will it rain? What\'s the chance of drawing an ace? Should you take this insurance? Probability is the math of "how often" — it tells you what to expect over many tries.',
+ formula:'P(event) = (favorable outcomes) / (total possible outcomes)\n0 ≤ P ≤ 1\nP(A and B independent) = P(A) × P(B)\nP(A or B disjoint)     = P(A) + P(B)\nP(not A) = 1 − P(A)',
+ method:'List the sample space (all possible outcomes), then count which ones match the event. For "and" with independent events, multiply. For "or" with disjoint events, add. Always check 0 ≤ P ≤ 1.',
+ svg:`<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
+  <rect x="14" y="14" width="232" height="40" rx="6" fill="rgba(122,171,207,.08)" stroke="#7aabcf" stroke-width="0.7"/>
+  <text x="22" y="28" font-size="9" fill="#7aabcf" font-weight="700">Sample space (single die):</text>
+  <g font-family="ui-monospace,monospace">
+    <rect x="22" y="32" width="20" height="20" fill="rgba(255,255,255,.06)" stroke="#7aabcf" stroke-width="0.6"/>
+    <text x="32" y="46" text-anchor="middle" font-size="11" fill="#9ecef0">1</text>
+    <rect x="46" y="32" width="20" height="20" fill="rgba(122,176,96,.18)" stroke="#7ab060" stroke-width="0.7"/>
+    <text x="56" y="46" text-anchor="middle" font-size="11" fill="#a0c888">2</text>
+    <rect x="70" y="32" width="20" height="20" fill="rgba(255,255,255,.06)" stroke="#7aabcf" stroke-width="0.6"/>
+    <text x="80" y="46" text-anchor="middle" font-size="11" fill="#9ecef0">3</text>
+    <rect x="94" y="32" width="20" height="20" fill="rgba(122,176,96,.18)" stroke="#7ab060" stroke-width="0.7"/>
+    <text x="104" y="46" text-anchor="middle" font-size="11" fill="#a0c888">4</text>
+    <rect x="118" y="32" width="20" height="20" fill="rgba(255,255,255,.06)" stroke="#7aabcf" stroke-width="0.6"/>
+    <text x="128" y="46" text-anchor="middle" font-size="11" fill="#9ecef0">5</text>
+    <rect x="142" y="32" width="20" height="20" fill="rgba(122,176,96,.18)" stroke="#7ab060" stroke-width="0.7"/>
+    <text x="152" y="46" text-anchor="middle" font-size="11" fill="#a0c888">6</text>
+  </g>
+  <text x="178" y="46" font-size="10" fill="#a0c888" font-weight="700">3 evens of 6</text>
+  <rect x="14" y="68" width="232" height="32" rx="6" fill="rgba(122,176,96,.10)" stroke="#7ab060" stroke-width="0.8"/>
+  <text x="130" y="88" text-anchor="middle" font-size="11" fill="#7ab060" font-weight="700">P(even) = 3/6 = 1/2 = 0.5 = 50%</text>
+ </svg>`,
+ caption:'Favorable ÷ Total. Probability is always between 0 and 1.',
+ steps:['List the SAMPLE SPACE — every possible outcome. Make sure each is equally likely.','COUNT how many of those outcomes match the event you care about (favorable).','DIVIDE: P = favorable / total.','For "and" with INDEPENDENT events (one doesn\'t affect the other), multiply: P(A) × P(B).','For "or" with DISJOINT events (cannot both happen), add: P(A) + P(B). Sanity-check: never above 1.'],
+ example:'Two coins flipped. P(both heads)? Each flip is independent. P(H) = 1/2 each. P(HH) = 1/2 × 1/2 = 1/4.'},
+
+{cat:'Numbers & Operations',tags:['arithmetic','beginner'],
+ title:'GCF & LCM — Greatest Common Factor, Least Common Multiple',
+ theory:'',
+ reality:'GCF tells you how to simplify a fraction. LCM tells you when two events line up — like when two buses, one running every 12 min and one every 20 min, will arrive at the same stop together.',
+ formula:'GCF (greatest common factor): the largest number that divides BOTH evenly\nLCM (least common multiple): the smallest number that BOTH divide into evenly\n\nUseful identity: GCF(a,b) × LCM(a,b) = a × b',
+ method:'Prime-factor method works for everything: factor each number into primes, then GCF = product of shared primes (lowest power), LCM = product of all primes (highest power).',
+ svg:`<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
+  <text x="14" y="20" font-size="10" fill="#9ecef0" font-weight="700">12 = 2 × 2 × 3</text>
+  <text x="14" y="36" font-size="10" fill="#9ecef0" font-weight="700">18 = 2 × 3 × 3</text>
+  <rect x="14" y="46" width="110" height="22" rx="5" fill="rgba(122,171,207,.18)" stroke="#7aabcf" stroke-width="1"/>
+  <text x="69" y="60" text-anchor="middle" font-size="10" fill="#7aabcf" font-weight="700">GCF = 2 × 3 = 6</text>
+  <rect x="130" y="46" width="116" height="22" rx="5" fill="rgba(201,160,96,.18)" stroke="#c9a060" stroke-width="1"/>
+  <text x="188" y="60" text-anchor="middle" font-size="10" fill="#c9a060" font-weight="700">LCM = 2² × 3² = 36</text>
+  <text x="14" y="84" font-size="9" fill="#7aabcf">Shared primes (lowest power)</text>
+  <text x="130" y="84" font-size="9" fill="#c9a060">All primes (highest power)</text>
+  <text x="14" y="100" font-size="9" fill="#7ab060">Check: 6 × 36 = 216 = 12 × 18 ✓</text>
+ </svg>`,
+ caption:'GCF: shared primes only. LCM: all primes, highest power.',
+ steps:['Break each number into its PRIME FACTORS. (12 = 2 × 2 × 3, etc.)','For GCF: write down ONLY the primes that appear in BOTH lists, using the LOWEST power they appear in.','For LCM: write down EVERY prime that appears in EITHER list, using the HIGHEST power.','Multiply your selected primes to get the answer.','Optional check: GCF × LCM should equal the product of the two original numbers.'],
+ example:'GCF and LCM of 8 and 12. 8 = 2³, 12 = 2² × 3. GCF = 2² = 4. LCM = 2³ × 3 = 24. Check: 4 × 24 = 96 = 8 × 12 ✓.'},
 
 /* ── ARITHMETIC ─────────────────────────────────── */
 {cat:'Numbers & Operations',tags:['arithmetic','daily','finance'],
@@ -3759,7 +4022,7 @@ function jumpTo(i){cur=i;render();startTimer();}
 function go(dir){cur=(cur+dir+26)%26;render();}
 function setMode(m){
   mode=m;
-  ['explore','vocab','quiz','morph','counts','stem','strategy'].forEach(x=>{const b=document.getElementById('mode-'+x); if(b)b.classList.toggle('active',x===m);});
+  ['explore','vocab','quiz','ap','clep','morph','counts','stem','strategy'].forEach(x=>{const b=document.getElementById('mode-'+x); if(b)b.classList.toggle('active',x===m);});
   if(m==='quiz')generateQuiz();
   render();
 }
@@ -4431,9 +4694,1127 @@ function nextQuiz(){cur=(cur+1)%26;generateQuiz();render();}
 function nextLetter(){cur=(cur+1)%26;generateQuiz();render();}
 function retryQuiz(){generateQuiz();render();}
 function switchLang(lg){activeLang=lg;render();}
+
+/* === ROBUST QUIZ LAB PATCH: opens independently and preserves other app modes === */
+let elapsedQuizSec = 0;
+let elapsedQuizRunning = false;
+let elapsedQuizInterval = null;
+function formatElapsedQuiz(){const m=Math.floor(elapsedQuizSec/60),s=elapsedQuizSec%60;return `${m}:${String(s).padStart(2,'0')}`;}
+function startTimer(){
+  if(elapsedQuizRunning)return;
+  elapsedQuizRunning=true;
+  elapsedQuizInterval=setInterval(()=>{elapsedQuizSec++;updateTimer();},1000);
+  updateTimer();
+}
+function pauseTimer(){clearInterval(elapsedQuizInterval);elapsedQuizRunning=false;updateTimer();}
+function toggleTimer(){elapsedQuizRunning?pauseTimer():startTimer();}
+function resetTimer(){clearInterval(elapsedQuizInterval);elapsedQuizRunning=false;elapsedQuizSec=0;updateTimer();}
+function updateTimer(){const el=document.getElementById('timer');if(!el)return;el.textContent=formatElapsedQuiz();el.className='timer-box'+(elapsedQuizRunning?'':' paused');el.title='Elapsed test time. Click to pause/resume; double-click to reset.';}
+
+const QUIZ_LAB_CATS=[
+  {id:'alphabet',label:'Alphabet'},
+  {id:'morphemes',label:'Morphemes'},
+  {id:'arithmetic',label:'Numbers & Operations'},
+  {id:'algebra',label:'Algebra'},
+  {id:'geometry',label:'Geometry'},
+  {id:'calculus',label:'Calculus'},
+  {id:'physics',label:'Physics'},
+  {id:'chemistry',label:'Chemistry'},
+  {id:'ap',label:'AP Exams'},
+  {id:'clep',label:'CLEP Exams'},
+  {id:'accuplacer',label:'ACCUPLACER'}
+];
+const QUIZ_LAB_SUBS={
+  accuplacer:[
+    {id:'mixed',label:'Mixed'},
+    {id:'reading',label:'Reading'},
+    {id:'writing',label:'Writing'},
+    {id:'arithmetic',label:'Arithmetic'},
+    {id:'qas',label:'Quantitative Reasoning'},
+    {id:'aaf',label:'Advanced Algebra'},
+    {id:'essay',label:'Essay'}
+  ]
+};
+let quizLab={cat:'accuplacer',sub:'mixed',answered:false,current:null,attempted:0,correct:0,difficulty:1,history:[],full:false,fullIndex:0,fullTotal:30};
+function qEsc(s){return String(s??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));}
+function qPick(a){return a[Math.floor(Math.random()*a.length)];}
+function qShuffle(a){return a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(x=>x[1]);}
+function qMake(prompt,correct,wrong,hint,focus){return {prompt,correct,opts:qShuffle([correct,...wrong].slice(0,4)),hint:hint||'',focus:focus||quizLab.cat};}
+function genQuizLabQuestion(){
+  const letter=DATA&&DATA[cur]?DATA[cur]:{l:'A',sym:'ox / strength',hname:'Aleph',vocab:[{w:'alpha',def:'first'}]};
+  const classic={
+    alphabet:[()=>qMake(`What symbolic idea is connected with <strong>${letter.l}</strong>?`,letter.sym,['water / chaos','door / pathway','hand / action','eye / seeing'],'Use the alphabet root card for this letter.','Alphabet roots'),()=>qMake(`Which Hebrew-root name is shown for <strong>${letter.l}</strong>?`,letter.hname,['Beth','Mem','Nun','Ayin'],'Check the letter hero card.','Alphabet roots')],
+    morphemes:[()=>{const arr=(MORPHEMES&&MORPHEMES[letter.l])||[];const e=arr[0]||{m:'bio',meaning:'life'};return qMake(`What does the morpheme <strong>${qEsc(e.m)}</strong> most nearly mean?`,qEsc(e.meaning).slice(0,90),['opposite or against','small or reduced','across or through','before or earlier'],'Morphemes build meaning from word parts.','Morphemes');}],
+    arithmetic:[()=>qMake('What is <strong>3/4 + 5/6</strong>?','1 7/12',['7/10','3/2','19/24'],'Use a common denominator of 12.','Fractions'),()=>qMake('A $40 item is discounted 25%. What is the sale price?','$30',['$10','$25','$35'],'25% of 40 is 10; subtract from 40.','Percent')],
+    algebra:[()=>qMake('Solve: <strong>2x + 5 = 17</strong>','x = 6',['x = 5','x = 7','x = 11'],'Subtract 5, then divide by 2.','Linear equations'),()=>qMake('Factor: <strong>x² − 9</strong>','(x − 3)(x + 3)',['(x − 9)(x + 1)','(x − 3)²','prime'],'Difference of squares: a² − b².','Factoring')],
+    geometry:[()=>qMake('A triangle has base 10 and height 6. What is its area?','30',['60','16','15'],'Area = 1/2 bh.','Area'),()=>qMake('What is the circumference of a circle with radius 4?','8π',['4π','16π','πr²'],'Circumference = 2πr.','Circles')],
+    calculus:[()=>qMake('What is the derivative of <strong>x³</strong>?','3x²',['x²','3x','x⁴/4'],'Power rule: bring down the exponent and subtract 1.','Derivatives'),()=>qMake('What is ∫ 2x dx?','x² + C',['2 + C','2x² + C','x + C'],'Reverse the power rule.','Integration')],
+    physics:[()=>qMake('A 10 kg object accelerates at 2 m/s². What force acts on it?','20 N',['5 N','12 N','40 N'],'Newton’s second law: F = ma.','Forces'),()=>qMake('Which unit measures electric current?','ampere',['volt','joule','newton'],'Current is measured in amperes.','Electricity')],
+    chemistry:[()=>qMake('What is the atomic number of carbon?','6',['12','8','14'],'Carbon has 6 protons.','Atomic structure'),()=>qMake('A solution with pH 3 is:','acidic',['basic','neutral','nonpolar'],'pH below 7 is acidic.','Acids and bases')]
+  };
+  const accu={
+    reading:[()=>qMake(`<div style="text-align:left">Passage: Many historians argue that technological innovation drives social change. Others contend that social needs often shape technological development. For example, demand for faster communication led to the telegraph.<br><br><strong>What is the main idea?</strong></div>`,'Social needs and technology influence each other',['Technology develops independently of society','The telegraph was the first invention','Historians only study communication'],'ACCUPLACER Reading often asks for main idea, inference, word meaning, and evidence.','Reading'),()=>qMake(`<div style="text-align:left">Passage: The researcher’s conclusion was tentative because the sample size was small.<br><br><strong>The word “tentative” most nearly means:</strong></div>`,'not final or certain',['careless','permanent','unrelated'],'Use context: the small sample makes the conclusion uncertain.','Vocabulary in context')],
+    writing:[()=>qMake('Choose the best version:','Each of the students has completed his or her assignment.',['Each of the students have completed their assignments.','Each of the students has completed their assignments.','Each of the students have completed his or her assignment.'],'“Each” is singular, so use “has.”','Writing conventions'),()=>qMake('Which sentence is correctly punctuated?','It’s raining outside; bring an umbrella.',['Its raining outside, bring an umbrella.','It’s raining outside bring an umbrella.','Its raining outside; bring an umbrella.'],'Use it’s = it is; a semicolon can join two related independent clauses.','Punctuation')],
+    arithmetic:[()=>qMake('What is <strong>2.4 × 0.5</strong>?','1.2',['12','0.12','2.9'],'Half of 2.4 is 1.2.','Decimal operations'),()=>qMake('A recipe uses 3 cups of flour for 12 servings. How many cups are needed for 20 servings?','5',['4','6','7.5'],'3/12 = x/20, so x = 5.','Ratios and proportions')],
+    qas:[()=>qMake('The line through (2,3) and (6,11) has what slope?','2',['1','3','4'],'Slope = (11−3)/(6−2)=8/4.','Slope'),()=>qMake('Solve: <strong>3(x − 2) = 18</strong>','x = 8',['x = 4','x = 6','x = 10'],'Divide by 3, then add 2.','Linear equations')],
+    aaf:[()=>qMake('If f(x)=2x²+3x, what is f(2)?','14',['10','16','8'],'2(2²)+3(2)=8+6.','Functions'),()=>qMake('Solve: <strong>x² − 5x + 6 = 0</strong>','x = 2 or x = 3',['x = −2 or −3','x = 1 or 6','x = 0 or 6'],'Factor as (x−2)(x−3).','Quadratics')],
+    essay:[()=>({essay:true,prompt:'Some people believe technology makes life easier, while others believe it creates new problems. Write an essay explaining your position.',focus:'WritePlacer essay',hint:'Score high by using a clear thesis, organized paragraphs, specific examples, sentence variety, grammar control, and a conclusion that extends the argument.'})]
+  };
+  if(quizLab.cat==='ap'){
+    let q;
+    if(quizLab.sub==='ap_calc') q=genAPCalcQ();
+    else if(quizLab.sub==='ap_mech') q=genAPMechQ();
+    else if(quizLab.sub==='ap_em') q=genAPEMQ();
+    else if(quizLab.sub==='ap_chem') q=genAPChemQ();
+    else if(quizLab.sub==='ap_stats') q=qPick([
+      ()=>qMake('A random sample of 64 students has mean 78 and standard deviation 12. What is the standard error?', '1.5', ['12','8','0.1875'], 'Standard error = s/√n = 12/8.', 'AP Statistics'),
+      ()=>qMake('Which condition is most important for a one-sample proportion z-test?', 'Expected successes and failures are both large enough', ['The population must be normal','The sample mean must equal the population mean','The standard deviation must be unknown'], 'For proportions, check np and n(1−p).', 'AP Statistics'),
+      ()=>qMake('A p-value of 0.03 means:', 'Results this extreme would occur about 3% of the time if H₀ were true', ['The null hypothesis is 3% true','There is a 97% chance H₀ is false','The sample is biased'], 'A p-value is conditional on the null hypothesis.', 'AP Statistics')
+    ])();
+    q.focus=q.focus||({ap_calc:'AP Calculus AB/BC',ap_mech:'AP Physics C: Mechanics',ap_em:'AP Physics C: E&M',ap_chem:'AP Chemistry',ap_stats:'AP Statistics'}[quizLab.sub]||'AP Exam');
+    return q;
+  }
+  if(quizLab.cat==='clep'){
+    let q;
+    if(quizLab.sub==='clep_precalc') q=genCLEPPrecalcQ();
+    else if(quizLab.sub==='clep_college_algebra') q=qPick([
+      ()=>qMake('Solve: <strong>2x² − 5x − 3 = 0</strong>', 'x = 3 or x = −1/2', ['x = −3 or x = 1/2','x = 1 or x = −3/2','x = 2 or x = −3'], 'Factor: (2x+1)(x−3)=0.', 'CLEP College Algebra'),
+      ()=>qMake('If <strong>f(x)=x²−4x+7</strong>, what is f(3)?', '4', ['7','10','16'], 'Substitute 3: 9−12+7=4.', 'CLEP College Algebra'),
+      ()=>qMake('Simplify: <strong>(x³y²)(x²y⁵)</strong>', 'x⁵y⁷', ['x⁶y¹⁰','x⁵y¹⁰','x⁶y⁷'], 'When multiplying like bases, add exponents.', 'CLEP College Algebra')
+    ])();
+    else if(quizLab.sub==='clep_college_math') q=qPick([
+      ()=>qMake('A set has values 4, 6, 8, 10. What is the mean?', '7', ['6','8','28'], 'Mean = total ÷ count = 28÷4.', 'CLEP College Mathematics'),
+      ()=>qMake('If a shirt costs $30 after a 25% discount, what was the original price?', '$40', ['$37.50','$45','$55'], '$30 is 75% of the original price.', 'CLEP College Mathematics'),
+      ()=>qMake('How many ways can 3 books be arranged on a shelf?', '6', ['3','9','27'], '3! = 3×2×1 = 6.', 'CLEP College Mathematics')
+    ])();
+    q.focus=q.focus||({clep_precalc:'CLEP Precalculus',clep_college_algebra:'CLEP College Algebra',clep_college_math:'CLEP College Mathematics'}[quizLab.sub]||'CLEP Exam');
+    return q;
+  }
+  if(quizLab.cat==='accuplacer'){
+    let sub=quizLab.sub==='mixed'?qPick(['reading','writing','arithmetic','qas','aaf']):quizLab.sub;
+    return qPick(accu[sub]||accu.reading)();
+  }
+  return qPick(classic[quizLab.cat]||classic.alphabet)();
+}
+function quizScoreEstimate(){const pct=quizLab.attempted?quizLab.correct/quizLab.attempted:0;const adaptive=Math.min(30,Math.max(0,Math.round((pct*22)+(quizLab.difficulty*8))));return 200+adaptive;}
+function quizBand(){const s=quizScoreEstimate();return s>=271?'271–300 band: advanced readiness focus':'Keep practicing toward the 271–300 band';}
+function openQuizLab(){
+  mode='quiz';
+  document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+  const qb=document.getElementById('mode-quiz'); if(qb){qb.classList.add('active');qb.textContent='Quiz';qb.title='Quiz';}
+  const nav=document.getElementById('letter-nav'); if(nav)nav.style.display='none';
+  const bottom=document.querySelector('.bottom-nav'); if(bottom)bottom.style.display='none';
+  const prog=document.getElementById('prog'); if(prog)prog.style.width='100%';
+  const pos=document.getElementById('pos-label'); if(pos)pos.textContent='Quiz';
+  if(!quizLab.current)quizLab.current=genQuizLabQuestion();
+  startTimer();
+  renderQuizLab();
+}
+function quizLabSetCat(cat){
+  quizLab.cat=cat;
+  quizLab.sub=cat==='accuplacer'?'mixed':cat==='ap'?'ap_calc':cat==='clep'?'clep_college_algebra':'general';
+  quizLab.current=genQuizLabQuestion();
+  quizLab.answered=false;
+  renderQuizLab();
+}
+function quizLabSetSub(sub){quizLab.sub=sub;quizLab.current=genQuizLabQuestion();quizLab.answered=false;renderQuizLab();}
+function quizLabSetFull(on){quizLab.full=!!on;quizLab.fullIndex=0;quizLab.current=genQuizLabQuestion();quizLab.answered=false;renderQuizLab();}
+function quizLabReset(){quizLab.attempted=0;quizLab.correct=0;quizLab.difficulty=1;quizLab.history=[];quizLab.fullIndex=0;quizLab.current=genQuizLabQuestion();quizLab.answered=false;resetTimer();startTimer();renderQuizLab();}
+function quizLabAnswer(i){const q=quizLab.current;if(!q||q.answered||q.essay)return;q.answered=true;q.chosen=i;const ok=q.opts[i]===q.correct;quizLab.attempted++;if(ok){quizLab.correct++;quizLab.difficulty=Math.min(3,quizLab.difficulty+.2);setStreak(streak+1);}else{quizLab.difficulty=Math.max(.5,quizLab.difficulty-.15);setStreak(0);}quizLab.history.push({ok,focus:q.focus,hint:q.hint});renderQuizLab();}
+function quizLabNext(){if(quizLab.full)quizLab.fullIndex=(quizLab.fullIndex+1)%quizLab.fullTotal;quizLab.current=genQuizLabQuestion();quizLab.answered=false;renderQuizLab();}
+function quizLabGradeEssay(){const txt=(document.getElementById('quiz-essay')?.value||'').trim();const words=txt?txt.split(/\s+/).length:0;let pts=1;if(words>150)pts++;if(/because|therefore|however|although|for example/i.test(txt))pts++;if(/first|second|finally|in conclusion/i.test(txt))pts++;if(words>300)pts++;if(/[.!?]/.test(txt)&&txt.split(/[.!?]+/).length>4)pts++;const score=Math.max(1,Math.min(6,pts));document.getElementById('essay-score').innerHTML=`<div class="answer"><strong>Rubric estimate: ${score}/6</strong><br>Word count: ${words}. Improve by using a clear thesis, organized examples, transitions, varied sentences, grammar control, and a conclusion.</div>`;}
+function renderQuizLab(){
+  const q=quizLab.current||genQuizLabQuestion();quizLab.current=q;
+  const catBar=QUIZ_LAB_CATS.map(c=>`<button class="link-chip${quizLab.cat===c.id?' active':''}" onclick="quizLabSetCat('${c.id}')">${c.label}</button>`).join('');
+  const subBar=(QUIZ_LAB_SUBS[quizLab.cat]||[]).map(s=>`<button class="link-chip${quizLab.sub===s.id?' active':''}" onclick="quizLabSetSub('${s.id}')">${s.label}</button>`).join('');
+  const recent=quizLab.history.slice(-5).map(h=>`<div class="root-box"><b>${qEsc(h.focus)}</b><br><span class="muted">${h.ok?'Correct':'Review'} · ${qEsc(h.hint)}</span></div>`).join('')||'<div class="muted">Answer questions to build a score report.</div>';
+  const score=`<div class="count-grid"><div class="count-card"><div class="big">${quizScoreEstimate()}</div><div class="small">scaled estimate</div></div><div class="count-card"><div class="big">${quizLab.correct}/${quizLab.attempted}</div><div class="small">correct</div></div><div class="count-card"><div class="big">${quizLab.difficulty.toFixed(1)}</div><div class="small">adaptive level</div></div><div class="count-card"><div class="big">${formatElapsedQuiz()}</div><div class="small">elapsed</div></div></div>`;
+  let body='';
+  if(q.essay){
+    body=`<div class="quiz-prompt" style="text-align:left">${qEsc(q.prompt)}</div><textarea id="quiz-essay" class="search" style="height:180px;resize:vertical" placeholder="Type your essay response here..."></textarea><div class="filter-row"><button class="btn primary" onclick="quizLabGradeEssay()">Grade with rubric</button><button class="btn" onclick="quizLabNext()">New essay prompt</button></div><div id="essay-score"></div><div class="write-box"><strong>WritePlacer rubric:</strong> thesis, organization, support/examples, sentence variety, word choice, grammar/mechanics, and critical thinking.</div>`;
+  }else{
+    body=`<div class="write-box">${quizLab.full?`Full-length question ${quizLab.fullIndex+1} of ${quizLab.fullTotal}. `:''}${quizBand()}. Choose the best answer.</div><div class="quiz-prompt" style="text-align:left">${q.prompt}</div><div class="quiz-opts">${q.opts.map((opt,i)=>{let cls='quiz-opt';if(q.answered){if(opt===q.correct)cls+=' correct';else if(i===q.chosen)cls+=' wrong';}return `<button class="${cls}" onclick="quizLabAnswer(${i})" ${q.answered?'disabled':''}>${qEsc(opt)}</button>`;}).join('')}</div>${q.answered?`<div class="root-box" style="margin-top:8px"><strong style="color:var(--tsucc)">Answer: ${qEsc(q.correct)}</strong><br><span class="muted">${qEsc(q.hint)}</span></div><div style="text-align:center;margin-top:8px"><button class="btn primary" onclick="quizLabNext()">Next question →</button></div>`:''}`;
+  }
+  document.getElementById('main-content').innerHTML=`<div class="card"><div class="stem-title">Quiz</div><div class="strategy-sub">Original quiz categories plus ACCUPLACER-style practice. The timer counts elapsed test time upward.</div><div class="section-title">Quiz category</div><div class="filter-row">${catBar}</div>${subBar?`<div class="filter-row"><span class="muted">Exam section</span>${subBar}</div>`:''}<div class="filter-row"><span class="muted">Mode</span><button class="link-chip${!quizLab.full?' active':''}" onclick="quizLabSetFull(false)">Adaptive practice</button><button class="link-chip${quizLab.full?' active':''}" onclick="quizLabSetFull(true)">Full-length practice</button><button class="link-chip" onclick="quizLabReset()">Reset</button></div>${score}${body}</div><div class="card"><div class="section-title">Score report</div>${recent}</div><div class="card"><div class="section-title">ACCUPLACER 271–300 focus topics</div><div class="pill-row">${['Main idea','Inference','Vocabulary in context','Grammar','Punctuation','Fractions','Percents','Ratios','Linear equations','Slope','Functions','Quadratics','Exponents','Essay organization'].map(t=>`<span class="pill">${t}</span>`).join('')}</div></div>`;
+}
+function openExamLab(cat){
+  openQuizLab();
+  quizLabSetCat(cat);
+  document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+  const b=document.getElementById('mode-'+cat);
+  if(b)b.classList.add('active');
+}
+window.openQuizLab=openQuizLab;
+window.openExamLab=openExamLab;
+window.quizLabSetCat=quizLabSetCat;window.quizLabSetSub=quizLabSetSub;window.quizLabAnswer=quizLabAnswer;window.quizLabNext=quizLabNext;window.quizLabReset=quizLabReset;window.quizLabSetFull=quizLabSetFull;window.quizLabGradeEssay=quizLabGradeEssay;
+setTimeout(()=>{const qb=document.getElementById('mode-quiz');if(qb){qb.textContent='Quiz';qb.setAttribute('onclick','openQuizLab()');qb.title='Quiz';}},0);
+/* === END ROBUST QUIZ LAB PATCH === */
+
 setStreak(streak);
 updateTimer();
 render();
 </script>
+
+<script>
+// ===== ACCUPLACER UPGRADE (Injected) =====
+let accScore = 250;
+let difficulty = 1;
+let correctStreak = 0;
+let testMode = false;
+let testTime = 3600;
+let answered = false;
+
+function updateAdaptive(isCorrect){
+  if(isCorrect){
+    accScore += 3 + difficulty;
+    correctStreak++;
+    if(correctStreak >= 2 && difficulty < 5){
+      difficulty++;
+      correctStreak = 0;
+    }
+  } else {
+    accScore -= 2;
+    difficulty = Math.max(1, difficulty - 1);
+    correctStreak = 0;
+  }
+  accScore = Math.max(200, Math.min(300, accScore));
+}
+
+const accuplacerQuestions = [
+  {section:"Reading",level:1,prompt:"The passage mainly discusses:",options:["A theory","An experiment","A result","An opinion"],answer:1},
+  {section:"Writing",level:2,prompt:"Choose the correct sentence:",options:["Dog run fast","The dog runs fast","Dog runs fastly","The dog run fast"],answer:1},
+  {section:"Arithmetic",level:1,prompt:"3/4 + 2/5 =",options:["23/20","7/9","1 7/20","11/20"],answer:0},
+  {section:"Quantitative",level:3,prompt:"x + 5 = 9, x =",options:["4","5","9","14"],answer:0},
+  {section:"Algebra",level:4,prompt:"x² - 4 = 0",options:["±2","±4","2","4"],answer:0}
+];
+
+function getAdaptiveQuestion(){
+  let pool = accuplacerQuestions.filter(q=>q.level===difficulty);
+  return pool[Math.floor(Math.random()*pool.length)];
+}
+
+function renderAccuplacer(){
+  let q = getAdaptiveQuestion();
+  answered = false;
+  let html = `<div class="card">
+    <div class="quiz-prompt">${q.prompt}</div>
+    <div class="quiz-opts">`;
+  q.options.forEach((opt,i)=>{
+    html += `<button class="quiz-opt" onclick="submitAccuplacer(${i},${q.answer})">${opt}</button>`;
+  });
+  html += `</div><div class="score-row">Score: ${accScore}</div></div>`;
+  document.getElementById("main-content").innerHTML = html;
+}
+
+function submitAccuplacer(choice,answer){
+  if(answered) return;
+  answered = true;
+  updateAdaptive(choice===answer);
+  setTimeout(renderAccuplacer,800);
+}
+
+function startFullTest(){
+  testMode = true;
+  testTime = 3600;
+}
+
+function gradeEssay(){
+  let text = document.getElementById("essayInput")?.value || "";
+  let score = 1;
+  if(text.length > 300) score++;
+  if(text.includes("because")) score++;
+  if(text.split('.').length > 5) score++;
+  alert("Essay Score: " + score + "/8");
+}
+
+// Hook into existing mode system
+const oldSetMode = window.setMode;
+window.setMode = function(mode){
+  if(mode === "accuplacer"){
+    renderAccuplacer();
+  } else {
+    oldSetMode(mode);
+  }
+}
+</script>
+
+
+<style>
+/* ===== UNIFIED QUIZ / EXAM LAB STYLES ===== */
+.qx-wrap{display:grid;gap:10px}
+.qx-banner{background:linear-gradient(160deg,rgba(122,171,207,.10),rgba(201,160,96,.07));border:.5px solid rgba(122,171,207,.28);border-radius:10px;padding:12px 14px}
+.qx-banner h3{font-size:14px;font-weight:700;color:var(--tx);margin-bottom:4px;letter-spacing:-.01em}
+.qx-banner p{font-size:11.5px;color:var(--ts);line-height:1.5}
+.qx-guide{display:flex;align-items:center;gap:10px;background:rgba(122,171,207,.10);border:.5px solid rgba(122,171,207,.32);border-radius:10px;padding:9px 12px;text-decoration:none;margin-top:8px;transition:all .15s}
+.qx-guide:hover{background:rgba(122,171,207,.18);transform:translateX(2px)}
+.qx-guide-icon{font-size:18px;flex-shrink:0}
+.qx-guide-body{flex:1;min-width:0}
+.qx-guide-body b{display:block;font-size:11.5px;color:var(--tinfo);font-weight:700;margin-bottom:1px}
+.qx-guide-body span{font-size:10.5px;color:var(--ts);word-break:break-all;line-height:1.35}
+.qx-guide-arrow{color:var(--tinfo);font-size:14px;flex-shrink:0}
+.qx-passage{background:var(--c2);border-left:3px solid var(--tinfo);border-radius:0 8px 8px 0;padding:10px 12px;font-size:12px;line-height:1.55;color:var(--tx);margin-bottom:8px}
+.qx-feedback{margin-top:8px;border-radius:8px;padding:10px 12px;font-size:11.5px;line-height:1.5}
+.qx-feedback.correct{background:rgba(122,176,96,.12);border:.5px solid rgba(122,176,96,.35);color:var(--tsucc)}
+.qx-feedback.wrong{background:rgba(192,112,112,.10);border:.5px solid rgba(192,112,112,.35);color:var(--tdanger)}
+.qx-feedback b{display:block;margin-bottom:4px;font-size:12px;letter-spacing:.02em}
+.qx-feedback .qx-why{display:block;color:var(--tx);margin-top:4px;line-height:1.5}
+.qx-feedback .qx-how{display:block;color:var(--ts);margin-top:6px;font-size:11px;line-height:1.5}
+.qx-feedback .qx-how em{color:var(--twarn);font-style:normal;font-weight:600}
+.qx-sheet{background:var(--c2);border:.5px solid var(--bd);border-radius:10px;padding:0;overflow:hidden;margin-top:8px}
+.qx-sheet-head{padding:10px 12px;border-bottom:.5px solid var(--bd);display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.qx-sheet-title{font-size:12px;font-weight:700;color:var(--tx);letter-spacing:.02em}
+.qx-sheet-meta{font-size:10.5px;color:var(--ts)}
+.qx-sheet-row{padding:10px 12px;border-bottom:.5px solid rgba(255,255,255,.04);font-size:11px;line-height:1.5;display:grid;grid-template-columns:22px 1fr;gap:8px}
+.qx-sheet-row:last-child{border-bottom:0}
+.qx-sheet-row .qx-num{font-family:ui-monospace,Menlo,monospace;font-size:10px;color:var(--tt);padding-top:2px}
+.qx-sheet-row .qx-text b{display:block;color:var(--tx);font-size:11.5px;margin-bottom:3px;font-weight:600}
+.qx-sheet-row .qx-text .qx-mini{color:var(--ts);font-size:10.5px;display:block;margin-top:3px}
+.qx-sheet-row.ok{border-left:2px solid var(--tsucc)}
+.qx-sheet-row.bad{border-left:2px solid var(--tdanger)}
+.qx-sheet-row .qx-tag{display:inline-block;font-size:9.5px;padding:1px 6px;border-radius:20px;background:var(--info);color:var(--tinfo);margin-right:4px}
+.qx-sheet-row .qx-tag.ok{background:var(--succ);color:var(--tsucc)}
+.qx-sheet-row .qx-tag.bad{background:var(--danger);color:var(--tdanger)}
+.qx-empty{padding:14px;text-align:center;color:var(--ts);font-size:11.5px}
+.qx-meter{height:6px;background:rgba(255,255,255,.06);border-radius:6px;overflow:hidden;margin-top:6px}
+.qx-meter-fill{height:100%;background:linear-gradient(90deg,var(--tinfo),var(--tsucc));transition:width .3s}
+.qx-band-pass{background:rgba(122,176,96,.14);color:var(--tsucc);border:.5px solid rgba(122,176,96,.35);border-radius:7px;padding:7px 10px;font-size:11.5px;font-weight:600;margin-top:6px;display:flex;align-items:center;gap:8px}
+.qx-band-fail{background:rgba(201,160,96,.12);color:var(--twarn);border:.5px solid rgba(201,160,96,.35);border-radius:7px;padding:7px 10px;font-size:11.5px;font-weight:600;margin-top:6px;display:flex;align-items:center;gap:8px}
+.qx-topic-pill{display:inline-block;font-size:10.5px;padding:3px 9px;border-radius:20px;margin:2px 3px 2px 0;background:var(--c2);color:var(--ts);border:.5px solid var(--bd)}
+.qx-topic-pill.weak{background:rgba(192,112,112,.13);color:var(--tdanger);border-color:rgba(192,112,112,.35)}
+.qx-topic-pill.strong{background:rgba(122,176,96,.13);color:var(--tsucc);border-color:rgba(122,176,96,.35)}
+.qx-difficulty-dots{display:inline-flex;gap:3px;margin-left:6px;vertical-align:middle}
+.qx-difficulty-dots span{width:6px;height:6px;border-radius:50%;background:var(--bd)}
+.qx-difficulty-dots span.on{background:var(--twarn)}
+</style>
+
+<script>
+/* ============================================================
+   UNIFIED QUIZ + AP + CLEP + ACCUPLACER LAB
+   - Each quiz has a learn-as-you-go answer sheet
+   - Every question has a "why correct" + "how to solve" explanation
+   - ACCUPLACER: scaled scoring, progressive difficulty, topic
+     tracking, pass/fail vs. 271 cutoff
+   ============================================================ */
+(function(){
+  /* ---------- STUDY GUIDE LINKS ---------- */
+  const STUDY_GUIDES = {
+    clep: {
+      title: 'CLEP Official Study Guide',
+      desc: 'Practice questions and study guides — College Board',
+      url: 'https://clep.collegeboard.org/prepare-for-an-exam/practice-questions-study-guides',
+      icon: '📘'
+    },
+    ap: {
+      title: 'AP Official Course Resources',
+      desc: 'Course frameworks, practice exams, and study guides',
+      url: 'https://apstudents.collegeboard.org/courses',
+      icon: '📗'
+    },
+    accuplacer: {
+      title: 'ACCUPLACER Official Practice (Pearson)',
+      desc: 'Pearson Perspective — full ACCUPLACER family practice',
+      url: 'https://accuplacer.pearsonperspective.com/perspective/home?passCode=accuplacer_family',
+      icon: '📕'
+    }
+  };
+
+  function studyGuideCard(key){
+    const g = STUDY_GUIDES[key];
+    return `<a class="qx-guide" href="${g.url}" target="_blank" rel="noopener">
+      <span class="qx-guide-icon">${g.icon}</span>
+      <span class="qx-guide-body"><b>${g.title}</b><span>${g.desc} · ${g.url}</span></span>
+      <span class="qx-guide-arrow">↗</span>
+    </a>`;
+  }
+
+  /* ---------- QUESTION BANKS ----------
+     Each question: {focus, prompt, options, answer, why, how, level (1-5), topic, passage?}
+     - why: short reason the correct answer is correct
+     - how: step-by-step micro-walkthrough for learn-as-you-go
+     - topic: short topic tag for the missed-topics report
+  */
+
+  const QB = {
+    /* ===== ARITHMETIC ===== */
+    arithmetic: [
+      {focus:'Fractions — common denominator',prompt:'What is 3/4 + 2/5?',options:['23/20','7/9','11/20','6/20'],answer:0,topic:'Fractions',level:1,
+        why:'A common denominator of 20 lets you add the numerators directly.',
+        how:'1) LCD of 4 and 5 is 20.  2) 3/4 = 15/20, 2/5 = 8/20.  3) 15 + 8 = 23, so the sum is 23/20.'},
+      {focus:'Percent of a number',prompt:'What is 18% of 250?',options:['45','18','25','72'],answer:0,topic:'Percents',level:1,
+        why:'Percent of a number = decimal × number.',
+        how:'1) Convert 18% → 0.18.  2) Multiply 0.18 × 250 = 45.'},
+      {focus:'Order of operations',prompt:'Simplify  48 ÷ 6 × 2.',options:['16','4','6','24'],answer:0,topic:'Order of Operations',level:1,
+        why:'Multiplication and division have equal priority and are done left to right.',
+        how:'1) 48 ÷ 6 = 8 (do the leftmost first).  2) 8 × 2 = 16.'},
+      {focus:'Ratios — scale up',prompt:'A ratio is 3:5. If the second quantity is 20, what is the first?',options:['12','8','15','25'],answer:0,topic:'Ratios',level:2,
+        why:'Both sides of a ratio must be scaled by the same factor.',
+        how:'1) 5 → 20 means scale factor 4.  2) Scale 3 × 4 = 12.'},
+      {focus:'Decimal multiplication',prompt:'What is 0.4 × 0.25?',options:['0.1','1.0','0.65','0.04'],answer:0,topic:'Decimals',level:2,
+        why:'Multiply digits, then place the decimal by total decimal places (1+2=3, but trailing 0 drops to 1 place).',
+        how:'1) 4 × 25 = 100.  2) 0.4 has 1 decimal, 0.25 has 2 → place point 3 over → 0.100 = 0.1.'},
+      {focus:'Mixed-number subtraction',prompt:'5 1/3 − 2 5/6 = ?',options:['2 1/2','3 1/2','2 1/3','3 1/6'],answer:0,topic:'Mixed Numbers',level:2,
+        why:'Convert to improper fractions with a common denominator, subtract, then convert back.',
+        how:'1) 5 1/3 = 16/3 = 32/6, and 2 5/6 = 17/6.  2) 32/6 − 17/6 = 15/6.  3) 15/6 = 2 3/6 = 2 1/2.'}
+    ],
+    /* ===== GEOMETRY ===== */
+    geometry: [
+      {focus:'Triangle angles sum',prompt:'A triangle has angles 40° and 65°. Third angle?',options:['75°','85°','65°','105°'],answer:0,topic:'Triangle Angles',level:1,
+        why:'Interior angles of a triangle always sum to 180°.',
+        how:'1) 40 + 65 = 105.  2) 180 − 105 = 75°.'},
+      {focus:'Rectangle area',prompt:'A rectangle has length 12 and width 5. Area?',options:['60','17','34','120'],answer:0,topic:'Area',level:1,
+        why:'Rectangle area = length × width.',
+        how:'1) Multiply: 12 × 5 = 60.'},
+      {focus:'Circle circumference',prompt:'A circle has radius 4. Its circumference is:',options:['8π','4π','16π','πr²'],answer:0,topic:'Circles',level:1,
+        why:'Circumference = 2πr (not πr², which is area).',
+        how:'1) Plug r = 4 into C = 2πr.  2) C = 2π(4) = 8π.'},
+      {focus:'Pythagorean theorem',prompt:'A right triangle has legs 6 and 8. Hypotenuse?',options:['10','12','14','48'],answer:0,topic:'Pythagorean',level:2,
+        why:'For a right triangle, a² + b² = c².',
+        how:'1) 6² + 8² = 36 + 64 = 100.  2) c = √100 = 10.'},
+      {focus:'Volume of a cylinder',prompt:'Cylinder with radius 3 and height 10. Volume?',options:['90π','30π','60π','9π'],answer:0,topic:'Volume',level:3,
+        why:'V = πr²h for a cylinder.',
+        how:'1) r² = 9.  2) V = π(9)(10) = 90π.'},
+      {focus:'Special right triangle (30-60-90)',prompt:'In a 30-60-90 triangle, if the shortest side is 5, the hypotenuse is:',options:['10','5√3','5√2','15'],answer:0,topic:'Special Triangles',level:3,
+        why:'In 30-60-90, sides are in ratio 1 : √3 : 2 (short : middle : hypotenuse).',
+        how:'1) Short side = 5 (the "1" in 1:√3:2).  2) Hypotenuse = 2 × 5 = 10.'}
+    ],
+    /* ===== STATISTICS ===== */
+    statistics: [
+      {focus:'Mean',prompt:'Find the mean of 6, 8, 10, 12.',options:['9','8','10','36'],answer:0,topic:'Mean',level:1,
+        why:'Mean = sum ÷ count.',
+        how:'1) Sum = 6+8+10+12 = 36.  2) Count = 4.  3) 36 ÷ 4 = 9.'},
+      {focus:'Median',prompt:'Find the median of 2, 3, 3, 5, 7.',options:['3','2','5','4'],answer:0,topic:'Median',level:1,
+        why:'Median is the middle value once data is sorted.',
+        how:'1) Already sorted.  2) Middle of 5 numbers is the 3rd = 3.'},
+      {focus:'Probability ↔ percent',prompt:'A probability of 0.25 is equivalent to:',options:['25%','2.5%','75%','1/4%'],answer:0,topic:'Probability',level:1,
+        why:'Convert a decimal probability to a percent by multiplying by 100.',
+        how:'1) 0.25 × 100 = 25%.'},
+      {focus:'Range',prompt:'What is the range of 4, 9, 10, 15?',options:['11','10','9','19'],answer:0,topic:'Range',level:1,
+        why:'Range = max − min.',
+        how:'1) Max = 15, Min = 4.  2) 15 − 4 = 11.'},
+      {focus:'Mode',prompt:'Find the mode of 2, 4, 4, 5, 7, 7, 7, 9.',options:['7','4','2','9'],answer:0,topic:'Mode',level:1,
+        why:'Mode is the most frequent value.',
+        how:'1) Count: 2 once, 4 twice, 5 once, 7 three times, 9 once.  2) 7 appears most → mode = 7.'},
+      {focus:'Probability — independent events',prompt:'You flip two fair coins. Probability of two heads?',options:['1/4','1/2','1/3','3/4'],answer:0,topic:'Probability',level:2,
+        why:'For independent events, P(A and B) = P(A) × P(B).',
+        how:'1) P(heads) = 1/2 each flip.  2) (1/2) × (1/2) = 1/4.'}
+    ],
+    /* ===== READING ===== */
+    reading: [
+      {focus:'Main idea',passage:'A community garden can provide fresh food, outdoor exercise, and a place for neighbors to work together. Although planning is required, many neighborhoods benefit from shared garden spaces.',
+        prompt:'The main idea of the passage is that community gardens:',
+        options:['can benefit neighborhoods in several ways','are too difficult for most people','only provide exercise','replace grocery stores entirely'],answer:0,topic:'Main Idea',level:1,
+        why:'The passage lists several benefits — that breadth IS the main idea.',
+        how:'1) Look for the umbrella claim: "many neighborhoods benefit."  2) Match the answer that captures the FULL scope, not one detail.'},
+      {focus:'Inference',passage:'Maya checked the sky, packed an umbrella, and moved the picnic basket back inside.',
+        prompt:'What can reasonably be inferred?',
+        options:['Maya expected rain','Maya forgot lunch','Maya disliked picnics','Maya was going to school'],answer:0,topic:'Inference',level:2,
+        why:'Her actions form a chain pointing to one conclusion: she expected weather to ruin the picnic.',
+        how:'1) "Checked the sky" + "packed umbrella" + "basket back inside" all point to rain.  2) Pick the inference these clues converge on.'},
+      {focus:'Vocabulary in context',passage:'The new policy was lauded by environmentalists who had pushed for it for years.',
+        prompt:'In this sentence, "lauded" most nearly means:',
+        options:['praised','blocked','ignored','rewritten'],answer:0,topic:'Vocabulary',level:2,
+        why:'Environmentalists who pushed for the policy would react positively when it passed.',
+        how:'1) Identify the relationship: they wanted it.  2) Their reaction must be positive.  3) Only "praised" fits.'},
+      {focus:'Author purpose',prompt:'If an author gives reasons to change your opinion, the purpose is most likely to:',
+        options:['persuade','list only','define only','decorate'],answer:0,topic:'Author Purpose',level:1,
+        why:'Reasons + a position aimed at the reader = persuasion.',
+        how:'1) Look at the "why" of the writing.  2) Reasoning aimed at opinion-change = persuade.'}
+    ],
+    /* ===== WRITING ===== */
+    writing: [
+      {focus:'Subject-verb agreement',prompt:'Choose the correct sentence.',
+        options:['The students were ready for the exam.','The students was ready for the exam.','The student were ready for the exam.','The students ready for the exam.'],answer:0,topic:'Agreement',level:1,
+        why:'A plural subject ("students") needs a plural verb ("were").',
+        how:'1) Identify the subject: "students" (plural).  2) Match the verb: plural → were.'},
+      {focus:'Comma after intro phrase',prompt:'Which sentence is punctuated correctly?',
+        options:['After class, we reviewed the notes.','After class we reviewed, the notes.','After, class we reviewed the notes.','After class we reviewed the notes,'],answer:0,topic:'Punctuation',level:1,
+        why:'An introductory phrase before the main clause is followed by a comma.',
+        how:'1) Find the intro phrase: "After class".  2) Place the comma right after it.'},
+      {focus:'Fragment repair',prompt:'Choose the clearest revision: "Because it was late. We left."',
+        options:['Because it was late, we left.','Because it was late we left.','It was late because. We left.','We left because. It was late.'],answer:0,topic:'Sentence Structure',level:2,
+        why:'A dependent clause ("Because it was late") cannot stand alone — join it with a comma.',
+        how:'1) Identify the fragment: "Because it was late."  2) Connect to the main clause with a comma.'},
+      {focus:'Conciseness',prompt:'Choose the most concise sentence.',
+        options:['The report explains the results clearly.','The report gives an explanation of the results in a clear way.','Clearly results report explains.','The results were explained by the report in a clear manner.'],answer:0,topic:'Conciseness',level:2,
+        why:'Active voice + tight wording delivers the same idea in fewer words.',
+        how:'1) Reject passive voice.  2) Reject filler ("in a clear manner").  3) Pick the active, direct version.'}
+    ],
+    /* ===== AP CALCULUS AB ===== */
+    ap_calc_ab: [
+      {focus:'Power rule',prompt:'If f(x) = x², what is f′(x)?',options:['2x','x','x²/2','2'],answer:0,topic:'Derivatives',level:2,
+        why:'Power rule: d/dx(xⁿ) = n·xⁿ⁻¹.',
+        how:'1) Bring down the exponent: 2.  2) Reduce exponent by 1: x¹.  3) Result: 2x.'},
+      {focus:'Antiderivative — power rule reverse',prompt:'∫ 2x dx equals:',options:['x² + C','2x² + C','x + C','ln|x| + C'],answer:0,topic:'Integration',level:2,
+        why:'Reverse the power rule: raise the exponent by 1, then divide by the new exponent.',
+        how:'1) ∫ 2x dx → exponent becomes 2.  2) 2x²/2 = x².  3) Add the constant of integration: x² + C.'},
+      {focus:'Limit (basic)',prompt:'lim (x→2) (x² − 4)/(x − 2) = ?',options:['4','0','2','undefined'],answer:0,topic:'Limits',level:3,
+        why:'Factor and cancel before evaluating.',
+        how:'1) Factor: (x−2)(x+2)/(x−2).  2) Cancel (x−2).  3) Substitute x=2 into (x+2) → 4.'},
+      {focus:'Chain rule',prompt:'d/dx[ sin(3x) ] = ?',options:['3·cos(3x)','cos(3x)','−3·cos(3x)','−sin(3x)'],answer:0,topic:'Chain Rule',level:3,
+        why:'Chain rule: derivative of outer × derivative of inner.',
+        how:'1) Outer: sin(u) → cos(u).  2) Inner: 3x → 3.  3) Multiply: cos(3x) · 3 = 3·cos(3x).'}
+    ],
+    ap_calc_bc: [
+      {focus:'p-series test',prompt:'The series Σ 1/n² is:',options:['Convergent','Divergent','Arithmetic','Undefined'],answer:0,topic:'Series',level:3,
+        why:'A p-series Σ 1/nᵖ converges when p > 1.',
+        how:'1) Identify p = 2.  2) Since 2 > 1, the series converges.'},
+      {focus:'Derivative of ln',prompt:'d/dx[ ln(x) ] = ?',options:['1/x','x','ln(x)','eˣ'],answer:0,topic:'Logarithms',level:2,
+        why:'A standard derivative: d/dx ln(x) = 1/x.',
+        how:'1) Memorize: derivative of ln(x) is 1/x for x > 0.'},
+      {focus:'Taylor — sin(x) at 0',prompt:'The first nonzero term of the Maclaurin series for sin(x) is:',options:['x','1','x²','x³/6'],answer:0,topic:'Taylor Series',level:4,
+        why:'Maclaurin series for sin(x) = x − x³/3! + x⁵/5! − ...',
+        how:'1) The series starts with x (the first nonzero term).  2) x³/3! is the next term but not the first.'}
+    ],
+    /* ===== AP PHYSICS ===== */
+    ap_physics_1: [
+      {focus:'Newton II',prompt:'A 2 kg object accelerates at 3 m/s². Net force?',options:['6 N','5 N','1.5 N','9.8 N'],answer:0,topic:'Newton\'s Laws',level:1,
+        why:'Newton\'s second law: F = ma.',
+        how:'1) F = m × a.  2) F = 2 × 3 = 6 N.'},
+      {focus:'Momentum',prompt:'Linear momentum is defined as:',options:['mass × velocity','force × distance','mass × acceleration','energy ÷ time'],answer:0,topic:'Momentum',level:1,
+        why:'Momentum p = m·v by definition.',
+        how:'1) Distinguish from energy (½mv²) and force (ma).  2) Momentum is mass × velocity.'},
+      {focus:'Kinetic energy',prompt:'A 4 kg object moves at 5 m/s. Kinetic energy?',options:['50 J','20 J','100 J','10 J'],answer:0,topic:'Energy',level:2,
+        why:'KE = ½ m v².',
+        how:'1) v² = 25.  2) KE = ½ × 4 × 25 = 50 J.'}
+    ],
+    ap_physics_2: [
+      {focus:'Fluid pressure with depth',prompt:'Pressure in a fluid increases with:',options:['depth','color','surface texture','temperature only'],answer:0,topic:'Fluids',level:1,
+        why:'P = P₀ + ρgh — pressure rises linearly with depth.',
+        how:'1) The "h" in ρgh is depth.  2) More depth → more pressure.'},
+      {focus:'Ohm\'s circuit',prompt:'In a closed circuit, current flows because of:',options:['potential difference','mass','volume','friction only'],answer:0,topic:'Circuits',level:1,
+        why:'A potential difference (voltage) drives charge through a circuit.',
+        how:'1) V = IR — without V, no I.  2) Voltage is the driver of current.'}
+    ],
+    ap_physics_c_mech: [
+      {focus:'Velocity from position',prompt:'If x(t) = 3t², velocity v(t) is:',options:['6t','3t','t²','6'],answer:0,topic:'Kinematics',level:2,
+        why:'v(t) = dx/dt.',
+        how:'1) Differentiate 3t² with the power rule: 6t.'},
+      {focus:'Work definition',prompt:'Work done by a constant force along the direction of motion:',options:['W = F·d','W = m/v','W = qV','W = P/t'],answer:0,topic:'Work-Energy',level:2,
+        why:'W = F·d·cos θ; for the same direction, cos 0° = 1.',
+        how:'1) Force and displacement aligned → cos θ = 1.  2) W = F × d.'}
+    ],
+    ap_physics_c_em: [
+      {focus:'Coulomb\'s law',prompt:'Electric force between two point charges follows:',options:['Coulomb\'s law','Hooke\'s law','Newton\'s cooling law','Ohm\'s law only'],answer:0,topic:'Electrostatics',level:2,
+        why:'F = kq₁q₂/r² — Coulomb\'s law.',
+        how:'1) Distinguish from gravity (similar 1/r² form, different constant).  2) Charges → Coulomb\'s law.'},
+      {focus:'Capacitance unit',prompt:'Capacitance is measured in:',options:['farads','teslas','newtons','joules'],answer:0,topic:'Capacitance',level:1,
+        why:'1 farad = 1 coulomb/volt.',
+        how:'1) Memorize SI units.  2) Capacitance = charge per voltage → farad.'}
+    ],
+    /* ===== AP CHEMISTRY ===== */
+    ap_chem: [
+      {focus:'pH definition',prompt:'pH is defined as:',options:['−log[H⁺]','log[OH⁻]','[H⁺]²','1/[OH⁻]'],answer:0,topic:'Acids/Bases',level:2,
+        why:'By definition, pH = −log of hydrogen ion concentration.',
+        how:'1) The "p" stands for "negative log".  2) "H" means [H⁺] activity.'},
+      {focus:'Ideal gas law',prompt:'The ideal gas law is:',options:['PV = nRT','F = ma','E = mc²','V = IR'],answer:0,topic:'Gas Laws',level:1,
+        why:'PV = nRT relates pressure, volume, moles, and temperature for an ideal gas.',
+        how:'1) Identify variables: P, V, n, T.  2) Match the formula that uses all four.'},
+      {focus:'Mole concept',prompt:'How many moles are in 22 g of CO₂? (M = 44 g/mol)',options:['0.5','2','22','44'],answer:0,topic:'Stoichiometry',level:2,
+        why:'moles = mass / molar mass.',
+        how:'1) n = 22 / 44.  2) n = 0.5 mol.'}
+    ],
+    /* ===== CLEP CALCULUS ===== */
+    clep_calc: [
+      {focus:'Power rule',prompt:'The derivative of x³ is:',options:['3x²','x²','3x','x⁴/4'],answer:0,topic:'Derivatives',level:2,
+        why:'Power rule: d/dx(xⁿ) = n·xⁿ⁻¹.',
+        how:'1) Bring down the 3.  2) Reduce exponent: x².  3) Result: 3x².'},
+      {focus:'Antiderivative of constant',prompt:'∫ 1 dx = ?',options:['x + C','1/x + C','0','ln x + C'],answer:0,topic:'Integration',level:1,
+        why:'The antiderivative of 1 is x (plus a constant).',
+        how:'1) ∫ k dx = kx + C.  2) For k = 1: ∫ 1 dx = x + C.'}
+    ],
+    /* ===== CLEP CHEMISTRY ===== */
+    clep_chem: [
+      {focus:'Avogadro\'s number',prompt:'A mole contains approximately:',options:['6.02×10²³ particles','3.14 particles','9.8 particles','1.60×10⁻¹⁹ particles'],answer:0,topic:'Mole Concept',level:1,
+        why:'Avogadro\'s number is 6.022×10²³ — particles per mole.',
+        how:'1) Memorize: 6.022 × 10²³.  2) The other options are π, g (gravity), and the elementary charge.'},
+      {focus:'Bond type',prompt:'In NaCl, the bond is mainly:',options:['ionic','nonpolar covalent','metallic','hydrogen'],answer:0,topic:'Bonding',level:2,
+        why:'Sodium (metal) loses an electron to chlorine (nonmetal) → ionic.',
+        how:'1) Metal + nonmetal → ionic.  2) Confirm: Na⁺ and Cl⁻ form an ionic lattice.'}
+    ],
+    /* ===== CLEP COLLEGE ALGEBRA ===== */
+    clep_college_algebra: [
+      {focus:'Linear equation',prompt:'Solve 2x + 6 = 14.',options:['4','10','7','3'],answer:0,topic:'Linear Equations',level:1,
+        why:'Isolate x by inverse operations.',
+        how:'1) Subtract 6 → 2x = 8.  2) Divide by 2 → x = 4.'},
+      {focus:'Difference of squares',prompt:'Factor x² − 9.',options:['(x − 3)(x + 3)','(x − 9)(x + 1)','(x − 3)²','x(x − 9)'],answer:0,topic:'Factoring',level:2,
+        why:'a² − b² = (a − b)(a + b).',
+        how:'1) Recognize: x² − 3².  2) Apply pattern: (x − 3)(x + 3).'},
+      {focus:'Function evaluation',prompt:'If f(x) = 2x² − 1, then f(3) = ?',options:['17','11','13','18'],answer:0,topic:'Functions',level:2,
+        why:'Substitute and evaluate.',
+        how:'1) f(3) = 2(3)² − 1.  2) = 2(9) − 1.  3) = 18 − 1 = 17.'}
+    ],
+    /* ===== ACCUPLACER (consolidated, with passage support) ===== */
+    accu_reading: [
+      {focus:'Reading — Main Idea',level:1,topic:'Main Idea',
+        passage:'A community garden can provide fresh food, outdoor exercise, and a place for neighbors to work together. Although planning is required, many neighborhoods benefit from shared garden spaces.',
+        prompt:'The main idea is that community gardens:',
+        options:['can benefit neighborhoods in several ways','are too difficult for most people','only provide exercise','replace grocery stores'],answer:0,
+        why:'The passage lists several benefits — the umbrella claim is the main idea.',
+        how:'1) Find the broad claim.  2) Reject answers that pick just one detail.'},
+      {focus:'Reading — Inference',level:2,topic:'Inference',
+        passage:'Maya checked the sky, packed an umbrella, and moved the picnic basket back inside.',
+        prompt:'What can reasonably be inferred?',
+        options:['Maya expected rain','Maya forgot lunch','Maya disliked picnics','Maya was going to school'],answer:0,
+        why:'Her three actions all converge on rain.',
+        how:'1) Treat each action as a clue.  2) Find what all clues support.'},
+      {focus:'Reading — Vocabulary in context',level:3,topic:'Vocabulary',
+        passage:'The decision was lauded by activists who had campaigned for it for years.',
+        prompt:'"Lauded" most nearly means:',options:['praised','blocked','rewritten','ignored'],answer:0,
+        why:'Activists who campaigned for the decision would respond positively.',
+        how:'1) Match tone to context.  2) Choose the positive word.'},
+      {focus:'Reading — Author purpose',level:4,topic:'Author Purpose',
+        passage:'Recent studies show that students who eat breakfast score higher on tests, miss fewer days, and report better focus. Schools should consider universal free breakfast.',
+        prompt:'The author\'s primary purpose is to:',
+        options:['persuade schools to adopt a policy','entertain readers with anecdotes','describe a personal experience','define breakfast'],answer:0,
+        why:'The author cites evidence and recommends action — classic persuasion.',
+        how:'1) Look for evidence + recommendation.  2) That pattern = persuade.'}
+    ],
+    accu_writing: [
+      {focus:'Writing — Sentence Structure',level:1,topic:'Sentence Structure',
+        prompt:'Choose the best revision: "Because the assignment was difficult. The students asked questions."',
+        options:['Because the assignment was difficult, the students asked questions.','Because the assignment was difficult. The students asking questions.','The students because the assignment was difficult asked.','Because difficult assignment, students questions.'],answer:0,
+        why:'A dependent clause ("Because...") must connect to an independent clause with a comma.',
+        how:'1) Identify dependent clause.  2) Join with comma + main clause.'},
+      {focus:'Writing — Subject-Verb Agreement',level:2,topic:'Agreement',
+        prompt:'Choose the best correction: "The group of students were preparing for the exam."',
+        options:['The group of students was preparing for the exam.','The group of students are preparing for the exam.','The group of students be preparing for the exam.','No change'],answer:0,
+        why:'The subject is "group" (singular), not "students".',
+        how:'1) Find the actual subject — ignore the prepositional phrase.  2) Match verb to "group" (singular).'},
+      {focus:'Writing — Modifier Placement',level:3,topic:'Modifiers',
+        prompt:'Choose the clearest sentence.',
+        options:['Walking to school, I saw a deer in the field.','Walking to school, a deer was seen in the field.','In the field walking to school, I saw a deer.','I saw walking to school a deer in the field.'],answer:0,
+        why:'The participial phrase must modify the actual subject doing the walking.',
+        how:'1) Ask: who is walking?  2) Make sure that subject directly follows the comma.'},
+      {focus:'Writing — Parallel Structure',level:4,topic:'Parallelism',
+        prompt:'Choose the best version.',
+        options:['She enjoys hiking, swimming, and biking.','She enjoys to hike, swimming, and biking.','She enjoys hiking, to swim, and biked.','She enjoyed hike, swim, and biking.'],answer:0,
+        why:'Items in a list should share the same grammatical form.',
+        how:'1) Pick a form (gerund "-ing").  2) Apply consistently.'}
+    ],
+    accu_arithmetic: [
+      {focus:'Arithmetic — Fractions',level:1,topic:'Fractions',
+        prompt:'3/4 + 2/5 = ?',options:['23/20','7/9','11/20','6/20'],answer:0,
+        why:'Common denominator of 20: 15/20 + 8/20 = 23/20.',
+        how:'1) LCD = 20.  2) Convert.  3) Add numerators.'},
+      {focus:'Arithmetic — Percent',level:2,topic:'Percents',
+        prompt:'18% of 250 = ?',options:['45','18','25','72'],answer:0,
+        why:'0.18 × 250 = 45.',
+        how:'1) Convert percent → decimal.  2) Multiply.'},
+      {focus:'Arithmetic — Decimal multiplication',level:3,topic:'Decimals',
+        prompt:'0.4 × 0.25 = ?',options:['0.1','1.0','0.04','0.65'],answer:0,
+        why:'4 × 25 = 100; 3 decimal places → 0.100 = 0.1.',
+        how:'1) Multiply digits.  2) Place decimal by total decimal places.'},
+      {focus:'Arithmetic — Word problem',level:4,topic:'Word Problems',
+        prompt:'A shirt costs $40. It is on sale for 25% off. Sale price?',options:['$30','$10','$32','$50'],answer:0,
+        why:'25% off = pay 75%. 0.75 × 40 = 30.',
+        how:'1) Discount = 0.25 × 40 = 10.  2) Sale = 40 − 10 = 30.'}
+    ],
+    accu_qras: [
+      {focus:'QR — Linear equation',level:2,topic:'Linear Equations',
+        prompt:'If 4x − 7 = 21, what is x?',options:['7','4','14','28'],answer:0,
+        why:'Isolate x via inverse operations.',
+        how:'1) Add 7 → 4x = 28.  2) Divide → x = 7.'},
+      {focus:'QR — Ratios',level:3,topic:'Ratios',
+        prompt:'A recipe uses 3 cups of flour per 2 cups of sugar. How much flour for 8 cups of sugar?',options:['12','10','8','6'],answer:0,
+        why:'Scale both sides by the same factor.',
+        how:'1) 2 → 8 means ×4.  2) 3 × 4 = 12.'},
+      {focus:'QR — Slope',level:4,topic:'Slope',
+        prompt:'Slope between (1, 2) and (4, 11)?',options:['3','9','1/3','5'],answer:0,
+        why:'m = (y₂ − y₁) / (x₂ − x₁).',
+        how:'1) (11 − 2)/(4 − 1).  2) 9/3 = 3.'},
+      {focus:'QR — Two-step word problem',level:4,topic:'Word Problems',
+        prompt:'Three notebooks cost $9.75. How much do 7 notebooks cost?',options:['$22.75','$30.00','$18.50','$25.00'],answer:0,
+        why:'Find unit price, then multiply.',
+        how:'1) 9.75 ÷ 3 = 3.25 each.  2) 3.25 × 7 = 22.75.'}
+    ],
+    accu_aaf: [
+      {focus:'Adv. Algebra — Quadratics',level:4,topic:'Quadratics',
+        prompt:'Solve x² − 9 = 0.',options:['x = ±3','x = 9','x = −9','x = ±9'],answer:0,
+        why:'Difference of squares: x² − 9 = (x − 3)(x + 3) = 0.',
+        how:'1) Add 9 → x² = 9.  2) Take ± root → x = ±3.'},
+      {focus:'Adv. Algebra — Functions',level:5,topic:'Functions',
+        prompt:'If f(x) = 2x² − 1, then f(3) = ?',options:['17','11','13','18'],answer:0,
+        why:'Substitute and evaluate.',
+        how:'1) 2(3)² = 18.  2) 18 − 1 = 17.'},
+      {focus:'Adv. Algebra — Exponents',level:5,topic:'Exponents',
+        prompt:'Simplify (2x³)².',options:['4x⁶','2x⁶','4x⁵','2x⁵'],answer:0,
+        why:'(ab)² = a² b² and (xⁿ)ᵐ = xⁿᵐ.',
+        how:'1) Square the 2: 4.  2) Square x³: x⁶.  3) Combine: 4x⁶.'},
+      {focus:'Adv. Algebra — Logarithms',level:5,topic:'Logarithms',
+        prompt:'log₂(8) = ?',options:['3','2','8','4'],answer:0,
+        why:'log₂(8) asks: 2 to what power = 8?',
+        how:'1) 2³ = 8.  2) So log₂(8) = 3.'}
+    ]
+  };
+
+  /* ---------- STATE ---------- */
+  const S = window.QXState = {
+    track: 'quiz',          // 'quiz' | 'ap' | 'clep' | 'accuplacer'
+    quizCat: 'arithmetic',  // for general quiz
+    apExam: 'ap_calc_ab',
+    clepExam: 'clep_college_algebra',
+    accuSection: 'mixed',   // 'mixed'|'accu_reading'|'accu_writing'|'accu_arithmetic'|'accu_qras'|'accu_aaf'|'essay'
+    current: null,
+    answered: false,
+    sheet: [],              // [{focus,prompt,chosen,correctIdx,options,why,how,topic,ok}]
+    score: 0, total: 0,
+    accuScaled: 250,
+    accuDifficulty: 1,
+    accuStreak: 0,
+    accuMissed: {},         // topic -> count
+    accuStrong: {},
+    timerId: null, timeLeft: 3600
+  };
+
+  function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+  function shuffleQ(q){
+    const pairs = q.options.map((t,i)=>({t,i}));
+    for(let i=pairs.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pairs[i],pairs[j]]=[pairs[j],pairs[i]];}
+    return {...q, options: pairs.map(p=>p.t), answer: pairs.findIndex(p=>p.i===q.answer)};
+  }
+
+  /* ---------- QUESTION SELECTION ---------- */
+  function nextQuestion(){
+    if(S.track === 'quiz'){
+      const pool = QB[S.quizCat] || QB.arithmetic;
+      return shuffleQ(pick(pool));
+    }
+    if(S.track === 'ap'){
+      const pool = QB[S.apExam] || [];
+      return pool.length ? shuffleQ(pick(pool)) : null;
+    }
+    if(S.track === 'clep'){
+      const pool = QB[S.clepExam] || [];
+      return pool.length ? shuffleQ(pick(pool)) : null;
+    }
+    if(S.track === 'accuplacer'){
+      if(S.accuSection === 'essay') return null; // handled separately
+      let pool;
+      if(S.accuSection === 'mixed'){
+        pool = [...QB.accu_reading, ...QB.accu_writing, ...QB.accu_arithmetic, ...QB.accu_qras, ...QB.accu_aaf];
+      } else {
+        pool = QB[S.accuSection] || [];
+      }
+      // progressive difficulty: prefer questions at current difficulty ±1
+      const lvl = S.accuDifficulty;
+      const sameLevel = pool.filter(q=>q.level===lvl);
+      const candidatePool = sameLevel.length ? sameLevel : pool.filter(q=>Math.abs(q.level-lvl)<=1);
+      return shuffleQ(pick((candidatePool.length?candidatePool:pool)));
+    }
+    return null;
+  }
+
+  /* ---------- ACCUPLACER ADAPTIVE ENGINE ---------- */
+  function updateAccu(isCorrect, topic){
+    if(isCorrect){
+      S.accuScaled += 3 + S.accuDifficulty;
+      S.accuStreak++;
+      if(S.accuStreak >= 2 && S.accuDifficulty < 5){ S.accuDifficulty++; S.accuStreak = 0; }
+      S.accuStrong[topic] = (S.accuStrong[topic]||0) + 1;
+    } else {
+      S.accuScaled -= 2;
+      S.accuDifficulty = Math.max(1, S.accuDifficulty - 1);
+      S.accuStreak = 0;
+      S.accuMissed[topic] = (S.accuMissed[topic]||0) + 1;
+    }
+    S.accuScaled = Math.max(200, Math.min(300, S.accuScaled));
+  }
+
+  /* ---------- RENDERING ---------- */
+  function trackTabs(){
+    const tabs = [
+      {id:'quiz',label:'General Quiz'},
+      {id:'ap',label:'AP Practice'},
+      {id:'clep',label:'CLEP Practice'},
+      {id:'accuplacer',label:'ACCUPLACER'}
+    ];
+    return `<div class="filter-row" style="margin-bottom:8px">${tabs.map(t=>
+      `<button class="stem-chip ${S.track===t.id?'active':''}" onclick="QXSetTrack('${t.id}')">${t.label}</button>`
+    ).join('')}</div>`;
+  }
+
+  function quizSubcats(){
+    const cats = [
+      {id:'arithmetic',label:'Arithmetic'},
+      {id:'geometry',label:'Geometry'},
+      {id:'statistics',label:'Statistics'},
+      {id:'reading',label:'Reading'},
+      {id:'writing',label:'Writing'}
+    ];
+    return `<div class="filter-row"><span class="muted">Category</span>${cats.map(c=>
+      `<button class="link-chip ${S.quizCat===c.id?'active':''}" onclick="QXSetQuizCat('${c.id}')">${c.label}</button>`
+    ).join('')}</div>`;
+  }
+
+  function apSubcats(){
+    const cats = [
+      {id:'ap_calc_ab',label:'Calculus AB'},
+      {id:'ap_calc_bc',label:'Calculus BC'},
+      {id:'ap_physics_1',label:'Physics 1'},
+      {id:'ap_physics_2',label:'Physics 2'},
+      {id:'ap_physics_c_mech',label:'Physics C: Mech'},
+      {id:'ap_physics_c_em',label:'Physics C: E&M'},
+      {id:'ap_chem',label:'Chemistry'}
+    ];
+    return `<div class="filter-row"><span class="muted">AP Exam</span>${cats.map(c=>
+      `<button class="link-chip ${S.apExam===c.id?'active':''}" onclick="QXSetApExam('${c.id}')">${c.label}</button>`
+    ).join('')}</div>`;
+  }
+
+  function clepSubcats(){
+    const cats = [
+      {id:'clep_college_algebra',label:'College Algebra'},
+      {id:'clep_calc',label:'Calculus'},
+      {id:'clep_chem',label:'Chemistry'}
+    ];
+    return `<div class="filter-row"><span class="muted">CLEP Exam</span>${cats.map(c=>
+      `<button class="link-chip ${S.clepExam===c.id?'active':''}" onclick="QXSetClepExam('${c.id}')">${c.label}</button>`
+    ).join('')}</div>`;
+  }
+
+  function accuSubcats(){
+    const cats = [
+      {id:'mixed',label:'Mixed'},
+      {id:'accu_reading',label:'Reading'},
+      {id:'accu_writing',label:'Writing'},
+      {id:'accu_arithmetic',label:'Arithmetic'},
+      {id:'accu_qras',label:'Quantitative Reasoning'},
+      {id:'accu_aaf',label:'Advanced Algebra'},
+      {id:'essay',label:'WritePlacer Essay'}
+    ];
+    return `<div class="filter-row"><span class="muted">Section</span>${cats.map(c=>
+      `<button class="link-chip ${S.accuSection===c.id?'active':''}" onclick="QXSetAccuSection('${c.id}')">${c.label}</button>`
+    ).join('')}</div>`;
+  }
+
+  function bannerFor(track){
+    if(track==='quiz') return `<div class="qx-banner"><h3>📝 General Quiz</h3><p>Mixed practice across arithmetic, geometry, statistics, reading, and writing. Every answer reveals the reasoning and a step-by-step walkthrough. Use the official study guides below for full preparation.</p>${studyGuideCard('clep')}${studyGuideCard('ap')}${studyGuideCard('accuplacer')}</div>`;
+    if(track==='ap') return `<div class="qx-banner"><h3>📗 AP Exam Practice</h3><p>Practice questions for the Calculus, Physics, and Chemistry AP exams. Each question includes the why and the step-by-step how to solve.</p>${studyGuideCard('ap')}</div>`;
+    if(track==='clep') return `<div class="qx-banner"><h3>📘 CLEP Exam Practice</h3><p>Practice questions for College Algebra, Calculus, and Chemistry CLEP exams. Use the official study guide for full preparation.</p>${studyGuideCard('clep')}</div>`;
+    if(track==='accuplacer') return `<div class="qx-banner"><h3>📕 ACCUPLACER Practice</h3><p>Adaptive practice with scaled scoring (200–300), progressive difficulty, missed-topics report, and a 271 cutoff for college-level readiness — modeled on the official ACCUPLACER family.</p>${studyGuideCard('accuplacer')}</div>`;
+    return '';
+  }
+
+  function questionCard(){
+    const q = S.current;
+    if(!q){
+      if(S.track==='accuplacer' && S.accuSection==='essay') return essayCard();
+      return `<div class="card qx-empty">No question available.</div>`;
+    }
+    const passage = q.passage ? `<div class="qx-passage">${q.passage}</div>` : '';
+    const opts = q.options.map((o,i)=>{
+      let cls = 'quiz-opt';
+      if(S.answered){
+        if(i===q.answer) cls += ' correct';
+        else if(i===q.chosen) cls += ' wrong';
+      }
+      return `<button class="${cls}" ${S.answered?'disabled':''} onclick="QXAnswer(${i})">${o}</button>`;
+    }).join('');
+    let feedback = '';
+    if(S.answered){
+      const ok = q.chosen === q.answer;
+      feedback = `<div class="qx-feedback ${ok?'correct':'wrong'}">
+        <b>${ok?'✓ Correct':'✗ Not quite'} — answer: ${q.options[q.answer]}</b>
+        <span class="qx-why"><strong>Why:</strong> ${q.why||''}</span>
+        <span class="qx-how"><em>How to solve:</em> ${q.how||''}</span>
+      </div>
+      <div class="filter-row" style="justify-content:center;margin-top:8px"><button class="btn primary" onclick="QXNext()">Next question →</button></div>`;
+    }
+    const focusBar = q.focus ? `<div class="section-title">${q.focus}</div>` : '';
+    return `<div class="card">
+      ${focusBar}
+      ${passage}
+      <div class="quiz-prompt">${q.prompt}</div>
+      <div class="quiz-opts">${opts}</div>
+      ${feedback}
+    </div>`;
+  }
+
+  function answerSheet(){
+    const items = S.sheet.slice().reverse();
+    if(!items.length){
+      return `<div class="qx-sheet">
+        <div class="qx-sheet-head"><div class="qx-sheet-title">📋 Learn-As-You-Go Answer Sheet</div><div class="qx-sheet-meta">Answer questions to populate this sheet</div></div>
+        <div class="qx-empty">Each question you answer is logged here with the reasoning and the step-by-step solution.</div>
+      </div>`;
+    }
+    const correct = items.filter(x=>x.ok).length;
+    const rows = items.map((x,idx)=>`
+      <div class="qx-sheet-row ${x.ok?'ok':'bad'}">
+        <div class="qx-num">${items.length-idx}.</div>
+        <div class="qx-text">
+          <span class="qx-tag ${x.ok?'ok':'bad'}">${x.ok?'✓ correct':'✗ missed'}</span>
+          <span class="qx-tag">${x.topic||x.focus||''}</span>
+          <b>${x.prompt}</b>
+          <span style="color:var(--tx);font-size:11px;display:block;margin-top:3px">Your answer: ${x.options[x.chosen]} ${x.ok?'':' · Correct: '+x.options[x.correctIdx]}</span>
+          <span class="qx-mini"><strong>Why:</strong> ${x.why||''}</span>
+          <span class="qx-mini"><em>How:</em> ${x.how||''}</span>
+        </div>
+      </div>`).join('');
+    return `<div class="qx-sheet">
+      <div class="qx-sheet-head">
+        <div class="qx-sheet-title">📋 Learn-As-You-Go Answer Sheet</div>
+        <div class="qx-sheet-meta">${correct}/${items.length} correct</div>
+      </div>
+      ${rows}
+    </div>`;
+  }
+
+  function accuStats(){
+    const accuracy = S.total ? Math.round((S.score/S.total)*100) : 0;
+    const passing = S.accuScaled >= 271;
+    const dots = `<span class="qx-difficulty-dots">${[1,2,3,4,5].map(i=>`<span class="${i<=S.accuDifficulty?'on':''}"></span>`).join('')}</span>`;
+    const missedTopics = Object.entries(S.accuMissed).sort((a,b)=>b[1]-a[1]);
+    const strongTopics = Object.entries(S.accuStrong).sort((a,b)=>b[1]-a[1]);
+    const missed = missedTopics.length
+      ? missedTopics.map(([t,n])=>`<span class="qx-topic-pill weak">${t} · missed ×${n}</span>`).join('')
+      : `<span class="muted">None missed yet — keep going!</span>`;
+    const strong = strongTopics.length
+      ? strongTopics.slice(0,8).map(([t,n])=>`<span class="qx-topic-pill strong">${t} · ${n}✓</span>`).join('')
+      : `<span class="muted">Answer more to build a strong-topics list.</span>`;
+    return `<div class="card">
+      <div class="section-title">ACCUPLACER Adaptive Score</div>
+      <div class="count-grid">
+        <div class="count-card"><div class="big">${S.accuScaled}</div><div class="small">Scaled (200–300)</div></div>
+        <div class="count-card"><div class="big">${accuracy}%</div><div class="small">Accuracy</div></div>
+        <div class="count-card"><div class="big">L${S.accuDifficulty}${dots}</div><div class="small">Difficulty</div></div>
+        <div class="count-card"><div class="big">${S.score}/${S.total}</div><div class="small">Score</div></div>
+      </div>
+      <div class="qx-meter"><div class="qx-meter-fill" style="width:${Math.min(100,((S.accuScaled-200)/100)*100)}%"></div></div>
+      <div class="${passing?'qx-band-pass':'qx-band-fail'}">
+        ${passing?'✓ College-level ready (271–300 band).':'⚠ Below the 271 college-ready cutoff. Keep practicing weak topics below.'}
+      </div>
+      <div class="section-title" style="margin-top:10px">Topics to review (weakest first)</div>
+      <div class="pill-row">${missed}</div>
+      <div class="section-title" style="margin-top:8px">Strong topics</div>
+      <div class="pill-row">${strong}</div>
+    </div>`;
+  }
+
+  function essayCard(){
+    return `<div class="card">
+      <div class="section-title">WritePlacer Essay</div>
+      <div class="quiz-prompt" style="text-align:left">Some people argue that technology has made students better learners; others argue the opposite. Take a position and support it with reasons and examples. Aim for 300–600 words.</div>
+      <textarea id="qx-essay-input" style="width:100%;height:200px;background:var(--c2);color:var(--tx);border:.5px solid var(--bd);border-radius:7px;padding:10px;font-size:12px;line-height:1.5;font-family:inherit"></textarea>
+      <div class="filter-row" style="margin-top:8px"><button class="btn primary" onclick="QXGradeEssay()">Grade with WritePlacer rubric</button></div>
+      <div id="qx-essay-score"></div>
+      <div class="strategy-grid">
+        <div class="strategy-card"><strong>Purpose / Focus</strong>Clear position consistent with the prompt.</div>
+        <div class="strategy-card"><strong>Organization</strong>Intro, body paragraphs, transitions, conclusion.</div>
+        <div class="strategy-card"><strong>Development</strong>Specific reasons and concrete examples.</div>
+        <div class="strategy-card"><strong>Language Use</strong>Sentence variety, word choice, grammar, mechanics.</div>
+      </div>
+    </div>`;
+  }
+
+  /* ---------- TOP-LEVEL RENDER ---------- */
+  function render(){
+    const main = document.getElementById('main-content');
+    if(!main) return;
+    let subcats = '';
+    if(S.track==='quiz') subcats = quizSubcats();
+    if(S.track==='ap') subcats = apSubcats();
+    if(S.track==='clep') subcats = clepSubcats();
+    if(S.track==='accuplacer') subcats = accuSubcats();
+
+    let content;
+    if(S.track==='accuplacer' && S.accuSection==='essay'){
+      content = essayCard();
+    } else {
+      content = questionCard();
+    }
+    const stats = (S.track==='accuplacer') ? accuStats() : '';
+    const sheet = answerSheet();
+    main.innerHTML = `
+      <div class="card">
+        <div class="stem-title">Quiz &amp; Exam Lab</div>
+        <div class="stem-sub">Adaptive practice with a learn-as-you-go answer sheet. Every answer shows the reasoning and a step-by-step walkthrough.</div>
+        ${trackTabs()}
+        ${bannerFor(S.track)}
+        ${subcats}
+        <div class="filter-row" style="margin-top:8px">
+          <button class="link-chip" onclick="QXReset()">Reset session</button>
+          ${S.track==='accuplacer'?'<button class="link-chip" onclick="QXStartTimedTest()">Start full-length timed test</button>':''}
+        </div>
+      </div>
+      ${stats}
+      ${content}
+      ${sheet}
+    `;
+  }
+
+  /* ---------- ACTIONS ---------- */
+  window.QXSetTrack = function(t){
+    S.track = t;
+    if(t==='quiz') S.current = nextQuestion();
+    if(t==='ap') S.current = nextQuestion();
+    if(t==='clep') S.current = nextQuestion();
+    if(t==='accuplacer'){ S.current = nextQuestion(); }
+    S.answered = false;
+    render();
+  };
+  window.QXSetQuizCat = function(c){ S.quizCat=c; S.current=nextQuestion(); S.answered=false; render(); };
+  window.QXSetApExam  = function(c){ S.apExam=c;  S.current=nextQuestion(); S.answered=false; render(); };
+  window.QXSetClepExam= function(c){ S.clepExam=c;S.current=nextQuestion(); S.answered=false; render(); };
+  window.QXSetAccuSection = function(c){
+    S.accuSection = c;
+    S.current = (c==='essay') ? null : nextQuestion();
+    S.answered = false;
+    render();
+  };
+
+  window.QXAnswer = function(idx){
+    if(S.answered || !S.current) return;
+    const q = S.current;
+    q.chosen = idx;
+    S.answered = true;
+    const ok = idx === q.answer;
+    S.total++;
+    if(ok) S.score++;
+    if(S.track==='accuplacer') updateAccu(ok, q.topic||q.focus||'general');
+    S.sheet.push({
+      focus:q.focus, prompt:q.prompt, options:q.options,
+      chosen:q.chosen, correctIdx:q.answer,
+      why:q.why, how:q.how, topic:q.topic, ok
+    });
+    if(S.sheet.length > 60) S.sheet.shift();
+    render();
+  };
+
+  window.QXNext = function(){
+    S.current = nextQuestion();
+    S.answered = false;
+    render();
+  };
+
+  window.QXReset = function(){
+    S.score=0; S.total=0; S.sheet=[];
+    if(S.track==='accuplacer'){
+      S.accuScaled=250; S.accuDifficulty=1; S.accuStreak=0; S.accuMissed={}; S.accuStrong={};
+      if(S.timerId){clearInterval(S.timerId); S.timerId=null;} S.timeLeft=3600;
+    }
+    S.current = nextQuestion(); S.answered=false;
+    render();
+  };
+
+  window.QXStartTimedTest = function(){
+    S.track='accuplacer';
+    S.score=0; S.total=0; S.sheet=[];
+    S.accuScaled=250; S.accuDifficulty=1; S.accuStreak=0; S.accuMissed={}; S.accuStrong={};
+    S.timeLeft=3600;
+    if(S.timerId) clearInterval(S.timerId);
+    S.timerId = setInterval(()=>{
+      S.timeLeft--;
+      if(S.timeLeft<=0){ clearInterval(S.timerId); S.timerId=null; alert('Time up! Review your score report.'); }
+    }, 1000);
+    S.current = nextQuestion(); S.answered=false;
+    render();
+  };
+
+  window.QXGradeEssay = function(){
+    const text = (document.getElementById('qx-essay-input')?.value || '').trim();
+    const words = text ? text.split(/\s+/).length : 0;
+    let score = 1;
+    if(words >= 150) score++;
+    if(words >= 300) score++;
+    if(/\b(because|therefore|however|for example|as a result|in addition)\b/i.test(text)) score++;
+    if((text.match(/[.!?]/g)||[]).length >= 6) score++;
+    if(/\b(first|second|finally|in conclusion|moreover|consequently)\b/i.test(text)) score++;
+    if(words >= 450) score++;
+    score = Math.max(1, Math.min(8, score));
+    const el = document.getElementById('qx-essay-score');
+    if(el){
+      const feedback = [];
+      if(words<150) feedback.push('Length is short — aim for 300+ words.');
+      if(!/\b(first|second|finally|in conclusion)\b/i.test(text)) feedback.push('Add organizational signposts (first, second, finally).');
+      if(!/\b(because|therefore|however|for example)\b/i.test(text)) feedback.push('Use transitions to connect reasons.');
+      el.innerHTML = `<div class="qx-feedback ${score>=5?'correct':'wrong'}">
+        <b>WritePlacer estimate: ${score}/8 · ${words} words</b>
+        <span class="qx-why"><strong>Rubric:</strong> Purpose, Organization, Development, Language Use.</span>
+        ${feedback.length?`<span class="qx-how"><em>To improve:</em> ${feedback.join(' ')}</span>`:'<span class="qx-how"><em>Strong response — review for grammar and word choice.</em></span>'}
+      </div>`;
+    }
+  };
+
+  /* ---------- ENTRY HOOKS — REPLACE EARLIER DEFS ---------- */
+  window.openQuizLab = function(){
+    document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+    const btn = document.getElementById('mode-quiz');
+    if(btn) btn.classList.add('active');
+    const nav = document.getElementById('letter-nav'); if(nav) nav.style.display='none';
+    const bottom = document.querySelector('.bottom-nav'); if(bottom) bottom.style.display='none';
+    const prog = document.getElementById('prog'); if(prog) prog.style.width='100%';
+    const pos = document.getElementById('pos-label'); if(pos) pos.textContent='Quiz & Exam Lab';
+    S.track = 'quiz';
+    S.current = nextQuestion();
+    S.answered = false;
+    render();
+  };
+
+  window.openExamLab = function(cat){
+    document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+    const btn = document.getElementById('mode-'+cat);
+    if(btn) btn.classList.add('active');
+    const nav = document.getElementById('letter-nav'); if(nav) nav.style.display='none';
+    const bottom = document.querySelector('.bottom-nav'); if(bottom) bottom.style.display='none';
+    const prog = document.getElementById('prog'); if(prog) prog.style.width='100%';
+    const pos = document.getElementById('pos-label'); if(pos) pos.textContent=cat.toUpperCase()+' Practice';
+    S.track = cat; // 'ap' or 'clep'
+    S.current = nextQuestion();
+    S.answered = false;
+    render();
+  };
+
+  // expose state for debugging
+  window.QXBank = QB;
+})();
+</script>
+
+
+
+<script>
+// ===== MENU GROUPING FIX =====
+(function(){
+  const previousSetMode = window.setMode;
+  window.setMode = function(mode){
+    if(typeof previousSetMode === 'function'){
+      previousSetMode(mode);
+    }
+    document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+    const btn = document.getElementById('mode-' + mode);
+    if(btn) btn.classList.add('active');
+  };
+})();
+</script>
+
+
+
+
+
+<script>
+// ===== SAFETY PATCH: PREVENT BROKEN MENU HOOKS =====
+(function(){
+  window.safeSetMode = window.safeSetMode || function(mode){
+    if(typeof window.setMode === 'function') return window.setMode(mode);
+    const main=document.getElementById('main-content');
+    if(main) main.innerHTML='<div class="card"><div class="section-title">Unavailable</div><div class="muted">This section could not load.</div></div>';
+  };
+
+  if(typeof window.openQuizLab !== 'function'){
+    window.openQuizLab = function(){
+      const main=document.getElementById('main-content');
+      if(main) main.innerHTML='<div class="card"><div class="section-title">Quiz</div><div class="muted">Quiz section is unavailable in this file.</div></div>';
+    };
+  }
+
+  if((document.getElementById('mode-ap') || document.getElementById('mode-clep')) && typeof window.openExamLab !== 'function'){
+    window.openExamLab = function(cat){
+      const main=document.getElementById('main-content');
+      if(main) main.innerHTML='<div class="card"><div class="section-title">'+cat.toUpperCase()+'</div><div class="muted">Exam section is unavailable in this file.</div></div>';
+    };
+  }
+})();
+</script>
+
 </body>
 </html>
