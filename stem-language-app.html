@@ -173,6 +173,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .fc-purpose-box{background:rgba(0,0,0,.13);border-radius:8px;padding:7px 9px}
 .fc-purpose-box b{display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--tt);margin-bottom:3px}
 .fc-purpose-box span{font-size:11px;color:var(--ts);line-height:1.4}
+.fc-realworld{display:flex;gap:10px;align-items:flex-start;background:rgba(122,171,207,.09);border-left:3px solid var(--ta);border-radius:0 8px 8px 0;padding:9px 12px;margin:8px 14px 0}
+.fc-realworld-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.fc-realworld b{display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ta);margin-bottom:4px}
+.fc-realworld p{font-size:11.5px;color:var(--ts);line-height:1.5;margin:0}
 /* SVG diagram */
 .fc-diagram{margin:8px 14px 0;border-radius:10px;overflow:hidden;background:rgba(0,0,0,.18);border:.5px solid rgba(122,171,207,.18);text-align:center}
 .fc-diagram svg{display:block;margin:0 auto;width:100%;height:auto}
@@ -243,43 +247,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 const QUICK_STEM_METHODS=[
 /* ── ARITHMETIC ─────────────────────────────────── */
 {
-  subject:'Vedic Multiplication — Nikhilam (Base Method)',
-  area:'Numbers & Operations',
-  theory:'Numbers near a base (10, 100, 1000) have small deviations. Multiply the deviations — which are tiny — instead of the full numbers.',
-  reality:'Mental math competitions, fast arithmetic on no-calculator exams. Numbers near 100 reduce to single-digit multiplications.',
-  url:'',
-  formula:'For A × B near base N:\ndev_A = A − N,  dev_B = B − N\nLeft part = A + dev_B  (or B + dev_A)\nRight part = dev_A × dev_B\nAnswer = Left × N + Right',
-  method:'Vedic Nikhilam Sutra (ancient Indian mathematics, base method): subtract each number from the nearest base to get small deviations, then combine. Reduces large multiplications to tiny ones.',
-  svg:`<svg viewBox="0 0 280 120" xmlns="http://www.w3.org/2000/svg">
-  <text x="140" y="16" text-anchor="middle" font-size="10" fill="#c9a060" font-weight="700">97 × 96  (base 100)</text>
-  <rect x="8" y="24" width="124" height="86" rx="8" fill="rgba(201,160,96,.08)" stroke="#c9a060" stroke-width="1.5"/>
-  <text x="70" y="40" text-anchor="middle" font-size="9" fill="#c9a060" font-weight="700">Deviations from 100</text>
-  <text x="30" y="58" font-size="9.5" fill="#d4b87a">97 → −3</text>
-  <text x="30" y="74" font-size="9.5" fill="#d4b87a">96 → −4</text>
-  <line x1="16" y1="80" x2="124" y2="80" stroke="#c9a060" stroke-width="1"/>
-  <text x="70" y="98" text-anchor="middle" font-size="8.5" fill="#c9a060">dev × dev = (−3)(−4) = 12</text>
-  <rect x="148" y="24" width="124" height="86" rx="8" fill="rgba(122,176,96,.08)" stroke="#7ab060" stroke-width="1.5"/>
-  <text x="210" y="40" text-anchor="middle" font-size="9" fill="#7ab060" font-weight="700">Combine</text>
-  <text x="160" y="58" font-size="9" fill="#a0c888">Left: 97+(−4) = 93</text>
-  <text x="160" y="72" font-size="9" fill="#a0c888">Right: 12 (2 digits)</text>
-  <line x1="156" y1="78" x2="264" y2="78" stroke="#7ab060" stroke-width="1"/>
-  <text x="210" y="96" text-anchor="middle" font-size="11" fill="#7ab060" font-weight="700">93 | 12 = 9312</text>
- </svg>`,
-  caption:'Left part = one number + other deviation. Right part = product of deviations. Concatenate with correct digit count.',
-  steps:[
-    'Choose a base close to both numbers (usually 10, 100, or 1000).',
-    'Find each number\'s deviation: dev = number − base (will be negative if number is below base).',
-    'Left part of answer: either number plus the other\'s deviation (both give same result).',
-    'Right part of answer: dev_A × dev_B (must have exactly log₁₀(base) digits — pad with leading zero if needed).',
-    'Concatenate: answer = left part × base + right part.'
-  ],
-  example:'98 × 97 (base 100): devs = −2, −3. Left: 98+(−3)=95. Right: (−2)(−3)=06. Answer: 9506. Verify: 98×97=9506 ✓'
-},
-{
   subject:'Vedic Polynomial Division (Paravartya)',
   area:'Algebra',
-  theory:'The Paravartya Sutra ("transpose and apply") replaces polynomial long division with a compact row of operations identical to synthetic division — but generalizable to higher-degree divisors.',
-  reality:'AP Calculus prerequisite, CLEP College Algebra, SAT — polynomial division appears in every advanced algebra exam. This method is 3× faster than long division.',
+  theory:'',
+  reality:'Instead of messy polynomial long division, this shortcut lets you divide using just a simple row of numbers — much faster! Engineers and programmers use this to simplify equations and break complicated expressions into simpler pieces quickly.',
   url:'',
   formula:'Divide P(x) by (x − c):\n1. Write c and the coefficients of P\n2. Bring down first coefficient\n3. Multiply by c → place under next coeff\n4. Add → repeat\nLast value = remainder',
   method:'Synthetic Division (Vedic Paravartya): replace the divisor x−c with just the number c. Work only with coefficients in a horizontal table. Each step is one multiply and one add.',
@@ -319,11 +290,21 @@ const QUICK_STEM_METHODS=[
 {
   subject:'Vedic Polynomial Long Division (Multi-term Divisor)',
   area:'Algebra',
-  theory:'When the divisor has degree > 1, synthetic division cannot be used directly. The Vedic Paravartya approach extends: negate the non-leading divisor terms and use them to generate correction terms column by column.',
-  reality:'AP Calculus (rational functions), CLEP Precalculus — multi-term polynomial division appears when reducing complex fractions and finding slant asymptotes.',
-  url:'',
-  formula:'Divisor: x² + px + q\nNegate sub-leading terms: MD = [−p, −q]\nDivide leading terms for each quotient term\nApply MD corrections across the table\nRemainder = last terms not covered by quotient',
-  method:'Vedic Paravartya for polynomial divisors (as shown in Image 1): write the negative of the sub-leading divisor coefficients as a "multiplier row," then generate each quotient term by dividing into the current column, cascading corrections to the right.',
+  theory:'',
+  reality:'This method divides one polynomial by another the same way you do long division with regular numbers — divide, multiply, subtract, bring down, repeat. Mathematicians use it to simplify complicated fractions and find how curves behave when x gets very large.',
+  url:'https://youtu.be/UEK-VqI1wGg?si=tlTLvEqNXhADtc8f',
+  videoUrls:[
+    {label:'▶ Watch long division tutorial',url:'https://youtu.be/UEK-VqI1wGg?si=tlTLvEqNXhADtc8f'},
+    {label:'▶ Watch long division example',url:'https://youtu.be/X80zDVyDL_0?si=1eBAT_x7xzNZi1JL'}
+  ],
+  formula:`Polynomial Long Division:
+1. Divide leading term by leading term
+2. Multiply the entire divisor by that quotient term
+3. Subtract the full product
+4. Bring down the next term
+5. Repeat until degree(remainder) < degree(divisor)
+Answer = Quotient + Remainder/Divisor`,
+  method:'Classic polynomial long division: set the divisor outside and the dividend inside. Each cycle mirrors arithmetic long division — divide, multiply, subtract, bring down. Use the video-style layout: quotient on top, product underneath, subtraction line, next term brought down.',
   svg:`<svg viewBox="0 0 280 124" xmlns="http://www.w3.org/2000/svg">
   <text x="140" y="13" text-anchor="middle" font-size="9" fill="#c9a060" font-weight="700">(x³+3x²+3x+1) ÷ (x²−2x−1)</text>
   <rect x="8" y="18" width="264" height="98" rx="8" fill="rgba(201,160,96,.07)" stroke="#c9a060" stroke-width="1.5"/>
@@ -337,21 +318,22 @@ const QUICK_STEM_METHODS=[
   <text x="160" y="85" font-size="9" fill="#c07070" font-weight="700">R = 14x + 6</text>
   <text x="140" y="110" text-anchor="middle" font-size="8" fill="#8a8a8a">MD = negated sub-leading divisor terms</text>
  </svg>`,
-  caption:'MD row = negated divisor sub-terms. Each quotient term cascades corrections rightward. Remainder = uncovered tail.',
+  caption:'Video-style structure: divide leading terms, multiply below, subtract, bring down, repeat. The final tail is the remainder.',
   steps:[
-    'Write the divisor. Identify the leading term (usually 1·xⁿ). The "MD row" = the negated remaining coefficients of the divisor.',
-    'Write the full dividend coefficient row across the top.',
-    'Divide the first dividend term by the leading divisor term to get the first quotient term.',
-    'Multiply the first quotient term by each MD value and add the products to the appropriate columns below.',
-    'Move to the next column, add down, divide by the leading divisor term, and repeat. Stop when fewer columns remain than the divisor\'s degree — those are the remainder.'
+    'Write the dividend in descending powers and insert 0 placeholders for missing powers.',
+    'Divide the first term of the current dividend by the first term of the divisor. Place that result in the quotient row.',
+    'Multiply the entire divisor by the new quotient term and write the product directly underneath matching powers.',
+    'Subtract the product from the current dividend line. Change signs carefully, then combine like terms.',
+    'Bring down the next term and repeat the divide → multiply → subtract → bring down cycle.',
+    'Stop when the remaining polynomial has lower degree than the divisor. Write the answer as quotient plus remainder over divisor.'
   ],
-  example:'(x³+3x²+3x+1)÷(x²−2x−1): MD=[+2,+1]. Q col1: 1. Apply: col2 gets +2, col3 gets +1. New col2: 3+2=5 → Q=x+5. Remainder cols: 3+2(5)+1=14 and 1+1(5)=6 → R=14x+6.'
+  example:'Divide (2x³ + 3x² − 11x − 6) by (x + 3). First: 2x³ ÷ x = 2x². Multiply: 2x²(x+3)=2x³+6x². Subtract to get −3x², then bring down −11x. Next: −3x² ÷ x = −3x. Multiply: −3x(x+3)=−3x²−9x. Subtract to get −2x, then bring down −6. Next: −2x ÷ x = −2. Multiply: −2(x+3)=−2x−6. Subtract to get 0. Quotient = 2x² − 3x − 2, remainder 0.'
 },
 {
   subject:'Vedic Cross-Multiplication (Ūrdhva-Tiryagbhyām)',
   area:'Arithmetic / Algebra',
-  theory:'The "Vertically and Crosswise" sutra multiplies any two numbers by summing diagonal products at each positional level — like expanding polynomial coefficients.',
-  reality:'Scales to any number of digits with the same rule. Faster than long multiplication for numbers with 3+ digits. Applies directly to polynomial multiplication in algebra.',
+  theory:'',
+  reality:'This ancient Vedic trick multiplies two large numbers by combining diagonal digit products — a supercharged shortcut for big multiplication. Accountants and engineers use mental math tricks like this to check calculations quickly without a calculator.',
   url:'',
   formula:'Rule: at level n (0=ones), sum all products a[i] × b[n-i]\nwhere i ranges so both indices stay in bounds.\nWrite units digit of each level sum; carry rest left.\n\n2-digit — 3 levels   3-digit — 5 levels\n4-digit — 7 levels   5-digit — 9 levels\nn-digit × n-digit → (2n-1) levels',
   method:'Ūrdhva-Tiryagbhyām (Vedic — "Vertically and Crosswise"): index digits right-to-left from 0. At level n, multiply every pair a[i]×b[j] where i+j=n. Sum them all, add carry from previous level, write the units digit, carry the rest.',
@@ -719,15 +701,13 @@ function renderQuickStemMethods(){
   if(!QUICK_STEM_METHODS||!QUICK_STEM_METHODS.length)return'';
   const cards=QUICK_STEM_METHODS.map(x=>{
     const steps=x.steps.map((s,i)=>`<div class="fc-step-row"><div class="fc-step-num">${i+1}</div><div class="fc-step-text">${s}</div></div>`).join('');
-    const link=x.url?`<div style="padding:0 14px 10px"><a class="video-link" href="${x.url}" target="_blank" rel="noopener">▶ Watch tutorial</a></div>`:'';
+    const videoItems=x.videoUrls|| (x.url?[{label:'▶ Watch tutorial',url:x.url}]:[]);
+    const link=videoItems.length?`<div style="padding:0 14px 10px;display:flex;gap:8px;flex-wrap:wrap">${videoItems.map(v=>`<a class="video-link" href="${v.url}" target="_blank" rel="noopener">${v.label||'▶ Watch tutorial'}</a>`).join('')}</div>`:'';
     const svg=x.svg?`<div class="fc-diagram">${x.svg}<div class="fc-diagram-caption">${x.caption||''}</div></div>`:'';
     return `<div class="formula-card" data-cat="Problem-Solving" data-tags="quick arithmetic algebra calculus statistics">
   <div class="fc-head"><div class="fc-title">${x.subject}</div><span class="fc-badge">${x.area}</span></div>
   <span class="fc-method-tag">🔬 ${x.method.split(':')[0]}</span>
-  <div class="fc-purpose">
-    <div class="fc-purpose-box"><b>Theory</b><span>${x.theory}</span></div>
-    <div class="fc-purpose-box"><b>Exam Use</b><span>${x.reality}</span></div>
-  </div>
+  ${x.reality?`<div class="fc-realworld"><span class="fc-realworld-icon">🌍</span><div><b>Where You See This in Real Life</b><p>${x.reality}</p></div></div>`:''}
   ${svg}
   <div class="fc-formula">${x.formula}</div>
   <div class="fc-steps"><div class="fc-steps-title">How to apply step by step</div>${steps}</div>
@@ -1798,8 +1778,8 @@ const STEM_TOPICS=[
 /* ── QUICK START ───────────────────────────────── */
 {cat:'Problem-Solving',tags:['all','daily','math'],
  title:'Universal Problem-Solving Loop (K-U-D)',
- theory:'Used in every STEM field to prevent random formula guessing and unit errors.',
- reality:'Exam shortcut: 80% of lost points come from skipping the diagram and not checking units.',
+ theory:'',
+ reality:'When your bike breaks, you do not just randomly twist things — you figure out what is wrong, make a plan, then fix it. Scientists, doctors, and engineers use this same Know-Understand-Do loop every time they solve a real problem.',
  formula:'KNOWN → UNKNOWN → DIAGRAM\nTranslate → Select Formula → Solve Symbolically\nPlug Numbers → Attach Units → Check Answer',
  method:'Research-proven: Polya\'s 4-Step Model (1945) — Understand, Plan, Execute, Review.',
  svg:`<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
@@ -1828,8 +1808,8 @@ const STEM_TOPICS=[
 /* ── ARITHMETIC ─────────────────────────────────── */
 {cat:'Numbers & Operations',tags:['arithmetic','daily','finance'],
  title:'Number Operations, Fractions & Percents',
- theory:'Foundation of all quantitative reasoning — every higher STEM formula reduces to arithmetic at the calculation step.',
- reality:'ACCUPLACER QAS, CLEP College Math, and AP exams all include fraction and percent problems worth quick points.',
+ theory:'',
+ reality:'If a pizza has 8 slices and you eat 3, you ate 3/8 of it — that is 37.5%. Stores use percents for sales, cooks use fractions in recipes, and banks use decimals for money. You use this math every single day.',
  formula:'PEMDAS: ( ) → ^ → × ÷ → + −\na/b + c/d = (ad + bc) / bd\nPercent: part/whole × 100\nPercent change: (new−old)/old × 100\nNew = original × (1 ± rate)',
  method:'Place-value decomposition: break numbers into tens and ones, multiply each part separately, then sum the partial products.',
  svg:`<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
@@ -1851,8 +1831,8 @@ const STEM_TOPICS=[
 
 {cat:'Numbers & Operations',tags:['arithmetic','chemistry','physics','engineering'],
  title:'Scientific Notation, Sig Figs & SI Prefixes',
- theory:'Compact representation of very large or very small quantities; significant figures track precision.',
- reality:'AP Chemistry, AP Physics, and CLEP Natural Sciences test scientific notation in stoichiometry and physics problems every year.',
+ theory:'',
+ reality:'The distance from Earth to the Sun is 150,000,000,000 meters — way too long to write! Scientists shrink it to 1.5 x 10^11 m. Your phone chip is about 5 nanometers wide. Scientific notation makes huge and tiny numbers easy to handle.',
  formula:'N = a × 10ⁿ  (1 ≤ a < 10)\n10⁻³ = milli (m)  10⁻⁶ = micro (μ)\n10⁻⁹ = nano (n)  10³ = kilo (k)\n10⁶ = mega (M)  10⁹ = giga (G)\n% error = |measured − accepted| / accepted × 100',
  method:'Sig-fig rule: result has as many sig figs as the least-precise input. Multiplication/division: match fewest sig figs. Addition/subtraction: match fewest decimal places.',
  svg:`<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
@@ -1885,8 +1865,8 @@ const STEM_TOPICS=[
 /* ── ALL ALGEBRA ────────────────────────────────── */
 {cat:'Algebra',tags:['algebra','math'],
  title:'Linear Equations, Inequalities & Systems',
- theory:'A linear equation is any relationship where every variable appears to the first power. Systems find where two or more linear relationships intersect.',
- reality:'CLEP College Algebra, SAT, ACCUPLACER AAF — linear equations are the single most tested algebra topic.',
+ theory:'',
+ reality:'A phone plan costs $30 per month plus $0.10 per text. Write it as C = 0.10t + 30 and predict any bill instantly! Companies set prices and engineers design roads using these same equations every day.',
  formula:'ax + b = c  →  x = (c − b) / a\ny = mx + b  (slope-intercept)\nax + by = e\ncx + dy = f  (system)\n← flip inequality when × or ÷ by negative',
  method:'Elimination: multiply rows so one variable cancels. Substitution: isolate one variable, plug into the other equation. (Research: students who choose the method consciously outperform those who always use the same one.)',
  svg:`<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
@@ -1909,8 +1889,8 @@ const STEM_TOPICS=[
 
 {cat:'Algebra',tags:['algebra','physics','finance'],
  title:'Quadratics, Factoring & the Quadratic Formula',
- theory:'Any equation where the highest power is 2 is quadratic. Solutions are x-intercepts; vertex is max or min.',
- reality:'CLEP College Algebra, AP Calc prerequisites, SAT — factoring and the quadratic formula appear in every algebra exam. AP Physics uses projectile motion = quadratic.',
+ theory:'',
+ reality:'When you throw a ball, it follows a curved path called a parabola — that is a quadratic! Engineers design roller coasters, bridges, and satellite dishes using this curve. Figuring out when a launched rocket hits the ground uses the quadratic formula.',
  formula:'ax² + bx + c = 0\nx = (−b ± √(b² − 4ac)) / 2a\nVertex: x = −b / 2a\nDiff of squares: a² − b² = (a−b)(a+b)\nPerfect sq: (a+b)² = a² + 2ab + b²',
  method:'AC method for trinomials: multiply a×c, find factor pair that sums to b, split middle term, factor by grouping. Proven faster than trial-and-error for ax²+bx+c with a≠1.',
  svg:`<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
@@ -1935,8 +1915,8 @@ const STEM_TOPICS=[
 
 {cat:'Algebra',tags:['algebra','finance','chemistry','data'],
  title:'Functions, Exponents, Logs & Sequences',
- theory:'Functions map inputs to unique outputs. Exponentials and logarithms are inverse operations governing growth, decay, pH, and decibels.',
- reality:'CLEP Precalculus, CLEP College Algebra, AP Calculus — exponentials and logs are in every practice exam. Compound interest and half-life are direct applications.',
+ theory:'',
+ reality:'Bacteria double every hour — that is exponential growth. Start with 1 bacterium, and after 10 hours you have over 1,000. Doctors use this to predict infections. Banks use it for compound interest. Your phone battery draining follows these same patterns.',
  formula:'f(x): one input → one output\naᵐ · aⁿ = aᵐ⁺ⁿ    (aᵐ)ⁿ = aᵐⁿ\nlog_b(x)=y  ↔  bʸ = x\nln(x) = log_e(x)\nArithmetic seq: aₙ = a₁ + (n−1)d\nGeometric seq: aₙ = a₁ · rⁿ⁻¹\nExponential: A = Peʳᵗ  or  A = P(1+r)ⁿ',
  method:'To solve exponential equations: take log of both sides. To solve log equations: exponentiate both sides. (Inverse function approach — matches standard CLEP/AP solution method.)',
  svg:`<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
@@ -1957,8 +1937,8 @@ const STEM_TOPICS=[
 /* ── ANALYTIC GEOMETRY ──────────────────────────── */
 {cat:'Coordinate Geometry',tags:['geometry','math','engineering'],
  title:'Lines, Circles, Distance & Midpoint',
- theory:'Analytic geometry converts geometric shapes into algebraic equations so that algebra can describe positions, paths, and shapes precisely.',
- reality:'CLEP College Algebra, SAT, ACCUPLACER AAF — coordinate geometry is tested in every standardized math exam.',
+ theory:'',
+ reality:'GPS finds your exact location by measuring distances from satellites overhead. Architects use coordinate geometry to place every wall and window in a building. The midpoint formula finds the exact center between any two locations on a map.',
  formula:'Slope: m = (y₂−y₁)/(x₂−x₁)\nDistance: d = √((x₂−x₁)²+(y₂−y₁)²)\nMidpoint: M = ((x₁+x₂)/2, (y₁+y₂)/2)\nCircle: (x−h)²+(y−k)² = r²\nSlope-intercept: y = mx+b\nPoint-slope: y−y₁ = m(x−x₁)',
  method:'Standard form reveals center and radius immediately by completing the square — convert x²+y²+Dx+Ey+F=0 to standard form to read off (h,k) and r directly.',
  svg:`<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
@@ -1980,8 +1960,8 @@ const STEM_TOPICS=[
 
 {cat:'Coordinate Geometry',tags:['geometry','physics','engineering'],
  title:'Conics: Parabola, Ellipse & Hyperbola',
- theory:'Conic sections are curves produced by slicing a double cone. Each has distinctive geometric properties used in optics, satellite orbits, and architecture.',
- reality:'CLEP Precalculus, AP Precalculus — conic equations appear directly in tests. Parabolic reflectors, elliptical orbits, and hyperbolic navigation are real engineering uses.',
+ theory:'',
+ reality:'Satellite dishes are parabolas that focus all signals to one point. Planets orbit the Sun in ellipses, not circles. Whispering galleries in museums are ellipse-shaped so a whisper at one end is clearly heard at the other — that is geometry in action.',
  formula:'Parabola: y = a(x−h)²+k  or  x = a(y−k)²+h\nEllipse: (x−h)²/a²+(y−k)²/b²=1\nHyperbola: (x−h)²/a²−(y−k)²/b²=1\nFocus distance: c²=a²−b² (ellipse)\nc²=a²+b² (hyperbola)',
  method:'Complete the square on both variables to reach standard form. The shape is identified by sign: same-sign denominators = ellipse; opposite signs = hyperbola; one variable linear = parabola.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2000,8 +1980,8 @@ const STEM_TOPICS=[
 /* ── ALL GEOMETRY ───────────────────────────────── */
 {cat:'Geometry',tags:['geometry','daily','engineering'],
  title:'Plane Geometry: Angles, Area & Similarity',
- theory:'Plane geometry establishes the rules of shape, size, and position in 2D space. Similarity and congruence let you scale or match shapes.',
- reality:'CLEP College Math, SAT, ACCUPLACER — area and angle problems are consistently tested. Architecture, carpentry, and robotics depend on plane geometry daily.',
+ theory:'',
+ reality:'A carpenter cuts wood at exact angles. A painter calculates wall area to buy the right amount of paint. Architects use similarity to scale blueprints up to real buildings. Geometry is the math of everything you can see, build, and measure.',
  formula:'Triangle area: A = bh/2\nCircle: C = 2πr,  A = πr²\nParallelogram: A = bh\nTrapezoid: A = (b₁+b₂)h/2\nPythagorean: a²+b²=c²\nSimilar: matching sides proportional',
  method:'Polya diagram strategy: label every known measurement on the figure before writing any equation. Unknown angles are found by adding/subtracting known angles from 180° or 360°.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2023,8 +2003,8 @@ const STEM_TOPICS=[
 
 {cat:'Geometry',tags:['geometry','chemistry','engineering','daily'],
  title:'Solid Geometry: Volume, Surface Area & Density',
- theory:'Three-dimensional geometry quantifies the space inside and around objects. Density connects mass to the volume of any material.',
- reality:'AP Chemistry (density), engineering design (tank sizing), CLEP College Math — 3D geometry questions appear in every applied science context.',
+ theory:'',
+ reality:'How much water fits in a swimming pool? How much cardboard makes a cereal box? Shipping companies calculate volume to pack containers. Doctors measure bone density to check for osteoporosis. These calculations happen in construction and medicine every day.',
  formula:'Prism/Cylinder V = A_base × h\nCylinder V = πr²h,  SA = 2πr²+2πrh\nCone V = ⅓πr²h\nSphere V = (4/3)πr³,  SA = 4πr²\nDensity ρ = m/V\nPyramid V = ⅓A_base × h',
  method:'Composite solid strategy: decompose complex 3D objects into prisms, cylinders, cones, and hemispheres. Add or subtract volumes depending on the shape (e.g., hollow cylinders).',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2045,8 +2025,8 @@ const STEM_TOPICS=[
 /* ── TRIGONOMETRY ───────────────────────────────── */
 {cat:'Trigonometry',tags:['geometry','calculus','physics','engineering'],
  title:'Unit Circle, Triangles & Pythagorean Identities',
- theory:'Trigonometry converts between angles and side ratios. The unit circle extends trig beyond triangles to any angle, including negative and past 360°.',
- reality:'CLEP Precalculus, AP Calculus prerequisite, AP Physics — unit circle values appear in every trig and calculus problem. SOH-CAH-TOA is used daily in engineering and robotics.',
+ theory:'',
+ reality:'A sailor uses angles and distances to navigate across the ocean without landmarks. Game designers use sine and cosine to make characters move in smooth circles. Your smartphone knows which way it is tilting because its gyroscope uses trigonometry every second.',
  formula:'SOH-CAH-TOA:\nsin θ = opp/hyp   cos θ = adj/hyp   tan θ = opp/adj\nUnit circle: (cos θ, sin θ)\nPythagorean: sin²θ+cos²θ=1\n1+tan²θ=sec²θ   1+cot²θ=csc²θ\nInverse: θ = arcsin(x), arccos(x), arctan(x)',
  method:'ASTC (All Students Take Calculus): All positive in Q1, Sine positive in Q2, Tangent in Q3, Cosine in Q4. Use reference angles to find exact values from 30-60-90 and 45-45-90 triangles.',
  svg:`<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
@@ -2073,8 +2053,8 @@ const STEM_TOPICS=[
 
 {cat:'Trigonometry',tags:['physics','engineering','calculus'],
  title:'Trig Graphs, Waves & Radians',
- theory:'Trigonometric functions are periodic — they repeat their output pattern. Amplitude, period, and phase shift fully describe any sinusoidal wave.',
- reality:'AP Physics Mechanics and E&M, AP Calculus, engineering vibration analysis — every wave phenomenon (sound, light, AC current, spring oscillation) is described by y = A sin(Bx + C) + D.',
+ theory:'',
+ reality:'Sound, light, and radio waves are all sine waves. Your speaker makes music by vibrating in wave patterns. Doctors read heartbeats on a monitor — that wavy EKG line is a sine wave. Radians help engineers design everything that spins or pulses.',
  formula:'Radians = degrees × π/180\ny = A sin(Bx + C) + D\nAmplitude = |A|\nPeriod = 2π/|B|\nPhase shift = −C/B\nVertical shift = D\nWave: y = A sin(kx − ωt + φ)',
  method:'Graph by landmarks: start at phase shift, plot max at T/4, midline at T/2, min at 3T/4, return at T. Five-point method is the most efficient for AP/CLEP graphing questions.',
  svg:`<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
@@ -2097,8 +2077,8 @@ const STEM_TOPICS=[
 /* ── DIFFERENTIAL CALCULUS ─────────────────────── */
 {cat:'Derivatives & Limits',tags:['calculus','physics','finance','engineering'],
  title:'Limits, Derivatives & Rates of Change',
- theory:'A derivative measures the instantaneous rate of change of a function — the slope of the curve at a single point.',
- reality:'AP Calculus AB/BC, CLEP Calculus — derivatives are the core of the exam. Velocity, acceleration, marginal cost, and optimization all use derivatives.',
+ theory:'',
+ reality:'Your car speedometer shows how fast your position is changing — that is a derivative! Weather forecasters calculate how quickly temperature is dropping. Stock traders watch how fast prices change. Derivatives measure the rate of change of anything in the real world.',
  formula:'Limit: lim[h→0] (f(x+h)−f(x))/h\nd/dx xⁿ = n·xⁿ⁻¹\nd/dx eˣ = eˣ\nd/dx ln x = 1/x\nd/dx sin x = cos x\nd/dx cos x = −sin x\nSum rule: (f+g)′ = f′+g′',
  method:"L'Hôpital's Rule: if limit gives 0/0 or ∞/∞ form, differentiate numerator and denominator separately, then re-evaluate. Use for AP Calc limits with indeterminate forms.",
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2120,8 +2100,8 @@ const STEM_TOPICS=[
 
 {cat:'Derivatives & Limits',tags:['calculus','engineering','finance'],
  title:'Product, Quotient, Chain Rule & Optimization',
- theory:'Composite and combined functions require chain, product, and quotient rules. Optimization uses critical points where the derivative equals zero.',
- reality:'AP Calculus AB/BC — chain rule is the most frequently tested derivative technique. Every related rates and optimization problem uses it.',
+ theory:'',
+ reality:'A factory wants to make the biggest box possible from one flat sheet of cardboard. A farmer wants to fence the most land using the least fencing. Companies use these techniques to cut costs and maximize profit — it is math that saves real money every day.',
  formula:'Product: (fg)′ = f′g + fg′\nQuotient: (f/g)′ = (f′g−fg′)/g²\nChain: [f(g(x))]′ = f′(g(x))·g′(x)\nImplicit: differentiate both sides, solve for dy/dx\nOptimization: set f′(x)=0, test with f″(x)\nRelated rates: differentiate both sides w.r.t. time t',
  method:'Chain rule mnemonic: "derivative of outside (leaving inside alone) times derivative of inside." For optimization: always verify whether critical point is max or min using second derivative test (f″ > 0 → min, f″ < 0 → max).',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2151,8 +2131,8 @@ const STEM_TOPICS=[
 /* ── INTEGRAL CALCULUS ─────────────────────────── */
 {cat:'Integration',tags:['calculus','physics','engineering'],
  title:'Antiderivatives, Area & the Fundamental Theorem',
- theory:'Integration is the inverse of differentiation. A definite integral accumulates the area between a curve and the x-axis from a to b.',
- reality:'AP Calculus AB/BC — FTC and basic integrals make up 30–40% of the FRQ score. Physics uses integrals for displacement, work, charge, and impulse.',
+ theory:'',
+ reality:'How far did a car travel if you only know its speed at every moment? You add up all the tiny distances — that is integration. Engineers calculate fuel consumption. Doctors measure total drug dosage in a patient over time using this same idea.',
  formula:'∫ xⁿ dx = xⁿ⁺¹/(n+1) + C  (n ≠ −1)\n∫ eˣ dx = eˣ + C\n∫ 1/x dx = ln|x| + C\n∫ sin x dx = −cos x + C\nFTC: ∫_a^b f(x) dx = F(b) − F(a)\nAvg value = 1/(b−a) · ∫_a^b f(x) dx',
  method:'Fundamental Theorem of Calculus (FTC Part 2): find the antiderivative F, then evaluate F(b) − F(a). The constant C disappears in definite integrals. Units of ∫f dx = units of f × units of x.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2174,8 +2154,8 @@ const STEM_TOPICS=[
 
 {cat:'Integration',tags:['calculus','engineering','physics'],
  title:'Integration Techniques: u-Sub, Parts & Applications',
- theory:'u-substitution reverses the chain rule; integration by parts reverses the product rule. Together they handle almost every integral on CLEP/AP exams.',
- reality:'AP Calculus BC — parts and u-sub together cover >80% of integration technique questions. Volume of revolution (disk/washer method) is a core AP FRQ topic.',
+ theory:'',
+ reality:'These are tools engineers use to solve integrals that do not fit simple patterns. Finding the center of gravity of an airplane wing, calculating the work a pump does, or designing the shape of a dam all require these techniques.',
  formula:'u-sub: ∫f(g(x))g′(x) dx = ∫f(u) du\nBy parts: ∫u dv = uv − ∫v du\n(LIATE: Log, Inverse, Algebraic, Trig, Exp)\nDisk: V = π∫[f(x)]² dx\nWasher: V = π∫([R(x)]²−[r(x)]²) dx\nShell: V = 2π∫x·f(x) dx',
  method:'LIATE rule for integration by parts: choose u from the function that comes first in LIATE; dv is the rest. This gives the most tractable ∫v du. For volumes, disk method for rotation around x-axis; shell method often simpler for rotation around y-axis.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2198,8 +2178,8 @@ const STEM_TOPICS=[
 /* ── LINEAR ALGEBRA ─────────────────────────────── */
 {cat:'Matrices & Vectors',tags:['linear algebra','physics','engineering'],
  title:'Vectors, Matrices & Systems of Equations',
- theory:'Linear algebra organizes and solves systems of equations using matrices. Vectors represent direction and magnitude in any number of dimensions.',
- reality:'AP Calculus BC, college linear algebra CLEP, engineering — matrix methods solve circuit networks, structural systems, data fitting, and robotics kinematics.',
+ theory:'',
+ reality:'A video game character moves with a velocity vector — speed AND direction together. Google Maps solves a giant system of equations to find the fastest route. Every 3D animated movie uses matrix math to rotate and position every object on screen.',
  formula:'Ax = b  (system as matrix equation)\nRREF solves systems with row operations\ndot: a·b = |a||b|cosθ = Σaᵢbᵢ\ncross: |a×b| = |a||b|sinθ\ndet(A): 2×2: ad−bc\nA⁻¹ exists iff det(A) ≠ 0',
  method:'Gaussian elimination with row reduction: use three row operations (swap rows, scale row, add multiple of one row to another). Row echelon form → back substitution. RREF → read solution directly. Research confirms this is the most reliable systematic method.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2227,8 +2207,8 @@ const STEM_TOPICS=[
 /* ── DIFFERENTIAL EQUATIONS ────────────────────── */
 {cat:'ODEs',tags:['calculus','chemistry','physics'],
  title:'Separable ODEs: Growth, Decay & Cooling',
- theory:'An ordinary differential equation (ODE) relates a function to its own rate of change. Separable ODEs can be solved by isolating y-terms and x-terms on opposite sides.',
- reality:'AP Calculus BC — separable differential equations are a required FRQ topic. Exponential growth/decay appears in biology, chemistry, finance, and nuclear physics.',
+ theory:'',
+ reality:'Hot chocolate cools toward room temperature — that follows a differential equation called Newton\'s cooling law. Doctors use these equations to figure out how a drug leaves your body over time. Scientists model animal populations and radioactive decay the exact same way.',
  formula:'dy/dt = ky  →  y = Ce^(kt)\nHalf-life: A = A₀(1/2)^(t/T½)\nCooling: dT/dt = −k(T − T_env)\n→  T(t) = T_env + (T₀−T_env)e^(−kt)\nLogistic: dP/dt = rP(1 − P/K)',
  method:'Separation of variables: move all y-terms (including dy) to one side and all t-terms (including dt) to the other, then integrate both sides. Always include the constant C and apply initial conditions to solve for C.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2248,8 +2228,8 @@ const STEM_TOPICS=[
 /* ── STATISTICS + DATA ─────────────────────────── */
 {cat:'Statistics',tags:['data','finance','science'],
  title:'Descriptive Statistics, Distributions & Probability',
- theory:'Statistics summarizes data (descriptive) and makes inferences about populations from samples. Probability quantifies likelihood of outcomes.',
- reality:'CLEP College Math, AP Statistics — every standardized exam has statistics questions. Data science, quality control, medical research, and finance all rely on these core concepts.',
+ theory:'',
+ reality:'If your class takes a test, what is the average score and how spread out are the grades? Statistics helps doctors know if a medicine actually works, businesses understand customers, and scientists make sense of messy data. Probability tells you how likely things are.',
  formula:'Mean: μ = Σx/n\nVariance: σ² = Σ(x−μ)²/n\nStd dev: σ = √σ²\nz-score: z = (x−μ)/σ\nNormal: 68-95-99.7 rule\nP(A and B) = P(A)·P(B) if independent\nP(A or B) = P(A)+P(B)−P(A∩B)',
  method:'Five-number summary + boxplot: min, Q1, median, Q3, max. IQR = Q3−Q1. Outlier if x < Q1−1.5IQR or x > Q3+1.5IQR. This is the standard exploratory data analysis (EDA) protocol used in AP Statistics and data science.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2271,8 +2251,8 @@ const STEM_TOPICS=[
 
 {cat:'Statistics',tags:['data','finance','engineering'],
  title:'Regression, Inference, Confidence & Hypothesis Testing',
- theory:'Inferential statistics draws conclusions about populations from sample data. Linear regression models the relationship between two quantitative variables.',
- reality:'AP Statistics — inference (confidence intervals and hypothesis tests) accounts for 30–40% of exam points. Research scientists, engineers, and business analysts use hypothesis testing daily.',
+ theory:'',
+ reality:'Scientists tested a vaccine on 1,000 people. Did it actually work, or was it just random luck? Hypothesis testing answers that honestly. Regression predicts future house prices from past sales. Every published scientific study uses these tools to draw honest conclusions.',
  formula:'Lin. reg: ŷ = b₀ + b₁x\nr = correlation (−1 to +1)\nCI: x̄ ± z* · (σ/√n)\nMargin of error: E = z* · (σ/√n)\nHypothesis: H₀ vs Hₐ\nP-value < α → reject H₀\nt-stat: t = (x̄ − μ₀)/(s/√n)',
  method:'Four-step inference template (AP Statistics standard): State (H₀, Hₐ, α), Plan (identify test, check conditions), Do (calculate test statistic and p-value), Conclude (compare p-value to α, state in context).',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2296,8 +2276,8 @@ const STEM_TOPICS=[
 /* ── CHEMISTRY ─────────────────────────────────── */
 {cat:'Chemistry',tags:['chemistry','science'],
  title:'Atomic Structure, Moles & Stoichiometry',
- theory:'The mole is the central unit of chemistry. Stoichiometry is unit conversion through balanced equations using mole ratios.',
- reality:'AP Chemistry, CLEP Chemistry — mole calculations and stoichiometry appear in every AP Chem exam. The mole map is the most reliable navigation tool for these problems.',
+ theory:'',
+ reality:'Everything you touch is made of atoms too tiny to see — one gram of carbon holds about 50 sextillion atoms. Chemists use moles to count atoms in amounts you can weigh on a scale. Stoichiometry is the recipe math that tells you exactly how much of each ingredient you need.',
  formula:'n = m / M  (moles = grams / molar mass)\nParticles = n × Nₐ  (Nₐ = 6.022×10²³)\nElectronic config: Aufbau, Pauli, Hund\nOxidation: gain e⁻ = reduced; lose e⁻ = oxidized\n% composition = (molar mass element / molar mass compound) × 100',
  method:'Mole map: Grams ÷ M → Moles × Nₐ → Particles. For reactions: moles of A × (mol ratio B/A) = moles of B. Always balance the equation first.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2322,8 +2302,8 @@ const STEM_TOPICS=[
 
 {cat:'Chemistry',tags:['chemistry','daily','science'],
  title:'Solutions, Gas Laws, pH & Equilibrium',
- theory:'Solutions, gases, and acids/bases each have their own quantitative laws that connect measurable properties (concentration, pressure, temperature, pH).',
- reality:'AP Chemistry — gas law, solution, and equilibrium questions appear in both MCQ and FRQ sections. Le Chatelier\'s principle is tested every year.',
+ theory:'',
+ reality:'Soda is CO2 gas dissolved under pressure in liquid. Open the can and pressure drops, so bubbles escape — that is Boyle\'s Law! Your stomach acid has a pH of about 2. Scuba tanks use gas laws so divers always know exactly how much air they have left.',
  formula:'Molarity M = n/V (mol/L)\nDilution: M₁V₁ = M₂V₂\nIdeal gas: PV = nRT  (R=0.0821 L·atm/mol·K)\nCombined: P₁V₁/T₁ = P₂V₂/T₂\npH = −log[H⁺]   pOH = −log[OH⁻]\npH + pOH = 14 (at 25°C)\nKa = [H⁺][A⁻]/[HA]\nK = [products]/[reactants]',
  method:'Le Chatelier\'s principle: a system in equilibrium shifts to oppose any change imposed on it. Increase reactant → shift right. Increase pressure → shift to fewer moles of gas. Increase temperature → endothermic reaction shifts right.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2349,8 +2329,8 @@ const STEM_TOPICS=[
 
 {cat:'Chemistry',tags:['chemistry','engineering','physics'],
  title:'Thermochemistry, Kinetics & Electrochemistry',
- theory:'Thermochemistry tracks energy in reactions. Kinetics measures reaction rates. Electrochemistry links chemistry to electrical energy.',
- reality:'AP Chemistry FRQ — thermochemistry and electrochemistry are high-value free-response topics. Hess\'s law and cell potential calculations are tested every year.',
+ theory:'',
+ reality:'A hand warmer gets hot because a chemical reaction releases energy — thermochemistry! Your phone battery works through electrochemistry: chemicals push electrons through a circuit to power your screen. Car engines convert fuel heat into motion using the same principles.',
  formula:'q = mcΔT  (heat capacity)\nΔH°rxn = ΣΔH°f(products) − ΣΔH°f(reactants)\nΔG = ΔH − TΔS  (spontaneity)\nΔG < 0 → spontaneous\nRate = k[A]^m[B]^n\nt½ = ln(2)/k  (1st order)\nE°cell = E°cathode − E°anode\nΔG° = −nFE°',
  method:'Hess\'s Law: combine reaction equations algebraically to get ΔH for the target reaction. Reverse any reaction → change sign of ΔH. Multiply any reaction → multiply ΔH. Cell potential: always cathode minus anode (reduction − oxidation).',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2382,8 +2362,8 @@ const STEM_TOPICS=[
 /* ── PHYSICS ────────────────────────────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'Classical Mechanics: Kinematics, Forces & Energy',
- theory:'Newtonian mechanics describes the motion of everyday objects through three laws. Energy conservation links speed to position without needing to track forces at every instant.',
- reality:'AP Physics 1 and C, CLEP Natural Sciences — mechanics is the largest portion of both exams. Kinematics, Newton\'s laws, and energy-momentum are tested in every FRQ.',
+ theory:'',
+ reality:'How fast does a falling object hit the ground? How much braking force stops a car safely? NASA uses these exact equations to land rockets. Car makers use them to design safer airbags. Every sport — throwing, jumping, kicking — follows these laws of motion.',
  formula:'v = v₀ + at\nx = x₀ + v₀t + ½at²\nv² = v₀² + 2a·Δx\nF = ma\nW = F·d·cosθ\nKE = ½mv²\nPE = mgh\nConservation: KE+PE = constant\np = mv  (momentum)\nJ = FΔt = Δp  (impulse)',
  method:'Free-body diagram (FBD) protocol: draw the object as a dot, add every force vector with a label, write ΣF=ma for x and y separately. This systematic approach prevents missing forces and is required on AP FRQs.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2407,8 +2387,8 @@ const STEM_TOPICS=[
 
 {cat:'Physics',tags:['physics','engineering','chemistry'],
  title:'Electricity, Magnetism, Waves & Thermodynamics',
- theory:'Electromagnetic theory unifies electricity and magnetism. Wave physics describes light and sound. Thermodynamics governs heat and energy conversion.',
- reality:'AP Physics C E&M, AP Physics 1 and 2 — circuits, waves, and thermodynamics are tested in both MCQ and FRQ. The four Maxwell equations underlie all electromagnetic phenomena.',
+ theory:'',
+ reality:'Every electronic device runs on circuits. Your phone charger controls voltage and current. MRI machines in hospitals use magnetic fields to see inside your body without surgery. Solar panels convert light waves into electricity for your home. This physics powers the modern world.',
  formula:'V = IR  (Ohm\'s Law)\nP = IV = I²R = V²/R\nSeries: R_total = ΣRᵢ\nParallel: 1/R = Σ(1/Rᵢ)\nCoulomb: F = kq₁q₂/r²\nE field: E = kQ/r²\nWave: v = fλ\nSnell: n₁sinθ₁ = n₂sinθ₂\nPV = nRT,  Q = mcΔT',
  method:'Kirchhoff\'s Laws: KCL — current in = current out at any node (charge conservation). KVL — sum of voltage drops around any closed loop = 0 (energy conservation). Use these systematically to solve any circuit.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2443,8 +2423,8 @@ const STEM_TOPICS=[
 /* ── FINANCE ────────────────────────────────────── */
 {cat:'Finance & Commerce',tags:['finance','daily'],
  title:'Interest, Compound Growth & Loan Payments',
- theory:'Time-value of money: a dollar today is worth more than a dollar in the future because money can earn interest. All financial comparisons must adjust to the same point in time.',
- reality:'CLEP College Math, personal finance, business — understanding compound interest prevents costly loan mistakes and explains retirement savings growth.',
+ theory:'',
+ reality:'Save $100 at 5% interest and it doubles to $200 in about 14 years — without doing anything extra! But credit card debt grows the same way against you. Understanding compound interest is one of the most powerful money skills you can ever learn.',
  formula:'Simple: I = Prt\nCompound: A = P(1+r/n)^(nt)\nContinuous: A = Pe^(rt)\nPV = FV / (1+r)^t\nLoan PMT = P·r(1+r)^n / ((1+r)^n − 1)\nRule of 72: years to double ≈ 72/r%',
  method:'Rule of 72: divide 72 by the annual interest rate to estimate years to double. Quick, powerful mental math for comparing investment options — no calculator needed.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2466,8 +2446,8 @@ const STEM_TOPICS=[
 /* ── ENGINEERING ────────────────────────────────── */
 {cat:'Engineering & Statics',tags:['engineering','physics'],
  title:'Statics, Stress, Strain & Safety Factors',
- theory:'Statics applies Newton\'s first law to structures that are not accelerating: the sum of all forces AND all moments (torques) must equal zero.',
- reality:'Engineering mechanics, materials science — these formulas are used every day by mechanical, civil, and structural engineers to ensure structures will not fail.',
+ theory:'',
+ reality:'Why does a bridge not collapse when thousands of cars cross it? Engineers calculate every force on every beam to ensure nothing breaks. A safety factor means the bridge is built 3 to 5 times stronger than the heaviest load it will ever carry.',
  formula:'Equilibrium: ΣF = 0,  Στ = 0\nTorque: τ = r × F  (or rF sinθ)\nStress: σ = F/A  (Pa = N/m²)\nStrain: ε = ΔL/L  (dimensionless)\nYoung\'s modulus: E = σ/ε\nSafety factor: SF = capacity / load\nHooke\'s Law: F = kx  (springs)',
  method:'Method of sections for trusses: cut through the truss, isolate one portion, and apply 3 equilibrium equations to find internal forces. Far faster than the method of joints for internal members.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2495,8 +2475,8 @@ const STEM_TOPICS=[
 /* ── CONVERSIONS ────────────────────────────────── */
 {cat:'Unit Conversions',tags:['conversion','daily','chemistry','engineering'],
  title:'Unit Conversions: Factor-Label Method',
- theory:'Unit conversion is multiplication by 1 — written as a ratio where old units cancel and new units remain. Every conversion chain is a series of such multiplications.',
- reality:'AP Chemistry, AP Physics, engineering — dimensional analysis (factor-label) prevents the most common exam errors: dividing when you should multiply and using wrong units.',
+ theory:'',
+ reality:'A recipe uses grams but your scale shows ounces. A speed sign says km/h but your car shows mph. Doctors convert patient weight from pounds to kilograms before calculating medicine doses. Unit conversion is used in cooking, travel, science, and medicine every day.',
  formula:'1 in = 2.54 cm    1 ft = 12 in\n1 mi = 5280 ft = 1.609 km\n1 m = 100 cm = 1000 mm\n1 L = 1000 mL = 1 dm³\n1 kg = 1000 g    1 lb ≈ 453.6 g\n1 atm = 101,325 Pa    1 cal = 4.184 J\nmph × 0.44704 = m/s\n°C × 9/5 + 32 = °F    K = °C + 273.15',
  method:'Factor-label method (dimensional analysis): write starting value × (wanted unit / unwanted unit). Chain conversions so each step cancels the previous unit. Check: if units don\'t cancel to give wanted units, the setup is wrong.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2524,8 +2504,8 @@ const STEM_TOPICS=[
 /* ── DAILY USE ──────────────────────────────────── */
 {cat:'Everyday Math',tags:['daily','finance','conversion'],
  title:'Everyday Math: Scaling, Rates, Bills & Estimates',
- theory:'Real-world math is mostly ratios, rates, and proportions applied to familiar contexts.',
- reality:'CLEP College Math includes applied arithmetic problems. Every consumer decision — grocery comparisons, fuel costs, recipe scaling — uses this math.',
+ theory:'',
+ reality:'Is the big cereal box actually cheaper per ounce? How long will your road trip take? How much tip should you leave? Everyday math lets you check prices, plan trips, split bills, and make smart decisions without needing a calculator.',
  formula:'Unit price = cost / quantity\nFuel cost = (distance / mpg) × price/gallon\nElectric cost = kWh × rate\nRecipe scale = new servings / original × amount\nTip = bill × tip%\nPaycheck net = gross − taxes − deductions',
  method:'Proportional reasoning: if the rate or ratio is known, scale by multiplying. Never scale by adding. Cross-multiply for missing value in a proportion: a/b = c/x → x = bc/a.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2552,8 +2532,8 @@ const STEM_TOPICS=[
 /* ── REAL NUMBERS & NUMBER SETS ─────────────────── */
 {cat:'Algebra',tags:['arithmetic','algebra','math'],
  title:'Real Number Sets, Intervals & Absolute Value',
- theory:'The real number system is hierarchically nested: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Intervals describe continuous subsets of ℝ. Absolute value measures distance from zero on the number line.',
- reality:'CLEP College Math, ACCUPLACER, every algebra exam — number sets and interval notation appear in domain/range questions, inequality solutions, and function definitions.',
+ theory:'',
+ reality:'Temperature goes above or below zero — absolute value tells you how far from zero without worrying about direction. A thermostat keeps temperature within an interval like 68 to 72 degrees. Programmers use intervals to set valid ranges so apps do not crash from bad input.',
  formula:'ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ\n|x| = x if x≥0; −x if x<0\n|x| < a  ↔  −a < x < a\n|x| > a  ↔  x < −a  or  x > a\nOpen: (a,b)  Closed: [a,b]\nHalf-open: [a,b)  or  (a,b]\nUnbounded: (−∞,a] or [b,+∞)',
  method:'Absolute value equations: split into two cases (positive and negative). Absolute value inequalities: |x|<a → single interval; |x|>a → union of two intervals. Always check solutions satisfy original equation.',
  svg:`<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
@@ -2583,8 +2563,8 @@ const STEM_TOPICS=[
 /* ── POLYNOMIALS & ALGEBRAIC FRACTIONS ───────────── */
 {cat:'Algebra',tags:['algebra','math','calculus'],
  title:'Polynomial Operations, Division & Remainder Theorem',
- theory:'Polynomials are algebraic expressions with non-negative integer exponents. Every polynomial of degree n has at most n real roots. The remainder theorem connects division to function evaluation.',
- reality:'CLEP College Algebra, AP Calculus prerequisite — polynomial long division, factoring, and the remainder/factor theorems appear on every algebra exam and underpin rational function analysis in calculus.',
+ theory:'',
+ reality:'Engineers model the bending strength of a beam with polynomial equations. Economists model supply and demand curves the same way. Polynomial division simplifies complex expressions in calculators. It is the algebra behind computer graphics and physics simulations.',
  formula:'Division algorithm: P(x) = Q(x)·D(x) + R(x)\nRemainder Theorem: P(a) = remainder when P÷(x−a)\nFactor Theorem: (x−a) is a factor ↔ P(a)=0\nNewton binomial: (a+b)ⁿ = Σ C(n,k)·aⁿ⁻ᵏ·bᵏ\n(a+b)² = a²+2ab+b²\n(a−b)² = a²−2ab+b²\n(a+b)(a−b) = a²−b²\n(a±b)³ = a³±3a²b+3ab²±b³',
  method:'Ruffini\'s Rule (synthetic division): for divisor (x−a), write a and the coefficients; bring down the first, multiply by a, add — faster than full polynomial long division for linear divisors.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2618,8 +2598,8 @@ const STEM_TOPICS=[
 /* ── EQUATIONS — EXTENDED ───────────────────────── */
 {cat:'Algebra',tags:['algebra','math'],
  title:'Irrational, Logarithmic & Exponential Equations',
- theory:'Irrational equations contain variables under radicals; logarithmic equations contain variables as arguments of logs; exponential equations have variables in exponents. Each requires a specific isolation technique.',
- reality:'CLEP College Algebra, AP Precalculus — all three equation types appear in every advanced algebra exam. Extraneous solution checking is mandatory for irrational and logarithmic equations.',
+ theory:'',
+ reality:'The Richter scale uses logarithms — a magnitude 7 earthquake is 10 times stronger than a 6, not just one step higher. Sound is measured in decibels, also a log scale. Your phone uses exponential math to compress photos and stream video without wasting storage.',
  formula:'Irrational: isolate radical → raise both sides to power → check\nLogarithmic: log_b(x)=y ↔ bʸ=x\nlog(A)+log(B)=log(AB)\nlog(A)−log(B)=log(A/B)\nn·log(A)=log(Aⁿ)\nExponential same base: aᵐ=aⁿ → m=n\nExponential diff base: take log of both sides',
  method:'For irrational equations: isolate the radical, square both sides (squaring can introduce extraneous solutions), solve the resulting polynomial, and verify ALL solutions in the ORIGINAL equation.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2649,8 +2629,8 @@ const STEM_TOPICS=[
 /* ── INEQUALITIES ───────────────────────────────── */
 {cat:'Algebra',tags:['algebra','math','calculus'],
  title:'Polynomial & Rational Inequalities — Sign Chart Method',
- theory:'Polynomial and rational inequalities are solved by finding where the expression changes sign. The sign chart method is systematic and applies to any factored expression.',
- reality:'CLEP College Algebra, AP Calculus (domain, critical point analysis, first derivative test) — sign chart method is the universal tool for both inequalities and f\'(x) analysis.',
+ theory:'',
+ reality:'A phone plan is only worth buying if you use more than 50 texts per month — that is an inequality. Engineers set safe operating ranges for machines. Inequalities define the conditions where something works, is affordable, or is safe. They are the math of real constraints.',
  formula:'Steps: Factor → Find zeros/excluded pts → Sign chart → Read intervals\nPolynomial: (x−a)ⁿ factor: odd n = sign change; even n = no sign change\nRational: include zeros of numerator AND excluded values of denominator\nFlip inequality when multiplying/dividing by negative',
  method:'Sign chart (tableau des signes): list all critical values in order on a number line, test one point in each interval, record + or − for the whole expression. Read off the solution intervals directly. This is the method used in French/Spanish baccalauréat and AP Calculus.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2691,8 +2671,8 @@ const STEM_TOPICS=[
 /* ── COMPLEX NUMBERS ────────────────────────────── */
 {cat:'Complex Numbers',tags:['algebra','math','engineering'],
  title:'Complex Numbers: Cartesian, Polar & Operations',
- theory:'Complex numbers extend ℝ by introducing i=√(−1). Every complex number z=a+bi has a real part, imaginary part, modulus (distance from origin), and argument (angle). The polar form links complex numbers to trigonometry.',
- reality:'AP Precalculus, CLEP Precalculus, electrical engineering (AC circuits use j=i), and every course that involves roots of negative numbers or rotating vectors.',
+ theory:'',
+ reality:'Electrical engineers use complex numbers to describe AC electricity — the kind coming out of your wall outlet. Without them, modern circuit design, wireless signals, and audio processing would be impossible. They are the hidden math inside your speakers and Wi-Fi router.',
  formula:'z = a+bi   a=Re(z),  b=Im(z)\n|z| = √(a²+b²)  (modulus)\nconjugate: z̄ = a−bi\nz·z̄ = |z|²\nPolar: z = |z|(cosθ + i sinθ) = |z|eⁱᶿ\narg(z) = θ = arctan(b/a) (check quadrant)\nMoivre: zⁿ = |z|ⁿ(cos nθ + i sin nθ)\nDivision: z₁/z₂ → multiply by conjugate of z₂',
  method:'Moivre\'s Theorem: raise polar form to nth power by raising |z| to the nth power and multiplying the argument by n. Finding nth roots: divide argument by n and add 2πk/n for k=0,1,...,n−1 — gives n equally spaced roots on a circle of radius |z|^(1/n).',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2719,8 +2699,8 @@ const STEM_TOPICS=[
 /* ── VECTORS IN SPACE ───────────────────────────── */
 {cat:'Matrices & Vectors',tags:['linear algebra','physics','engineering'],
  title:'Vectors in Space: Dot Product, Cross Product & Applications',
- theory:'3D vectors extend 2D operations. The dot product measures alignment (scalar output); the cross product produces a perpendicular vector (vector output). Together they solve problems in 3D geometry and physics.',
- reality:'AP Physics C, engineering statics and electromagnetism, CLEP Calculus — 3D vector operations are required for torque, magnetic force, plane equations, and line-plane intersections.',
+ theory:'',
+ reality:'A pilot calculates actual flight path when wind pushes the plane sideways — that is vector addition. A 3D video game checks whether your character is facing a wall using dot products. Robots use 3D vectors to plan every movement through physical space.',
  formula:'→u = (u₁,u₂,u₃)\n|→u| = √(u₁²+u₂²+u₃²)\nDot: →u·→v = u₁v₁+u₂v₂+u₃v₃ = |u||v|cosθ\nCross: →u×→v = |i  j  k |\n              |u₁ u₂ u₃|\n              |v₁ v₂ v₃|\n|→u×→v| = |u||v|sinθ  (area of parallelogram)\n→u⊥→v ↔ →u·→v=0\n→u∥→v ↔ →u×→v=→0',
  method:'Cross product via the 3×3 determinant expansion: cofactor of i = (u₂v₃−u₃v₂), cofactor of j = −(u₁v₃−u₃v₁), cofactor of k = (u₁v₂−u₂v₁). The resulting vector is perpendicular to both u and v — the right-hand rule gives the direction.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2747,8 +2727,8 @@ const STEM_TOPICS=[
 /* ── FUNCTION ANALYSIS ──────────────────────────── */
 {cat:'Derivatives & Limits',tags:['calculus','math','engineering'],
  title:'Complete Function Analysis — Curve Sketching',
- theory:'Systematic function analysis extracts all geometric information from a function: domain, intercepts, symmetry, asymptotes, monotonicity, extrema, concavity, and inflection points.',
- reality:'AP Calculus AB/BC FRQ — the full function analysis is a standard free-response question type. Mastering the complete scheme earns maximum partial credit even when calculations contain minor errors.',
+ theory:'',
+ reality:'Before building a roller coaster, engineers sketch the exact path — where it climbs, peaks, and drops. Businesses graph profit curves to find when they earn the most money. Curve sketching helps us visualize and understand any system that changes over time.',
  formula:'Domain: where f is defined\nAsymptotes: vertical (denom=0), horizontal (lim x→±∞), oblique (degree num = degree den +1)\nf′(x)=0 → critical points → max/min (sign change)\nf″(x)=0 → inflection point candidates\nf″>0 → concave up; f″<0 → concave down\nMonotonicity: f′>0 → increasing; f′<0 → decreasing',
  method:'Seven-step scheme: (1) Domain, (2) Intercepts, (3) Symmetry, (4) Asymptotes, (5) First derivative → monotonicity + extrema, (6) Second derivative → concavity + inflection, (7) Sketch. Never skip steps — each informs the next.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2774,8 +2754,8 @@ const STEM_TOPICS=[
 /* ── MATRICES & DETERMINANTS ────────────────────── */
 {cat:'Matrices & Vectors',tags:['linear algebra','engineering','physics'],
  title:'Matrices: Operations, Determinants & Inverse',
- theory:'A matrix is a rectangular array of numbers. Matrix algebra extends scalar arithmetic to arrays, enabling compact representation of linear systems, transformations, and data structures.',
- reality:'AP Calculus BC, CLEP Precalculus, engineering — matrix operations solve large systems, represent rotations/transformations, and are the foundation of machine learning and computer graphics.',
+ theory:'',
+ reality:'Netflix recommends movies by running your viewing history through giant matrix calculations. Google ranks web pages using matrix math. Photo apps rotate and resize images using matrix transformations. Matrices are the backbone of artificial intelligence and data science.',
  formula:'A+B: add matching elements\nkA: multiply every element by k\nAB: row i of A · column j of B  (requires inner dims match)\nAB ≠ BA  (not commutative)\ndet 2×2: |a b|=ad−bc\n         |c d|\ndet 3×3: Sarrus rule or cofactor expansion\nA⁻¹ exists iff det(A)≠0\nA⁻¹=(1/det)·adj(A)',
  method:'Gauss-Jordan for inverse: write augmented matrix [A|I], row-reduce until the left side becomes I — the right side is then A⁻¹. Faster than adjoint method for 3×3 and larger matrices.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2804,8 +2784,8 @@ const STEM_TOPICS=[
 /* ── COMBINATORICS & PROBABILITY ────────────────── */
 {cat:'Statistics',tags:['data','math','daily'],
  title:'Combinatorics: Permutations, Combinations & Probability',
- theory:'Combinatorics counts arrangements and selections. Probability quantifies likelihood. These two fields connect through the sample space: probability = favorable outcomes / total equally-likely outcomes.',
- reality:'CLEP College Math, AP Statistics, SAT — counting problems and probability appear in every standardized exam. The binomial theorem and Pascal\'s triangle are directly tied to combinations.',
+ theory:'',
+ reality:'How many different 3-topping pizzas can you make from 10 toppings? That is combinations! A password with 8 characters has trillions of permutations — making it very hard to guess. Lotteries, card games, and cybersecurity all depend on this counting math.',
  formula:'Permutations (order matters): P(n,r) = n!/(n−r)!\nCombinations (order doesn\'t matter): C(n,r) = n!/(r!(n−r)!)\nC(n,r) = C(n,n−r)  (symmetry)\nBinomial: (a+b)ⁿ = Σ C(n,k)·aⁿ⁻ᵏ·bᵏ\nP(A∪B)=P(A)+P(B)−P(A∩B)\nP(A|B)=P(A∩B)/P(B)  (conditional)\nBinomial dist: P(X=k)=C(n,k)pᵏ(1−p)ⁿ⁻ᵏ',
  method:'Decision tree for counting: (1) Does ORDER matter? Yes → permutation. No → combination. (2) Is REPETITION allowed? Adjust formula accordingly. (3) Are there RESTRICTIONS? Multiply restricted cases or subtract forbidden cases from total.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2831,8 +2811,8 @@ const STEM_TOPICS=[
 /* ── LINEAR PROGRAMMING ─────────────────────────── */
 {cat:'Engineering & Statics',tags:['engineering','finance','math'],
  title:'Linear Programming — Graphical & Simplex',
- theory:'Linear programming optimises a linear objective function subject to linear constraints. The optimal solution always occurs at a vertex (corner point) of the feasible region — this is the Fundamental Theorem of Linear Programming.',
- reality:'CLEP College Math, AP Statistics, operations research, business, and engineering — LP problems test inequality systems, vertex identification, and objective function evaluation simultaneously.',
+ theory:'',
+ reality:'An airline has 50 planes, limited fuel, and thousands of possible routes. Linear programming finds the best schedule to earn the most money. Airlines, hospitals scheduling nurses, and factories planning production all use this to make the smartest decisions possible.',
  formula:'Objective: maximise/minimise Z = ax + by\nSubject to: linear inequality constraints\nFeasible region: intersection of all constraint half-planes\nFundamental Theorem: optimal Z occurs at a vertex\nVertex test: evaluate Z at every corner point → pick max or min\nSimplex (algebraic): pivot operations on augmented tableau',
  method:'Graphical method (2 variables): (1) Graph each constraint as a line, shade the feasible side, (2) identify the feasible region as the intersection, (3) list every vertex (corner point) by solving pairs of boundary equations, (4) evaluate Z at each vertex, (5) report the optimal vertex.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2860,8 +2840,8 @@ const STEM_TOPICS=[
 /* ── TRIG: SUM/DIFF, DOUBLE & HALF ANGLE ───────── */
 {cat:'Trigonometry',tags:['geometry','calculus','physics','engineering'],
  title:'Trig Identities: Sum, Difference, Double & Half Angle',
- theory:'These identities derive from the unit circle addition formulas and allow any compound angle expression to be rewritten in simpler form. They are the engine behind integral calculus trig substitutions.',
- reality:'AP Calculus BC (trig integrals, trig substitution), AP Physics (wave superposition), CLEP Precalculus — these identities are tested both as standalone algebra and inside calculus problems.',
+ theory:'',
+ reality:'Sound engineers combine audio signals using trig identities so the result sounds clean. GPS satellites use them to calculate your position with centimeter accuracy. Architects use them when designing curved roofs and spiral staircases. These identities simplify complex wave calculations instantly.',
  formula:'sin(A±B) = sinA cosB ± cosA sinB\ncos(A±B) = cosA cosB ∓ sinA sinB\ntan(A±B) = (tanA ± tanB)/(1 ∓ tanA tanB)\n\nDouble angle:\nsin 2A = 2 sinA cosA\ncos 2A = cos²A−sin²A = 2cos²A−1 = 1−2sin²A\ntan 2A = 2tanA/(1−tan²A)\n\nHalf angle:\nsin(A/2) = ±√((1−cosA)/2)\ncos(A/2) = ±√((1+cosA)/2)\ntan(A/2) = sinA/(1+cosA) = (1−cosA)/sinA',
  method:'Power-reduction (from double angle): cos²A=(1+cos2A)/2 and sin²A=(1−cos2A)/2. These are the key substitutions for integrating even powers of sin and cos in AP Calculus BC.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2890,8 +2870,8 @@ const STEM_TOPICS=[
 /* ── NON-LINEAR SYSTEMS ─────────────────────────── */
 {cat:'Algebra',tags:['algebra','math','calculus'],
  title:'Non-Linear Systems of Equations',
- theory:'Non-linear systems contain at least one equation of degree ≥ 2. Solutions represent intersection points of curves — these may be 0, 1, 2, or more points depending on the geometry.',
- reality:'CLEP College Algebra, AP Precalculus — non-linear systems appear wherever circles, parabolas, or ellipses intersect lines or each other. Substitution is almost always the fastest method.',
+ theory:'',
+ reality:'Where does a thrown ball (a parabola) land on a hillside (a line)? That is solving a non-linear system — and it is how NASA calculates where a spacecraft will touch down. Finding where supply meets demand in economics uses this exact technique.',
  formula:'Common types:\n• Line + parabola: y=mx+b and y=ax²+bx+c\n• Line + circle: y=mx+b and x²+y²=r²\n• Two conics: substitute one into the other\n\nSubstitution: isolate y (or x) from the simpler\nequation → substitute into the other\n→ polynomial equation → solve → back-substitute\n\nSolution = (x,y) pair satisfying BOTH equations',
  method:'Substitution is the standard method for non-linear systems. Elimination works only when both equations have matching quadratic terms (e.g. x²+y²). Always verify each solution satisfies BOTH original equations — extra solutions can appear after squaring.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2914,8 +2894,8 @@ const STEM_TOPICS=[
 /* ── 1D DESCRIPTIVE STATISTICS ──────────────────── */
 {cat:'Statistics',tags:['data','math','science','engineering'],
  title:'1D Descriptive Statistics: Central Tendency, Dispersion & Quartiles',
- theory:'Descriptive statistics summarises a dataset with a few key numbers: where the centre is (mean, median, mode), how spread out the data is (range, variance, standard deviation), and the five-number summary for outlier detection.',
- reality:'AP Statistics, CLEP College Math, every science and engineering lab report — descriptive statistics is the entry point to all data analysis. The five-number summary and box plot are standard EDA tools.',
+ theory:'',
+ reality:'A teacher looks at test scores and sees the average is 75 — but a box plot reveals a few very low scores pulling it down. Doctors use quartiles to define healthy ranges for blood pressure and cholesterol. Sports analysts compare player stats using these measures every season.',
  formula:'Mean: x̄ = Σxᵢ/n  (ungrouped)\nx̄ = Σfᵢxᵢ/N  (grouped, N=Σfᵢ)\nVariance: σ² = Σ(xᵢ−x̄)²/n = Σxᵢ²/n − x̄²\nStd dev: σ = √σ²\nCoeff of variation: CV = σ/x̄ × 100%\nMedian: middle value (odd n) or avg of middle 2 (even n)\nQ1=P25, Q2=P50 (median), Q3=P75\nIQR = Q3−Q1\nOutlier: x < Q1−1.5·IQR  or  x > Q3+1.5·IQR',
  method:'Grouped data shortcut: use the midpoint of each class interval as xᵢ. Variance computing formula Σxᵢ²/n − x̄² avoids computing each (xᵢ−x̄)² individually — much faster on a calculator.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2951,8 +2931,8 @@ const STEM_TOPICS=[
 /* ── 2D STATISTICS & REGRESSION ─────────────────── */
 {cat:'Statistics',tags:['data','math','science','engineering'],
  title:'2D Statistics: Covariance, Correlation & Regression Lines',
- theory:'Two-dimensional statistics analyses the relationship between two quantitative variables. Covariance measures direction of the relationship; correlation measures both direction and strength; regression provides the prediction equation.',
- reality:'AP Statistics — bivariate data, correlation, and linear regression are core exam topics. Engineering and science lab reports require regression analysis for every data experiment.',
+ theory:'',
+ reality:'Do students who study more hours get better grades? Correlation measures exactly how strongly two things are linked. Businesses track whether more advertising leads to more sales. Scientists test if a higher drug dose leads to better patient outcomes.',
  formula:'Covariance: σₓᵧ = Σxᵢyᵢ/n − x̄·ȳ\nCorrelation: r = σₓᵧ/(σₓ·σᵧ)   −1 ≤ r ≤ 1\nRegression y on x:  ŷ = ȳ + r(σᵧ/σₓ)(x − x̄)\n  slope: b = σₓᵧ/σₓ²  intercept: a = ȳ − b·x̄\nRegression x on y:  x̂ = x̄ + r(σₓ/σᵧ)(y − ȳ)\nBoth lines pass through (x̄, ȳ)\nr=+1 or −1: perfect linear fit\nr=0: no linear relationship',
  method:'Regression y on x minimises the sum of squared vertical residuals (least squares). Use this line to predict y from a known x. The regression x on y minimises horizontal residuals — use it to predict x from a known y. They are different lines unless r=±1.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -2981,8 +2961,8 @@ const STEM_TOPICS=[
 /* ── NORMAL DISTRIBUTION & INFERENCE ─────────────── */
 {cat:'Statistics',tags:['data','science','engineering'],
  title:'Normal Distribution, z-Scores & Confidence Intervals',
- theory:'The normal distribution is the most important probability distribution in statistics. The Central Limit Theorem guarantees that sample means follow a normal distribution for large n, regardless of the population shape. This underpins all classical inference.',
- reality:'AP Statistics — normal distribution and confidence intervals are tested in both MCQ and FRQ. They appear in biology, chemistry, physics, engineering quality control, and every research paper.',
+ theory:'',
+ reality:'Heights, test scores, and factory measurements all form a bell curve. A z-score tells you how unusual a measurement is. Factories use this to catch defective products before they ship. Doctors use it to decide whether a lab result is normal or a warning sign.',
  formula:'Z = (X−μ)/σ  (standardise)\nN(0,1): 68% within 1σ, 95% within 2σ, 99.7% within 3σ\nCI for mean: x̄ ± z*(σ/√n)\nCI for proportion: p̂ ± z*(√(p̂(1−p̂)/n))\nz* values: 90%→1.645, 95%→1.96, 99%→2.576\nMargin of error: E = z*·σ/√n\nMin sample size: n ≥ (z*·σ/E)²',
  method:'Standardisation procedure: convert any normal X~N(μ,σ²) to standard normal Z~N(0,1) using Z=(X−μ)/σ, then use the standard normal table (z-table) to find probabilities. For sample means, replace σ with σ/√n (standard error of the mean).',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3013,8 +2993,8 @@ const STEM_TOPICS=[
 /* ── AREAS & VOLUMES REFERENCE ──────────────────── */
 {cat:'Geometry',tags:['geometry','engineering','daily','physics'],
  title:'Complete Areas & Volumes Reference',
- theory:'Area formulas quantify 2D surface; volume formulas quantify 3D space. These derive from integration but are memorised as standard results for rapid use. Most complex shapes decompose into these primitives.',
- reality:'AP Calculus (volume of revolution), AP Physics (density, fluid pressure), CLEP College Math, engineering design — knowing these results prevents lengthy re-derivation in time-pressured exams.',
+ theory:'',
+ reality:'A pool company needs to know how many gallons a custom-shaped pool holds. A baker needs the area of an oddly shaped pan. A civil engineer calculates the volume of concrete for a highway overpass. Every construction and manufacturing job starts with these calculations.',
  formula:'FLAT AREAS:\nTriangle: A=bh/2   Equilateral: A=√3L²/4\nTrapezoid: A=(B+b)h/2   Circle: A=πr²\nSector: A=r²α/2 (α radians)\nRegular polygon: A=perimeter·apothem/2\n\nSOLID VOLUMES:\nCube: V=L³   Box: V=abc\nCylinder: V=πr²h\nCone: V=πr²h/3\nSphere: V=4πr³/3\nPyramid: V=A_base·h/3\nTorus: V=2π²Rr²',
  method:'Lateral vs total surface area: lateral area (Aₗ) excludes the base(s); total area (Aₜ) includes all faces. For cylinders: Aₗ=2πrh, Aₜ=2πr(h+r). For cones: Aₗ=πrg (slant height g=√(h²+r²)), Aₜ=πr(g+r).',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3058,8 +3038,8 @@ const STEM_TOPICS=[
 /* ── COMMERCIAL ARITHMETIC ──────────────────────── */
 {cat:'Finance & Commerce',tags:['finance','daily','math'],
  title:'Commercial Arithmetic: Interest, Annuities & APR',
- theory:'Commercial arithmetic governs money over time. Simple interest grows linearly; compound interest grows exponentially. Annuities are structured streams of equal periodic payments. APR (Annual Percentage Rate) is the standardised cost of credit.',
- reality:'CLEP College Math, personal finance, business — every loan, mortgage, savings account, and credit card uses these formulas. Understanding them is the single most financially valuable mathematical skill.',
+ theory:'',
+ reality:'When you take out a car loan, the bank calculates your exact monthly payment using an annuity formula. APR lets you compare loan offers fairly. These formulas determine your mortgage payment, plan your retirement savings, and underlie every financial product you will ever use.',
  formula:'Simple: I = C·r·t;  C_t = C(1 + rt)\nCompound: C_t = C(1 + r/m)^(mt)\nContinuous: C_t = C·eʳᵗ\nAnnuity (future): M = a·((1+r)ⁿ−1)/r\nAnnuity (present value): PV = a·(1−(1+r)^(−n))/r\nInstalment: a = C·r(1+r)ⁿ/((1+r)ⁿ−1)\nAPR/TAE: (1+r/m)^m − 1\nHalf-yearly: m=2  Quarterly: m=4  Monthly: m=12',
  method:'APR (Tasa Anual Equivalente in Spanish/European context, or Annual Effective Rate): converts any compounding frequency to a single annual rate for fair comparison. Always compare loans using APR, not nominal rate.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3090,8 +3070,8 @@ const STEM_TOPICS=[
 /* ── KINEMATICS ─────────────────────────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'Kinematics: UARM, Projectile & Circular Motion',
- theory:'Kinematics describes motion without asking why it happens. Uniform acceleration (UARM) applies whenever net force is constant. Projectile motion is UARM in 2D — horizontal (constant v) and vertical (constant g) are fully independent.',
- reality:'AP Physics 1, CLEP Natural Sciences — kinematics is the most tested topic. Every dynamics and energy problem begins with kinematics setup.',
+ theory:'',
+ reality:'A quarterback throws a football — where will it land? That is projectile motion. A roller coaster going through a loop uses circular motion math to keep riders safely in their seats. Traffic engineers calculate the maximum safe speed for every highway curve.',
  formula:'UARM (Uniformly Accelerated Rectilinear Motion):\nv = v₀ + at\nx = x₀ + v₀t + ½at²\nv² = v₀² + 2a(x − x₀)\n\nProjectile (launch angle α, v₀):\nvₓ = v₀cosα  (constant)\nvᵧ = v₀sinα − gt\nx = v₀cosα·t\ny = v₀sinα·t − ½gt²\nRange: R = v₀²sin2α/g\nMax height: H = v₀²sin²α/(2g)\n\nCircular Motion:\nω = 2π/T = 2πf   v = ωR\naₙ = v²/R = ω²R  (centripetal)\nT = 2π/ω   f = 1/T',
  method:'Projectile method: always resolve into x (no acceleration) and y (a=−g) components and treat as two independent 1D problems. Identify unknowns in each axis, match the shared time variable t to link them.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3126,8 +3106,8 @@ const STEM_TOPICS=[
 /* ── DYNAMICS & NEWTON'S LAWS ───────────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'Dynamics: Newton\'s Laws, Weight, Friction & Torque',
- theory:'Newton\'s three laws connect force to motion. The free-body diagram is the universal entry point for every dynamics problem — it makes all forces visible before writing any equation.',
- reality:'AP Physics 1, AP Physics C Mechanics — Newton\'s laws underpin every dynamics, energy, and momentum problem. Torque and equilibrium extend Newton\'s laws to rotation.',
+ theory:'',
+ reality:'A car needs more engine force going uphill than on flat ground — that is Newton\'s second law. A screwdriver works because torque multiplies your hand force into a stronger twist. Friction keeps your sneakers from sliding. Every vehicle and machine is designed around these laws.',
  formula:'1st Law: ΣF=0 ↔ a=0 (inertia)\n2nd Law: ΣF=ma  (vector equation)\n3rd Law: F₁₂=−F₂₁\nWeight: W = mg  (g=9.8 m/s²)\nFriction: Fₓ ≤ μₛN (static); Fₖ=μₖN (kinetic)\nNormal N: reaction from surface ⊥ to surface\nTorque: τ = F·d = F·r·sinθ  (N·m)\nEquilibrium: ΣF=0  AND  Στ=0\nHooke\'s Law: F = −kx  (spring)',
  method:'FBD protocol for inclined planes: rotate axes so x is along the slope, y is perpendicular. Decompose weight: W∥=mgsinθ (down slope), W⊥=mgcosθ (into surface). Then N=mgcosθ and Ffriction=μmgcosθ.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3167,8 +3147,8 @@ const STEM_TOPICS=[
 /* ── WORK, ENERGY & MOMENTUM ────────────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'Work, Energy, Power & Momentum–Collisions',
- theory:'Work-energy theorem: the net work done on an object equals its change in kinetic energy. Conservation of mechanical energy holds when only conservative forces act. Conservation of momentum holds in every collision.',
- reality:'AP Physics 1 & C — work/energy/momentum together account for about 35% of the exam. Energy conservation eliminates the need for force analysis in many problems.',
+ theory:'',
+ reality:'A crash investigator measures skid marks to calculate how fast a car was going before impact — using energy and momentum. Solar panels are rated in watts, which is power. The energy in a bouncing ball follows the same conservation laws as a rocket in flight.',
  formula:'Work: W = F·d·cosθ  (J)\nKE = ½mv²   PE = mgh (gravitational)\nPE_spring = ½kx²\nWork-Energy Thm: W_net = ΔKE\nConservation: KE₁+PE₁ = KE₂+PE₂ (conservative forces)\nPower: P = W/t = F·v  (W = J/s)\nMomentum: p = mv\nImpulse: J = FΔt = Δp\nConservation of p: Σpᵢ = Σpf\nElastic: KE conserved, p conserved\nInelastic: only p conserved\nPerfectly inelastic: bodies stick → v_f=(m₁v₁+m₂v₂)/(m₁+m₂)',
  method:'Energy method vs Newton method: use energy when you want speed at a point without knowing time or intermediate forces. Use Newton when you need forces, time, or acceleration. They give the same answer — choose whichever gives fewer unknowns.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3199,8 +3179,8 @@ const STEM_TOPICS=[
 /* ── HEAT & THERMODYNAMICS ──────────────────────── */
 {cat:'Physics',tags:['physics','chemistry','engineering'],
  title:'Heat, Thermodynamics & Thermal Machines',
- theory:'Thermodynamics governs energy transfer as heat and work. The First Law (ΔU=Q−W) is energy conservation for a thermal system. The Second Law limits efficiency — no engine can be 100% efficient.',
- reality:'AP Physics 2, AP Chemistry — thermodynamics is tested in both. Heat transfer, gas processes (isothermal, adiabatic, isobaric, isochoric), and Carnot efficiency appear in FRQ problems.',
+ theory:'',
+ reality:'A refrigerator pumps heat from inside to outside — that is the second law of thermodynamics. Car engines convert fuel heat into wheel motion. Your home insulation rating describes how well it resists heat flow. Thermodynamics explains every engine and air conditioner ever built.',
  formula:'Temperature: K = °C + 273.15\nHeat: Q = mcΔT  (specific heat)\nLatent heat: Q = m·L\nFirst Law: ΔU = Q − W\nW (gas expanding): W = pΔV (isobaric)\nProcesses:\n  Isothermal (T=const): ΔU=0, Q=W\n  Adiabatic (Q=0): ΔU=−W\n  Isochoric (V=const): W=0, ΔU=Q\n  Isobaric (p=const): W=pΔV\nCarnot efficiency: η=1−T_cold/T_hot\nCOP (heat pump): COP=Q_hot/W = T_hot/(T_hot−T_cold)',
  method:'Thermal equilibrium problem: set Qgained=Qlost (heat gained by cooler body = heat lost by warmer body). Q=mcΔT for each component. The final temperature is found by solving the equation — it must lie between the initial temperatures.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3231,8 +3211,8 @@ const STEM_TOPICS=[
 /* ── HYDROSTATICS & HYDRODYNAMICS ───────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'Fluid Mechanics: Pascal, Archimedes & Bernoulli',
- theory:'Fluids (liquids and gases) transmit pressure in all directions. Three foundational principles — Pascal\'s, Archimedes\', and Bernoulli\'s — govern pressure, buoyancy, and flow in every fluid system.',
- reality:'AP Physics 2 — fluid mechanics is a dedicated topic. Engineering hydraulics, aerodynamics (Bernoulli), and buoyancy calculations all use these three principles.',
+ theory:'',
+ reality:'A steel ship floats because of buoyancy — water pushes up with a force equal to the weight of water displaced (Archimedes). A car lift uses Pascal\'s law to multiply force with hydraulic pressure. An airplane wing creates lift because faster air above it means lower pressure below.',
  formula:'Hydrostatic pressure: P = P₀ + ρgh\nPascal: ΔP transmitted uniformly → F₁/A₁ = F₂/A₂\nArchimedes: E = ρ_fluid·V_submerged·g\nFloating: ρ_object/ρ_fluid = V_submerged/V_total\nContinuity: S₁v₁ = S₂v₂  (A·v = Q)\nBernoulli: p + ½ρv² + ρgh = constant\nToricelli: v_exit = √(2gh)\nReynolds: Re = ρvL/η',
  method:'Bernoulli application: identify two points along a streamline, write p₁+½ρv₁²+ρgh₁=p₂+½ρv₂²+ρgh₂. If the pipe is horizontal, ρgh terms cancel. Combine with continuity S₁v₁=S₂v₂ to eliminate one unknown.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3261,8 +3241,8 @@ const STEM_TOPICS=[
 /* ── SIMPLE HARMONIC MOTION & WAVES ─────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'SHM, Waves, Sound & Doppler Effect',
- theory:'Simple harmonic motion (SHM) is oscillation where restoring force is proportional to displacement. Mechanical waves transport energy without transporting matter. Sound is a longitudinal pressure wave; light is a transverse electromagnetic wave.',
- reality:'AP Physics 1 & 2 — SHM, wave properties, and the Doppler effect are standard exam topics. Springs, pendulums, standing waves on strings, and sound in pipes appear in both MCQ and FRQ.',
+ theory:'',
+ reality:'A fire truck siren sounds higher as it rushes toward you and lower as it drives away — that is the Doppler effect. Doctors use ultrasound waves to see babies before birth. Your speaker vibrates in simple harmonic motion to produce every sound you hear from music to speech.',
  formula:'SHM: x(t) = A·cos(ωt+φ₀)\nω = 2πf = 2π/T\nSpring: ω=√(k/m), T=2π√(m/k)\nPendulum: T=2π√(L/g)\nWave: v=λf,  y(x,t)=A·sin(kx−ωt)\nWave number: k=2π/λ\nSound intensity: β=10·log(I/I₀)  dB\nDoppler: f\'=f·(v±v_observer)/(v∓v_source)\nStanding waves (string, fixed both ends):\nλₙ=2L/n,  fₙ=nv/(2L)',
  method:'Doppler sign rule: numerator +v_observer when observer moves toward source; denominator −v_source when source moves toward observer. Invert these signs for moving away. Remember: a stationary reference = denominator v±0.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3294,8 +3274,8 @@ const STEM_TOPICS=[
 /* ── OPTICS ─────────────────────────────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'Geometric Optics: Reflection, Refraction & Lenses',
- theory:'Geometric optics treats light as rays that travel in straight lines, reflect off surfaces, and refract at interfaces between media. Thin lens and mirror equations connect object distance, image distance, and focal length.',
- reality:'AP Physics 2 — optics appears in every exam. Snell\'s law, the mirror/lens equation, and sign conventions for real vs virtual images are all tested.',
+ theory:'',
+ reality:'Your glasses or contacts refract light to correct your vision. A telescope uses curved mirrors to collect light from stars billions of miles away. Security cameras use wide-angle lenses. A rainbow forms because raindrops refract sunlight and split it into colors.',
  formula:'Reflection: θᵢ = θᵣ  (angle of incidence = angle of reflection)\nSnell\'s Law: n₁sinθ₁ = n₂sinθ₂\nRefractive index: n = c/v\nCritical angle: sinθ_c = n₂/n₁  (n₁ > n₂)\nMirror/Lens: 1/f = 1/s + 1/s\'\nMagnification: m = −s\'/s = y\'/y\nLens power: P = 1/f  (dioptres, f in metres)\nConvex lens/concave mirror: f > 0\nConcave lens/convex mirror: f < 0',
  method:'Sign convention: distances measured from the optical centre. Object distance s > 0 (always). Image distance s\' > 0 → real image (same side as outgoing light for lenses, same side as incoming for mirrors). s\' < 0 → virtual image. Magnification m < 0 → inverted image.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3330,8 +3310,8 @@ const STEM_TOPICS=[
 /* ── ELECTRICITY & MAGNETISM ────────────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'Electricity: Coulomb, Electric Field, Capacitors & Circuits',
- theory:'Electric charge creates electric fields and forces. Potential difference drives current through resistance. Capacitors store charge; the relationship Q=CV connects them. Kirchhoff\'s laws govern any circuit.',
- reality:'AP Physics C: E&M, AP Physics 2 — electricity is half of the E&M curriculum. Coulomb\'s law, Gauss\'s law, and circuit analysis appear in every exam.',
+ theory:'',
+ reality:'Every electronic device is a circuit. An electrician uses Ohm\'s law every day to safely wire a house. Your phone touchscreen detects your finger using tiny capacitors that sense changes when you touch the glass. Circuits power literally everything around you.',
  formula:'Coulomb: F = kq₁q₂/r²  (k=9×10⁹ N·m²/C²)\nElectric field: E = kQ/r²  (from point charge)\nGauss: ∮E·dA = Q_enclosed/ε₀\nPotential: V = kQ/r  (J/C = V)\nCapacitor: Q = CV,  U = Q²/(2C) = ½CV²\nParallel plates: C = ε₀A/d\nOhm: V = IR\nPower: P = IV = I²R = V²/R\nSeries R: R_total = ΣRᵢ\nParallel R: 1/R = Σ(1/Rᵢ)\nKVL: Σ voltages around loop = 0\nKCL: Σ currents into node = 0',
  method:'Gauss\'s law shortcut: for high-symmetry charge distributions (sphere, cylinder, plane) the flux integral reduces to E·(surface area) = Q_enclosed/ε₀. This gives E directly without integration.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3367,8 +3347,8 @@ const STEM_TOPICS=[
 /* ── MAGNETISM & INDUCTION ──────────────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'Magnetism: Lorentz Force, Biot-Savart & Induction',
- theory:'Moving charges create magnetic fields. A magnetic field exerts force on moving charges (Lorentz force). Changing magnetic flux induces an EMF (Faraday\'s law) — the basis of every electric generator and transformer.',
- reality:'AP Physics C: E&M, AP Physics 2 — magnetic force, magnetic field of wires, Faraday\'s law, and Lenz\'s law appear in both courses. The Lorentz force is used in mass spectrometers and cyclotrons.',
+ theory:'',
+ reality:'Electric motors spin because magnetic fields push on moving electrons — that is the Lorentz force. Every generator in a power plant, wind turbine, or car alternator works through electromagnetic induction. MRI machines use powerful magnetic fields to photograph the inside of your body without any cutting.',
  formula:'Lorentz force: F = qv×B  |F|=qvBsinθ\nBiot-Savart (long wire): B = μ₀I/(2πr)\nSolenoid: B = μ₀nI  (n=turns/length)\nMagnetic flux: Φ = B·A·cosθ\nFaraday: ε = −dΦ/dt = −N·dΦ/dt (N turns)\nLenz: induced current opposes the change in flux\nForce on wire: F = BIL·sinθ\nTransformer: V₁/V₂ = N₁/N₂  (ideal)',
  method:'Lenz\'s law right-hand rule: point thumb in direction of increasing flux — induced current flows in the direction your curled fingers resist that change (always opposes the change). For the force on a moving charge: use F=qv×B with the right-hand rule.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3399,8 +3379,8 @@ const STEM_TOPICS=[
 /* ── RELATIVITY & QUANTUM ───────────────────────── */
 {cat:'Physics',tags:['physics','science'],
  title:'Special Relativity, Quantum Physics & Nuclear Basics',
- theory:'At speeds approaching c, Newtonian mechanics fails. Special relativity introduces time dilation, length contraction, and E=mc². Quantum mechanics governs sub-atomic scales where energy is quantised and wave-particle duality holds.',
- reality:'AP Physics C (E=mc² context), CLEP Natural Sciences, nuclear engineering — these topics connect classical physics to modern physics and explain energy from nuclear reactions.',
+ theory:'',
+ reality:'GPS satellites must correct for time running slightly differently in orbit due to relativity — otherwise your maps would be off by miles every day. Nuclear power plants split uranium atoms to generate electricity for millions of homes. Solar panels work because light knocks electrons loose — pure quantum physics.',
  formula:'Lorentz factor: γ = 1/√(1−v²/c²)\nTime dilation: Δt = γΔt₀\nLength contraction: L = L₀/γ\nMass-energy: E = mc²  (rest energy)\nRelativistic KE: K = (γ−1)mc²\nPhotoelectric: E = hf − W  (h=6.63×10⁻³⁴ J·s)\nDe Broglie: λ = h/mv = h/p\nHeisenberg: Δx·Δp ≥ h/(4π)\nBohr hydrogen: Eₙ = −13.6/n²  eV\nRadioactive decay: N = N₀e^(−λt)\nHalf-life: T½ = ln2/λ',
  method:'Radioactive decay: activity A=λN. After n half-lives, N=N₀/2ⁿ. For carbon dating or half-life problems, identify initial amount, current amount, and solve for t using N=N₀e^(−λt) with λ=ln2/T½.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3434,8 +3414,8 @@ const STEM_TOPICS=[
 /* ── GRAVITATIONAL FIELD ────────────────────────── */
 {cat:'Physics',tags:['physics','engineering'],
  title:'Gravitational Field, Kepler\'s Laws & Orbital Mechanics',
- theory:'Newton\'s law of universal gravitation gives the force between any two masses. Kepler\'s three laws describe planetary motion. Conservation of energy and angular momentum fully determine orbital mechanics.',
- reality:'AP Physics C Mechanics, AP Physics 1 — Kepler\'s laws and orbital speed are tested. Satellites, escape velocity, and gravitational potential energy appear in FRQ problems.',
+ theory:'',
+ reality:'Planets orbit the Sun in precise oval paths that Kepler described centuries before space travel existed. GPS satellites orbit at a precise altitude to stay in sync with Earth\'s rotation. SpaceX engineers use these same equations to launch rockets and land them back on the pad.',
  formula:'Newton: F = Gm₁m₂/r²  (G=6.67×10⁻¹¹ N·m²/kg²)\nGravitational field: g = GM/r²\nGravitational PE: U = −GMm/r\nOrbital speed: v = √(GM/r)\nEscape velocity: v_e = √(2GM/r)\nKepler 1st: elliptical orbits, Sun at focus\nKepler 2nd: equal areas in equal times (L conserved)\nKepler 3rd: T² ∝ r³  →  T²=4π²r³/(GM)',
  method:'For satellite orbit problems: set gravitational force equal to centripetal force. GMm/r²=mv²/r → v=√(GM/r). This gives orbital speed at any radius. Total orbital energy = KE+PE = −GMm/(2r) — always negative for a bound orbit.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3465,8 +3445,8 @@ const STEM_TOPICS=[
 /* ── ATOMIC STRUCTURE & PERIODIC TABLE ─────────── */
 {cat:'Chemistry',tags:['chemistry','physics','science'],
  title:'Atomic Structure, Electronic Configuration & Periodic Trends',
- theory:'The atom\'s electronic structure determines all chemical behaviour. Electrons fill orbitals by three rules: Aufbau (lowest energy first), Pauli exclusion (max 2 electrons per orbital with opposite spins), and Hund\'s rule (maximise parallel spins before pairing).',
- reality:'AP Chemistry — atomic structure and periodic trends appear in every exam. Electron configuration connects to bonding, reactivity, and spectroscopy.',
+ theory:'',
+ reality:'Your non-stick pan is coated with Teflon — made of fluorine atoms that grip their electrons tightly. Gold does not rust because its electron arrangement is extremely stable. The periodic table lets chemists predict which atoms will bond, react violently, or do absolutely nothing.',
  formula:'Atomic number Z = number of protons\nMass number A = protons + neutrons\nElectronic config: 1s² 2s² 2p⁶ 3s² 3p⁶...\nMax electrons per sublevel: s=2, p=6, d=10, f=14\nBohr energy: Eₙ = −13.6/n² eV (hydrogen)\nRydberg: 1/λ = Rₕ(1/n₁² − 1/n₂²)\nIonisation energy trend: increases → across period, ↓ down group\nAtomic radius trend: decreases → across period, ↑ down group\nElectronegativity: increases → and ↑ (except noble gases)',
  method:'Electron configuration shortcut: use the noble gas core in brackets, then continue from after it. For transition metals, remember Cr=[Ar]3d⁵4s¹ and Cu=[Ar]3d¹⁰4s¹ (half-filled and fully-filled d shells are extra stable).',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3495,8 +3475,8 @@ const STEM_TOPICS=[
 /* ── CHEMICAL BONDING ───────────────────────────── */
 {cat:'Chemistry',tags:['chemistry','science'],
  title:'Chemical Bonding: Ionic, Covalent, VSEPR & Hybridisation',
- theory:'Chemical bonds form when atoms achieve lower energy states. Ionic bonds transfer electrons; covalent bonds share them. VSEPR theory predicts molecular geometry from electron pairs; hybridisation explains orbital mixing.',
- reality:'AP Chemistry — bonding, Lewis structures, VSEPR, and polarity appear in the first third of every AP Chem exam. Hybridisation connects bonding to molecular geometry and physical properties.',
+ theory:'',
+ reality:'Table salt forms because sodium gives an electron to chlorine — ionic bonding. Water is bent in shape (VSEPR), making it polar, which is why it dissolves salt but not oil. The shape of a molecule determines its smell, melting point, and how it reacts with your body.',
  formula:'Ionic: Δ electronegativity > 1.7 → ionic\nCovalent: ΔEN < 1.7 → covalent (< 0.5 nonpolar)\nBond order = (bonding e⁻ − antibonding e⁻)/2\nFormal charge = valence e⁻ − lone e⁻ − ½ bonding e⁻\nVSEPR pairs → geometry:\n  2 → linear (180°)\n  3 → trigonal planar (120°)\n  4 → tetrahedral (109.5°)\n  5 → trigonal bipyramidal\n  6 → octahedral (90°)\nHybridisation: sp(2 regions), sp²(3), sp³(4)\nσ bond: head-on overlap; π bond: side-on',
  method:'Lewis structure method: (1) count total valence electrons, (2) connect atoms with single bonds, (3) fill octets on outer atoms first, (4) give remaining electrons to central atom, (5) convert lone pairs to multiple bonds if central atom lacks octet. Minimise formal charges.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3537,8 +3517,8 @@ const STEM_TOPICS=[
 /* ── CHEMICAL REACTIONS & STOICHIOMETRY ─────────── */
 {cat:'Chemistry',tags:['chemistry','science'],
  title:'Reaction Types, Balancing, Redox & Electrochemistry',
- theory:'Chemical equations must be balanced (atoms and charge). Redox reactions involve electron transfer — oxidation is electron loss, reduction is electron gain (OIL RIG). Electrochemistry quantifies the electrical energy of redox reactions.',
- reality:'AP Chemistry — balancing equations, identifying redox, and calculating cell potential and electrolysis appear in every AP Chem exam. Faraday\'s laws connect electrochemistry to stoichiometry.',
+ theory:'',
+ reality:'Bleach cleans because it strips electrons from stain molecules — a redox reaction. Rust forms when iron loses electrons to oxygen on your car. Your rechargeable battery works by reversing a redox reaction. Balancing chemical equations is chemistry\'s version of double-entry accounting.',
  formula:'Balancing: atoms and charge equal on both sides\nOxidation state rules:\n  free element = 0; monoatomic ion = charge\n  O usually −2; H usually +1; F always −1\nOIL RIG: Oxidation Is Loss, Reduction Is Gain\nCell potential: E°cell = E°cathode − E°anode\nΔG° = −nFE°  (F=96,485 C/mol)\nNernst: E = E° − (RT/nF)·lnQ\nElectrolysis: m = (M·I·t)/(n·F)  (Faraday\'s law)\nActivity series: more active metal displaces less active',
  method:'Half-reaction method for balancing redox in acidic solution: (1) separate into oxidation and reduction half-reactions, (2) balance atoms (use H₂O for O, H⁺ for H), (3) balance charge with electrons, (4) multiply to equalise electrons transferred, (5) add half-reactions and cancel electrons.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3569,8 +3549,8 @@ const STEM_TOPICS=[
 /* ── ORGANIC CHEMISTRY ──────────────────────────── */
 {cat:'Chemistry',tags:['chemistry','science'],
  title:'Organic Chemistry: Functional Groups, Reactions & Nomenclature',
- theory:'Organic chemistry studies carbon compounds. Carbon\'s four bonds and ability to chain give rise to millions of compounds. Functional groups determine reactivity; IUPAC nomenclature provides systematic names.',
- reality:'AP Chemistry — organic chemistry appears at the end of the AP curriculum and in FRQ problems about reaction predictions and mechanisms. Identifying functional groups from names and structures is essential.',
+ theory:'',
+ reality:'Aspirin, plastic, gasoline, vitamins, and alcohol are all organic molecules. The -OH group makes something an alcohol. The -COOH group makes it an acid like vinegar. Knowing functional groups tells a chemist how a molecule will react, what it smells like, and whether it is safe.',
  formula:'Alkane: CₙH₂ₙ₊₂  (only C−C single bonds)\nAlkene: CₙH₂ₙ   (C=C double bond)\nAlkyne: CₙH₂ₙ₋₂ (C≡C triple bond)\nKey functional groups:\n  −OH: alcohol\n  −COOH: carboxylic acid\n  −COO−: ester\n  −CO−: ketone; −CHO: aldehyde\n  −NH₂: amine\nCombustion: CₓHᵧ + O₂ → CO₂ + H₂O\nAddition (alkene): Br₂ adds across C=C\nSaponification: ester + NaOH → acid salt + alcohol',
  method:'IUPAC naming: (1) find the longest carbon chain containing the principal functional group, (2) number from the end closest to the functional group, (3) name substituents as prefixes with their position numbers. Suffix for functional group: -ol, -al, -one, -oic acid, -amine.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3609,8 +3589,8 @@ const STEM_TOPICS=[
 /* ── NUCLEAR & RADIOACTIVITY ────────────────────── */
 {cat:'Chemistry',tags:['chemistry','physics','science'],
  title:'Nuclear Chemistry: Radioactivity, Decay & Nuclear Energy',
- theory:'Unstable nuclei emit radiation to achieve stability. Nuclear reactions involve changes to the nucleus itself — unlike chemical reactions which only involve electrons. The energy released from mass defect (E=mc²) is millions of times greater than chemical energy.',
- reality:'AP Chemistry and AP Physics — nuclear reactions, half-life calculations, and applications of radioactivity (carbon dating, medical applications, nuclear energy) are tested in both courses.',
+ theory:'',
+ reality:'Carbon-14 decays at a known steady rate, so scientists can date ancient bones and wooden artifacts — that is radiocarbon dating. Nuclear power plants use uranium fission to generate a significant portion of the world\'s electricity. Radiation therapy uses targeted radioactivity to destroy cancer tumors.',
  formula:'Alpha: ᴬZX → ᴬ⁻⁴Z⁻₂Y + ⁴₂He\nBeta⁻: ᴬZX → ᴬZ+1Y + e⁻ + ν̄_e\nBeta⁺: ᴬZX → ᴬZ-1Y + e⁺ + νe\nGamma: nucleus loses energy as γ ray (no mass/charge change)\nBinding energy: E_b = Δm·c²  (Δm=mass defect)\nN(t) = N₀·e^(−λt)\nT½ = ln2/λ ≈ 0.693/λ\nActivity: A = λN  (Bq = decays/s)\nFission: heavy nucleus splits (U-235, Pu-239)\nFusion: light nuclei combine (H→He in stars)',
  method:'Conservation laws in nuclear reactions: atomic number Z (proton number) and mass number A are both conserved. Always check that ΣZ and ΣA are equal on both sides of the nuclear equation. Use mass defect to calculate energy released.',
  svg:`<svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg">
@@ -3680,13 +3660,11 @@ function buildFormulaCard(t){
   const svg=t.svg?`<div class="fc-diagram">${t.svg}<div class="fc-diagram-caption">${t.caption||''}</div></div>`:'';
   const steps=t.steps.map((s,i)=>`<div class="fc-step-row"><div class="fc-step-num">${i+1}</div><div class="fc-step-text">${s}</div></div>`).join('');
   const example=t.example?`<div class="fc-example"><b>Worked Example</b><span>${t.example}</span></div>`:'';
+  const realworld=t.reality?`<div class="fc-realworld"><span class="fc-realworld-icon">🌍</span><div><b>Where You See This in Real Life</b><p>${t.reality}</p></div></div>`:'';
   return `<div class="formula-card" data-cat="${t.cat}" data-tags="${t.tags.join(' ')}">
   <div class="fc-head"><div class="fc-title">${t.title}</div>${badge}</div>
   ${method}
-  <div class="fc-purpose">
-    <div class="fc-purpose-box"><b>Theory</b><span>${t.theory}</span></div>
-    <div class="fc-purpose-box"><b>Real-World Use</b><span>${t.reality}</span></div>
-  </div>
+  ${realworld}
   ${svg}
   <div class="fc-formula">${t.formula}</div>
   <div class="fc-steps">
@@ -3992,6 +3970,237 @@ function genAPChemQ(){
   return pick(types)();
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   ACCUPLACER QUIZ GENERATORS — Complete Official Topic Coverage
+   Source: College Board Next-Generation ACCUPLACER Spec
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── ARITHMETIC ─────────────────────────────────────────────────
+   Official topics: Whole Number Operations, Fraction Operations,
+   Decimal Operations, Percent, Number Comparisons & Equivalents  */
+function genAccuplacerArithmeticQ(){
+  const types=[
+    // Whole numbers & place value
+    ()=>{const a=rnd(900)+100,b=rnd(900)+100,c=a+b;const correct=String(c);const d=[c+rnd(10)+1,c-rnd(10)-1,a*10+b].map(String);return{prompt:`<strong>${a} + ${b} = ?</strong>`,correct,opts:shuffle([correct,...distractors(correct,d)]),hint:'Add ones, tens, hundreds columns carefully'};},
+    ()=>{const a=rnd(500)+500,b=rnd(400)+50;const c=a-b;const correct=String(c);const d=[c+10,c-10,a+b].map(String);return{prompt:`<strong>${a} − ${b} = ?</strong>`,correct,opts:shuffle([correct,...distractors(correct,d)]),hint:'Borrow across columns as needed'};},
+    ()=>{const a=rnd(20)+2,b=rnd(20)+2,c=a*b;const correct=String(c);const d=[c+a,c-b,c+b].map(String);return{prompt:`<strong>${a} × ${b} = ?</strong>`,correct,opts:shuffle([correct,...distractors(correct,d)]),hint:'Standard multiplication'};},
+    ()=>{const b=rnd(11)+2,c=rnd(15)+2,a=b*c;const correct=String(c);const d=[c+1,c-1,b].map(String);return{prompt:`<strong>${a} ÷ ${b} = ?</strong>`,correct,opts:shuffle([correct,...distractors(correct,d)]),hint:'Division is the inverse of multiplication'};},
+    // Fractions
+    ()=>{const a=rnd(5)+1,b=rnd(5)+2+a,c=rnd(5)+1,dd2=b;const num=a*dd2+c*b,den=b*dd2;function gcf(x,y){return y===0?x:gcf(y,x%y);}const g=gcf(Math.abs(num),den);const correct=`${num/g}/${den/g}`;const wrong=[`${a+c}/${b}`,`${a*c}/${b*b}`,`${num}/${den+1}`];return{prompt:`<strong>${a}/${b} + ${c}/${b} = ?</strong> (same denominator)`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Add numerators; keep denominator the same'};},
+    ()=>{const a=rnd(4)+1,b=rnd(3)+2,c=rnd(4)+1,dd2=rnd(3)+2;const lcm=b*dd2;const num=a*dd2+c*b;function gcf(x,y){return y===0?x:gcf(y,x%y);}const g=gcf(Math.abs(num),lcm);const correct=`${num/g}/${lcm/g}`;const wrong=[`${a+c}/${b+dd2}`,`${a*c}/${b*dd2}`,`${num}/${lcm+1}`];return{prompt:`<strong>${a}/${b} + ${c}/${dd2} = ?</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Find LCD, convert fractions, then add'};},
+    ()=>{const a=rnd(4)+1,b=rnd(3)+2,c=rnd(4)+1,dd2=rnd(3)+2;const num=a*dd2,den=b*c;function gcf(x,y){return y===0?x:gcf(y,x%y);}const g=gcf(num,den);const correct=`${num/g}/${den/g}`;const wrong=[`${a*c}/${b*dd2}`,`${a+c}/${b+dd2}`,`${num}/${den+1}`];return{prompt:`Multiply: <strong>${a}/${b} × ${c}/${dd2} = ?</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Multiply numerators together, denominators together, then simplify'};},
+    ()=>{const a=rnd(4)+1,b=rnd(3)+2,c=rnd(4)+1,dd2=rnd(3)+2;const num=a*dd2,den=b*c;function gcf(x,y){return y===0?x:gcf(y,x%y);}const g=gcf(num,den);const correct=`${num/g}/${den/g}`;const wrong=[`${a*c}/${b*dd2}`,`${a+c}/${b*dd2}`,`${a}/${b+dd2}`];return{prompt:`Divide: <strong>${a}/${b} ÷ ${c}/${dd2} = ?</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Multiply by the reciprocal: flip the second fraction'};},
+    // Decimals
+    ()=>{const a=parseFloat((Math.random()*50+1).toFixed(2)),b=parseFloat((Math.random()*20+1).toFixed(2)),c=parseFloat((a+b).toFixed(2));const correct=String(c);const wrong=[String(c+0.1),String(c-0.1),String(a+Math.floor(b))];return{prompt:`<strong>${a} + ${b} = ?</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Align decimal points before adding'};},
+    ()=>{const a=parseFloat((Math.random()*9+1).toFixed(1)),b=parseFloat((Math.random()*4+1).toFixed(1)),c=parseFloat((a*b).toFixed(2));const correct=String(c);const wrong=[String(c+1),String(c-0.5),String(Math.floor(a*b))];return{prompt:`<strong>${a} × ${b} = ?</strong> (decimals)`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Multiply normally, then count decimal places in both factors'};},
+    // Percent
+    ()=>{const r=[10,15,20,25,30,40,50];const pct=pick(r);const whole=pick([40,60,80,100,120,200,500]);const ans=pct/100*whole;const correct=String(ans);const wrong=[String(ans+10),String(ans-5),String(pct+whole)];return{prompt:`What is <strong>${pct}%</strong> of <strong>${whole}</strong>?`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'percent ÷ 100 × whole'};},
+    ()=>{const part=pick([15,18,20,24,30,45]);const whole=pick([60,90,100,120,150,180]);const ans=Math.round(part/whole*100);const correct=String(ans)+'%';const wrong=[String(ans+5)+'%',String(ans-5)+'%',String(100-ans)+'%'];return{prompt:`<strong>${part}</strong> out of <strong>${whole}</strong> is what percent?`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'part ÷ whole × 100'};},
+    // Ratios & proportions
+    ()=>{const a=rnd(8)+1,b=rnd(8)+1,c=rnd(8)+1,x=fmtNum(b*c/a);const correct=String(x);const wrong=[String(x+1),String(x-1),String(fmtNum(a*c/b))];return{prompt:`Solve the proportion: <strong>${a}/x = ${b}/${c}</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Cross-multiply: a·c = b·x, so x = a·c/b'};},
+    ()=>{const ratio=[2,3,4,5];const r=pick(ratio);const other=pick([9,12,15,18,20]);const total=r*other;const part=Math.round(total/(r+1));const correct=String(part);const wrong=[String(part+r),String(total-part),String(other)];return{prompt:`A recipe uses flour to sugar in a <strong>${r}:1</strong> ratio. If you use <strong>${total} cups total</strong>, how many cups are flour?`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:`Total parts = ${r}+1. Flour = ${r}/${r+1} × total`};},
+    // Number sense
+    ()=>{const sets=[[2,3,5,7,11,4],[4,6,8,9,10,5],[1,3,5,7,9,8],[2,4,6,8,10,7]];const set=pick(sets);const primes=set.filter(n=>{for(let i=2;i<=Math.sqrt(n);i++)if(n%i===0)return false;return n>1;});const correct=String(primes[0]);const others=set.filter(n=>!primes.includes(n));return{prompt:`Which of these is a <strong>prime number</strong>?<br>${set.join(', ')}`,correct,opts:shuffle([correct,...distractors(correct,others.map(String))]),hint:'A prime has exactly two factors: 1 and itself'};},
+    ()=>{const pairs=[[48,18,6],[36,60,12],[45,75,15],[24,36,12],[100,75,25]];const [a,b,ans]=pick(pairs);const correct=String(ans);const wrong=[String(ans*2),String(ans+3),String(a)];return{prompt:`What is the GCF (greatest common factor) of <strong>${a}</strong> and <strong>${b}</strong>?`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'List factors of each, find the largest shared factor'};},
+    // Number Comparisons & Equivalents (official Arithmetic topic)
+    ()=>{const cases=[{a:'3/4',b:'0.75',rel:'='},{a:'2/5',b:'0.4',rel:'='},{a:'1/3',b:'0.33',rel:'>'},{a:'5/8',b:'0.6',rel:'>'},{a:'7/10',b:'0.71',rel:'<'}];const c=pick(cases);const others=['<','>','='].filter(o=>o!==c.rel);return{prompt:`Compare: <strong>${c.a} ___ ${c.b}</strong>. Fill in &lt;, &gt;, or =.`,correct:c.rel,opts:shuffle([c.rel,...distractors(c.rel,others)]),hint:'Convert the fraction to a decimal by dividing numerator by denominator, then compare'};},
+    ()=>{const sets=[['1/2','5/8','3/4','7/8'],['0.3','1/4','0.35','2/5'],['3/5','0.55','2/3','0.7']];const set=pick(sets);const correct=set[set.length-1];const wrong=set.slice(0,-1);return{prompt:`Which value is <strong>greatest</strong>?<br>${set.join(', ')}`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Convert all to decimals: 1/2=0.5, 5/8=0.625, 3/4=0.75, 7/8=0.875'};},
+    // Estimation & Rounding (official Arithmetic topic)
+    ()=>{const a=rnd(400)+50,b=rnd(300)+50;const exact=a+b;const rounded=Math.round(exact/100)*100;const correct=String(rounded);const wrong=[String(rounded+100),String(rounded-100),String(exact)];return{prompt:`Estimate <strong>${a} + ${b}</strong> to the nearest hundred.`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Round each number to the nearest hundred, then add'};},
+    ()=>{const n=parseFloat((Math.random()*99+1).toFixed(2));const tenths=Math.round(n*10)/10;const correct=String(tenths);const wrong=[String(Math.floor(n)),String(Math.ceil(n)),String(Math.round(n))];return{prompt:`Round <strong>${n}</strong> to the nearest tenth.`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Look at the hundredths digit: if ≥ 5, round up the tenths digit'};},
+    // Order of operations (PEMDAS)
+    ()=>{const a=rnd(5)+2,b=rnd(5)+1,c=rnd(5)+1;const ans=a+(b*c);const wrong=[String((a+b)*c),String(a*b+c),String(a+b+c)];const correct=String(ans);return{prompt:`Evaluate: <strong>${a} + ${b} × ${c}</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Order of operations (PEMDAS): multiply before adding'};},
+    ()=>{const a=rnd(5)+2,b=rnd(4)+1,c=rnd(4)+1;const ans=(a+b)*c;const correct=String(ans);const wrong=[String(a+b*c),String(a*b+c),String(a+b+c)];return{prompt:`Evaluate: <strong>(${a} + ${b}) × ${c}</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Parentheses first, then multiply'};},
+  ];
+  return pick(types)();
+}
+
+function genAccuplacerQRQ(){
+  // Quantitative Reasoning & Algebra (QAS) questions
+  const types=[
+    ()=>{const a=rnd(8)+1,b=rnd(8)+1,c=rnd(8)+1,x=rnd(10)+1,ans=a*x*x+b*x+c;const correct=String(ans);const wrong=[String(ans+a),String(ans-b),String(a+b+c)];return{prompt:`Evaluate <strong>f(x) = ${a}x² + ${b}x + ${c}</strong> when <strong>x = ${x}</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Substitute x, follow order of operations: powers first, then multiply, then add'};},
+    ()=>{const m=rnd(5)+1,b2=rnd(10)+1,x=rnd(8)+1,y=m*x+b2;const correct=String(b2);const wrong=[String(b2+1),String(b2-1),String(m)];return{prompt:`A line passes through (0, ${b2}) with slope ${m}. What is the y-intercept?`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'The y-intercept is where x = 0; it is the b in y = mx + b'};},
+    ()=>{const sets=[{expr:'x² − 9',factor:'(x − 3)(x + 3)'},{expr:'x² − 5x + 6',factor:'(x − 2)(x − 3)'},{expr:'x² + 7x + 12',factor:'(x + 3)(x + 4)'},{expr:'x² − 4x − 5',factor:'(x − 5)(x + 1)'},{expr:'x² − 2x − 8',factor:'(x − 4)(x + 2)'}];const c=pick(sets);const others=sets.map(s=>s.factor).filter(f=>f!==c.factor);return{prompt:`Factor: <strong>${c.expr}</strong>`,correct:c.factor,opts:shuffle([c.factor,...distractors(c.factor,others)]),hint:'Find two numbers that multiply to the constant and add to the middle coefficient'};},
+    ()=>{const cases=[{eq:'2x + 3 > 7',correct:'x > 2'},{eq:'5 − 2x ≤ 11',correct:'x ≥ −3'},{eq:'3x − 1 < 8',correct:'x < 3'},{eq:'4 − x > −2',correct:'x < 6'},{eq:'2x + 1 ≥ −5',correct:'x ≥ −3'}];const c=pick(cases);const others=['x > 5','x < 0','x ≥ 1','x ≤ 2'].filter(o=>o!==c.correct);return{prompt:`Solve the inequality: <strong>${c.eq}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,others)]),hint:'Solve like an equation; flip the inequality if you multiply or divide by a negative'};},
+    ()=>{const a=rnd(4)+1,b=rnd(4)+1,c=rnd(4)+1,dd2=rnd(4)+1;const x=(dd2*b-a*c===0)?rnd(5)+1:(dd2*b-a*c);const y=a*x+b,z=c*x+dd2;const correct=`x = ${x}`;const wrong=[`x = ${x+1}`,`x = ${x-1}`,`x = ${-x}`];return{prompt:`Solve: <strong>${a}x + ${b} = ${z}</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Subtract the constant, then divide by the coefficient of x'};},
+    ()=>{const fns=[{f:'f(x) = 2x + 1',g:'g(x) = x²',fog:'2x² + 1',gof:'(2x + 1)²'},{f:'f(x) = x + 3',g:'g(x) = x − 1',fog:'x + 2',gof:'x + 2'},{f:'f(x) = 3x',g:'g(x) = x + 2',fog:'3x + 6',gof:'3x + 2'}];const c=pick(fns);return{prompt:`If <strong>${c.f}</strong> and <strong>${c.g}</strong>, find <strong>f(g(x))</strong>.`,correct:c.fog,opts:shuffle([c.fog,...distractors(c.fog,[c.gof,c.g.split('= ')[1],'x'])]),hint:'Replace x in f with the entire expression g(x)'};},
+    ()=>{const sets=[{expr:'3(x + 4)',expanded:'3x + 12'},{expr:'2(x − 5)',expanded:'2x − 10'},{expr:'−2(3x + 1)',expanded:'−6x − 2'},{expr:'4(2x − 3)',expanded:'8x − 12'},{expr:'x(x + 5)',expanded:'x² + 5x'}];const c=pick(sets);const others=sets.map(s=>s.expanded).filter(e=>e!==c.expanded);return{prompt:`Expand: <strong>${c.expr}</strong>`,correct:c.expanded,opts:shuffle([c.expanded,...distractors(c.expanded,others)]),hint:'Distribute: multiply each term inside the parentheses by the factor outside'};},
+    ()=>{const pairs=[[3,4,5],[5,12,13],[8,15,17],[6,8,10],[9,40,41]];const [a,b,c]=pick(pairs);const question=rnd(3);if(question===0){const correct=String(c);const wrong=[String(a+b),String(a*b),String(c+1)];return{prompt:`Right triangle legs: <strong>${a}</strong> and <strong>${b}</strong>. Find the hypotenuse.`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'c = √(a² + b²)'};}else{const correct=String(a);const wrong=[String(a+1),String(b-a),String(c-b)];return{prompt:`Right triangle hypotenuse <strong>${c}</strong>, one leg <strong>${b}</strong>. Find the other leg.`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'a = √(c² − b²)'};}},
+    ()=>{const base=[2,3,5,10];const b=pick(base),e1=rnd(4)+1,e2=rnd(4)+1;const prod=e1+e2;const correct=`${b}^${prod}`;const wrong=[`${b}^${e1*e2}`,`${b}^${Math.abs(e1-e2)}`,`${b*b}^${e1}`];return{prompt:`Simplify: <strong>${b}^${e1} × ${b}^${e2}</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'When multiplying like bases, add the exponents'};},
+    ()=>{const cases=[{eq:'|x| = 5',correct:'x = 5 or x = −5'},{eq:'|x − 2| = 3',correct:'x = 5 or x = −1'},{eq:'|2x + 1| = 7',correct:'x = 3 or x = −4'},{eq:'|x + 4| = 6',correct:'x = 2 or x = −10'}];const c=pick(cases);const others=['x = 3 or x = 0','x = 7 or x = 1','x = 5 or x = −3'].filter(o=>o!==c.correct);return{prompt:`Solve: <strong>${c.eq}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,others)]),hint:'|expr| = k means expr = k OR expr = −k'};},
+    ()=>{const m=rnd(4)+1,b2=rnd(6)+1;const x1=rnd(5)+1,y1=m*x1+b2;const x2=x1+rnd(4)+1,y2=m*x2+b2;const slope=fmtNum((y2-y1)/(x2-x1));const correct=String(slope);const wrong=[String(-slope),String(fmtNum((x2-x1)/(y2-y1))),String(slope+1)];return{prompt:`Find the slope of the line through <strong>(${x1}, ${y1})</strong> and <strong>(${x2}, ${y2})</strong>.`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'slope = (y₂ − y₁) / (x₂ − x₁)'};},
+    ()=>{const sets=[{f:'y = 2x + 3',info:'slope 2, y-int 3'},{f:'y = −x + 5',info:'slope −1, y-int 5'},{f:'y = 3x − 1',info:'slope 3, y-int −1'},{f:'y = ½x + 4',info:'slope ½, y-int 4'}];const c=pick(sets);const others=sets.map(s=>s.f).filter(f=>f!==c.f);return{prompt:`Which line has <strong>${c.info}</strong>?`,correct:c.f,opts:shuffle([c.f,...distractors(c.f,others)]),hint:'y = mx + b: m is slope, b is y-intercept'};},
+    // Rational Numbers (official QAS topic)
+    ()=>{const cases=[{n:'-3/4',correct:'-0.75'},{n:'5/8',correct:'0.625'},{n:'-7/4',correct:'-1.75'},{n:'11/4',correct:'2.75'}];const c=pick(cases);const wrong=[String(parseFloat(c.correct)+0.1),String(-parseFloat(c.correct)),String(Math.round(parseFloat(c.correct)))];return{prompt:`Convert <strong>${c.n}</strong> to a decimal.`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,wrong)]),hint:'Divide the numerator by the denominator; apply the sign'};},
+    ()=>{const cases=[{q:'Which list is in order from least to greatest?',correct:'-1.2, -3/4, 0, 1/2, 0.8',opts:['-3/4, -1.2, 0, 1/2, 0.8','0, -1.2, -3/4, 1/2, 0.8','0.8, 1/2, 0, -3/4, -1.2'],hint:'Negatives are less than zero; more negative = smaller'},{q:'Which is a rational number?',correct:'√4',opts:['√2','π','√3'],hint:'√4 = 2, which is rational. π and most square roots of non-perfect squares are irrational'},{q:'Simplify: −3 − (−5)',correct:'2',opts:['-8','8','-2'],hint:'Subtracting a negative is the same as adding: −3 + 5 = 2'}];const c=pick(cases);return{prompt:`<strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Probability Sets (official QAS topic)
+    ()=>{const total=pick([10,12,20,25,36,50]);const fav=pick([2,3,4,5,6,10]).valueOf();const prob=fmtNum(fav/total,3);const correct=String(prob);const wrong=[String(fmtNum((total-fav)/total,3)),String(fmtNum(fav,3)),String(fmtNum(total/fav,3))];return{prompt:`A bag has <strong>${total}</strong> marbles. <strong>${fav}</strong> are red. Probability of picking a red marble?`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'P(event) = favorable outcomes / total outcomes'};},
+    ()=>{const cases=[{q:'A die is rolled. P(odd number)?',correct:'1/2',opts:['1/6','1/3','2/3'],hint:'Odd numbers on a die: 1,3,5 — that is 3 out of 6 = 1/2'},{q:'P(A) = 0.3, P(B) = 0.5, A and B are mutually exclusive. P(A or B)?',correct:'0.8',opts:['0.15','0.2','1.0'],hint:'For mutually exclusive events: P(A or B) = P(A) + P(B)'},{q:'A card is drawn from a standard deck. P(heart or face card)?',correct:'11/26',opts:['1/4','1/2','9/52'],hint:'13 hearts + 12 face cards − 3 face hearts = 22 out of 52 = 11/26'},{q:'Two coins are flipped. P(both heads)?',correct:'1/4',opts:['1/2','1/3','3/4'],hint:'Independent events: P(HH) = 1/2 × 1/2 = 1/4'}];const c=pick(cases);return{prompt:`<strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Descriptive Statistics (official QAS topic)
+    ()=>{const data=[...Array(5)].map(()=>rnd(20)+1).sort((a,b)=>a-b);const mean=fmtNum(data.reduce((s,x)=>s+x,0)/data.length,2);const correct=String(mean);const wrong=[String(data[Math.floor(data.length/2)]),String(Math.max(...data)),String(fmtNum(mean+1,2))];return{prompt:`Find the <strong>mean</strong> of: <strong>${data.join(', ')}</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Mean = sum of all values ÷ number of values'};},
+    ()=>{const data=[...Array(5)].map(()=>rnd(20)+1).sort((a,b)=>a-b);const median=data[2];const correct=String(median);const wrong=[String(data[1]),String(data[3]),String(fmtNum(data.reduce((s,x)=>s+x,0)/5,1))];return{prompt:`Find the <strong>median</strong> of: <strong>${data.join(', ')}</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Median = middle value of sorted data. With 5 values, it is the 3rd'};},
+    ()=>{const data=[2,2,5,7,9,2,8,4];const sorted=data.slice().sort((a,b)=>a-b);const mode=2;const range=Math.max(...data)-Math.min(...data);const cases=[{q:`Mode of: <strong>${data.join(', ')}</strong>`,correct:String(mode),wrong:['5','7','4'],hint:'Mode = most frequently occurring value'},{q:`Range of: <strong>${sorted.join(', ')}</strong>`,correct:String(range),wrong:[String(range+1),String(Math.max(...data)),String(sorted[3])],hint:'Range = maximum − minimum'}];const c=pick(cases);return{prompt:c.q,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.wrong)]),hint:c.hint};},
+    // Geometry Concepts (official QAS topic)
+    ()=>{const cases=[{q:'Area of a rectangle: length 8, width 5',correct:'40',wrong:['26','13','80'],hint:'Area = length × width'},{q:'Perimeter of a square with side 7',correct:'28',wrong:['49','14','21'],hint:'Perimeter = 4 × side'},{q:'Volume of a rectangular prism: 6 × 4 × 3',correct:'72',wrong:['36','48','24'],hint:'Volume = l × w × h'},{q:'Area of a parallelogram: base 9, height 4',correct:'36',wrong:['26','18','72'],hint:'Area = base × height'},{q:'Perimeter of a rectangle: length 10, width 6',correct:'32',wrong:['60','16','26'],hint:'Perimeter = 2(l + w) = 2(10 + 6)'}];const c=pick(cases);return{prompt:`<strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.wrong)]),hint:c.hint};},
+    ()=>{const cases=[{q:'Two parallel lines are cut by a transversal. Alternate interior angles are:',correct:'Equal',wrong:['Supplementary','Complementary','Adjacent'],hint:'Alternate interior angles are congruent (equal) when lines are parallel'},{q:'A triangle has angles 45° and 60°. The third angle is:',correct:'75°',wrong:['90°','45°','120°'],hint:'Angles in a triangle sum to 180°: 180 − 45 − 60 = 75'},{q:'A regular hexagon has how many sides?',correct:'6',wrong:['5','7','8'],hint:'Hex = 6; Pentagon = 5; Heptagon = 7; Octagon = 8'},{q:'Supplementary angles sum to:',correct:'180°',wrong:['90°','360°','270°'],hint:'Supplementary = 180°. Complementary = 90°'}];const c=pick(cases);return{prompt:`<strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.wrong)]),hint:c.hint};},
+  ];
+  return pick(types)();
+}
+
+function genAccuplacerAdvAlgQ(){
+  // Advanced Algebra & Functions (AAF)
+  const types=[
+    ()=>{const a=rnd(3)+1,h=rnd(5)-2,k=rnd(5)-2;const x=rnd(6)-3;const ans=a*(x-h)*(x-h)+k;const correct=String(ans);const wrong=[String(ans+a),String(ans-1),String(a*x*x+k)];return{prompt:`Evaluate <strong>f(x) = ${a}(x − ${h})² + ${k}</strong> at <strong>x = ${x}</strong>`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:'Vertex form: substitute x, square the binomial, multiply by a, then add k'};},
+    ()=>{const cases=[{f:'f(x) = √(x − 4)',domain:'x ≥ 4'},{f:'f(x) = 1/(x − 3)',domain:'x ≠ 3'},{f:'f(x) = √(2x + 6)',domain:'x ≥ −3'},{f:'f(x) = 1/(x² − 9)',domain:'x ≠ 3 and x ≠ −3'}];const c=pick(cases);const others=['all real numbers','x > 0','x ≠ 0'].filter(o=>o!==c.domain);return{prompt:`What is the domain of <strong>${c.f}</strong>?`,correct:c.domain,opts:shuffle([c.domain,...distractors(c.domain,others)]),hint:'For square roots: radicand ≥ 0. For fractions: denominator ≠ 0'};},
+    ()=>{const sets=[{f:'f(x) = x + 2',inv:'f⁻¹(x) = x − 2'},{f:'f(x) = 2x',inv:'f⁻¹(x) = x/2'},{f:'f(x) = 3x − 1',inv:'f⁻¹(x) = (x + 1)/3'},{f:'f(x) = x/4 + 5',inv:'f⁻¹(x) = 4(x − 5)'}];const c=pick(sets);const others=sets.map(s=>s.inv).filter(i=>i!==c.inv);return{prompt:`Find the inverse of <strong>${c.f}</strong>`,correct:c.inv,opts:shuffle([c.inv,...distractors(c.inv,others)]),hint:'Replace f(x) with y, swap x and y, then solve for y'};},
+    ()=>{const base=[2,3,5],b=pick(base);const e1=rnd(4)+1,e2=rnd(4)+1;const cases=[{expr:`${b}^${e1} / ${b}^${e2}`,correct:`${b}^${e1-e2}`,wrong:[`${b}^${e1+e2}`,`${b}^${e1*e2}`,`1`]},{expr:`(${b}^${e1})^${e2}`,correct:`${b}^${e1*e2}`,wrong:[`${b}^${e1+e2}`,`${b}^${e1}`,`${b*b}^${e1}`]}];const c=pick(cases);return{prompt:`Simplify: <strong>${c.expr}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.wrong)]),hint:'Division: subtract exponents. Power of power: multiply exponents'};},
+    ()=>{const cases=[{expr:'log₂(8)',ans:'3'},{expr:'log₃(27)',ans:'3'},{expr:'log₁₀(1000)',ans:'3'},{expr:'log₅(25)',ans:'2'},{expr:'log₂(16)',ans:'4'},{expr:'log₄(64)',ans:'3'}];const c=pick(cases);const others=['1','2','5','6'].filter(o=>o!==c.ans);return{prompt:`Evaluate: <strong>${c.expr}</strong>`,correct:c.ans,opts:shuffle([c.ans,...distractors(c.ans,others)]),hint:'logₐ(x) = n means aⁿ = x'};},
+    ()=>{const sets=[{eq:'x² − 4 = 0',roots:'x = 2 or x = −2'},{eq:'x² + 5x + 6 = 0',roots:'x = −2 or x = −3'},{eq:'x² − 7x + 12 = 0',roots:'x = 3 or x = 4'},{eq:'2x² − 8 = 0',roots:'x = 2 or x = −2'},{eq:'x² − x − 6 = 0',roots:'x = 3 or x = −2'}];const c=pick(sets);const others=sets.map(s=>s.roots).filter(r=>r!==c.roots);return{prompt:`Solve: <strong>${c.eq}</strong>`,correct:c.roots,opts:shuffle([c.roots,...distractors(c.roots,others)]),hint:'Factor, use square root method, or quadratic formula: x = (−b ± √(b²−4ac)) / 2a'};},
+    ()=>{const a=rnd(3)+1,b=rnd(3)+1,c=rnd(3)+1,dd2=rnd(3)+1;const systems=[{eq1:`y = ${a}x + ${b}`,eq2:`y = ${c}x + ${b+1}`,pt:'No solution (parallel)'},{eq1:`y = ${a}x + ${b}`,eq2:`y = −${a}x + ${b}`,x:0,y:b}];const s=systems[0];return{prompt:`Do <strong>${s.eq1}</strong> and <strong>${s.eq2}</strong> intersect? Why?`,correct:s.pt,opts:shuffle([s.pt,...distractors(s.pt,['Yes, at (0,0)','Yes, infinitely many points','Yes, at (1,1)'])]),hint:'Same slope but different y-intercepts means the lines are parallel (no solution)'};},
+    ()=>{const sets=[{fn:'f(x) = x²',type:'Even (f(−x) = f(x))'},{fn:'f(x) = x³',type:'Odd (f(−x) = −f(x))'},{fn:'f(x) = x² + x',type:'Neither'},{fn:'f(x) = |x|',type:'Even (f(−x) = f(x))'}];const c=pick(sets);const others=['Even (f(−x) = f(x))','Odd (f(−x) = −f(x))','Neither'].filter(o=>o!==c.type);return{prompt:`Is <strong>${c.fn}</strong> even, odd, or neither?`,correct:c.type,opts:shuffle([c.type,...distractors(c.type,others)]),hint:'Even: symmetric about y-axis. Odd: 180° rotational symmetry about origin'};},
+    ()=>{const r=rnd(3)+1,b2=rnd(4)+1;const n=rnd(4)+2;const term=fmtNum(b2*Math.pow(r,n-1));const correct=String(term);const wrong=[String(fmtNum(b2*Math.pow(r,n))),String(fmtNum(b2*(n-1)*r)),String(fmtNum(b2+r*(n-1)))];return{prompt:`Geometric sequence with first term <strong>${b2}</strong> and ratio <strong>${r}</strong>. Find the <strong>${n}th term</strong>.`,correct,opts:shuffle([correct,...distractors(correct,wrong)]),hint:`aₙ = a₁ · rⁿ⁻¹`};},
+    ()=>{const cases=[{f:'f(x) = x² (shifted right 3)',g:'g(x) = (x − 3)²'},{f:'f(x) = x² (shifted up 4)',g:'g(x) = x² + 4'},{f:'f(x) = |x| (reflected over x-axis)',g:'g(x) = −|x|'},{f:'f(x) = x³ (shifted left 2)',g:'g(x) = (x + 2)³'}];const c=pick(cases);const others=cases.map(x=>x.g).filter(g=>g!==c.g);return{prompt:`Transformation: <strong>${c.f}</strong>. Which is the new function?`,correct:c.g,opts:shuffle([c.g,...distractors(c.g,others)]),hint:'Right shift: replace x with (x − h). Up shift: add k. Reflection over x-axis: negate the function'};},
+    ()=>{const cases=[{expr:'(x² − 9)/(x − 3)',simplified:'x + 3 (x ≠ 3)'},{expr:'(x² − 4)/(x + 2)',simplified:'x − 2 (x ≠ −2)'},{expr:'(x² + 5x + 6)/(x + 2)',simplified:'x + 3 (x ≠ −2)'},{expr:'(x² − x − 6)/(x − 3)',simplified:'x + 2 (x ≠ 3)'}];const c=pick(cases);const others=cases.map(x=>x.simplified).filter(s=>s!==c.simplified);return{prompt:`Simplify: <strong>${c.expr}</strong>`,correct:c.simplified,opts:shuffle([c.simplified,...distractors(c.simplified,others)]),hint:'Factor numerator, cancel the common factor (note restriction on x)'};},
+    // Radical Equations (official AAF topic)
+    ()=>{const cases=[{eq:'√(x − 3) = 4',ans:'x = 19'},{eq:'√(2x + 1) = 5',ans:'x = 12'},{eq:'√x = 7',ans:'x = 49'},{eq:'√(x + 5) = 3',ans:'x = 4'},{eq:'2√x = 10',ans:'x = 25'}];const c=pick(cases);const others=['x = 9','x = 7','x = 16','x = 36','x = 8','x = 3','x = 22'].filter(o=>o!==c.ans);return{prompt:`Solve: <strong>${c.eq}</strong>`,correct:c.ans,opts:shuffle([c.ans,...distractors(c.ans,others)]),hint:'Square both sides to eliminate the radical; then solve; always check for extraneous solutions'};},
+    ()=>{const cases=[{eq:'√(x) + 3 = x − 1',ans:'x = 4 (check: x = 1 is extraneous)'},{eq:'√(3x − 2) = x − 2',ans:'x = 6 (check: x = 1 is extraneous)'},{eq:'√(x + 6) = x',ans:'x = 3 (check: x = −2 is extraneous)'}];const c=pick(cases);return{prompt:`Solve: <strong>${c.eq}</strong>`,correct:c.ans,opts:shuffle([c.ans,...distractors(c.ans,['x = 5','x = 7','x = 2','x = 9','x = 0'])]),hint:'Isolate the radical, square both sides, solve, then verify in the original equation'};},
+    // Rational Equations (official AAF topic)
+    ()=>{const cases=[{eq:'1/x + 1/3 = 1',ans:'x = 3/2'},{eq:'2/x = 4/6',ans:'x = 3'},{eq:'(x+1)/2 = (x−1)/3',ans:'x = 5'},{eq:'3/(x−1) = 6',ans:'x = 3/2'},{eq:'1/(x+2) + 1/(x−2) = 1/4 (approx)',ans:'x = 2 − approx (LCD method)'}];const cc=cases.slice(0,4);const c=pick(cc);return{prompt:`Solve: <strong>${c.eq}</strong>`,correct:c.ans,opts:shuffle([c.ans,...distractors(c.ans,['x = 2','x = 4','x = 1','x = 6','x = −1'])]),hint:'Multiply through by the LCD to clear all fractions, then solve; check that no denominator becomes 0'};},
+    // Polynomial Equations (official AAF topic)
+    ()=>{const cases=[{poly:'x³ − x = 0',roots:'x = 0, 1, −1'},{poly:'x³ − 4x² + 4x = 0',roots:'x = 0, 2 (double)'},{poly:'x³ − x² − 6x = 0',roots:'x = 0, 3, −2'},{poly:'2x³ − 8x = 0',roots:'x = 0, 2, −2'}];const c=pick(cases);const others=['x = 0, 1','x = 1, −1','x = 2, −2','x = 0, 4'].filter(o=>o!==c.roots);return{prompt:`Solve: <strong>${c.poly}</strong>`,correct:c.roots,opts:shuffle([c.roots,...distractors(c.roots,others)]),hint:'Factor out the GCF (often x), then factor or use the quadratic formula on what remains'};},
+    ()=>{const cases=[{q:'Degree of: 3x⁴ − 2x² + 7x − 5',correct:'4'},{q:'Leading coefficient of: −5x³ + 2x² − x + 1',correct:'−5'},{q:'How many roots (counting multiplicity) does a degree-3 polynomial have?',correct:'3'},{q:'End behavior of y = −2x³ as x → +∞:',correct:'−∞'},{q:'End behavior of y = x⁴ as x → −∞:',correct:'+∞'}];const c=pick(cases);const others=['1','2','3','4','5','+∞','−∞','0'].filter(o=>o!==c.correct);return{prompt:`<strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,others)]),hint:'Degree = highest exponent. Leading term controls end behavior. Even power → same both ends; negative leading → flips'};},
+    // Trigonometry (official AAF topic)
+    ()=>{const cases=[{q:'sin(30°)',correct:'1/2',wrong:['√3/2','√2/2','1']},{q:'cos(60°)',correct:'1/2',wrong:['√3/2','0','√2/2']},{q:'tan(45°)',correct:'1',wrong:['√3','1/2','0']},{q:'sin(90°)',correct:'1',wrong:['0','1/2','√3/2']},{q:'cos(0°)',correct:'1',wrong:['0','1/2','−1']},{q:'tan(30°)',correct:'1/√3 = √3/3',wrong:['√3','1','1/2']}];const c=pick(cases);return{prompt:`Find: <strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.wrong)]),hint:'Use the unit circle or the 30-60-90 and 45-45-90 triangles'};},
+    ()=>{const cases=[{q:'In a right triangle, sin(θ) = opposite / ?',correct:'hypotenuse',wrong:['adjacent','opposite','base']},{q:'In a right triangle, cos(θ) = ? / hypotenuse',correct:'adjacent',wrong:['opposite','hypotenuse','angle']},{q:'SOH-CAH-TOA: what does TOA stand for?',correct:'Tangent = Opposite / Adjacent',wrong:['Tangent = Adjacent / Opposite','Tangent = Opposite / Hypotenuse','Tangent = Adjacent / Hypotenuse']},{q:'Which identity is always true?',correct:'sin²θ + cos²θ = 1',wrong:['sin²θ − cos²θ = 1','sinθ + cosθ = 1','tanθ = sinθ + cosθ']}];const c=pick(cases);return{prompt:`<strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.wrong)]),hint:'SOH-CAH-TOA: Sin=Opp/Hyp, Cos=Adj/Hyp, Tan=Opp/Adj. Pythagorean identity: sin²+cos²=1'};},
+    ()=>{const cases=[{q:'A right triangle has opposite = 3, hypotenuse = 5. Find sin(θ).',correct:'3/5 = 0.6',wrong:['4/5','3/4','5/3']},{q:'A right triangle has adjacent = 5, hypotenuse = 13. Find cos(θ).',correct:'5/13',wrong:['12/13','5/12','13/5']},{q:'A ladder 10 m long leans at 60° to the ground. Height it reaches on the wall?',correct:'10·sin(60°) ≈ 8.66 m',wrong:['10·cos(60°) = 5 m','10·tan(60°) ≈ 17.3 m','10/sin(60°) ≈ 11.5 m']}];const c=pick(cases);return{prompt:`<strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.wrong)]),hint:'Identify which sides are opposite, adjacent, hypotenuse relative to the angle, then apply the correct trig ratio'};},
+  ];
+  return pick(types)();
+}
+
+function genAccuplacerReadingQ(){
+  // Reading comprehension style (ACCUPLACER Next-Generation Reading)
+  const passages=[
+    {
+      text:`<em>"Photosynthesis converts light energy into chemical energy stored in glucose. Chlorophyll, found in chloroplasts, absorbs mainly red and blue light, reflecting green light — which is why plants appear green."</em>`,
+      questions:[
+        {q:'What is the main purpose of photosynthesis according to this passage?',correct:'Converting light energy into stored chemical energy',opts:['Absorbing green light','Producing chloroplasts','Reflecting sunlight'],hint:'Look for the definition in the first sentence'},
+        {q:'Why do plants appear green?',correct:'Chlorophyll reflects green light',opts:['They absorb green light','Chloroplasts are green','Glucose is green'],hint:'The passage states that green light is reflected'},
+        {q:'Where is chlorophyll found?',correct:'In chloroplasts',opts:['In the roots','In glucose molecules','In the stem'],hint:'The passage directly states the location'},
+      ]
+    },
+    {
+      text:`<em>"The Great Migration of the early 20th century saw millions of African Americans move from the rural South to the urban North, seeking economic opportunity and escaping racial violence. Cities like Chicago, Detroit, and New York changed dramatically as a result."</em>`,
+      questions:[
+        {q:'What were the two main reasons for the Great Migration?',correct:'Economic opportunity and escaping racial violence',opts:['Better weather and education','War and famine','Political elections'],hint:'Look for the two reasons listed after "seeking" and "escaping"'},
+        {q:'Which cities are mentioned as being affected?',correct:'Chicago, Detroit, and New York',opts:['Atlanta, Birmingham, and Memphis','Boston, Philadelphia, and Baltimore','Los Angeles, San Francisco, and Seattle'],hint:'Cities are listed explicitly in the passage'},
+        {q:'What word best describes the tone of the passage?',correct:'Informative',opts:['Persuasive','Humorous','Critical'],hint:'The passage presents historical facts without arguing for a position'},
+      ]
+    },
+    {
+      text:`<em>"Ocean acidification occurs when seawater absorbs excess CO₂ from the atmosphere. This lowers the pH of the ocean, making it harder for marine organisms like corals and mollusks to build their calcium carbonate shells and skeletons."</em>`,
+      questions:[
+        {q:'What causes ocean acidification?',correct:'Absorption of excess CO₂ from the atmosphere',opts:['Volcanic eruptions on the seafloor','Rising ocean temperatures','Overfishing of marine species'],hint:'The first sentence gives the direct cause'},
+        {q:'Which organisms are most harmed by ocean acidification according to the passage?',correct:'Corals and mollusks',opts:['Fish and whales','Sharks and dolphins','Seaweed and algae'],hint:'The passage specifies which organisms struggle to build shells'},
+        {q:'Ocean acidification makes the ocean pH:',correct:'Lower',opts:['Higher','Neutral','More variable'],hint:'"Lowers the pH" is stated directly'},
+      ]
+    },
+    {
+      text:`<em>"Democracy requires an informed citizenry. When people lack access to accurate information, they cannot make decisions that reflect their true interests. A free press, therefore, plays a vital role in any democratic society."</em>`,
+      questions:[
+        {q:'What is the author\'s main argument?',correct:'A free press is essential to democracy because citizens need accurate information',opts:['All citizens should vote','Governments should control the press','Democracy is the best system'],hint:'Follow the logical chain: informed citizens → democracy works → free press enables this',cat:'Information & Ideas'},
+        {q:'The word "citizenry" (first sentence) means:',correct:'The body of citizens in a country',opts:['A government building','A democratic principle','A type of free press'],hint:'Context: it refers to "people" in a democracy',cat:'Vocabulary in Context'},
+        {q:'The word "vital" in the passage most nearly means:',correct:'Essential',opts:['Optional','Controversial','Historical'],hint:'Vital = absolutely necessary',cat:'Vocabulary in Context'},
+        {q:'The author\'s main rhetorical strategy is:',correct:'Building a logical chain of cause and effect',opts:['Appealing to personal anecdotes','Quoting expert authorities','Contrasting opposing views'],hint:'Democracy needs X → X requires Y → therefore Y matters',cat:'Rhetoric'},
+      ]
+    },
+    {
+      text:`<em>"Passage 1: Electric vehicles (EVs) reduce tailpipe emissions, helping improve urban air quality.<br>Passage 2: While EVs have lower operational emissions, battery production generates significant CO₂, partly offsetting environmental benefits."</em>`,
+      questions:[
+        {q:'Both passages agree on which point?',correct:'EVs have some connection to emissions and environmental impact',opts:['EVs are completely clean','Battery production is harmless','Urban air quality is worsening'],hint:'Both mention EVs and emissions — Passage 1 focuses on tailpipe, Passage 2 on production',cat:'Synthesis'},
+        {q:'How does Passage 2 relate to Passage 1?',correct:'It complicates Passage 1\'s positive view by adding a counterpoint',opts:['It fully contradicts Passage 1','It provides statistics to support Passage 1','It ignores Passage 1\'s claims'],hint:'Passage 2 says "while EVs have lower operational emissions" — acknowledges Passage 1 but then adds a complication',cat:'Synthesis'},
+      ]
+    },
+    {
+      text:`<em>"Many historians argue that the printing press was the most transformative invention of the 15th century. By making books affordable and widely available, it democratized knowledge and accelerated the spread of new ideas — including those of the Reformation."</em>`,
+      questions:[
+        {q:'What does "democratized" most likely mean in this context?',correct:'Made available to a wider range of people',opts:['Made politically neutral','Made controlled by government','Made more expensive'],hint:'Democracy = rule by the people; to democratize = to make accessible to all',cat:'Vocabulary in Context'},
+        {q:'Which detail best supports the claim that the printing press was transformative?',correct:'It accelerated the spread of ideas like the Reformation',opts:['It was invented in the 15th century','It made books look attractive','Historians study it'],hint:'Transformative = causes significant change — the Reformation is that example',cat:'Information & Ideas'},
+        {q:'The author\'s purpose in this passage is primarily to:',correct:'Explain the historical significance of the printing press',opts:['Argue that we should return to printed books','Criticize the printing press','Describe how to build a printing press'],hint:'The passage focuses on what the press did and why it mattered — explanation, not persuasion',cat:'Rhetoric'},
+      ]
+    },
+  ];
+  const passage=pick(passages);
+  const qData=pick(passage.questions);
+  return{
+    prompt:`📖 <em style="font-size:10px;color:var(--ts)">${qData.cat||'Reading'}</em><br><br>Read and answer:<br><br>${passage.text}<br><br><strong>${qData.q}</strong>`,
+    correct:qData.correct,
+    opts:shuffle([qData.correct,...distractors(qData.correct,qData.opts)]),
+    hint:qData.hint
+  };
+}
+
+function genAccuplacerWritingQ(){
+  // ACCUPLACER Next-Generation Writing — official categories:
+  // Expression of Ideas: Development, Organization, Effective Language Use
+  // Standard English Conventions: Sentence Structure, Usage, Punctuation
+  const types=[
+    // Subject-verb agreement
+    ()=>{const cases=[{wrong:'The group of students are studying.',correct:'The group of students is studying.',rule:'Subject-verb agreement: "group" is singular'},{wrong:'Each of the players have a number.',correct:'Each of the players has a number.',rule:'Subject-verb agreement: "each" is singular'},{wrong:'Neither the teacher nor the students was ready.',correct:'Neither the teacher nor the students were ready.',rule:'Neither/nor: verb agrees with the nearer subject'}];const c=pick(cases);return{prompt:`Choose the grammatically correct sentence:`,correct:c.correct,opts:shuffle([c.correct,c.wrong,'Both are correct','Neither is correct']),hint:c.rule};},
+    // Comma usage
+    ()=>{const cases=[{wrong:'However she still finished on time.',correct:'However, she still finished on time.',rule:'Use a comma after introductory conjunctive adverbs'},{wrong:'She likes hiking, swimming and camping.',correct:'She likes hiking, swimming, and camping.',rule:'Use a serial comma before the last item in a list'},{wrong:'After the storm the roads were clear.',correct:'After the storm, the roads were clear.',rule:'Use a comma after an introductory phrase'}];const c=pick(cases);return{prompt:`Which sentence uses commas correctly?`,correct:c.correct,opts:shuffle([c.correct,c.wrong,'Both are correct','Neither is correct']),hint:c.rule};},
+    // Pronoun agreement
+    ()=>{const cases=[{wrong:'Everyone must bring their own lunch.',correct:'Everyone must bring his or her own lunch.',rule:'Traditional rule: "everyone" is singular'},{wrong:'The committee made their decision.',correct:'The committee made its decision.',rule:'A collective noun like "committee" uses singular "its"'},{wrong:'Each student should do their homework.',correct:'Each student should do his or her homework.',rule:'"Each" is singular'}];const c=pick(cases);return{prompt:`Select the sentence with correct pronoun agreement:`,correct:c.correct,opts:shuffle([c.correct,c.wrong,'Both are correct','Neither has a pronoun error']),hint:c.rule};},
+    // Sentence structure
+    ()=>{const cases=[{q:'Identify the sentence type: "Although it was raining, we went outside."',correct:'Complex sentence',opts:['Simple','Compound','Compound-complex'],hint:'Complex: one independent + one dependent clause (starting with "although")'},{q:'Which is a sentence fragment?',correct:'"Running down the hall."',opts:['"She ran down the hall."','"He finished quickly and left."','"They studied together."'],hint:'A fragment lacks a subject, verb, or complete thought'},{q:'Which is a run-on sentence?',correct:'"I was tired I went to bed early."',opts:['"I was tired, so I went to bed early."','"Because I was tired, I went to bed early."','"I went to bed early."'],hint:'A run-on joins independent clauses without proper punctuation or conjunction'}];const c=pick(cases);return{prompt:`<strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Word choice
+    ()=>{const cases=[{q:'Choose the correct word: "The results had a significant _____ on the outcome."',correct:'effect',opts:['affect','affectation','effective'],hint:'"Effect" is the noun; "affect" is usually the verb'},{q:'Choose the correct word: "She could hardly wait to _____ her award."',correct:'accept',opts:['except','expect','exempt'],hint:'"Accept" means to receive; "except" means to exclude'},{q:'Choose the correct word: "There are _____ alternatives to consider."',correct:'fewer',opts:['less','lesser','little'],hint:'Use "fewer" for countable things; "less" for uncountable'}];const c=pick(cases);return{prompt:`<strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Apostrophes
+    ()=>{const cases=[{wrong:"The dog wagged it's tail.",correct:'The dog wagged its tail.',rule:'"its" = possessive; "it\'s" = it is'},{wrong:"The Smith's are coming to dinner.",correct:'The Smiths are coming to dinner.',rule:'No apostrophe needed to make a name plural'},{wrong:'Whos responsible for this?',correct:"Who's responsible for this?",rule:'"who\'s" = who is; "whose" = possessive'}];const c=pick(cases);return{prompt:`Which sentence uses apostrophes correctly?`,correct:c.correct,opts:shuffle([c.correct,c.wrong,'Both are correct','Neither is correct']),hint:c.rule};},
+    // Transitions
+    ()=>{const cases=[{blank:'She studied hard; _____, she passed the exam.',correct:'therefore',opts:['however','although','meanwhile'],hint:'"Therefore" shows cause and effect'},{blank:'He wanted to go; _____, it was raining.',correct:'however',opts:['therefore','furthermore','similarly'],hint:'"However" shows contrast'},{blank:'She loves hiking. _____, she goes every weekend.',correct:'In fact',opts:['On the other hand','Nevertheless','Although'],hint:'"In fact" adds emphasis or supporting detail'}];const c=pick(cases);return{prompt:`Choose the best transition: <em>"${c.blank}"</em>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Parallel structure
+    ()=>{const cases=[{wrong:'She likes reading, to swim, and hiking.',correct:'She likes reading, swimming, and hiking.',rule:'Parallel structure: all list items should match in form (all gerunds)'},{wrong:'He wanted to finish quickly, accurately, and with efficiency.',correct:'He wanted to finish quickly, accurately, and efficiently.',rule:'Parallel structure: all adverbs'},{wrong:'The plan: arrive early, greet guests, and the food should be served.',correct:'The plan: arrive early, greet guests, and serve the food.',rule:'Parallel structure: all imperative verbs'}];const c=pick(cases);return{prompt:`Which sentence shows correct parallel structure?`,correct:c.correct,opts:shuffle([c.correct,c.wrong,'Both are correct','Neither is correct']),hint:c.rule};},
+    // Passage-based editing
+    ()=>{const passages=[{text:'The committee (1)[have/has] agreed on the final proposal. Members worked diligently to reach (2)[its/their] conclusion.',q:'Which correction is needed at position (2)?',correct:'"its" — committee is a collective singular noun',opts:['"their" — members is the subject','No correction needed','"there" — showing location'],hint:'Identify the grammatical subject: "committee" (singular) takes "its"',cat:'Usage'},{text:'Running through the park, (1)[the birds were noticed by Marcus / Marcus noticed the birds]. He had never seen so many cardinals.',q:'Which version of (1) is clearest and avoids a dangling modifier?',correct:'"Marcus noticed the birds" (active, no dangling modifier)',opts:['"the birds were noticed by Marcus"','Both are equally clear','Neither is acceptable'],hint:'"Running through the park" must attach to Marcus, not the birds',cat:'Sentence Structure'}];const c=pick(passages);return{prompt:`<em style="font-size:10px;color:var(--ts)">${c.cat}</em><br><br><em>"${c.text}"</em><br><br><strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Organization / Development
+    ()=>{const cases=[{q:'Which sentence best follows as evidence after: "Electric cars are becoming more popular."',correct:'"Sales of EVs have doubled globally over the past five years."',opts:['"Cars are important for transportation."','"Some people prefer bicycles."','"The weather affects driving conditions."'],hint:'Evidence should be specific and directly support the claim',cat:'Development'},{q:'Which sentence is LEAST relevant to a paragraph about deforestation impact on wildlife?',correct:'"Wood is used to make furniture and paper products."',opts:['"Many species lose their habitat when forests are cleared."','"Deforestation can drive animals to extinction."','"Disruption of ecosystems affects food chains."'],hint:'Wood products are a cause, not an impact on wildlife — it drifts off-topic',cat:'Organization'},{q:'Where does a concluding sentence belong in a body paragraph?',correct:'At the end, after evidence and explanation',opts:['At the beginning, before the topic sentence','In the middle, between evidence','It is optional'],hint:'Concluding sentences wrap up the argument and connect back to the thesis',cat:'Organization'}];const c=pick(cases);return{prompt:`<em style="font-size:10px;color:var(--ts)">${c.cat||'Writing'}</em><br><br><strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Punctuation
+    ()=>{const cases=[{q:'Which sentence uses a semicolon correctly?',correct:'"She finished the report; her manager approved it immediately."',opts:['"She finished the report; and her manager approved it."','"She; finished the report for her manager."','"She finished; the report quickly."'],hint:'A semicolon joins two independent clauses — not used before "and"',cat:'Punctuation'},{q:'Which sentence correctly uses a colon?',correct:'"He needed three things: a pen, paper, and focus."',opts:['"He: needed three things."','"He needed: to focus."','"He needed three: things."'],hint:'A colon introduces a list or explanation after an independent clause',cat:'Punctuation'},{q:'Which sentence correctly punctuates a non-restrictive clause?',correct:'"My sister, who lives in Denver, called yesterday."',opts:['"My sister who lives in Denver called yesterday."','"My sister, who lives in Denver called yesterday."','"My, sister who lives in Denver, called yesterday."'],hint:'Non-restrictive (extra info) clauses need commas on both sides',cat:'Punctuation'}];const c=pick(cases);return{prompt:`<em style="font-size:10px;color:var(--ts)">${c.cat}</em><br><br><strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+  ];
+  return pick(types)();
+}
+
+function genAccuplacerEssayQ(){
+  // WritePlacer scoring criteria (official College Board):
+  // 1. Purpose and Focus  2. Organization and Structure  3. Development and Support
+  // 4. Sentence Variety and Style  5. Mechanical Conventions  6. Critical Thinking
+  const types=[
+    // Purpose & Focus
+    ()=>{const cases=[{q:'A strong thesis statement for "Should schools ban smartphones?" is:',correct:'"Schools should ban smartphones during class to reduce distractions and improve academic performance."',opts:['"This essay is about smartphones in schools."','"Some people think smartphones are good, and some think they are bad."','"Smartphones exist."'],hint:'WritePlacer Purpose & Focus: A strong thesis states a clear, specific position with supporting reasons',cat:'Purpose & Focus'},{q:'Which essay introduction is most effective?',correct:'One that presents the issue, provides context, and ends with a clear thesis',opts:['One that starts with a dictionary definition','One that immediately lists all your evidence','One that says "In this essay I will discuss three things"'],hint:'A strong intro hooks the reader, sets context, and states your position clearly at the end',cat:'Purpose & Focus'},{q:'An essay that "lacks focus" on the WritePlacer means:',correct:'It drifts between topics without a clear central argument',opts:['It is too short','It has no paragraphs','It uses incorrect grammar'],hint:'Focus = staying on your thesis throughout; unfocused essays introduce unrelated ideas',cat:'Purpose & Focus'}];const c=pick(cases);return{prompt:`📝 <em style="font-size:10px;color:var(--ts)">${c.cat}</em><br><br><strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Organization & Structure
+    ()=>{const cases=[{q:'Which paragraph structure is most effective for a persuasive essay?',correct:'Claim → Evidence → Explanation → Transition',opts:['Evidence → Claim → Conclusion','Introduction → Examples → Introduction','Background → Background → Background'],hint:'WritePlacer Organization: C-E-E (Claim, Evidence, Explanation) ensures logical flow',cat:'Organization & Structure'},{q:'Where should a counterargument appear in a 5-paragraph persuasive essay?',correct:'Typically in its own body paragraph, with a refutation following',opts:['Only in the introduction','Only in the conclusion','It should never appear'],hint:'Addressing counterarguments shows maturity and strengthens your overall argument',cat:'Organization & Structure'},{q:'Which transition best signals a contrast between two ideas?',correct:'However',opts:['Furthermore','In addition','Similarly'],hint:'"However" = contrast. "Furthermore"/"In addition"/"Similarly" = adding or comparing similar ideas',cat:'Organization & Structure'}];const c=pick(cases);return{prompt:`📝 <em style="font-size:10px;color:var(--ts)">${c.cat}</em><br><br><strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Development & Support
+    ()=>{const cases=[{q:'Which is the best evidence to support the claim "Social media affects teen mental health"?',correct:'A peer-reviewed study showing higher depression rates among heavy social media users',opts:['A tweet from a teenager','Your own personal experience','A commercial for a social media app'],hint:'WritePlacer Development: Academic, peer-reviewed evidence is the most credible and persuasive',cat:'Development & Support'},{q:'After presenting evidence, what should a writer do next?',correct:'Explain how the evidence supports the thesis (the "so what")',opts:['Move immediately to the next paragraph','Restate the evidence again in different words','Begin a new topic'],hint:'Evidence alone is not enough — you must connect it to your argument by analyzing it',cat:'Development & Support'},{q:'Which type of support would MOST strengthen the claim "Exercise improves mental health"?',correct:'"A 2023 study in JAMA found that 30 minutes of aerobic exercise reduces anxiety symptoms by 40%."',opts:['"Exercise feels good."','"Many doctors recommend exercise."','"I feel better after I run."'],hint:'Specific, sourced, quantified evidence is strongest. Vague claims and personal anecdotes are weakest',cat:'Development & Support'}];const c=pick(cases);return{prompt:`📝 <em style="font-size:10px;color:var(--ts)">${c.cat}</em><br><br><strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Sentence Variety & Style
+    ()=>{const cases=[{q:'Which version shows the best sentence variety?',correct:'"Technology has transformed education. Students now access resources instantly; however, digital distractions remain a challenge."',opts:['"Technology has transformed education. Technology is very helpful. Technology is widely used."','"Technology has transformed education and students now access resources instantly but digital distractions remain a challenge."','"Technology. Education. Distractions."'],hint:'WritePlacer Sentence Variety: Mix short and long sentences, vary structure (simple, compound, complex)',cat:'Sentence Variety & Style'},{q:'Which sentence uses the most precise, academic language?',correct:'"Research indicates that sleep deprivation significantly impairs cognitive performance."',opts:['"Not sleeping makes you dumb."','"People say sleeping is important."','"Sleep is very very important for your brain."'],hint:'Academic writing avoids slang, uses specific verbs (indicates, impairs) and formal vocabulary',cat:'Sentence Variety & Style'},{q:'Which revision makes the sentence more concise?',correct:'"The study concluded that exercise is beneficial." (from: "The study came to the conclusion that exercise is beneficial.")',opts:['Add more adjectives','Use more prepositional phrases','Make it two sentences'],hint:'Concise writing eliminates redundancy: "came to the conclusion" → "concluded"',cat:'Sentence Variety & Style'}];const c=pick(cases);return{prompt:`📝 <em style="font-size:10px;color:var(--ts)">${c.cat}</em><br><br><strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+    // Critical Thinking
+    ()=>{const cases=[{q:'Which concluding sentence best demonstrates critical thinking?',correct:'"Ultimately, investing in renewable energy is not merely an economic decision — it is a moral imperative for future generations."',opts:['"In conclusion, this essay discussed renewable energy."','"So, that is why renewable energy is good."','"Renewable energy was covered in the body paragraphs."'],hint:'WritePlacer Critical Thinking: Strong conclusions make an insightful, broader point that goes beyond restating the thesis',cat:'Critical Thinking'},{q:'The best way to handle a counterargument in an essay is:',correct:'Acknowledge it, then refute it with specific evidence',opts:['Ignore it completely','State it but offer no response','Agree with it and change your thesis'],hint:'Addressing counterarguments shows maturity; ignoring them weakens your credibility',cat:'Critical Thinking'},{q:'Which statement shows the strongest critical thinking about school uniforms?',correct:'"While uniforms may reduce visible economic inequality, research is inconclusive about whether they improve academic outcomes — suggesting policy decisions should be school-specific."',opts:['"Uniforms are bad because I don\'t like them."','"Some people like uniforms and some people don\'t."','"Schools should just do whatever parents want."'],hint:'Strong critical thinking acknowledges complexity, uses evidence, and avoids oversimplification',cat:'Critical Thinking'}];const c=pick(cases);return{prompt:`📝 <em style="font-size:10px;color:var(--ts)">${c.cat}</em><br><br><strong>${c.q}</strong>`,correct:c.correct,opts:shuffle([c.correct,...distractors(c.correct,c.opts)]),hint:c.hint};},
+  ];
+  return pick(types)();
+}
+
+function genAccuplacerQ(){
+  if(quizSubCategory==='arithmetic')return genAccuplacerArithmeticQ();
+  if(quizSubCategory==='qas')return genAccuplacerQRQ();
+  if(quizSubCategory==='aaf')return genAccuplacerAdvAlgQ();
+  if(quizSubCategory==='reading')return genAccuplacerReadingQ();
+  if(quizSubCategory==='writing')return genAccuplacerWritingQ();
+  if(quizSubCategory==='essay')return genAccuplacerEssayQ();
+  // Mixed: pick randomly across all sections
+  const all=[genAccuplacerArithmeticQ,genAccuplacerQRQ,genAccuplacerAdvAlgQ,genAccuplacerReadingQ,genAccuplacerWritingQ,genAccuplacerEssayQ];
+  return pick(all)();
+}
+
 /* ─── MAIN QUIZ DISPATCH ───────────────────────────────────────── */
 function generateQuiz(){
   let q;
@@ -4014,22 +4223,19 @@ function generateQuiz(){
     if(quizSubCategory==='ap_chem')q=genAPChemQ();
     else q=genChemistryQ();
   }
+  else if(quizCategory==='accuplacer')q=genAccuplacerQ();
   else q=genAlphabetQ();
   quizState={...q,answered:false};
 }
 function setQuizCategory(cat){quizCategory=cat;quizSubCategory='general';generateQuiz();render();}
 function setQuizSubCategory(sub){quizSubCategory=sub;generateQuiz();render();}
 
-function answerQuiz(opt){
+function answerQuiz(idx){
   if(!quizState||quizState.answered)return;
   quizState.answered=true;
-  const isCorrect=opt===quizState.correct;
+  quizState.chosenIdx=idx;
+  const isCorrect=quizState.opts[idx]===quizState.correct;
   if(isCorrect)setStreak(streak+1);else setStreak(0);
-  document.querySelectorAll('.quiz-opt').forEach(btn=>{
-    if(btn.dataset.opt===quizState.correct)btn.classList.add('correct');
-    else if(btn.dataset.opt===opt&&!isCorrect)btn.classList.add('wrong');
-    btn.style.pointerEvents='none';
-  });
   render();
 }
 
@@ -4042,11 +4248,21 @@ const QUIZ_CATS=[
   {id:'calculus',label:'Calculus'},
   {id:'physics',label:'Physics'},
   {id:'chemistry',label:'Chemistry'},
+  {id:'accuplacer',label:'🎓 ACCUPLACER'},
 ];
 const QUIZ_SUBS={
   calculus:[{id:'general',label:'General'},{id:'clep_precalc',label:'CLEP Precalc'},{id:'ap_calc',label:'AP Calc'}],
   physics:[{id:'general',label:'General'},{id:'ap_mech',label:'AP Phys C: Mech'},{id:'ap_em',label:'AP Phys C: E&M'}],
   chemistry:[{id:'general',label:'General'},{id:'ap_chem',label:'AP Chem'}],
+  accuplacer:[
+    {id:'general',label:'🔀 Mixed'},
+    {id:'arithmetic',label:'Arithmetic'},
+    {id:'qas',label:'Quant. Reasoning & Algebra'},
+    {id:'aaf',label:'Advanced Algebra & Functions'},
+    {id:'reading',label:'Reading'},
+    {id:'writing',label:'Writing'},
+    {id:'essay',label:'Essay Strategy'},
+  ],
 };
 function renderQuiz(d){
   if(!quizState)generateQuiz();
@@ -4065,7 +4281,14 @@ function renderQuiz(d){
   ${subBar}
   ${letterPanel}
   <div class="quiz-prompt">${q.prompt}</div>
-  <div class="quiz-opts">${q.opts.map(opt=>`<button class="quiz-opt${q.answered&&opt===q.correct?' correct':q.answered&&opt!==q.correct?' wrong':''}" data-opt="${opt}" onclick="answerQuiz('${opt.replace(/'/g,"\\'")}')" ${q.answered?'disabled':''}>${opt}</button>`).join('')}</div>
+  <div class="quiz-opts">${q.opts.map((opt,i)=>{
+    let cls='quiz-opt';
+    if(q.answered){
+      if(opt===q.correct) cls+=' correct';
+      else if(i===q.chosenIdx) cls+=' wrong';
+    }
+    return `<button class="${cls}" onclick="answerQuiz(${i})" ${q.answered?'disabled':''}>${opt}</button>`;
+  }).join('')}</div>
   ${q.answered?`<div style="text-align:center;margin-top:8px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><button class="btn" onclick="retryQuiz()">↻ New question</button>${isLetter?`<button class="btn" onclick="nextLetter()">Next letter →</button>`:''}</div>`:``}
   ${scorePanel}
 </div>`;
