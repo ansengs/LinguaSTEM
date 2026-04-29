@@ -1,4 +1,4 @@
-# Alphabet Roots + STEM App
+# LinguaSTEM App
 
 A single-file HTML study app for exploring alphabet roots, vocabulary, morphemes, STEM formulas, strategy lessons, and quiz/exam practice.
 
