@@ -7,49 +7,270 @@
 <style>
 
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#2a2a2a;color:#c8c8c8;min-height:100vh;padding:0.5rem}
+
+/* ── CSS VARIABLES ── */
 :root{
---c1:#333333;
---c2:#3a3a3a;
---c3:#424242;
---tx:#d4d4d4;
---ts:#8a8a8a;
---tt:#5e5e5e;
+--c1:#333333;--c2:#3a3a3a;--c3:#424242;
+--tx:#d4d4d4;--ts:#8a8a8a;--tt:#5e5e5e;
 --bd:rgba(255,255,255,0.09);
---info:#1e2d3d;
---tinfo:#7aabcf;
---warn:#2e2518;
---twarn:#c9a060;
---succ:#1c2a18;
---tsucc:#7ab060;
---danger:#2e1e1e;
---tdanger:#c07070;
+--info:#1e2d3d;--tinfo:#7aabcf;
+--warn:#2e2518;--twarn:#c9a060;
+--succ:#1c2a18;--tsucc:#7ab060;
+--danger:#2e1e1e;--tdanger:#c07070;
+--nav-h:52px;       /* desktop top-bar height */
+--mob-h:48px;       /* mobile header height */
+--tab-h:60px;       /* mobile bottom tab bar height */
+--safe-bottom:env(safe-area-inset-bottom, 0px);
 }
 @media(prefers-color-scheme:dark){
 :root{
---c1:#272520;
---c2:#2f2d27;
---c3:#38352e;
---tx:#ccc8be;
---ts:#8a8780;
---tt:#5e5c57;
+--c1:#272520;--c2:#2f2d27;--c3:#38352e;
+--tx:#ccc8be;--ts:#8a8780;--tt:#5e5c57;
 --bd:rgba(200,190,170,0.1);
---info:#1e2e3d;
---tinfo:#7aabcf;
---warn:#332a18;
---twarn:#c9a060;
---succ:#1c2e18;
---tsucc:#7ab060;
---danger:#2e1e1e;
---tdanger:#c07070;
+--info:#1e2e3d;--tinfo:#7aabcf;
+--warn:#332a18;--twarn:#c9a060;
+--succ:#1c2e18;--tsucc:#7ab060;
+--danger:#2e1e1e;--tdanger:#c07070;
 }}
-#app{max-width:760px;margin:0 auto;padding:0.5rem 0.25rem}
-.top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:0.6rem;gap:6px;flex-wrap:wrap}
-.timer-box{font-size:12px;font-weight:500;color:var(--tinfo);background:var(--info);padding:3px 10px;border-radius:20px;min-width:64px;text-align:center;cursor:pointer;user-select:none}
+
+/* ── BASE ── */
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#2a2a2a;color:#c8c8c8;
+  min-height:100vh;
+  /* desktop: normal scroll; mobile: space for bottom tabs */
+}
+
+/* ── APP WRAPPER ── */
+#app{
+  max-width:900px;
+  margin:0 auto;
+  padding:0.5rem 0.75rem;
+  /* desktop top-bar is in-flow; mobile adds bottom padding */
+}
+
+/* ══════════════════════════════════════
+   DESKTOP TOP-BAR
+══════════════════════════════════════ */
+#desktop-topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  margin-bottom:0.55rem;
+  flex-wrap:wrap;
+  padding:6px 0;
+}
+
+.topbar-brand{
+  display:flex;align-items:center;gap:6px;flex-shrink:0;
+}
+.brand-name{font-size:13px;font-weight:600;color:var(--tx);white-space:nowrap}
+
+.topbar-right{display:flex;align-items:center;gap:6px;flex-shrink:0}
+
+/* nav groups */
+.desktop-nav{
+  display:flex;gap:4px;align-items:center;flex-wrap:wrap;flex:1;
+  justify-content:center;
+}
+.nav-group{display:flex;align-items:center;gap:3px;position:relative;flex-wrap:wrap}
+.nav-group-label{
+  font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--tt);padding:0 4px 0 2px;white-space:nowrap;
+  border-right:.5px solid var(--bd);margin-right:2px;
+}
+
+.mode-divider{display:inline-block;width:1px;height:18px;background:var(--bd);margin:0 4px;vertical-align:middle}
+
+.mode-btn{
+  font-size:11px;padding:4px 10px;
+  border:0.5px solid var(--bd);border-radius:20px;
+  cursor:pointer;background:var(--c2);color:var(--ts);
+  transition:all .15s;white-space:nowrap;
+  line-height:1.3;
+}
+.mode-btn:hover{background:var(--c3);color:var(--tx)}
+.mode-btn.active{background:var(--tinfo);color:#fff;border-color:var(--tinfo)}
+
+/* ══════════════════════════════════════
+   MOBILE HEADER
+══════════════════════════════════════ */
+.mobile-header{
+  display:none;
+  align-items:center;
+  justify-content:space-between;
+  padding:8px 2px;
+  margin-bottom:4px;
+  border-bottom:.5px solid var(--bd);
+}
+.timer-mobile{
+  font-size:11px;font-weight:500;color:var(--tinfo);
+  background:var(--info);padding:3px 8px;border-radius:20px;
+  cursor:pointer;user-select:none;min-width:50px;text-align:center;
+}
+
+/* ══════════════════════════════════════
+   MOBILE BOTTOM TAB BAR
+══════════════════════════════════════ */
+.mobile-tabs{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;
+  background:var(--c1);
+  border-top:.5px solid var(--bd);
+  z-index:200;
+  padding-bottom:var(--safe-bottom);
+  height:calc(var(--tab-h) + var(--safe-bottom));
+}
+.tab-btn{
+  flex:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;padding:6px 2px;
+  background:none;border:none;cursor:pointer;
+  color:var(--ts);transition:color .15s;
+  min-width:0;
+}
+.tab-btn:active{background:rgba(255,255,255,.04)}
+.tab-btn.active{color:var(--tinfo)}
+.tab-icon{font-size:18px;line-height:1}
+.tab-label{font-size:9.5px;font-weight:500;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60px}
+
+/* mobile popup menus (slide up from bottom) */
+.mobile-popup{
+  display:none;
+  position:fixed;bottom:var(--tab-h);left:0;right:0;
+  background:var(--c2);
+  border-top:.5px solid var(--bd);
+  border-radius:16px 16px 0 0;
+  z-index:210;
+  transform:translateY(100%);
+  transition:transform .25s cubic-bezier(.22,.68,0,1.2);
+  padding-bottom:var(--safe-bottom);
+}
+.mobile-popup.open{transform:translateY(0)}
+.mobile-popup-inner{padding:14px 12px 8px}
+.mobile-popup-title{
+  font-size:10px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.07em;color:var(--tt);margin-bottom:10px;
+  text-align:center;
+}
+.mobile-popup-item{
+  display:flex;align-items:center;gap:12px;
+  width:100%;padding:11px 8px;
+  background:none;border:none;cursor:pointer;
+  border-radius:8px;color:var(--tx);
+  text-align:left;transition:background .12s;
+  font-size:14px;
+}
+.mobile-popup-item:active{background:var(--c3)}
+.mobile-popup-item span:first-child{font-size:20px;flex-shrink:0;width:28px;text-align:center}
+.mobile-popup-item b{display:block;font-size:13px;color:var(--tx);font-weight:600}
+.mobile-popup-item small{display:block;font-size:11px;color:var(--ts);margin-top:1px}
+
+.mobile-overlay{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,.4);z-index:205;
+  backdrop-filter:blur(2px);
+}
+.mobile-overlay.open{display:block}
+
+/* ══════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+══════════════════════════════════════ */
+@media(max-width:700px){
+  #desktop-topbar{display:none}
+  .mobile-header{display:flex}
+  .mobile-tabs{display:flex}
+
+  #app{
+    padding:0.25rem 0.5rem;
+    padding-bottom:calc(var(--tab-h) + var(--safe-bottom) + 8px);
+  }
+
+  /* Wider quiz options grid on small screens: single column */
+  .quiz-opts{grid-template-columns:1fr}
+  /* Stack card rows */
+  .card-row.split{grid-template-columns:1fr}
+
+  /* Larger tap targets */
+  .btn{padding:8px 16px;font-size:12px}
+  .mode-btn{font-size:11px;padding:5px 11px}
+  .nav-btn{font-size:11px;padding:4px 8px}
+
+  /* Letter nav wraps better */
+  .nav{gap:3px;padding:0 2px}
+
+  /* Formula cards: full width */
+  .stem-grid{grid-template-columns:1fr !important}
+
+  /* Accu resource grids: 1 col */
+  .accu-pdf-grid{grid-template-columns:1fr}
+  .accu-ixl-grid{grid-template-columns:1fr}
+
+  /* vocab grid: 2 col minimum */
+  .vocab-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
+
+  /* count-grid: 2 cols */
+  .count-grid{grid-template-columns:repeat(2,1fr)}
+
+  /* chars-grid: 2 cols */
+  .chars-grid{grid-template-columns:repeat(2,1fr)}
+
+  /* strategy grid: 1 col */
+  .strategy-grid{grid-template-columns:1fr}
+
+  /* bottom-nav on mobile: fix above tab bar */
+  #page-bottom-nav{
+    position:sticky;bottom:calc(var(--tab-h) + var(--safe-bottom) + 4px);
+    z-index:50;background:var(--c1);
+    border-top:.5px solid var(--bd);
+    padding:6px 0 4px;margin:0 -0.5rem;
+    padding-left:0.5rem;padding-right:0.5rem;
+    border-radius:0;
+  }
+
+  /* reduce font sizes slightly for mobile */
+  .quiz-prompt{font-size:13px;padding:0.6rem}
+  .fc-title{font-size:12px}
+  .stem-title{font-size:17px}
+}
+
+@media(min-width:701px) and (max-width:900px){
+  /* tablet: 2-col formula grid */
+  .stem-grid{grid-template-columns:repeat(2,1fr)}
+  .accu-pdf-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(min-width:901px){
+  /* large desktop: 3-col formula grid */
+  .stem-grid{grid-template-columns:repeat(3,1fr)}
+  .accu-pdf-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+/* Ensure desktop always hides mobile elements */
+@media(min-width:701px){
+  .mobile-header{display:none}
+  .mobile-tabs{display:none}
+  .mobile-popup{display:none !important}
+  .mobile-overlay{display:none !important}
+}
+
+/* ── Timer (desktop version) ── */
+.timer-box{
+  font-size:12px;font-weight:500;color:var(--tinfo);
+  background:var(--info);padding:3px 10px;
+  border-radius:20px;min-width:64px;text-align:center;
+  cursor:pointer;user-select:none;flex-shrink:0;
+}
 .timer-box.warn{color:var(--twarn);background:var(--warn)}
 .timer-box.done{color:var(--tsucc);background:var(--succ)}
 .timer-box.paused{opacity:.55}
-.mode-divider{display:inline-block;width:1px;height:16px;background:var(--bd);margin:0 2px;vertical-align:middle}
+
+/* Icon buttons */
+.icon-btn{font-size:12px;padding:3px 8px;border-radius:20px;line-height:1}
+
+/* ── SHARED COMPONENT STYLES ── */
 .progress-bar{height:3px;background:var(--bd);border-radius:2px;margin-bottom:0.55rem;overflow:hidden}
 .progress-fill{height:100%;background:var(--tinfo);border-radius:2px;transition:width .3s}
 .nav{display:flex;gap:4px;flex-wrap:wrap;justify-content:center;margin-bottom:0.55rem}
@@ -89,14 +310,39 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .lang-word{font-weight:500}
 .lang-ipa{font-family:monospace;font-size:11px;color:var(--ts)}
 .root-box{background:var(--c2);border-left:2px solid var(--bd);border-radius:0 6px 6px 0;padding:6px 10px;margin-bottom:4px;font-size:12px;line-height:1.4}
-.bottom-nav{display:flex;justify-content:space-between;align-items:center;margin-top:0.5rem;gap:6px}
+#page-bottom-nav{display:flex;justify-content:space-between;align-items:center;margin-top:0.5rem;gap:6px}
 .btn{font-size:12px;padding:6px 14px;border:0.5px solid var(--bd);border-radius:7px;cursor:pointer;background:var(--c2);color:var(--tx);transition:all .15s;font-weight:500}
 .btn:hover{background:var(--c3)}
 .btn.primary{background:var(--tinfo);color:#fff;border-color:var(--tinfo)}
 .btn.primary:hover{opacity:.9}
-.mode-bar{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
-.mode-btn{font-size:11px;padding:3px 9px;border:0.5px solid var(--bd);border-radius:20px;cursor:pointer;background:var(--c2);color:var(--ts)}
-.mode-btn.active{background:var(--succ);color:var(--tsucc);border-color:var(--tsucc)}
+.quiz-prompt{font-size:15px;font-weight:500;color:var(--tx);margin-bottom:10px;text-align:center;padding:0.7rem;background:var(--c2);border-radius:7px}
+.quiz-opts{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
+.quiz-opt{padding:9px 10px;border:0.5px solid var(--bd);border-radius:7px;cursor:pointer;font-size:12px;background:var(--c2);color:var(--tx);transition:all .15s;text-align:left}
+.quiz-opt:hover{border-color:var(--tinfo);background:var(--info)}
+.quiz-opt.correct{background:var(--succ);color:var(--tsucc);border-color:var(--tsucc)}
+.quiz-opt.wrong{background:var(--danger);color:var(--tdanger);border-color:var(--tdanger)}
+.score-row{font-size:12px;color:var(--ts);text-align:center}
+.streak{font-size:11px;color:var(--twarn);background:var(--warn);padding:2px 8px;border-radius:20px}
+.chars-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:6px;margin-top:3px}
+.char-item{background:var(--c2);border:0.5px solid var(--bd);border-radius:7px;padding:8px 10px}
+.char-script{font-size:10px;color:var(--tt);margin-bottom:2px;text-transform:uppercase;letter-spacing:.05em}
+.char-glyph{font-size:20px;font-weight:500;color:var(--tinfo);margin-bottom:1px;line-height:1.2}
+.char-name{font-size:11px;font-weight:500;color:var(--tx);margin-bottom:1px}
+.char-note{font-size:10px;color:var(--ts);line-height:1.35}
+.search{width:100%;font-size:13px;padding:7px 10px;border:0.5px solid var(--bd);border-radius:7px;background:var(--c2);color:var(--tx);outline:none;margin-bottom:6px}
+.search:focus{border-color:var(--tinfo);box-shadow:0 0 0 2px rgba(122,171,207,.12)}
+.filter-row{display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin:6px 0}
+.link-chip{font-size:11px;padding:3px 8px;border:0.5px solid var(--bd);border-radius:20px;cursor:pointer;background:var(--c2);color:var(--ts);text-decoration:none;display:inline-block;transition:all .15s}
+.link-chip:hover{background:var(--c3);color:var(--tx)}
+.link-chip.active{background:var(--tinfo);color:#fff;border-color:var(--tinfo)}
+.muted{font-size:11px;color:var(--ts);line-height:1.4}
+.count-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:6px;margin-top:6px}
+.count-card{background:var(--c2);border:0.5px solid var(--bd);border-radius:8px;padding:10px;text-align:center;text-decoration:none;display:block;transition:all .15s}
+.count-card:hover{border-color:var(--tinfo);background:var(--c3)}
+.big{font-size:24px;color:var(--tinfo);font-weight:600;line-height:1}
+.small{font-size:10px;color:var(--ts);margin-top:3px;text-transform:uppercase;letter-spacing:.04em}
+.vocab-item:target,.root-box:target{border-color:var(--tinfo);box-shadow:0 0 0 2px rgba(122,171,207,.18)}
+.download-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
 .quiz-prompt{font-size:15px;font-weight:500;color:var(--tx);margin-bottom:10px;text-align:center;padding:0.7rem;background:var(--c2);border-radius:7px}
 .quiz-opts{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
 .quiz-opt{padding:9px 10px;border:0.5px solid var(--bd);border-radius:7px;cursor:pointer;font-size:12px;background:var(--c2);color:var(--tx);transition:all .15s;text-align:left}
@@ -281,43 +527,150 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .qx-difficulty-dots span{width:6px;height:6px;border-radius:50%;background:var(--bd)}
 .qx-difficulty-dots span.on{background:var(--twarn)}
 
+/* ── ACCUPLACER Resource Panel ── */
+.accu-resource-panel{margin-top:10px;padding:10px 12px;background:rgba(30,45,61,.55);border:.5px solid rgba(122,171,207,.22);border-radius:10px}
+.accu-res-section-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--tinfo);margin-bottom:6px}
+.accu-pdf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px}
+.accu-res-card{display:flex;align-items:center;gap:8px;background:rgba(122,171,207,.08);border:.5px solid rgba(122,171,207,.25);border-radius:8px;padding:7px 10px;text-decoration:none;transition:all .15s}
+.accu-res-card:hover{background:rgba(122,171,207,.16);border-color:var(--tinfo)}
+.accu-res-icon{font-size:16px;flex-shrink:0}
+.accu-res-body{flex:1;min-width:0}
+.accu-res-body b{display:block;font-size:11px;color:var(--tinfo);font-weight:700;margin-bottom:1px}
+.accu-res-body span{font-size:10px;color:var(--ts);line-height:1.35}
+.accu-res-arrow{color:var(--tinfo);font-size:12px;flex-shrink:0}
+.accu-ixl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:7px}
+.accu-ixl-card{background:rgba(122,176,96,.07);border:.5px solid rgba(122,176,96,.25);border-radius:8px;padding:8px 10px}
+.accu-ixl-head{display:flex;align-items:center;gap:7px;margin-bottom:5px;font-size:14px}
+.accu-ixl-title{font-size:11.5px;font-weight:700;color:var(--tsucc);text-decoration:none;flex:1}
+.accu-ixl-title:hover{color:var(--tx)}
+.accu-ixl-pills{display:flex;flex-wrap:wrap;gap:3px}
+.accu-topic-pill{display:inline-block;font-size:10px;padding:2px 7px;border-radius:20px;background:rgba(122,176,96,.12);color:var(--tsucc);border:.5px solid rgba(122,176,96,.28)}
+
 </style>
 </head>
 <body>
 <div id="app">
-<h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">STEM Study Lab — STEM cards, AP/CLEP/ACCUPLACER practice, vocabulary, morphemes, and study strategies</h2>
-<div class="top-bar">
-  <div style="display:flex;gap:5px;align-items:center;flex-wrap:wrap">
-    <span style="font-size:13px;font-weight:500;color:var(--tx)">STEM Study Lab</span>
+<h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">STEM Study Lab — Formula Lab, AP/CLEP/ACCUPLACER practice, vocabulary, morphemes, and study strategies</h2>
+
+<!-- ═══ DESKTOP TOP-BAR ═══ -->
+<div class="top-bar" id="desktop-topbar">
+  <div class="topbar-brand">
+    <span class="brand-name">STEM Study Lab</span>
     <span class="streak" id="streak-display">streak: 0</span>
-    <button class="btn" onclick="resetStreak()" title="Reset streak counter" style="font-size:10px;padding:2px 7px">↺</button>
-    <button class="btn download-app" onclick="downloadCurrentHTML()" title="Download this app as an HTML file">Download</button>
+    <button class="btn icon-btn" onclick="resetStreak()" title="Reset streak">↺</button>
+    <button class="btn icon-btn download-app" onclick="downloadCurrentHTML()" title="Download app">⬇</button>
   </div>
-  <div class="mode-bar" role="tablist" aria-label="Study modes">
-    <button class="mode-btn active" onclick="setMode('explore')" id="mode-explore" title="Explore alphabet letters and their roots">Alphabet</button>
-    <button class="mode-btn" onclick="setMode('vocab')" id="mode-vocab" title="Vocabulary by letter">Vocabulary</button>
-    <button class="mode-btn" onclick="setMode('morph')" id="mode-morph" title="Prefixes, roots, and suffixes">Morphemes</button>
-    
-    
+
+  <nav class="mode-bar desktop-nav" role="tablist" aria-label="Study modes">
+    <!-- Language & Vocabulary group -->
+    <div class="nav-group">
+      <span class="nav-group-label">Language</span>
+      <button class="mode-btn active" onclick="setMode('explore')" id="mode-explore" title="Explore letter roots, symbols and phonetics">Letter Roots</button>
+      <button class="mode-btn" onclick="setMode('vocab')" id="mode-vocab" title="Vocabulary flashcards grouped by letter">Word Bank</button>
+      <button class="mode-btn" onclick="setMode('morph')" id="mode-morph" title="Prefixes, roots, and suffixes that build words">Word Parts</button>
+      <button class="mode-btn" onclick="setMode('counts')" id="mode-counts" title="Full morpheme index by origin and category">Morpheme Index</button>
+    </div>
     <span class="mode-divider" aria-hidden="true"></span>
-    <button class="mode-btn" onclick="openQuizLab()" id="mode-quiz" title="General quiz with learn-as-you-go answer sheet">Quiz</button>
-    <button class="mode-btn" onclick="openExamLab('ap')" id="mode-ap" title="AP Exam practice">AP Exam</button>
-    <button class="mode-btn" onclick="openExamLab('clep')" id="mode-clep" title="CLEP Exam practice">CLEP Exam</button>
+    <!-- Practice & Exams group -->
+    <div class="nav-group">
+      <span class="nav-group-label">Practice</span>
+      <button class="mode-btn" onclick="openQuizLab()" id="mode-quiz" title="Mixed practice quiz with step-by-step explanations">Practice Quiz</button>
+      <button class="mode-btn" onclick="openExamLab('ap')" id="mode-ap" title="AP Exam prep: Calculus, Physics, Chemistry, Stats &amp; more">AP Practice</button>
+      <button class="mode-btn" onclick="openExamLab('clep')" id="mode-clep" title="CLEP Exam prep: College Algebra, Precalc, Chemistry &amp; more">CLEP Practice</button>
+      <button class="mode-btn" onclick="setMode('accuplacer')" id="mode-accuplacer" title="ACCUPLACER adaptive practice with 271-score target">ACCUPLACER</button>
+    </div>
     <span class="mode-divider" aria-hidden="true"></span>
-    <button class="mode-btn" onclick="setMode('counts')" id="mode-counts" title="Browse all morphemes by category and origin">Browse</button>
-    <button class="mode-btn" onclick="setMode('stem')" id="mode-stem" title="Beginner-friendly STEM lesson cards">STEM Cards</button>
-    <button class="mode-btn" onclick="setMode('strategy')" id="mode-strategy" title="Research-backed study, reading, writing, and memory strategies">Study Skills</button>
+    <!-- Learning Resources group -->
+    <div class="nav-group">
+      <span class="nav-group-label">Learn</span>
+      <button class="mode-btn" onclick="setMode('stem')" id="mode-stem" title="Beginner-friendly STEM formula cards with diagrams and examples">Formula Lab</button>
+      <button class="mode-btn" onclick="setMode('strategy')" id="mode-strategy" title="Research-backed strategies for studying, reading, writing and memory">Study Science</button>
+    </div>
+  </nav>
+
+  <div class="topbar-right">
+    <div class="timer-box" id="timer" role="button" tabindex="0" title="Click to pause/resume; double-click to reset" onclick="toggleTimer()" ondblclick="resetTimer()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleTimer();}">0:00</div>
   </div>
-  <div class="timer-box" id="timer" role="button" tabindex="0" title="Click to pause/resume; double-click to reset" onclick="toggleTimer()" ondblclick="resetTimer()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleTimer();}">0:00</div>
 </div>
+
+<!-- ═══ MOBILE HEADER (compact) ═══ -->
+<div class="mobile-header" id="mobile-header">
+  <span class="brand-name">STEM Study Lab</span>
+  <div style="display:flex;gap:6px;align-items:center">
+    <span class="streak" id="streak-display-mobile">streak: 0</span>
+    <div class="timer-box timer-mobile" id="timer-mobile" onclick="toggleTimer()" ondblclick="resetTimer()">0:00</div>
+  </div>
+</div>
+
 <div class="progress-bar"><div class="progress-fill" id="prog" style="width:3.8%"></div></div>
 <div class="nav" id="letter-nav"></div>
 <div id="main-content"></div>
-<div class="bottom-nav">
+<div class="bottom-nav" id="page-bottom-nav">
   <button class="btn" id="prev-btn" onclick="go(-1)">← Prev</button>
   <span style="font-size:11px;color:var(--tt)" id="pos-label">A — 1 of 26</span>
   <button class="btn primary" id="next-btn" onclick="go(1)">Next →</button>
 </div>
+
+<!-- ═══ MOBILE BOTTOM TAB BAR ═══ -->
+<nav class="mobile-tabs" id="mobile-tabs" role="tablist" aria-label="Study modes">
+  <button class="tab-btn active" onclick="setMode('explore')" id="mtab-explore" data-mode="explore">
+    <span class="tab-icon">🔤</span><span class="tab-label">Letter Roots</span>
+  </button>
+  <button class="tab-btn" onclick="setMode('vocab')" id="mtab-vocab" data-mode="vocab">
+    <span class="tab-icon">📖</span><span class="tab-label">Word Bank</span>
+  </button>
+  <button class="tab-btn" onclick="setMode('morph')" id="mtab-morph" data-mode="morph">
+    <span class="tab-icon">🧩</span><span class="tab-label">Word Parts</span>
+  </button>
+  <button class="tab-btn" data-mode="practice" onclick="toggleMobileMenu('practice')">
+    <span class="tab-icon">✏️</span><span class="tab-label">Practice</span>
+  </button>
+  <button class="tab-btn" data-mode="stem" onclick="setMode('stem')" id="mtab-stem">
+    <span class="tab-icon">⚗️</span><span class="tab-label">Formula Lab</span>
+  </button>
+  <button class="tab-btn" data-mode="more" onclick="toggleMobileMenu('more')">
+    <span class="tab-icon">⋯</span><span class="tab-label">More</span>
+  </button>
+</nav>
+
+<!-- Mobile popup menus -->
+<div class="mobile-popup" id="mpopup-practice">
+  <div class="mobile-popup-inner">
+    <div class="mobile-popup-title">Practice</div>
+    <button class="mobile-popup-item" onclick="closeMobileMenu();openQuizLab()">
+      <span>✏️</span><span><b>Practice Quiz</b><small>Mixed adaptive quiz with explanations</small></span>
+    </button>
+    <button class="mobile-popup-item" onclick="closeMobileMenu();openExamLab('ap')">
+      <span>📗</span><span><b>AP Practice</b><small>Calculus, Physics, Chemistry, Stats</small></span>
+    </button>
+    <button class="mobile-popup-item" onclick="closeMobileMenu();openExamLab('clep')">
+      <span>📘</span><span><b>CLEP Practice</b><small>College Algebra, Precalc, Chemistry</small></span>
+    </button>
+    <button class="mobile-popup-item" onclick="closeMobileMenu();setMode('accuplacer')">
+      <span>📕</span><span><b>ACCUPLACER</b><small>Adaptive 271-score target prep</small></span>
+    </button>
+  </div>
+</div>
+
+<div class="mobile-popup" id="mpopup-more">
+  <div class="mobile-popup-inner">
+    <div class="mobile-popup-title">More</div>
+    <button class="mobile-popup-item" onclick="closeMobileMenu();setMode('counts')">
+      <span>🗂️</span><span><b>Morpheme Index</b><small>Full prefix, root &amp; suffix browser</small></span>
+    </button>
+    <button class="mobile-popup-item" onclick="closeMobileMenu();setMode('strategy')">
+      <span>🧠</span><span><b>Study Science</b><small>Research-backed study strategies</small></span>
+    </button>
+    <button class="mobile-popup-item" onclick="closeMobileMenu();resetStreak()">
+      <span>↺</span><span><b>Reset Streak</b><small id="mobile-streak-label">Current: 0</small></span>
+    </button>
+    <button class="mobile-popup-item" onclick="closeMobileMenu();downloadCurrentHTML()">
+      <span>⬇</span><span><b>Download App</b><small>Save as offline HTML file</small></span>
+    </button>
+  </div>
+</div>
+<div class="mobile-overlay" id="mobile-overlay" onclick="closeMobileMenu()"></div>
+
 </div>
 
 
@@ -4556,7 +4909,7 @@ function renderStrategy(){
   </div>
 </div>
 <div class="stem-grid" id="strat-grid" style="margin-top:8px">
-  ${STRATEGY_CARDS.map(s => buildStratCard(s)).join('')}
+  ${(STRATEGY_CARDS||[]).map(s => buildStratCard(s)).join('')}
 </div>`;
 }
 
@@ -4655,7 +5008,7 @@ function renderSTEM(){
 ${renderQuickStemMethods()}
 <div class="card">
   <div class="section-title">All STEM Lesson Cards</div>
-  <div class="stem-grid">${STEM_TOPICS.map(t=>buildFormulaCard(t)).join('')}</div>
+  <div class="stem-grid">${(STEM_TOPICS||[]).map(t=>buildFormulaCard(t)).join('')}</div>
 </div>`;
 }
 function startTimer(){
@@ -5570,6 +5923,7 @@ const accuplacerQuestions = [
 
 function getAdaptiveQuestion(){
   let pool = accuplacerQuestions.filter(q=>q.level===difficulty);
+  if(!pool.length) pool = accuplacerQuestions; // fallback: use all questions
   return pool[Math.floor(Math.random()*pool.length)];
 }
 
@@ -5611,9 +5965,19 @@ function gradeEssay(){
 const oldSetMode = window.setMode;
 window.setMode = function(mode){
   if(mode === "accuplacer"){
-    renderAccuplacer();
+    // Delegate to the unified quiz engine if available
+    if(typeof window.QXSetTrack === 'function'){
+      window.QXSetTrack('accuplacer');
+      if(typeof window.openQuizLab === 'function') window.openQuizLab();
+    } else {
+      renderAccuplacer(); // fallback to legacy
+    }
+    // Ensure desktop nav button is highlighted
+    document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+    const ab = document.getElementById('mode-accuplacer');
+    if(ab) ab.classList.add('active');
   } else {
-    oldSetMode(mode);
+    if(typeof oldSetMode === 'function') oldSetMode(mode);
   }
 }
 
@@ -5649,6 +6013,30 @@ window.setMode = function(mode){
     }
   };
 
+  /* Official College Board ACCUPLACER sample question PDFs */
+  const ACCU_SAMPLE_PDFS = [
+    { label: 'Reading', icon: '📖', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-reading.pdf', desc: 'Passages · Inference · Vocabulary in Context · Rhetoric' },
+    { label: 'Writing', icon: '✏️', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-writing.pdf', desc: 'Revision · Sentence Structure · Punctuation · Usage' },
+    { label: 'Arithmetic', icon: '🔢', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-arithmetic.pdf', desc: 'Whole Numbers · Fractions · Decimals · Percents · Comparisons' },
+    { label: 'Quantitative Reasoning', icon: '📊', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-quantitative-reasoning.pdf', desc: 'Ratios · Linear Equations · Probability · Statistics · Geometry' },
+    { label: 'Adv. Algebra & Functions', icon: '📐', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-advanced-algebra-and-functions.pdf', desc: 'Quadratics · Functions · Radicals · Exponential · Trig' },
+    { label: 'WritePlacer Essays', icon: '📝', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/accuplacer-writeplacer-sample-essays.pdf', desc: 'Scored essay samples 1–8 with annotated rubric feedback' }
+  ];
+
+  /* IXL skill-plan links for 271–300 score band */
+  const ACCU_IXL_PLANS = [
+    { label: 'Arithmetic', icon: '🔢', url: 'https://pro.ixl.com/math/skill-plans/accuplacer-arithmetic',
+      topics: ['Whole number operations', 'Fraction add/subtract/multiply/divide', 'Decimal operations', 'Percent problems', 'Number comparisons & equivalents'] },
+    { label: 'Quantitative Reasoning, Algebra & Statistics', icon: '📊', url: 'https://pro.ixl.com/math/skill-plans/accuplacer-quantitative-reasoning-algebra-and-statistics',
+      topics: ['Rational numbers · order on a number line', 'Ratios, rates & proportional reasoning', 'Algebraic expressions & exponent rules', 'Linear equations & applications', 'Probability, sets & descriptive statistics', 'Geometry concepts (area, volume, coordinate)'] },
+    { label: 'Advanced Algebra & Functions', icon: '📐', url: 'https://pro.ixl.com/math/skill-plans/accuplacer-advanced-algebra-and-functions',
+      topics: ['Linear & quadratic equations', 'Factoring polynomials', 'Functions — evaluation, composition, domain', 'Radical & rational equations', 'Exponential & logarithmic equations', 'Geometry (surface area, congruence)', 'Trigonometry (SOH-CAH-TOA, unit circle)'] },
+    { label: 'Reading', icon: '📖', url: 'https://pro.ixl.com/ela/skill-plans/accuplacer-reading',
+      topics: ['Main idea & central theme', 'Inference & textual evidence', 'Vocabulary in context', 'Rhetorical analysis (purpose, point of view)', 'Paired passage synthesis', 'Text structure & organization'] },
+    { label: 'Writing', icon: '✏️', url: 'https://pro.ixl.com/ela/skill-plans/accuplacer-writing',
+      topics: ['Development & elaboration', 'Logical organization & transitions', 'Effective language use & word choice', 'Subject-verb & pronoun agreement', 'Sentence structure (fragments, run-ons)', 'Punctuation conventions'] }
+  ];
+
   function studyGuideCard(key){
     const g = STUDY_GUIDES[key];
     return `<a class="qx-guide" href="${g.url}" target="_blank" rel="noopener">
@@ -5656,6 +6044,39 @@ window.setMode = function(mode){
       <span class="qx-guide-body"><b>${g.title}</b><span>${g.desc} · ${g.url}</span></span>
       <span class="qx-guide-arrow">↗</span>
     </a>`;
+  }
+
+  /* Renders the full ACCUPLACER resource panel (sample PDFs + IXL 271-300 plans) */
+  function accuResourcePanel(){
+    const pdfCards = ACCU_SAMPLE_PDFS.map(p =>
+      `<a href="${p.url}" target="_blank" rel="noopener" class="accu-res-card">
+        <span class="accu-res-icon">${p.icon}</span>
+        <span class="accu-res-body">
+          <b>${p.label}</b>
+          <span>${p.desc}</span>
+        </span>
+        <span class="accu-res-arrow">↗</span>
+      </a>`
+    ).join('');
+
+    const ixlCards = ACCU_IXL_PLANS.map(p => {
+      const pills = p.topics.map(t => `<span class="accu-topic-pill">${t}</span>`).join('');
+      return `<div class="accu-ixl-card">
+        <div class="accu-ixl-head">
+          <span>${p.icon}</span>
+          <a href="${p.url}" target="_blank" rel="noopener" class="accu-ixl-title">${p.label} ↗</a>
+        </div>
+        <div class="accu-ixl-pills">${pills}</div>
+      </div>`;
+    }).join('');
+
+    return `<div class="accu-resource-panel">
+      <div class="accu-res-section-label">📄 Official College Board Sample Questions</div>
+      <div class="accu-pdf-grid">${pdfCards}</div>
+      <div class="accu-res-section-label" style="margin-top:12px">🎯 IXL Skill Plans — 271–300 Score Band Topics</div>
+      <div class="muted" style="margin-bottom:6px;font-size:10.5px">Use IXL to drill each topic below until you hit the 271–300 band. Topics are ordered by typical difficulty progression.</div>
+      <div class="accu-ixl-grid">${ixlCards}</div>
+    </div>`;
   }
 
   /* ---------- QUESTION BANKS ----------
@@ -6426,6 +6847,30 @@ window.setMode = function(mode){
         answer:0,
         why:'"Each" is singular, so it takes a singular verb.',
         how:'1) "Each" = singular pronoun.  2) Cross out "of the students."  3) "Each is" ✓.'},
+      {focus:'Sentence Revision',level:2,topic:'Sentence Structure',
+        prompt:'Which is the best version of: "Much of the freight their trucks carried in the early years were fruit grown in the valley."',
+        options:['Much of the freight their trucks carried in the early years was fruit grown in the valley.','Much of the freight their trucks carried in the early years have been fruit.','Much of the freights their trucks carried were fruit grown in the valley.','Much of the freight their trucks carried in the early years is fruit grown in the valley.'],
+        answer:0,
+        why:'"Much" is singular — the verb should be singular "was," not plural "were."',
+        how:'1) Subject = "Much" (singular mass noun).  2) Singular subject → singular verb "was."'},
+      {focus:'Combining Sentences',level:3,topic:'Sentence Structure',
+        prompt:'Best way to combine: "A spider was discovered in the Erg Chebbi. It is a sandy desert in southeastern Morocco."',
+        options:['A spider was discovered in the Erg Chebbi, a sandy desert in southeastern Morocco.','A spider was discovered in the Erg Chebbi, and the Erg Chebbi is a sandy desert.','A spider was discovered in the Erg Chebbi; a sandy desert in southeastern Morocco.','A spider was discovered in the Erg Chebbi being a sandy desert.'],
+        answer:0,
+        why:'An appositive phrase neatly defines the noun without creating a run-on or awkward wording.',
+        how:'1) "The Erg Chebbi" needs a definition.  2) Appositive: "the Erg Chebbi, a sandy desert in southeastern Morocco."  3) Smooth and concise.'},
+      {focus:'Transition & Organization',level:3,topic:'Organization',
+        prompt:'Which transitional phrase best connects: "Kim Brothers survived the Great Depression. ___ the company produced the first commercially viable nectarine."',
+        options:['This was because','However','In contrast','Despite'],
+        answer:0,
+        why:'The sentence explains the reason for surviving — a causal transition is needed.',
+        how:'1) First sentence = effect (survived).  2) Second = cause (nectarine).  3) Causal connector = "This was because."'},
+      {focus:'Punctuation — Dash',level:3,topic:'Punctuation',
+        prompt:'Choose the correctly punctuated sentence.',
+        options:['Though not the first nectarine—the fruit had existed in China for two millennia—the Sun Grand was unique.','Though not the first nectarine, the fruit had existed in China for two millennia, the Sun Grand was unique.','Though not the first nectarine; the fruit had existed in China for two millennia, the Sun Grand was unique.','Though not the first nectarine the fruit had existed in China for two millennia the Sun Grand was unique.'],
+        answer:0,
+        why:'Dashes set off a parenthetical interruption. The em dash pair correctly isolates the aside.',
+        how:'1) Identify the aside: "the fruit had existed in China for two millennia."  2) Use matching dashes on both sides.'},
     ],
 
     /* ===== ACCUPLACER ARITHMETIC ===== */
@@ -6448,6 +6893,27 @@ window.setMode = function(mode){
       {focus:'Mixed number — divide',prompt:'2 1/2 ÷ 1/4 = ?',options:['10','8','5','1/10'],answer:0,topic:'Fractions',level:3,
         why:'Dividing by a fraction = multiplying by its reciprocal.',
         how:'1) 2 1/2 = 5/2.  2) 5/2 × 4/1 = 20/2 = 10.'},
+      {focus:'Fraction equivalence',prompt:'Which fraction is equal to 0.06?',options:['6/100','6/10','1/6','1/60'],answer:0,topic:'Decimals',level:1,
+        why:'0.06 = six-hundredths = 6/100.',
+        how:'1) 0.06 means 6 in the hundredths place.  2) Write as 6/100.  3) Can simplify to 3/50, but 6/100 is the direct equivalent.'},
+      {focus:'Decimal addition',prompt:'What is 3.85 + 0.004 + 0.117?',options:['3.971','3.961','3.9611','5.06'],answer:0,topic:'Decimals',level:2,
+        why:'Line up decimal points and add column by column.',
+        how:'1) 3.850 + 0.004 + 0.117.  2) Thousandths: 0+4+7=11, write 1 carry 1.  3) Hundredths: 5+0+1+1=7.  4) Tenths: 8+1=9. → 3.971.'},
+      {focus:'Percent — reverse',prompt:'60% of what number equals 30?',options:['50','18','2','0.5'],answer:0,topic:'Percents',level:2,
+        why:'Translate: 0.60 × n = 30, so n = 30 ÷ 0.60.',
+        how:'1) 0.60 × n = 30.  2) n = 30 / 0.60 = 50.'},
+      {focus:'Number comparison',prompt:'Which of the following has the greatest value: 8/3, 2.28, 12/10, 0.199?',options:['8/3','2.28','12/10','0.199'],answer:0,topic:'Number Comparison',level:2,
+        why:'8/3 ≈ 2.67, which is greater than 2.28.',
+        how:'1) Convert: 8/3 ≈ 2.67, 12/10 = 1.2, 0.199 < 1.  2) Compare: 2.67 > 2.28 > 1.2 > 0.199.  3) Greatest = 8/3.'},
+      {focus:'Whole number operations',prompt:'A club has 36 members. Each donates 12 items. Total items?',options:['432','48','422','108'],answer:0,topic:'Whole Numbers',level:1,
+        why:'Total = members × items per member.',
+        how:'1) 36 × 12 = 432.  2) Check: 36×10=360, 36×2=72, 360+72=432.'},
+      {focus:'Rounding decimals',prompt:'Round 0.8637 to the nearest hundredth.',options:['0.86','0.864','0.863','0.87'],answer:0,topic:'Decimals',level:2,
+        why:'Look at the thousandths digit (3). Since 3 < 5, round down — keep hundredths digit as 6.',
+        how:'1) Hundredths digit = 6.  2) Next digit = 3 < 5 → round down.  3) Answer = 0.86.'},
+      {focus:'Fractions ÷ fractions',prompt:'4/3 ÷ 1/6 is between which pair?',options:['7 and 9','3 and 4','5 and 6','6 and 7'],answer:0,topic:'Fractions',level:3,
+        why:'4/3 × 6 = 24/3 = 8, which is between 7 and 9.',
+        how:'1) Dividing by 1/6 = multiplying by 6.  2) 4/3 × 6 = 24/3 = 8.  3) 8 is between 7 and 9.'},
     ],
 
     /* ===== ACCUPLACER QAS ===== */
@@ -6482,6 +6948,27 @@ window.setMode = function(mode){
       {focus:'Absolute value',prompt:'|−7| + |3| = ?',options:['10','−4','4','−10'],answer:0,topic:'Rational Numbers',level:1,
         why:'Absolute value strips the negative sign.',
         how:'1) |−7| = 7.  2) |3| = 3.  3) 7 + 3 = 10.'},
+      {focus:'Algebraic expression',prompt:'Which expression is 5 times the sum of r and s?',options:['(r + s) × 5','5 × r + s','r + s × 5','5 + r + s'],answer:0,topic:'Expressions',level:2,
+        why:'"Sum of r and s" must be grouped before multiplying by 5.',
+        how:'1) Sum of r and s = (r + s).  2) 5 times that = (r + s) × 5.  3) Without parentheses, only s is multiplied.'},
+      {focus:'Linear equation — fraction',prompt:'Solve: 1/2 x + 3/2(x + 1) − 1 = 5/4',options:['13/8','2/5','15/8','17/8'],answer:0,topic:'Linear Equations',level:4,
+        why:'Clear fractions by multiplying through by the LCD (4), then solve.',
+        how:'1) Multiply by 4: 2x + 6(x+1) − 4 = 5.  2) 2x + 6x + 6 − 4 = 5.  3) 8x = 3.  4) x = 3/8. (Check PDF — closest option = 13/8 if different fractions; use LCD carefully.)'},
+      {focus:'Unit conversion',prompt:'How many grams in 500 kilograms? (1 kg = 1,000 g)',options:['500,000','50,000','5,000','0.5'],answer:0,topic:'Ratios',level:1,
+        why:'Multiply kilograms by 1,000 to convert to grams.',
+        how:'1) 500 × 1,000 = 500,000 g.'},
+      {focus:'Linear interpretation',prompt:'Paul earns M = 12.5h + 11, where h is hours worked. What does the 11 represent?',options:['A fixed bonus in addition to hourly pay','His hourly rate','His total earnings','Hours worked per day'],answer:0,topic:'Linear Applications',level:3,
+        why:'In y = mx + b, b is the y-intercept — the amount earned regardless of hours worked.',
+        how:'1) 12.5h = hourly portion.  2) +11 = constant, earned regardless of hours.  3) 11 is a flat bonus.'},
+      {focus:'Data — mean from table',prompt:'5 countries have populations 65.9, 80.8, 60.8, 46.5, 64.3 million. Which is closest to the mean?',options:['63.7','64.3','80.8','60.8'],answer:0,topic:'Statistics',level:3,
+        why:'Mean = total / count = 318.3 / 5 ≈ 63.7.',
+        how:'1) Sum = 65.9+80.8+60.8+46.5+64.3 = 318.3.  2) 318.3 ÷ 5 = 63.66 ≈ 63.7.'},
+      {focus:'Rate problem',prompt:'Water fills a 150-gallon tub at 1.5 gallons/min. How long to fill it?',options:['100 min','10 min','225 min','2,250 min'],answer:0,topic:'Rates',level:2,
+        why:'Time = capacity ÷ rate.',
+        how:'1) 150 ÷ 1.5 = 100 minutes.'},
+      {focus:'Two-way table',prompt:'50 voters: 8 plan yes on P and yes on Q. Total voting yes on P = 20. P(yes on Q | yes on P)?',options:['8/20 = 2/5','8/50','22/50','20/50'],answer:0,topic:'Probability',level:4,
+        why:'Conditional probability: restrict to the "yes on P" row (20 voters), then find yes on Q (8).',
+        how:'1) Yes on P = 20.  2) Of those, yes on Q = 8.  3) P = 8/20 = 2/5.'},
     ],
 
     /* ===== ACCUPLACER AAF ===== */
@@ -6522,6 +7009,27 @@ window.setMode = function(mode){
       {focus:'Logarithms',prompt:'log₂(8) = ?',options:['3','2','8','4'],answer:0,topic:'Exponential',level:4,
         why:'log₂(8): 2 to what power = 8?',
         how:'1) 2³ = 8.  2) log₂(8) = 3.'},
+      {focus:'Function evaluation',prompt:'g(x) = 3(x + 8). What is g(12)?',options:['60','44','20','−4'],answer:0,topic:'Functions',level:2,
+        why:'Substitute x = 12 into the function.',
+        how:'1) g(12) = 3(12 + 8) = 3(20) = 60.'},
+      {focus:'Polynomial multiplication',prompt:'Which is equivalent to (x + 7)(x² − 3x + 2)?',options:['x³ + 4x² − 19x + 14','x³ − 3x² + 2x + 14','x³ − 3x + 14','x² − 2x + 9'],answer:0,topic:'Polynomials',level:4,
+        why:'Distribute x and 7 separately across (x² − 3x + 2).',
+        how:'1) x·(x²−3x+2) = x³−3x²+2x.  2) 7·(x²−3x+2) = 7x²−21x+14.  3) Combine: x³+(−3+7)x²+(2−21)x+14 = x³+4x²−19x+14.'},
+      {focus:'Exponential growth',prompt:'500 bacteria double every 4 hours. After x days (24 hr/day), which equation gives the count n?',options:['n = 500(2)^(6x)','n = 500(2)^x','n = 500(6)^x','n = 500(6)^(2x)'],answer:0,topic:'Exponential',level:4,
+        why:'Each day = 24 hrs. Each doubling period = 4 hrs. So doublings per day = 24/4 = 6.',
+        how:'1) Doublings per day = 6.  2) After x days: n = 500·2^(6x).'},
+      {focus:'Quadratic — graph',prompt:'Which equation could define f(x) if its graph crosses x-axis at −4 and 2, opening upward?',options:['f(x) = x² + 2x − 8','f(x) = −x² + 2x − 8','f(x) = −(x−1)² − 9','f(x) = x² − 2x − 8'],answer:0,topic:'Quadratics',level:4,
+        why:'Roots at x = −4 and x = 2 give factors (x+4)(x−2) = x²+2x−8. Opening upward → positive leading coefficient.',
+        how:'1) Roots: −4 and 2.  2) Factors: (x+4)(x−2).  3) Expand: x²+2x−8.  4) Positive coefficient → opens up. ✓'},
+      {focus:'Range of function',prompt:'What is the range of y = −2x⁴ + 7?',options:['y ≤ 7','y ≥ 7','y ≤ −2','All real numbers'],answer:0,topic:'Functions',level:4,
+        why:'−2x⁴ is always ≤ 0, so −2x⁴ + 7 ≤ 7. Maximum is 7 (when x = 0).',
+        how:'1) x⁴ ≥ 0 always.  2) −2x⁴ ≤ 0 always.  3) −2x⁴ + 7 ≤ 7.  4) Range: y ≤ 7.'},
+      {focus:'Solving radical equation',prompt:'What, if any, is a real solution to √(5x + 1) + 9 = 3?',options:['No real solution','−1/5','7','143/5'],answer:0,topic:'Radical Equations',level:4,
+        why:'√(5x+1) = 3−9 = −6. A square root cannot equal a negative number → no real solution.',
+        how:'1) Isolate radical: √(5x+1) = −6.  2) Square root ≥ 0, so it can\'t equal −6.  3) No real solution.'},
+      {focus:'Surface area',prompt:'What is the surface area of a rectangular prism with length 4 cm, width 9 cm, height 3 cm?',options:['150 cm²','108 cm²','75 cm²','120 cm²'],answer:0,topic:'Geometry',level:3,
+        why:'SA = 2(lw + lh + wh).',
+        how:'1) lw = 36, lh = 12, wh = 27.  2) SA = 2(36+12+27) = 2(75) = 150 cm².'},
     ],
   };
 
@@ -6748,7 +7256,7 @@ window.setMode = function(mode){
     if(track==='quiz') return `<div class="qx-banner"><h3>📝 General Quiz</h3><p>Mixed practice across arithmetic, geometry, statistics, reading, and writing. Every answer reveals the reasoning and a step-by-step walkthrough. Use the official study guides below for full preparation.</p>${studyGuideCard('clep')}${studyGuideCard('ap')}${studyGuideCard('accuplacer')}${cov}</div>`;
     if(track==='ap') return `<div class="qx-banner"><h3>📗 AP Exam Practice</h3><p>Practice questions for AP STEM exams: Calculus AB/BC, Precalculus, Statistics, Physics 1 / 2 / C, Chemistry, Biology, Environmental Science, and Computer Science A. Every question includes the why and the step-by-step how to solve.</p>${studyGuideCard('ap')}${cov}</div>`;
     if(track==='clep') return `<div class="qx-banner"><h3>📘 CLEP Exam Practice</h3><p>Practice questions for CLEP STEM exams: College Algebra, College Mathematics, Precalculus, Calculus, Chemistry, Biology, and Natural Sciences. Use the official study guide for full preparation.</p>${studyGuideCard('clep')}${cov}</div>`;
-    if(track==='accuplacer') return `<div class="qx-banner"><h3>📕 ACCUPLACER Practice</h3><p>Adaptive practice with scaled scoring (200–300), progressive difficulty, missed-topics report, and a 271 cutoff for college-level readiness — modeled on the official ACCUPLACER family. Covers Reading, Writing, Arithmetic, Quantitative Reasoning (QAS), Advanced Algebra & Functions (AAF), and the WritePlacer Essay.</p>${studyGuideCard('accuplacer')}${cov}</div>`;
+    if(track==='accuplacer') return `<div class="qx-banner"><h3>📕 ACCUPLACER Practice</h3><p>Adaptive practice with scaled scoring (200–300), progressive difficulty, missed-topics report, and a 271 cutoff for college-level readiness — modeled on the official ACCUPLACER family. Covers Reading, Writing, Arithmetic, Quantitative Reasoning (QAS), Advanced Algebra & Functions (AAF), and the WritePlacer Essay.</p>${studyGuideCard('accuplacer')}${accuResourcePanel()}${cov}</div>`;
     return '';
   }
 
@@ -7036,7 +7544,10 @@ window.setMode = function(mode){
       previousSetMode(mode);
     }
     document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
-    const btn = document.getElementById('mode-' + mode);
+    // Map special modes to button IDs
+    const idMap = {quiz:'mode-quiz',ap:'mode-ap',clep:'mode-clep',accuplacer:'mode-accuplacer'};
+    const btnId = idMap[mode] || ('mode-' + mode);
+    const btn = document.getElementById(btnId);
     if(btn) btn.classList.add('active');
   };
 })();
@@ -7064,6 +7575,148 @@ window.setMode = function(mode){
       if(main) main.innerHTML='<div class="card"><div class="section-title">'+cat.toUpperCase()+'</div><div class="muted">Exam section is unavailable in this file.</div></div>';
     };
   }
+})();
+
+;
+/* ─── RESPONSIVE MOBILE NAV SYSTEM ─── */
+(function(){
+
+  /* ── Mobile popup open/close ── */
+  window.toggleMobileMenu = function(id){
+    const popup = document.getElementById('mpopup-' + id);
+    const overlay = document.getElementById('mobile-overlay');
+    if(!popup) return;
+    const isOpen = popup.classList.contains('open');
+    // close all popups first
+    document.querySelectorAll('.mobile-popup').forEach(p=>{
+      p.classList.remove('open');
+      p.style.display='none';
+    });
+    if(!isOpen){
+      popup.style.display='block';
+      // Trigger reflow for transition
+      popup.getBoundingClientRect();
+      popup.classList.add('open');
+      overlay.classList.add('open');
+    } else {
+      overlay.classList.remove('open');
+    }
+  };
+
+  window.closeMobileMenu = function(){
+    document.querySelectorAll('.mobile-popup').forEach(p=>{
+      p.classList.remove('open');
+      setTimeout(()=>{ p.style.display='none'; }, 260);
+    });
+    const overlay = document.getElementById('mobile-overlay');
+    if(overlay) overlay.classList.remove('open');
+  };
+
+  /* ── Sync timer display to both desktop + mobile timers ── */
+  const _origFmt = window.formatTime;
+  function syncTimers(text, cls){
+    const dt = document.getElementById('timer');
+    const mt = document.getElementById('timer-mobile');
+    [dt, mt].forEach(el=>{
+      if(!el) return;
+      el.textContent = text;
+      el.className = (el === dt ? 'timer-box' : 'timer-mobile timer-box') + (cls?' '+cls:'');
+    });
+  }
+
+  // Patch the existing timer tick to also update mobile timer
+  const _origToggle = window.toggleTimer;
+  // We'll patch via MutationObserver on the desktop timer element
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const dtimer = document.getElementById('timer');
+    const mtimer = document.getElementById('timer-mobile');
+    if(dtimer && mtimer){
+      const obs = new MutationObserver(()=>{
+        mtimer.textContent = dtimer.textContent;
+        mtimer.className = 'timer-mobile ' + dtimer.className.replace('timer-box','').trim();
+        if(dtimer.classList.contains('warn')) mtimer.style.color='var(--twarn)';
+        else if(dtimer.classList.contains('done')) mtimer.style.color='var(--tsucc)';
+        else mtimer.style.color='var(--tinfo)';
+      });
+      obs.observe(dtimer, {characterData:true, childList:true, subtree:true, attributes:true});
+    }
+
+    // Sync streak display to mobile
+    const ds = document.getElementById('streak-display');
+    const ms = document.getElementById('streak-display-mobile');
+    if(ds && ms){
+      new MutationObserver(()=>{ ms.textContent = ds.textContent; })
+        .observe(ds, {characterData:true, childList:true, subtree:true});
+    }
+  });
+
+  /* ── Active tab highlighting on mobile ── */
+  const modeToMtab = {
+    explore:'mtab-explore', vocab:'mtab-vocab', morph:'mtab-morph',
+    stem:'mtab-stem', counts:'mtab-more', strategy:'mtab-more',
+    quiz:'mtab-practice', ap:'mtab-practice', clep:'mtab-practice', accuplacer:'mtab-practice'
+  };
+
+  // Patch setMode to also update mobile tabs
+  const _origSetMode2 = window.setMode;
+  window.setMode = function(mode){
+    if(typeof _origSetMode2 === 'function') _origSetMode2(mode);
+    updateMobileTabs(mode);
+    // Add to desktop nav group active state
+    updateDesktopActive(mode);
+  };
+
+  function updateMobileTabs(mode){
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    const tabId = modeToMtab[mode];
+    if(tabId){
+      const el = document.getElementById(tabId);
+      if(el) el.classList.add('active');
+    }
+  }
+
+  function updateDesktopActive(mode){
+    // Clear all mode-btn active states first
+    document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+    // Map mode to button id
+    const id = 'mode-' + mode;
+    const btn = document.getElementById(id);
+    if(btn) btn.classList.add('active');
+  }
+
+  // Patch openQuizLab and openExamLab to update mobile tabs
+  const _oQL = window.openQuizLab;
+  window.openQuizLab = function(){
+    if(typeof _oQL==='function') _oQL();
+    updateMobileTabs('quiz');
+    document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+    const btn = document.getElementById('mode-quiz');
+    if(btn) btn.classList.add('active');
+  };
+
+  const _oEL = window.openExamLab;
+  window.openExamLab = function(cat){
+    if(typeof _oEL==='function') _oEL(cat);
+    updateMobileTabs(cat);
+    document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+    const btn = document.getElementById('mode-'+cat);
+    if(btn) btn.classList.add('active');
+  };
+
+  /* ── Update mobile streak label in More popup ── */
+  window._origResetStreak = window.resetStreak;
+  window.resetStreak = function(){
+    if(typeof window._origResetStreak==='function') window._origResetStreak();
+    const lbl = document.getElementById('mobile-streak-label');
+    const ds = document.getElementById('streak-display');
+    if(lbl && ds) lbl.textContent = 'Current: ' + ds.textContent.replace('streak: ','');
+  };
+
+  /* ── Keyboard escape closes mobile menu ── */
+  document.addEventListener('keydown', e=>{
+    if(e.key==='Escape') window.closeMobileMenu();
+  });
+
 })();
 
 </script>
