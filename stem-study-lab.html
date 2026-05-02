@@ -5641,8 +5641,12 @@ function render(){
   else if(mode==='counts')renderCounts();
   else if(mode==='explore')renderExplore(d);
   else if(mode==='vocab')renderVocab(d);
-  else if(mode==='quiz')renderQuiz(d);
   else if(mode==='morph')renderMorph(d);
+  else if(mode==='quiz'){
+    // Delegate to QX engine if available, otherwise legacy renderQuiz
+    if(typeof window.QXSetTrack==='function') window.QXSetTrack('quiz');
+    else renderQuiz(d);
+  }
 }
 function renderExplore(d){
   const ch=CHARS[d.l]||[];
@@ -5910,11 +5914,8 @@ function renderQuizLab(){
   }
   document.getElementById('main-content').innerHTML=`<div class="card"><div class="stem-title">Quiz &amp; Exam Lab</div><div class="strategy-sub">Adaptive practice with a learn-as-you-go answer sheet. Timer counts elapsed test time upward.</div><div class="section-title">Quiz category</div><div class="filter-row">${catBar}</div>${subBar?`<div class="filter-row"><span class="muted">Exam section</span>${subBar}</div>`:''}<div class="filter-row"><span class="muted">Mode</span><button class="link-chip${!quizLab.full?' active':''}" onclick="quizLabSetFull(false)">Adaptive practice</button><button class="link-chip${quizLab.full?' active':''}" onclick="quizLabSetFull(true)">Full-length practice</button><button class="link-chip" onclick="quizLabReset()">Reset</button></div>${score}${body}</div><div class="card"><div class="section-title">Score report</div>${recent}</div><div class="card"><div class="section-title">ACCUPLACER 271–300 readiness topics</div><div class="pill-row">${['Main idea','Inference','Vocabulary in context','Grammar','Punctuation','Fractions','Percents','Ratios','Linear equations','Slope','Functions','Quadratics','Exponents','Essay organization'].map(t=>`<span class="pill">${t}</span>`).join('')}</div></div>`;
 }
-function openExamLab(cat){
-  // Stub — overridden by QX engine
-}
+// openExamLab is defined by the QX engine block below — do not stub it here
 window.openQuizLab=openQuizLab;
-window.openExamLab=openExamLab;
 window.quizLabSetCat=quizLabSetCat;window.quizLabSetSub=quizLabSetSub;window.quizLabAnswer=quizLabAnswer;window.quizLabNext=quizLabNext;window.quizLabReset=quizLabReset;window.quizLabSetFull=quizLabSetFull;window.quizLabGradeEssay=quizLabGradeEssay;
 setTimeout(()=>{const qb=document.getElementById('mode-quiz');if(qb){qb.setAttribute('onclick','openQuizLab()');}},0);
 /* === END ROBUST QUIZ LAB PATCH === */
