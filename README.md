@@ -1,95 +1,43 @@
-# LinguaSTEM App
+# STEM Study Lab — React Native / Expo
 
-A single-file HTML study app for exploring alphabet roots, vocabulary, morphemes, STEM formulas, strategy lessons, and quiz/exam practice.
+A separated React Native version of the original single-file STEM Study Lab HTML app.
 
-## App Screenshots
+## Requirements
 
-### Alphabet mode
+- Node.js 20.19+
+- npm 10+
+- Expo CLI through `npx expo`
 
-![Alphabet mode screenshot](readme-assets/app-alphabet.png)
-
-### STEM Formula Lab
-
-![STEM Formula Lab screenshot](readme-assets/app-stem.png)
-
-### Quiz Lab
-
-![Quiz Lab screenshot](readme-assets/app-quiz.png)
-
-## Main Study Modes
-
-- **Alphabet** — Hebrew-root inspired alphabet cards with IPA pronunciation, root meanings, modern script connections, and cross-language vocabulary.
-- **Vocab** — interactive vocabulary reveal cards.
-- **Morphemes** — searchable morpheme bank with filters.
-- **Counts** — overview of morpheme categories and totals.
-- **STEM** — formula cards, diagrams, worked examples, quick methods, and solvers.
-- **Strategy** — reading and writing strategy lessons.
-- **Quiz / AP / CLEP** — generated practice questions for alphabet, morphemes, arithmetic, algebra, geometry, calculus, physics, chemistry, AP, CLEP, and Accuplacer-style topics.
-
-## App Highlights
-
-- Self-contained HTML app — no build step or server required.
-- Responsive dark UI with compact navigation.
-- Streak counter, timer, progress bar, and previous/next navigation.
-- Multiple study modes from language roots to STEM problem-solving.
-- Built-in download button for saving the app locally.
-
-## Representative Snippets
-
-### Mode navigation
-
-```html
-<button class="mode-btn active" onclick="setMode('explore')">Alphabet</button>
-<button class="mode-btn" onclick="setMode('vocab')">Vocab</button>
-<button class="mode-btn" onclick="setMode('morph')">Morphemes</button>
-<button class="mode-btn" onclick="openQuizLab()">Quiz</button>
-<button class="mode-btn" onclick="openExamLab('ap')">AP</button>
-<button class="mode-btn" onclick="openExamLab('clep')">CLEP</button>
-<button class="mode-btn" onclick="setMode('stem')">STEM</button>
-<button class="mode-btn" onclick="setMode('strategy')">Strategy</button>
-```
-
-### STEM formula card styling
-
-```css
-.formula-card{
-  background:linear-gradient(160deg,var(--c2) 0%,var(--c1) 100%);
-  border:.5px solid var(--bd);
-  border-radius:14px;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-}
-```
-
-## File Structure
-
-```text
-stem-language-app(3).html
-├── <style> app theme, layout, cards, quiz, STEM, strategy UI
-├── DATA alphabet roots and vocabulary
-├── MORPHEMES searchable morpheme entries
-├── QUICK_STEM_METHODS formula and quick-method cards
-├── quiz generators for multiple subjects
-└── render functions for each mode
-```
-
-## Run Locally
-
-Open the HTML file directly in a browser:
+## Install
 
 ```bash
-open "stem-language-app(3).html"
+npm install
 ```
 
-Or serve it locally:
+## Run
 
 ```bash
-python3 -m http.server 8000
+npm run start
 ```
 
-Then visit:
+Then press:
 
-```text
-http://localhost:8000/stem-language-app(3).html
+- `i` for iOS simulator
+- `a` for Android emulator
+- `w` for web
+- or scan the QR code with Expo Go where supported
+
+## Validation performed
+
+```bash
+npm run typecheck
+npx expo install --check
+npx expo config --type public
 ```
+
+## Notes
+
+- Uses Expo SDK 55, React Native 0.83, and React 19.2.
+- The original HTML data has been extracted into `src/data` modules.
+- The original app structure is preserved: language modes, practice modes, Formula Lab, Study Science, timer, streak, progress bar, and mobile tabs.
+- SVG formula diagrams render with `react-native-svg` instead of `WebView`, which avoids blank-screen and web bundling problems.
