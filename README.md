@@ -5,10 +5,10 @@ A separated React Native version of the original single-file STEM Study Lab HTML
 ## Screenshots
 
 ### Formula Lab
-![Formula Lab](../Study Section.png)
+![Formula Lab](../Study%20Section.png)
 
 ### Letter Roots
-![Letter Roots](../Letter Roots.png)
+![Letter Roots](../Letter%20Roots.png)
 
 ### Practice / Exam Lab
 ![Practice](Practice.png)
