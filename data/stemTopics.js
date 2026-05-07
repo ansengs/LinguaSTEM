@@ -1,4 +1,11 @@
-window.LINGUASTEM_STEM_CARDS = [
+/* 
+LinguaSTEM full STEM card patch
+- Percent weights removed/ignored.
+- Bare headings with insufficient detail are excluded or merged into stronger cards.
+- Load this after your base data/stem-topics.js and before the app reads `const STEM_TOPICS = window.STEM_TOPICS`.
+*/
+(function(){
+  const LINGUASTEM_STEM_CARDS = [
   {
     "cat": "Writing & Rhetoric",
     "tags": [
@@ -3374,3 +3381,38 @@ window.LINGUASTEM_STEM_CARDS = [
     "sourceSubject": "Analyzing and Interpreting Literature"
   }
 ];
+
+  function enoughText(x, min){ return typeof x === 'string' && x.trim().length >= (min || 20); }
+  function hasSufficientStemCard(t){
+    if(!t || !enoughText(t.title, 4) || !enoughText(t.cat, 2)) return false;
+    const contentScore = [t.theory, t.reality, t.formula, t.method, t.caption, t.example].filter(v => enoughText(v, 24)).length;
+    const hasSteps = Array.isArray(t.steps) && t.steps.filter(s => enoughText(s, 10)).length >= 3;
+    const weakTitle = /^(other|miscellaneous|general|torts)$/i.test(String(t.title).trim());
+    return contentScore >= 3 && hasSteps && !weakTitle;
+  }
+
+  const base = Array.isArray(window.STEM_TOPICS) ? window.STEM_TOPICS : [];
+  const cleanedBase = base.filter(hasSufficientStemCard);
+  const seen = new Set();
+  const merged = [];
+  [...cleanedBase, ...LINGUASTEM_STEM_CARDS].forEach(card => {
+    const key = String(card.title || '').trim().toLowerCase();
+    if(!key || seen.has(key)) return;
+    seen.add(key);
+    merged.push(card);
+  });
+
+  window.LINGUASTEM_STEM_CARDS = LINGUASTEM_STEM_CARDS;
+  window.LINGUASTEM_STEM_AUDIT = {
+    addedCards: LINGUASTEM_STEM_CARDS.length,
+    removedFromExistingBecauseInsufficient: base.length - cleanedBase.length,
+    excludedFromPastedText: [
+    "Introductory Business Law: History and Sources of American Law / Constitutional Law — excluded as a standalone card because the pasted text gives no subtopics beyond the heading.",
+    "Introductory Business Law: American Legal Systems and Procedures — excluded as a standalone card because the pasted text gives no subtopics beyond the heading.",
+    "Introductory Business Law: Torts — excluded as a standalone card because the pasted text gives no supporting subtopics.",
+    "Introductory Business Law: Miscellaneous / Other — not kept as a weak card title; usable subtopics were moved into Agency, Partnerships, Corporations & Sales.",
+    "Any percentage/weight-only labels — ignored in titles and card content."
+]
+  };
+  window.STEM_TOPICS = merged;
+})();
