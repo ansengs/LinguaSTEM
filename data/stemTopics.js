@@ -2620,221 +2620,4462 @@ export const STEM_TOPICS = [
     ],
     "example": "Geostationary orbit (T=24 h=86400 s): r³=GMT²/(4π²)=6.67×10⁻¹¹·6×10²⁴·(86400)²/(4π²). r≈4.2×10⁷ m ≈ 42,000 km. Orbital speed: v=√(6.67×10⁻¹¹·6×10²⁴/4.2×10⁷)≈3.07 km/s."
   }
-
-,
-{
-  "cat":"College English Composition",
-  "title":"Syntax, Rhetoric, and Composition",
-  "emoji":"",
-  "formula":"Focus = clarity + organization + evidence + syntax + audience awareness",
-  "desc":"Core CLEP/AP composition skills including syntax, organization, rhetoric, argumentation, documentation, and evaluation of evidence.",
-  "examples":[
-    {"l":"Syntax","r":"parallelism, coordination, subordination, sentence variety"},
-    {"l":"Grammar","r":"comma splices, run-ons, fragments, agreement, modifiers, diction"},
-    {"l":"Rhetoric","r":"tone, audience, appeals, rhetorical effects, transitions"},
-    {"l":"Research","r":"MLA, APA, Chicago, evaluation of sources, integration of evidence"}
-  ]
-},
-{
-  "cat":"Biology",
-  "title":"Cells, Genetics, Ecology, Evolution",
-  "emoji":"",
-  "formula":"Life = cells + energy + heredity + evolution + ecosystems",
-  "desc":"Major AP/CLEP biology systems including cellular biology, genetics, plants, animals, ecology, and evolution.",
-  "examples":[
-    {"l":"Cells","r":"organelles, membranes, prokaryotes vs eukaryotes"},
-    {"l":"Genetics","r":"DNA replication, transcription, translation, mutations"},
-    {"l":"Ecology","r":"energy flow, niches, succession, population dynamics"},
-    {"l":"Evolution","r":"natural selection, speciation, genetic drift, adaptive radiation"}
-  ]
-},
-{
-  "cat":"Calculus",
-  "title":"Limits, Derivatives, Integrals",
-  "emoji":"",
-  "formula":"Change = derivative | accumulation = integral",
-  "desc":"Differential and integral calculus including limits, continuity, optimization, and applications.",
-  "examples":[
-    {"l":"Derivatives","r":"chain rule, implicit differentiation, related rates"},
-    {"l":"Applications","r":"curve sketching, velocity, acceleration, extrema"},
-    {"l":"Integrals","r":"Riemann sums, FTC, area between curves"}
-  ]
-},
-{
-  "cat":"Chemistry",
-  "title":"Matter, Bonding, Reactions",
-  "emoji":"",
-  "formula":"Structure determines properties and reactions",
-  "desc":"Atomic structure, bonding, stoichiometry, equilibrium, kinetics, and thermodynamics.",
-  "examples":[
-    {"l":"Atomic Structure","r":"orbitals, isotopes, periodic trends"},
-    {"l":"Bonding","r":"ionic, covalent, metallic, VSEPR, resonance"},
-    {"l":"Reactions","r":"acid-base, redox, precipitation, electrochemistry"},
-    {"l":"Thermodynamics","r":"enthalpy, entropy, free energy"}
-  ]
-},
-{
-  "cat":"Business & Information Systems",
-  "title":"Management, Marketing, IS, Law",
-  "emoji":"",
-  "formula":"Organizations rely on systems + strategy + ethics",
-  "desc":"Business management, accounting, marketing, law, and information systems concepts.",
-  "examples":[
-    {"l":"Management","r":"planning, organizing, leadership, controlling"},
-    {"l":"Marketing","r":"segmentation, branding, pricing, promotion"},
-    {"l":"Information Systems","r":"security, databases, networking, SDLC"},
-    {"l":"Business Law","r":"contracts, torts, legal environment, ethics"}
-  ]
-}
-
-,
-{
-  "cat":"College English Composition",
-  "title":"College English Composition STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for College English Composition.",
-  "examples":[
-    {"l":"Syntax","r":"What is parallelism?"},
-{"l":"Sentence Boundaries","r":"What is a run-on sentence?"},
-{"l":"Documentation","r":"What style commonly uses parenthetical citations?"}
-  ]
-},
-{
-  "cat":"Biology",
-  "title":"Biology STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Biology.",
-  "examples":[
-    {"l":"Cells","r":"Which organelle controls cell activities?"},
-{"l":"Genetics","r":"What carries amino acids during translation?"},
-{"l":"Ecology","r":"What is a niche?"}
-  ]
-},
-{
-  "cat":"Calculus",
-  "title":"Calculus STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Calculus.",
-  "examples":[
-    {"l":"Limits","r":"What does a limit describe?"},
-{"l":"Derivatives","r":"What is the derivative of sin(x)?"},
-{"l":"Integrals","r":"What does a definite integral represent?"}
-  ]
-},
-{
-  "cat":"Chemistry",
-  "title":"Chemistry STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Chemistry.",
-  "examples":[
-    {"l":"Atomic Structure","r":"What determines an element’s identity?"},
-{"l":"Bonding","r":"What type of bond shares electrons?"},
-{"l":"Thermodynamics","r":"What does entropy measure?"}
-  ]
-},
-{
-  "cat":"College Algebra",
-  "title":"College Algebra STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for College Algebra.",
-  "examples":[
-    {"l":"Equations","r":"What is the quadratic formula used for?"}
-  ]
-},
-{
-  "cat":"College Mathematics",
-  "title":"College Mathematics STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for College Mathematics.",
-  "examples":[
-    {"l":"Probability","r":"What is the probability of flipping heads on a fair coin?"}
-  ]
-},
-{
-  "cat":"Natural Sciences",
-  "title":"Natural Sciences STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Natural Sciences.",
-  "examples":[
-    {"l":"Earth Science","r":"What layer contains weather systems?"}
-  ]
-},
-{
-  "cat":"Precalculus",
-  "title":"Precalculus STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Precalculus.",
-  "examples":[
-    {"l":"Trigonometry","r":"What is sin²θ + cos²θ?"}
-  ]
-},
-{
-  "cat":"Financial Accounting",
-  "title":"Financial Accounting STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Financial Accounting.",
-  "examples":[
-    {"l":"Accounting Cycle","r":"What statement shows revenues and expenses?"}
-  ]
-},
-{
-  "cat":"Information Systems",
-  "title":"Information Systems STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Information Systems.",
-  "examples":[
-    {"l":"Security","r":"What malware locks files for payment?"}
-  ]
-},
-{
-  "cat":"Introductory Business Law",
-  "title":"Introductory Business Law STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Introductory Business Law.",
-  "examples":[
-    {"l":"Contracts","r":"What is consideration?"}
-  ]
-},
-{
-  "cat":"Principles of Management",
-  "title":"Principles of Management STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Principles of Management.",
-  "examples":[
-    {"l":"Leadership","r":"Which management function involves motivation?"}
-  ]
-},
-{
-  "cat":"Principles of Marketing",
-  "title":"Principles of Marketing STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Principles of Marketing.",
-  "examples":[
-    {"l":"Segmentation","r":"What is market segmentation?"}
-  ]
-},
-{
-  "cat":"Analyzing and Interpreting Literature",
-  "title":"Analyzing and Interpreting Literature STEM Card",
-  "emoji":"",
-  "formula":"Knowledge + Practice + Analysis",
-  "desc":"Core concepts and subtopics for Analyzing and Interpreting Literature.",
-  "examples":[
-    {"l":"Poetry","r":"What is imagery?"}
-  ]
-},
-
 ];
+
+
+// Expanded subject cards. Pushed after export so original STEM cards remain available.
+STEM_TOPICS.push(...[
+  {
+    "cat": "College English Composition",
+    "title": "Analysis, Argumentation, and Synthesis",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Analysis, Argumentation, and Synthesis.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "analysis"
+      },
+      {
+        "l": "Item 2",
+        "r": "argumentation"
+      },
+      {
+        "l": "Item 3",
+        "r": "synthesis"
+      },
+      {
+        "l": "Item 4",
+        "r": "ability to recognize logical development"
+      },
+      {
+        "l": "Item 5",
+        "r": "research"
+      }
+    ]
+  },
+  {
+    "cat": "College English Composition",
+    "title": "Syntax",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Syntax.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "parallelism"
+      },
+      {
+        "l": "Item 2",
+        "r": "coordination"
+      },
+      {
+        "l": "Item 3",
+        "r": "subordination"
+      }
+    ]
+  },
+  {
+    "cat": "College English Composition",
+    "title": "Sentence Boundaries",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Sentence Boundaries.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "comma splices"
+      },
+      {
+        "l": "Item 2",
+        "r": "run-ons"
+      },
+      {
+        "l": "Item 3",
+        "r": "sentence fragments"
+      }
+    ]
+  },
+  {
+    "cat": "College English Composition",
+    "title": "Sentence Correctness",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Sentence Correctness.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "recognition of correct sentences"
+      }
+    ]
+  },
+  {
+    "cat": "College English Composition",
+    "title": "Agreement and Concord",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Agreement and Concord.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "pronoun reference"
+      },
+      {
+        "l": "Item 2",
+        "r": "case shift"
+      },
+      {
+        "l": "Item 3",
+        "r": "pronoun number"
+      },
+      {
+        "l": "Item 4",
+        "r": "subject-verb agreement"
+      },
+      {
+        "l": "Item 5",
+        "r": "verb tense"
+      }
+    ]
+  },
+  {
+    "cat": "College English Composition",
+    "title": "Style and Usage",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Style and Usage.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "diction"
+      },
+      {
+        "l": "Item 2",
+        "r": "modifiers"
+      },
+      {
+        "l": "Item 3",
+        "r": "idiom"
+      },
+      {
+        "l": "Item 4",
+        "r": "active/passive voice"
+      },
+      {
+        "l": "Item 5",
+        "r": "lack of subject in modifying word group"
+      },
+      {
+        "l": "Item 6",
+        "r": "logical comparison"
+      },
+      {
+        "l": "Item 7",
+        "r": "logical agreement"
+      },
+      {
+        "l": "Item 8",
+        "r": "punctuation"
+      },
+      {
+        "l": "Item 9",
+        "r": "sentence-level errors in Standard Written English"
+      },
+      {
+        "l": "Item 10",
+        "r": "use of language"
+      },
+      {
+        "l": "Item 11",
+        "r": "sentence variety and structure"
+      }
+    ]
+  },
+  {
+    "cat": "College English Composition",
+    "title": "Organization and Development",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Organization and Development.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "organization"
+      },
+      {
+        "l": "Item 2",
+        "r": "coherence between sentences and paragraphs"
+      },
+      {
+        "l": "Item 3",
+        "r": "main idea"
+      },
+      {
+        "l": "Item 4",
+        "r": "thesis statements"
+      },
+      {
+        "l": "Item 5",
+        "r": "topic sentences"
+      },
+      {
+        "l": "Item 6",
+        "r": "transitions"
+      },
+      {
+        "l": "Item 7",
+        "r": "level of detail"
+      },
+      {
+        "l": "Item 8",
+        "r": "organization/structure"
+      }
+    ]
+  },
+  {
+    "cat": "College English Composition",
+    "title": "Audience, Tone, and Purpose",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Audience, Tone, and Purpose.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "awareness of audience"
+      },
+      {
+        "l": "Item 2",
+        "r": "tone"
+      },
+      {
+        "l": "Item 3",
+        "r": "purpose"
+      },
+      {
+        "l": "Item 4",
+        "r": "appeals"
+      },
+      {
+        "l": "Item 5",
+        "r": "consistency of point of view"
+      }
+    ]
+  },
+  {
+    "cat": "College English Composition",
+    "title": "Evidence and Sources",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Evidence and Sources.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "evaluation of evidence"
+      },
+      {
+        "l": "Item 2",
+        "r": "evaluation of author's authority and appeal"
+      },
+      {
+        "l": "Item 3",
+        "r": "evaluation of reasoning"
+      },
+      {
+        "l": "Item 4",
+        "r": "use of reference materials"
+      },
+      {
+        "l": "Item 5",
+        "r": "evaluation of sources"
+      },
+      {
+        "l": "Item 6",
+        "r": "integration of resource material"
+      },
+      {
+        "l": "Item 7",
+        "r": "documentation of sources"
+      },
+      {
+        "l": "Item 8",
+        "r": "MLA"
+      },
+      {
+        "l": "Item 9",
+        "r": "APA"
+      },
+      {
+        "l": "Item 10",
+        "r": "Chicago manuals of style"
+      }
+    ]
+  },
+  {
+    "cat": "College English Composition",
+    "title": "Rhetorical Effects",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP/AP content area for College English Composition covering Rhetorical Effects.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "rhetorical effects"
+      },
+      {
+        "l": "Item 2",
+        "r": "emphasis"
+      },
+      {
+        "l": "Item 3",
+        "r": "rhetorical effects in organization"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Chemical Composition of Organisms",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Chemical Composition of Organisms.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "simple chemical reactions and bonds"
+      },
+      {
+        "l": "Item 2",
+        "r": "properties of water"
+      },
+      {
+        "l": "Item 3",
+        "r": "chemical structure of carbohydrates"
+      },
+      {
+        "l": "Item 4",
+        "r": "chemical structure of lipids"
+      },
+      {
+        "l": "Item 5",
+        "r": "chemical structure of proteins"
+      },
+      {
+        "l": "Item 6",
+        "r": "chemical structure of nucleic acids"
+      },
+      {
+        "l": "Item 7",
+        "r": "origin of life"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Cells",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Cells.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "structure and function of cell organelles"
+      },
+      {
+        "l": "Item 2",
+        "r": "properties of cell membranes"
+      },
+      {
+        "l": "Item 3",
+        "r": "comparison of prokaryotic and eukaryotic cells"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Enzymes",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Enzymes.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "enzyme-substrate complex"
+      },
+      {
+        "l": "Item 2",
+        "r": "roles of coenzymes"
+      },
+      {
+        "l": "Item 3",
+        "r": "inorganic cofactors"
+      },
+      {
+        "l": "Item 4",
+        "r": "inhibition and regulation"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Energy Transformations",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Energy Transformations.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "glycolysis"
+      },
+      {
+        "l": "Item 2",
+        "r": "cellular respiration"
+      },
+      {
+        "l": "Item 3",
+        "r": "aerobic pathways"
+      },
+      {
+        "l": "Item 4",
+        "r": "anaerobic pathways"
+      },
+      {
+        "l": "Item 5",
+        "r": "photosynthesis"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Cell Division",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Cell Division.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "structure of chromosomes"
+      },
+      {
+        "l": "Item 2",
+        "r": "mitosis"
+      },
+      {
+        "l": "Item 3",
+        "r": "meiosis"
+      },
+      {
+        "l": "Item 4",
+        "r": "cytokinesis in plants"
+      },
+      {
+        "l": "Item 5",
+        "r": "cytokinesis in animals"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Chemical Nature of the Gene",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Chemical Nature of the Gene.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "Watson-Crick model of nucleic acids"
+      },
+      {
+        "l": "Item 2",
+        "r": "DNA replication"
+      },
+      {
+        "l": "Item 3",
+        "r": "mutations"
+      },
+      {
+        "l": "Item 4",
+        "r": "transcription"
+      },
+      {
+        "l": "Item 5",
+        "r": "translation"
+      },
+      {
+        "l": "Item 6",
+        "r": "post-transcriptional processing"
+      },
+      {
+        "l": "Item 7",
+        "r": "structural genes"
+      },
+      {
+        "l": "Item 8",
+        "r": "regulatory genes"
+      },
+      {
+        "l": "Item 9",
+        "r": "transformation"
+      },
+      {
+        "l": "Item 10",
+        "r": "viruses"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Plant Structure and Function",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Plant Structure and Function.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "root"
+      },
+      {
+        "l": "Item 2",
+        "r": "stem"
+      },
+      {
+        "l": "Item 3",
+        "r": "leaf"
+      },
+      {
+        "l": "Item 4",
+        "r": "flower"
+      },
+      {
+        "l": "Item 5",
+        "r": "seed"
+      },
+      {
+        "l": "Item 6",
+        "r": "fruit"
+      },
+      {
+        "l": "Item 7",
+        "r": "water absorption and transport"
+      },
+      {
+        "l": "Item 8",
+        "r": "mineral absorption and transport"
+      },
+      {
+        "l": "Item 9",
+        "r": "food translocation and storage"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Plant Reproduction and Development",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Plant Reproduction and Development.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "alternation of generations in ferns"
+      },
+      {
+        "l": "Item 2",
+        "r": "alternation of generations in conifers"
+      },
+      {
+        "l": "Item 3",
+        "r": "alternation of generations in flowering plants"
+      },
+      {
+        "l": "Item 4",
+        "r": "gamete formation"
+      },
+      {
+        "l": "Item 5",
+        "r": "fertilization"
+      },
+      {
+        "l": "Item 6",
+        "r": "growth and development"
+      },
+      {
+        "l": "Item 7",
+        "r": "hormonal control"
+      },
+      {
+        "l": "Item 8",
+        "r": "tropisms"
+      },
+      {
+        "l": "Item 9",
+        "r": "photoperiodicity"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Animal Structure and Function",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Animal Structure and Function.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "digestive system"
+      },
+      {
+        "l": "Item 2",
+        "r": "gas exchange system"
+      },
+      {
+        "l": "Item 3",
+        "r": "skeletal system"
+      },
+      {
+        "l": "Item 4",
+        "r": "nervous system"
+      },
+      {
+        "l": "Item 5",
+        "r": "circulatory system"
+      },
+      {
+        "l": "Item 6",
+        "r": "excretory system"
+      },
+      {
+        "l": "Item 7",
+        "r": "immune system"
+      },
+      {
+        "l": "Item 8",
+        "r": "homeostatic mechanisms"
+      },
+      {
+        "l": "Item 9",
+        "r": "hormonal control in homeostasis"
+      },
+      {
+        "l": "Item 10",
+        "r": "hormonal control in reproduction"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Animal Reproduction and Development",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Animal Reproduction and Development.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "gamete formation"
+      },
+      {
+        "l": "Item 2",
+        "r": "fertilization"
+      },
+      {
+        "l": "Item 3",
+        "r": "cleavage"
+      },
+      {
+        "l": "Item 4",
+        "r": "gastrulation"
+      },
+      {
+        "l": "Item 5",
+        "r": "germ layer formation"
+      },
+      {
+        "l": "Item 6",
+        "r": "differentiation of organ systems"
+      },
+      {
+        "l": "Item 7",
+        "r": "experimental analysis of vertebrate development"
+      },
+      {
+        "l": "Item 8",
+        "r": "extraembryonic membranes of vertebrates"
+      },
+      {
+        "l": "Item 9",
+        "r": "mammalian placenta"
+      },
+      {
+        "l": "Item 10",
+        "r": "blood circulation in the human embryo"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Principles of Heredity",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Principles of Heredity.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "Mendelian dominance"
+      },
+      {
+        "l": "Item 2",
+        "r": "segregation"
+      },
+      {
+        "l": "Item 3",
+        "r": "independent assortment"
+      },
+      {
+        "l": "Item 4",
+        "r": "chromosomal basis of inheritance"
+      },
+      {
+        "l": "Item 5",
+        "r": "linkage"
+      },
+      {
+        "l": "Item 6",
+        "r": "sex-linked inheritance"
+      },
+      {
+        "l": "Item 7",
+        "r": "polygenic inheritance"
+      },
+      {
+        "l": "Item 8",
+        "r": "multiple alleles"
+      },
+      {
+        "l": "Item 9",
+        "r": "human blood groups"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Principles of Ecology",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Principles of Ecology.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "energy flow and productivity in ecosystems"
+      },
+      {
+        "l": "Item 2",
+        "r": "biogeochemical cycles"
+      },
+      {
+        "l": "Item 3",
+        "r": "population growth and regulation"
+      },
+      {
+        "l": "Item 4",
+        "r": "natality"
+      },
+      {
+        "l": "Item 5",
+        "r": "mortality"
+      },
+      {
+        "l": "Item 6",
+        "r": "competition"
+      },
+      {
+        "l": "Item 7",
+        "r": "migration"
+      },
+      {
+        "l": "Item 8",
+        "r": "density"
+      },
+      {
+        "l": "Item 9",
+        "r": "r-selection"
+      },
+      {
+        "l": "Item 10",
+        "r": "K-selection"
+      },
+      {
+        "l": "Item 11",
+        "r": "community structure"
+      },
+      {
+        "l": "Item 12",
+        "r": "major biomes"
+      },
+      {
+        "l": "Item 13",
+        "r": "succession"
+      },
+      {
+        "l": "Item 14",
+        "r": "habitat"
+      },
+      {
+        "l": "Item 15",
+        "r": "biotic factors"
+      },
+      {
+        "l": "Item 16",
+        "r": "abiotic factors"
+      },
+      {
+        "l": "Item 17",
+        "r": "concept of niche"
+      },
+      {
+        "l": "Item 18",
+        "r": "island biogeography"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Principles of Evolution",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Principles of Evolution.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "history of evolutionary concepts"
+      },
+      {
+        "l": "Item 2",
+        "r": "natural selection"
+      },
+      {
+        "l": "Item 3",
+        "r": "differential reproduction"
+      },
+      {
+        "l": "Item 4",
+        "r": "mutation"
+      },
+      {
+        "l": "Item 5",
+        "r": "Hardy-Weinberg equilibrium"
+      },
+      {
+        "l": "Item 6",
+        "r": "speciation"
+      },
+      {
+        "l": "Item 7",
+        "r": "punctuated equilibrium"
+      },
+      {
+        "l": "Item 8",
+        "r": "adaptive radiation"
+      },
+      {
+        "l": "Item 9",
+        "r": "plant evolution"
+      },
+      {
+        "l": "Item 10",
+        "r": "animal evolution"
+      },
+      {
+        "l": "Item 11",
+        "r": "homology"
+      },
+      {
+        "l": "Item 12",
+        "r": "analogy"
+      },
+      {
+        "l": "Item 13",
+        "r": "convergence"
+      },
+      {
+        "l": "Item 14",
+        "r": "extinction"
+      },
+      {
+        "l": "Item 15",
+        "r": "balanced polymorphism"
+      },
+      {
+        "l": "Item 16",
+        "r": "genetic drift"
+      },
+      {
+        "l": "Item 17",
+        "r": "classification of living organisms"
+      },
+      {
+        "l": "Item 18",
+        "r": "evolutionary history of humans"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Principles of Behavior",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Principles of Behavior.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "stereotyped behavior"
+      },
+      {
+        "l": "Item 2",
+        "r": "learned social behavior"
+      },
+      {
+        "l": "Item 3",
+        "r": "insect societies"
+      },
+      {
+        "l": "Item 4",
+        "r": "bird societies"
+      },
+      {
+        "l": "Item 5",
+        "r": "primate societies"
+      }
+    ]
+  },
+  {
+    "cat": "Biology",
+    "title": "Social Biology",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Biology covering Social Biology.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "human population growth"
+      },
+      {
+        "l": "Item 2",
+        "r": "age composition"
+      },
+      {
+        "l": "Item 3",
+        "r": "birth rates"
+      },
+      {
+        "l": "Item 4",
+        "r": "fertility rates"
+      },
+      {
+        "l": "Item 5",
+        "r": "demographic transition"
+      },
+      {
+        "l": "Item 6",
+        "r": "resource management"
+      },
+      {
+        "l": "Item 7",
+        "r": "environmental pollution"
+      },
+      {
+        "l": "Item 8",
+        "r": "control of human reproduction"
+      },
+      {
+        "l": "Item 9",
+        "r": "genetic engineering"
+      }
+    ]
+  },
+  {
+    "cat": "Calculus",
+    "title": "Limits (10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Calculus covering Limits (10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "limit of a constant"
+      },
+      {
+        "l": "Item 2",
+        "r": "limit of a sum"
+      },
+      {
+        "l": "Item 3",
+        "r": "limit of a product"
+      },
+      {
+        "l": "Item 4",
+        "r": "limit of a quotient"
+      },
+      {
+        "l": "Item 5",
+        "r": "limit calculations"
+      },
+      {
+        "l": "Item 6",
+        "r": "limits involving infinity"
+      },
+      {
+        "l": "Item 7",
+        "r": "continuity"
+      }
+    ]
+  },
+  {
+    "cat": "Calculus",
+    "title": "The Derivative",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Calculus covering The Derivative.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "definitions of the derivative"
+      },
+      {
+        "l": "Item 2",
+        "r": "derivatives of elementary functions"
+      },
+      {
+        "l": "Item 3",
+        "r": "derivatives of sums"
+      },
+      {
+        "l": "Item 4",
+        "r": "derivatives of products"
+      },
+      {
+        "l": "Item 5",
+        "r": "derivatives of quotients"
+      },
+      {
+        "l": "Item 6",
+        "r": "chain rule"
+      },
+      {
+        "l": "Item 7",
+        "r": "implicit differentiation"
+      },
+      {
+        "l": "Item 8",
+        "r": "derivative of the inverse of a function"
+      },
+      {
+        "l": "Item 9",
+        "r": "higher order derivatives"
+      },
+      {
+        "l": "Item 10",
+        "r": "characteristics of graphs of f"
+      },
+      {
+        "l": "Item 11",
+        "r": "characteristics of graphs of f prime"
+      },
+      {
+        "l": "Item 12",
+        "r": "characteristics of graphs of f double prime"
+      },
+      {
+        "l": "Item 13",
+        "r": "Mean Value Theorem"
+      },
+      {
+        "l": "Item 14",
+        "r": "applications of the Mean Value Theorem"
+      },
+      {
+        "l": "Item 15",
+        "r": "graphical illustrations of the Mean Value Theorem"
+      },
+      {
+        "l": "Item 16",
+        "r": "differentiability and continuity"
+      },
+      {
+        "l": "Item 17",
+        "r": "L'Hospital's Rule"
+      },
+      {
+        "l": "Item 18",
+        "r": "quotient indeterminate forms"
+      }
+    ]
+  },
+  {
+    "cat": "Calculus",
+    "title": "Applications of the Derivative",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Calculus covering Applications of the Derivative.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "slope of a curve at a point"
+      },
+      {
+        "l": "Item 2",
+        "r": "tangent lines"
+      },
+      {
+        "l": "Item 3",
+        "r": "linear approximation"
+      },
+      {
+        "l": "Item 4",
+        "r": "increasing and decreasing functions"
+      },
+      {
+        "l": "Item 5",
+        "r": "relative maximum and minimum"
+      },
+      {
+        "l": "Item 6",
+        "r": "absolute maximum and minimum"
+      },
+      {
+        "l": "Item 7",
+        "r": "concavity"
+      },
+      {
+        "l": "Item 8",
+        "r": "points of inflection"
+      },
+      {
+        "l": "Item 9",
+        "r": "extreme value problems"
+      },
+      {
+        "l": "Item 10",
+        "r": "velocity of a particle"
+      },
+      {
+        "l": "Item 11",
+        "r": "acceleration of a particle"
+      },
+      {
+        "l": "Item 12",
+        "r": "average rates of change"
+      },
+      {
+        "l": "Item 13",
+        "r": "instantaneous rates of change"
+      },
+      {
+        "l": "Item 14",
+        "r": "related rates of change"
+      }
+    ]
+  },
+  {
+    "cat": "Calculus",
+    "title": "Antiderivatives and Techniques of Integration",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Calculus covering Antiderivatives and Techniques of Integration.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "concept of antiderivatives"
+      },
+      {
+        "l": "Item 2",
+        "r": "basic integration formulas"
+      },
+      {
+        "l": "Item 3",
+        "r": "integration by substitution"
+      },
+      {
+        "l": "Item 4",
+        "r": "use of identities"
+      },
+      {
+        "l": "Item 5",
+        "r": "change of variable"
+      }
+    ]
+  },
+  {
+    "cat": "Calculus",
+    "title": "Applications of Antiderivatives",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Calculus covering Applications of Antiderivatives.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "distance from acceleration with initial conditions"
+      },
+      {
+        "l": "Item 2",
+        "r": "velocity from acceleration with initial conditions"
+      },
+      {
+        "l": "Item 3",
+        "r": "solutions of differential equations"
+      },
+      {
+        "l": "Item 4",
+        "r": "growth and decay applications"
+      }
+    ]
+  },
+  {
+    "cat": "Calculus",
+    "title": "The Definite Integral",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Calculus covering The Definite Integral.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "definition as limit of Riemann sums"
+      },
+      {
+        "l": "Item 2",
+        "r": "approximations using rectangles"
+      },
+      {
+        "l": "Item 3",
+        "r": "properties of the definite integral"
+      },
+      {
+        "l": "Item 4",
+        "r": "Fundamental Theorem of Calculus"
+      }
+    ]
+  },
+  {
+    "cat": "Calculus",
+    "title": "Applications of the Definite Integral",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Calculus covering Applications of the Definite Integral.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "average value of a function"
+      },
+      {
+        "l": "Item 2",
+        "r": "area"
+      },
+      {
+        "l": "Item 3",
+        "r": "area between curves"
+      },
+      {
+        "l": "Item 4",
+        "r": "accumulated change from a rate of change"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Atomic Theory and Atomic Structure",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Atomic Theory and Atomic Structure.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "evidence for atomic theory"
+      },
+      {
+        "l": "Item 2",
+        "r": "atomic masses"
+      },
+      {
+        "l": "Item 3",
+        "r": "determination of atomic masses"
+      },
+      {
+        "l": "Item 4",
+        "r": "atomic number"
+      },
+      {
+        "l": "Item 5",
+        "r": "mass number"
+      },
+      {
+        "l": "Item 6",
+        "r": "isotopes"
+      },
+      {
+        "l": "Item 7",
+        "r": "mass spectroscopy"
+      },
+      {
+        "l": "Item 8",
+        "r": "electron energy levels"
+      },
+      {
+        "l": "Item 9",
+        "r": "atomic spectra"
+      },
+      {
+        "l": "Item 10",
+        "r": "atomic orbitals"
+      },
+      {
+        "l": "Item 11",
+        "r": "atomic radii"
+      },
+      {
+        "l": "Item 12",
+        "r": "ionization energies"
+      },
+      {
+        "l": "Item 13",
+        "r": "electron affinities"
+      },
+      {
+        "l": "Item 14",
+        "r": "oxidation states"
+      },
+      {
+        "l": "Item 15",
+        "r": "nuclear equations"
+      },
+      {
+        "l": "Item 16",
+        "r": "half-lives"
+      },
+      {
+        "l": "Item 17",
+        "r": "radioactivity"
+      },
+      {
+        "l": "Item 18",
+        "r": "chemical applications of nuclear chemistry"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Chemical Bonding",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Chemical Bonding.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "covalent bonding"
+      },
+      {
+        "l": "Item 2",
+        "r": "ionic bonding"
+      },
+      {
+        "l": "Item 3",
+        "r": "metallic bonding"
+      },
+      {
+        "l": "Item 4",
+        "r": "network bonding"
+      },
+      {
+        "l": "Item 5",
+        "r": "dispersion forces"
+      },
+      {
+        "l": "Item 6",
+        "r": "hydrogen bonding"
+      },
+      {
+        "l": "Item 7",
+        "r": "structure-property relationships"
+      },
+      {
+        "l": "Item 8",
+        "r": "bond polarity"
+      },
+      {
+        "l": "Item 9",
+        "r": "electronegativity"
+      },
+      {
+        "l": "Item 10",
+        "r": "VSEPR theory"
+      },
+      {
+        "l": "Item 11",
+        "r": "Lewis electron-dot diagrams"
+      },
+      {
+        "l": "Item 12",
+        "r": "hybridization"
+      },
+      {
+        "l": "Item 13",
+        "r": "molecular geometry"
+      },
+      {
+        "l": "Item 14",
+        "r": "geometry of ions"
+      },
+      {
+        "l": "Item 15",
+        "r": "coordination complexes"
+      },
+      {
+        "l": "Item 16",
+        "r": "structural isomerism"
+      },
+      {
+        "l": "Item 17",
+        "r": "resonance"
+      },
+      {
+        "l": "Item 18",
+        "r": "sigma bonds"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Gases",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Gases.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "ideal gas laws"
+      },
+      {
+        "l": "Item 2",
+        "r": "equations of state"
+      },
+      {
+        "l": "Item 3",
+        "r": "mole concept"
+      },
+      {
+        "l": "Item 4",
+        "r": "Avogadro's number"
+      },
+      {
+        "l": "Item 5",
+        "r": "kinetic-molecular theory"
+      },
+      {
+        "l": "Item 6",
+        "r": "interpretation of ideal gas laws"
+      },
+      {
+        "l": "Item 7",
+        "r": "temperature and kinetic energy"
+      },
+      {
+        "l": "Item 8",
+        "r": "Boltzmann distribution"
+      },
+      {
+        "l": "Item 9",
+        "r": "deviations from ideal gas laws"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Liquids and Solids",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Liquids and Solids.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "kinetic-molecular viewpoint"
+      },
+      {
+        "l": "Item 2",
+        "r": "phase diagrams"
+      },
+      {
+        "l": "Item 3",
+        "r": "changes of state"
+      },
+      {
+        "l": "Item 4",
+        "r": "critical phenomena"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Solutions",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Solutions.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "types of solutions"
+      },
+      {
+        "l": "Item 2",
+        "r": "factors affecting solubility"
+      },
+      {
+        "l": "Item 3",
+        "r": "methods of expressing concentration"
+      },
+      {
+        "l": "Item 4",
+        "r": "colligative properties"
+      },
+      {
+        "l": "Item 5",
+        "r": "Raoult's law"
+      },
+      {
+        "l": "Item 6",
+        "r": "interionic attraction"
+      },
+      {
+        "l": "Item 7",
+        "r": "solubility"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Reaction Types",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Reaction Types.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "Arrhenius acids and bases"
+      },
+      {
+        "l": "Item 2",
+        "r": "Bronsted-Lowry acids and bases"
+      },
+      {
+        "l": "Item 3",
+        "r": "Lewis acids and bases"
+      },
+      {
+        "l": "Item 4",
+        "r": "amphoterism"
+      },
+      {
+        "l": "Item 5",
+        "r": "coordination complex reactions"
+      },
+      {
+        "l": "Item 6",
+        "r": "precipitation reactions"
+      },
+      {
+        "l": "Item 7",
+        "r": "oxidation-reduction reactions"
+      },
+      {
+        "l": "Item 8",
+        "r": "oxidation number"
+      },
+      {
+        "l": "Item 9",
+        "r": "electron role in redox"
+      },
+      {
+        "l": "Item 10",
+        "r": "electrochemistry"
+      },
+      {
+        "l": "Item 11",
+        "r": "electrolytic cells"
+      },
+      {
+        "l": "Item 12",
+        "r": "standard half-cell potentials"
+      },
+      {
+        "l": "Item 13",
+        "r": "predicting redox direction"
+      },
+      {
+        "l": "Item 14",
+        "r": "concentration effects in redox"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Equations and Stoichiometry",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Equations and Stoichiometry.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "ionic species"
+      },
+      {
+        "l": "Item 2",
+        "r": "molecular species"
+      },
+      {
+        "l": "Item 3",
+        "r": "net-ionic equations"
+      },
+      {
+        "l": "Item 4",
+        "r": "mass relations"
+      },
+      {
+        "l": "Item 5",
+        "r": "volume relations"
+      },
+      {
+        "l": "Item 6",
+        "r": "mole concept"
+      },
+      {
+        "l": "Item 7",
+        "r": "balancing equations"
+      },
+      {
+        "l": "Item 8",
+        "r": "balancing redox equations"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Equilibrium",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Equilibrium.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "dynamic equilibrium"
+      },
+      {
+        "l": "Item 2",
+        "r": "Le Chatelier's principle"
+      },
+      {
+        "l": "Item 3",
+        "r": "equilibrium constants"
+      },
+      {
+        "l": "Item 4",
+        "r": "Kc"
+      },
+      {
+        "l": "Item 5",
+        "r": "Kp"
+      },
+      {
+        "l": "Item 6",
+        "r": "solution equilibrium constants"
+      },
+      {
+        "l": "Item 7",
+        "r": "acid constants"
+      },
+      {
+        "l": "Item 8",
+        "r": "base constants"
+      },
+      {
+        "l": "Item 9",
+        "r": "pK"
+      },
+      {
+        "l": "Item 10",
+        "r": "pH"
+      },
+      {
+        "l": "Item 11",
+        "r": "solubility product constants"
+      },
+      {
+        "l": "Item 12",
+        "r": "precipitation applications"
+      },
+      {
+        "l": "Item 13",
+        "r": "dissolution of slightly soluble compounds"
+      },
+      {
+        "l": "Item 14",
+        "r": "complex ion constants"
+      },
+      {
+        "l": "Item 15",
+        "r": "common ion effect"
+      },
+      {
+        "l": "Item 16",
+        "r": "buffers"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Kinetics",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Kinetics.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "rate of reaction"
+      },
+      {
+        "l": "Item 2",
+        "r": "order of reaction"
+      },
+      {
+        "l": "Item 3",
+        "r": "rate constant"
+      },
+      {
+        "l": "Item 4",
+        "r": "experimental determination of order"
+      },
+      {
+        "l": "Item 5",
+        "r": "temperature effects on rates"
+      },
+      {
+        "l": "Item 6",
+        "r": "activation energy"
+      },
+      {
+        "l": "Item 7",
+        "r": "catalysts"
+      },
+      {
+        "l": "Item 8",
+        "r": "rate-determining step"
+      },
+      {
+        "l": "Item 9",
+        "r": "reaction mechanism"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Thermodynamics",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Thermodynamics.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "state functions"
+      },
+      {
+        "l": "Item 2",
+        "r": "first law"
+      },
+      {
+        "l": "Item 3",
+        "r": "heat of formation"
+      },
+      {
+        "l": "Item 4",
+        "r": "heat of reaction"
+      },
+      {
+        "l": "Item 5",
+        "r": "enthalpy change"
+      },
+      {
+        "l": "Item 6",
+        "r": "Hess's law"
+      },
+      {
+        "l": "Item 7",
+        "r": "heat capacity"
+      },
+      {
+        "l": "Item 8",
+        "r": "heats of vaporization"
+      },
+      {
+        "l": "Item 9",
+        "r": "heats of fusion"
+      },
+      {
+        "l": "Item 10",
+        "r": "second law"
+      },
+      {
+        "l": "Item 11",
+        "r": "free energy of formation"
+      },
+      {
+        "l": "Item 12",
+        "r": "free energy of reaction"
+      },
+      {
+        "l": "Item 13",
+        "r": "free energy dependence on enthalpy and entropy"
+      },
+      {
+        "l": "Item 14",
+        "r": "free energy and equilibrium constants"
+      },
+      {
+        "l": "Item 15",
+        "r": "free energy and electrode potentials"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Descriptive Chemistry",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Descriptive Chemistry.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "chemical reactivity"
+      },
+      {
+        "l": "Item 2",
+        "r": "products of chemical reactions"
+      },
+      {
+        "l": "Item 3",
+        "r": "periodic table relationships"
+      },
+      {
+        "l": "Item 4",
+        "r": "main group chemistry"
+      },
+      {
+        "l": "Item 5",
+        "r": "transition element chemistry"
+      },
+      {
+        "l": "Item 6",
+        "r": "systematic nomenclature"
+      },
+      {
+        "l": "Item 7",
+        "r": "organic functional groups"
+      },
+      {
+        "l": "Item 8",
+        "r": "organic isomerism"
+      }
+    ]
+  },
+  {
+    "cat": "Chemistry",
+    "title": "Experimental Chemistry",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "AP/CLEP content area for Chemistry covering Experimental Chemistry.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "laboratory equipment"
+      },
+      {
+        "l": "Item 2",
+        "r": "laboratory observations"
+      },
+      {
+        "l": "Item 3",
+        "r": "laboratory calculations"
+      },
+      {
+        "l": "Item 4",
+        "r": "interpretation of experimental results"
+      },
+      {
+        "l": "Item 5",
+        "r": "basic tools of chemistry"
+      }
+    ]
+  },
+  {
+    "cat": "College Algebra",
+    "title": "Algebraic Operations (25%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Algebra covering Algebraic Operations (25%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "operations with exponents"
+      },
+      {
+        "l": "Item 2",
+        "r": "factoring polynomials"
+      },
+      {
+        "l": "Item 3",
+        "r": "expanding polynomials"
+      },
+      {
+        "l": "Item 4",
+        "r": "operations with algebraic expressions"
+      },
+      {
+        "l": "Item 5",
+        "r": "absolute value"
+      },
+      {
+        "l": "Item 6",
+        "r": "properties of logarithms"
+      }
+    ]
+  },
+  {
+    "cat": "College Algebra",
+    "title": "Equations and Inequalities (25%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Algebra covering Equations and Inequalities (25%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "linear equations"
+      },
+      {
+        "l": "Item 2",
+        "r": "linear inequalities"
+      },
+      {
+        "l": "Item 3",
+        "r": "quadratic equations"
+      },
+      {
+        "l": "Item 4",
+        "r": "quadratic inequalities"
+      },
+      {
+        "l": "Item 5",
+        "r": "absolute value equations"
+      },
+      {
+        "l": "Item 6",
+        "r": "absolute value inequalities"
+      },
+      {
+        "l": "Item 7",
+        "r": "systems of equations"
+      },
+      {
+        "l": "Item 8",
+        "r": "systems of inequalities"
+      },
+      {
+        "l": "Item 9",
+        "r": "exponential equations"
+      },
+      {
+        "l": "Item 10",
+        "r": "logarithmic equations"
+      }
+    ]
+  },
+  {
+    "cat": "College Algebra",
+    "title": "Functions and Their Properties (30%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Algebra covering Functions and Their Properties (30%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "definition of functions"
+      },
+      {
+        "l": "Item 2",
+        "r": "interpretation of functions"
+      },
+      {
+        "l": "Item 3",
+        "r": "representation of functions"
+      },
+      {
+        "l": "Item 4",
+        "r": "modeling with functions"
+      },
+      {
+        "l": "Item 5",
+        "r": "domain"
+      },
+      {
+        "l": "Item 6",
+        "r": "range"
+      },
+      {
+        "l": "Item 7",
+        "r": "evaluation of functions"
+      },
+      {
+        "l": "Item 8",
+        "r": "algebra of functions"
+      },
+      {
+        "l": "Item 9",
+        "r": "graphs and intercepts"
+      },
+      {
+        "l": "Item 10",
+        "r": "symmetry"
+      },
+      {
+        "l": "Item 11",
+        "r": "transformations"
+      },
+      {
+        "l": "Item 12",
+        "r": "inverse functions"
+      }
+    ]
+  },
+  {
+    "cat": "College Algebra",
+    "title": "Number Systems and Operations (20%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Algebra covering Number Systems and Operations (20%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "real numbers"
+      },
+      {
+        "l": "Item 2",
+        "r": "complex numbers"
+      },
+      {
+        "l": "Item 3",
+        "r": "factorials"
+      },
+      {
+        "l": "Item 4",
+        "r": "binomial theorem"
+      }
+    ]
+  },
+  {
+    "cat": "College Mathematics",
+    "title": "Algebra and Functions (20%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Mathematics covering Algebra and Functions (20%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "solving equations"
+      },
+      {
+        "l": "Item 2",
+        "r": "linear inequalities"
+      },
+      {
+        "l": "Item 3",
+        "r": "systems of linear equations analytically"
+      },
+      {
+        "l": "Item 4",
+        "r": "systems of linear equations graphically"
+      },
+      {
+        "l": "Item 5",
+        "r": "function interpretation"
+      },
+      {
+        "l": "Item 6",
+        "r": "function representation"
+      },
+      {
+        "l": "Item 7",
+        "r": "function evaluation"
+      },
+      {
+        "l": "Item 8",
+        "r": "function graphs"
+      },
+      {
+        "l": "Item 9",
+        "r": "translations"
+      },
+      {
+        "l": "Item 10",
+        "r": "reflections"
+      },
+      {
+        "l": "Item 11",
+        "r": "symmetry"
+      },
+      {
+        "l": "Item 12",
+        "r": "linear growth"
+      },
+      {
+        "l": "Item 13",
+        "r": "exponential growth"
+      },
+      {
+        "l": "Item 14",
+        "r": "applications"
+      }
+    ]
+  },
+  {
+    "cat": "College Mathematics",
+    "title": "Counting and Probability (10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Mathematics covering Counting and Probability (10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "multiplication rule"
+      },
+      {
+        "l": "Item 2",
+        "r": "combinations"
+      },
+      {
+        "l": "Item 3",
+        "r": "permutations"
+      },
+      {
+        "l": "Item 4",
+        "r": "union"
+      },
+      {
+        "l": "Item 5",
+        "r": "intersection"
+      },
+      {
+        "l": "Item 6",
+        "r": "independent events"
+      },
+      {
+        "l": "Item 7",
+        "r": "mutually exclusive events"
+      },
+      {
+        "l": "Item 8",
+        "r": "complementary events"
+      },
+      {
+        "l": "Item 9",
+        "r": "conditional probabilities"
+      },
+      {
+        "l": "Item 10",
+        "r": "expected value"
+      },
+      {
+        "l": "Item 11",
+        "r": "applications"
+      }
+    ]
+  },
+  {
+    "cat": "College Mathematics",
+    "title": "Data Analysis and Statistics (15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Mathematics covering Data Analysis and Statistics (15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "tables"
+      },
+      {
+        "l": "Item 2",
+        "r": "bar graphs"
+      },
+      {
+        "l": "Item 3",
+        "r": "line graphs"
+      },
+      {
+        "l": "Item 4",
+        "r": "circle graphs"
+      },
+      {
+        "l": "Item 5",
+        "r": "pie charts"
+      },
+      {
+        "l": "Item 6",
+        "r": "scatterplots"
+      },
+      {
+        "l": "Item 7",
+        "r": "histograms"
+      },
+      {
+        "l": "Item 8",
+        "r": "mean"
+      },
+      {
+        "l": "Item 9",
+        "r": "median"
+      },
+      {
+        "l": "Item 10",
+        "r": "mode"
+      },
+      {
+        "l": "Item 11",
+        "r": "range"
+      },
+      {
+        "l": "Item 12",
+        "r": "standard deviation"
+      },
+      {
+        "l": "Item 13",
+        "r": "normal distribution"
+      },
+      {
+        "l": "Item 14",
+        "r": "applications"
+      }
+    ]
+  },
+  {
+    "cat": "College Mathematics",
+    "title": "Financial Mathematics (20%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Mathematics covering Financial Mathematics (20%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "percents"
+      },
+      {
+        "l": "Item 2",
+        "r": "percent change"
+      },
+      {
+        "l": "Item 3",
+        "r": "markups"
+      },
+      {
+        "l": "Item 4",
+        "r": "discounts"
+      },
+      {
+        "l": "Item 5",
+        "r": "taxes"
+      },
+      {
+        "l": "Item 6",
+        "r": "profit"
+      },
+      {
+        "l": "Item 7",
+        "r": "loss"
+      },
+      {
+        "l": "Item 8",
+        "r": "simple interest"
+      },
+      {
+        "l": "Item 9",
+        "r": "compound interest"
+      },
+      {
+        "l": "Item 10",
+        "r": "continuous interest"
+      },
+      {
+        "l": "Item 11",
+        "r": "effective interest rate"
+      },
+      {
+        "l": "Item 12",
+        "r": "annual percentage rate"
+      },
+      {
+        "l": "Item 13",
+        "r": "present value"
+      },
+      {
+        "l": "Item 14",
+        "r": "future value"
+      },
+      {
+        "l": "Item 15",
+        "r": "applications"
+      }
+    ]
+  },
+  {
+    "cat": "College Mathematics",
+    "title": "Geometry (10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Mathematics covering Geometry (10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "triangles"
+      },
+      {
+        "l": "Item 2",
+        "r": "quadrilaterals"
+      },
+      {
+        "l": "Item 3",
+        "r": "perimeter"
+      },
+      {
+        "l": "Item 4",
+        "r": "area"
+      },
+      {
+        "l": "Item 5",
+        "r": "similarity"
+      },
+      {
+        "l": "Item 6",
+        "r": "Pythagorean theorem"
+      },
+      {
+        "l": "Item 7",
+        "r": "parallel lines"
+      },
+      {
+        "l": "Item 8",
+        "r": "perpendicular lines"
+      },
+      {
+        "l": "Item 9",
+        "r": "circles"
+      },
+      {
+        "l": "Item 10",
+        "r": "circumference"
+      },
+      {
+        "l": "Item 11",
+        "r": "central angles"
+      },
+      {
+        "l": "Item 12",
+        "r": "inscribed angles"
+      },
+      {
+        "l": "Item 13",
+        "r": "sectors"
+      },
+      {
+        "l": "Item 14",
+        "r": "applications"
+      }
+    ]
+  },
+  {
+    "cat": "College Mathematics",
+    "title": "Logic and Sets (15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Mathematics covering Logic and Sets (15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "conditional statements"
+      },
+      {
+        "l": "Item 2",
+        "r": "conjunctions"
+      },
+      {
+        "l": "Item 3",
+        "r": "disjunctions"
+      },
+      {
+        "l": "Item 4",
+        "r": "negations"
+      },
+      {
+        "l": "Item 5",
+        "r": "hypotheses"
+      },
+      {
+        "l": "Item 6",
+        "r": "logical conclusions"
+      },
+      {
+        "l": "Item 7",
+        "r": "converses"
+      },
+      {
+        "l": "Item 8",
+        "r": "inverses"
+      },
+      {
+        "l": "Item 9",
+        "r": "counterexamples"
+      },
+      {
+        "l": "Item 10",
+        "r": "contrapositives"
+      },
+      {
+        "l": "Item 11",
+        "r": "logical equivalence"
+      },
+      {
+        "l": "Item 12",
+        "r": "set relationships"
+      },
+      {
+        "l": "Item 13",
+        "r": "subsets"
+      },
+      {
+        "l": "Item 14",
+        "r": "disjoint sets"
+      },
+      {
+        "l": "Item 15",
+        "r": "equality of sets"
+      },
+      {
+        "l": "Item 16",
+        "r": "Venn diagrams"
+      },
+      {
+        "l": "Item 17",
+        "r": "union of sets"
+      },
+      {
+        "l": "Item 18",
+        "r": "intersection of sets"
+      }
+    ]
+  },
+  {
+    "cat": "College Mathematics",
+    "title": "Numbers (10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for College Mathematics covering Numbers (10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "integers"
+      },
+      {
+        "l": "Item 2",
+        "r": "rational numbers"
+      },
+      {
+        "l": "Item 3",
+        "r": "irrational numbers"
+      },
+      {
+        "l": "Item 4",
+        "r": "real numbers"
+      },
+      {
+        "l": "Item 5",
+        "r": "rational vs irrational recognition"
+      },
+      {
+        "l": "Item 6",
+        "r": "factors"
+      },
+      {
+        "l": "Item 7",
+        "r": "divisibility"
+      },
+      {
+        "l": "Item 8",
+        "r": "primes"
+      },
+      {
+        "l": "Item 9",
+        "r": "composites"
+      },
+      {
+        "l": "Item 10",
+        "r": "odd integers"
+      },
+      {
+        "l": "Item 11",
+        "r": "even integers"
+      },
+      {
+        "l": "Item 12",
+        "r": "fundamental theorem of arithmetic"
+      },
+      {
+        "l": "Item 13",
+        "r": "unit conversion"
+      },
+      {
+        "l": "Item 14",
+        "r": "scientific notation"
+      },
+      {
+        "l": "Item 15",
+        "r": "numerical precision"
+      },
+      {
+        "l": "Item 16",
+        "r": "absolute value"
+      },
+      {
+        "l": "Item 17",
+        "r": "applications"
+      }
+    ]
+  },
+  {
+    "cat": "Natural Sciences",
+    "title": "Biological Science (50%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Natural Sciences covering Biological Science (50%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "origin and evolution of life"
+      },
+      {
+        "l": "Item 2",
+        "r": "classification of organisms"
+      },
+      {
+        "l": "Item 3",
+        "r": "cell organization"
+      },
+      {
+        "l": "Item 4",
+        "r": "cell division"
+      },
+      {
+        "l": "Item 5",
+        "r": "chemical nature of the gene"
+      },
+      {
+        "l": "Item 6",
+        "r": "bioenergetics"
+      },
+      {
+        "l": "Item 7",
+        "r": "biosynthesis"
+      },
+      {
+        "l": "Item 8",
+        "r": "structure in organisms"
+      },
+      {
+        "l": "Item 9",
+        "r": "function in organisms"
+      },
+      {
+        "l": "Item 10",
+        "r": "development in organisms"
+      },
+      {
+        "l": "Item 11",
+        "r": "patterns of heredity"
+      },
+      {
+        "l": "Item 12",
+        "r": "population biology"
+      },
+      {
+        "l": "Item 13",
+        "r": "ecology"
+      }
+    ]
+  },
+  {
+    "cat": "Natural Sciences",
+    "title": "Physical Science (50%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Natural Sciences covering Physical Science (50%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "atomic structure"
+      },
+      {
+        "l": "Item 2",
+        "r": "nuclear structure"
+      },
+      {
+        "l": "Item 3",
+        "r": "elementary particles"
+      },
+      {
+        "l": "Item 4",
+        "r": "nuclear reactions"
+      },
+      {
+        "l": "Item 5",
+        "r": "chemical elements"
+      },
+      {
+        "l": "Item 6",
+        "r": "chemical compounds"
+      },
+      {
+        "l": "Item 7",
+        "r": "chemical reactions"
+      },
+      {
+        "l": "Item 8",
+        "r": "molecular structure"
+      },
+      {
+        "l": "Item 9",
+        "r": "bonding"
+      },
+      {
+        "l": "Item 10",
+        "r": "heat"
+      },
+      {
+        "l": "Item 11",
+        "r": "thermodynamics"
+      },
+      {
+        "l": "Item 12",
+        "r": "states of matter"
+      },
+      {
+        "l": "Item 13",
+        "r": "classical mechanics"
+      },
+      {
+        "l": "Item 14",
+        "r": "relativity"
+      },
+      {
+        "l": "Item 15",
+        "r": "electricity"
+      },
+      {
+        "l": "Item 16",
+        "r": "magnetism"
+      },
+      {
+        "l": "Item 17",
+        "r": "waves"
+      },
+      {
+        "l": "Item 18",
+        "r": "light"
+      }
+    ]
+  },
+  {
+    "cat": "Precalculus",
+    "title": "Algebraic Expressions, Equations, and Inequalities (20%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Precalculus covering Algebraic Expressions, Equations, and Inequalities (20%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "operations on algebraic expressions"
+      },
+      {
+        "l": "Item 2",
+        "r": "linear equations"
+      },
+      {
+        "l": "Item 3",
+        "r": "quadratic equations"
+      },
+      {
+        "l": "Item 4",
+        "r": "absolute value equations"
+      },
+      {
+        "l": "Item 5",
+        "r": "polynomial equations"
+      },
+      {
+        "l": "Item 6",
+        "r": "rational equations"
+      },
+      {
+        "l": "Item 7",
+        "r": "radical equations"
+      },
+      {
+        "l": "Item 8",
+        "r": "exponential equations"
+      },
+      {
+        "l": "Item 9",
+        "r": "logarithmic equations"
+      },
+      {
+        "l": "Item 10",
+        "r": "trigonometric equations"
+      },
+      {
+        "l": "Item 11",
+        "r": "linear inequalities"
+      },
+      {
+        "l": "Item 12",
+        "r": "quadratic inequalities"
+      },
+      {
+        "l": "Item 13",
+        "r": "absolute value inequalities"
+      },
+      {
+        "l": "Item 14",
+        "r": "polynomial inequalities"
+      },
+      {
+        "l": "Item 15",
+        "r": "rational inequalities"
+      },
+      {
+        "l": "Item 16",
+        "r": "systems of linear equations"
+      },
+      {
+        "l": "Item 17",
+        "r": "systems of nonlinear equations"
+      }
+    ]
+  },
+  {
+    "cat": "Precalculus",
+    "title": "Functions: Concept, Properties, and Operations (15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Precalculus covering Functions: Concept, Properties, and Operations (15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "concept of a function"
+      },
+      {
+        "l": "Item 2",
+        "r": "domain"
+      },
+      {
+        "l": "Item 3",
+        "r": "range"
+      },
+      {
+        "l": "Item 4",
+        "r": "function notation"
+      },
+      {
+        "l": "Item 5",
+        "r": "evaluation of functions"
+      },
+      {
+        "l": "Item 6",
+        "r": "inverse functions"
+      },
+      {
+        "l": "Item 7",
+        "r": "symbolic operations with functions"
+      }
+    ]
+  },
+  {
+    "cat": "Precalculus",
+    "title": "Representations of Functions (30%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Precalculus covering Representations of Functions (30%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "symbolic representations"
+      },
+      {
+        "l": "Item 2",
+        "r": "graphical representations"
+      },
+      {
+        "l": "Item 3",
+        "r": "tabular representations"
+      },
+      {
+        "l": "Item 4",
+        "r": "function transformations"
+      },
+      {
+        "l": "Item 5",
+        "r": "linear functions"
+      },
+      {
+        "l": "Item 6",
+        "r": "quadratic functions"
+      },
+      {
+        "l": "Item 7",
+        "r": "absolute value functions"
+      },
+      {
+        "l": "Item 8",
+        "r": "square root functions"
+      },
+      {
+        "l": "Item 9",
+        "r": "polynomial functions"
+      },
+      {
+        "l": "Item 10",
+        "r": "rational functions"
+      },
+      {
+        "l": "Item 11",
+        "r": "exponential functions"
+      },
+      {
+        "l": "Item 12",
+        "r": "logarithmic functions"
+      },
+      {
+        "l": "Item 13",
+        "r": "trigonometric functions"
+      },
+      {
+        "l": "Item 14",
+        "r": "inverse trigonometric functions"
+      },
+      {
+        "l": "Item 15",
+        "r": "piecewise-defined functions"
+      }
+    ]
+  },
+  {
+    "cat": "Precalculus",
+    "title": "Analytic Geometry (10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Precalculus covering Analytic Geometry (10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "lines"
+      },
+      {
+        "l": "Item 2",
+        "r": "circles"
+      },
+      {
+        "l": "Item 3",
+        "r": "parabolas"
+      },
+      {
+        "l": "Item 4",
+        "r": "ellipses"
+      },
+      {
+        "l": "Item 5",
+        "r": "hyperbolas"
+      }
+    ]
+  },
+  {
+    "cat": "Precalculus",
+    "title": "Trigonometry and Applications (15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Precalculus covering Trigonometry and Applications (15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "basic trigonometric functions"
+      },
+      {
+        "l": "Item 2",
+        "r": "inverse trigonometric functions"
+      },
+      {
+        "l": "Item 3",
+        "r": "right triangle ratios"
+      },
+      {
+        "l": "Item 4",
+        "r": "unit circle"
+      },
+      {
+        "l": "Item 5",
+        "r": "trigonometric identities"
+      },
+      {
+        "l": "Item 6",
+        "r": "trigonometric problem solving"
+      }
+    ]
+  },
+  {
+    "cat": "Precalculus",
+    "title": "Functions as Models (10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Precalculus covering Functions as Models (10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "interpreting functions as models"
+      },
+      {
+        "l": "Item 2",
+        "r": "constructing functions as models"
+      },
+      {
+        "l": "Item 3",
+        "r": "symbolic translation"
+      },
+      {
+        "l": "Item 4",
+        "r": "graphical translation"
+      },
+      {
+        "l": "Item 5",
+        "r": "tabular translation"
+      },
+      {
+        "l": "Item 6",
+        "r": "verbal translation"
+      }
+    ]
+  },
+  {
+    "cat": "Financial Accounting",
+    "title": "General Topics (20%-30%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Financial Accounting covering General Topics (20%-30%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "generally accepted accounting principles"
+      },
+      {
+        "l": "Item 2",
+        "r": "double-entry accounting"
+      },
+      {
+        "l": "Item 3",
+        "r": "transaction analysis"
+      },
+      {
+        "l": "Item 4",
+        "r": "accounting equation"
+      },
+      {
+        "l": "Item 5",
+        "r": "accounting cycle"
+      },
+      {
+        "l": "Item 6",
+        "r": "business ethics"
+      },
+      {
+        "l": "Item 7",
+        "r": "financial statement purpose"
+      },
+      {
+        "l": "Item 8",
+        "r": "financial statement presentation"
+      },
+      {
+        "l": "Item 9",
+        "r": "relationships between financial statements"
+      },
+      {
+        "l": "Item 10",
+        "r": "forms of business"
+      }
+    ]
+  },
+  {
+    "cat": "Financial Accounting",
+    "title": "Income Statement (20%-30%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Financial Accounting covering Income Statement (20%-30%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "single-step format"
+      },
+      {
+        "l": "Item 2",
+        "r": "multi-step format"
+      },
+      {
+        "l": "Item 3",
+        "r": "revenue recognition"
+      },
+      {
+        "l": "Item 4",
+        "r": "expense recognition"
+      },
+      {
+        "l": "Item 5",
+        "r": "cost of goods sold"
+      },
+      {
+        "l": "Item 6",
+        "r": "nonoperational gains"
+      },
+      {
+        "l": "Item 7",
+        "r": "nonoperational losses"
+      },
+      {
+        "l": "Item 8",
+        "r": "profitability analysis"
+      }
+    ]
+  },
+  {
+    "cat": "Financial Accounting",
+    "title": "Balance Sheet (30%-40%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Financial Accounting covering Balance Sheet (30%-40%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "cash"
+      },
+      {
+        "l": "Item 2",
+        "r": "internal controls"
+      },
+      {
+        "l": "Item 3",
+        "r": "accounts receivable valuation"
+      },
+      {
+        "l": "Item 4",
+        "r": "notes receivable valuation"
+      },
+      {
+        "l": "Item 5",
+        "r": "bad debts"
+      },
+      {
+        "l": "Item 6",
+        "r": "inventory valuation"
+      },
+      {
+        "l": "Item 7",
+        "r": "long-term asset acquisition"
+      },
+      {
+        "l": "Item 8",
+        "r": "long-term asset disposal"
+      },
+      {
+        "l": "Item 9",
+        "r": "depreciation"
+      },
+      {
+        "l": "Item 10",
+        "r": "amortization"
+      },
+      {
+        "l": "Item 11",
+        "r": "depletion"
+      },
+      {
+        "l": "Item 12",
+        "r": "intangible assets"
+      },
+      {
+        "l": "Item 13",
+        "r": "patents"
+      },
+      {
+        "l": "Item 14",
+        "r": "goodwill"
+      },
+      {
+        "l": "Item 15",
+        "r": "accounts payable"
+      },
+      {
+        "l": "Item 16",
+        "r": "notes payable"
+      },
+      {
+        "l": "Item 17",
+        "r": "long-term liabilities"
+      },
+      {
+        "l": "Item 18",
+        "r": "bonds payable"
+      }
+    ]
+  },
+  {
+    "cat": "Financial Accounting",
+    "title": "Statement of Cash Flows (5%-10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Financial Accounting covering Statement of Cash Flows (5%-10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "indirect method"
+      },
+      {
+        "l": "Item 2",
+        "r": "cash flow analysis"
+      },
+      {
+        "l": "Item 3",
+        "r": "operating activities"
+      },
+      {
+        "l": "Item 4",
+        "r": "financing activities"
+      },
+      {
+        "l": "Item 5",
+        "r": "investing activities"
+      },
+      {
+        "l": "Item 6",
+        "r": "noncash financing activities"
+      },
+      {
+        "l": "Item 7",
+        "r": "noncash investing activities"
+      }
+    ]
+  },
+  {
+    "cat": "Financial Accounting",
+    "title": "Miscellaneous (Less than 5%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Financial Accounting covering Miscellaneous (Less than 5%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "investments"
+      },
+      {
+        "l": "Item 2",
+        "r": "contingent liabilities"
+      }
+    ]
+  },
+  {
+    "cat": "Information Systems",
+    "title": "Office and Technology Applications (20%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Information Systems covering Office and Technology Applications (20%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "word processing"
+      },
+      {
+        "l": "Item 2",
+        "r": "spreadsheet software"
+      },
+      {
+        "l": "Item 3",
+        "r": "presentation software"
+      },
+      {
+        "l": "Item 4",
+        "r": "database package"
+      },
+      {
+        "l": "Item 5",
+        "r": "software suites"
+      },
+      {
+        "l": "Item 6",
+        "r": "email systems"
+      },
+      {
+        "l": "Item 7",
+        "r": "conferencing"
+      },
+      {
+        "l": "Item 8",
+        "r": "collaborative work"
+      },
+      {
+        "l": "Item 9",
+        "r": "document imaging"
+      },
+      {
+        "l": "Item 10",
+        "r": "OCR"
+      },
+      {
+        "l": "Item 11",
+        "r": "system resources"
+      },
+      {
+        "l": "Item 12",
+        "r": "voice recognition systems"
+      },
+      {
+        "l": "Item 13",
+        "r": "knowledge management"
+      },
+      {
+        "l": "Item 14",
+        "r": "expert systems"
+      },
+      {
+        "l": "Item 15",
+        "r": "TPS"
+      },
+      {
+        "l": "Item 16",
+        "r": "OLTP"
+      },
+      {
+        "l": "Item 17",
+        "r": "DSS"
+      },
+      {
+        "l": "Item 18",
+        "r": "GIS"
+      }
+    ]
+  },
+  {
+    "cat": "Information Systems",
+    "title": "Internet and World Wide Web (15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Information Systems covering Internet and World Wide Web (15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "intranet"
+      },
+      {
+        "l": "Item 2",
+        "r": "extranet"
+      },
+      {
+        "l": "Item 3",
+        "r": "governance"
+      },
+      {
+        "l": "Item 4",
+        "r": "internet content"
+      },
+      {
+        "l": "Item 5",
+        "r": "search engines"
+      },
+      {
+        "l": "Item 6",
+        "r": "cloud storage"
+      },
+      {
+        "l": "Item 7",
+        "r": "content streaming"
+      },
+      {
+        "l": "Item 8",
+        "r": "protocols"
+      },
+      {
+        "l": "Item 9",
+        "r": "push communication"
+      },
+      {
+        "l": "Item 10",
+        "r": "pull communication"
+      },
+      {
+        "l": "Item 11",
+        "r": "web 2.0"
+      },
+      {
+        "l": "Item 12",
+        "r": "web browsers"
+      },
+      {
+        "l": "Item 13",
+        "r": "URLs"
+      },
+      {
+        "l": "Item 14",
+        "r": "web standards"
+      },
+      {
+        "l": "Item 15",
+        "r": "browser history"
+      },
+      {
+        "l": "Item 16",
+        "r": "cookies"
+      },
+      {
+        "l": "Item 17",
+        "r": "resource allocation"
+      },
+      {
+        "l": "Item 18",
+        "r": "browser functionality"
+      }
+    ]
+  },
+  {
+    "cat": "Information Systems",
+    "title": "Security (10%-15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Information Systems covering Security (10%-15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "viruses"
+      },
+      {
+        "l": "Item 2",
+        "r": "worms"
+      },
+      {
+        "l": "Item 3",
+        "r": "Trojan horses"
+      },
+      {
+        "l": "Item 4",
+        "r": "ransomware"
+      },
+      {
+        "l": "Item 5",
+        "r": "adware"
+      },
+      {
+        "l": "Item 6",
+        "r": "spyware"
+      },
+      {
+        "l": "Item 7",
+        "r": "scareware"
+      },
+      {
+        "l": "Item 8",
+        "r": "denial of service"
+      },
+      {
+        "l": "Item 9",
+        "r": "privacy concerns"
+      },
+      {
+        "l": "Item 10",
+        "r": "identity theft"
+      },
+      {
+        "l": "Item 11",
+        "r": "authorization"
+      },
+      {
+        "l": "Item 12",
+        "r": "authentication"
+      },
+      {
+        "l": "Item 13",
+        "r": "system access"
+      },
+      {
+        "l": "Item 14",
+        "r": "database security"
+      },
+      {
+        "l": "Item 15",
+        "r": "secure transactions"
+      },
+      {
+        "l": "Item 16",
+        "r": "remote data access"
+      },
+      {
+        "l": "Item 17",
+        "r": "device security"
+      },
+      {
+        "l": "Item 18",
+        "r": "application security"
+      }
+    ]
+  },
+  {
+    "cat": "Information Systems",
+    "title": "Hardware and Systems Technology (15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Information Systems covering Hardware and Systems Technology (15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "processing devices"
+      },
+      {
+        "l": "Item 2",
+        "r": "storage devices"
+      },
+      {
+        "l": "Item 3",
+        "r": "input devices"
+      },
+      {
+        "l": "Item 4",
+        "r": "output devices"
+      },
+      {
+        "l": "Item 5",
+        "r": "telecommunications devices"
+      },
+      {
+        "l": "Item 6",
+        "r": "networking devices"
+      },
+      {
+        "l": "Item 7",
+        "r": "Internet of Things"
+      },
+      {
+        "l": "Item 8",
+        "r": "computer functions"
+      },
+      {
+        "l": "Item 9",
+        "r": "operating systems"
+      },
+      {
+        "l": "Item 10",
+        "r": "telecommunications functions"
+      },
+      {
+        "l": "Item 11",
+        "r": "network hardware"
+      },
+      {
+        "l": "Item 12",
+        "r": "LAN"
+      },
+      {
+        "l": "Item 13",
+        "r": "WAN"
+      },
+      {
+        "l": "Item 14",
+        "r": "PAN"
+      },
+      {
+        "l": "Item 15",
+        "r": "VPN"
+      },
+      {
+        "l": "Item 16",
+        "r": "enterprise networks"
+      },
+      {
+        "l": "Item 17",
+        "r": "mainframe"
+      },
+      {
+        "l": "Item 18",
+        "r": "personal computer"
+      }
+    ]
+  },
+  {
+    "cat": "Information Systems",
+    "title": "Software Development (10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Information Systems covering Software Development (10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "prototyping"
+      },
+      {
+        "l": "Item 2",
+        "r": "SDLC"
+      },
+      {
+        "l": "Item 3",
+        "r": "RAD"
+      },
+      {
+        "l": "Item 4",
+        "r": "CASE"
+      },
+      {
+        "l": "Item 5",
+        "r": "JAD"
+      },
+      {
+        "l": "Item 6",
+        "r": "agile"
+      },
+      {
+        "l": "Item 7",
+        "r": "spiral"
+      },
+      {
+        "l": "Item 8",
+        "r": "feasibility"
+      },
+      {
+        "l": "Item 9",
+        "r": "systems analysis"
+      },
+      {
+        "l": "Item 10",
+        "r": "systems design"
+      },
+      {
+        "l": "Item 11",
+        "r": "end-user development"
+      },
+      {
+        "l": "Item 12",
+        "r": "testing"
+      },
+      {
+        "l": "Item 13",
+        "r": "training"
+      },
+      {
+        "l": "Item 14",
+        "r": "data conversion"
+      },
+      {
+        "l": "Item 15",
+        "r": "system conversion"
+      },
+      {
+        "l": "Item 16",
+        "r": "system maintenance"
+      },
+      {
+        "l": "Item 17",
+        "r": "post-implementation activities"
+      },
+      {
+        "l": "Item 18",
+        "r": "documentation"
+      }
+    ]
+  },
+  {
+    "cat": "Information Systems",
+    "title": "Data Management and Programming Concepts (15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Information Systems covering Data Management and Programming Concepts (15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "data warehousing"
+      },
+      {
+        "l": "Item 2",
+        "r": "data mining"
+      },
+      {
+        "l": "Item 3",
+        "r": "big data"
+      },
+      {
+        "l": "Item 4",
+        "r": "validation"
+      },
+      {
+        "l": "Item 5",
+        "r": "migration"
+      },
+      {
+        "l": "Item 6",
+        "r": "storage"
+      },
+      {
+        "l": "Item 7",
+        "r": "obsolescence"
+      },
+      {
+        "l": "Item 8",
+        "r": "data concepts"
+      },
+      {
+        "l": "Item 9",
+        "r": "data types"
+      },
+      {
+        "l": "Item 10",
+        "r": "data structures"
+      },
+      {
+        "l": "Item 11",
+        "r": "digital representation of data"
+      },
+      {
+        "l": "Item 12",
+        "r": "data transfer"
+      },
+      {
+        "l": "Item 13",
+        "r": "file organization"
+      },
+      {
+        "l": "Item 14",
+        "r": "memory management"
+      },
+      {
+        "l": "Item 15",
+        "r": "file management"
+      },
+      {
+        "l": "Item 16",
+        "r": "relational DBMS"
+      },
+      {
+        "l": "Item 17",
+        "r": "hierarchical DBMS"
+      },
+      {
+        "l": "Item 18",
+        "r": "network DBMS"
+      }
+    ]
+  },
+  {
+    "cat": "Information Systems",
+    "title": "Social and Ethical Implications (10%-15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Information Systems covering Social and Ethical Implications (10%-15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "outsourcing"
+      },
+      {
+        "l": "Item 2",
+        "r": "insourcing"
+      },
+      {
+        "l": "Item 3",
+        "r": "offshoring"
+      },
+      {
+        "l": "Item 4",
+        "r": "green computing"
+      },
+      {
+        "l": "Item 5",
+        "r": "technology investment"
+      },
+      {
+        "l": "Item 6",
+        "r": "intellectual property rights"
+      },
+      {
+        "l": "Item 7",
+        "r": "legal property rights"
+      },
+      {
+        "l": "Item 8",
+        "r": "ownership of materials"
+      },
+      {
+        "l": "Item 9",
+        "r": "open-source software"
+      },
+      {
+        "l": "Item 10",
+        "r": "open-source hardware"
+      },
+      {
+        "l": "Item 11",
+        "r": "effects on jobs"
+      },
+      {
+        "l": "Item 12",
+        "r": "telecommuting"
+      },
+      {
+        "l": "Item 13",
+        "r": "virtual teams"
+      },
+      {
+        "l": "Item 14",
+        "r": "job design"
+      },
+      {
+        "l": "Item 15",
+        "r": "staffing"
+      },
+      {
+        "l": "Item 16",
+        "r": "ergonomics"
+      },
+      {
+        "l": "Item 17",
+        "r": "IS careers"
+      },
+      {
+        "l": "Item 18",
+        "r": "responsibilities"
+      }
+    ]
+  },
+  {
+    "cat": "Introductory Business Law",
+    "title": "History and Sources of American Law/Constitutional Law (5%-10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Introductory Business Law covering History and Sources of American Law/Constitutional Law (5%-10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "history of American law"
+      },
+      {
+        "l": "Item 2",
+        "r": "sources of American law"
+      },
+      {
+        "l": "Item 3",
+        "r": "constitutional law"
+      }
+    ]
+  },
+  {
+    "cat": "Introductory Business Law",
+    "title": "American Legal Systems and Procedures (5%-10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Introductory Business Law covering American Legal Systems and Procedures (5%-10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "American legal systems"
+      },
+      {
+        "l": "Item 2",
+        "r": "legal procedures"
+      }
+    ]
+  },
+  {
+    "cat": "Introductory Business Law",
+    "title": "Contracts (30%-40%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Introductory Business Law covering Contracts (30%-40%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "meanings of terms"
+      },
+      {
+        "l": "Item 2",
+        "r": "formation of contracts"
+      },
+      {
+        "l": "Item 3",
+        "r": "capacity"
+      },
+      {
+        "l": "Item 4",
+        "r": "consideration"
+      },
+      {
+        "l": "Item 5",
+        "r": "joint obligations"
+      },
+      {
+        "l": "Item 6",
+        "r": "third-party beneficiary contracts"
+      },
+      {
+        "l": "Item 7",
+        "r": "assignment"
+      },
+      {
+        "l": "Item 8",
+        "r": "delegation"
+      },
+      {
+        "l": "Item 9",
+        "r": "statute of frauds"
+      },
+      {
+        "l": "Item 10",
+        "r": "scope of contracts"
+      },
+      {
+        "l": "Item 11",
+        "r": "meaning of contracts"
+      },
+      {
+        "l": "Item 12",
+        "r": "breach of contract"
+      },
+      {
+        "l": "Item 13",
+        "r": "remedies"
+      },
+      {
+        "l": "Item 14",
+        "r": "bar to remedies"
+      },
+      {
+        "l": "Item 15",
+        "r": "discharge of contracts"
+      },
+      {
+        "l": "Item 16",
+        "r": "illegal contracts"
+      }
+    ]
+  },
+  {
+    "cat": "Introductory Business Law",
+    "title": "Legal Environment (20%-25%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Introductory Business Law covering Legal Environment (20%-25%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "ethics"
+      },
+      {
+        "l": "Item 2",
+        "r": "corporate social responsibility"
+      },
+      {
+        "l": "Item 3",
+        "r": "government regulation"
+      },
+      {
+        "l": "Item 4",
+        "r": "administrative agencies"
+      },
+      {
+        "l": "Item 5",
+        "r": "antitrust law"
+      },
+      {
+        "l": "Item 6",
+        "r": "employment law"
+      },
+      {
+        "l": "Item 7",
+        "r": "product liability"
+      },
+      {
+        "l": "Item 8",
+        "r": "consumer protection"
+      },
+      {
+        "l": "Item 9",
+        "r": "international business law"
+      }
+    ]
+  },
+  {
+    "cat": "Introductory Business Law",
+    "title": "Torts (10%-15%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Introductory Business Law covering Torts (10%-15%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "torts"
+      }
+    ]
+  },
+  {
+    "cat": "Introductory Business Law",
+    "title": "Miscellaneous (5%-10%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Introductory Business Law covering Miscellaneous (5%-10%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "agency"
+      },
+      {
+        "l": "Item 2",
+        "r": "partnerships"
+      },
+      {
+        "l": "Item 3",
+        "r": "corporations"
+      },
+      {
+        "l": "Item 4",
+        "r": "sales"
+      }
+    ]
+  },
+  {
+    "cat": "Principles of Management",
+    "title": "Organization and Human Resources (15%-25%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Principles of Management covering Organization and Human Resources (15%-25%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "personnel administration"
+      },
+      {
+        "l": "Item 2",
+        "r": "human relations"
+      },
+      {
+        "l": "Item 3",
+        "r": "motivation"
+      },
+      {
+        "l": "Item 4",
+        "r": "training and development"
+      },
+      {
+        "l": "Item 5",
+        "r": "performance appraisal"
+      },
+      {
+        "l": "Item 6",
+        "r": "organizational development"
+      },
+      {
+        "l": "Item 7",
+        "r": "legal concerns"
+      },
+      {
+        "l": "Item 8",
+        "r": "workforce diversity"
+      },
+      {
+        "l": "Item 9",
+        "r": "recruiting"
+      },
+      {
+        "l": "Item 10",
+        "r": "selecting"
+      },
+      {
+        "l": "Item 11",
+        "r": "compensation"
+      },
+      {
+        "l": "Item 12",
+        "r": "benefits"
+      },
+      {
+        "l": "Item 13",
+        "r": "collective bargaining"
+      }
+    ]
+  },
+  {
+    "cat": "Principles of Management",
+    "title": "Operational Aspects of Management (10%-20%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Principles of Management covering Operational Aspects of Management (10%-20%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "operations planning"
+      },
+      {
+        "l": "Item 2",
+        "r": "operations control"
+      },
+      {
+        "l": "Item 3",
+        "r": "work scheduling"
+      },
+      {
+        "l": "Item 4",
+        "r": "quality management"
+      },
+      {
+        "l": "Item 5",
+        "r": "TQM"
+      },
+      {
+        "l": "Item 6",
+        "r": "information processing"
+      },
+      {
+        "l": "Item 7",
+        "r": "information management"
+      },
+      {
+        "l": "Item 8",
+        "r": "strategic planning"
+      },
+      {
+        "l": "Item 9",
+        "r": "strategic analysis"
+      },
+      {
+        "l": "Item 10",
+        "r": "productivity"
+      }
+    ]
+  },
+  {
+    "cat": "Principles of Management",
+    "title": "Functional Aspects of Management (45%-55%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Principles of Management covering Functional Aspects of Management (45%-55%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "planning"
+      },
+      {
+        "l": "Item 2",
+        "r": "organizing"
+      },
+      {
+        "l": "Item 3",
+        "r": "leading"
+      },
+      {
+        "l": "Item 4",
+        "r": "controlling"
+      },
+      {
+        "l": "Item 5",
+        "r": "authority"
+      },
+      {
+        "l": "Item 6",
+        "r": "decision-making"
+      },
+      {
+        "l": "Item 7",
+        "r": "organization charts"
+      },
+      {
+        "l": "Item 8",
+        "r": "leadership"
+      },
+      {
+        "l": "Item 9",
+        "r": "organizational structure"
+      },
+      {
+        "l": "Item 10",
+        "r": "budgeting"
+      },
+      {
+        "l": "Item 11",
+        "r": "problem-solving"
+      },
+      {
+        "l": "Item 12",
+        "r": "group dynamics"
+      },
+      {
+        "l": "Item 13",
+        "r": "team functions"
+      },
+      {
+        "l": "Item 14",
+        "r": "conflict resolution"
+      },
+      {
+        "l": "Item 15",
+        "r": "communication"
+      },
+      {
+        "l": "Item 16",
+        "r": "change"
+      },
+      {
+        "l": "Item 17",
+        "r": "organizational theory"
+      },
+      {
+        "l": "Item 18",
+        "r": "historical aspects"
+      }
+    ]
+  },
+  {
+    "cat": "Principles of Management",
+    "title": "International Management and Contemporary Issues (10%-20%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Principles of Management covering International Management and Contemporary Issues (10%-20%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "value dimensions"
+      },
+      {
+        "l": "Item 2",
+        "r": "regional economic integration"
+      },
+      {
+        "l": "Item 3",
+        "r": "trading alliances"
+      },
+      {
+        "l": "Item 4",
+        "r": "global environment"
+      },
+      {
+        "l": "Item 5",
+        "r": "social responsibilities of business"
+      },
+      {
+        "l": "Item 6",
+        "r": "ethics"
+      },
+      {
+        "l": "Item 7",
+        "r": "systems"
+      },
+      {
+        "l": "Item 8",
+        "r": "environment"
+      },
+      {
+        "l": "Item 9",
+        "r": "government regulation"
+      },
+      {
+        "l": "Item 10",
+        "r": "management theories"
+      },
+      {
+        "l": "Item 11",
+        "r": "management theorists"
+      },
+      {
+        "l": "Item 12",
+        "r": "e-business"
+      },
+      {
+        "l": "Item 13",
+        "r": "creativity"
+      },
+      {
+        "l": "Item 14",
+        "r": "innovation"
+      }
+    ]
+  },
+  {
+    "cat": "Principles of Marketing",
+    "title": "Role of Marketing in Society (8%-13%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Principles of Marketing covering Role of Marketing in Society (8%-13%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "ethics"
+      },
+      {
+        "l": "Item 2",
+        "r": "nonprofit marketing"
+      },
+      {
+        "l": "Item 3",
+        "r": "international marketing"
+      }
+    ]
+  },
+  {
+    "cat": "Principles of Marketing",
+    "title": "Role of Marketing in an Organization (17%-24%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Principles of Marketing covering Role of Marketing in an Organization (17%-24%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "marketing concept"
+      },
+      {
+        "l": "Item 2",
+        "r": "marketing strategy"
+      },
+      {
+        "l": "Item 3",
+        "r": "marketing environment"
+      },
+      {
+        "l": "Item 4",
+        "r": "marketing decision system"
+      },
+      {
+        "l": "Item 5",
+        "r": "marketing research"
+      },
+      {
+        "l": "Item 6",
+        "r": "marketing information system"
+      }
+    ]
+  },
+  {
+    "cat": "Principles of Marketing",
+    "title": "Target Marketing (22%-27%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Principles of Marketing covering Target Marketing (22%-27%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "consumer behavior"
+      },
+      {
+        "l": "Item 2",
+        "r": "segmentation"
+      },
+      {
+        "l": "Item 3",
+        "r": "positioning"
+      },
+      {
+        "l": "Item 4",
+        "r": "business-to-business markets"
+      }
+    ]
+  },
+  {
+    "cat": "Principles of Marketing",
+    "title": "Marketing Mix (40%-50%)",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Principles of Marketing covering Marketing Mix (40%-50%).",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "product and service management"
+      },
+      {
+        "l": "Item 2",
+        "r": "branding"
+      },
+      {
+        "l": "Item 3",
+        "r": "pricing policies"
+      },
+      {
+        "l": "Item 4",
+        "r": "distribution channels"
+      },
+      {
+        "l": "Item 5",
+        "r": "logistics"
+      },
+      {
+        "l": "Item 6",
+        "r": "integrated marketing communications"
+      },
+      {
+        "l": "Item 7",
+        "r": "promotion"
+      },
+      {
+        "l": "Item 8",
+        "r": "marketing in e-commerce"
+      }
+    ]
+  },
+  {
+    "cat": "Analyzing and Interpreting Literature",
+    "title": "Core Literary Abilities",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Analyzing and Interpreting Literature covering Core Literary Abilities.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "reading prose with understanding"
+      },
+      {
+        "l": "Item 2",
+        "r": "reading poetry with understanding"
+      },
+      {
+        "l": "Item 3",
+        "r": "reading drama with understanding"
+      },
+      {
+        "l": "Item 4",
+        "r": "analyzing elements of a literary passage"
+      },
+      {
+        "l": "Item 5",
+        "r": "nuances of meaning"
+      },
+      {
+        "l": "Item 6",
+        "r": "tone"
+      },
+      {
+        "l": "Item 7",
+        "r": "imagery"
+      },
+      {
+        "l": "Item 8",
+        "r": "style"
+      },
+      {
+        "l": "Item 9",
+        "r": "interpreting metaphors"
+      },
+      {
+        "l": "Item 10",
+        "r": "rhetorical devices"
+      },
+      {
+        "l": "Item 11",
+        "r": "stylistic devices"
+      },
+      {
+        "l": "Item 12",
+        "r": "parts and wholes relationships"
+      },
+      {
+        "l": "Item 13",
+        "r": "speaker attitudes"
+      },
+      {
+        "l": "Item 14",
+        "r": "author attitudes"
+      },
+      {
+        "l": "Item 15",
+        "r": "means of literary effects"
+      },
+      {
+        "l": "Item 16",
+        "r": "basic literary terminology"
+      }
+    ]
+  },
+  {
+    "cat": "Analyzing and Interpreting Literature",
+    "title": "Genre",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Analyzing and Interpreting Literature covering Genre.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "poetry"
+      },
+      {
+        "l": "Item 2",
+        "r": "prose fiction"
+      },
+      {
+        "l": "Item 3",
+        "r": "prose nonfiction"
+      },
+      {
+        "l": "Item 4",
+        "r": "drama"
+      }
+    ]
+  },
+  {
+    "cat": "Analyzing and Interpreting Literature",
+    "title": "National Tradition",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Analyzing and Interpreting Literature covering National Tradition.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "British literature"
+      },
+      {
+        "l": "Item 2",
+        "r": "Postcolonial literature"
+      },
+      {
+        "l": "Item 3",
+        "r": "American literature"
+      },
+      {
+        "l": "Item 4",
+        "r": "works in translation"
+      }
+    ]
+  },
+  {
+    "cat": "Analyzing and Interpreting Literature",
+    "title": "Period",
+    "emoji": "",
+    "formula": "Topic → subtopic → practice explanation",
+    "desc": "CLEP content area for Analyzing and Interpreting Literature covering Period.",
+    "examples": [
+      {
+        "l": "Item 1",
+        "r": "Classical and pre-Renaissance"
+      },
+      {
+        "l": "Item 2",
+        "r": "Renaissance and 17th Century"
+      },
+      {
+        "l": "Item 3",
+        "r": "18th and 19th Centuries"
+      },
+      {
+        "l": "Item 4",
+        "r": "20th and 21st Centuries"
+      }
+    ]
+  }
+]);

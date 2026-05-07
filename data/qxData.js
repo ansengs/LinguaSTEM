@@ -12686,7 +12686,7 @@ export const STUDY_GUIDES = {
 
 export const ACCU_SAMPLE_PDFS = [
   { label: 'Reading', icon: '', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-reading.pdf', desc: 'Passages · Inference · Vocabulary in Context · Rhetoric' },
-  { label: 'Writing', icon: '✏️', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-writing.pdf', desc: 'Revision · Sentence Structure · Punctuation · Usage' },
+  { label: 'Writing', icon: '', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-writing.pdf', desc: 'Revision · Sentence Structure · Punctuation · Usage' },
   { label: 'Arithmetic', icon: '', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-arithmetic.pdf', desc: 'Whole Numbers · Fractions · Decimals · Percents · Comparisons' },
   { label: 'Quantitative Reasoning', icon: '', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-quantitative-reasoning.pdf', desc: 'Ratios · Linear Equations · Probability · Statistics · Geometry' },
   { label: 'Adv. Algebra & Functions', icon: '', url: 'https://accuplacer.collegeboard.org/accuplacer/pdf/next-generation-sample-questions-advanced-algebra-and-functions.pdf', desc: 'Quadratics · Functions · Radicals · Exponential · Trig' },
@@ -12698,5 +12698,17094 @@ export const ACCU_IXL_PLANS = [
   { label: 'Quantitative Reasoning, Algebra & Statistics', icon: '', url: 'https://pro.ixl.com/math/skill-plans/accuplacer-quantitative-reasoning-algebra-and-statistics', topics: ["Rational numbers · order on a number line", "Ratios, rates & proportional reasoning", "Algebraic expressions & exponent rules", "Linear equations & applications", "Probability, sets & descriptive statistics", "Geometry concepts (area, volume, coordinate)"] },
   { label: 'Advanced Algebra & Functions', icon: '', url: 'https://pro.ixl.com/math/skill-plans/accuplacer-advanced-algebra-and-functions', topics: ["Linear & quadratic equations", "Factoring polynomials", "Functions — evaluation, composition, domain", "Radical & rational equations", "Exponential & logarithmic equations", "Geometry (surface area, congruence)", "Trigonometry (SOH-CAH-TOA, unit circle)"] },
   { label: 'Reading', icon: '', url: 'https://pro.ixl.com/ela/skill-plans/accuplacer-reading', topics: ["Main idea & central theme", "Inference & textual evidence", "Vocabulary in context", "Rhetorical analysis (purpose, point of view)", "Paired passage synthesis", "Text structure & organization"] },
-  { label: 'Writing', icon: '✏️', url: 'https://pro.ixl.com/ela/skill-plans/accuplacer-writing', topics: ["Development & elaboration", "Logical organization & transitions", "Effective language use & word choice", "Subject-verb & pronoun agreement", "Sentence structure (fragments, run-ons)", "Punctuation conventions"] },
+  { label: 'Writing', icon: '', url: 'https://pro.ixl.com/ela/skill-plans/accuplacer-writing', topics: ["Development & elaboration", "Logical organization & transitions", "Effective language use & word choice", "Subject-verb & pronoun agreement", "Sentence structure (fragments, run-ons)", "Punctuation conventions"] },
 ];
+
+
+// Expanded AP/CLEP practice banks. Added after export so existing original QB data stays intact.
+Object.assign(QB, {
+  "college-english-composition": [
+    {
+      "focus": "College English Composition — Analysis, Argumentation, and Synthesis",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Analysis, Argumentation, and Synthesis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Analysis, Argumentation, and Synthesis",
+      "level": 2,
+      "why": "Analysis, Argumentation, and Synthesis is part of the Analysis, Argumentation, and Synthesis content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Analysis, Argumentation, and Synthesis; tested item = Analysis, Argumentation, and Synthesis.",
+      "_id": "college-english-composition_0"
+    },
+    {
+      "focus": "College English Composition — Analysis, Argumentation, and Synthesis",
+      "prompt": "Which outline item belongs with Analysis, Argumentation, and Synthesis in College English Composition?",
+      "options": [
+        "analysis",
+        "argumentation",
+        "synthesis",
+        "ability to recognize logical development"
+      ],
+      "answer": 0,
+      "topic": "Analysis, Argumentation, and Synthesis",
+      "level": 2,
+      "why": "analysis is part of the Analysis, Argumentation, and Synthesis content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Analysis, Argumentation, and Synthesis; tested item = analysis.",
+      "_id": "college-english-composition_1"
+    },
+    {
+      "focus": "College English Composition — Analysis, Argumentation, and Synthesis",
+      "prompt": "Which outline item belongs with Analysis, Argumentation, and Synthesis in College English Composition?",
+      "options": [
+        "argumentation",
+        "analysis",
+        "synthesis",
+        "ability to recognize logical development"
+      ],
+      "answer": 0,
+      "topic": "Analysis, Argumentation, and Synthesis",
+      "level": 2,
+      "why": "argumentation is part of the Analysis, Argumentation, and Synthesis content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Analysis, Argumentation, and Synthesis; tested item = argumentation.",
+      "_id": "college-english-composition_2"
+    },
+    {
+      "focus": "College English Composition — Analysis, Argumentation, and Synthesis",
+      "prompt": "Which outline item belongs with Analysis, Argumentation, and Synthesis in College English Composition?",
+      "options": [
+        "synthesis",
+        "analysis",
+        "argumentation",
+        "ability to recognize logical development"
+      ],
+      "answer": 0,
+      "topic": "Analysis, Argumentation, and Synthesis",
+      "level": 2,
+      "why": "synthesis is part of the Analysis, Argumentation, and Synthesis content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Analysis, Argumentation, and Synthesis; tested item = synthesis.",
+      "_id": "college-english-composition_3"
+    },
+    {
+      "focus": "College English Composition — Analysis, Argumentation, and Synthesis",
+      "prompt": "Which outline item belongs with Analysis, Argumentation, and Synthesis in College English Composition?",
+      "options": [
+        "ability to recognize logical development",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Analysis, Argumentation, and Synthesis",
+      "level": 2,
+      "why": "ability to recognize logical development is part of the Analysis, Argumentation, and Synthesis content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Analysis, Argumentation, and Synthesis; tested item = ability to recognize logical development.",
+      "_id": "college-english-composition_4"
+    },
+    {
+      "focus": "College English Composition — Analysis, Argumentation, and Synthesis",
+      "prompt": "Which outline item belongs with Analysis, Argumentation, and Synthesis in College English Composition?",
+      "options": [
+        "research",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Analysis, Argumentation, and Synthesis",
+      "level": 2,
+      "why": "research is part of the Analysis, Argumentation, and Synthesis content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Analysis, Argumentation, and Synthesis; tested item = research.",
+      "_id": "college-english-composition_5"
+    },
+    {
+      "focus": "College English Composition — Syntax",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Syntax",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Syntax",
+      "level": 2,
+      "why": "Syntax is part of the Syntax content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Syntax; tested item = Syntax.",
+      "_id": "college-english-composition_6"
+    },
+    {
+      "focus": "College English Composition — Syntax",
+      "prompt": "Which outline item belongs with Syntax in College English Composition?",
+      "options": [
+        "parallelism",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Syntax",
+      "level": 2,
+      "why": "parallelism is part of the Syntax content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Syntax; tested item = parallelism.",
+      "_id": "college-english-composition_7"
+    },
+    {
+      "focus": "College English Composition — Syntax",
+      "prompt": "Which outline item belongs with Syntax in College English Composition?",
+      "options": [
+        "coordination",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Syntax",
+      "level": 2,
+      "why": "coordination is part of the Syntax content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Syntax; tested item = coordination.",
+      "_id": "college-english-composition_8"
+    },
+    {
+      "focus": "College English Composition — Syntax",
+      "prompt": "Which outline item belongs with Syntax in College English Composition?",
+      "options": [
+        "subordination",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Syntax",
+      "level": 2,
+      "why": "subordination is part of the Syntax content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Syntax; tested item = subordination.",
+      "_id": "college-english-composition_9"
+    },
+    {
+      "focus": "College English Composition — Sentence Boundaries",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Sentence Boundaries",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Sentence Boundaries",
+      "level": 2,
+      "why": "Sentence Boundaries is part of the Sentence Boundaries content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Sentence Boundaries; tested item = Sentence Boundaries.",
+      "_id": "college-english-composition_10"
+    },
+    {
+      "focus": "College English Composition — Sentence Boundaries",
+      "prompt": "Which outline item belongs with Sentence Boundaries in College English Composition?",
+      "options": [
+        "comma splices",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Sentence Boundaries",
+      "level": 2,
+      "why": "comma splices is part of the Sentence Boundaries content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Sentence Boundaries; tested item = comma splices.",
+      "_id": "college-english-composition_11"
+    },
+    {
+      "focus": "College English Composition — Sentence Boundaries",
+      "prompt": "Which outline item belongs with Sentence Boundaries in College English Composition?",
+      "options": [
+        "run-ons",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Sentence Boundaries",
+      "level": 2,
+      "why": "run-ons is part of the Sentence Boundaries content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Sentence Boundaries; tested item = run-ons.",
+      "_id": "college-english-composition_12"
+    },
+    {
+      "focus": "College English Composition — Sentence Boundaries",
+      "prompt": "Which outline item belongs with Sentence Boundaries in College English Composition?",
+      "options": [
+        "sentence fragments",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Sentence Boundaries",
+      "level": 2,
+      "why": "sentence fragments is part of the Sentence Boundaries content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Sentence Boundaries; tested item = sentence fragments.",
+      "_id": "college-english-composition_13"
+    },
+    {
+      "focus": "College English Composition — Sentence Correctness",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Sentence Correctness",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Sentence Correctness",
+      "level": 2,
+      "why": "Sentence Correctness is part of the Sentence Correctness content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Sentence Correctness; tested item = Sentence Correctness.",
+      "_id": "college-english-composition_14"
+    },
+    {
+      "focus": "College English Composition — Sentence Correctness",
+      "prompt": "Which outline item belongs with Sentence Correctness in College English Composition?",
+      "options": [
+        "recognition of correct sentences",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Sentence Correctness",
+      "level": 2,
+      "why": "recognition of correct sentences is part of the Sentence Correctness content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Sentence Correctness; tested item = recognition of correct sentences.",
+      "_id": "college-english-composition_15"
+    },
+    {
+      "focus": "College English Composition — Agreement and Concord",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Agreement and Concord",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Agreement and Concord",
+      "level": 2,
+      "why": "Agreement and Concord is part of the Agreement and Concord content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Agreement and Concord; tested item = Agreement and Concord.",
+      "_id": "college-english-composition_16"
+    },
+    {
+      "focus": "College English Composition — Agreement and Concord",
+      "prompt": "Which outline item belongs with Agreement and Concord in College English Composition?",
+      "options": [
+        "pronoun reference",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Agreement and Concord",
+      "level": 2,
+      "why": "pronoun reference is part of the Agreement and Concord content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Agreement and Concord; tested item = pronoun reference.",
+      "_id": "college-english-composition_17"
+    },
+    {
+      "focus": "College English Composition — Agreement and Concord",
+      "prompt": "Which outline item belongs with Agreement and Concord in College English Composition?",
+      "options": [
+        "case shift",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Agreement and Concord",
+      "level": 2,
+      "why": "case shift is part of the Agreement and Concord content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Agreement and Concord; tested item = case shift.",
+      "_id": "college-english-composition_18"
+    },
+    {
+      "focus": "College English Composition — Agreement and Concord",
+      "prompt": "Which outline item belongs with Agreement and Concord in College English Composition?",
+      "options": [
+        "pronoun number",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Agreement and Concord",
+      "level": 2,
+      "why": "pronoun number is part of the Agreement and Concord content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Agreement and Concord; tested item = pronoun number.",
+      "_id": "college-english-composition_19"
+    },
+    {
+      "focus": "College English Composition — Agreement and Concord",
+      "prompt": "Which outline item belongs with Agreement and Concord in College English Composition?",
+      "options": [
+        "subject-verb agreement",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Agreement and Concord",
+      "level": 2,
+      "why": "subject-verb agreement is part of the Agreement and Concord content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Agreement and Concord; tested item = subject-verb agreement.",
+      "_id": "college-english-composition_20"
+    },
+    {
+      "focus": "College English Composition — Agreement and Concord",
+      "prompt": "Which outline item belongs with Agreement and Concord in College English Composition?",
+      "options": [
+        "verb tense",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Agreement and Concord",
+      "level": 2,
+      "why": "verb tense is part of the Agreement and Concord content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Agreement and Concord; tested item = verb tense.",
+      "_id": "college-english-composition_21"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Style and Usage",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "Style and Usage is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = Style and Usage.",
+      "_id": "college-english-composition_22"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "diction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "diction is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = diction.",
+      "_id": "college-english-composition_23"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "modifiers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "modifiers is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = modifiers.",
+      "_id": "college-english-composition_24"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "idiom",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "idiom is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = idiom.",
+      "_id": "college-english-composition_25"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "active/passive voice",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "active/passive voice is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = active/passive voice.",
+      "_id": "college-english-composition_26"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "lack of subject in modifying word group",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "lack of subject in modifying word group is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = lack of subject in modifying word group.",
+      "_id": "college-english-composition_27"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "logical comparison",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "logical comparison is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = logical comparison.",
+      "_id": "college-english-composition_28"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "logical agreement",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "logical agreement is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = logical agreement.",
+      "_id": "college-english-composition_29"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "punctuation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "punctuation is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = punctuation.",
+      "_id": "college-english-composition_30"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "sentence-level errors in Standard Written English",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "sentence-level errors in Standard Written English is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = sentence-level errors in Standard Written English.",
+      "_id": "college-english-composition_31"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "use of language",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "use of language is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = use of language.",
+      "_id": "college-english-composition_32"
+    },
+    {
+      "focus": "College English Composition — Style and Usage",
+      "prompt": "Which outline item belongs with Style and Usage in College English Composition?",
+      "options": [
+        "sentence variety and structure",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Style and Usage",
+      "level": 2,
+      "why": "sentence variety and structure is part of the Style and Usage content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Style and Usage; tested item = sentence variety and structure.",
+      "_id": "college-english-composition_33"
+    },
+    {
+      "focus": "College English Composition — Organization and Development",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Organization and Development",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Development",
+      "level": 2,
+      "why": "Organization and Development is part of the Organization and Development content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Organization and Development; tested item = Organization and Development.",
+      "_id": "college-english-composition_34"
+    },
+    {
+      "focus": "College English Composition — Organization and Development",
+      "prompt": "Which outline item belongs with Organization and Development in College English Composition?",
+      "options": [
+        "organization",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Development",
+      "level": 2,
+      "why": "organization is part of the Organization and Development content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Organization and Development; tested item = organization.",
+      "_id": "college-english-composition_35"
+    },
+    {
+      "focus": "College English Composition — Organization and Development",
+      "prompt": "Which outline item belongs with Organization and Development in College English Composition?",
+      "options": [
+        "coherence between sentences and paragraphs",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Development",
+      "level": 2,
+      "why": "coherence between sentences and paragraphs is part of the Organization and Development content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Organization and Development; tested item = coherence between sentences and paragraphs.",
+      "_id": "college-english-composition_36"
+    },
+    {
+      "focus": "College English Composition — Organization and Development",
+      "prompt": "Which outline item belongs with Organization and Development in College English Composition?",
+      "options": [
+        "main idea",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Development",
+      "level": 2,
+      "why": "main idea is part of the Organization and Development content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Organization and Development; tested item = main idea.",
+      "_id": "college-english-composition_37"
+    },
+    {
+      "focus": "College English Composition — Organization and Development",
+      "prompt": "Which outline item belongs with Organization and Development in College English Composition?",
+      "options": [
+        "thesis statements",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Development",
+      "level": 2,
+      "why": "thesis statements is part of the Organization and Development content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Organization and Development; tested item = thesis statements.",
+      "_id": "college-english-composition_38"
+    },
+    {
+      "focus": "College English Composition — Organization and Development",
+      "prompt": "Which outline item belongs with Organization and Development in College English Composition?",
+      "options": [
+        "topic sentences",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Development",
+      "level": 2,
+      "why": "topic sentences is part of the Organization and Development content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Organization and Development; tested item = topic sentences.",
+      "_id": "college-english-composition_39"
+    },
+    {
+      "focus": "College English Composition — Organization and Development",
+      "prompt": "Which outline item belongs with Organization and Development in College English Composition?",
+      "options": [
+        "transitions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Development",
+      "level": 2,
+      "why": "transitions is part of the Organization and Development content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Organization and Development; tested item = transitions.",
+      "_id": "college-english-composition_40"
+    },
+    {
+      "focus": "College English Composition — Organization and Development",
+      "prompt": "Which outline item belongs with Organization and Development in College English Composition?",
+      "options": [
+        "level of detail",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Development",
+      "level": 2,
+      "why": "level of detail is part of the Organization and Development content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Organization and Development; tested item = level of detail.",
+      "_id": "college-english-composition_41"
+    },
+    {
+      "focus": "College English Composition — Organization and Development",
+      "prompt": "Which outline item belongs with Organization and Development in College English Composition?",
+      "options": [
+        "organization/structure",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Development",
+      "level": 2,
+      "why": "organization/structure is part of the Organization and Development content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Organization and Development; tested item = organization/structure.",
+      "_id": "college-english-composition_42"
+    },
+    {
+      "focus": "College English Composition — Audience, Tone, and Purpose",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Audience, Tone, and Purpose",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Audience, Tone, and Purpose",
+      "level": 2,
+      "why": "Audience, Tone, and Purpose is part of the Audience, Tone, and Purpose content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Audience, Tone, and Purpose; tested item = Audience, Tone, and Purpose.",
+      "_id": "college-english-composition_43"
+    },
+    {
+      "focus": "College English Composition — Audience, Tone, and Purpose",
+      "prompt": "Which outline item belongs with Audience, Tone, and Purpose in College English Composition?",
+      "options": [
+        "awareness of audience",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Audience, Tone, and Purpose",
+      "level": 2,
+      "why": "awareness of audience is part of the Audience, Tone, and Purpose content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Audience, Tone, and Purpose; tested item = awareness of audience.",
+      "_id": "college-english-composition_44"
+    },
+    {
+      "focus": "College English Composition — Audience, Tone, and Purpose",
+      "prompt": "Which outline item belongs with Audience, Tone, and Purpose in College English Composition?",
+      "options": [
+        "tone",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Audience, Tone, and Purpose",
+      "level": 2,
+      "why": "tone is part of the Audience, Tone, and Purpose content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Audience, Tone, and Purpose; tested item = tone.",
+      "_id": "college-english-composition_45"
+    },
+    {
+      "focus": "College English Composition — Audience, Tone, and Purpose",
+      "prompt": "Which outline item belongs with Audience, Tone, and Purpose in College English Composition?",
+      "options": [
+        "purpose",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Audience, Tone, and Purpose",
+      "level": 2,
+      "why": "purpose is part of the Audience, Tone, and Purpose content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Audience, Tone, and Purpose; tested item = purpose.",
+      "_id": "college-english-composition_46"
+    },
+    {
+      "focus": "College English Composition — Audience, Tone, and Purpose",
+      "prompt": "Which outline item belongs with Audience, Tone, and Purpose in College English Composition?",
+      "options": [
+        "appeals",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Audience, Tone, and Purpose",
+      "level": 2,
+      "why": "appeals is part of the Audience, Tone, and Purpose content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Audience, Tone, and Purpose; tested item = appeals.",
+      "_id": "college-english-composition_47"
+    },
+    {
+      "focus": "College English Composition — Audience, Tone, and Purpose",
+      "prompt": "Which outline item belongs with Audience, Tone, and Purpose in College English Composition?",
+      "options": [
+        "consistency of point of view",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Audience, Tone, and Purpose",
+      "level": 2,
+      "why": "consistency of point of view is part of the Audience, Tone, and Purpose content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Audience, Tone, and Purpose; tested item = consistency of point of view.",
+      "_id": "college-english-composition_48"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Evidence and Sources",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "Evidence and Sources is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = Evidence and Sources.",
+      "_id": "college-english-composition_49"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "evaluation of evidence",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "evaluation of evidence is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = evaluation of evidence.",
+      "_id": "college-english-composition_50"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "evaluation of author's authority and appeal",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "evaluation of author's authority and appeal is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = evaluation of author's authority and appeal.",
+      "_id": "college-english-composition_51"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "evaluation of reasoning",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "evaluation of reasoning is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = evaluation of reasoning.",
+      "_id": "college-english-composition_52"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "use of reference materials",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "use of reference materials is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = use of reference materials.",
+      "_id": "college-english-composition_53"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "evaluation of sources",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "evaluation of sources is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = evaluation of sources.",
+      "_id": "college-english-composition_54"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "integration of resource material",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "integration of resource material is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = integration of resource material.",
+      "_id": "college-english-composition_55"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "documentation of sources",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "documentation of sources is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = documentation of sources.",
+      "_id": "college-english-composition_56"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "MLA",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "MLA is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = MLA.",
+      "_id": "college-english-composition_57"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "APA",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "APA is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = APA.",
+      "_id": "college-english-composition_58"
+    },
+    {
+      "focus": "College English Composition — Evidence and Sources",
+      "prompt": "Which outline item belongs with Evidence and Sources in College English Composition?",
+      "options": [
+        "Chicago manuals of style",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Evidence and Sources",
+      "level": 2,
+      "why": "Chicago manuals of style is part of the Evidence and Sources content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Evidence and Sources; tested item = Chicago manuals of style.",
+      "_id": "college-english-composition_59"
+    },
+    {
+      "focus": "College English Composition — Rhetorical Effects",
+      "prompt": "Which major topic is included in College English Composition?",
+      "options": [
+        "Rhetorical Effects",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Rhetorical Effects",
+      "level": 2,
+      "why": "Rhetorical Effects is part of the Rhetorical Effects content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Rhetorical Effects; tested item = Rhetorical Effects.",
+      "_id": "college-english-composition_60"
+    },
+    {
+      "focus": "College English Composition — Rhetorical Effects",
+      "prompt": "Which outline item belongs with Rhetorical Effects in College English Composition?",
+      "options": [
+        "emphasis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Rhetorical Effects",
+      "level": 2,
+      "why": "emphasis is part of the Rhetorical Effects content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Rhetorical Effects; tested item = emphasis.",
+      "_id": "college-english-composition_61"
+    },
+    {
+      "focus": "College English Composition — Rhetorical Effects",
+      "prompt": "Which outline item belongs with Rhetorical Effects in College English Composition?",
+      "options": [
+        "rhetorical effects in organization",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Rhetorical Effects",
+      "level": 2,
+      "why": "rhetorical effects in organization is part of the Rhetorical Effects content area for College English Composition (CLEP/AP).",
+      "how": "Connect the question stem to the exam outline: subject = College English Composition; major area = Rhetorical Effects; tested item = rhetorical effects in organization.",
+      "_id": "college-english-composition_62"
+    }
+  ],
+  "biology": [
+    {
+      "focus": "Biology — Chemical Composition of Organisms",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Chemical Composition of Organisms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Composition of Organisms",
+      "level": 2,
+      "why": "Chemical Composition of Organisms is part of the Chemical Composition of Organisms content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Composition of Organisms; tested item = Chemical Composition of Organisms.",
+      "_id": "biology_0"
+    },
+    {
+      "focus": "Biology — Chemical Composition of Organisms",
+      "prompt": "Which outline item belongs with Chemical Composition of Organisms in Biology?",
+      "options": [
+        "simple chemical reactions and bonds",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Composition of Organisms",
+      "level": 2,
+      "why": "simple chemical reactions and bonds is part of the Chemical Composition of Organisms content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Composition of Organisms; tested item = simple chemical reactions and bonds.",
+      "_id": "biology_1"
+    },
+    {
+      "focus": "Biology — Chemical Composition of Organisms",
+      "prompt": "Which outline item belongs with Chemical Composition of Organisms in Biology?",
+      "options": [
+        "properties of water",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Composition of Organisms",
+      "level": 2,
+      "why": "properties of water is part of the Chemical Composition of Organisms content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Composition of Organisms; tested item = properties of water.",
+      "_id": "biology_2"
+    },
+    {
+      "focus": "Biology — Chemical Composition of Organisms",
+      "prompt": "Which outline item belongs with Chemical Composition of Organisms in Biology?",
+      "options": [
+        "chemical structure of carbohydrates",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Composition of Organisms",
+      "level": 2,
+      "why": "chemical structure of carbohydrates is part of the Chemical Composition of Organisms content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Composition of Organisms; tested item = chemical structure of carbohydrates.",
+      "_id": "biology_3"
+    },
+    {
+      "focus": "Biology — Chemical Composition of Organisms",
+      "prompt": "Which outline item belongs with Chemical Composition of Organisms in Biology?",
+      "options": [
+        "chemical structure of lipids",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Composition of Organisms",
+      "level": 2,
+      "why": "chemical structure of lipids is part of the Chemical Composition of Organisms content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Composition of Organisms; tested item = chemical structure of lipids.",
+      "_id": "biology_4"
+    },
+    {
+      "focus": "Biology — Chemical Composition of Organisms",
+      "prompt": "Which outline item belongs with Chemical Composition of Organisms in Biology?",
+      "options": [
+        "chemical structure of proteins",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Composition of Organisms",
+      "level": 2,
+      "why": "chemical structure of proteins is part of the Chemical Composition of Organisms content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Composition of Organisms; tested item = chemical structure of proteins.",
+      "_id": "biology_5"
+    },
+    {
+      "focus": "Biology — Chemical Composition of Organisms",
+      "prompt": "Which outline item belongs with Chemical Composition of Organisms in Biology?",
+      "options": [
+        "chemical structure of nucleic acids",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Composition of Organisms",
+      "level": 2,
+      "why": "chemical structure of nucleic acids is part of the Chemical Composition of Organisms content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Composition of Organisms; tested item = chemical structure of nucleic acids.",
+      "_id": "biology_6"
+    },
+    {
+      "focus": "Biology — Chemical Composition of Organisms",
+      "prompt": "Which outline item belongs with Chemical Composition of Organisms in Biology?",
+      "options": [
+        "origin of life",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Composition of Organisms",
+      "level": 2,
+      "why": "origin of life is part of the Chemical Composition of Organisms content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Composition of Organisms; tested item = origin of life.",
+      "_id": "biology_7"
+    },
+    {
+      "focus": "Biology — Cells",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Cells",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cells",
+      "level": 2,
+      "why": "Cells is part of the Cells content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cells; tested item = Cells.",
+      "_id": "biology_8"
+    },
+    {
+      "focus": "Biology — Cells",
+      "prompt": "Which outline item belongs with Cells in Biology?",
+      "options": [
+        "structure and function of cell organelles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cells",
+      "level": 2,
+      "why": "structure and function of cell organelles is part of the Cells content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cells; tested item = structure and function of cell organelles.",
+      "_id": "biology_9"
+    },
+    {
+      "focus": "Biology — Cells",
+      "prompt": "Which outline item belongs with Cells in Biology?",
+      "options": [
+        "properties of cell membranes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cells",
+      "level": 2,
+      "why": "properties of cell membranes is part of the Cells content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cells; tested item = properties of cell membranes.",
+      "_id": "biology_10"
+    },
+    {
+      "focus": "Biology — Cells",
+      "prompt": "Which outline item belongs with Cells in Biology?",
+      "options": [
+        "comparison of prokaryotic and eukaryotic cells",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cells",
+      "level": 2,
+      "why": "comparison of prokaryotic and eukaryotic cells is part of the Cells content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cells; tested item = comparison of prokaryotic and eukaryotic cells.",
+      "_id": "biology_11"
+    },
+    {
+      "focus": "Biology — Enzymes",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Enzymes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Enzymes",
+      "level": 2,
+      "why": "Enzymes is part of the Enzymes content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Enzymes; tested item = Enzymes.",
+      "_id": "biology_12"
+    },
+    {
+      "focus": "Biology — Enzymes",
+      "prompt": "Which outline item belongs with Enzymes in Biology?",
+      "options": [
+        "enzyme-substrate complex",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Enzymes",
+      "level": 2,
+      "why": "enzyme-substrate complex is part of the Enzymes content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Enzymes; tested item = enzyme-substrate complex.",
+      "_id": "biology_13"
+    },
+    {
+      "focus": "Biology — Enzymes",
+      "prompt": "Which outline item belongs with Enzymes in Biology?",
+      "options": [
+        "roles of coenzymes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Enzymes",
+      "level": 2,
+      "why": "roles of coenzymes is part of the Enzymes content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Enzymes; tested item = roles of coenzymes.",
+      "_id": "biology_14"
+    },
+    {
+      "focus": "Biology — Enzymes",
+      "prompt": "Which outline item belongs with Enzymes in Biology?",
+      "options": [
+        "inorganic cofactors",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Enzymes",
+      "level": 2,
+      "why": "inorganic cofactors is part of the Enzymes content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Enzymes; tested item = inorganic cofactors.",
+      "_id": "biology_15"
+    },
+    {
+      "focus": "Biology — Enzymes",
+      "prompt": "Which outline item belongs with Enzymes in Biology?",
+      "options": [
+        "inhibition and regulation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Enzymes",
+      "level": 2,
+      "why": "inhibition and regulation is part of the Enzymes content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Enzymes; tested item = inhibition and regulation.",
+      "_id": "biology_16"
+    },
+    {
+      "focus": "Biology — Energy Transformations",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Energy Transformations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Energy Transformations",
+      "level": 2,
+      "why": "Energy Transformations is part of the Energy Transformations content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Energy Transformations; tested item = Energy Transformations.",
+      "_id": "biology_17"
+    },
+    {
+      "focus": "Biology — Energy Transformations",
+      "prompt": "Which outline item belongs with Energy Transformations in Biology?",
+      "options": [
+        "glycolysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Energy Transformations",
+      "level": 2,
+      "why": "glycolysis is part of the Energy Transformations content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Energy Transformations; tested item = glycolysis.",
+      "_id": "biology_18"
+    },
+    {
+      "focus": "Biology — Energy Transformations",
+      "prompt": "Which outline item belongs with Energy Transformations in Biology?",
+      "options": [
+        "cellular respiration",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Energy Transformations",
+      "level": 2,
+      "why": "cellular respiration is part of the Energy Transformations content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Energy Transformations; tested item = cellular respiration.",
+      "_id": "biology_19"
+    },
+    {
+      "focus": "Biology — Energy Transformations",
+      "prompt": "Which outline item belongs with Energy Transformations in Biology?",
+      "options": [
+        "aerobic pathways",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Energy Transformations",
+      "level": 2,
+      "why": "aerobic pathways is part of the Energy Transformations content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Energy Transformations; tested item = aerobic pathways.",
+      "_id": "biology_20"
+    },
+    {
+      "focus": "Biology — Energy Transformations",
+      "prompt": "Which outline item belongs with Energy Transformations in Biology?",
+      "options": [
+        "anaerobic pathways",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Energy Transformations",
+      "level": 2,
+      "why": "anaerobic pathways is part of the Energy Transformations content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Energy Transformations; tested item = anaerobic pathways.",
+      "_id": "biology_21"
+    },
+    {
+      "focus": "Biology — Energy Transformations",
+      "prompt": "Which outline item belongs with Energy Transformations in Biology?",
+      "options": [
+        "photosynthesis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Energy Transformations",
+      "level": 2,
+      "why": "photosynthesis is part of the Energy Transformations content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Energy Transformations; tested item = photosynthesis.",
+      "_id": "biology_22"
+    },
+    {
+      "focus": "Biology — Cell Division",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Cell Division",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cell Division",
+      "level": 2,
+      "why": "Cell Division is part of the Cell Division content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cell Division; tested item = Cell Division.",
+      "_id": "biology_23"
+    },
+    {
+      "focus": "Biology — Cell Division",
+      "prompt": "Which outline item belongs with Cell Division in Biology?",
+      "options": [
+        "structure of chromosomes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cell Division",
+      "level": 2,
+      "why": "structure of chromosomes is part of the Cell Division content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cell Division; tested item = structure of chromosomes.",
+      "_id": "biology_24"
+    },
+    {
+      "focus": "Biology — Cell Division",
+      "prompt": "Which outline item belongs with Cell Division in Biology?",
+      "options": [
+        "mitosis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cell Division",
+      "level": 2,
+      "why": "mitosis is part of the Cell Division content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cell Division; tested item = mitosis.",
+      "_id": "biology_25"
+    },
+    {
+      "focus": "Biology — Cell Division",
+      "prompt": "Which outline item belongs with Cell Division in Biology?",
+      "options": [
+        "meiosis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cell Division",
+      "level": 2,
+      "why": "meiosis is part of the Cell Division content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cell Division; tested item = meiosis.",
+      "_id": "biology_26"
+    },
+    {
+      "focus": "Biology — Cell Division",
+      "prompt": "Which outline item belongs with Cell Division in Biology?",
+      "options": [
+        "cytokinesis in plants",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cell Division",
+      "level": 2,
+      "why": "cytokinesis in plants is part of the Cell Division content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cell Division; tested item = cytokinesis in plants.",
+      "_id": "biology_27"
+    },
+    {
+      "focus": "Biology — Cell Division",
+      "prompt": "Which outline item belongs with Cell Division in Biology?",
+      "options": [
+        "cytokinesis in animals",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Cell Division",
+      "level": 2,
+      "why": "cytokinesis in animals is part of the Cell Division content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Cell Division; tested item = cytokinesis in animals.",
+      "_id": "biology_28"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Chemical Nature of the Gene",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "Chemical Nature of the Gene is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = Chemical Nature of the Gene.",
+      "_id": "biology_29"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "Watson-Crick model of nucleic acids",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "Watson-Crick model of nucleic acids is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = Watson-Crick model of nucleic acids.",
+      "_id": "biology_30"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "DNA replication",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "DNA replication is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = DNA replication.",
+      "_id": "biology_31"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "mutations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "mutations is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = mutations.",
+      "_id": "biology_32"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "transcription",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "transcription is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = transcription.",
+      "_id": "biology_33"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "translation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "translation is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = translation.",
+      "_id": "biology_34"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "post-transcriptional processing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "post-transcriptional processing is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = post-transcriptional processing.",
+      "_id": "biology_35"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "structural genes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "structural genes is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = structural genes.",
+      "_id": "biology_36"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "regulatory genes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "regulatory genes is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = regulatory genes.",
+      "_id": "biology_37"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "transformation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "transformation is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = transformation.",
+      "_id": "biology_38"
+    },
+    {
+      "focus": "Biology — Chemical Nature of the Gene",
+      "prompt": "Which outline item belongs with Chemical Nature of the Gene in Biology?",
+      "options": [
+        "viruses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Nature of the Gene",
+      "level": 2,
+      "why": "viruses is part of the Chemical Nature of the Gene content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Chemical Nature of the Gene; tested item = viruses.",
+      "_id": "biology_39"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Plant Structure and Function",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "Plant Structure and Function is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = Plant Structure and Function.",
+      "_id": "biology_40"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which outline item belongs with Plant Structure and Function in Biology?",
+      "options": [
+        "root",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "root is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = root.",
+      "_id": "biology_41"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which outline item belongs with Plant Structure and Function in Biology?",
+      "options": [
+        "stem",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "stem is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = stem.",
+      "_id": "biology_42"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which outline item belongs with Plant Structure and Function in Biology?",
+      "options": [
+        "leaf",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "leaf is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = leaf.",
+      "_id": "biology_43"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which outline item belongs with Plant Structure and Function in Biology?",
+      "options": [
+        "flower",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "flower is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = flower.",
+      "_id": "biology_44"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which outline item belongs with Plant Structure and Function in Biology?",
+      "options": [
+        "seed",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "seed is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = seed.",
+      "_id": "biology_45"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which outline item belongs with Plant Structure and Function in Biology?",
+      "options": [
+        "fruit",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "fruit is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = fruit.",
+      "_id": "biology_46"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which outline item belongs with Plant Structure and Function in Biology?",
+      "options": [
+        "water absorption and transport",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "water absorption and transport is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = water absorption and transport.",
+      "_id": "biology_47"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which outline item belongs with Plant Structure and Function in Biology?",
+      "options": [
+        "mineral absorption and transport",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "mineral absorption and transport is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = mineral absorption and transport.",
+      "_id": "biology_48"
+    },
+    {
+      "focus": "Biology — Plant Structure and Function",
+      "prompt": "Which outline item belongs with Plant Structure and Function in Biology?",
+      "options": [
+        "food translocation and storage",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Structure and Function",
+      "level": 2,
+      "why": "food translocation and storage is part of the Plant Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Structure and Function; tested item = food translocation and storage.",
+      "_id": "biology_49"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Plant Reproduction and Development",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "Plant Reproduction and Development is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = Plant Reproduction and Development.",
+      "_id": "biology_50"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which outline item belongs with Plant Reproduction and Development in Biology?",
+      "options": [
+        "alternation of generations in ferns",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "alternation of generations in ferns is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = alternation of generations in ferns.",
+      "_id": "biology_51"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which outline item belongs with Plant Reproduction and Development in Biology?",
+      "options": [
+        "alternation of generations in conifers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "alternation of generations in conifers is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = alternation of generations in conifers.",
+      "_id": "biology_52"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which outline item belongs with Plant Reproduction and Development in Biology?",
+      "options": [
+        "alternation of generations in flowering plants",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "alternation of generations in flowering plants is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = alternation of generations in flowering plants.",
+      "_id": "biology_53"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which outline item belongs with Plant Reproduction and Development in Biology?",
+      "options": [
+        "gamete formation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "gamete formation is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = gamete formation.",
+      "_id": "biology_54"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which outline item belongs with Plant Reproduction and Development in Biology?",
+      "options": [
+        "fertilization",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "fertilization is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = fertilization.",
+      "_id": "biology_55"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which outline item belongs with Plant Reproduction and Development in Biology?",
+      "options": [
+        "growth and development",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "growth and development is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = growth and development.",
+      "_id": "biology_56"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which outline item belongs with Plant Reproduction and Development in Biology?",
+      "options": [
+        "hormonal control",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "hormonal control is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = hormonal control.",
+      "_id": "biology_57"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which outline item belongs with Plant Reproduction and Development in Biology?",
+      "options": [
+        "tropisms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "tropisms is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = tropisms.",
+      "_id": "biology_58"
+    },
+    {
+      "focus": "Biology — Plant Reproduction and Development",
+      "prompt": "Which outline item belongs with Plant Reproduction and Development in Biology?",
+      "options": [
+        "photoperiodicity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Plant Reproduction and Development",
+      "level": 2,
+      "why": "photoperiodicity is part of the Plant Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Plant Reproduction and Development; tested item = photoperiodicity.",
+      "_id": "biology_59"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Animal Structure and Function",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "Animal Structure and Function is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = Animal Structure and Function.",
+      "_id": "biology_60"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "digestive system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "digestive system is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = digestive system.",
+      "_id": "biology_61"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "gas exchange system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "gas exchange system is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = gas exchange system.",
+      "_id": "biology_62"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "skeletal system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "skeletal system is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = skeletal system.",
+      "_id": "biology_63"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "nervous system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "nervous system is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = nervous system.",
+      "_id": "biology_64"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "circulatory system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "circulatory system is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = circulatory system.",
+      "_id": "biology_65"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "excretory system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "excretory system is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = excretory system.",
+      "_id": "biology_66"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "immune system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "immune system is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = immune system.",
+      "_id": "biology_67"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "homeostatic mechanisms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "homeostatic mechanisms is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = homeostatic mechanisms.",
+      "_id": "biology_68"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "hormonal control in homeostasis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "hormonal control in homeostasis is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = hormonal control in homeostasis.",
+      "_id": "biology_69"
+    },
+    {
+      "focus": "Biology — Animal Structure and Function",
+      "prompt": "Which outline item belongs with Animal Structure and Function in Biology?",
+      "options": [
+        "hormonal control in reproduction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Structure and Function",
+      "level": 2,
+      "why": "hormonal control in reproduction is part of the Animal Structure and Function content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Structure and Function; tested item = hormonal control in reproduction.",
+      "_id": "biology_70"
+    },
+    {
+      "focus": "Biology — Animal Reproduction and Development",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Animal Reproduction and Development",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Reproduction and Development",
+      "level": 2,
+      "why": "Animal Reproduction and Development is part of the Animal Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Reproduction and Development; tested item = Animal Reproduction and Development.",
+      "_id": "biology_71"
+    },
+    {
+      "focus": "Biology — Animal Reproduction and Development",
+      "prompt": "Which outline item belongs with Animal Reproduction and Development in Biology?",
+      "options": [
+        "cleavage",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Reproduction and Development",
+      "level": 2,
+      "why": "cleavage is part of the Animal Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Reproduction and Development; tested item = cleavage.",
+      "_id": "biology_72"
+    },
+    {
+      "focus": "Biology — Animal Reproduction and Development",
+      "prompt": "Which outline item belongs with Animal Reproduction and Development in Biology?",
+      "options": [
+        "gastrulation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Reproduction and Development",
+      "level": 2,
+      "why": "gastrulation is part of the Animal Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Reproduction and Development; tested item = gastrulation.",
+      "_id": "biology_73"
+    },
+    {
+      "focus": "Biology — Animal Reproduction and Development",
+      "prompt": "Which outline item belongs with Animal Reproduction and Development in Biology?",
+      "options": [
+        "germ layer formation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Reproduction and Development",
+      "level": 2,
+      "why": "germ layer formation is part of the Animal Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Reproduction and Development; tested item = germ layer formation.",
+      "_id": "biology_74"
+    },
+    {
+      "focus": "Biology — Animal Reproduction and Development",
+      "prompt": "Which outline item belongs with Animal Reproduction and Development in Biology?",
+      "options": [
+        "differentiation of organ systems",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Reproduction and Development",
+      "level": 2,
+      "why": "differentiation of organ systems is part of the Animal Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Reproduction and Development; tested item = differentiation of organ systems.",
+      "_id": "biology_75"
+    },
+    {
+      "focus": "Biology — Animal Reproduction and Development",
+      "prompt": "Which outline item belongs with Animal Reproduction and Development in Biology?",
+      "options": [
+        "experimental analysis of vertebrate development",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Reproduction and Development",
+      "level": 2,
+      "why": "experimental analysis of vertebrate development is part of the Animal Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Reproduction and Development; tested item = experimental analysis of vertebrate development.",
+      "_id": "biology_76"
+    },
+    {
+      "focus": "Biology — Animal Reproduction and Development",
+      "prompt": "Which outline item belongs with Animal Reproduction and Development in Biology?",
+      "options": [
+        "extraembryonic membranes of vertebrates",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Reproduction and Development",
+      "level": 2,
+      "why": "extraembryonic membranes of vertebrates is part of the Animal Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Reproduction and Development; tested item = extraembryonic membranes of vertebrates.",
+      "_id": "biology_77"
+    },
+    {
+      "focus": "Biology — Animal Reproduction and Development",
+      "prompt": "Which outline item belongs with Animal Reproduction and Development in Biology?",
+      "options": [
+        "mammalian placenta",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Reproduction and Development",
+      "level": 2,
+      "why": "mammalian placenta is part of the Animal Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Reproduction and Development; tested item = mammalian placenta.",
+      "_id": "biology_78"
+    },
+    {
+      "focus": "Biology — Animal Reproduction and Development",
+      "prompt": "Which outline item belongs with Animal Reproduction and Development in Biology?",
+      "options": [
+        "blood circulation in the human embryo",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Animal Reproduction and Development",
+      "level": 2,
+      "why": "blood circulation in the human embryo is part of the Animal Reproduction and Development content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Animal Reproduction and Development; tested item = blood circulation in the human embryo.",
+      "_id": "biology_79"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Principles of Heredity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "Principles of Heredity is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = Principles of Heredity.",
+      "_id": "biology_80"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which outline item belongs with Principles of Heredity in Biology?",
+      "options": [
+        "Mendelian dominance",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "Mendelian dominance is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = Mendelian dominance.",
+      "_id": "biology_81"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which outline item belongs with Principles of Heredity in Biology?",
+      "options": [
+        "segregation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "segregation is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = segregation.",
+      "_id": "biology_82"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which outline item belongs with Principles of Heredity in Biology?",
+      "options": [
+        "independent assortment",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "independent assortment is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = independent assortment.",
+      "_id": "biology_83"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which outline item belongs with Principles of Heredity in Biology?",
+      "options": [
+        "chromosomal basis of inheritance",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "chromosomal basis of inheritance is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = chromosomal basis of inheritance.",
+      "_id": "biology_84"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which outline item belongs with Principles of Heredity in Biology?",
+      "options": [
+        "linkage",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "linkage is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = linkage.",
+      "_id": "biology_85"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which outline item belongs with Principles of Heredity in Biology?",
+      "options": [
+        "sex-linked inheritance",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "sex-linked inheritance is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = sex-linked inheritance.",
+      "_id": "biology_86"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which outline item belongs with Principles of Heredity in Biology?",
+      "options": [
+        "polygenic inheritance",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "polygenic inheritance is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = polygenic inheritance.",
+      "_id": "biology_87"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which outline item belongs with Principles of Heredity in Biology?",
+      "options": [
+        "multiple alleles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "multiple alleles is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = multiple alleles.",
+      "_id": "biology_88"
+    },
+    {
+      "focus": "Biology — Principles of Heredity",
+      "prompt": "Which outline item belongs with Principles of Heredity in Biology?",
+      "options": [
+        "human blood groups",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Heredity",
+      "level": 2,
+      "why": "human blood groups is part of the Principles of Heredity content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Heredity; tested item = human blood groups.",
+      "_id": "biology_89"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Principles of Ecology",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "Principles of Ecology is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = Principles of Ecology.",
+      "_id": "biology_90"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "energy flow and productivity in ecosystems",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "energy flow and productivity in ecosystems is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = energy flow and productivity in ecosystems.",
+      "_id": "biology_91"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "biogeochemical cycles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "biogeochemical cycles is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = biogeochemical cycles.",
+      "_id": "biology_92"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "population growth and regulation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "population growth and regulation is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = population growth and regulation.",
+      "_id": "biology_93"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "natality",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "natality is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = natality.",
+      "_id": "biology_94"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "mortality",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "mortality is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = mortality.",
+      "_id": "biology_95"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "competition",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "competition is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = competition.",
+      "_id": "biology_96"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "migration",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "migration is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = migration.",
+      "_id": "biology_97"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "density",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "density is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = density.",
+      "_id": "biology_98"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "r-selection",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "r-selection is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = r-selection.",
+      "_id": "biology_99"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "K-selection",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "K-selection is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = K-selection.",
+      "_id": "biology_100"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "community structure",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "community structure is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = community structure.",
+      "_id": "biology_101"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "major biomes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "major biomes is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = major biomes.",
+      "_id": "biology_102"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "succession",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "succession is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = succession.",
+      "_id": "biology_103"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "habitat",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "habitat is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = habitat.",
+      "_id": "biology_104"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "biotic factors",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "biotic factors is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = biotic factors.",
+      "_id": "biology_105"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "abiotic factors",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "abiotic factors is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = abiotic factors.",
+      "_id": "biology_106"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "concept of niche",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "concept of niche is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = concept of niche.",
+      "_id": "biology_107"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "island biogeography",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "island biogeography is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = island biogeography.",
+      "_id": "biology_108"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "life history strategies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "life history strategies is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = life history strategies.",
+      "_id": "biology_109"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "altruism",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "altruism is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = altruism.",
+      "_id": "biology_110"
+    },
+    {
+      "focus": "Biology — Principles of Ecology",
+      "prompt": "Which outline item belongs with Principles of Ecology in Biology?",
+      "options": [
+        "kin selection",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Ecology",
+      "level": 2,
+      "why": "kin selection is part of the Principles of Ecology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Ecology; tested item = kin selection.",
+      "_id": "biology_111"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Principles of Evolution",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "Principles of Evolution is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = Principles of Evolution.",
+      "_id": "biology_112"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "history of evolutionary concepts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "history of evolutionary concepts is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = history of evolutionary concepts.",
+      "_id": "biology_113"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "natural selection",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "natural selection is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = natural selection.",
+      "_id": "biology_114"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "differential reproduction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "differential reproduction is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = differential reproduction.",
+      "_id": "biology_115"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "mutation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "mutation is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = mutation.",
+      "_id": "biology_116"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "Hardy-Weinberg equilibrium",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "Hardy-Weinberg equilibrium is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = Hardy-Weinberg equilibrium.",
+      "_id": "biology_117"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "speciation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "speciation is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = speciation.",
+      "_id": "biology_118"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "punctuated equilibrium",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "punctuated equilibrium is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = punctuated equilibrium.",
+      "_id": "biology_119"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "adaptive radiation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "adaptive radiation is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = adaptive radiation.",
+      "_id": "biology_120"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "plant evolution",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "plant evolution is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = plant evolution.",
+      "_id": "biology_121"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "animal evolution",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "animal evolution is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = animal evolution.",
+      "_id": "biology_122"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "homology",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "homology is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = homology.",
+      "_id": "biology_123"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "analogy",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "analogy is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = analogy.",
+      "_id": "biology_124"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "convergence",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "convergence is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = convergence.",
+      "_id": "biology_125"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "extinction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "extinction is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = extinction.",
+      "_id": "biology_126"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "balanced polymorphism",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "balanced polymorphism is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = balanced polymorphism.",
+      "_id": "biology_127"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "genetic drift",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "genetic drift is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = genetic drift.",
+      "_id": "biology_128"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "classification of living organisms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "classification of living organisms is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = classification of living organisms.",
+      "_id": "biology_129"
+    },
+    {
+      "focus": "Biology — Principles of Evolution",
+      "prompt": "Which outline item belongs with Principles of Evolution in Biology?",
+      "options": [
+        "evolutionary history of humans",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Evolution",
+      "level": 2,
+      "why": "evolutionary history of humans is part of the Principles of Evolution content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Evolution; tested item = evolutionary history of humans.",
+      "_id": "biology_130"
+    },
+    {
+      "focus": "Biology — Principles of Behavior",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Principles of Behavior",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Behavior",
+      "level": 2,
+      "why": "Principles of Behavior is part of the Principles of Behavior content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Behavior; tested item = Principles of Behavior.",
+      "_id": "biology_131"
+    },
+    {
+      "focus": "Biology — Principles of Behavior",
+      "prompt": "Which outline item belongs with Principles of Behavior in Biology?",
+      "options": [
+        "stereotyped behavior",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Behavior",
+      "level": 2,
+      "why": "stereotyped behavior is part of the Principles of Behavior content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Behavior; tested item = stereotyped behavior.",
+      "_id": "biology_132"
+    },
+    {
+      "focus": "Biology — Principles of Behavior",
+      "prompt": "Which outline item belongs with Principles of Behavior in Biology?",
+      "options": [
+        "learned social behavior",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Behavior",
+      "level": 2,
+      "why": "learned social behavior is part of the Principles of Behavior content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Behavior; tested item = learned social behavior.",
+      "_id": "biology_133"
+    },
+    {
+      "focus": "Biology — Principles of Behavior",
+      "prompt": "Which outline item belongs with Principles of Behavior in Biology?",
+      "options": [
+        "insect societies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Behavior",
+      "level": 2,
+      "why": "insect societies is part of the Principles of Behavior content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Behavior; tested item = insect societies.",
+      "_id": "biology_134"
+    },
+    {
+      "focus": "Biology — Principles of Behavior",
+      "prompt": "Which outline item belongs with Principles of Behavior in Biology?",
+      "options": [
+        "bird societies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Behavior",
+      "level": 2,
+      "why": "bird societies is part of the Principles of Behavior content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Behavior; tested item = bird societies.",
+      "_id": "biology_135"
+    },
+    {
+      "focus": "Biology — Principles of Behavior",
+      "prompt": "Which outline item belongs with Principles of Behavior in Biology?",
+      "options": [
+        "primate societies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Principles of Behavior",
+      "level": 2,
+      "why": "primate societies is part of the Principles of Behavior content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Principles of Behavior; tested item = primate societies.",
+      "_id": "biology_136"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which major topic is included in Biology?",
+      "options": [
+        "Social Biology",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "Social Biology is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = Social Biology.",
+      "_id": "biology_137"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which outline item belongs with Social Biology in Biology?",
+      "options": [
+        "human population growth",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "human population growth is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = human population growth.",
+      "_id": "biology_138"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which outline item belongs with Social Biology in Biology?",
+      "options": [
+        "age composition",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "age composition is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = age composition.",
+      "_id": "biology_139"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which outline item belongs with Social Biology in Biology?",
+      "options": [
+        "birth rates",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "birth rates is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = birth rates.",
+      "_id": "biology_140"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which outline item belongs with Social Biology in Biology?",
+      "options": [
+        "fertility rates",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "fertility rates is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = fertility rates.",
+      "_id": "biology_141"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which outline item belongs with Social Biology in Biology?",
+      "options": [
+        "demographic transition",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "demographic transition is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = demographic transition.",
+      "_id": "biology_142"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which outline item belongs with Social Biology in Biology?",
+      "options": [
+        "resource management",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "resource management is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = resource management.",
+      "_id": "biology_143"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which outline item belongs with Social Biology in Biology?",
+      "options": [
+        "environmental pollution",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "environmental pollution is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = environmental pollution.",
+      "_id": "biology_144"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which outline item belongs with Social Biology in Biology?",
+      "options": [
+        "control of human reproduction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "control of human reproduction is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = control of human reproduction.",
+      "_id": "biology_145"
+    },
+    {
+      "focus": "Biology — Social Biology",
+      "prompt": "Which outline item belongs with Social Biology in Biology?",
+      "options": [
+        "genetic engineering",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social Biology",
+      "level": 2,
+      "why": "genetic engineering is part of the Social Biology content area for Biology (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Biology; major area = Social Biology; tested item = genetic engineering.",
+      "_id": "biology_146"
+    }
+  ],
+  "calculus": [
+    {
+      "focus": "Calculus — Limits (10%)",
+      "prompt": "Which major topic is included in Calculus?",
+      "options": [
+        "Limits (10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Limits (10%)",
+      "level": 2,
+      "why": "Limits (10%) is part of the Limits (10%) content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Limits (10%); tested item = Limits (10%).",
+      "_id": "calculus_0"
+    },
+    {
+      "focus": "Calculus — Limits (10%)",
+      "prompt": "Which outline item belongs with Limits (10%) in Calculus?",
+      "options": [
+        "limit of a constant",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Limits (10%)",
+      "level": 2,
+      "why": "limit of a constant is part of the Limits (10%) content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Limits (10%); tested item = limit of a constant.",
+      "_id": "calculus_1"
+    },
+    {
+      "focus": "Calculus — Limits (10%)",
+      "prompt": "Which outline item belongs with Limits (10%) in Calculus?",
+      "options": [
+        "limit of a sum",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Limits (10%)",
+      "level": 2,
+      "why": "limit of a sum is part of the Limits (10%) content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Limits (10%); tested item = limit of a sum.",
+      "_id": "calculus_2"
+    },
+    {
+      "focus": "Calculus — Limits (10%)",
+      "prompt": "Which outline item belongs with Limits (10%) in Calculus?",
+      "options": [
+        "limit of a product",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Limits (10%)",
+      "level": 2,
+      "why": "limit of a product is part of the Limits (10%) content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Limits (10%); tested item = limit of a product.",
+      "_id": "calculus_3"
+    },
+    {
+      "focus": "Calculus — Limits (10%)",
+      "prompt": "Which outline item belongs with Limits (10%) in Calculus?",
+      "options": [
+        "limit of a quotient",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Limits (10%)",
+      "level": 2,
+      "why": "limit of a quotient is part of the Limits (10%) content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Limits (10%); tested item = limit of a quotient.",
+      "_id": "calculus_4"
+    },
+    {
+      "focus": "Calculus — Limits (10%)",
+      "prompt": "Which outline item belongs with Limits (10%) in Calculus?",
+      "options": [
+        "limit calculations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Limits (10%)",
+      "level": 2,
+      "why": "limit calculations is part of the Limits (10%) content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Limits (10%); tested item = limit calculations.",
+      "_id": "calculus_5"
+    },
+    {
+      "focus": "Calculus — Limits (10%)",
+      "prompt": "Which outline item belongs with Limits (10%) in Calculus?",
+      "options": [
+        "limits involving infinity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Limits (10%)",
+      "level": 2,
+      "why": "limits involving infinity is part of the Limits (10%) content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Limits (10%); tested item = limits involving infinity.",
+      "_id": "calculus_6"
+    },
+    {
+      "focus": "Calculus — Limits (10%)",
+      "prompt": "Which outline item belongs with Limits (10%) in Calculus?",
+      "options": [
+        "continuity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Limits (10%)",
+      "level": 2,
+      "why": "continuity is part of the Limits (10%) content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Limits (10%); tested item = continuity.",
+      "_id": "calculus_7"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which major topic is included in Calculus?",
+      "options": [
+        "The Derivative",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "The Derivative is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = The Derivative.",
+      "_id": "calculus_8"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "definitions of the derivative",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "definitions of the derivative is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = definitions of the derivative.",
+      "_id": "calculus_9"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "derivatives of elementary functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "derivatives of elementary functions is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = derivatives of elementary functions.",
+      "_id": "calculus_10"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "derivatives of sums",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "derivatives of sums is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = derivatives of sums.",
+      "_id": "calculus_11"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "derivatives of products",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "derivatives of products is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = derivatives of products.",
+      "_id": "calculus_12"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "derivatives of quotients",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "derivatives of quotients is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = derivatives of quotients.",
+      "_id": "calculus_13"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "chain rule",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "chain rule is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = chain rule.",
+      "_id": "calculus_14"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "implicit differentiation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "implicit differentiation is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = implicit differentiation.",
+      "_id": "calculus_15"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "derivative of the inverse of a function",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "derivative of the inverse of a function is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = derivative of the inverse of a function.",
+      "_id": "calculus_16"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "higher order derivatives",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "higher order derivatives is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = higher order derivatives.",
+      "_id": "calculus_17"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "characteristics of graphs of f",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "characteristics of graphs of f is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = characteristics of graphs of f.",
+      "_id": "calculus_18"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "characteristics of graphs of f prime",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "characteristics of graphs of f prime is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = characteristics of graphs of f prime.",
+      "_id": "calculus_19"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "characteristics of graphs of f double prime",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "characteristics of graphs of f double prime is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = characteristics of graphs of f double prime.",
+      "_id": "calculus_20"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "Mean Value Theorem",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "Mean Value Theorem is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = Mean Value Theorem.",
+      "_id": "calculus_21"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "applications of the Mean Value Theorem",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "applications of the Mean Value Theorem is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = applications of the Mean Value Theorem.",
+      "_id": "calculus_22"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "graphical illustrations of the Mean Value Theorem",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "graphical illustrations of the Mean Value Theorem is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = graphical illustrations of the Mean Value Theorem.",
+      "_id": "calculus_23"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "differentiability and continuity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "differentiability and continuity is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = differentiability and continuity.",
+      "_id": "calculus_24"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "L'Hospital's Rule",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "L'Hospital's Rule is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = L'Hospital's Rule.",
+      "_id": "calculus_25"
+    },
+    {
+      "focus": "Calculus — The Derivative",
+      "prompt": "Which outline item belongs with The Derivative in Calculus?",
+      "options": [
+        "quotient indeterminate forms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Derivative",
+      "level": 2,
+      "why": "quotient indeterminate forms is part of the The Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Derivative; tested item = quotient indeterminate forms.",
+      "_id": "calculus_26"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which major topic is included in Calculus?",
+      "options": [
+        "Applications of the Derivative",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "Applications of the Derivative is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = Applications of the Derivative.",
+      "_id": "calculus_27"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "slope of a curve at a point",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "slope of a curve at a point is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = slope of a curve at a point.",
+      "_id": "calculus_28"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "tangent lines",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "tangent lines is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = tangent lines.",
+      "_id": "calculus_29"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "linear approximation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "linear approximation is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = linear approximation.",
+      "_id": "calculus_30"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "increasing and decreasing functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "increasing and decreasing functions is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = increasing and decreasing functions.",
+      "_id": "calculus_31"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "relative maximum and minimum",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "relative maximum and minimum is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = relative maximum and minimum.",
+      "_id": "calculus_32"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "absolute maximum and minimum",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "absolute maximum and minimum is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = absolute maximum and minimum.",
+      "_id": "calculus_33"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "concavity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "concavity is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = concavity.",
+      "_id": "calculus_34"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "points of inflection",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "points of inflection is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = points of inflection.",
+      "_id": "calculus_35"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "extreme value problems",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "extreme value problems is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = extreme value problems.",
+      "_id": "calculus_36"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "velocity of a particle",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "velocity of a particle is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = velocity of a particle.",
+      "_id": "calculus_37"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "acceleration of a particle",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "acceleration of a particle is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = acceleration of a particle.",
+      "_id": "calculus_38"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "average rates of change",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "average rates of change is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = average rates of change.",
+      "_id": "calculus_39"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "instantaneous rates of change",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "instantaneous rates of change is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = instantaneous rates of change.",
+      "_id": "calculus_40"
+    },
+    {
+      "focus": "Calculus — Applications of the Derivative",
+      "prompt": "Which outline item belongs with Applications of the Derivative in Calculus?",
+      "options": [
+        "related rates of change",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Derivative",
+      "level": 2,
+      "why": "related rates of change is part of the Applications of the Derivative content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Derivative; tested item = related rates of change.",
+      "_id": "calculus_41"
+    },
+    {
+      "focus": "Calculus — Antiderivatives and Techniques of Integration",
+      "prompt": "Which major topic is included in Calculus?",
+      "options": [
+        "Antiderivatives and Techniques of Integration",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Antiderivatives and Techniques of Integration",
+      "level": 2,
+      "why": "Antiderivatives and Techniques of Integration is part of the Antiderivatives and Techniques of Integration content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Antiderivatives and Techniques of Integration; tested item = Antiderivatives and Techniques of Integration.",
+      "_id": "calculus_42"
+    },
+    {
+      "focus": "Calculus — Antiderivatives and Techniques of Integration",
+      "prompt": "Which outline item belongs with Antiderivatives and Techniques of Integration in Calculus?",
+      "options": [
+        "concept of antiderivatives",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Antiderivatives and Techniques of Integration",
+      "level": 2,
+      "why": "concept of antiderivatives is part of the Antiderivatives and Techniques of Integration content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Antiderivatives and Techniques of Integration; tested item = concept of antiderivatives.",
+      "_id": "calculus_43"
+    },
+    {
+      "focus": "Calculus — Antiderivatives and Techniques of Integration",
+      "prompt": "Which outline item belongs with Antiderivatives and Techniques of Integration in Calculus?",
+      "options": [
+        "basic integration formulas",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Antiderivatives and Techniques of Integration",
+      "level": 2,
+      "why": "basic integration formulas is part of the Antiderivatives and Techniques of Integration content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Antiderivatives and Techniques of Integration; tested item = basic integration formulas.",
+      "_id": "calculus_44"
+    },
+    {
+      "focus": "Calculus — Antiderivatives and Techniques of Integration",
+      "prompt": "Which outline item belongs with Antiderivatives and Techniques of Integration in Calculus?",
+      "options": [
+        "integration by substitution",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Antiderivatives and Techniques of Integration",
+      "level": 2,
+      "why": "integration by substitution is part of the Antiderivatives and Techniques of Integration content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Antiderivatives and Techniques of Integration; tested item = integration by substitution.",
+      "_id": "calculus_45"
+    },
+    {
+      "focus": "Calculus — Antiderivatives and Techniques of Integration",
+      "prompt": "Which outline item belongs with Antiderivatives and Techniques of Integration in Calculus?",
+      "options": [
+        "use of identities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Antiderivatives and Techniques of Integration",
+      "level": 2,
+      "why": "use of identities is part of the Antiderivatives and Techniques of Integration content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Antiderivatives and Techniques of Integration; tested item = use of identities.",
+      "_id": "calculus_46"
+    },
+    {
+      "focus": "Calculus — Antiderivatives and Techniques of Integration",
+      "prompt": "Which outline item belongs with Antiderivatives and Techniques of Integration in Calculus?",
+      "options": [
+        "change of variable",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Antiderivatives and Techniques of Integration",
+      "level": 2,
+      "why": "change of variable is part of the Antiderivatives and Techniques of Integration content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Antiderivatives and Techniques of Integration; tested item = change of variable.",
+      "_id": "calculus_47"
+    },
+    {
+      "focus": "Calculus — Applications of Antiderivatives",
+      "prompt": "Which major topic is included in Calculus?",
+      "options": [
+        "Applications of Antiderivatives",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of Antiderivatives",
+      "level": 2,
+      "why": "Applications of Antiderivatives is part of the Applications of Antiderivatives content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of Antiderivatives; tested item = Applications of Antiderivatives.",
+      "_id": "calculus_48"
+    },
+    {
+      "focus": "Calculus — Applications of Antiderivatives",
+      "prompt": "Which outline item belongs with Applications of Antiderivatives in Calculus?",
+      "options": [
+        "distance from acceleration with initial conditions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of Antiderivatives",
+      "level": 2,
+      "why": "distance from acceleration with initial conditions is part of the Applications of Antiderivatives content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of Antiderivatives; tested item = distance from acceleration with initial conditions.",
+      "_id": "calculus_49"
+    },
+    {
+      "focus": "Calculus — Applications of Antiderivatives",
+      "prompt": "Which outline item belongs with Applications of Antiderivatives in Calculus?",
+      "options": [
+        "velocity from acceleration with initial conditions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of Antiderivatives",
+      "level": 2,
+      "why": "velocity from acceleration with initial conditions is part of the Applications of Antiderivatives content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of Antiderivatives; tested item = velocity from acceleration with initial conditions.",
+      "_id": "calculus_50"
+    },
+    {
+      "focus": "Calculus — Applications of Antiderivatives",
+      "prompt": "Which outline item belongs with Applications of Antiderivatives in Calculus?",
+      "options": [
+        "solutions of differential equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of Antiderivatives",
+      "level": 2,
+      "why": "solutions of differential equations is part of the Applications of Antiderivatives content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of Antiderivatives; tested item = solutions of differential equations.",
+      "_id": "calculus_51"
+    },
+    {
+      "focus": "Calculus — Applications of Antiderivatives",
+      "prompt": "Which outline item belongs with Applications of Antiderivatives in Calculus?",
+      "options": [
+        "growth and decay applications",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of Antiderivatives",
+      "level": 2,
+      "why": "growth and decay applications is part of the Applications of Antiderivatives content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of Antiderivatives; tested item = growth and decay applications.",
+      "_id": "calculus_52"
+    },
+    {
+      "focus": "Calculus — The Definite Integral",
+      "prompt": "Which major topic is included in Calculus?",
+      "options": [
+        "The Definite Integral",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Definite Integral",
+      "level": 2,
+      "why": "The Definite Integral is part of the The Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Definite Integral; tested item = The Definite Integral.",
+      "_id": "calculus_53"
+    },
+    {
+      "focus": "Calculus — The Definite Integral",
+      "prompt": "Which outline item belongs with The Definite Integral in Calculus?",
+      "options": [
+        "definition as limit of Riemann sums",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Definite Integral",
+      "level": 2,
+      "why": "definition as limit of Riemann sums is part of the The Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Definite Integral; tested item = definition as limit of Riemann sums.",
+      "_id": "calculus_54"
+    },
+    {
+      "focus": "Calculus — The Definite Integral",
+      "prompt": "Which outline item belongs with The Definite Integral in Calculus?",
+      "options": [
+        "approximations using rectangles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Definite Integral",
+      "level": 2,
+      "why": "approximations using rectangles is part of the The Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Definite Integral; tested item = approximations using rectangles.",
+      "_id": "calculus_55"
+    },
+    {
+      "focus": "Calculus — The Definite Integral",
+      "prompt": "Which outline item belongs with The Definite Integral in Calculus?",
+      "options": [
+        "properties of the definite integral",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Definite Integral",
+      "level": 2,
+      "why": "properties of the definite integral is part of the The Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Definite Integral; tested item = properties of the definite integral.",
+      "_id": "calculus_56"
+    },
+    {
+      "focus": "Calculus — The Definite Integral",
+      "prompt": "Which outline item belongs with The Definite Integral in Calculus?",
+      "options": [
+        "Fundamental Theorem of Calculus",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "The Definite Integral",
+      "level": 2,
+      "why": "Fundamental Theorem of Calculus is part of the The Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = The Definite Integral; tested item = Fundamental Theorem of Calculus.",
+      "_id": "calculus_57"
+    },
+    {
+      "focus": "Calculus — Applications of the Definite Integral",
+      "prompt": "Which major topic is included in Calculus?",
+      "options": [
+        "Applications of the Definite Integral",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Definite Integral",
+      "level": 2,
+      "why": "Applications of the Definite Integral is part of the Applications of the Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Definite Integral; tested item = Applications of the Definite Integral.",
+      "_id": "calculus_58"
+    },
+    {
+      "focus": "Calculus — Applications of the Definite Integral",
+      "prompt": "Which outline item belongs with Applications of the Definite Integral in Calculus?",
+      "options": [
+        "average value of a function",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Definite Integral",
+      "level": 2,
+      "why": "average value of a function is part of the Applications of the Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Definite Integral; tested item = average value of a function.",
+      "_id": "calculus_59"
+    },
+    {
+      "focus": "Calculus — Applications of the Definite Integral",
+      "prompt": "Which outline item belongs with Applications of the Definite Integral in Calculus?",
+      "options": [
+        "area",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Definite Integral",
+      "level": 2,
+      "why": "area is part of the Applications of the Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Definite Integral; tested item = area.",
+      "_id": "calculus_60"
+    },
+    {
+      "focus": "Calculus — Applications of the Definite Integral",
+      "prompt": "Which outline item belongs with Applications of the Definite Integral in Calculus?",
+      "options": [
+        "area between curves",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Definite Integral",
+      "level": 2,
+      "why": "area between curves is part of the Applications of the Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Definite Integral; tested item = area between curves.",
+      "_id": "calculus_61"
+    },
+    {
+      "focus": "Calculus — Applications of the Definite Integral",
+      "prompt": "Which outline item belongs with Applications of the Definite Integral in Calculus?",
+      "options": [
+        "accumulated change from a rate of change",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Applications of the Definite Integral",
+      "level": 2,
+      "why": "accumulated change from a rate of change is part of the Applications of the Definite Integral content area for Calculus (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Calculus; major area = Applications of the Definite Integral; tested item = accumulated change from a rate of change.",
+      "_id": "calculus_62"
+    }
+  ],
+  "chemistry": [
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Atomic Theory and Atomic Structure",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "Atomic Theory and Atomic Structure is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = Atomic Theory and Atomic Structure.",
+      "_id": "chemistry_0"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "evidence for atomic theory",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "evidence for atomic theory is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = evidence for atomic theory.",
+      "_id": "chemistry_1"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "atomic masses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "atomic masses is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = atomic masses.",
+      "_id": "chemistry_2"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "determination of atomic masses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "determination of atomic masses is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = determination of atomic masses.",
+      "_id": "chemistry_3"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "atomic number",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "atomic number is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = atomic number.",
+      "_id": "chemistry_4"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "mass number",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "mass number is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = mass number.",
+      "_id": "chemistry_5"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "isotopes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "isotopes is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = isotopes.",
+      "_id": "chemistry_6"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "mass spectroscopy",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "mass spectroscopy is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = mass spectroscopy.",
+      "_id": "chemistry_7"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "electron energy levels",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "electron energy levels is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = electron energy levels.",
+      "_id": "chemistry_8"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "atomic spectra",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "atomic spectra is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = atomic spectra.",
+      "_id": "chemistry_9"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "atomic orbitals",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "atomic orbitals is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = atomic orbitals.",
+      "_id": "chemistry_10"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "atomic radii",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "atomic radii is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = atomic radii.",
+      "_id": "chemistry_11"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "ionization energies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "ionization energies is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = ionization energies.",
+      "_id": "chemistry_12"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "electron affinities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "electron affinities is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = electron affinities.",
+      "_id": "chemistry_13"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "oxidation states",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "oxidation states is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = oxidation states.",
+      "_id": "chemistry_14"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "nuclear equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "nuclear equations is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = nuclear equations.",
+      "_id": "chemistry_15"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "half-lives",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "half-lives is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = half-lives.",
+      "_id": "chemistry_16"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "radioactivity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "radioactivity is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = radioactivity.",
+      "_id": "chemistry_17"
+    },
+    {
+      "focus": "Chemistry — Atomic Theory and Atomic Structure",
+      "prompt": "Which outline item belongs with Atomic Theory and Atomic Structure in Chemistry?",
+      "options": [
+        "chemical applications of nuclear chemistry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Atomic Theory and Atomic Structure",
+      "level": 2,
+      "why": "chemical applications of nuclear chemistry is part of the Atomic Theory and Atomic Structure content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Atomic Theory and Atomic Structure; tested item = chemical applications of nuclear chemistry.",
+      "_id": "chemistry_18"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Chemical Bonding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "Chemical Bonding is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = Chemical Bonding.",
+      "_id": "chemistry_19"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "covalent bonding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "covalent bonding is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = covalent bonding.",
+      "_id": "chemistry_20"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "ionic bonding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "ionic bonding is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = ionic bonding.",
+      "_id": "chemistry_21"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "metallic bonding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "metallic bonding is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = metallic bonding.",
+      "_id": "chemistry_22"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "network bonding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "network bonding is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = network bonding.",
+      "_id": "chemistry_23"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "dispersion forces",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "dispersion forces is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = dispersion forces.",
+      "_id": "chemistry_24"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "hydrogen bonding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "hydrogen bonding is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = hydrogen bonding.",
+      "_id": "chemistry_25"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "structure-property relationships",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "structure-property relationships is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = structure-property relationships.",
+      "_id": "chemistry_26"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "bond polarity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "bond polarity is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = bond polarity.",
+      "_id": "chemistry_27"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "electronegativity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "electronegativity is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = electronegativity.",
+      "_id": "chemistry_28"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "VSEPR theory",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "VSEPR theory is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = VSEPR theory.",
+      "_id": "chemistry_29"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "Lewis electron-dot diagrams",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "Lewis electron-dot diagrams is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = Lewis electron-dot diagrams.",
+      "_id": "chemistry_30"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "hybridization",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "hybridization is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = hybridization.",
+      "_id": "chemistry_31"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "molecular geometry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "molecular geometry is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = molecular geometry.",
+      "_id": "chemistry_32"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "geometry of ions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "geometry of ions is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = geometry of ions.",
+      "_id": "chemistry_33"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "coordination complexes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "coordination complexes is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = coordination complexes.",
+      "_id": "chemistry_34"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "structural isomerism",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "structural isomerism is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = structural isomerism.",
+      "_id": "chemistry_35"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "resonance",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "resonance is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = resonance.",
+      "_id": "chemistry_36"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "sigma bonds",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "sigma bonds is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = sigma bonds.",
+      "_id": "chemistry_37"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "pi bonds",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "pi bonds is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = pi bonds.",
+      "_id": "chemistry_38"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "dipole moments",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "dipole moments is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = dipole moments.",
+      "_id": "chemistry_39"
+    },
+    {
+      "focus": "Chemistry — Chemical Bonding",
+      "prompt": "Which outline item belongs with Chemical Bonding in Chemistry?",
+      "options": [
+        "properties related to structure",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Chemical Bonding",
+      "level": 2,
+      "why": "properties related to structure is part of the Chemical Bonding content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Chemical Bonding; tested item = properties related to structure.",
+      "_id": "chemistry_40"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Gases",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "Gases is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = Gases.",
+      "_id": "chemistry_41"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which outline item belongs with Gases in Chemistry?",
+      "options": [
+        "ideal gas laws",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "ideal gas laws is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = ideal gas laws.",
+      "_id": "chemistry_42"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which outline item belongs with Gases in Chemistry?",
+      "options": [
+        "equations of state",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "equations of state is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = equations of state.",
+      "_id": "chemistry_43"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which outline item belongs with Gases in Chemistry?",
+      "options": [
+        "mole concept",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "mole concept is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = mole concept.",
+      "_id": "chemistry_44"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which outline item belongs with Gases in Chemistry?",
+      "options": [
+        "Avogadro's number",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "Avogadro's number is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = Avogadro's number.",
+      "_id": "chemistry_45"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which outline item belongs with Gases in Chemistry?",
+      "options": [
+        "kinetic-molecular theory",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "kinetic-molecular theory is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = kinetic-molecular theory.",
+      "_id": "chemistry_46"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which outline item belongs with Gases in Chemistry?",
+      "options": [
+        "interpretation of ideal gas laws",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "interpretation of ideal gas laws is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = interpretation of ideal gas laws.",
+      "_id": "chemistry_47"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which outline item belongs with Gases in Chemistry?",
+      "options": [
+        "temperature and kinetic energy",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "temperature and kinetic energy is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = temperature and kinetic energy.",
+      "_id": "chemistry_48"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which outline item belongs with Gases in Chemistry?",
+      "options": [
+        "Boltzmann distribution",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "Boltzmann distribution is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = Boltzmann distribution.",
+      "_id": "chemistry_49"
+    },
+    {
+      "focus": "Chemistry — Gases",
+      "prompt": "Which outline item belongs with Gases in Chemistry?",
+      "options": [
+        "deviations from ideal gas laws",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Gases",
+      "level": 2,
+      "why": "deviations from ideal gas laws is part of the Gases content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Gases; tested item = deviations from ideal gas laws.",
+      "_id": "chemistry_50"
+    },
+    {
+      "focus": "Chemistry — Liquids and Solids",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Liquids and Solids",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Liquids and Solids",
+      "level": 2,
+      "why": "Liquids and Solids is part of the Liquids and Solids content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Liquids and Solids; tested item = Liquids and Solids.",
+      "_id": "chemistry_51"
+    },
+    {
+      "focus": "Chemistry — Liquids and Solids",
+      "prompt": "Which outline item belongs with Liquids and Solids in Chemistry?",
+      "options": [
+        "kinetic-molecular viewpoint",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Liquids and Solids",
+      "level": 2,
+      "why": "kinetic-molecular viewpoint is part of the Liquids and Solids content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Liquids and Solids; tested item = kinetic-molecular viewpoint.",
+      "_id": "chemistry_52"
+    },
+    {
+      "focus": "Chemistry — Liquids and Solids",
+      "prompt": "Which outline item belongs with Liquids and Solids in Chemistry?",
+      "options": [
+        "phase diagrams",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Liquids and Solids",
+      "level": 2,
+      "why": "phase diagrams is part of the Liquids and Solids content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Liquids and Solids; tested item = phase diagrams.",
+      "_id": "chemistry_53"
+    },
+    {
+      "focus": "Chemistry — Liquids and Solids",
+      "prompt": "Which outline item belongs with Liquids and Solids in Chemistry?",
+      "options": [
+        "changes of state",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Liquids and Solids",
+      "level": 2,
+      "why": "changes of state is part of the Liquids and Solids content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Liquids and Solids; tested item = changes of state.",
+      "_id": "chemistry_54"
+    },
+    {
+      "focus": "Chemistry — Liquids and Solids",
+      "prompt": "Which outline item belongs with Liquids and Solids in Chemistry?",
+      "options": [
+        "critical phenomena",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Liquids and Solids",
+      "level": 2,
+      "why": "critical phenomena is part of the Liquids and Solids content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Liquids and Solids; tested item = critical phenomena.",
+      "_id": "chemistry_55"
+    },
+    {
+      "focus": "Chemistry — Solutions",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Solutions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Solutions",
+      "level": 2,
+      "why": "Solutions is part of the Solutions content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Solutions; tested item = Solutions.",
+      "_id": "chemistry_56"
+    },
+    {
+      "focus": "Chemistry — Solutions",
+      "prompt": "Which outline item belongs with Solutions in Chemistry?",
+      "options": [
+        "types of solutions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Solutions",
+      "level": 2,
+      "why": "types of solutions is part of the Solutions content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Solutions; tested item = types of solutions.",
+      "_id": "chemistry_57"
+    },
+    {
+      "focus": "Chemistry — Solutions",
+      "prompt": "Which outline item belongs with Solutions in Chemistry?",
+      "options": [
+        "factors affecting solubility",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Solutions",
+      "level": 2,
+      "why": "factors affecting solubility is part of the Solutions content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Solutions; tested item = factors affecting solubility.",
+      "_id": "chemistry_58"
+    },
+    {
+      "focus": "Chemistry — Solutions",
+      "prompt": "Which outline item belongs with Solutions in Chemistry?",
+      "options": [
+        "methods of expressing concentration",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Solutions",
+      "level": 2,
+      "why": "methods of expressing concentration is part of the Solutions content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Solutions; tested item = methods of expressing concentration.",
+      "_id": "chemistry_59"
+    },
+    {
+      "focus": "Chemistry — Solutions",
+      "prompt": "Which outline item belongs with Solutions in Chemistry?",
+      "options": [
+        "colligative properties",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Solutions",
+      "level": 2,
+      "why": "colligative properties is part of the Solutions content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Solutions; tested item = colligative properties.",
+      "_id": "chemistry_60"
+    },
+    {
+      "focus": "Chemistry — Solutions",
+      "prompt": "Which outline item belongs with Solutions in Chemistry?",
+      "options": [
+        "Raoult's law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Solutions",
+      "level": 2,
+      "why": "Raoult's law is part of the Solutions content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Solutions; tested item = Raoult's law.",
+      "_id": "chemistry_61"
+    },
+    {
+      "focus": "Chemistry — Solutions",
+      "prompt": "Which outline item belongs with Solutions in Chemistry?",
+      "options": [
+        "interionic attraction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Solutions",
+      "level": 2,
+      "why": "interionic attraction is part of the Solutions content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Solutions; tested item = interionic attraction.",
+      "_id": "chemistry_62"
+    },
+    {
+      "focus": "Chemistry — Solutions",
+      "prompt": "Which outline item belongs with Solutions in Chemistry?",
+      "options": [
+        "solubility",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Solutions",
+      "level": 2,
+      "why": "solubility is part of the Solutions content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Solutions; tested item = solubility.",
+      "_id": "chemistry_63"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Reaction Types",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "Reaction Types is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = Reaction Types.",
+      "_id": "chemistry_64"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "Arrhenius acids and bases",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "Arrhenius acids and bases is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = Arrhenius acids and bases.",
+      "_id": "chemistry_65"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "Bronsted-Lowry acids and bases",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "Bronsted-Lowry acids and bases is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = Bronsted-Lowry acids and bases.",
+      "_id": "chemistry_66"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "Lewis acids and bases",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "Lewis acids and bases is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = Lewis acids and bases.",
+      "_id": "chemistry_67"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "amphoterism",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "amphoterism is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = amphoterism.",
+      "_id": "chemistry_68"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "coordination complex reactions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "coordination complex reactions is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = coordination complex reactions.",
+      "_id": "chemistry_69"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "precipitation reactions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "precipitation reactions is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = precipitation reactions.",
+      "_id": "chemistry_70"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "oxidation-reduction reactions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "oxidation-reduction reactions is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = oxidation-reduction reactions.",
+      "_id": "chemistry_71"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "oxidation number",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "oxidation number is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = oxidation number.",
+      "_id": "chemistry_72"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "electron role in redox",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "electron role in redox is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = electron role in redox.",
+      "_id": "chemistry_73"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "electrochemistry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "electrochemistry is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = electrochemistry.",
+      "_id": "chemistry_74"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "electrolytic cells",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "electrolytic cells is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = electrolytic cells.",
+      "_id": "chemistry_75"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "standard half-cell potentials",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "standard half-cell potentials is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = standard half-cell potentials.",
+      "_id": "chemistry_76"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "predicting redox direction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "predicting redox direction is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = predicting redox direction.",
+      "_id": "chemistry_77"
+    },
+    {
+      "focus": "Chemistry — Reaction Types",
+      "prompt": "Which outline item belongs with Reaction Types in Chemistry?",
+      "options": [
+        "concentration effects in redox",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Reaction Types",
+      "level": 2,
+      "why": "concentration effects in redox is part of the Reaction Types content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Reaction Types; tested item = concentration effects in redox.",
+      "_id": "chemistry_78"
+    },
+    {
+      "focus": "Chemistry — Equations and Stoichiometry",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Equations and Stoichiometry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Stoichiometry",
+      "level": 2,
+      "why": "Equations and Stoichiometry is part of the Equations and Stoichiometry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equations and Stoichiometry; tested item = Equations and Stoichiometry.",
+      "_id": "chemistry_79"
+    },
+    {
+      "focus": "Chemistry — Equations and Stoichiometry",
+      "prompt": "Which outline item belongs with Equations and Stoichiometry in Chemistry?",
+      "options": [
+        "ionic species",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Stoichiometry",
+      "level": 2,
+      "why": "ionic species is part of the Equations and Stoichiometry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equations and Stoichiometry; tested item = ionic species.",
+      "_id": "chemistry_80"
+    },
+    {
+      "focus": "Chemistry — Equations and Stoichiometry",
+      "prompt": "Which outline item belongs with Equations and Stoichiometry in Chemistry?",
+      "options": [
+        "molecular species",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Stoichiometry",
+      "level": 2,
+      "why": "molecular species is part of the Equations and Stoichiometry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equations and Stoichiometry; tested item = molecular species.",
+      "_id": "chemistry_81"
+    },
+    {
+      "focus": "Chemistry — Equations and Stoichiometry",
+      "prompt": "Which outline item belongs with Equations and Stoichiometry in Chemistry?",
+      "options": [
+        "net-ionic equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Stoichiometry",
+      "level": 2,
+      "why": "net-ionic equations is part of the Equations and Stoichiometry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equations and Stoichiometry; tested item = net-ionic equations.",
+      "_id": "chemistry_82"
+    },
+    {
+      "focus": "Chemistry — Equations and Stoichiometry",
+      "prompt": "Which outline item belongs with Equations and Stoichiometry in Chemistry?",
+      "options": [
+        "mass relations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Stoichiometry",
+      "level": 2,
+      "why": "mass relations is part of the Equations and Stoichiometry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equations and Stoichiometry; tested item = mass relations.",
+      "_id": "chemistry_83"
+    },
+    {
+      "focus": "Chemistry — Equations and Stoichiometry",
+      "prompt": "Which outline item belongs with Equations and Stoichiometry in Chemistry?",
+      "options": [
+        "volume relations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Stoichiometry",
+      "level": 2,
+      "why": "volume relations is part of the Equations and Stoichiometry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equations and Stoichiometry; tested item = volume relations.",
+      "_id": "chemistry_84"
+    },
+    {
+      "focus": "Chemistry — Equations and Stoichiometry",
+      "prompt": "Which outline item belongs with Equations and Stoichiometry in Chemistry?",
+      "options": [
+        "balancing equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Stoichiometry",
+      "level": 2,
+      "why": "balancing equations is part of the Equations and Stoichiometry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equations and Stoichiometry; tested item = balancing equations.",
+      "_id": "chemistry_85"
+    },
+    {
+      "focus": "Chemistry — Equations and Stoichiometry",
+      "prompt": "Which outline item belongs with Equations and Stoichiometry in Chemistry?",
+      "options": [
+        "balancing redox equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Stoichiometry",
+      "level": 2,
+      "why": "balancing redox equations is part of the Equations and Stoichiometry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equations and Stoichiometry; tested item = balancing redox equations.",
+      "_id": "chemistry_86"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Equilibrium",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "Equilibrium is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = Equilibrium.",
+      "_id": "chemistry_87"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "dynamic equilibrium",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "dynamic equilibrium is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = dynamic equilibrium.",
+      "_id": "chemistry_88"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "Le Chatelier's principle",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "Le Chatelier's principle is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = Le Chatelier's principle.",
+      "_id": "chemistry_89"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "equilibrium constants",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "equilibrium constants is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = equilibrium constants.",
+      "_id": "chemistry_90"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "Kc",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "Kc is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = Kc.",
+      "_id": "chemistry_91"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "Kp",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "Kp is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = Kp.",
+      "_id": "chemistry_92"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "solution equilibrium constants",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "solution equilibrium constants is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = solution equilibrium constants.",
+      "_id": "chemistry_93"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "acid constants",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "acid constants is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = acid constants.",
+      "_id": "chemistry_94"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "base constants",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "base constants is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = base constants.",
+      "_id": "chemistry_95"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "pK",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "pK is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = pK.",
+      "_id": "chemistry_96"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "pH",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "pH is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = pH.",
+      "_id": "chemistry_97"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "solubility product constants",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "solubility product constants is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = solubility product constants.",
+      "_id": "chemistry_98"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "precipitation applications",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "precipitation applications is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = precipitation applications.",
+      "_id": "chemistry_99"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "dissolution of slightly soluble compounds",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "dissolution of slightly soluble compounds is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = dissolution of slightly soluble compounds.",
+      "_id": "chemistry_100"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "complex ion constants",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "complex ion constants is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = complex ion constants.",
+      "_id": "chemistry_101"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "common ion effect",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "common ion effect is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = common ion effect.",
+      "_id": "chemistry_102"
+    },
+    {
+      "focus": "Chemistry — Equilibrium",
+      "prompt": "Which outline item belongs with Equilibrium in Chemistry?",
+      "options": [
+        "buffers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equilibrium",
+      "level": 2,
+      "why": "buffers is part of the Equilibrium content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Equilibrium; tested item = buffers.",
+      "_id": "chemistry_103"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Kinetics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "Kinetics is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = Kinetics.",
+      "_id": "chemistry_104"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which outline item belongs with Kinetics in Chemistry?",
+      "options": [
+        "rate of reaction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "rate of reaction is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = rate of reaction.",
+      "_id": "chemistry_105"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which outline item belongs with Kinetics in Chemistry?",
+      "options": [
+        "order of reaction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "order of reaction is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = order of reaction.",
+      "_id": "chemistry_106"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which outline item belongs with Kinetics in Chemistry?",
+      "options": [
+        "rate constant",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "rate constant is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = rate constant.",
+      "_id": "chemistry_107"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which outline item belongs with Kinetics in Chemistry?",
+      "options": [
+        "experimental determination of order",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "experimental determination of order is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = experimental determination of order.",
+      "_id": "chemistry_108"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which outline item belongs with Kinetics in Chemistry?",
+      "options": [
+        "temperature effects on rates",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "temperature effects on rates is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = temperature effects on rates.",
+      "_id": "chemistry_109"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which outline item belongs with Kinetics in Chemistry?",
+      "options": [
+        "activation energy",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "activation energy is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = activation energy.",
+      "_id": "chemistry_110"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which outline item belongs with Kinetics in Chemistry?",
+      "options": [
+        "catalysts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "catalysts is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = catalysts.",
+      "_id": "chemistry_111"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which outline item belongs with Kinetics in Chemistry?",
+      "options": [
+        "rate-determining step",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "rate-determining step is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = rate-determining step.",
+      "_id": "chemistry_112"
+    },
+    {
+      "focus": "Chemistry — Kinetics",
+      "prompt": "Which outline item belongs with Kinetics in Chemistry?",
+      "options": [
+        "reaction mechanism",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Kinetics",
+      "level": 2,
+      "why": "reaction mechanism is part of the Kinetics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Kinetics; tested item = reaction mechanism.",
+      "_id": "chemistry_113"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Thermodynamics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "Thermodynamics is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = Thermodynamics.",
+      "_id": "chemistry_114"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "state functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "state functions is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = state functions.",
+      "_id": "chemistry_115"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "first law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "first law is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = first law.",
+      "_id": "chemistry_116"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "heat of formation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "heat of formation is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = heat of formation.",
+      "_id": "chemistry_117"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "heat of reaction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "heat of reaction is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = heat of reaction.",
+      "_id": "chemistry_118"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "enthalpy change",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "enthalpy change is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = enthalpy change.",
+      "_id": "chemistry_119"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "Hess's law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "Hess's law is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = Hess's law.",
+      "_id": "chemistry_120"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "heat capacity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "heat capacity is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = heat capacity.",
+      "_id": "chemistry_121"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "heats of vaporization",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "heats of vaporization is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = heats of vaporization.",
+      "_id": "chemistry_122"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "heats of fusion",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "heats of fusion is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = heats of fusion.",
+      "_id": "chemistry_123"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "second law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "second law is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = second law.",
+      "_id": "chemistry_124"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "free energy of formation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "free energy of formation is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = free energy of formation.",
+      "_id": "chemistry_125"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "free energy of reaction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "free energy of reaction is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = free energy of reaction.",
+      "_id": "chemistry_126"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "free energy dependence on enthalpy and entropy",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "free energy dependence on enthalpy and entropy is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = free energy dependence on enthalpy and entropy.",
+      "_id": "chemistry_127"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "free energy and equilibrium constants",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "free energy and equilibrium constants is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = free energy and equilibrium constants.",
+      "_id": "chemistry_128"
+    },
+    {
+      "focus": "Chemistry — Thermodynamics",
+      "prompt": "Which outline item belongs with Thermodynamics in Chemistry?",
+      "options": [
+        "free energy and electrode potentials",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Thermodynamics",
+      "level": 2,
+      "why": "free energy and electrode potentials is part of the Thermodynamics content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Thermodynamics; tested item = free energy and electrode potentials.",
+      "_id": "chemistry_129"
+    },
+    {
+      "focus": "Chemistry — Descriptive Chemistry",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Descriptive Chemistry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Descriptive Chemistry",
+      "level": 2,
+      "why": "Descriptive Chemistry is part of the Descriptive Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Descriptive Chemistry; tested item = Descriptive Chemistry.",
+      "_id": "chemistry_130"
+    },
+    {
+      "focus": "Chemistry — Descriptive Chemistry",
+      "prompt": "Which outline item belongs with Descriptive Chemistry in Chemistry?",
+      "options": [
+        "chemical reactivity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Descriptive Chemistry",
+      "level": 2,
+      "why": "chemical reactivity is part of the Descriptive Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Descriptive Chemistry; tested item = chemical reactivity.",
+      "_id": "chemistry_131"
+    },
+    {
+      "focus": "Chemistry — Descriptive Chemistry",
+      "prompt": "Which outline item belongs with Descriptive Chemistry in Chemistry?",
+      "options": [
+        "products of chemical reactions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Descriptive Chemistry",
+      "level": 2,
+      "why": "products of chemical reactions is part of the Descriptive Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Descriptive Chemistry; tested item = products of chemical reactions.",
+      "_id": "chemistry_132"
+    },
+    {
+      "focus": "Chemistry — Descriptive Chemistry",
+      "prompt": "Which outline item belongs with Descriptive Chemistry in Chemistry?",
+      "options": [
+        "periodic table relationships",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Descriptive Chemistry",
+      "level": 2,
+      "why": "periodic table relationships is part of the Descriptive Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Descriptive Chemistry; tested item = periodic table relationships.",
+      "_id": "chemistry_133"
+    },
+    {
+      "focus": "Chemistry — Descriptive Chemistry",
+      "prompt": "Which outline item belongs with Descriptive Chemistry in Chemistry?",
+      "options": [
+        "main group chemistry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Descriptive Chemistry",
+      "level": 2,
+      "why": "main group chemistry is part of the Descriptive Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Descriptive Chemistry; tested item = main group chemistry.",
+      "_id": "chemistry_134"
+    },
+    {
+      "focus": "Chemistry — Descriptive Chemistry",
+      "prompt": "Which outline item belongs with Descriptive Chemistry in Chemistry?",
+      "options": [
+        "transition element chemistry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Descriptive Chemistry",
+      "level": 2,
+      "why": "transition element chemistry is part of the Descriptive Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Descriptive Chemistry; tested item = transition element chemistry.",
+      "_id": "chemistry_135"
+    },
+    {
+      "focus": "Chemistry — Descriptive Chemistry",
+      "prompt": "Which outline item belongs with Descriptive Chemistry in Chemistry?",
+      "options": [
+        "systematic nomenclature",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Descriptive Chemistry",
+      "level": 2,
+      "why": "systematic nomenclature is part of the Descriptive Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Descriptive Chemistry; tested item = systematic nomenclature.",
+      "_id": "chemistry_136"
+    },
+    {
+      "focus": "Chemistry — Descriptive Chemistry",
+      "prompt": "Which outline item belongs with Descriptive Chemistry in Chemistry?",
+      "options": [
+        "organic functional groups",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Descriptive Chemistry",
+      "level": 2,
+      "why": "organic functional groups is part of the Descriptive Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Descriptive Chemistry; tested item = organic functional groups.",
+      "_id": "chemistry_137"
+    },
+    {
+      "focus": "Chemistry — Descriptive Chemistry",
+      "prompt": "Which outline item belongs with Descriptive Chemistry in Chemistry?",
+      "options": [
+        "organic isomerism",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Descriptive Chemistry",
+      "level": 2,
+      "why": "organic isomerism is part of the Descriptive Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Descriptive Chemistry; tested item = organic isomerism.",
+      "_id": "chemistry_138"
+    },
+    {
+      "focus": "Chemistry — Experimental Chemistry",
+      "prompt": "Which major topic is included in Chemistry?",
+      "options": [
+        "Experimental Chemistry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Experimental Chemistry",
+      "level": 2,
+      "why": "Experimental Chemistry is part of the Experimental Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Experimental Chemistry; tested item = Experimental Chemistry.",
+      "_id": "chemistry_139"
+    },
+    {
+      "focus": "Chemistry — Experimental Chemistry",
+      "prompt": "Which outline item belongs with Experimental Chemistry in Chemistry?",
+      "options": [
+        "laboratory equipment",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Experimental Chemistry",
+      "level": 2,
+      "why": "laboratory equipment is part of the Experimental Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Experimental Chemistry; tested item = laboratory equipment.",
+      "_id": "chemistry_140"
+    },
+    {
+      "focus": "Chemistry — Experimental Chemistry",
+      "prompt": "Which outline item belongs with Experimental Chemistry in Chemistry?",
+      "options": [
+        "laboratory observations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Experimental Chemistry",
+      "level": 2,
+      "why": "laboratory observations is part of the Experimental Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Experimental Chemistry; tested item = laboratory observations.",
+      "_id": "chemistry_141"
+    },
+    {
+      "focus": "Chemistry — Experimental Chemistry",
+      "prompt": "Which outline item belongs with Experimental Chemistry in Chemistry?",
+      "options": [
+        "laboratory calculations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Experimental Chemistry",
+      "level": 2,
+      "why": "laboratory calculations is part of the Experimental Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Experimental Chemistry; tested item = laboratory calculations.",
+      "_id": "chemistry_142"
+    },
+    {
+      "focus": "Chemistry — Experimental Chemistry",
+      "prompt": "Which outline item belongs with Experimental Chemistry in Chemistry?",
+      "options": [
+        "interpretation of experimental results",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Experimental Chemistry",
+      "level": 2,
+      "why": "interpretation of experimental results is part of the Experimental Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Experimental Chemistry; tested item = interpretation of experimental results.",
+      "_id": "chemistry_143"
+    },
+    {
+      "focus": "Chemistry — Experimental Chemistry",
+      "prompt": "Which outline item belongs with Experimental Chemistry in Chemistry?",
+      "options": [
+        "basic tools of chemistry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Experimental Chemistry",
+      "level": 2,
+      "why": "basic tools of chemistry is part of the Experimental Chemistry content area for Chemistry (AP/CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Chemistry; major area = Experimental Chemistry; tested item = basic tools of chemistry.",
+      "_id": "chemistry_144"
+    }
+  ],
+  "college-algebra": [
+    {
+      "focus": "College Algebra — Algebraic Operations (25%)",
+      "prompt": "Which major topic is included in College Algebra?",
+      "options": [
+        "Algebraic Operations (25%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Operations (25%)",
+      "level": 2,
+      "why": "Algebraic Operations (25%) is part of the Algebraic Operations (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Algebraic Operations (25%); tested item = Algebraic Operations (25%).",
+      "_id": "college-algebra_0"
+    },
+    {
+      "focus": "College Algebra — Algebraic Operations (25%)",
+      "prompt": "Which outline item belongs with Algebraic Operations (25%) in College Algebra?",
+      "options": [
+        "operations with exponents",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Operations (25%)",
+      "level": 2,
+      "why": "operations with exponents is part of the Algebraic Operations (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Algebraic Operations (25%); tested item = operations with exponents.",
+      "_id": "college-algebra_1"
+    },
+    {
+      "focus": "College Algebra — Algebraic Operations (25%)",
+      "prompt": "Which outline item belongs with Algebraic Operations (25%) in College Algebra?",
+      "options": [
+        "factoring polynomials",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Operations (25%)",
+      "level": 2,
+      "why": "factoring polynomials is part of the Algebraic Operations (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Algebraic Operations (25%); tested item = factoring polynomials.",
+      "_id": "college-algebra_2"
+    },
+    {
+      "focus": "College Algebra — Algebraic Operations (25%)",
+      "prompt": "Which outline item belongs with Algebraic Operations (25%) in College Algebra?",
+      "options": [
+        "expanding polynomials",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Operations (25%)",
+      "level": 2,
+      "why": "expanding polynomials is part of the Algebraic Operations (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Algebraic Operations (25%); tested item = expanding polynomials.",
+      "_id": "college-algebra_3"
+    },
+    {
+      "focus": "College Algebra — Algebraic Operations (25%)",
+      "prompt": "Which outline item belongs with Algebraic Operations (25%) in College Algebra?",
+      "options": [
+        "operations with algebraic expressions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Operations (25%)",
+      "level": 2,
+      "why": "operations with algebraic expressions is part of the Algebraic Operations (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Algebraic Operations (25%); tested item = operations with algebraic expressions.",
+      "_id": "college-algebra_4"
+    },
+    {
+      "focus": "College Algebra — Algebraic Operations (25%)",
+      "prompt": "Which outline item belongs with Algebraic Operations (25%) in College Algebra?",
+      "options": [
+        "absolute value",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Operations (25%)",
+      "level": 2,
+      "why": "absolute value is part of the Algebraic Operations (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Algebraic Operations (25%); tested item = absolute value.",
+      "_id": "college-algebra_5"
+    },
+    {
+      "focus": "College Algebra — Algebraic Operations (25%)",
+      "prompt": "Which outline item belongs with Algebraic Operations (25%) in College Algebra?",
+      "options": [
+        "properties of logarithms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Operations (25%)",
+      "level": 2,
+      "why": "properties of logarithms is part of the Algebraic Operations (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Algebraic Operations (25%); tested item = properties of logarithms.",
+      "_id": "college-algebra_6"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which major topic is included in College Algebra?",
+      "options": [
+        "Equations and Inequalities (25%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "Equations and Inequalities (25%) is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = Equations and Inequalities (25%).",
+      "_id": "college-algebra_7"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "linear equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "linear equations is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = linear equations.",
+      "_id": "college-algebra_8"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "linear inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "linear inequalities is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = linear inequalities.",
+      "_id": "college-algebra_9"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "quadratic equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "quadratic equations is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = quadratic equations.",
+      "_id": "college-algebra_10"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "quadratic inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "quadratic inequalities is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = quadratic inequalities.",
+      "_id": "college-algebra_11"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "absolute value equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "absolute value equations is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = absolute value equations.",
+      "_id": "college-algebra_12"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "absolute value inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "absolute value inequalities is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = absolute value inequalities.",
+      "_id": "college-algebra_13"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "systems of equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "systems of equations is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = systems of equations.",
+      "_id": "college-algebra_14"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "systems of inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "systems of inequalities is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = systems of inequalities.",
+      "_id": "college-algebra_15"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "exponential equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "exponential equations is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = exponential equations.",
+      "_id": "college-algebra_16"
+    },
+    {
+      "focus": "College Algebra — Equations and Inequalities (25%)",
+      "prompt": "Which outline item belongs with Equations and Inequalities (25%) in College Algebra?",
+      "options": [
+        "logarithmic equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Equations and Inequalities (25%)",
+      "level": 2,
+      "why": "logarithmic equations is part of the Equations and Inequalities (25%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Equations and Inequalities (25%); tested item = logarithmic equations.",
+      "_id": "college-algebra_17"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which major topic is included in College Algebra?",
+      "options": [
+        "Functions and Their Properties (30%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "Functions and Their Properties (30%) is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = Functions and Their Properties (30%).",
+      "_id": "college-algebra_18"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "definition of functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "definition of functions is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = definition of functions.",
+      "_id": "college-algebra_19"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "interpretation of functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "interpretation of functions is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = interpretation of functions.",
+      "_id": "college-algebra_20"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "representation of functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "representation of functions is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = representation of functions.",
+      "_id": "college-algebra_21"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "modeling with functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "modeling with functions is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = modeling with functions.",
+      "_id": "college-algebra_22"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "domain",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "domain is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = domain.",
+      "_id": "college-algebra_23"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "range",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "range is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = range.",
+      "_id": "college-algebra_24"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "evaluation of functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "evaluation of functions is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = evaluation of functions.",
+      "_id": "college-algebra_25"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "algebra of functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "algebra of functions is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = algebra of functions.",
+      "_id": "college-algebra_26"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "graphs and intercepts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "graphs and intercepts is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = graphs and intercepts.",
+      "_id": "college-algebra_27"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "symmetry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "symmetry is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = symmetry.",
+      "_id": "college-algebra_28"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "transformations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "transformations is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = transformations.",
+      "_id": "college-algebra_29"
+    },
+    {
+      "focus": "College Algebra — Functions and Their Properties (30%)",
+      "prompt": "Which outline item belongs with Functions and Their Properties (30%) in College Algebra?",
+      "options": [
+        "inverse functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions and Their Properties (30%)",
+      "level": 2,
+      "why": "inverse functions is part of the Functions and Their Properties (30%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Functions and Their Properties (30%); tested item = inverse functions.",
+      "_id": "college-algebra_30"
+    },
+    {
+      "focus": "College Algebra — Number Systems and Operations (20%)",
+      "prompt": "Which major topic is included in College Algebra?",
+      "options": [
+        "Number Systems and Operations (20%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Number Systems and Operations (20%)",
+      "level": 2,
+      "why": "Number Systems and Operations (20%) is part of the Number Systems and Operations (20%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Number Systems and Operations (20%); tested item = Number Systems and Operations (20%).",
+      "_id": "college-algebra_31"
+    },
+    {
+      "focus": "College Algebra — Number Systems and Operations (20%)",
+      "prompt": "Which outline item belongs with Number Systems and Operations (20%) in College Algebra?",
+      "options": [
+        "real numbers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Number Systems and Operations (20%)",
+      "level": 2,
+      "why": "real numbers is part of the Number Systems and Operations (20%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Number Systems and Operations (20%); tested item = real numbers.",
+      "_id": "college-algebra_32"
+    },
+    {
+      "focus": "College Algebra — Number Systems and Operations (20%)",
+      "prompt": "Which outline item belongs with Number Systems and Operations (20%) in College Algebra?",
+      "options": [
+        "complex numbers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Number Systems and Operations (20%)",
+      "level": 2,
+      "why": "complex numbers is part of the Number Systems and Operations (20%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Number Systems and Operations (20%); tested item = complex numbers.",
+      "_id": "college-algebra_33"
+    },
+    {
+      "focus": "College Algebra — Number Systems and Operations (20%)",
+      "prompt": "Which outline item belongs with Number Systems and Operations (20%) in College Algebra?",
+      "options": [
+        "factorials",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Number Systems and Operations (20%)",
+      "level": 2,
+      "why": "factorials is part of the Number Systems and Operations (20%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Number Systems and Operations (20%); tested item = factorials.",
+      "_id": "college-algebra_34"
+    },
+    {
+      "focus": "College Algebra — Number Systems and Operations (20%)",
+      "prompt": "Which outline item belongs with Number Systems and Operations (20%) in College Algebra?",
+      "options": [
+        "binomial theorem",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Number Systems and Operations (20%)",
+      "level": 2,
+      "why": "binomial theorem is part of the Number Systems and Operations (20%) content area for College Algebra (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Algebra; major area = Number Systems and Operations (20%); tested item = binomial theorem.",
+      "_id": "college-algebra_35"
+    }
+  ],
+  "college-mathematics": [
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which major topic is included in College Mathematics?",
+      "options": [
+        "Algebra and Functions (20%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "Algebra and Functions (20%) is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = Algebra and Functions (20%).",
+      "_id": "college-mathematics_0"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "solving equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "solving equations is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = solving equations.",
+      "_id": "college-mathematics_1"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "linear inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "linear inequalities is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = linear inequalities.",
+      "_id": "college-mathematics_2"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "systems of linear equations analytically",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "systems of linear equations analytically is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = systems of linear equations analytically.",
+      "_id": "college-mathematics_3"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "systems of linear equations graphically",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "systems of linear equations graphically is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = systems of linear equations graphically.",
+      "_id": "college-mathematics_4"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "function interpretation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "function interpretation is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = function interpretation.",
+      "_id": "college-mathematics_5"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "function representation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "function representation is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = function representation.",
+      "_id": "college-mathematics_6"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "function evaluation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "function evaluation is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = function evaluation.",
+      "_id": "college-mathematics_7"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "function graphs",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "function graphs is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = function graphs.",
+      "_id": "college-mathematics_8"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "translations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "translations is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = translations.",
+      "_id": "college-mathematics_9"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "reflections",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "reflections is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = reflections.",
+      "_id": "college-mathematics_10"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "symmetry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "symmetry is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = symmetry.",
+      "_id": "college-mathematics_11"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "linear growth",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "linear growth is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = linear growth.",
+      "_id": "college-mathematics_12"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "exponential growth",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "exponential growth is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = exponential growth.",
+      "_id": "college-mathematics_13"
+    },
+    {
+      "focus": "College Mathematics — Algebra and Functions (20%)",
+      "prompt": "Which outline item belongs with Algebra and Functions (20%) in College Mathematics?",
+      "options": [
+        "applications",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebra and Functions (20%)",
+      "level": 2,
+      "why": "applications is part of the Algebra and Functions (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Algebra and Functions (20%); tested item = applications.",
+      "_id": "college-mathematics_14"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which major topic is included in College Mathematics?",
+      "options": [
+        "Counting and Probability (10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "Counting and Probability (10%) is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = Counting and Probability (10%).",
+      "_id": "college-mathematics_15"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "multiplication rule",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "multiplication rule is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = multiplication rule.",
+      "_id": "college-mathematics_16"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "combinations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "combinations is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = combinations.",
+      "_id": "college-mathematics_17"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "permutations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "permutations is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = permutations.",
+      "_id": "college-mathematics_18"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "union",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "union is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = union.",
+      "_id": "college-mathematics_19"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "intersection",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "intersection is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = intersection.",
+      "_id": "college-mathematics_20"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "independent events",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "independent events is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = independent events.",
+      "_id": "college-mathematics_21"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "mutually exclusive events",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "mutually exclusive events is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = mutually exclusive events.",
+      "_id": "college-mathematics_22"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "complementary events",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "complementary events is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = complementary events.",
+      "_id": "college-mathematics_23"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "conditional probabilities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "conditional probabilities is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = conditional probabilities.",
+      "_id": "college-mathematics_24"
+    },
+    {
+      "focus": "College Mathematics — Counting and Probability (10%)",
+      "prompt": "Which outline item belongs with Counting and Probability (10%) in College Mathematics?",
+      "options": [
+        "expected value",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Counting and Probability (10%)",
+      "level": 2,
+      "why": "expected value is part of the Counting and Probability (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Counting and Probability (10%); tested item = expected value.",
+      "_id": "college-mathematics_25"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which major topic is included in College Mathematics?",
+      "options": [
+        "Data Analysis and Statistics (15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "Data Analysis and Statistics (15%) is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = Data Analysis and Statistics (15%).",
+      "_id": "college-mathematics_26"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "tables",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "tables is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = tables.",
+      "_id": "college-mathematics_27"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "bar graphs",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "bar graphs is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = bar graphs.",
+      "_id": "college-mathematics_28"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "line graphs",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "line graphs is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = line graphs.",
+      "_id": "college-mathematics_29"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "circle graphs",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "circle graphs is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = circle graphs.",
+      "_id": "college-mathematics_30"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "pie charts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "pie charts is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = pie charts.",
+      "_id": "college-mathematics_31"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "scatterplots",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "scatterplots is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = scatterplots.",
+      "_id": "college-mathematics_32"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "histograms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "histograms is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = histograms.",
+      "_id": "college-mathematics_33"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "mean",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "mean is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = mean.",
+      "_id": "college-mathematics_34"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "median",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "median is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = median.",
+      "_id": "college-mathematics_35"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "mode",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "mode is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = mode.",
+      "_id": "college-mathematics_36"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "range",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "range is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = range.",
+      "_id": "college-mathematics_37"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "standard deviation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "standard deviation is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = standard deviation.",
+      "_id": "college-mathematics_38"
+    },
+    {
+      "focus": "College Mathematics — Data Analysis and Statistics (15%)",
+      "prompt": "Which outline item belongs with Data Analysis and Statistics (15%) in College Mathematics?",
+      "options": [
+        "normal distribution",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Analysis and Statistics (15%)",
+      "level": 2,
+      "why": "normal distribution is part of the Data Analysis and Statistics (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Data Analysis and Statistics (15%); tested item = normal distribution.",
+      "_id": "college-mathematics_39"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which major topic is included in College Mathematics?",
+      "options": [
+        "Financial Mathematics (20%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "Financial Mathematics (20%) is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = Financial Mathematics (20%).",
+      "_id": "college-mathematics_40"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "percents",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "percents is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = percents.",
+      "_id": "college-mathematics_41"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "percent change",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "percent change is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = percent change.",
+      "_id": "college-mathematics_42"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "markups",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "markups is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = markups.",
+      "_id": "college-mathematics_43"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "discounts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "discounts is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = discounts.",
+      "_id": "college-mathematics_44"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "taxes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "taxes is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = taxes.",
+      "_id": "college-mathematics_45"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "profit",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "profit is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = profit.",
+      "_id": "college-mathematics_46"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "loss",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "loss is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = loss.",
+      "_id": "college-mathematics_47"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "simple interest",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "simple interest is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = simple interest.",
+      "_id": "college-mathematics_48"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "compound interest",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "compound interest is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = compound interest.",
+      "_id": "college-mathematics_49"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "continuous interest",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "continuous interest is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = continuous interest.",
+      "_id": "college-mathematics_50"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "effective interest rate",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "effective interest rate is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = effective interest rate.",
+      "_id": "college-mathematics_51"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "annual percentage rate",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "annual percentage rate is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = annual percentage rate.",
+      "_id": "college-mathematics_52"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "present value",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "present value is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = present value.",
+      "_id": "college-mathematics_53"
+    },
+    {
+      "focus": "College Mathematics — Financial Mathematics (20%)",
+      "prompt": "Which outline item belongs with Financial Mathematics (20%) in College Mathematics?",
+      "options": [
+        "future value",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Financial Mathematics (20%)",
+      "level": 2,
+      "why": "future value is part of the Financial Mathematics (20%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Financial Mathematics (20%); tested item = future value.",
+      "_id": "college-mathematics_54"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which major topic is included in College Mathematics?",
+      "options": [
+        "Geometry (10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "Geometry (10%) is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = Geometry (10%).",
+      "_id": "college-mathematics_55"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "triangles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "triangles is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = triangles.",
+      "_id": "college-mathematics_56"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "quadrilaterals",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "quadrilaterals is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = quadrilaterals.",
+      "_id": "college-mathematics_57"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "perimeter",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "perimeter is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = perimeter.",
+      "_id": "college-mathematics_58"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "area",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "area is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = area.",
+      "_id": "college-mathematics_59"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "similarity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "similarity is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = similarity.",
+      "_id": "college-mathematics_60"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "Pythagorean theorem",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "Pythagorean theorem is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = Pythagorean theorem.",
+      "_id": "college-mathematics_61"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "parallel lines",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "parallel lines is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = parallel lines.",
+      "_id": "college-mathematics_62"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "perpendicular lines",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "perpendicular lines is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = perpendicular lines.",
+      "_id": "college-mathematics_63"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "circles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "circles is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = circles.",
+      "_id": "college-mathematics_64"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "circumference",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "circumference is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = circumference.",
+      "_id": "college-mathematics_65"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "central angles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "central angles is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = central angles.",
+      "_id": "college-mathematics_66"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "inscribed angles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "inscribed angles is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = inscribed angles.",
+      "_id": "college-mathematics_67"
+    },
+    {
+      "focus": "College Mathematics — Geometry (10%)",
+      "prompt": "Which outline item belongs with Geometry (10%) in College Mathematics?",
+      "options": [
+        "sectors",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Geometry (10%)",
+      "level": 2,
+      "why": "sectors is part of the Geometry (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Geometry (10%); tested item = sectors.",
+      "_id": "college-mathematics_68"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which major topic is included in College Mathematics?",
+      "options": [
+        "Logic and Sets (15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "Logic and Sets (15%) is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = Logic and Sets (15%).",
+      "_id": "college-mathematics_69"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "conditional statements",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "conditional statements is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = conditional statements.",
+      "_id": "college-mathematics_70"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "conjunctions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "conjunctions is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = conjunctions.",
+      "_id": "college-mathematics_71"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "disjunctions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "disjunctions is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = disjunctions.",
+      "_id": "college-mathematics_72"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "negations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "negations is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = negations.",
+      "_id": "college-mathematics_73"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "hypotheses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "hypotheses is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = hypotheses.",
+      "_id": "college-mathematics_74"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "logical conclusions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "logical conclusions is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = logical conclusions.",
+      "_id": "college-mathematics_75"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "converses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "converses is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = converses.",
+      "_id": "college-mathematics_76"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "inverses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "inverses is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = inverses.",
+      "_id": "college-mathematics_77"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "counterexamples",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "counterexamples is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = counterexamples.",
+      "_id": "college-mathematics_78"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "contrapositives",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "contrapositives is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = contrapositives.",
+      "_id": "college-mathematics_79"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "logical equivalence",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "logical equivalence is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = logical equivalence.",
+      "_id": "college-mathematics_80"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "set relationships",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "set relationships is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = set relationships.",
+      "_id": "college-mathematics_81"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "subsets",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "subsets is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = subsets.",
+      "_id": "college-mathematics_82"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "disjoint sets",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "disjoint sets is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = disjoint sets.",
+      "_id": "college-mathematics_83"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "equality of sets",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "equality of sets is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = equality of sets.",
+      "_id": "college-mathematics_84"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "Venn diagrams",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "Venn diagrams is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = Venn diagrams.",
+      "_id": "college-mathematics_85"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "union of sets",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "union of sets is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = union of sets.",
+      "_id": "college-mathematics_86"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "intersection of sets",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "intersection of sets is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = intersection of sets.",
+      "_id": "college-mathematics_87"
+    },
+    {
+      "focus": "College Mathematics — Logic and Sets (15%)",
+      "prompt": "Which outline item belongs with Logic and Sets (15%) in College Mathematics?",
+      "options": [
+        "complement of sets",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Logic and Sets (15%)",
+      "level": 2,
+      "why": "complement of sets is part of the Logic and Sets (15%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Logic and Sets (15%); tested item = complement of sets.",
+      "_id": "college-mathematics_88"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which major topic is included in College Mathematics?",
+      "options": [
+        "Numbers (10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "Numbers (10%) is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = Numbers (10%).",
+      "_id": "college-mathematics_89"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "integers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "integers is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = integers.",
+      "_id": "college-mathematics_90"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "rational numbers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "rational numbers is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = rational numbers.",
+      "_id": "college-mathematics_91"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "irrational numbers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "irrational numbers is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = irrational numbers.",
+      "_id": "college-mathematics_92"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "real numbers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "real numbers is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = real numbers.",
+      "_id": "college-mathematics_93"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "rational vs irrational recognition",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "rational vs irrational recognition is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = rational vs irrational recognition.",
+      "_id": "college-mathematics_94"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "factors",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "factors is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = factors.",
+      "_id": "college-mathematics_95"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "divisibility",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "divisibility is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = divisibility.",
+      "_id": "college-mathematics_96"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "primes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "primes is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = primes.",
+      "_id": "college-mathematics_97"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "composites",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "composites is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = composites.",
+      "_id": "college-mathematics_98"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "odd integers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "odd integers is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = odd integers.",
+      "_id": "college-mathematics_99"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "even integers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "even integers is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = even integers.",
+      "_id": "college-mathematics_100"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "fundamental theorem of arithmetic",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "fundamental theorem of arithmetic is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = fundamental theorem of arithmetic.",
+      "_id": "college-mathematics_101"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "unit conversion",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "unit conversion is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = unit conversion.",
+      "_id": "college-mathematics_102"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "scientific notation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "scientific notation is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = scientific notation.",
+      "_id": "college-mathematics_103"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "numerical precision",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "numerical precision is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = numerical precision.",
+      "_id": "college-mathematics_104"
+    },
+    {
+      "focus": "College Mathematics — Numbers (10%)",
+      "prompt": "Which outline item belongs with Numbers (10%) in College Mathematics?",
+      "options": [
+        "absolute value",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Numbers (10%)",
+      "level": 2,
+      "why": "absolute value is part of the Numbers (10%) content area for College Mathematics (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = College Mathematics; major area = Numbers (10%); tested item = absolute value.",
+      "_id": "college-mathematics_105"
+    }
+  ],
+  "natural-sciences": [
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which major topic is included in Natural Sciences?",
+      "options": [
+        "Biological Science (50%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "Biological Science (50%) is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = Biological Science (50%).",
+      "_id": "natural-sciences_0"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "origin and evolution of life",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "origin and evolution of life is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = origin and evolution of life.",
+      "_id": "natural-sciences_1"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "classification of organisms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "classification of organisms is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = classification of organisms.",
+      "_id": "natural-sciences_2"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "cell organization",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "cell organization is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = cell organization.",
+      "_id": "natural-sciences_3"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "cell division",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "cell division is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = cell division.",
+      "_id": "natural-sciences_4"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "chemical nature of the gene",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "chemical nature of the gene is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = chemical nature of the gene.",
+      "_id": "natural-sciences_5"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "bioenergetics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "bioenergetics is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = bioenergetics.",
+      "_id": "natural-sciences_6"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "biosynthesis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "biosynthesis is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = biosynthesis.",
+      "_id": "natural-sciences_7"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "structure in organisms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "structure in organisms is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = structure in organisms.",
+      "_id": "natural-sciences_8"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "function in organisms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "function in organisms is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = function in organisms.",
+      "_id": "natural-sciences_9"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "development in organisms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "development in organisms is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = development in organisms.",
+      "_id": "natural-sciences_10"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "patterns of heredity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "patterns of heredity is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = patterns of heredity.",
+      "_id": "natural-sciences_11"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "population biology",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "population biology is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = population biology.",
+      "_id": "natural-sciences_12"
+    },
+    {
+      "focus": "Natural Sciences — Biological Science (50%)",
+      "prompt": "Which outline item belongs with Biological Science (50%) in Natural Sciences?",
+      "options": [
+        "ecology",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Biological Science (50%)",
+      "level": 2,
+      "why": "ecology is part of the Biological Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Biological Science (50%); tested item = ecology.",
+      "_id": "natural-sciences_13"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which major topic is included in Natural Sciences?",
+      "options": [
+        "Physical Science (50%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "Physical Science (50%) is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = Physical Science (50%).",
+      "_id": "natural-sciences_14"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "atomic structure",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "atomic structure is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = atomic structure.",
+      "_id": "natural-sciences_15"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "nuclear structure",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "nuclear structure is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = nuclear structure.",
+      "_id": "natural-sciences_16"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "elementary particles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "elementary particles is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = elementary particles.",
+      "_id": "natural-sciences_17"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "nuclear reactions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "nuclear reactions is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = nuclear reactions.",
+      "_id": "natural-sciences_18"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "chemical elements",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "chemical elements is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = chemical elements.",
+      "_id": "natural-sciences_19"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "chemical compounds",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "chemical compounds is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = chemical compounds.",
+      "_id": "natural-sciences_20"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "chemical reactions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "chemical reactions is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = chemical reactions.",
+      "_id": "natural-sciences_21"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "molecular structure",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "molecular structure is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = molecular structure.",
+      "_id": "natural-sciences_22"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "bonding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "bonding is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = bonding.",
+      "_id": "natural-sciences_23"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "heat",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "heat is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = heat.",
+      "_id": "natural-sciences_24"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "thermodynamics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "thermodynamics is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = thermodynamics.",
+      "_id": "natural-sciences_25"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "states of matter",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "states of matter is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = states of matter.",
+      "_id": "natural-sciences_26"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "classical mechanics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "classical mechanics is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = classical mechanics.",
+      "_id": "natural-sciences_27"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "relativity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "relativity is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = relativity.",
+      "_id": "natural-sciences_28"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "electricity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "electricity is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = electricity.",
+      "_id": "natural-sciences_29"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "magnetism",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "magnetism is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = magnetism.",
+      "_id": "natural-sciences_30"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "waves",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "waves is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = waves.",
+      "_id": "natural-sciences_31"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "light",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "light is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = light.",
+      "_id": "natural-sciences_32"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "sound",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "sound is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = sound.",
+      "_id": "natural-sciences_33"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "galaxies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "galaxies is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = galaxies.",
+      "_id": "natural-sciences_34"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "stars",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "stars is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = stars.",
+      "_id": "natural-sciences_35"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "solar system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "solar system is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = solar system.",
+      "_id": "natural-sciences_36"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "atmosphere",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "atmosphere is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = atmosphere.",
+      "_id": "natural-sciences_37"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "hydrosphere",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "hydrosphere is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = hydrosphere.",
+      "_id": "natural-sciences_38"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "Earth structural features",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "Earth structural features is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = Earth structural features.",
+      "_id": "natural-sciences_39"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "geologic processes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "geologic processes is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = geologic processes.",
+      "_id": "natural-sciences_40"
+    },
+    {
+      "focus": "Natural Sciences — Physical Science (50%)",
+      "prompt": "Which outline item belongs with Physical Science (50%) in Natural Sciences?",
+      "options": [
+        "geologic history",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Physical Science (50%)",
+      "level": 2,
+      "why": "geologic history is part of the Physical Science (50%) content area for Natural Sciences (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Natural Sciences; major area = Physical Science (50%); tested item = geologic history.",
+      "_id": "natural-sciences_41"
+    }
+  ],
+  "precalculus": [
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which major topic is included in Precalculus?",
+      "options": [
+        "Algebraic Expressions, Equations, and Inequalities (20%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "Algebraic Expressions, Equations, and Inequalities (20%) is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = Algebraic Expressions, Equations, and Inequalities (20%).",
+      "_id": "precalculus_0"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "operations on algebraic expressions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "operations on algebraic expressions is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = operations on algebraic expressions.",
+      "_id": "precalculus_1"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "linear equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "linear equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = linear equations.",
+      "_id": "precalculus_2"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "quadratic equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "quadratic equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = quadratic equations.",
+      "_id": "precalculus_3"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "absolute value equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "absolute value equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = absolute value equations.",
+      "_id": "precalculus_4"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "polynomial equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "polynomial equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = polynomial equations.",
+      "_id": "precalculus_5"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "rational equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "rational equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = rational equations.",
+      "_id": "precalculus_6"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "radical equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "radical equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = radical equations.",
+      "_id": "precalculus_7"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "exponential equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "exponential equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = exponential equations.",
+      "_id": "precalculus_8"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "logarithmic equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "logarithmic equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = logarithmic equations.",
+      "_id": "precalculus_9"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "trigonometric equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "trigonometric equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = trigonometric equations.",
+      "_id": "precalculus_10"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "linear inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "linear inequalities is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = linear inequalities.",
+      "_id": "precalculus_11"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "quadratic inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "quadratic inequalities is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = quadratic inequalities.",
+      "_id": "precalculus_12"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "absolute value inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "absolute value inequalities is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = absolute value inequalities.",
+      "_id": "precalculus_13"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "polynomial inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "polynomial inequalities is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = polynomial inequalities.",
+      "_id": "precalculus_14"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "rational inequalities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "rational inequalities is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = rational inequalities.",
+      "_id": "precalculus_15"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "systems of linear equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "systems of linear equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = systems of linear equations.",
+      "_id": "precalculus_16"
+    },
+    {
+      "focus": "Precalculus — Algebraic Expressions, Equations, and Inequalities (20%)",
+      "prompt": "Which outline item belongs with Algebraic Expressions, Equations, and Inequalities (20%) in Precalculus?",
+      "options": [
+        "systems of nonlinear equations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Algebraic Expressions, Equations, and Inequalities (20%)",
+      "level": 2,
+      "why": "systems of nonlinear equations is part of the Algebraic Expressions, Equations, and Inequalities (20%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Algebraic Expressions, Equations, and Inequalities (20%); tested item = systems of nonlinear equations.",
+      "_id": "precalculus_17"
+    },
+    {
+      "focus": "Precalculus — Functions: Concept, Properties, and Operations (15%)",
+      "prompt": "Which major topic is included in Precalculus?",
+      "options": [
+        "Functions: Concept, Properties, and Operations (15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions: Concept, Properties, and Operations (15%)",
+      "level": 2,
+      "why": "Functions: Concept, Properties, and Operations (15%) is part of the Functions: Concept, Properties, and Operations (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions: Concept, Properties, and Operations (15%); tested item = Functions: Concept, Properties, and Operations (15%).",
+      "_id": "precalculus_18"
+    },
+    {
+      "focus": "Precalculus — Functions: Concept, Properties, and Operations (15%)",
+      "prompt": "Which outline item belongs with Functions: Concept, Properties, and Operations (15%) in Precalculus?",
+      "options": [
+        "concept of a function",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions: Concept, Properties, and Operations (15%)",
+      "level": 2,
+      "why": "concept of a function is part of the Functions: Concept, Properties, and Operations (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions: Concept, Properties, and Operations (15%); tested item = concept of a function.",
+      "_id": "precalculus_19"
+    },
+    {
+      "focus": "Precalculus — Functions: Concept, Properties, and Operations (15%)",
+      "prompt": "Which outline item belongs with Functions: Concept, Properties, and Operations (15%) in Precalculus?",
+      "options": [
+        "domain",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions: Concept, Properties, and Operations (15%)",
+      "level": 2,
+      "why": "domain is part of the Functions: Concept, Properties, and Operations (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions: Concept, Properties, and Operations (15%); tested item = domain.",
+      "_id": "precalculus_20"
+    },
+    {
+      "focus": "Precalculus — Functions: Concept, Properties, and Operations (15%)",
+      "prompt": "Which outline item belongs with Functions: Concept, Properties, and Operations (15%) in Precalculus?",
+      "options": [
+        "range",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions: Concept, Properties, and Operations (15%)",
+      "level": 2,
+      "why": "range is part of the Functions: Concept, Properties, and Operations (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions: Concept, Properties, and Operations (15%); tested item = range.",
+      "_id": "precalculus_21"
+    },
+    {
+      "focus": "Precalculus — Functions: Concept, Properties, and Operations (15%)",
+      "prompt": "Which outline item belongs with Functions: Concept, Properties, and Operations (15%) in Precalculus?",
+      "options": [
+        "function notation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions: Concept, Properties, and Operations (15%)",
+      "level": 2,
+      "why": "function notation is part of the Functions: Concept, Properties, and Operations (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions: Concept, Properties, and Operations (15%); tested item = function notation.",
+      "_id": "precalculus_22"
+    },
+    {
+      "focus": "Precalculus — Functions: Concept, Properties, and Operations (15%)",
+      "prompt": "Which outline item belongs with Functions: Concept, Properties, and Operations (15%) in Precalculus?",
+      "options": [
+        "evaluation of functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions: Concept, Properties, and Operations (15%)",
+      "level": 2,
+      "why": "evaluation of functions is part of the Functions: Concept, Properties, and Operations (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions: Concept, Properties, and Operations (15%); tested item = evaluation of functions.",
+      "_id": "precalculus_23"
+    },
+    {
+      "focus": "Precalculus — Functions: Concept, Properties, and Operations (15%)",
+      "prompt": "Which outline item belongs with Functions: Concept, Properties, and Operations (15%) in Precalculus?",
+      "options": [
+        "inverse functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions: Concept, Properties, and Operations (15%)",
+      "level": 2,
+      "why": "inverse functions is part of the Functions: Concept, Properties, and Operations (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions: Concept, Properties, and Operations (15%); tested item = inverse functions.",
+      "_id": "precalculus_24"
+    },
+    {
+      "focus": "Precalculus — Functions: Concept, Properties, and Operations (15%)",
+      "prompt": "Which outline item belongs with Functions: Concept, Properties, and Operations (15%) in Precalculus?",
+      "options": [
+        "symbolic operations with functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions: Concept, Properties, and Operations (15%)",
+      "level": 2,
+      "why": "symbolic operations with functions is part of the Functions: Concept, Properties, and Operations (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions: Concept, Properties, and Operations (15%); tested item = symbolic operations with functions.",
+      "_id": "precalculus_25"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which major topic is included in Precalculus?",
+      "options": [
+        "Representations of Functions (30%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "Representations of Functions (30%) is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = Representations of Functions (30%).",
+      "_id": "precalculus_26"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "symbolic representations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "symbolic representations is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = symbolic representations.",
+      "_id": "precalculus_27"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "graphical representations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "graphical representations is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = graphical representations.",
+      "_id": "precalculus_28"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "tabular representations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "tabular representations is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = tabular representations.",
+      "_id": "precalculus_29"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "function transformations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "function transformations is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = function transformations.",
+      "_id": "precalculus_30"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "linear functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "linear functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = linear functions.",
+      "_id": "precalculus_31"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "quadratic functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "quadratic functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = quadratic functions.",
+      "_id": "precalculus_32"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "absolute value functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "absolute value functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = absolute value functions.",
+      "_id": "precalculus_33"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "square root functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "square root functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = square root functions.",
+      "_id": "precalculus_34"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "polynomial functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "polynomial functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = polynomial functions.",
+      "_id": "precalculus_35"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "rational functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "rational functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = rational functions.",
+      "_id": "precalculus_36"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "exponential functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "exponential functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = exponential functions.",
+      "_id": "precalculus_37"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "logarithmic functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "logarithmic functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = logarithmic functions.",
+      "_id": "precalculus_38"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "trigonometric functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "trigonometric functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = trigonometric functions.",
+      "_id": "precalculus_39"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "inverse trigonometric functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "inverse trigonometric functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = inverse trigonometric functions.",
+      "_id": "precalculus_40"
+    },
+    {
+      "focus": "Precalculus — Representations of Functions (30%)",
+      "prompt": "Which outline item belongs with Representations of Functions (30%) in Precalculus?",
+      "options": [
+        "piecewise-defined functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Representations of Functions (30%)",
+      "level": 2,
+      "why": "piecewise-defined functions is part of the Representations of Functions (30%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Representations of Functions (30%); tested item = piecewise-defined functions.",
+      "_id": "precalculus_41"
+    },
+    {
+      "focus": "Precalculus — Analytic Geometry (10%)",
+      "prompt": "Which major topic is included in Precalculus?",
+      "options": [
+        "Analytic Geometry (10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Analytic Geometry (10%)",
+      "level": 2,
+      "why": "Analytic Geometry (10%) is part of the Analytic Geometry (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Analytic Geometry (10%); tested item = Analytic Geometry (10%).",
+      "_id": "precalculus_42"
+    },
+    {
+      "focus": "Precalculus — Analytic Geometry (10%)",
+      "prompt": "Which outline item belongs with Analytic Geometry (10%) in Precalculus?",
+      "options": [
+        "lines",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Analytic Geometry (10%)",
+      "level": 2,
+      "why": "lines is part of the Analytic Geometry (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Analytic Geometry (10%); tested item = lines.",
+      "_id": "precalculus_43"
+    },
+    {
+      "focus": "Precalculus — Analytic Geometry (10%)",
+      "prompt": "Which outline item belongs with Analytic Geometry (10%) in Precalculus?",
+      "options": [
+        "circles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Analytic Geometry (10%)",
+      "level": 2,
+      "why": "circles is part of the Analytic Geometry (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Analytic Geometry (10%); tested item = circles.",
+      "_id": "precalculus_44"
+    },
+    {
+      "focus": "Precalculus — Analytic Geometry (10%)",
+      "prompt": "Which outline item belongs with Analytic Geometry (10%) in Precalculus?",
+      "options": [
+        "parabolas",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Analytic Geometry (10%)",
+      "level": 2,
+      "why": "parabolas is part of the Analytic Geometry (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Analytic Geometry (10%); tested item = parabolas.",
+      "_id": "precalculus_45"
+    },
+    {
+      "focus": "Precalculus — Analytic Geometry (10%)",
+      "prompt": "Which outline item belongs with Analytic Geometry (10%) in Precalculus?",
+      "options": [
+        "ellipses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Analytic Geometry (10%)",
+      "level": 2,
+      "why": "ellipses is part of the Analytic Geometry (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Analytic Geometry (10%); tested item = ellipses.",
+      "_id": "precalculus_46"
+    },
+    {
+      "focus": "Precalculus — Analytic Geometry (10%)",
+      "prompt": "Which outline item belongs with Analytic Geometry (10%) in Precalculus?",
+      "options": [
+        "hyperbolas",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Analytic Geometry (10%)",
+      "level": 2,
+      "why": "hyperbolas is part of the Analytic Geometry (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Analytic Geometry (10%); tested item = hyperbolas.",
+      "_id": "precalculus_47"
+    },
+    {
+      "focus": "Precalculus — Trigonometry and Applications (15%)",
+      "prompt": "Which major topic is included in Precalculus?",
+      "options": [
+        "Trigonometry and Applications (15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Trigonometry and Applications (15%)",
+      "level": 2,
+      "why": "Trigonometry and Applications (15%) is part of the Trigonometry and Applications (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Trigonometry and Applications (15%); tested item = Trigonometry and Applications (15%).",
+      "_id": "precalculus_48"
+    },
+    {
+      "focus": "Precalculus — Trigonometry and Applications (15%)",
+      "prompt": "Which outline item belongs with Trigonometry and Applications (15%) in Precalculus?",
+      "options": [
+        "basic trigonometric functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Trigonometry and Applications (15%)",
+      "level": 2,
+      "why": "basic trigonometric functions is part of the Trigonometry and Applications (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Trigonometry and Applications (15%); tested item = basic trigonometric functions.",
+      "_id": "precalculus_49"
+    },
+    {
+      "focus": "Precalculus — Trigonometry and Applications (15%)",
+      "prompt": "Which outline item belongs with Trigonometry and Applications (15%) in Precalculus?",
+      "options": [
+        "right triangle ratios",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Trigonometry and Applications (15%)",
+      "level": 2,
+      "why": "right triangle ratios is part of the Trigonometry and Applications (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Trigonometry and Applications (15%); tested item = right triangle ratios.",
+      "_id": "precalculus_50"
+    },
+    {
+      "focus": "Precalculus — Trigonometry and Applications (15%)",
+      "prompt": "Which outline item belongs with Trigonometry and Applications (15%) in Precalculus?",
+      "options": [
+        "unit circle",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Trigonometry and Applications (15%)",
+      "level": 2,
+      "why": "unit circle is part of the Trigonometry and Applications (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Trigonometry and Applications (15%); tested item = unit circle.",
+      "_id": "precalculus_51"
+    },
+    {
+      "focus": "Precalculus — Trigonometry and Applications (15%)",
+      "prompt": "Which outline item belongs with Trigonometry and Applications (15%) in Precalculus?",
+      "options": [
+        "trigonometric identities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Trigonometry and Applications (15%)",
+      "level": 2,
+      "why": "trigonometric identities is part of the Trigonometry and Applications (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Trigonometry and Applications (15%); tested item = trigonometric identities.",
+      "_id": "precalculus_52"
+    },
+    {
+      "focus": "Precalculus — Trigonometry and Applications (15%)",
+      "prompt": "Which outline item belongs with Trigonometry and Applications (15%) in Precalculus?",
+      "options": [
+        "trigonometric problem solving",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Trigonometry and Applications (15%)",
+      "level": 2,
+      "why": "trigonometric problem solving is part of the Trigonometry and Applications (15%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Trigonometry and Applications (15%); tested item = trigonometric problem solving.",
+      "_id": "precalculus_53"
+    },
+    {
+      "focus": "Precalculus — Functions as Models (10%)",
+      "prompt": "Which major topic is included in Precalculus?",
+      "options": [
+        "Functions as Models (10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions as Models (10%)",
+      "level": 2,
+      "why": "Functions as Models (10%) is part of the Functions as Models (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions as Models (10%); tested item = Functions as Models (10%).",
+      "_id": "precalculus_54"
+    },
+    {
+      "focus": "Precalculus — Functions as Models (10%)",
+      "prompt": "Which outline item belongs with Functions as Models (10%) in Precalculus?",
+      "options": [
+        "interpreting functions as models",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions as Models (10%)",
+      "level": 2,
+      "why": "interpreting functions as models is part of the Functions as Models (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions as Models (10%); tested item = interpreting functions as models.",
+      "_id": "precalculus_55"
+    },
+    {
+      "focus": "Precalculus — Functions as Models (10%)",
+      "prompt": "Which outline item belongs with Functions as Models (10%) in Precalculus?",
+      "options": [
+        "constructing functions as models",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions as Models (10%)",
+      "level": 2,
+      "why": "constructing functions as models is part of the Functions as Models (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions as Models (10%); tested item = constructing functions as models.",
+      "_id": "precalculus_56"
+    },
+    {
+      "focus": "Precalculus — Functions as Models (10%)",
+      "prompt": "Which outline item belongs with Functions as Models (10%) in Precalculus?",
+      "options": [
+        "symbolic translation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions as Models (10%)",
+      "level": 2,
+      "why": "symbolic translation is part of the Functions as Models (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions as Models (10%); tested item = symbolic translation.",
+      "_id": "precalculus_57"
+    },
+    {
+      "focus": "Precalculus — Functions as Models (10%)",
+      "prompt": "Which outline item belongs with Functions as Models (10%) in Precalculus?",
+      "options": [
+        "graphical translation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions as Models (10%)",
+      "level": 2,
+      "why": "graphical translation is part of the Functions as Models (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions as Models (10%); tested item = graphical translation.",
+      "_id": "precalculus_58"
+    },
+    {
+      "focus": "Precalculus — Functions as Models (10%)",
+      "prompt": "Which outline item belongs with Functions as Models (10%) in Precalculus?",
+      "options": [
+        "tabular translation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions as Models (10%)",
+      "level": 2,
+      "why": "tabular translation is part of the Functions as Models (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions as Models (10%); tested item = tabular translation.",
+      "_id": "precalculus_59"
+    },
+    {
+      "focus": "Precalculus — Functions as Models (10%)",
+      "prompt": "Which outline item belongs with Functions as Models (10%) in Precalculus?",
+      "options": [
+        "verbal translation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functions as Models (10%)",
+      "level": 2,
+      "why": "verbal translation is part of the Functions as Models (10%) content area for Precalculus (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Precalculus; major area = Functions as Models (10%); tested item = verbal translation.",
+      "_id": "precalculus_60"
+    }
+  ],
+  "financial-accounting": [
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which major topic is included in Financial Accounting?",
+      "options": [
+        "General Topics (20%-30%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "General Topics (20%-30%) is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = General Topics (20%-30%).",
+      "_id": "financial-accounting_0"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "generally accepted accounting principles",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "generally accepted accounting principles is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = generally accepted accounting principles.",
+      "_id": "financial-accounting_1"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "double-entry accounting",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "double-entry accounting is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = double-entry accounting.",
+      "_id": "financial-accounting_2"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "transaction analysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "transaction analysis is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = transaction analysis.",
+      "_id": "financial-accounting_3"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "accounting equation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "accounting equation is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = accounting equation.",
+      "_id": "financial-accounting_4"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "accounting cycle",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "accounting cycle is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = accounting cycle.",
+      "_id": "financial-accounting_5"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "business ethics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "business ethics is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = business ethics.",
+      "_id": "financial-accounting_6"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "financial statement purpose",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "financial statement purpose is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = financial statement purpose.",
+      "_id": "financial-accounting_7"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "financial statement presentation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "financial statement presentation is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = financial statement presentation.",
+      "_id": "financial-accounting_8"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "relationships between financial statements",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "relationships between financial statements is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = relationships between financial statements.",
+      "_id": "financial-accounting_9"
+    },
+    {
+      "focus": "Financial Accounting — General Topics (20%-30%)",
+      "prompt": "Which outline item belongs with General Topics (20%-30%) in Financial Accounting?",
+      "options": [
+        "forms of business",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "General Topics (20%-30%)",
+      "level": 2,
+      "why": "forms of business is part of the General Topics (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = General Topics (20%-30%); tested item = forms of business.",
+      "_id": "financial-accounting_10"
+    },
+    {
+      "focus": "Financial Accounting — Income Statement (20%-30%)",
+      "prompt": "Which major topic is included in Financial Accounting?",
+      "options": [
+        "Income Statement (20%-30%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Income Statement (20%-30%)",
+      "level": 2,
+      "why": "Income Statement (20%-30%) is part of the Income Statement (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Income Statement (20%-30%); tested item = Income Statement (20%-30%).",
+      "_id": "financial-accounting_11"
+    },
+    {
+      "focus": "Financial Accounting — Income Statement (20%-30%)",
+      "prompt": "Which outline item belongs with Income Statement (20%-30%) in Financial Accounting?",
+      "options": [
+        "single-step format",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Income Statement (20%-30%)",
+      "level": 2,
+      "why": "single-step format is part of the Income Statement (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Income Statement (20%-30%); tested item = single-step format.",
+      "_id": "financial-accounting_12"
+    },
+    {
+      "focus": "Financial Accounting — Income Statement (20%-30%)",
+      "prompt": "Which outline item belongs with Income Statement (20%-30%) in Financial Accounting?",
+      "options": [
+        "multi-step format",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Income Statement (20%-30%)",
+      "level": 2,
+      "why": "multi-step format is part of the Income Statement (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Income Statement (20%-30%); tested item = multi-step format.",
+      "_id": "financial-accounting_13"
+    },
+    {
+      "focus": "Financial Accounting — Income Statement (20%-30%)",
+      "prompt": "Which outline item belongs with Income Statement (20%-30%) in Financial Accounting?",
+      "options": [
+        "revenue recognition",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Income Statement (20%-30%)",
+      "level": 2,
+      "why": "revenue recognition is part of the Income Statement (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Income Statement (20%-30%); tested item = revenue recognition.",
+      "_id": "financial-accounting_14"
+    },
+    {
+      "focus": "Financial Accounting — Income Statement (20%-30%)",
+      "prompt": "Which outline item belongs with Income Statement (20%-30%) in Financial Accounting?",
+      "options": [
+        "expense recognition",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Income Statement (20%-30%)",
+      "level": 2,
+      "why": "expense recognition is part of the Income Statement (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Income Statement (20%-30%); tested item = expense recognition.",
+      "_id": "financial-accounting_15"
+    },
+    {
+      "focus": "Financial Accounting — Income Statement (20%-30%)",
+      "prompt": "Which outline item belongs with Income Statement (20%-30%) in Financial Accounting?",
+      "options": [
+        "cost of goods sold",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Income Statement (20%-30%)",
+      "level": 2,
+      "why": "cost of goods sold is part of the Income Statement (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Income Statement (20%-30%); tested item = cost of goods sold.",
+      "_id": "financial-accounting_16"
+    },
+    {
+      "focus": "Financial Accounting — Income Statement (20%-30%)",
+      "prompt": "Which outline item belongs with Income Statement (20%-30%) in Financial Accounting?",
+      "options": [
+        "nonoperational gains",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Income Statement (20%-30%)",
+      "level": 2,
+      "why": "nonoperational gains is part of the Income Statement (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Income Statement (20%-30%); tested item = nonoperational gains.",
+      "_id": "financial-accounting_17"
+    },
+    {
+      "focus": "Financial Accounting — Income Statement (20%-30%)",
+      "prompt": "Which outline item belongs with Income Statement (20%-30%) in Financial Accounting?",
+      "options": [
+        "nonoperational losses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Income Statement (20%-30%)",
+      "level": 2,
+      "why": "nonoperational losses is part of the Income Statement (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Income Statement (20%-30%); tested item = nonoperational losses.",
+      "_id": "financial-accounting_18"
+    },
+    {
+      "focus": "Financial Accounting — Income Statement (20%-30%)",
+      "prompt": "Which outline item belongs with Income Statement (20%-30%) in Financial Accounting?",
+      "options": [
+        "profitability analysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Income Statement (20%-30%)",
+      "level": 2,
+      "why": "profitability analysis is part of the Income Statement (20%-30%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Income Statement (20%-30%); tested item = profitability analysis.",
+      "_id": "financial-accounting_19"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which major topic is included in Financial Accounting?",
+      "options": [
+        "Balance Sheet (30%-40%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "Balance Sheet (30%-40%) is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = Balance Sheet (30%-40%).",
+      "_id": "financial-accounting_20"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "cash",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "cash is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = cash.",
+      "_id": "financial-accounting_21"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "internal controls",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "internal controls is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = internal controls.",
+      "_id": "financial-accounting_22"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "accounts receivable valuation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "accounts receivable valuation is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = accounts receivable valuation.",
+      "_id": "financial-accounting_23"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "notes receivable valuation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "notes receivable valuation is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = notes receivable valuation.",
+      "_id": "financial-accounting_24"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "bad debts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "bad debts is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = bad debts.",
+      "_id": "financial-accounting_25"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "inventory valuation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "inventory valuation is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = inventory valuation.",
+      "_id": "financial-accounting_26"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "long-term asset acquisition",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "long-term asset acquisition is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = long-term asset acquisition.",
+      "_id": "financial-accounting_27"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "long-term asset disposal",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "long-term asset disposal is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = long-term asset disposal.",
+      "_id": "financial-accounting_28"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "depreciation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "depreciation is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = depreciation.",
+      "_id": "financial-accounting_29"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "amortization",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "amortization is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = amortization.",
+      "_id": "financial-accounting_30"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "depletion",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "depletion is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = depletion.",
+      "_id": "financial-accounting_31"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "intangible assets",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "intangible assets is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = intangible assets.",
+      "_id": "financial-accounting_32"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "patents",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "patents is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = patents.",
+      "_id": "financial-accounting_33"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "goodwill",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "goodwill is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = goodwill.",
+      "_id": "financial-accounting_34"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "accounts payable",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "accounts payable is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = accounts payable.",
+      "_id": "financial-accounting_35"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "notes payable",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "notes payable is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = notes payable.",
+      "_id": "financial-accounting_36"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "long-term liabilities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "long-term liabilities is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = long-term liabilities.",
+      "_id": "financial-accounting_37"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "bonds payable",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "bonds payable is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = bonds payable.",
+      "_id": "financial-accounting_38"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "owner's equity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "owner's equity is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = owner's equity.",
+      "_id": "financial-accounting_39"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "preferred stock",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "preferred stock is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = preferred stock.",
+      "_id": "financial-accounting_40"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "common stock",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "common stock is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = common stock.",
+      "_id": "financial-accounting_41"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "retained earnings",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "retained earnings is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = retained earnings.",
+      "_id": "financial-accounting_42"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "liquidity analysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "liquidity analysis is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = liquidity analysis.",
+      "_id": "financial-accounting_43"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "solvency analysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "solvency analysis is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = solvency analysis.",
+      "_id": "financial-accounting_44"
+    },
+    {
+      "focus": "Financial Accounting — Balance Sheet (30%-40%)",
+      "prompt": "Which outline item belongs with Balance Sheet (30%-40%) in Financial Accounting?",
+      "options": [
+        "activity analysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Balance Sheet (30%-40%)",
+      "level": 2,
+      "why": "activity analysis is part of the Balance Sheet (30%-40%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Balance Sheet (30%-40%); tested item = activity analysis.",
+      "_id": "financial-accounting_45"
+    },
+    {
+      "focus": "Financial Accounting — Statement of Cash Flows (5%-10%)",
+      "prompt": "Which major topic is included in Financial Accounting?",
+      "options": [
+        "Statement of Cash Flows (5%-10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Statement of Cash Flows (5%-10%)",
+      "level": 2,
+      "why": "Statement of Cash Flows (5%-10%) is part of the Statement of Cash Flows (5%-10%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Statement of Cash Flows (5%-10%); tested item = Statement of Cash Flows (5%-10%).",
+      "_id": "financial-accounting_46"
+    },
+    {
+      "focus": "Financial Accounting — Statement of Cash Flows (5%-10%)",
+      "prompt": "Which outline item belongs with Statement of Cash Flows (5%-10%) in Financial Accounting?",
+      "options": [
+        "indirect method",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Statement of Cash Flows (5%-10%)",
+      "level": 2,
+      "why": "indirect method is part of the Statement of Cash Flows (5%-10%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Statement of Cash Flows (5%-10%); tested item = indirect method.",
+      "_id": "financial-accounting_47"
+    },
+    {
+      "focus": "Financial Accounting — Statement of Cash Flows (5%-10%)",
+      "prompt": "Which outline item belongs with Statement of Cash Flows (5%-10%) in Financial Accounting?",
+      "options": [
+        "cash flow analysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Statement of Cash Flows (5%-10%)",
+      "level": 2,
+      "why": "cash flow analysis is part of the Statement of Cash Flows (5%-10%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Statement of Cash Flows (5%-10%); tested item = cash flow analysis.",
+      "_id": "financial-accounting_48"
+    },
+    {
+      "focus": "Financial Accounting — Statement of Cash Flows (5%-10%)",
+      "prompt": "Which outline item belongs with Statement of Cash Flows (5%-10%) in Financial Accounting?",
+      "options": [
+        "operating activities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Statement of Cash Flows (5%-10%)",
+      "level": 2,
+      "why": "operating activities is part of the Statement of Cash Flows (5%-10%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Statement of Cash Flows (5%-10%); tested item = operating activities.",
+      "_id": "financial-accounting_49"
+    },
+    {
+      "focus": "Financial Accounting — Statement of Cash Flows (5%-10%)",
+      "prompt": "Which outline item belongs with Statement of Cash Flows (5%-10%) in Financial Accounting?",
+      "options": [
+        "financing activities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Statement of Cash Flows (5%-10%)",
+      "level": 2,
+      "why": "financing activities is part of the Statement of Cash Flows (5%-10%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Statement of Cash Flows (5%-10%); tested item = financing activities.",
+      "_id": "financial-accounting_50"
+    },
+    {
+      "focus": "Financial Accounting — Statement of Cash Flows (5%-10%)",
+      "prompt": "Which outline item belongs with Statement of Cash Flows (5%-10%) in Financial Accounting?",
+      "options": [
+        "investing activities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Statement of Cash Flows (5%-10%)",
+      "level": 2,
+      "why": "investing activities is part of the Statement of Cash Flows (5%-10%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Statement of Cash Flows (5%-10%); tested item = investing activities.",
+      "_id": "financial-accounting_51"
+    },
+    {
+      "focus": "Financial Accounting — Statement of Cash Flows (5%-10%)",
+      "prompt": "Which outline item belongs with Statement of Cash Flows (5%-10%) in Financial Accounting?",
+      "options": [
+        "noncash financing activities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Statement of Cash Flows (5%-10%)",
+      "level": 2,
+      "why": "noncash financing activities is part of the Statement of Cash Flows (5%-10%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Statement of Cash Flows (5%-10%); tested item = noncash financing activities.",
+      "_id": "financial-accounting_52"
+    },
+    {
+      "focus": "Financial Accounting — Statement of Cash Flows (5%-10%)",
+      "prompt": "Which outline item belongs with Statement of Cash Flows (5%-10%) in Financial Accounting?",
+      "options": [
+        "noncash investing activities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Statement of Cash Flows (5%-10%)",
+      "level": 2,
+      "why": "noncash investing activities is part of the Statement of Cash Flows (5%-10%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Statement of Cash Flows (5%-10%); tested item = noncash investing activities.",
+      "_id": "financial-accounting_53"
+    },
+    {
+      "focus": "Financial Accounting — Miscellaneous (Less than 5%)",
+      "prompt": "Which major topic is included in Financial Accounting?",
+      "options": [
+        "Miscellaneous (Less than 5%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Miscellaneous (Less than 5%)",
+      "level": 2,
+      "why": "Miscellaneous (Less than 5%) is part of the Miscellaneous (Less than 5%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Miscellaneous (Less than 5%); tested item = Miscellaneous (Less than 5%).",
+      "_id": "financial-accounting_54"
+    },
+    {
+      "focus": "Financial Accounting — Miscellaneous (Less than 5%)",
+      "prompt": "Which outline item belongs with Miscellaneous (Less than 5%) in Financial Accounting?",
+      "options": [
+        "investments",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Miscellaneous (Less than 5%)",
+      "level": 2,
+      "why": "investments is part of the Miscellaneous (Less than 5%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Miscellaneous (Less than 5%); tested item = investments.",
+      "_id": "financial-accounting_55"
+    },
+    {
+      "focus": "Financial Accounting — Miscellaneous (Less than 5%)",
+      "prompt": "Which outline item belongs with Miscellaneous (Less than 5%) in Financial Accounting?",
+      "options": [
+        "contingent liabilities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Miscellaneous (Less than 5%)",
+      "level": 2,
+      "why": "contingent liabilities is part of the Miscellaneous (Less than 5%) content area for Financial Accounting (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Financial Accounting; major area = Miscellaneous (Less than 5%); tested item = contingent liabilities.",
+      "_id": "financial-accounting_56"
+    }
+  ],
+  "information-systems": [
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which major topic is included in Information Systems?",
+      "options": [
+        "Office and Technology Applications (20%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "Office and Technology Applications (20%) is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = Office and Technology Applications (20%).",
+      "_id": "information-systems_0"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "word processing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "word processing is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = word processing.",
+      "_id": "information-systems_1"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "spreadsheet software",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "spreadsheet software is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = spreadsheet software.",
+      "_id": "information-systems_2"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "presentation software",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "presentation software is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = presentation software.",
+      "_id": "information-systems_3"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "database package",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "database package is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = database package.",
+      "_id": "information-systems_4"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "software suites",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "software suites is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = software suites.",
+      "_id": "information-systems_5"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "email systems",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "email systems is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = email systems.",
+      "_id": "information-systems_6"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "conferencing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "conferencing is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = conferencing.",
+      "_id": "information-systems_7"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "collaborative work",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "collaborative work is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = collaborative work.",
+      "_id": "information-systems_8"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "document imaging",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "document imaging is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = document imaging.",
+      "_id": "information-systems_9"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "OCR",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "OCR is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = OCR.",
+      "_id": "information-systems_10"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "system resources",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "system resources is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = system resources.",
+      "_id": "information-systems_11"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "voice recognition systems",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "voice recognition systems is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = voice recognition systems.",
+      "_id": "information-systems_12"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "knowledge management",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "knowledge management is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = knowledge management.",
+      "_id": "information-systems_13"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "expert systems",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "expert systems is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = expert systems.",
+      "_id": "information-systems_14"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "TPS",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "TPS is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = TPS.",
+      "_id": "information-systems_15"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "OLTP",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "OLTP is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = OLTP.",
+      "_id": "information-systems_16"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "DSS",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "DSS is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = DSS.",
+      "_id": "information-systems_17"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "GIS",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "GIS is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = GIS.",
+      "_id": "information-systems_18"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "BI",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "BI is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = BI.",
+      "_id": "information-systems_19"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "OLAP",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "OLAP is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = OLAP.",
+      "_id": "information-systems_20"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "EDI",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "EDI is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = EDI.",
+      "_id": "information-systems_21"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "e-commerce standards",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "e-commerce standards is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = e-commerce standards.",
+      "_id": "information-systems_22"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "e-commerce tools",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "e-commerce tools is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = e-commerce tools.",
+      "_id": "information-systems_23"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "transaction types",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "transaction types is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = transaction types.",
+      "_id": "information-systems_24"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "business models",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "business models is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = business models.",
+      "_id": "information-systems_25"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "ERP",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "ERP is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = ERP.",
+      "_id": "information-systems_26"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "CRM",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "CRM is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = CRM.",
+      "_id": "information-systems_27"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "SCM",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "SCM is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = SCM.",
+      "_id": "information-systems_28"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "competition strategy",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "competition strategy is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = competition strategy.",
+      "_id": "information-systems_29"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "process reengineering",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "process reengineering is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = process reengineering.",
+      "_id": "information-systems_30"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "process modeling",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "process modeling is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = process modeling.",
+      "_id": "information-systems_31"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "TQM",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "TQM is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = TQM.",
+      "_id": "information-systems_32"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "workflow management",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "workflow management is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = workflow management.",
+      "_id": "information-systems_33"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "project management",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "project management is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = project management.",
+      "_id": "information-systems_34"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "realtime processing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "realtime processing is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = realtime processing.",
+      "_id": "information-systems_35"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "transaction processing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "transaction processing is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = transaction processing.",
+      "_id": "information-systems_36"
+    },
+    {
+      "focus": "Information Systems — Office and Technology Applications (20%)",
+      "prompt": "Which outline item belongs with Office and Technology Applications (20%) in Information Systems?",
+      "options": [
+        "batch processing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Office and Technology Applications (20%)",
+      "level": 2,
+      "why": "batch processing is part of the Office and Technology Applications (20%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Office and Technology Applications (20%); tested item = batch processing.",
+      "_id": "information-systems_37"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which major topic is included in Information Systems?",
+      "options": [
+        "Internet and World Wide Web (15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "Internet and World Wide Web (15%) is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = Internet and World Wide Web (15%).",
+      "_id": "information-systems_38"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "intranet",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "intranet is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = intranet.",
+      "_id": "information-systems_39"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "extranet",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "extranet is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = extranet.",
+      "_id": "information-systems_40"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "governance",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "governance is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = governance.",
+      "_id": "information-systems_41"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "internet content",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "internet content is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = internet content.",
+      "_id": "information-systems_42"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "search engines",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "search engines is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = search engines.",
+      "_id": "information-systems_43"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "cloud storage",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "cloud storage is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = cloud storage.",
+      "_id": "information-systems_44"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "content streaming",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "content streaming is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = content streaming.",
+      "_id": "information-systems_45"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "protocols",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "protocols is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = protocols.",
+      "_id": "information-systems_46"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "push communication",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "push communication is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = push communication.",
+      "_id": "information-systems_47"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "pull communication",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "pull communication is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = pull communication.",
+      "_id": "information-systems_48"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "web 2.0",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "web 2.0 is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = web 2.0.",
+      "_id": "information-systems_49"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "web browsers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "web browsers is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = web browsers.",
+      "_id": "information-systems_50"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "URLs",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "URLs is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = URLs.",
+      "_id": "information-systems_51"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "web standards",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "web standards is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = web standards.",
+      "_id": "information-systems_52"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "browser history",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "browser history is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = browser history.",
+      "_id": "information-systems_53"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "cookies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "cookies is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = cookies.",
+      "_id": "information-systems_54"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "resource allocation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "resource allocation is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = resource allocation.",
+      "_id": "information-systems_55"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "browser functionality",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "browser functionality is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = browser functionality.",
+      "_id": "information-systems_56"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "HTML",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "HTML is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = HTML.",
+      "_id": "information-systems_57"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "CSS",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "CSS is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = CSS.",
+      "_id": "information-systems_58"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "XML",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "XML is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = XML.",
+      "_id": "information-systems_59"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "JavaScript",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "JavaScript is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = JavaScript.",
+      "_id": "information-systems_60"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "web architectures",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "web architectures is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = web architectures.",
+      "_id": "information-systems_61"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "website analysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "website analysis is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = website analysis.",
+      "_id": "information-systems_62"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "website design",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "website design is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = website design.",
+      "_id": "information-systems_63"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "website functionality",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "website functionality is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = website functionality.",
+      "_id": "information-systems_64"
+    },
+    {
+      "focus": "Information Systems — Internet and World Wide Web (15%)",
+      "prompt": "Which outline item belongs with Internet and World Wide Web (15%) in Information Systems?",
+      "options": [
+        "accessibility",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Internet and World Wide Web (15%)",
+      "level": 2,
+      "why": "accessibility is part of the Internet and World Wide Web (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Internet and World Wide Web (15%); tested item = accessibility.",
+      "_id": "information-systems_65"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which major topic is included in Information Systems?",
+      "options": [
+        "Security (10%-15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "Security (10%-15%) is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = Security (10%-15%).",
+      "_id": "information-systems_66"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "viruses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "viruses is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = viruses.",
+      "_id": "information-systems_67"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "worms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "worms is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = worms.",
+      "_id": "information-systems_68"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "Trojan horses",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "Trojan horses is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = Trojan horses.",
+      "_id": "information-systems_69"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "ransomware",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "ransomware is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = ransomware.",
+      "_id": "information-systems_70"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "adware",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "adware is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = adware.",
+      "_id": "information-systems_71"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "spyware",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "spyware is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = spyware.",
+      "_id": "information-systems_72"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "scareware",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "scareware is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = scareware.",
+      "_id": "information-systems_73"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "denial of service",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "denial of service is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = denial of service.",
+      "_id": "information-systems_74"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "privacy concerns",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "privacy concerns is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = privacy concerns.",
+      "_id": "information-systems_75"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "identity theft",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "identity theft is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = identity theft.",
+      "_id": "information-systems_76"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "authorization",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "authorization is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = authorization.",
+      "_id": "information-systems_77"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "authentication",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "authentication is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = authentication.",
+      "_id": "information-systems_78"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "system access",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "system access is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = system access.",
+      "_id": "information-systems_79"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "database security",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "database security is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = database security.",
+      "_id": "information-systems_80"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "secure transactions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "secure transactions is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = secure transactions.",
+      "_id": "information-systems_81"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "remote data access",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "remote data access is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = remote data access.",
+      "_id": "information-systems_82"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "device security",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "device security is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = device security.",
+      "_id": "information-systems_83"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "application security",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "application security is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = application security.",
+      "_id": "information-systems_84"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "disaster recovery",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "disaster recovery is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = disaster recovery.",
+      "_id": "information-systems_85"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "disaster recovery planning",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "disaster recovery planning is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = disaster recovery planning.",
+      "_id": "information-systems_86"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "types of disasters",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "types of disasters is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = types of disasters.",
+      "_id": "information-systems_87"
+    },
+    {
+      "focus": "Information Systems — Security (10%-15%)",
+      "prompt": "Which outline item belongs with Security (10%-15%) in Information Systems?",
+      "options": [
+        "recovery",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Security (10%-15%)",
+      "level": 2,
+      "why": "recovery is part of the Security (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Security (10%-15%); tested item = recovery.",
+      "_id": "information-systems_88"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which major topic is included in Information Systems?",
+      "options": [
+        "Hardware and Systems Technology (15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "Hardware and Systems Technology (15%) is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = Hardware and Systems Technology (15%).",
+      "_id": "information-systems_89"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "processing devices",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "processing devices is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = processing devices.",
+      "_id": "information-systems_90"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "storage devices",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "storage devices is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = storage devices.",
+      "_id": "information-systems_91"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "input devices",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "input devices is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = input devices.",
+      "_id": "information-systems_92"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "output devices",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "output devices is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = output devices.",
+      "_id": "information-systems_93"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "telecommunications devices",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "telecommunications devices is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = telecommunications devices.",
+      "_id": "information-systems_94"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "networking devices",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "networking devices is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = networking devices.",
+      "_id": "information-systems_95"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "Internet of Things",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "Internet of Things is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = Internet of Things.",
+      "_id": "information-systems_96"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "computer functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "computer functions is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = computer functions.",
+      "_id": "information-systems_97"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "operating systems",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "operating systems is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = operating systems.",
+      "_id": "information-systems_98"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "telecommunications functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "telecommunications functions is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = telecommunications functions.",
+      "_id": "information-systems_99"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "network hardware",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "network hardware is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = network hardware.",
+      "_id": "information-systems_100"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "LAN",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "LAN is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = LAN.",
+      "_id": "information-systems_101"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "WAN",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "WAN is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = WAN.",
+      "_id": "information-systems_102"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "PAN",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "PAN is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = PAN.",
+      "_id": "information-systems_103"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "VPN",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "VPN is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = VPN.",
+      "_id": "information-systems_104"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "enterprise networks",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "enterprise networks is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = enterprise networks.",
+      "_id": "information-systems_105"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "mainframe",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "mainframe is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = mainframe.",
+      "_id": "information-systems_106"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "personal computer",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "personal computer is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = personal computer.",
+      "_id": "information-systems_107"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "client/server",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "client/server is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = client/server.",
+      "_id": "information-systems_108"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "workstation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "workstation is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = workstation.",
+      "_id": "information-systems_109"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "supercomputer",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "supercomputer is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = supercomputer.",
+      "_id": "information-systems_110"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "Wi-Fi",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "Wi-Fi is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = Wi-Fi.",
+      "_id": "information-systems_111"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "cellular",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "cellular is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = cellular.",
+      "_id": "information-systems_112"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "satellite",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "satellite is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = satellite.",
+      "_id": "information-systems_113"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "GPS",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "GPS is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = GPS.",
+      "_id": "information-systems_114"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "RFID",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "RFID is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = RFID.",
+      "_id": "information-systems_115"
+    },
+    {
+      "focus": "Information Systems — Hardware and Systems Technology (15%)",
+      "prompt": "Which outline item belongs with Hardware and Systems Technology (15%) in Information Systems?",
+      "options": [
+        "Bluetooth",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Hardware and Systems Technology (15%)",
+      "level": 2,
+      "why": "Bluetooth is part of the Hardware and Systems Technology (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Hardware and Systems Technology (15%); tested item = Bluetooth.",
+      "_id": "information-systems_116"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which major topic is included in Information Systems?",
+      "options": [
+        "Software Development (10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "Software Development (10%) is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = Software Development (10%).",
+      "_id": "information-systems_117"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "prototyping",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "prototyping is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = prototyping.",
+      "_id": "information-systems_118"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "SDLC",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "SDLC is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = SDLC.",
+      "_id": "information-systems_119"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "RAD",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "RAD is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = RAD.",
+      "_id": "information-systems_120"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "CASE",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "CASE is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = CASE.",
+      "_id": "information-systems_121"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "JAD",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "JAD is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = JAD.",
+      "_id": "information-systems_122"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "agile",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "agile is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = agile.",
+      "_id": "information-systems_123"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "spiral",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "spiral is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = spiral.",
+      "_id": "information-systems_124"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "feasibility",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "feasibility is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = feasibility.",
+      "_id": "information-systems_125"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "systems analysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "systems analysis is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = systems analysis.",
+      "_id": "information-systems_126"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "systems design",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "systems design is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = systems design.",
+      "_id": "information-systems_127"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "end-user development",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "end-user development is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = end-user development.",
+      "_id": "information-systems_128"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "testing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "testing is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = testing.",
+      "_id": "information-systems_129"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "training",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "training is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = training.",
+      "_id": "information-systems_130"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "data conversion",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "data conversion is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = data conversion.",
+      "_id": "information-systems_131"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "system conversion",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "system conversion is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = system conversion.",
+      "_id": "information-systems_132"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "system maintenance",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "system maintenance is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = system maintenance.",
+      "_id": "information-systems_133"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "post-implementation activities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "post-implementation activities is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = post-implementation activities.",
+      "_id": "information-systems_134"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "documentation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "documentation is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = documentation.",
+      "_id": "information-systems_135"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "proprietary standards",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "proprietary standards is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = proprietary standards.",
+      "_id": "information-systems_136"
+    },
+    {
+      "focus": "Information Systems — Software Development (10%)",
+      "prompt": "Which outline item belongs with Software Development (10%) in Information Systems?",
+      "options": [
+        "open source standards",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Software Development (10%)",
+      "level": 2,
+      "why": "open source standards is part of the Software Development (10%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Software Development (10%); tested item = open source standards.",
+      "_id": "information-systems_137"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which major topic is included in Information Systems?",
+      "options": [
+        "Data Management and Programming Concepts (15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "Data Management and Programming Concepts (15%) is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = Data Management and Programming Concepts (15%).",
+      "_id": "information-systems_138"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "data warehousing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "data warehousing is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = data warehousing.",
+      "_id": "information-systems_139"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "data mining",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "data mining is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = data mining.",
+      "_id": "information-systems_140"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "big data",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "big data is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = big data.",
+      "_id": "information-systems_141"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "validation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "validation is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = validation.",
+      "_id": "information-systems_142"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "migration",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "migration is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = migration.",
+      "_id": "information-systems_143"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "storage",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "storage is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = storage.",
+      "_id": "information-systems_144"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "obsolescence",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "obsolescence is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = obsolescence.",
+      "_id": "information-systems_145"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "data concepts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "data concepts is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = data concepts.",
+      "_id": "information-systems_146"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "data types",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "data types is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = data types.",
+      "_id": "information-systems_147"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "data structures",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "data structures is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = data structures.",
+      "_id": "information-systems_148"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "digital representation of data",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "digital representation of data is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = digital representation of data.",
+      "_id": "information-systems_149"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "data transfer",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "data transfer is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = data transfer.",
+      "_id": "information-systems_150"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "file organization",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "file organization is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = file organization.",
+      "_id": "information-systems_151"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "memory management",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "memory management is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = memory management.",
+      "_id": "information-systems_152"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "file management",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "file management is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = file management.",
+      "_id": "information-systems_153"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "relational DBMS",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "relational DBMS is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = relational DBMS.",
+      "_id": "information-systems_154"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "hierarchical DBMS",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "hierarchical DBMS is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = hierarchical DBMS.",
+      "_id": "information-systems_155"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "network DBMS",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "network DBMS is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = network DBMS.",
+      "_id": "information-systems_156"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "database management strategies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "database management strategies is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = database management strategies.",
+      "_id": "information-systems_157"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "data access",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "data access is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = data access.",
+      "_id": "information-systems_158"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "Boolean logic",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "Boolean logic is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = Boolean logic.",
+      "_id": "information-systems_159"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "arithmetic logic",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "arithmetic logic is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = arithmetic logic.",
+      "_id": "information-systems_160"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "SQL",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "SQL is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = SQL.",
+      "_id": "information-systems_161"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "object-oriented methodology",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "object-oriented methodology is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = object-oriented methodology.",
+      "_id": "information-systems_162"
+    },
+    {
+      "focus": "Information Systems — Data Management and Programming Concepts (15%)",
+      "prompt": "Which outline item belongs with Data Management and Programming Concepts (15%) in Information Systems?",
+      "options": [
+        "structured methodology",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Data Management and Programming Concepts (15%)",
+      "level": 2,
+      "why": "structured methodology is part of the Data Management and Programming Concepts (15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Data Management and Programming Concepts (15%); tested item = structured methodology.",
+      "_id": "information-systems_163"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which major topic is included in Information Systems?",
+      "options": [
+        "Social and Ethical Implications (10%-15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "Social and Ethical Implications (10%-15%) is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = Social and Ethical Implications (10%-15%).",
+      "_id": "information-systems_164"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "outsourcing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "outsourcing is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = outsourcing.",
+      "_id": "information-systems_165"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "insourcing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "insourcing is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = insourcing.",
+      "_id": "information-systems_166"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "offshoring",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "offshoring is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = offshoring.",
+      "_id": "information-systems_167"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "green computing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "green computing is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = green computing.",
+      "_id": "information-systems_168"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "technology investment",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "technology investment is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = technology investment.",
+      "_id": "information-systems_169"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "intellectual property rights",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "intellectual property rights is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = intellectual property rights.",
+      "_id": "information-systems_170"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "legal property rights",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "legal property rights is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = legal property rights.",
+      "_id": "information-systems_171"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "ownership of materials",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "ownership of materials is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = ownership of materials.",
+      "_id": "information-systems_172"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "open-source software",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "open-source software is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = open-source software.",
+      "_id": "information-systems_173"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "open-source hardware",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "open-source hardware is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = open-source hardware.",
+      "_id": "information-systems_174"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "effects on jobs",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "effects on jobs is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = effects on jobs.",
+      "_id": "information-systems_175"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "telecommuting",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "telecommuting is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = telecommuting.",
+      "_id": "information-systems_176"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "virtual teams",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "virtual teams is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = virtual teams.",
+      "_id": "information-systems_177"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "job design",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "job design is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = job design.",
+      "_id": "information-systems_178"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "staffing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "staffing is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = staffing.",
+      "_id": "information-systems_179"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "ergonomics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "ergonomics is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = ergonomics.",
+      "_id": "information-systems_180"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "IS careers",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "IS careers is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = IS careers.",
+      "_id": "information-systems_181"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "responsibilities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "responsibilities is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = responsibilities.",
+      "_id": "information-systems_182"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "career path",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "career path is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = career path.",
+      "_id": "information-systems_183"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "certification",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "certification is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = certification.",
+      "_id": "information-systems_184"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "social networking benefits",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "social networking benefits is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = social networking benefits.",
+      "_id": "information-systems_185"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "social networking risks",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "social networking risks is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = social networking risks.",
+      "_id": "information-systems_186"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "social networking ethics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "social networking ethics is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = social networking ethics.",
+      "_id": "information-systems_187"
+    },
+    {
+      "focus": "Information Systems — Social and Ethical Implications (10%-15%)",
+      "prompt": "Which outline item belongs with Social and Ethical Implications (10%-15%) in Information Systems?",
+      "options": [
+        "social networking technology",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Social and Ethical Implications (10%-15%)",
+      "level": 2,
+      "why": "social networking technology is part of the Social and Ethical Implications (10%-15%) content area for Information Systems (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Information Systems; major area = Social and Ethical Implications (10%-15%); tested item = social networking technology.",
+      "_id": "information-systems_188"
+    }
+  ],
+  "introductory-business-law": [
+    {
+      "focus": "Introductory Business Law — History and Sources of American Law/Constitutional Law (5%-10%)",
+      "prompt": "Which major topic is included in Introductory Business Law?",
+      "options": [
+        "History and Sources of American Law/Constitutional Law (5%-10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "History and Sources of American Law/Constitutional Law (5%-10%)",
+      "level": 2,
+      "why": "History and Sources of American Law/Constitutional Law (5%-10%) is part of the History and Sources of American Law/Constitutional Law (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = History and Sources of American Law/Constitutional Law (5%-10%); tested item = History and Sources of American Law/Constitutional Law (5%-10%).",
+      "_id": "introductory-business-law_0"
+    },
+    {
+      "focus": "Introductory Business Law — History and Sources of American Law/Constitutional Law (5%-10%)",
+      "prompt": "Which outline item belongs with History and Sources of American Law/Constitutional Law (5%-10%) in Introductory Business Law?",
+      "options": [
+        "history of American law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "History and Sources of American Law/Constitutional Law (5%-10%)",
+      "level": 2,
+      "why": "history of American law is part of the History and Sources of American Law/Constitutional Law (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = History and Sources of American Law/Constitutional Law (5%-10%); tested item = history of American law.",
+      "_id": "introductory-business-law_1"
+    },
+    {
+      "focus": "Introductory Business Law — History and Sources of American Law/Constitutional Law (5%-10%)",
+      "prompt": "Which outline item belongs with History and Sources of American Law/Constitutional Law (5%-10%) in Introductory Business Law?",
+      "options": [
+        "sources of American law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "History and Sources of American Law/Constitutional Law (5%-10%)",
+      "level": 2,
+      "why": "sources of American law is part of the History and Sources of American Law/Constitutional Law (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = History and Sources of American Law/Constitutional Law (5%-10%); tested item = sources of American law.",
+      "_id": "introductory-business-law_2"
+    },
+    {
+      "focus": "Introductory Business Law — History and Sources of American Law/Constitutional Law (5%-10%)",
+      "prompt": "Which outline item belongs with History and Sources of American Law/Constitutional Law (5%-10%) in Introductory Business Law?",
+      "options": [
+        "constitutional law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "History and Sources of American Law/Constitutional Law (5%-10%)",
+      "level": 2,
+      "why": "constitutional law is part of the History and Sources of American Law/Constitutional Law (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = History and Sources of American Law/Constitutional Law (5%-10%); tested item = constitutional law.",
+      "_id": "introductory-business-law_3"
+    },
+    {
+      "focus": "Introductory Business Law — American Legal Systems and Procedures (5%-10%)",
+      "prompt": "Which major topic is included in Introductory Business Law?",
+      "options": [
+        "American Legal Systems and Procedures (5%-10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "American Legal Systems and Procedures (5%-10%)",
+      "level": 2,
+      "why": "American Legal Systems and Procedures (5%-10%) is part of the American Legal Systems and Procedures (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = American Legal Systems and Procedures (5%-10%); tested item = American Legal Systems and Procedures (5%-10%).",
+      "_id": "introductory-business-law_4"
+    },
+    {
+      "focus": "Introductory Business Law — American Legal Systems and Procedures (5%-10%)",
+      "prompt": "Which outline item belongs with American Legal Systems and Procedures (5%-10%) in Introductory Business Law?",
+      "options": [
+        "American legal systems",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "American Legal Systems and Procedures (5%-10%)",
+      "level": 2,
+      "why": "American legal systems is part of the American Legal Systems and Procedures (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = American Legal Systems and Procedures (5%-10%); tested item = American legal systems.",
+      "_id": "introductory-business-law_5"
+    },
+    {
+      "focus": "Introductory Business Law — American Legal Systems and Procedures (5%-10%)",
+      "prompt": "Which outline item belongs with American Legal Systems and Procedures (5%-10%) in Introductory Business Law?",
+      "options": [
+        "legal procedures",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "American Legal Systems and Procedures (5%-10%)",
+      "level": 2,
+      "why": "legal procedures is part of the American Legal Systems and Procedures (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = American Legal Systems and Procedures (5%-10%); tested item = legal procedures.",
+      "_id": "introductory-business-law_6"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which major topic is included in Introductory Business Law?",
+      "options": [
+        "Contracts (30%-40%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "Contracts (30%-40%) is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = Contracts (30%-40%).",
+      "_id": "introductory-business-law_7"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "meanings of terms",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "meanings of terms is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = meanings of terms.",
+      "_id": "introductory-business-law_8"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "formation of contracts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "formation of contracts is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = formation of contracts.",
+      "_id": "introductory-business-law_9"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "capacity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "capacity is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = capacity.",
+      "_id": "introductory-business-law_10"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "consideration",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "consideration is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = consideration.",
+      "_id": "introductory-business-law_11"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "joint obligations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "joint obligations is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = joint obligations.",
+      "_id": "introductory-business-law_12"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "third-party beneficiary contracts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "third-party beneficiary contracts is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = third-party beneficiary contracts.",
+      "_id": "introductory-business-law_13"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "assignment",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "assignment is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = assignment.",
+      "_id": "introductory-business-law_14"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "delegation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "delegation is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = delegation.",
+      "_id": "introductory-business-law_15"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "statute of frauds",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "statute of frauds is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = statute of frauds.",
+      "_id": "introductory-business-law_16"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "scope of contracts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "scope of contracts is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = scope of contracts.",
+      "_id": "introductory-business-law_17"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "meaning of contracts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "meaning of contracts is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = meaning of contracts.",
+      "_id": "introductory-business-law_18"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "breach of contract",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "breach of contract is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = breach of contract.",
+      "_id": "introductory-business-law_19"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "remedies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "remedies is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = remedies.",
+      "_id": "introductory-business-law_20"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "bar to remedies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "bar to remedies is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = bar to remedies.",
+      "_id": "introductory-business-law_21"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "discharge of contracts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "discharge of contracts is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = discharge of contracts.",
+      "_id": "introductory-business-law_22"
+    },
+    {
+      "focus": "Introductory Business Law — Contracts (30%-40%)",
+      "prompt": "Which outline item belongs with Contracts (30%-40%) in Introductory Business Law?",
+      "options": [
+        "illegal contracts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Contracts (30%-40%)",
+      "level": 2,
+      "why": "illegal contracts is part of the Contracts (30%-40%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Contracts (30%-40%); tested item = illegal contracts.",
+      "_id": "introductory-business-law_23"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which major topic is included in Introductory Business Law?",
+      "options": [
+        "Legal Environment (20%-25%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "Legal Environment (20%-25%) is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = Legal Environment (20%-25%).",
+      "_id": "introductory-business-law_24"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which outline item belongs with Legal Environment (20%-25%) in Introductory Business Law?",
+      "options": [
+        "ethics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "ethics is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = ethics.",
+      "_id": "introductory-business-law_25"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which outline item belongs with Legal Environment (20%-25%) in Introductory Business Law?",
+      "options": [
+        "corporate social responsibility",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "corporate social responsibility is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = corporate social responsibility.",
+      "_id": "introductory-business-law_26"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which outline item belongs with Legal Environment (20%-25%) in Introductory Business Law?",
+      "options": [
+        "government regulation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "government regulation is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = government regulation.",
+      "_id": "introductory-business-law_27"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which outline item belongs with Legal Environment (20%-25%) in Introductory Business Law?",
+      "options": [
+        "administrative agencies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "administrative agencies is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = administrative agencies.",
+      "_id": "introductory-business-law_28"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which outline item belongs with Legal Environment (20%-25%) in Introductory Business Law?",
+      "options": [
+        "antitrust law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "antitrust law is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = antitrust law.",
+      "_id": "introductory-business-law_29"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which outline item belongs with Legal Environment (20%-25%) in Introductory Business Law?",
+      "options": [
+        "employment law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "employment law is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = employment law.",
+      "_id": "introductory-business-law_30"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which outline item belongs with Legal Environment (20%-25%) in Introductory Business Law?",
+      "options": [
+        "product liability",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "product liability is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = product liability.",
+      "_id": "introductory-business-law_31"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which outline item belongs with Legal Environment (20%-25%) in Introductory Business Law?",
+      "options": [
+        "consumer protection",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "consumer protection is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = consumer protection.",
+      "_id": "introductory-business-law_32"
+    },
+    {
+      "focus": "Introductory Business Law — Legal Environment (20%-25%)",
+      "prompt": "Which outline item belongs with Legal Environment (20%-25%) in Introductory Business Law?",
+      "options": [
+        "international business law",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Legal Environment (20%-25%)",
+      "level": 2,
+      "why": "international business law is part of the Legal Environment (20%-25%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Legal Environment (20%-25%); tested item = international business law.",
+      "_id": "introductory-business-law_33"
+    },
+    {
+      "focus": "Introductory Business Law — Torts (10%-15%)",
+      "prompt": "Which major topic is included in Introductory Business Law?",
+      "options": [
+        "Torts (10%-15%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Torts (10%-15%)",
+      "level": 2,
+      "why": "Torts (10%-15%) is part of the Torts (10%-15%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Torts (10%-15%); tested item = Torts (10%-15%).",
+      "_id": "introductory-business-law_34"
+    },
+    {
+      "focus": "Introductory Business Law — Torts (10%-15%)",
+      "prompt": "Which outline item belongs with Torts (10%-15%) in Introductory Business Law?",
+      "options": [
+        "torts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Torts (10%-15%)",
+      "level": 2,
+      "why": "torts is part of the Torts (10%-15%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Torts (10%-15%); tested item = torts.",
+      "_id": "introductory-business-law_35"
+    },
+    {
+      "focus": "Introductory Business Law — Miscellaneous (5%-10%)",
+      "prompt": "Which major topic is included in Introductory Business Law?",
+      "options": [
+        "Miscellaneous (5%-10%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Miscellaneous (5%-10%)",
+      "level": 2,
+      "why": "Miscellaneous (5%-10%) is part of the Miscellaneous (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Miscellaneous (5%-10%); tested item = Miscellaneous (5%-10%).",
+      "_id": "introductory-business-law_36"
+    },
+    {
+      "focus": "Introductory Business Law — Miscellaneous (5%-10%)",
+      "prompt": "Which outline item belongs with Miscellaneous (5%-10%) in Introductory Business Law?",
+      "options": [
+        "agency",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Miscellaneous (5%-10%)",
+      "level": 2,
+      "why": "agency is part of the Miscellaneous (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Miscellaneous (5%-10%); tested item = agency.",
+      "_id": "introductory-business-law_37"
+    },
+    {
+      "focus": "Introductory Business Law — Miscellaneous (5%-10%)",
+      "prompt": "Which outline item belongs with Miscellaneous (5%-10%) in Introductory Business Law?",
+      "options": [
+        "partnerships",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Miscellaneous (5%-10%)",
+      "level": 2,
+      "why": "partnerships is part of the Miscellaneous (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Miscellaneous (5%-10%); tested item = partnerships.",
+      "_id": "introductory-business-law_38"
+    },
+    {
+      "focus": "Introductory Business Law — Miscellaneous (5%-10%)",
+      "prompt": "Which outline item belongs with Miscellaneous (5%-10%) in Introductory Business Law?",
+      "options": [
+        "corporations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Miscellaneous (5%-10%)",
+      "level": 2,
+      "why": "corporations is part of the Miscellaneous (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Miscellaneous (5%-10%); tested item = corporations.",
+      "_id": "introductory-business-law_39"
+    },
+    {
+      "focus": "Introductory Business Law — Miscellaneous (5%-10%)",
+      "prompt": "Which outline item belongs with Miscellaneous (5%-10%) in Introductory Business Law?",
+      "options": [
+        "sales",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Miscellaneous (5%-10%)",
+      "level": 2,
+      "why": "sales is part of the Miscellaneous (5%-10%) content area for Introductory Business Law (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Introductory Business Law; major area = Miscellaneous (5%-10%); tested item = sales.",
+      "_id": "introductory-business-law_40"
+    }
+  ],
+  "principles-of-management": [
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which major topic is included in Principles of Management?",
+      "options": [
+        "Organization and Human Resources (15%-25%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "Organization and Human Resources (15%-25%) is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = Organization and Human Resources (15%-25%).",
+      "_id": "principles-of-management_0"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "personnel administration",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "personnel administration is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = personnel administration.",
+      "_id": "principles-of-management_1"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "human relations",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "human relations is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = human relations.",
+      "_id": "principles-of-management_2"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "motivation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "motivation is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = motivation.",
+      "_id": "principles-of-management_3"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "training and development",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "training and development is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = training and development.",
+      "_id": "principles-of-management_4"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "performance appraisal",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "performance appraisal is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = performance appraisal.",
+      "_id": "principles-of-management_5"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "organizational development",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "organizational development is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = organizational development.",
+      "_id": "principles-of-management_6"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "legal concerns",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "legal concerns is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = legal concerns.",
+      "_id": "principles-of-management_7"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "workforce diversity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "workforce diversity is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = workforce diversity.",
+      "_id": "principles-of-management_8"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "recruiting",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "recruiting is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = recruiting.",
+      "_id": "principles-of-management_9"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "selecting",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "selecting is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = selecting.",
+      "_id": "principles-of-management_10"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "compensation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "compensation is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = compensation.",
+      "_id": "principles-of-management_11"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "benefits",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "benefits is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = benefits.",
+      "_id": "principles-of-management_12"
+    },
+    {
+      "focus": "Principles of Management — Organization and Human Resources (15%-25%)",
+      "prompt": "Which outline item belongs with Organization and Human Resources (15%-25%) in Principles of Management?",
+      "options": [
+        "collective bargaining",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Organization and Human Resources (15%-25%)",
+      "level": 2,
+      "why": "collective bargaining is part of the Organization and Human Resources (15%-25%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Organization and Human Resources (15%-25%); tested item = collective bargaining.",
+      "_id": "principles-of-management_13"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which major topic is included in Principles of Management?",
+      "options": [
+        "Operational Aspects of Management (10%-20%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "Operational Aspects of Management (10%-20%) is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = Operational Aspects of Management (10%-20%).",
+      "_id": "principles-of-management_14"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "operations planning",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "operations planning is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = operations planning.",
+      "_id": "principles-of-management_15"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "operations control",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "operations control is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = operations control.",
+      "_id": "principles-of-management_16"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "work scheduling",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "work scheduling is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = work scheduling.",
+      "_id": "principles-of-management_17"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "quality management",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "quality management is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = quality management.",
+      "_id": "principles-of-management_18"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "TQM",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "TQM is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = TQM.",
+      "_id": "principles-of-management_19"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "information processing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "information processing is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = information processing.",
+      "_id": "principles-of-management_20"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "information management",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "information management is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = information management.",
+      "_id": "principles-of-management_21"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "strategic planning",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "strategic planning is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = strategic planning.",
+      "_id": "principles-of-management_22"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "strategic analysis",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "strategic analysis is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = strategic analysis.",
+      "_id": "principles-of-management_23"
+    },
+    {
+      "focus": "Principles of Management — Operational Aspects of Management (10%-20%)",
+      "prompt": "Which outline item belongs with Operational Aspects of Management (10%-20%) in Principles of Management?",
+      "options": [
+        "productivity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Operational Aspects of Management (10%-20%)",
+      "level": 2,
+      "why": "productivity is part of the Operational Aspects of Management (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Operational Aspects of Management (10%-20%); tested item = productivity.",
+      "_id": "principles-of-management_24"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which major topic is included in Principles of Management?",
+      "options": [
+        "Functional Aspects of Management (45%-55%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "Functional Aspects of Management (45%-55%) is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = Functional Aspects of Management (45%-55%).",
+      "_id": "principles-of-management_25"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "planning",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "planning is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = planning.",
+      "_id": "principles-of-management_26"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "organizing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "organizing is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = organizing.",
+      "_id": "principles-of-management_27"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "leading",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "leading is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = leading.",
+      "_id": "principles-of-management_28"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "controlling",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "controlling is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = controlling.",
+      "_id": "principles-of-management_29"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "authority",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "authority is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = authority.",
+      "_id": "principles-of-management_30"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "decision-making",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "decision-making is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = decision-making.",
+      "_id": "principles-of-management_31"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "organization charts",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "organization charts is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = organization charts.",
+      "_id": "principles-of-management_32"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "leadership",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "leadership is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = leadership.",
+      "_id": "principles-of-management_33"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "organizational structure",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "organizational structure is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = organizational structure.",
+      "_id": "principles-of-management_34"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "budgeting",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "budgeting is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = budgeting.",
+      "_id": "principles-of-management_35"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "problem-solving",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "problem-solving is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = problem-solving.",
+      "_id": "principles-of-management_36"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "group dynamics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "group dynamics is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = group dynamics.",
+      "_id": "principles-of-management_37"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "team functions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "team functions is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = team functions.",
+      "_id": "principles-of-management_38"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "conflict resolution",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "conflict resolution is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = conflict resolution.",
+      "_id": "principles-of-management_39"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "communication",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "communication is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = communication.",
+      "_id": "principles-of-management_40"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "change",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "change is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = change.",
+      "_id": "principles-of-management_41"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "organizational theory",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "organizational theory is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = organizational theory.",
+      "_id": "principles-of-management_42"
+    },
+    {
+      "focus": "Principles of Management — Functional Aspects of Management (45%-55%)",
+      "prompt": "Which outline item belongs with Functional Aspects of Management (45%-55%) in Principles of Management?",
+      "options": [
+        "historical aspects",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Functional Aspects of Management (45%-55%)",
+      "level": 2,
+      "why": "historical aspects is part of the Functional Aspects of Management (45%-55%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = Functional Aspects of Management (45%-55%); tested item = historical aspects.",
+      "_id": "principles-of-management_43"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which major topic is included in Principles of Management?",
+      "options": [
+        "International Management and Contemporary Issues (10%-20%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "International Management and Contemporary Issues (10%-20%) is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = International Management and Contemporary Issues (10%-20%).",
+      "_id": "principles-of-management_44"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "value dimensions",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "value dimensions is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = value dimensions.",
+      "_id": "principles-of-management_45"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "regional economic integration",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "regional economic integration is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = regional economic integration.",
+      "_id": "principles-of-management_46"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "trading alliances",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "trading alliances is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = trading alliances.",
+      "_id": "principles-of-management_47"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "global environment",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "global environment is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = global environment.",
+      "_id": "principles-of-management_48"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "social responsibilities of business",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "social responsibilities of business is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = social responsibilities of business.",
+      "_id": "principles-of-management_49"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "ethics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "ethics is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = ethics.",
+      "_id": "principles-of-management_50"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "systems",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "systems is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = systems.",
+      "_id": "principles-of-management_51"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "environment",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "environment is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = environment.",
+      "_id": "principles-of-management_52"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "government regulation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "government regulation is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = government regulation.",
+      "_id": "principles-of-management_53"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "management theories",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "management theories is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = management theories.",
+      "_id": "principles-of-management_54"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "management theorists",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "management theorists is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = management theorists.",
+      "_id": "principles-of-management_55"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "e-business",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "e-business is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = e-business.",
+      "_id": "principles-of-management_56"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "creativity",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "creativity is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = creativity.",
+      "_id": "principles-of-management_57"
+    },
+    {
+      "focus": "Principles of Management — International Management and Contemporary Issues (10%-20%)",
+      "prompt": "Which outline item belongs with International Management and Contemporary Issues (10%-20%) in Principles of Management?",
+      "options": [
+        "innovation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "International Management and Contemporary Issues (10%-20%)",
+      "level": 2,
+      "why": "innovation is part of the International Management and Contemporary Issues (10%-20%) content area for Principles of Management (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Management; major area = International Management and Contemporary Issues (10%-20%); tested item = innovation.",
+      "_id": "principles-of-management_58"
+    }
+  ],
+  "principles-of-marketing": [
+    {
+      "focus": "Principles of Marketing — Role of Marketing in Society (8%-13%)",
+      "prompt": "Which major topic is included in Principles of Marketing?",
+      "options": [
+        "Role of Marketing in Society (8%-13%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in Society (8%-13%)",
+      "level": 2,
+      "why": "Role of Marketing in Society (8%-13%) is part of the Role of Marketing in Society (8%-13%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in Society (8%-13%); tested item = Role of Marketing in Society (8%-13%).",
+      "_id": "principles-of-marketing_0"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in Society (8%-13%)",
+      "prompt": "Which outline item belongs with Role of Marketing in Society (8%-13%) in Principles of Marketing?",
+      "options": [
+        "ethics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in Society (8%-13%)",
+      "level": 2,
+      "why": "ethics is part of the Role of Marketing in Society (8%-13%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in Society (8%-13%); tested item = ethics.",
+      "_id": "principles-of-marketing_1"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in Society (8%-13%)",
+      "prompt": "Which outline item belongs with Role of Marketing in Society (8%-13%) in Principles of Marketing?",
+      "options": [
+        "nonprofit marketing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in Society (8%-13%)",
+      "level": 2,
+      "why": "nonprofit marketing is part of the Role of Marketing in Society (8%-13%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in Society (8%-13%); tested item = nonprofit marketing.",
+      "_id": "principles-of-marketing_2"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in Society (8%-13%)",
+      "prompt": "Which outline item belongs with Role of Marketing in Society (8%-13%) in Principles of Marketing?",
+      "options": [
+        "international marketing",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in Society (8%-13%)",
+      "level": 2,
+      "why": "international marketing is part of the Role of Marketing in Society (8%-13%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in Society (8%-13%); tested item = international marketing.",
+      "_id": "principles-of-marketing_3"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in an Organization (17%-24%)",
+      "prompt": "Which major topic is included in Principles of Marketing?",
+      "options": [
+        "Role of Marketing in an Organization (17%-24%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in an Organization (17%-24%)",
+      "level": 2,
+      "why": "Role of Marketing in an Organization (17%-24%) is part of the Role of Marketing in an Organization (17%-24%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in an Organization (17%-24%); tested item = Role of Marketing in an Organization (17%-24%).",
+      "_id": "principles-of-marketing_4"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in an Organization (17%-24%)",
+      "prompt": "Which outline item belongs with Role of Marketing in an Organization (17%-24%) in Principles of Marketing?",
+      "options": [
+        "marketing concept",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in an Organization (17%-24%)",
+      "level": 2,
+      "why": "marketing concept is part of the Role of Marketing in an Organization (17%-24%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in an Organization (17%-24%); tested item = marketing concept.",
+      "_id": "principles-of-marketing_5"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in an Organization (17%-24%)",
+      "prompt": "Which outline item belongs with Role of Marketing in an Organization (17%-24%) in Principles of Marketing?",
+      "options": [
+        "marketing strategy",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in an Organization (17%-24%)",
+      "level": 2,
+      "why": "marketing strategy is part of the Role of Marketing in an Organization (17%-24%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in an Organization (17%-24%); tested item = marketing strategy.",
+      "_id": "principles-of-marketing_6"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in an Organization (17%-24%)",
+      "prompt": "Which outline item belongs with Role of Marketing in an Organization (17%-24%) in Principles of Marketing?",
+      "options": [
+        "marketing environment",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in an Organization (17%-24%)",
+      "level": 2,
+      "why": "marketing environment is part of the Role of Marketing in an Organization (17%-24%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in an Organization (17%-24%); tested item = marketing environment.",
+      "_id": "principles-of-marketing_7"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in an Organization (17%-24%)",
+      "prompt": "Which outline item belongs with Role of Marketing in an Organization (17%-24%) in Principles of Marketing?",
+      "options": [
+        "marketing decision system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in an Organization (17%-24%)",
+      "level": 2,
+      "why": "marketing decision system is part of the Role of Marketing in an Organization (17%-24%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in an Organization (17%-24%); tested item = marketing decision system.",
+      "_id": "principles-of-marketing_8"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in an Organization (17%-24%)",
+      "prompt": "Which outline item belongs with Role of Marketing in an Organization (17%-24%) in Principles of Marketing?",
+      "options": [
+        "marketing research",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in an Organization (17%-24%)",
+      "level": 2,
+      "why": "marketing research is part of the Role of Marketing in an Organization (17%-24%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in an Organization (17%-24%); tested item = marketing research.",
+      "_id": "principles-of-marketing_9"
+    },
+    {
+      "focus": "Principles of Marketing — Role of Marketing in an Organization (17%-24%)",
+      "prompt": "Which outline item belongs with Role of Marketing in an Organization (17%-24%) in Principles of Marketing?",
+      "options": [
+        "marketing information system",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Role of Marketing in an Organization (17%-24%)",
+      "level": 2,
+      "why": "marketing information system is part of the Role of Marketing in an Organization (17%-24%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Role of Marketing in an Organization (17%-24%); tested item = marketing information system.",
+      "_id": "principles-of-marketing_10"
+    },
+    {
+      "focus": "Principles of Marketing — Target Marketing (22%-27%)",
+      "prompt": "Which major topic is included in Principles of Marketing?",
+      "options": [
+        "Target Marketing (22%-27%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Target Marketing (22%-27%)",
+      "level": 2,
+      "why": "Target Marketing (22%-27%) is part of the Target Marketing (22%-27%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Target Marketing (22%-27%); tested item = Target Marketing (22%-27%).",
+      "_id": "principles-of-marketing_11"
+    },
+    {
+      "focus": "Principles of Marketing — Target Marketing (22%-27%)",
+      "prompt": "Which outline item belongs with Target Marketing (22%-27%) in Principles of Marketing?",
+      "options": [
+        "consumer behavior",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Target Marketing (22%-27%)",
+      "level": 2,
+      "why": "consumer behavior is part of the Target Marketing (22%-27%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Target Marketing (22%-27%); tested item = consumer behavior.",
+      "_id": "principles-of-marketing_12"
+    },
+    {
+      "focus": "Principles of Marketing — Target Marketing (22%-27%)",
+      "prompt": "Which outline item belongs with Target Marketing (22%-27%) in Principles of Marketing?",
+      "options": [
+        "segmentation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Target Marketing (22%-27%)",
+      "level": 2,
+      "why": "segmentation is part of the Target Marketing (22%-27%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Target Marketing (22%-27%); tested item = segmentation.",
+      "_id": "principles-of-marketing_13"
+    },
+    {
+      "focus": "Principles of Marketing — Target Marketing (22%-27%)",
+      "prompt": "Which outline item belongs with Target Marketing (22%-27%) in Principles of Marketing?",
+      "options": [
+        "positioning",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Target Marketing (22%-27%)",
+      "level": 2,
+      "why": "positioning is part of the Target Marketing (22%-27%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Target Marketing (22%-27%); tested item = positioning.",
+      "_id": "principles-of-marketing_14"
+    },
+    {
+      "focus": "Principles of Marketing — Target Marketing (22%-27%)",
+      "prompt": "Which outline item belongs with Target Marketing (22%-27%) in Principles of Marketing?",
+      "options": [
+        "business-to-business markets",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Target Marketing (22%-27%)",
+      "level": 2,
+      "why": "business-to-business markets is part of the Target Marketing (22%-27%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Target Marketing (22%-27%); tested item = business-to-business markets.",
+      "_id": "principles-of-marketing_15"
+    },
+    {
+      "focus": "Principles of Marketing — Marketing Mix (40%-50%)",
+      "prompt": "Which major topic is included in Principles of Marketing?",
+      "options": [
+        "Marketing Mix (40%-50%)",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Marketing Mix (40%-50%)",
+      "level": 2,
+      "why": "Marketing Mix (40%-50%) is part of the Marketing Mix (40%-50%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Marketing Mix (40%-50%); tested item = Marketing Mix (40%-50%).",
+      "_id": "principles-of-marketing_16"
+    },
+    {
+      "focus": "Principles of Marketing — Marketing Mix (40%-50%)",
+      "prompt": "Which outline item belongs with Marketing Mix (40%-50%) in Principles of Marketing?",
+      "options": [
+        "product and service management",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Marketing Mix (40%-50%)",
+      "level": 2,
+      "why": "product and service management is part of the Marketing Mix (40%-50%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Marketing Mix (40%-50%); tested item = product and service management.",
+      "_id": "principles-of-marketing_17"
+    },
+    {
+      "focus": "Principles of Marketing — Marketing Mix (40%-50%)",
+      "prompt": "Which outline item belongs with Marketing Mix (40%-50%) in Principles of Marketing?",
+      "options": [
+        "branding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Marketing Mix (40%-50%)",
+      "level": 2,
+      "why": "branding is part of the Marketing Mix (40%-50%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Marketing Mix (40%-50%); tested item = branding.",
+      "_id": "principles-of-marketing_18"
+    },
+    {
+      "focus": "Principles of Marketing — Marketing Mix (40%-50%)",
+      "prompt": "Which outline item belongs with Marketing Mix (40%-50%) in Principles of Marketing?",
+      "options": [
+        "pricing policies",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Marketing Mix (40%-50%)",
+      "level": 2,
+      "why": "pricing policies is part of the Marketing Mix (40%-50%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Marketing Mix (40%-50%); tested item = pricing policies.",
+      "_id": "principles-of-marketing_19"
+    },
+    {
+      "focus": "Principles of Marketing — Marketing Mix (40%-50%)",
+      "prompt": "Which outline item belongs with Marketing Mix (40%-50%) in Principles of Marketing?",
+      "options": [
+        "distribution channels",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Marketing Mix (40%-50%)",
+      "level": 2,
+      "why": "distribution channels is part of the Marketing Mix (40%-50%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Marketing Mix (40%-50%); tested item = distribution channels.",
+      "_id": "principles-of-marketing_20"
+    },
+    {
+      "focus": "Principles of Marketing — Marketing Mix (40%-50%)",
+      "prompt": "Which outline item belongs with Marketing Mix (40%-50%) in Principles of Marketing?",
+      "options": [
+        "logistics",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Marketing Mix (40%-50%)",
+      "level": 2,
+      "why": "logistics is part of the Marketing Mix (40%-50%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Marketing Mix (40%-50%); tested item = logistics.",
+      "_id": "principles-of-marketing_21"
+    },
+    {
+      "focus": "Principles of Marketing — Marketing Mix (40%-50%)",
+      "prompt": "Which outline item belongs with Marketing Mix (40%-50%) in Principles of Marketing?",
+      "options": [
+        "integrated marketing communications",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Marketing Mix (40%-50%)",
+      "level": 2,
+      "why": "integrated marketing communications is part of the Marketing Mix (40%-50%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Marketing Mix (40%-50%); tested item = integrated marketing communications.",
+      "_id": "principles-of-marketing_22"
+    },
+    {
+      "focus": "Principles of Marketing — Marketing Mix (40%-50%)",
+      "prompt": "Which outline item belongs with Marketing Mix (40%-50%) in Principles of Marketing?",
+      "options": [
+        "promotion",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Marketing Mix (40%-50%)",
+      "level": 2,
+      "why": "promotion is part of the Marketing Mix (40%-50%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Marketing Mix (40%-50%); tested item = promotion.",
+      "_id": "principles-of-marketing_23"
+    },
+    {
+      "focus": "Principles of Marketing — Marketing Mix (40%-50%)",
+      "prompt": "Which outline item belongs with Marketing Mix (40%-50%) in Principles of Marketing?",
+      "options": [
+        "marketing in e-commerce",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Marketing Mix (40%-50%)",
+      "level": 2,
+      "why": "marketing in e-commerce is part of the Marketing Mix (40%-50%) content area for Principles of Marketing (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Principles of Marketing; major area = Marketing Mix (40%-50%); tested item = marketing in e-commerce.",
+      "_id": "principles-of-marketing_24"
+    }
+  ],
+  "analyzing-interpreting-literature": [
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which major topic is included in Analyzing and Interpreting Literature?",
+      "options": [
+        "Core Literary Abilities",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "Core Literary Abilities is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = Core Literary Abilities.",
+      "_id": "analyzing-interpreting-literature_0"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "reading prose with understanding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "reading prose with understanding is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = reading prose with understanding.",
+      "_id": "analyzing-interpreting-literature_1"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "reading poetry with understanding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "reading poetry with understanding is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = reading poetry with understanding.",
+      "_id": "analyzing-interpreting-literature_2"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "reading drama with understanding",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "reading drama with understanding is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = reading drama with understanding.",
+      "_id": "analyzing-interpreting-literature_3"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "analyzing elements of a literary passage",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "analyzing elements of a literary passage is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = analyzing elements of a literary passage.",
+      "_id": "analyzing-interpreting-literature_4"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "nuances of meaning",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "nuances of meaning is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = nuances of meaning.",
+      "_id": "analyzing-interpreting-literature_5"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "tone",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "tone is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = tone.",
+      "_id": "analyzing-interpreting-literature_6"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "imagery",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "imagery is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = imagery.",
+      "_id": "analyzing-interpreting-literature_7"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "style",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "style is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = style.",
+      "_id": "analyzing-interpreting-literature_8"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "interpreting metaphors",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "interpreting metaphors is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = interpreting metaphors.",
+      "_id": "analyzing-interpreting-literature_9"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "rhetorical devices",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "rhetorical devices is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = rhetorical devices.",
+      "_id": "analyzing-interpreting-literature_10"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "stylistic devices",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "stylistic devices is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = stylistic devices.",
+      "_id": "analyzing-interpreting-literature_11"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "parts and wholes relationships",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "parts and wholes relationships is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = parts and wholes relationships.",
+      "_id": "analyzing-interpreting-literature_12"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "speaker attitudes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "speaker attitudes is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = speaker attitudes.",
+      "_id": "analyzing-interpreting-literature_13"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "author attitudes",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "author attitudes is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = author attitudes.",
+      "_id": "analyzing-interpreting-literature_14"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "means of literary effects",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "means of literary effects is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = means of literary effects.",
+      "_id": "analyzing-interpreting-literature_15"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Core Literary Abilities",
+      "prompt": "Which outline item belongs with Core Literary Abilities in Analyzing and Interpreting Literature?",
+      "options": [
+        "basic literary terminology",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Core Literary Abilities",
+      "level": 2,
+      "why": "basic literary terminology is part of the Core Literary Abilities content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Core Literary Abilities; tested item = basic literary terminology.",
+      "_id": "analyzing-interpreting-literature_16"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Genre",
+      "prompt": "Which major topic is included in Analyzing and Interpreting Literature?",
+      "options": [
+        "Genre",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Genre",
+      "level": 2,
+      "why": "Genre is part of the Genre content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Genre; tested item = Genre.",
+      "_id": "analyzing-interpreting-literature_17"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Genre",
+      "prompt": "Which outline item belongs with Genre in Analyzing and Interpreting Literature?",
+      "options": [
+        "poetry",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Genre",
+      "level": 2,
+      "why": "poetry is part of the Genre content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Genre; tested item = poetry.",
+      "_id": "analyzing-interpreting-literature_18"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Genre",
+      "prompt": "Which outline item belongs with Genre in Analyzing and Interpreting Literature?",
+      "options": [
+        "prose fiction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Genre",
+      "level": 2,
+      "why": "prose fiction is part of the Genre content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Genre; tested item = prose fiction.",
+      "_id": "analyzing-interpreting-literature_19"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Genre",
+      "prompt": "Which outline item belongs with Genre in Analyzing and Interpreting Literature?",
+      "options": [
+        "prose nonfiction",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Genre",
+      "level": 2,
+      "why": "prose nonfiction is part of the Genre content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Genre; tested item = prose nonfiction.",
+      "_id": "analyzing-interpreting-literature_20"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Genre",
+      "prompt": "Which outline item belongs with Genre in Analyzing and Interpreting Literature?",
+      "options": [
+        "drama",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Genre",
+      "level": 2,
+      "why": "drama is part of the Genre content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Genre; tested item = drama.",
+      "_id": "analyzing-interpreting-literature_21"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — National Tradition",
+      "prompt": "Which major topic is included in Analyzing and Interpreting Literature?",
+      "options": [
+        "National Tradition",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "National Tradition",
+      "level": 2,
+      "why": "National Tradition is part of the National Tradition content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = National Tradition; tested item = National Tradition.",
+      "_id": "analyzing-interpreting-literature_22"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — National Tradition",
+      "prompt": "Which outline item belongs with National Tradition in Analyzing and Interpreting Literature?",
+      "options": [
+        "British literature",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "National Tradition",
+      "level": 2,
+      "why": "British literature is part of the National Tradition content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = National Tradition; tested item = British literature.",
+      "_id": "analyzing-interpreting-literature_23"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — National Tradition",
+      "prompt": "Which outline item belongs with National Tradition in Analyzing and Interpreting Literature?",
+      "options": [
+        "Postcolonial literature",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "National Tradition",
+      "level": 2,
+      "why": "Postcolonial literature is part of the National Tradition content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = National Tradition; tested item = Postcolonial literature.",
+      "_id": "analyzing-interpreting-literature_24"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — National Tradition",
+      "prompt": "Which outline item belongs with National Tradition in Analyzing and Interpreting Literature?",
+      "options": [
+        "American literature",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "National Tradition",
+      "level": 2,
+      "why": "American literature is part of the National Tradition content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = National Tradition; tested item = American literature.",
+      "_id": "analyzing-interpreting-literature_25"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — National Tradition",
+      "prompt": "Which outline item belongs with National Tradition in Analyzing and Interpreting Literature?",
+      "options": [
+        "works in translation",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "National Tradition",
+      "level": 2,
+      "why": "works in translation is part of the National Tradition content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = National Tradition; tested item = works in translation.",
+      "_id": "analyzing-interpreting-literature_26"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Period",
+      "prompt": "Which major topic is included in Analyzing and Interpreting Literature?",
+      "options": [
+        "Period",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Period",
+      "level": 2,
+      "why": "Period is part of the Period content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Period; tested item = Period.",
+      "_id": "analyzing-interpreting-literature_27"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Period",
+      "prompt": "Which outline item belongs with Period in Analyzing and Interpreting Literature?",
+      "options": [
+        "Classical and pre-Renaissance",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Period",
+      "level": 2,
+      "why": "Classical and pre-Renaissance is part of the Period content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Period; tested item = Classical and pre-Renaissance.",
+      "_id": "analyzing-interpreting-literature_28"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Period",
+      "prompt": "Which outline item belongs with Period in Analyzing and Interpreting Literature?",
+      "options": [
+        "Renaissance and 17th Century",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Period",
+      "level": 2,
+      "why": "Renaissance and 17th Century is part of the Period content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Period; tested item = Renaissance and 17th Century.",
+      "_id": "analyzing-interpreting-literature_29"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Period",
+      "prompt": "Which outline item belongs with Period in Analyzing and Interpreting Literature?",
+      "options": [
+        "18th and 19th Centuries",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Period",
+      "level": 2,
+      "why": "18th and 19th Centuries is part of the Period content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Period; tested item = 18th and 19th Centuries.",
+      "_id": "analyzing-interpreting-literature_30"
+    },
+    {
+      "focus": "Analyzing and Interpreting Literature — Period",
+      "prompt": "Which outline item belongs with Period in Analyzing and Interpreting Literature?",
+      "options": [
+        "20th and 21st Centuries",
+        "analysis",
+        "argumentation",
+        "synthesis"
+      ],
+      "answer": 0,
+      "topic": "Period",
+      "level": 2,
+      "why": "20th and 21st Centuries is part of the Period content area for Analyzing and Interpreting Literature (CLEP).",
+      "how": "Connect the question stem to the exam outline: subject = Analyzing and Interpreting Literature; major area = Period; tested item = 20th and 21st Centuries.",
+      "_id": "analyzing-interpreting-literature_31"
+    }
+  ]
+});
