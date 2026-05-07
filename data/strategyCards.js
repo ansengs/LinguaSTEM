@@ -389,3 +389,255 @@ export const STRATEGY_CARDS = [
   ]
 }
 ];
+
+/* EXTENDED PRACTICE CONTENT */
+{
+  cat: 'Practice',
+  title: 'College English Composition Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for College English Composition.',
+  finding: 'College English Composition relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Syntax: What is parallelism?',
+a: 'Using the same grammatical structure for related ideas.',
+explanation: 'Parallel structure improves clarity and rhythm.'
+},
+{
+q: 'Sentence Boundaries: What is a run-on sentence?',
+a: 'Two independent clauses joined incorrectly.',
+explanation: 'Run-ons should be separated with punctuation or conjunctions.'
+},
+{
+q: 'Documentation: What style commonly uses parenthetical citations?',
+a: 'MLA style.',
+explanation: 'MLA uses author-page citations in text.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Biology Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Biology.',
+  finding: 'Biology relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Cells: Which organelle controls cell activities?',
+a: 'The nucleus.',
+explanation: 'The nucleus contains genetic material and regulates the cell.'
+},
+{
+q: 'Genetics: What carries amino acids during translation?',
+a: 'tRNA.',
+explanation: 'Transfer RNA delivers amino acids to ribosomes.'
+},
+{
+q: 'Ecology: What is a niche?',
+a: 'An organism's role in its ecosystem.',
+explanation: 'A niche includes habitat, resources, and interactions.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Calculus Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Calculus.',
+  finding: 'Calculus relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Limits: What does a limit describe?',
+a: 'The value a function approaches.',
+explanation: 'Limits define behavior near a point.'
+},
+{
+q: 'Derivatives: What is the derivative of sin(x)?',
+a: 'cos(x).',
+explanation: 'Derivative rules define instantaneous rate of change.'
+},
+{
+q: 'Integrals: What does a definite integral represent?',
+a: 'Accumulated area or change.',
+explanation: 'Integrals sum infinitesimal quantities.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Chemistry Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Chemistry.',
+  finding: 'Chemistry relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Atomic Structure: What determines an element’s identity?',
+a: 'Its atomic number.',
+explanation: 'Atomic number equals proton count.'
+},
+{
+q: 'Bonding: What type of bond shares electrons?',
+a: 'Covalent bonding.',
+explanation: 'Covalent bonds involve electron sharing.'
+},
+{
+q: 'Thermodynamics: What does entropy measure?',
+a: 'Disorder in a system.',
+explanation: 'Higher entropy means greater randomness.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'College Algebra Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for College Algebra.',
+  finding: 'College Algebra relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Equations: What is the quadratic formula used for?',
+a: 'Solving quadratic equations.',
+explanation: 'It solves equations in standard form.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'College Mathematics Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for College Mathematics.',
+  finding: 'College Mathematics relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Probability: What is the probability of flipping heads on a fair coin?',
+a: '1/2.',
+explanation: 'A fair coin has equal outcomes.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Natural Sciences Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Natural Sciences.',
+  finding: 'Natural Sciences relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Earth Science: What layer contains weather systems?',
+a: 'The troposphere.',
+explanation: 'Most atmospheric activity occurs there.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Precalculus Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Precalculus.',
+  finding: 'Precalculus relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Trigonometry: What is sin²θ + cos²θ?',
+a: '1.',
+explanation: 'This is a fundamental trig identity.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Financial Accounting Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Financial Accounting.',
+  finding: 'Financial Accounting relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Accounting Cycle: What statement shows revenues and expenses?',
+a: 'The income statement.',
+explanation: 'It reports profitability.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Information Systems Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Information Systems.',
+  finding: 'Information Systems relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Security: What malware locks files for payment?',
+a: 'Ransomware.',
+explanation: 'Ransomware encrypts data for extortion.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Introductory Business Law Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Introductory Business Law.',
+  finding: 'Introductory Business Law relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Contracts: What is consideration?',
+a: 'Something of value exchanged.',
+explanation: 'Contracts require mutual exchange.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Principles of Management Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Principles of Management.',
+  finding: 'Principles of Management relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Leadership: Which management function involves motivation?',
+a: 'Leading.',
+explanation: 'Leading directs and motivates employees.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Principles of Marketing Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Principles of Marketing.',
+  finding: 'Principles of Marketing relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Segmentation: What is market segmentation?',
+a: 'Dividing consumers into groups.',
+explanation: 'Segmentation targets specific audiences.'
+},
+]
+},
+{
+  cat: 'Practice',
+  title: 'Analyzing and Interpreting Literature Mastery Practice',
+  research: 'Comprehensive AP/CLEP aligned review for Analyzing and Interpreting Literature.',
+  finding: 'Analyzing and Interpreting Literature relies on foundational concepts and applied reasoning.',
+  model: 'Concept → Application → Analysis',
+  steps: ['Review definitions','Practice application','Analyze explanations'],
+  practice: [
+{
+q: 'Poetry: What is imagery?',
+a: 'Language appealing to the senses.',
+explanation: 'Imagery creates vivid mental pictures.'
+},
+]
+},

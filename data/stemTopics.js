@@ -2686,4 +2686,155 @@ export const STEM_TOPICS = [
     {"l":"Business Law","r":"contracts, torts, legal environment, ethics"}
   ]
 }
+
+,
+{
+  "cat":"College English Composition",
+  "title":"College English Composition STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for College English Composition.",
+  "examples":[
+    {"l":"Syntax","r":"What is parallelism?"},
+{"l":"Sentence Boundaries","r":"What is a run-on sentence?"},
+{"l":"Documentation","r":"What style commonly uses parenthetical citations?"}
+  ]
+},
+{
+  "cat":"Biology",
+  "title":"Biology STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Biology.",
+  "examples":[
+    {"l":"Cells","r":"Which organelle controls cell activities?"},
+{"l":"Genetics","r":"What carries amino acids during translation?"},
+{"l":"Ecology","r":"What is a niche?"}
+  ]
+},
+{
+  "cat":"Calculus",
+  "title":"Calculus STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Calculus.",
+  "examples":[
+    {"l":"Limits","r":"What does a limit describe?"},
+{"l":"Derivatives","r":"What is the derivative of sin(x)?"},
+{"l":"Integrals","r":"What does a definite integral represent?"}
+  ]
+},
+{
+  "cat":"Chemistry",
+  "title":"Chemistry STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Chemistry.",
+  "examples":[
+    {"l":"Atomic Structure","r":"What determines an element’s identity?"},
+{"l":"Bonding","r":"What type of bond shares electrons?"},
+{"l":"Thermodynamics","r":"What does entropy measure?"}
+  ]
+},
+{
+  "cat":"College Algebra",
+  "title":"College Algebra STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for College Algebra.",
+  "examples":[
+    {"l":"Equations","r":"What is the quadratic formula used for?"}
+  ]
+},
+{
+  "cat":"College Mathematics",
+  "title":"College Mathematics STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for College Mathematics.",
+  "examples":[
+    {"l":"Probability","r":"What is the probability of flipping heads on a fair coin?"}
+  ]
+},
+{
+  "cat":"Natural Sciences",
+  "title":"Natural Sciences STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Natural Sciences.",
+  "examples":[
+    {"l":"Earth Science","r":"What layer contains weather systems?"}
+  ]
+},
+{
+  "cat":"Precalculus",
+  "title":"Precalculus STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Precalculus.",
+  "examples":[
+    {"l":"Trigonometry","r":"What is sin²θ + cos²θ?"}
+  ]
+},
+{
+  "cat":"Financial Accounting",
+  "title":"Financial Accounting STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Financial Accounting.",
+  "examples":[
+    {"l":"Accounting Cycle","r":"What statement shows revenues and expenses?"}
+  ]
+},
+{
+  "cat":"Information Systems",
+  "title":"Information Systems STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Information Systems.",
+  "examples":[
+    {"l":"Security","r":"What malware locks files for payment?"}
+  ]
+},
+{
+  "cat":"Introductory Business Law",
+  "title":"Introductory Business Law STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Introductory Business Law.",
+  "examples":[
+    {"l":"Contracts","r":"What is consideration?"}
+  ]
+},
+{
+  "cat":"Principles of Management",
+  "title":"Principles of Management STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Principles of Management.",
+  "examples":[
+    {"l":"Leadership","r":"Which management function involves motivation?"}
+  ]
+},
+{
+  "cat":"Principles of Marketing",
+  "title":"Principles of Marketing STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Principles of Marketing.",
+  "examples":[
+    {"l":"Segmentation","r":"What is market segmentation?"}
+  ]
+},
+{
+  "cat":"Analyzing and Interpreting Literature",
+  "title":"Analyzing and Interpreting Literature STEM Card",
+  "emoji":"",
+  "formula":"Knowledge + Practice + Analysis",
+  "desc":"Core concepts and subtopics for Analyzing and Interpreting Literature.",
+  "examples":[
+    {"l":"Poetry","r":"What is imagery?"}
+  ]
+},
+
 ];
