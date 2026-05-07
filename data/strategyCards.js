@@ -296,3 +296,96 @@ export const STRATEGY_CARDS = [
   example: 'Memorising the 9 planets in order: route through your house. Mercury (a giant thermometer) in the doorway. Venus (a beautiful mirror) on the coat hook. Earth (a globe) on the hallway table. Mars (red face, angry) in the kitchen. Each location = one planet.'
 }
 ];
+
+
+/* ── AP & CLEP PRACTICE ─────────────────────────────────────── */
+{
+  cat: 'Practice',
+  title: 'College English Composition Practice',
+  research: 'CLEP/AP style rhetorical and grammar analysis',
+  finding: 'Strong writers combine syntax, organization, and evidence effectively.',
+  model: 'Analyze → Revise → Support',
+  steps: [
+    'Identify thesis and audience.',
+    'Check syntax and sentence boundaries.',
+    'Evaluate evidence and transitions.',
+    'Revise for clarity and tone.'
+  ],
+  practice: [
+    {
+      q: 'Which sentence contains a comma splice?',
+      a: '“The experiment failed, the hypothesis was revised.”'
+    },
+    {
+      q: 'What rhetorical appeal relies on credibility?',
+      a: 'Ethos'
+    }
+  ]
+},
+{
+  cat: 'Practice',
+  title: 'Biology Practice',
+  research: 'AP/CLEP biology foundations',
+  finding: 'Biology connects structure, energy, heredity, and ecosystems.',
+  model: 'Cell → Organism → Ecosystem',
+  steps: [
+    'Identify biological structure.',
+    'Connect to function.',
+    'Apply inheritance or ecology principles.'
+  ],
+  practice: [
+    {
+      q: 'What organelle produces ATP?',
+      a: 'Mitochondria'
+    },
+    {
+      q: 'Which process produces gametes?',
+      a: 'Meiosis'
+    }
+  ]
+},
+{
+  cat: 'Practice',
+  title: 'Calculus Practice',
+  research: 'Derivative and integral applications',
+  finding: 'Calculus models rates of change and accumulation.',
+  model: 'Limit → Derivative → Integral',
+  steps: [
+    'Identify changing quantities.',
+    'Differentiate or integrate appropriately.',
+    'Interpret results in context.'
+  ],
+  practice: [
+    {
+      q: 'Derivative of x^2?',
+      a: '2x'
+    },
+    {
+      q: 'Integral of 2x dx?',
+      a: 'x^2 + C'
+    }
+  ]
+},
+{
+  cat: 'Practice',
+  title: 'Chemistry Practice',
+  research: 'General chemistry and reaction systems',
+  finding: 'Chemical structure predicts behavior.',
+  model: 'Structure → Bonding → Reaction',
+  steps: [
+    'Determine bonding and polarity.',
+    'Balance reactions.',
+    'Apply equilibrium or thermodynamics.'
+  ],
+  practice: [
+    {
+      q: 'What is the pH of a neutral solution?',
+      a: '7'
+    },
+    {
+      q: 'Oxidation is defined as?',
+      a: 'Loss of electrons'
+    }
+  ]
+}
+];

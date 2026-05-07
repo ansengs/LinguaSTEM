@@ -2620,4 +2620,70 @@ export const STEM_TOPICS = [
     ],
     "example": "Geostationary orbit (T=24 h=86400 s): r³=GMT²/(4π²)=6.67×10⁻¹¹·6×10²⁴·(86400)²/(4π²). r≈4.2×10⁷ m ≈ 42,000 km. Orbital speed: v=√(6.67×10⁻¹¹·6×10²⁴/4.2×10⁷)≈3.07 km/s."
   }
+
+,
+{
+  "cat":"College English Composition",
+  "title":"Syntax, Rhetoric, and Composition",
+  "emoji":"",
+  "formula":"Focus = clarity + organization + evidence + syntax + audience awareness",
+  "desc":"Core CLEP/AP composition skills including syntax, organization, rhetoric, argumentation, documentation, and evaluation of evidence.",
+  "examples":[
+    {"l":"Syntax","r":"parallelism, coordination, subordination, sentence variety"},
+    {"l":"Grammar","r":"comma splices, run-ons, fragments, agreement, modifiers, diction"},
+    {"l":"Rhetoric","r":"tone, audience, appeals, rhetorical effects, transitions"},
+    {"l":"Research","r":"MLA, APA, Chicago, evaluation of sources, integration of evidence"}
+  ]
+},
+{
+  "cat":"Biology",
+  "title":"Cells, Genetics, Ecology, Evolution",
+  "emoji":"",
+  "formula":"Life = cells + energy + heredity + evolution + ecosystems",
+  "desc":"Major AP/CLEP biology systems including cellular biology, genetics, plants, animals, ecology, and evolution.",
+  "examples":[
+    {"l":"Cells","r":"organelles, membranes, prokaryotes vs eukaryotes"},
+    {"l":"Genetics","r":"DNA replication, transcription, translation, mutations"},
+    {"l":"Ecology","r":"energy flow, niches, succession, population dynamics"},
+    {"l":"Evolution","r":"natural selection, speciation, genetic drift, adaptive radiation"}
+  ]
+},
+{
+  "cat":"Calculus",
+  "title":"Limits, Derivatives, Integrals",
+  "emoji":"",
+  "formula":"Change = derivative | accumulation = integral",
+  "desc":"Differential and integral calculus including limits, continuity, optimization, and applications.",
+  "examples":[
+    {"l":"Derivatives","r":"chain rule, implicit differentiation, related rates"},
+    {"l":"Applications","r":"curve sketching, velocity, acceleration, extrema"},
+    {"l":"Integrals","r":"Riemann sums, FTC, area between curves"}
+  ]
+},
+{
+  "cat":"Chemistry",
+  "title":"Matter, Bonding, Reactions",
+  "emoji":"",
+  "formula":"Structure determines properties and reactions",
+  "desc":"Atomic structure, bonding, stoichiometry, equilibrium, kinetics, and thermodynamics.",
+  "examples":[
+    {"l":"Atomic Structure","r":"orbitals, isotopes, periodic trends"},
+    {"l":"Bonding","r":"ionic, covalent, metallic, VSEPR, resonance"},
+    {"l":"Reactions","r":"acid-base, redox, precipitation, electrochemistry"},
+    {"l":"Thermodynamics","r":"enthalpy, entropy, free energy"}
+  ]
+},
+{
+  "cat":"Business & Information Systems",
+  "title":"Management, Marketing, IS, Law",
+  "emoji":"",
+  "formula":"Organizations rely on systems + strategy + ethics",
+  "desc":"Business management, accounting, marketing, law, and information systems concepts.",
+  "examples":[
+    {"l":"Management","r":"planning, organizing, leadership, controlling"},
+    {"l":"Marketing","r":"segmentation, branding, pricing, promotion"},
+    {"l":"Information Systems","r":"security, databases, networking, SDLC"},
+    {"l":"Business Law","r":"contracts, torts, legal environment, ethics"}
+  ]
+}
 ];
