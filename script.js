@@ -3510,4462 +3510,3391 @@ const STEM_TOPICS = [
 ];
 
 
-// Expanded subject cards. Pushed after export so original STEM cards remain available.
-STEM_TOPICS.push(...[
+// LinguaSTEM subject/topic cards. Percent weights were intentionally ignored, and weak percentage-only headings were removed or merged into stronger cards.
+const LINGUASTEM_STEM_CARDS = [
   {
-    "cat": "College English Composition",
-    "title": "Analysis, Argumentation, and Synthesis",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Analysis, Argumentation, and Synthesis.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "analysis"
-      },
-      {
-        "l": "Item 2",
-        "r": "argumentation"
-      },
-      {
-        "l": "Item 3",
-        "r": "synthesis"
-      },
-      {
-        "l": "Item 4",
-        "r": "ability to recognize logical development"
-      },
-      {
-        "l": "Item 5",
-        "r": "research"
-      }
-    ]
+    "cat": "Writing & Rhetoric",
+    "tags": [
+      "linguastem",
+      "college-english-composition",
+      "writing",
+      "grammar"
+    ],
+    "title": "Syntax: Parallelism, Coordination & Subordination",
+    "theory": "This card turns the College English Composition topic 'Syntax: Parallelism, Coordination & Subordination' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply syntax: parallelism, coordination & subordination ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Parallelism: same grammatical form for equal ideas\nCoordination: idea + idea\nSubordination: main idea + dependent idea",
+    "method": "Use sentence structure to show which ideas are equal and which ideas support the main point.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Syntax: Parallelism, Coord</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">parallelism</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">coordination</text>\n</svg>",
+    "caption": "Syntax: Parallelism, Coordination & Subordination: parallelism, coordination, subordination...",
+    "steps": [
+      "Name the topic: Syntax: Parallelism, Coordination & Subordination. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Weak: She likes hiking, to swim, and bikes. Parallel: She likes hiking, swimming, and biking.",
+    "coveredTopics": [
+      "parallelism",
+      "coordination",
+      "subordination",
+      "sentence variety and structure"
+    ],
+    "sourceSubject": "College English Composition"
   },
   {
-    "cat": "College English Composition",
-    "title": "Syntax",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Syntax.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "parallelism"
-      },
-      {
-        "l": "Item 2",
-        "r": "coordination"
-      },
-      {
-        "l": "Item 3",
-        "r": "subordination"
-      }
-    ]
+    "cat": "Writing & Rhetoric",
+    "tags": [
+      "linguastem",
+      "college-english-composition",
+      "writing",
+      "grammar"
+    ],
+    "title": "Sentence Boundaries: Fragments, Run-ons & Comma Splices",
+    "theory": "This card turns the College English Composition topic 'Sentence Boundaries: Fragments, Run-ons & Comma Splices' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply sentence boundaries: fragments, run-ons & comma splices ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Complete sentence = subject + verb + complete thought\nFix comma splice: period, semicolon, or conjunction.",
+    "method": "Boundary errors are easiest to catch by asking: is this a complete thought, and are two complete thoughts joined correctly?",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Sentence Boundaries: Fragm</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">comma splices</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">run-ons</text>\n</svg>",
+    "caption": "Sentence Boundaries: Fragments, Run-ons & Comma Splices: comma splices, run-ons, sentence fragments...",
+    "steps": [
+      "Name the topic: Sentence Boundaries: Fragments, Run-ons & Comma Splices. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Comma splice: The claim is strong, the evidence is weak. Fix: The claim is strong, but the evidence is weak.",
+    "coveredTopics": [
+      "comma splices",
+      "run-ons",
+      "sentence fragments",
+      "recognition of correct sentences"
+    ],
+    "sourceSubject": "College English Composition"
   },
   {
-    "cat": "College English Composition",
-    "title": "Sentence Boundaries",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Sentence Boundaries.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "comma splices"
-      },
-      {
-        "l": "Item 2",
-        "r": "run-ons"
-      },
-      {
-        "l": "Item 3",
-        "r": "sentence fragments"
-      }
-    ]
+    "cat": "Writing & Rhetoric",
+    "tags": [
+      "linguastem",
+      "college-english-composition",
+      "writing",
+      "grammar"
+    ],
+    "title": "Agreement, Pronoun Reference, Case & Verb Tense",
+    "theory": "This card turns the College English Composition topic 'Agreement, Pronoun Reference, Case & Verb Tense' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply agreement, pronoun reference, case & verb tense ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Subject ↔ verb must agree\nPronoun ↔ antecedent must agree\nTense must match time sequence.",
+    "method": "Agreement errors break clarity because readers cannot tell who did what or when it happened.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Agreement, Pronoun Referen</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">pronoun reference</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">case shift</text>\n</svg>",
+    "caption": "Agreement, Pronoun Reference, Case & Verb Tense: pronoun reference, case shift, number...",
+    "steps": [
+      "Name the topic: Agreement, Pronoun Reference, Case & Verb Tense. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Each student brings his or her notebook. Better: Students bring their notebooks.",
+    "coveredTopics": [
+      "pronoun reference",
+      "case shift",
+      "number",
+      "subject-verb agreement",
+      "verb tense",
+      "logical agreement"
+    ],
+    "sourceSubject": "College English Composition"
   },
   {
-    "cat": "College English Composition",
-    "title": "Sentence Correctness",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Sentence Correctness.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "recognition of correct sentences"
-      }
-    ]
+    "cat": "Writing & Rhetoric",
+    "tags": [
+      "linguastem",
+      "college-english-composition",
+      "writing",
+      "grammar"
+    ],
+    "title": "Diction, Idiom, Modifiers & Active/Passive Voice",
+    "theory": "This card turns the College English Composition topic 'Diction, Idiom, Modifiers & Active/Passive Voice' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply diction, idiom, modifiers & active/passive voice ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Diction = word choice\nIdiom = accepted phrase\nModifier must sit next to what it describes\nActive: subject does action.",
+    "method": "Choose words and modifier placement that make the actor and action obvious.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Diction, Idiom, Modifiers </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">diction</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">idiom</text>\n</svg>",
+    "caption": "Diction, Idiom, Modifiers & Active/Passive Voice: diction, idiom, modifiers...",
+    "steps": [
+      "Name the topic: Diction, Idiom, Modifiers & Active/Passive Voice. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Dangling: Walking to class, the rain began. Fixed: Walking to class, Maya saw the rain begin.",
+    "coveredTopics": [
+      "diction",
+      "idiom",
+      "modifiers",
+      "active/passive voice",
+      "lack of subject in modifying word group"
+    ],
+    "sourceSubject": "College English Composition"
   },
   {
-    "cat": "College English Composition",
-    "title": "Agreement and Concord",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Agreement and Concord.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "pronoun reference"
-      },
-      {
-        "l": "Item 2",
-        "r": "case shift"
-      },
-      {
-        "l": "Item 3",
-        "r": "pronoun number"
-      },
-      {
-        "l": "Item 4",
-        "r": "subject-verb agreement"
-      },
-      {
-        "l": "Item 5",
-        "r": "verb tense"
-      }
-    ]
+    "cat": "Writing & Rhetoric",
+    "tags": [
+      "linguastem",
+      "college-english-composition",
+      "logic",
+      "writing"
+    ],
+    "title": "Logical Comparison, Point of View & Consistency",
+    "theory": "This card turns the College English Composition topic 'Logical Comparison, Point of View & Consistency' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply logical comparison, point of view & consistency ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Compare like with like\nKeep person/number/time consistent\nEvery sentence should advance the same line of reasoning.",
+    "method": "Logic in writing is structure: comparisons must be fair, and point of view should not shift without reason.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Logical Comparison, Point </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">logical comparison</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">consistency of point of view</text>\n</svg>",
+    "caption": "Logical Comparison, Point of View & Consistency: logical comparison, consistency of point of view, logical development...",
+    "steps": [
+      "Name the topic: Logical Comparison, Point of View & Consistency. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Illogical: The climate of Ohio is colder than Florida. Fixed: Ohio's climate is colder than Florida's climate.",
+    "coveredTopics": [
+      "logical comparison",
+      "consistency of point of view",
+      "logical development",
+      "use of language"
+    ],
+    "sourceSubject": "College English Composition"
   },
   {
-    "cat": "College English Composition",
-    "title": "Style and Usage",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Style and Usage.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "diction"
-      },
-      {
-        "l": "Item 2",
-        "r": "modifiers"
-      },
-      {
-        "l": "Item 3",
-        "r": "idiom"
-      },
-      {
-        "l": "Item 4",
-        "r": "active/passive voice"
-      },
-      {
-        "l": "Item 5",
-        "r": "lack of subject in modifying word group"
-      },
-      {
-        "l": "Item 6",
-        "r": "logical comparison"
-      },
-      {
-        "l": "Item 7",
-        "r": "logical agreement"
-      },
-      {
-        "l": "Item 8",
-        "r": "punctuation"
-      },
-      {
-        "l": "Item 9",
-        "r": "sentence-level errors in Standard Written English"
-      },
-      {
-        "l": "Item 10",
-        "r": "use of language"
-      },
-      {
-        "l": "Item 11",
-        "r": "sentence variety and structure"
-      }
-    ]
+    "cat": "Writing & Rhetoric",
+    "tags": [
+      "linguastem",
+      "college-english-composition",
+      "punctuation",
+      "grammar"
+    ],
+    "title": "Punctuation & Standard Written English",
+    "theory": "This card turns the College English Composition topic 'Punctuation & Standard Written English' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply punctuation & standard written english ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Comma = separation\nSemicolon = close sentence link\nColon = introduce\nApostrophe = possession or contraction.",
+    "method": "Punctuation is a map of sentence structure; it tells the reader how ideas connect.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Punctuation &amp; Standard Wri</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">punctuation</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">sentence-level errors</text>\n</svg>",
+    "caption": "Punctuation & Standard Written English: punctuation, sentence-level errors, conventions of Standard Written English",
+    "steps": [
+      "Name the topic: Punctuation & Standard Written English. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: The committee reviewed three items: budget, staffing, and safety.",
+    "coveredTopics": [
+      "punctuation",
+      "sentence-level errors",
+      "conventions of Standard Written English"
+    ],
+    "sourceSubject": "College English Composition"
   },
   {
-    "cat": "College English Composition",
-    "title": "Organization and Development",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Organization and Development.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "organization"
-      },
-      {
-        "l": "Item 2",
-        "r": "coherence between sentences and paragraphs"
-      },
-      {
-        "l": "Item 3",
-        "r": "main idea"
-      },
-      {
-        "l": "Item 4",
-        "r": "thesis statements"
-      },
-      {
-        "l": "Item 5",
-        "r": "topic sentences"
-      },
-      {
-        "l": "Item 6",
-        "r": "transitions"
-      },
-      {
-        "l": "Item 7",
-        "r": "level of detail"
-      },
-      {
-        "l": "Item 8",
-        "r": "organization/structure"
-      }
-    ]
+    "cat": "Writing & Rhetoric",
+    "tags": [
+      "linguastem",
+      "college-english-composition",
+      "essay",
+      "organization"
+    ],
+    "title": "Organization: Thesis, Topic Sentences, Detail & Coherence",
+    "theory": "This card turns the College English Composition topic 'Organization: Thesis, Topic Sentences, Detail & Coherence' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply organization: thesis, topic sentences, detail & coherence ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Thesis = whole argument\nTopic sentence = paragraph claim\nEvidence/detail = support\nTransition = relationship.",
+    "method": "Good organization lets readers predict the path of the argument before every detail appears.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Organization: Thesis, Topi</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">organization</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">organization/structure</text>\n</svg>",
+    "caption": "Organization: Thesis, Topic Sentences, Detail & Coherence: organization, organization/structure, main idea...",
+    "steps": [
+      "Name the topic: Organization: Thesis, Topic Sentences, Detail & Coherence. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Thesis: Schools should teach budgeting. Topic sentence: Budgeting helps students manage short-term decisions.",
+    "coveredTopics": [
+      "organization",
+      "organization/structure",
+      "main idea",
+      "thesis statements",
+      "topic sentences",
+      "level of detail",
+      "coherence between sentences and paragraphs",
+      "transitions"
+    ],
+    "sourceSubject": "College English Composition"
   },
   {
-    "cat": "College English Composition",
-    "title": "Audience, Tone, and Purpose",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Audience, Tone, and Purpose.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "awareness of audience"
-      },
-      {
-        "l": "Item 2",
-        "r": "tone"
-      },
-      {
-        "l": "Item 3",
-        "r": "purpose"
-      },
-      {
-        "l": "Item 4",
-        "r": "appeals"
-      },
-      {
-        "l": "Item 5",
-        "r": "consistency of point of view"
-      }
-    ]
+    "cat": "Writing & Rhetoric",
+    "tags": [
+      "linguastem",
+      "college-english-composition",
+      "rhetoric",
+      "reading"
+    ],
+    "title": "Audience, Tone, Purpose, Appeals & Rhetorical Effects",
+    "theory": "This card turns the College English Composition topic 'Audience, Tone, Purpose, Appeals & Rhetorical Effects' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply audience, tone, purpose, appeals & rhetorical effects ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Ethos = credibility\nLogos = reasoning\nPathos = emotion\nTone = speaker attitude\nPurpose = inform, persuade, analyze, entertain.",
+    "method": "Rhetorical questions ask why a writer chose a word, example, structure, or appeal for a specific audience.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Audience, Tone, Purpose, A</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">awareness of audience, tone,</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">tone</text>\n</svg>",
+    "caption": "Audience, Tone, Purpose, Appeals & Rhetorical Effects: awareness of audience, tone, and purpose, tone, appeals...",
+    "steps": [
+      "Name the topic: Audience, Tone, Purpose, Appeals & Rhetorical Effects. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A public health poster uses logos with statistics and pathos with a personal story.",
+    "coveredTopics": [
+      "awareness of audience, tone, and purpose",
+      "tone",
+      "appeals",
+      "rhetorical effects",
+      "rhetorical effects and emphasis",
+      "use of language"
+    ],
+    "sourceSubject": "College English Composition"
   },
   {
-    "cat": "College English Composition",
-    "title": "Evidence and Sources",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Evidence and Sources.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "evaluation of evidence"
-      },
-      {
-        "l": "Item 2",
-        "r": "evaluation of author's authority and appeal"
-      },
-      {
-        "l": "Item 3",
-        "r": "evaluation of reasoning"
-      },
-      {
-        "l": "Item 4",
-        "r": "use of reference materials"
-      },
-      {
-        "l": "Item 5",
-        "r": "evaluation of sources"
-      },
-      {
-        "l": "Item 6",
-        "r": "integration of resource material"
-      },
-      {
-        "l": "Item 7",
-        "r": "documentation of sources"
-      },
-      {
-        "l": "Item 8",
-        "r": "MLA"
-      },
-      {
-        "l": "Item 9",
-        "r": "APA"
-      },
-      {
-        "l": "Item 10",
-        "r": "Chicago manuals of style"
-      }
-    ]
-  },
-  {
-    "cat": "College English Composition",
-    "title": "Rhetorical Effects",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP/AP content area for College English Composition covering Rhetorical Effects.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "rhetorical effects"
-      },
-      {
-        "l": "Item 2",
-        "r": "emphasis"
-      },
-      {
-        "l": "Item 3",
-        "r": "rhetorical effects in organization"
-      }
-    ]
+    "cat": "Writing & Rhetoric",
+    "tags": [
+      "linguastem",
+      "college-english-composition",
+      "research",
+      "sources"
+    ],
+    "title": "Evidence, Sources, Authority & Documentation",
+    "theory": "This card turns the College English Composition topic 'Evidence, Sources, Authority & Documentation' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply evidence, sources, authority & documentation ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "CRAAP-style check: currency, relevance, authority, accuracy, purpose\nCite: author + title/source + publication info.",
+    "method": "Strong writing does not just quote sources; it evaluates them, integrates them, and documents them correctly.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Evidence, Sources, Authori</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">evaluation of evidence</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">evaluation of author&#x27;s autho</text>\n</svg>",
+    "caption": "Evidence, Sources, Authority & Documentation: evaluation of evidence, evaluation of author's authority and appeal, evaluation of reasoning...",
+    "steps": [
+      "Name the topic: Evidence, Sources, Authority & Documentation. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A peer-reviewed article from a named researcher is usually stronger evidence than an anonymous blog post.",
+    "coveredTopics": [
+      "evaluation of evidence",
+      "evaluation of author's authority and appeal",
+      "evaluation of reasoning",
+      "use of reference materials",
+      "evaluation of sources",
+      "integration of resource material",
+      "documentation of sources",
+      "MLA",
+      "APA",
+      "Chicago"
+    ],
+    "sourceSubject": "College English Composition"
   },
   {
     "cat": "Biology",
+    "tags": [
+      "linguastem",
+      "biology",
+      "macromolecules",
+      "chemistry"
+    ],
     "title": "Chemical Composition of Organisms",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Chemical Composition of Organisms.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "simple chemical reactions and bonds"
-      },
-      {
-        "l": "Item 2",
-        "r": "properties of water"
-      },
-      {
-        "l": "Item 3",
-        "r": "chemical structure of carbohydrates"
-      },
-      {
-        "l": "Item 4",
-        "r": "chemical structure of lipids"
-      },
-      {
-        "l": "Item 5",
-        "r": "chemical structure of proteins"
-      },
-      {
-        "l": "Item 6",
-        "r": "chemical structure of nucleic acids"
-      },
-      {
-        "l": "Item 7",
-        "r": "origin of life"
-      }
-    ]
+    "theory": "This card turns the Biology topic 'Chemical Composition of Organisms' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply chemical composition of organisms ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Life uses CHNOPS elements\nWater polarity → cohesion, adhesion, solvent power\nMacromolecules: carbs energy, lipids membranes, proteins work, nucleic acids information.",
+    "method": "Trace every biological structure back to chemistry: bonds make molecules, molecules make cells, cells make organisms.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Chemical Composition of Or</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">simple chemical reactions an</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">properties of water</text>\n</svg>",
+    "caption": "Chemical Composition of Organisms: simple chemical reactions and bonds, properties of water, carbohydrates...",
+    "steps": [
+      "Name the topic: Chemical Composition of Organisms. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: DNA stores information because nucleotides pair predictably: A-T and C-G.",
+    "coveredTopics": [
+      "simple chemical reactions and bonds",
+      "properties of water",
+      "carbohydrates",
+      "lipids",
+      "proteins",
+      "nucleic acids",
+      "origin of life"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Cells",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Cells.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "structure and function of cell organelles"
-      },
-      {
-        "l": "Item 2",
-        "r": "properties of cell membranes"
-      },
-      {
-        "l": "Item 3",
-        "r": "comparison of prokaryotic and eukaryotic cells"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "cells"
+    ],
+    "title": "Cell Structure, Organelles & Membranes",
+    "theory": "This card turns the Biology topic 'Cell Structure, Organelles & Membranes' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply cell structure, organelles & membranes ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Cell membrane = phospholipid bilayer\nNucleus stores DNA\nMitochondria make ATP\nRibosomes build proteins\nChloroplasts photosynthesize.",
+    "method": "Cell questions usually ask how structure supports function: membranes control movement, organelles divide labor.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Cell Structure, Organelles</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">structure and function of ce</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">properties of cell membranes</text>\n</svg>",
+    "caption": "Cell Structure, Organelles & Membranes: structure and function of cell organelles, properties of cell membranes, prokaryotic cells...",
+    "steps": [
+      "Name the topic: Cell Structure, Organelles & Membranes. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Prokaryotes lack a nucleus; eukaryotes have membrane-bound organelles.",
+    "coveredTopics": [
+      "structure and function of cell organelles",
+      "properties of cell membranes",
+      "prokaryotic cells",
+      "eukaryotic cells"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Enzymes",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Enzymes.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "enzyme-substrate complex"
-      },
-      {
-        "l": "Item 2",
-        "r": "roles of coenzymes"
-      },
-      {
-        "l": "Item 3",
-        "r": "inorganic cofactors"
-      },
-      {
-        "l": "Item 4",
-        "r": "inhibition and regulation"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "enzymes"
+    ],
+    "title": "Enzymes, Cofactors, Inhibition & Regulation",
+    "theory": "This card turns the Biology topic 'Enzymes, Cofactors, Inhibition & Regulation' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply enzymes, cofactors, inhibition & regulation ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Enzyme + substrate ⇌ enzyme-substrate complex → product\nCofactors help activity\nCompetitive inhibition blocks active site\nNoncompetitive changes shape.",
+    "method": "Enzymes lower activation energy, so reactions happen fast enough for life.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Enzymes, Cofactors, Inhibi</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">enzyme-substrate complex</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">coenzymes</text>\n</svg>",
+    "caption": "Enzymes, Cofactors, Inhibition & Regulation: enzyme-substrate complex, coenzymes, inorganic cofactors...",
+    "steps": [
+      "Name the topic: Enzymes, Cofactors, Inhibition & Regulation. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Increasing substrate can overcome competitive inhibition but not usually noncompetitive inhibition.",
+    "coveredTopics": [
+      "enzyme-substrate complex",
+      "coenzymes",
+      "inorganic cofactors",
+      "inhibition",
+      "regulation"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Energy Transformations",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Energy Transformations.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "glycolysis"
-      },
-      {
-        "l": "Item 2",
-        "r": "cellular respiration"
-      },
-      {
-        "l": "Item 3",
-        "r": "aerobic pathways"
-      },
-      {
-        "l": "Item 4",
-        "r": "anaerobic pathways"
-      },
-      {
-        "l": "Item 5",
-        "r": "photosynthesis"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "energy",
+      "photosynthesis"
+    ],
+    "title": "Energy Transformations: Respiration & Photosynthesis",
+    "theory": "This card turns the Biology topic 'Energy Transformations: Respiration & Photosynthesis' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply energy transformations: respiration & photosynthesis ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Respiration: glucose + O₂ → CO₂ + H₂O + ATP\nPhotosynthesis: CO₂ + H₂O + light → glucose + O₂\nAnaerobic: glycolysis + fermentation.",
+    "method": "Energy flows through ecosystems because producers store light energy and consumers release it through respiration.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Energy Transformations: Re</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">glycolysis</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">cellular respiration</text>\n</svg>",
+    "caption": "Energy Transformations: Respiration & Photosynthesis: glycolysis, cellular respiration, aerobic pathways...",
+    "steps": [
+      "Name the topic: Energy Transformations: Respiration & Photosynthesis. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Muscle cells use fermentation briefly when oxygen supply cannot keep up.",
+    "coveredTopics": [
+      "glycolysis",
+      "cellular respiration",
+      "aerobic pathways",
+      "anaerobic pathways",
+      "photosynthesis"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Cell Division",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Cell Division.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "structure of chromosomes"
-      },
-      {
-        "l": "Item 2",
-        "r": "mitosis"
-      },
-      {
-        "l": "Item 3",
-        "r": "meiosis"
-      },
-      {
-        "l": "Item 4",
-        "r": "cytokinesis in plants"
-      },
-      {
-        "l": "Item 5",
-        "r": "cytokinesis in animals"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "cell-division"
+    ],
+    "title": "Cell Division: Chromosomes, Mitosis, Meiosis & Cytokinesis",
+    "theory": "This card turns the Biology topic 'Cell Division: Chromosomes, Mitosis, Meiosis & Cytokinesis' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply cell division: chromosomes, mitosis, meiosis & cytokinesis ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Mitosis: one division → identical cells\nMeiosis: two divisions → gametes\nCytokinesis: cytoplasm splits.",
+    "method": "Division explains growth, repair, reproduction, and genetic variation.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Cell Division: Chromosomes</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">chromosomes</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">mitosis</text>\n</svg>",
+    "caption": "Cell Division: Chromosomes, Mitosis, Meiosis & Cytokinesis: chromosomes, mitosis, meiosis...",
+    "steps": [
+      "Name the topic: Cell Division: Chromosomes, Mitosis, Meiosis & Cytokinesis. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Meiosis creates sperm/egg cells with half the chromosome number.",
+    "coveredTopics": [
+      "chromosomes",
+      "mitosis",
+      "meiosis",
+      "cytokinesis in plants and animals"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Chemical Nature of the Gene",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Chemical Nature of the Gene.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "Watson-Crick model of nucleic acids"
-      },
-      {
-        "l": "Item 2",
-        "r": "DNA replication"
-      },
-      {
-        "l": "Item 3",
-        "r": "mutations"
-      },
-      {
-        "l": "Item 4",
-        "r": "transcription"
-      },
-      {
-        "l": "Item 5",
-        "r": "translation"
-      },
-      {
-        "l": "Item 6",
-        "r": "post-transcriptional processing"
-      },
-      {
-        "l": "Item 7",
-        "r": "structural genes"
-      },
-      {
-        "l": "Item 8",
-        "r": "regulatory genes"
-      },
-      {
-        "l": "Item 9",
-        "r": "transformation"
-      },
-      {
-        "l": "Item 10",
-        "r": "viruses"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "genetics",
+      "dna"
+    ],
+    "title": "Genes: DNA, Replication, Mutation & Protein Synthesis",
+    "theory": "This card turns the Biology topic 'Genes: DNA, Replication, Mutation & Protein Synthesis' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply genes: dna, replication, mutation & protein synthesis ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "DNA → RNA → Protein\nReplication copies DNA\nTranscription makes RNA\nTranslation builds protein\nMutation changes sequence.",
+    "method": "Genetics questions often ask how information changes form: base sequence becomes RNA, then amino acid sequence.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Genes: DNA, Replication, M</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Watson-Crick model</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">DNA replication</text>\n</svg>",
+    "caption": "Genes: DNA, Replication, Mutation & Protein Synthesis: Watson-Crick model, DNA replication, mutations...",
+    "steps": [
+      "Name the topic: Genes: DNA, Replication, Mutation & Protein Synthesis. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A point mutation in DNA can change one codon and possibly one amino acid.",
+    "coveredTopics": [
+      "Watson-Crick model",
+      "DNA replication",
+      "mutations",
+      "transcription",
+      "translation",
+      "post-transcriptional processing",
+      "structural genes",
+      "regulatory genes",
+      "transformation",
+      "viruses"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Plant Structure and Function",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Plant Structure and Function.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "root"
-      },
-      {
-        "l": "Item 2",
-        "r": "stem"
-      },
-      {
-        "l": "Item 3",
-        "r": "leaf"
-      },
-      {
-        "l": "Item 4",
-        "r": "flower"
-      },
-      {
-        "l": "Item 5",
-        "r": "seed"
-      },
-      {
-        "l": "Item 6",
-        "r": "fruit"
-      },
-      {
-        "l": "Item 7",
-        "r": "water absorption and transport"
-      },
-      {
-        "l": "Item 8",
-        "r": "mineral absorption and transport"
-      },
-      {
-        "l": "Item 9",
-        "r": "food translocation and storage"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "plants"
+    ],
+    "title": "Plant Structure, Transport & Storage",
+    "theory": "This card turns the Biology topic 'Plant Structure, Transport & Storage' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply plant structure, transport & storage ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Xylem moves water/minerals upward\nPhloem moves sugars source → sink\nRoots absorb, leaves photosynthesize, flowers reproduce.",
+    "method": "Plant organs are specialized for survival: capture light, move materials, reproduce, and store food.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Plant Structure, Transport</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">root</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">stem</text>\n</svg>",
+    "caption": "Plant Structure, Transport & Storage: root, stem, leaf...",
+    "steps": [
+      "Name the topic: Plant Structure, Transport & Storage. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Sugar made in leaves moves through phloem to growing roots or fruits.",
+    "coveredTopics": [
+      "root",
+      "stem",
+      "leaf",
+      "flower",
+      "seed",
+      "fruit",
+      "water and mineral absorption",
+      "transport",
+      "food translocation",
+      "storage"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Plant Reproduction and Development",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Plant Reproduction and Development.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "alternation of generations in ferns"
-      },
-      {
-        "l": "Item 2",
-        "r": "alternation of generations in conifers"
-      },
-      {
-        "l": "Item 3",
-        "r": "alternation of generations in flowering plants"
-      },
-      {
-        "l": "Item 4",
-        "r": "gamete formation"
-      },
-      {
-        "l": "Item 5",
-        "r": "fertilization"
-      },
-      {
-        "l": "Item 6",
-        "r": "growth and development"
-      },
-      {
-        "l": "Item 7",
-        "r": "hormonal control"
-      },
-      {
-        "l": "Item 8",
-        "r": "tropisms"
-      },
-      {
-        "l": "Item 9",
-        "r": "photoperiodicity"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "plants",
+      "reproduction"
+    ],
+    "title": "Plant Reproduction, Development & Responses",
+    "theory": "This card turns the Biology topic 'Plant Reproduction, Development & Responses' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply plant reproduction, development & responses ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Sporophyte ↔ gametophyte generations\nAuxin affects growth\nPhototropism = growth toward light\nPhotoperiodism = response to day length.",
+    "method": "Plant life cycles and hormones explain how plants reproduce and adjust to their environment.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Plant Reproduction, Develo</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">alternation of generations</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">ferns</text>\n</svg>",
+    "caption": "Plant Reproduction, Development & Responses: alternation of generations, ferns, conifers...",
+    "steps": [
+      "Name the topic: Plant Reproduction, Development & Responses. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Shoots bend toward light because auxin causes unequal cell elongation.",
+    "coveredTopics": [
+      "alternation of generations",
+      "ferns",
+      "conifers",
+      "flowering plants",
+      "gamete formation",
+      "fertilization",
+      "hormonal control",
+      "tropisms",
+      "photoperiodicity"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Animal Structure and Function",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Animal Structure and Function.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "digestive system"
-      },
-      {
-        "l": "Item 2",
-        "r": "gas exchange system"
-      },
-      {
-        "l": "Item 3",
-        "r": "skeletal system"
-      },
-      {
-        "l": "Item 4",
-        "r": "nervous system"
-      },
-      {
-        "l": "Item 5",
-        "r": "circulatory system"
-      },
-      {
-        "l": "Item 6",
-        "r": "excretory system"
-      },
-      {
-        "l": "Item 7",
-        "r": "immune system"
-      },
-      {
-        "l": "Item 8",
-        "r": "homeostatic mechanisms"
-      },
-      {
-        "l": "Item 9",
-        "r": "hormonal control in homeostasis"
-      },
-      {
-        "l": "Item 10",
-        "r": "hormonal control in reproduction"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "animals",
+      "homeostasis"
+    ],
+    "title": "Animal Systems, Homeostasis & Hormonal Control",
+    "theory": "This card turns the Biology topic 'Animal Systems, Homeostasis & Hormonal Control' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply animal systems, homeostasis & hormonal control ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Homeostasis = stable internal conditions\nNegative feedback: stimulus → sensor → control center → response reduces stimulus.",
+    "method": "Body systems cooperate: circulation transports, lungs exchange gases, kidneys regulate fluids, nerves/hormones coordinate.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Animal Systems, Homeostasi</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">digestive system</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">gas exchange</text>\n</svg>",
+    "caption": "Animal Systems, Homeostasis & Hormonal Control: digestive system, gas exchange, skeletal system...",
+    "steps": [
+      "Name the topic: Animal Systems, Homeostasis & Hormonal Control. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: High blood glucose triggers insulin release, lowering glucose toward normal.",
+    "coveredTopics": [
+      "digestive system",
+      "gas exchange",
+      "skeletal system",
+      "nervous system",
+      "circulatory system",
+      "excretory system",
+      "immune system",
+      "homeostatic mechanisms",
+      "hormonal control"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Animal Reproduction and Development",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Animal Reproduction and Development.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "gamete formation"
-      },
-      {
-        "l": "Item 2",
-        "r": "fertilization"
-      },
-      {
-        "l": "Item 3",
-        "r": "cleavage"
-      },
-      {
-        "l": "Item 4",
-        "r": "gastrulation"
-      },
-      {
-        "l": "Item 5",
-        "r": "germ layer formation"
-      },
-      {
-        "l": "Item 6",
-        "r": "differentiation of organ systems"
-      },
-      {
-        "l": "Item 7",
-        "r": "experimental analysis of vertebrate development"
-      },
-      {
-        "l": "Item 8",
-        "r": "extraembryonic membranes of vertebrates"
-      },
-      {
-        "l": "Item 9",
-        "r": "mammalian placenta"
-      },
-      {
-        "l": "Item 10",
-        "r": "blood circulation in the human embryo"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "development"
+    ],
+    "title": "Animal Reproduction & Vertebrate Development",
+    "theory": "This card turns the Biology topic 'Animal Reproduction & Vertebrate Development' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply animal reproduction & vertebrate development ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Fertilization → zygote → cleavage → blastula → gastrula → germ layers → organ systems.",
+    "method": "Development questions ask how one fertilized cell becomes organized tissues and organs.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Animal Reproduction &amp; Vert</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">gamete formation</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">fertilization</text>\n</svg>",
+    "caption": "Animal Reproduction & Vertebrate Development: gamete formation, fertilization, cleavage...",
+    "steps": [
+      "Name the topic: Animal Reproduction & Vertebrate Development. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Gastrulation creates germ layers that later form skin, muscles, organs, and nervous tissue.",
+    "coveredTopics": [
+      "gamete formation",
+      "fertilization",
+      "cleavage",
+      "gastrulation",
+      "germ layers",
+      "differentiation",
+      "experimental analysis of vertebrate development",
+      "extraembryonic membranes",
+      "mammalian placenta",
+      "human embryo blood circulation"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Principles of Heredity",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Principles of Heredity.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "Mendelian dominance"
-      },
-      {
-        "l": "Item 2",
-        "r": "segregation"
-      },
-      {
-        "l": "Item 3",
-        "r": "independent assortment"
-      },
-      {
-        "l": "Item 4",
-        "r": "chromosomal basis of inheritance"
-      },
-      {
-        "l": "Item 5",
-        "r": "linkage"
-      },
-      {
-        "l": "Item 6",
-        "r": "sex-linked inheritance"
-      },
-      {
-        "l": "Item 7",
-        "r": "polygenic inheritance"
-      },
-      {
-        "l": "Item 8",
-        "r": "multiple alleles"
-      },
-      {
-        "l": "Item 9",
-        "r": "human blood groups"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "heredity",
+      "genetics"
+    ],
+    "title": "Heredity: Mendelian, Chromosomal, Linkage & Blood Groups",
+    "theory": "This card turns the Biology topic 'Heredity: Mendelian, Chromosomal, Linkage & Blood Groups' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply heredity: mendelian, chromosomal, linkage & blood groups ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Punnett squares model allele combinations\nLinked genes travel together\nSex-linked genes often appear on X chromosome\nABO blood type uses multiple alleles.",
+    "method": "Inheritance problems are probability models using alleles, chromosomes, and family patterns.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Heredity: Mendelian, Chrom</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">dominance</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">segregation</text>\n</svg>",
+    "caption": "Heredity: Mendelian, Chromosomal, Linkage & Blood Groups: dominance, segregation, independent assortment...",
+    "steps": [
+      "Name the topic: Heredity: Mendelian, Chromosomal, Linkage & Blood Groups. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Aa × Aa gives genotype ratio 1 AA : 2 Aa : 1 aa.",
+    "coveredTopics": [
+      "dominance",
+      "segregation",
+      "independent assortment",
+      "chromosomal basis of inheritance",
+      "linkage",
+      "sex-linked inheritance",
+      "polygenic inheritance",
+      "multiple alleles",
+      "human blood groups"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Principles of Ecology",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Principles of Ecology.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "energy flow and productivity in ecosystems"
-      },
-      {
-        "l": "Item 2",
-        "r": "biogeochemical cycles"
-      },
-      {
-        "l": "Item 3",
-        "r": "population growth and regulation"
-      },
-      {
-        "l": "Item 4",
-        "r": "natality"
-      },
-      {
-        "l": "Item 5",
-        "r": "mortality"
-      },
-      {
-        "l": "Item 6",
-        "r": "competition"
-      },
-      {
-        "l": "Item 7",
-        "r": "migration"
-      },
-      {
-        "l": "Item 8",
-        "r": "density"
-      },
-      {
-        "l": "Item 9",
-        "r": "r-selection"
-      },
-      {
-        "l": "Item 10",
-        "r": "K-selection"
-      },
-      {
-        "l": "Item 11",
-        "r": "community structure"
-      },
-      {
-        "l": "Item 12",
-        "r": "major biomes"
-      },
-      {
-        "l": "Item 13",
-        "r": "succession"
-      },
-      {
-        "l": "Item 14",
-        "r": "habitat"
-      },
-      {
-        "l": "Item 15",
-        "r": "biotic factors"
-      },
-      {
-        "l": "Item 16",
-        "r": "abiotic factors"
-      },
-      {
-        "l": "Item 17",
-        "r": "concept of niche"
-      },
-      {
-        "l": "Item 18",
-        "r": "island biogeography"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "ecology"
+    ],
+    "title": "Ecology: Energy, Cycles, Populations, Communities & Niches",
+    "theory": "This card turns the Biology topic 'Ecology: Energy, Cycles, Populations, Communities & Niches' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply ecology: energy, cycles, populations, communities & niches ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Energy flows one way; matter cycles\nPopulation change = births + immigration - deaths - emigration\nNiche = role in ecosystem.",
+    "method": "Ecology connects organisms to energy, resources, competition, and long-term environmental change.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Ecology: Energy, Cycles, P</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">energy flow</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">productivity</text>\n</svg>",
+    "caption": "Ecology: Energy, Cycles, Populations, Communities & Niches: energy flow, productivity, biogeochemical cycles...",
+    "steps": [
+      "Name the topic: Ecology: Energy, Cycles, Populations, Communities & Niches. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Pioneer species begin succession after disturbance; later communities are more stable.",
+    "coveredTopics": [
+      "energy flow",
+      "productivity",
+      "biogeochemical cycles",
+      "population growth",
+      "natality",
+      "mortality",
+      "competition",
+      "migration",
+      "density",
+      "r-selection",
+      "K-selection",
+      "community structure",
+      "biomes",
+      "succession",
+      "habitat",
+      "biotic factors",
+      "abiotic factors",
+      "niche",
+      "island biogeography",
+      "life history strategies",
+      "altruism",
+      "kin selection"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Principles of Evolution",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Principles of Evolution.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "history of evolutionary concepts"
-      },
-      {
-        "l": "Item 2",
-        "r": "natural selection"
-      },
-      {
-        "l": "Item 3",
-        "r": "differential reproduction"
-      },
-      {
-        "l": "Item 4",
-        "r": "mutation"
-      },
-      {
-        "l": "Item 5",
-        "r": "Hardy-Weinberg equilibrium"
-      },
-      {
-        "l": "Item 6",
-        "r": "speciation"
-      },
-      {
-        "l": "Item 7",
-        "r": "punctuated equilibrium"
-      },
-      {
-        "l": "Item 8",
-        "r": "adaptive radiation"
-      },
-      {
-        "l": "Item 9",
-        "r": "plant evolution"
-      },
-      {
-        "l": "Item 10",
-        "r": "animal evolution"
-      },
-      {
-        "l": "Item 11",
-        "r": "homology"
-      },
-      {
-        "l": "Item 12",
-        "r": "analogy"
-      },
-      {
-        "l": "Item 13",
-        "r": "convergence"
-      },
-      {
-        "l": "Item 14",
-        "r": "extinction"
-      },
-      {
-        "l": "Item 15",
-        "r": "balanced polymorphism"
-      },
-      {
-        "l": "Item 16",
-        "r": "genetic drift"
-      },
-      {
-        "l": "Item 17",
-        "r": "classification of living organisms"
-      },
-      {
-        "l": "Item 18",
-        "r": "evolutionary history of humans"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "evolution"
+    ],
+    "title": "Evolution, Classification & Human Evolution",
+    "theory": "This card turns the Biology topic 'Evolution, Classification & Human Evolution' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply evolution, classification & human evolution ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Evolution = allele frequency change over generations\nHardy-Weinberg: p² + 2pq + q² = 1\nNatural selection requires variation, inheritance, and differential reproduction.",
+    "method": "Evolution explains both patterns of similarity and diversity across living organisms.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Evolution, Classification </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">history of evolutionary conc</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">natural selection</text>\n</svg>",
+    "caption": "Evolution, Classification & Human Evolution: history of evolutionary concepts, natural selection, differential reproduction...",
+    "steps": [
+      "Name the topic: Evolution, Classification & Human Evolution. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Similar forelimb bones in bats and whales are homologous structures.",
+    "coveredTopics": [
+      "history of evolutionary concepts",
+      "natural selection",
+      "differential reproduction",
+      "mutation",
+      "Hardy-Weinberg equilibrium",
+      "speciation",
+      "punctuated equilibrium",
+      "adaptive radiation",
+      "plant evolution",
+      "animal evolution",
+      "homology",
+      "analogy",
+      "convergence",
+      "extinction",
+      "balanced polymorphism",
+      "genetic drift",
+      "classification",
+      "evolutionary history of humans"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Biology",
-    "title": "Principles of Behavior",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Principles of Behavior.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "stereotyped behavior"
-      },
-      {
-        "l": "Item 2",
-        "r": "learned social behavior"
-      },
-      {
-        "l": "Item 3",
-        "r": "insect societies"
-      },
-      {
-        "l": "Item 4",
-        "r": "bird societies"
-      },
-      {
-        "l": "Item 5",
-        "r": "primate societies"
-      }
-    ]
-  },
-  {
-    "cat": "Biology",
-    "title": "Social Biology",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Biology covering Social Biology.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "human population growth"
-      },
-      {
-        "l": "Item 2",
-        "r": "age composition"
-      },
-      {
-        "l": "Item 3",
-        "r": "birth rates"
-      },
-      {
-        "l": "Item 4",
-        "r": "fertility rates"
-      },
-      {
-        "l": "Item 5",
-        "r": "demographic transition"
-      },
-      {
-        "l": "Item 6",
-        "r": "resource management"
-      },
-      {
-        "l": "Item 7",
-        "r": "environmental pollution"
-      },
-      {
-        "l": "Item 8",
-        "r": "control of human reproduction"
-      },
-      {
-        "l": "Item 9",
-        "r": "genetic engineering"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "biology",
+      "behavior",
+      "population"
+    ],
+    "title": "Behavior, Social Biology & Human Impacts",
+    "theory": "This card turns the Biology topic 'Behavior, Social Biology & Human Impacts' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply behavior, social biology & human impacts ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Behavior can be innate or learned\nDemographic transition links birth/death rates to development\nHuman activity changes resources, pollution, and technology.",
+    "method": "Social biology connects behavior, population change, and human influence on the natural world.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Behavior, Social Biology &amp;</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">stereotyped behavior</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">learned social behavior</text>\n</svg>",
+    "caption": "Behavior, Social Biology & Human Impacts: stereotyped behavior, learned social behavior, societies in insects, birds, and primates...",
+    "steps": [
+      "Name the topic: Behavior, Social Biology & Human Impacts. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A population pyramid with a wide base suggests high birth rates and future growth.",
+    "coveredTopics": [
+      "stereotyped behavior",
+      "learned social behavior",
+      "societies in insects, birds, and primates",
+      "human population growth",
+      "age composition",
+      "birth rates",
+      "fertility rates",
+      "demographic transition",
+      "resource management",
+      "environmental pollution",
+      "control of human reproduction",
+      "genetic engineering"
+    ],
+    "sourceSubject": "Biology"
   },
   {
     "cat": "Calculus",
-    "title": "Limits (10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Calculus covering Limits (10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "limit of a constant"
-      },
-      {
-        "l": "Item 2",
-        "r": "limit of a sum"
-      },
-      {
-        "l": "Item 3",
-        "r": "limit of a product"
-      },
-      {
-        "l": "Item 4",
-        "r": "limit of a quotient"
-      },
-      {
-        "l": "Item 5",
-        "r": "limit calculations"
-      },
-      {
-        "l": "Item 6",
-        "r": "limits involving infinity"
-      },
-      {
-        "l": "Item 7",
-        "r": "continuity"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "calculus",
+      "limits"
+    ],
+    "title": "Limits, Limit Laws, Infinity & Continuity",
+    "theory": "This card turns the Calculus topic 'Limits, Limit Laws, Infinity & Continuity' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply limits, limit laws, infinity & continuity ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "lim f(x)=L means f(x) approaches L\nContinuity: lim f(x)=f(a)\nLimit laws combine constants, sums, products, and quotients.",
+    "method": "Limits are the foundation for derivatives, integrals, rates, and area.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Limits, Limit Laws, Infini</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">limit of a constant</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">sum rule</text>\n</svg>",
+    "caption": "Limits, Limit Laws, Infinity & Continuity: limit of a constant, sum rule, product rule...",
+    "steps": [
+      "Name the topic: Limits, Limit Laws, Infinity & Continuity. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: lim(x→2)(x²+3x)=4+6=10 by substitution because the polynomial is continuous.",
+    "coveredTopics": [
+      "limit of a constant",
+      "sum rule",
+      "product rule",
+      "quotient rule",
+      "limits involving infinity",
+      "continuity"
+    ],
+    "sourceSubject": "Calculus"
   },
   {
     "cat": "Calculus",
-    "title": "The Derivative",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Calculus covering The Derivative.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "definitions of the derivative"
-      },
-      {
-        "l": "Item 2",
-        "r": "derivatives of elementary functions"
-      },
-      {
-        "l": "Item 3",
-        "r": "derivatives of sums"
-      },
-      {
-        "l": "Item 4",
-        "r": "derivatives of products"
-      },
-      {
-        "l": "Item 5",
-        "r": "derivatives of quotients"
-      },
-      {
-        "l": "Item 6",
-        "r": "chain rule"
-      },
-      {
-        "l": "Item 7",
-        "r": "implicit differentiation"
-      },
-      {
-        "l": "Item 8",
-        "r": "derivative of the inverse of a function"
-      },
-      {
-        "l": "Item 9",
-        "r": "higher order derivatives"
-      },
-      {
-        "l": "Item 10",
-        "r": "characteristics of graphs of f"
-      },
-      {
-        "l": "Item 11",
-        "r": "characteristics of graphs of f prime"
-      },
-      {
-        "l": "Item 12",
-        "r": "characteristics of graphs of f double prime"
-      },
-      {
-        "l": "Item 13",
-        "r": "Mean Value Theorem"
-      },
-      {
-        "l": "Item 14",
-        "r": "applications of the Mean Value Theorem"
-      },
-      {
-        "l": "Item 15",
-        "r": "graphical illustrations of the Mean Value Theorem"
-      },
-      {
-        "l": "Item 16",
-        "r": "differentiability and continuity"
-      },
-      {
-        "l": "Item 17",
-        "r": "L'Hospital's Rule"
-      },
-      {
-        "l": "Item 18",
-        "r": "quotient indeterminate forms"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "calculus",
+      "derivatives"
+    ],
+    "title": "Derivative Rules, Chain Rule, Implicit & Inverse Derivatives",
+    "theory": "This card turns the Calculus topic 'Derivative Rules, Chain Rule, Implicit & Inverse Derivatives' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply derivative rules, chain rule, implicit & inverse derivatives ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "f'(x)=lim(h→0)[f(x+h)-f(x)]/h\nProduct: (uv)'=u'v+uv'\nQuotient: (u/v)'=(u'v-uv')/v²\nChain: d/dx f(g(x))=f'(g(x))g'(x).",
+    "method": "Derivative rules convert complicated functions into slopes and rates without returning to the limit definition every time.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Derivative Rules, Chain Ru</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">definition of derivative</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">derivatives of elementary fu</text>\n</svg>",
+    "caption": "Derivative Rules, Chain Rule, Implicit & Inverse Derivatives: definition of derivative, derivatives of elementary functions, sum rule...",
+    "steps": [
+      "Name the topic: Derivative Rules, Chain Rule, Implicit & Inverse Derivatives. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: d/dx sin(x²)=cos(x²)·2x by the chain rule.",
+    "coveredTopics": [
+      "definition of derivative",
+      "derivatives of elementary functions",
+      "sum rule",
+      "product rule",
+      "quotient rule",
+      "chain rule",
+      "implicit differentiation",
+      "derivative of inverse function",
+      "higher order derivatives"
+    ],
+    "sourceSubject": "Calculus"
   },
   {
     "cat": "Calculus",
-    "title": "Applications of the Derivative",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Calculus covering Applications of the Derivative.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "slope of a curve at a point"
-      },
-      {
-        "l": "Item 2",
-        "r": "tangent lines"
-      },
-      {
-        "l": "Item 3",
-        "r": "linear approximation"
-      },
-      {
-        "l": "Item 4",
-        "r": "increasing and decreasing functions"
-      },
-      {
-        "l": "Item 5",
-        "r": "relative maximum and minimum"
-      },
-      {
-        "l": "Item 6",
-        "r": "absolute maximum and minimum"
-      },
-      {
-        "l": "Item 7",
-        "r": "concavity"
-      },
-      {
-        "l": "Item 8",
-        "r": "points of inflection"
-      },
-      {
-        "l": "Item 9",
-        "r": "extreme value problems"
-      },
-      {
-        "l": "Item 10",
-        "r": "velocity of a particle"
-      },
-      {
-        "l": "Item 11",
-        "r": "acceleration of a particle"
-      },
-      {
-        "l": "Item 12",
-        "r": "average rates of change"
-      },
-      {
-        "l": "Item 13",
-        "r": "instantaneous rates of change"
-      },
-      {
-        "l": "Item 14",
-        "r": "related rates of change"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "calculus",
+      "graphs",
+      "theorems"
+    ],
+    "title": "Graphs of f, f′, f″, MVT, Differentiability & L'Hospital",
+    "theory": "This card turns the Calculus topic 'Graphs of f, f′, f″, MVT, Differentiability & L'Hospital' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply graphs of f, f′, f″, mvt, differentiability & l'hospital ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "f′ > 0 increasing\nf′ < 0 decreasing\nf″ > 0 concave up\nMVT: f'(c)=[f(b)-f(a)]/(b-a)\nL'Hospital: 0/0 or ∞/∞ → derivative ratio.",
+    "method": "Graph relationships let you infer motion, optimization, and shape without solving every value.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Graphs of f, f′, f″, MVT, </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">characteristics of graphs of</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">Mean Value Theorem</text>\n</svg>",
+    "caption": "Graphs of f, f′, f″, MVT, Differentiability & L'Hospital: characteristics of graphs of f, f′, and f″, Mean Value Theorem, graphical illustrations...",
+    "steps": [
+      "Name the topic: Graphs of f, f′, f″, MVT, Differentiability & L'Hospital. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: If f′ changes from positive to negative, f has a local maximum.",
+    "coveredTopics": [
+      "characteristics of graphs of f, f′, and f″",
+      "Mean Value Theorem",
+      "graphical illustrations",
+      "differentiability and continuity",
+      "L'Hospital's Rule",
+      "indeterminate forms"
+    ],
+    "sourceSubject": "Calculus"
   },
   {
     "cat": "Calculus",
-    "title": "Antiderivatives and Techniques of Integration",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Calculus covering Antiderivatives and Techniques of Integration.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "concept of antiderivatives"
-      },
-      {
-        "l": "Item 2",
-        "r": "basic integration formulas"
-      },
-      {
-        "l": "Item 3",
-        "r": "integration by substitution"
-      },
-      {
-        "l": "Item 4",
-        "r": "use of identities"
-      },
-      {
-        "l": "Item 5",
-        "r": "change of variable"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "calculus",
+      "applications"
+    ],
+    "title": "Applications of Derivatives: Tangents, Extrema, Motion & Rates",
+    "theory": "This card turns the Calculus topic 'Applications of Derivatives: Tangents, Extrema, Motion & Rates' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply applications of derivatives: tangents, extrema, motion & rates ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Tangent: y-f(a)=f'(a)(x-a)\nVelocity: v=s′(t)\nAcceleration: a=v′(t)=s″(t)\nOptimization: critical points + endpoints.",
+    "method": "Applications of derivatives turn changing quantities into slopes, speeds, and best/worst values.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Applications of Derivative</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">slope of a curve</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">tangent lines</text>\n</svg>",
+    "caption": "Applications of Derivatives: Tangents, Extrema, Motion & Rates: slope of a curve, tangent lines, linear approximation...",
+    "steps": [
+      "Name the topic: Applications of Derivatives: Tangents, Extrema, Motion & Rates. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: If s(t)=t², then v(t)=2t and acceleration is 2.",
+    "coveredTopics": [
+      "slope of a curve",
+      "tangent lines",
+      "linear approximation",
+      "curve sketching",
+      "increasing and decreasing",
+      "relative maximum",
+      "absolute maximum",
+      "minimum points",
+      "concavity",
+      "inflection points",
+      "extreme value problems",
+      "velocity",
+      "acceleration",
+      "average rates",
+      "instantaneous rates",
+      "related rates"
+    ],
+    "sourceSubject": "Calculus"
   },
   {
     "cat": "Calculus",
-    "title": "Applications of Antiderivatives",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Calculus covering Applications of Antiderivatives.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "distance from acceleration with initial conditions"
-      },
-      {
-        "l": "Item 2",
-        "r": "velocity from acceleration with initial conditions"
-      },
-      {
-        "l": "Item 3",
-        "r": "solutions of differential equations"
-      },
-      {
-        "l": "Item 4",
-        "r": "growth and decay applications"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "calculus",
+      "integrals"
+    ],
+    "title": "Antiderivatives, Substitution, Motion & Growth/Decay",
+    "theory": "This card turns the Calculus topic 'Antiderivatives, Substitution, Motion & Growth/Decay' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply antiderivatives, substitution, motion & growth/decay ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "∫xⁿdx=xⁿ⁺¹/(n+1)+C\nu-substitution reverses chain rule\nGrowth/decay: dy/dt=ky → y=Ce^(kt).",
+    "method": "Antiderivatives recover totals or original functions from rates.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Antiderivatives, Substitut</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">antiderivatives</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">basic integration formulas</text>\n</svg>",
+    "caption": "Antiderivatives, Substitution, Motion & Growth/Decay: antiderivatives, basic integration formulas, integration by substitution...",
+    "steps": [
+      "Name the topic: Antiderivatives, Substitution, Motion & Growth/Decay. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: If v(t)=3t² and s(0)=5, then s(t)=t³+5.",
+    "coveredTopics": [
+      "antiderivatives",
+      "basic integration formulas",
+      "integration by substitution",
+      "identities",
+      "change of variable",
+      "distance and velocity from acceleration",
+      "initial conditions",
+      "solutions of differential equations",
+      "growth and decay"
+    ],
+    "sourceSubject": "Calculus"
   },
   {
     "cat": "Calculus",
-    "title": "The Definite Integral",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Calculus covering The Definite Integral.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "definition as limit of Riemann sums"
-      },
-      {
-        "l": "Item 2",
-        "r": "approximations using rectangles"
-      },
-      {
-        "l": "Item 3",
-        "r": "properties of the definite integral"
-      },
-      {
-        "l": "Item 4",
-        "r": "Fundamental Theorem of Calculus"
-      }
-    ]
-  },
-  {
-    "cat": "Calculus",
-    "title": "Applications of the Definite Integral",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Calculus covering Applications of the Definite Integral.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "average value of a function"
-      },
-      {
-        "l": "Item 2",
-        "r": "area"
-      },
-      {
-        "l": "Item 3",
-        "r": "area between curves"
-      },
-      {
-        "l": "Item 4",
-        "r": "accumulated change from a rate of change"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "calculus",
+      "integrals",
+      "area"
+    ],
+    "title": "Definite Integral, Riemann Sums, FTC & Average Value",
+    "theory": "This card turns the Calculus topic 'Definite Integral, Riemann Sums, FTC & Average Value' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply definite integral, riemann sums, ftc & average value ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "∫ₐᵇ f(x)dx = signed area\nFTC: ∫ₐᵇ f(x)dx = F(b)-F(a)\nAverage value = (1/(b-a))∫ₐᵇ f(x)dx.",
+    "method": "Definite integrals measure accumulated change: area, distance, mass, work, and average values.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Definite Integral, Riemann</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">definite integral</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">Riemann sums</text>\n</svg>",
+    "caption": "Definite Integral, Riemann Sums, FTC & Average Value: definite integral, Riemann sums, areas of rectangles...",
+    "steps": [
+      "Name the topic: Definite Integral, Riemann Sums, FTC & Average Value. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Average value of f(x)=x on [0,4] is (1/4)·8=2.",
+    "coveredTopics": [
+      "definite integral",
+      "Riemann sums",
+      "areas of rectangles",
+      "properties of definite integral",
+      "Fundamental Theorem of Calculus",
+      "average value of a function"
+    ],
+    "sourceSubject": "Calculus"
   },
   {
     "cat": "Chemistry",
-    "title": "Atomic Theory and Atomic Structure",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Atomic Theory and Atomic Structure.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "evidence for atomic theory"
-      },
-      {
-        "l": "Item 2",
-        "r": "atomic masses"
-      },
-      {
-        "l": "Item 3",
-        "r": "determination of atomic masses"
-      },
-      {
-        "l": "Item 4",
-        "r": "atomic number"
-      },
-      {
-        "l": "Item 5",
-        "r": "mass number"
-      },
-      {
-        "l": "Item 6",
-        "r": "isotopes"
-      },
-      {
-        "l": "Item 7",
-        "r": "mass spectroscopy"
-      },
-      {
-        "l": "Item 8",
-        "r": "electron energy levels"
-      },
-      {
-        "l": "Item 9",
-        "r": "atomic spectra"
-      },
-      {
-        "l": "Item 10",
-        "r": "atomic orbitals"
-      },
-      {
-        "l": "Item 11",
-        "r": "atomic radii"
-      },
-      {
-        "l": "Item 12",
-        "r": "ionization energies"
-      },
-      {
-        "l": "Item 13",
-        "r": "electron affinities"
-      },
-      {
-        "l": "Item 14",
-        "r": "oxidation states"
-      },
-      {
-        "l": "Item 15",
-        "r": "nuclear equations"
-      },
-      {
-        "l": "Item 16",
-        "r": "half-lives"
-      },
-      {
-        "l": "Item 17",
-        "r": "radioactivity"
-      },
-      {
-        "l": "Item 18",
-        "r": "chemical applications of nuclear chemistry"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "chemistry",
+      "atoms"
+    ],
+    "title": "Atomic Structure, Periodic Trends & Nuclear Chemistry",
+    "theory": "This card turns the Chemistry topic 'Atomic Structure, Periodic Trends & Nuclear Chemistry' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply atomic structure, periodic trends & nuclear chemistry ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Atom: protons + neutrons in nucleus, electrons in orbitals\nIsotopes differ in neutrons\nPeriodic trends: radius, ionization energy, electronegativity.",
+    "method": "Atomic structure explains bonding, reactivity, spectra, isotopes, and nuclear change.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Atomic Structure, Periodic</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">atomic theory</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">atomic structure</text>\n</svg>",
+    "caption": "Atomic Structure, Periodic Trends & Nuclear Chemistry: atomic theory, atomic structure, periodic relationships...",
+    "steps": [
+      "Name the topic: Atomic Structure, Periodic Trends & Nuclear Chemistry. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Carbon-14 and carbon-12 are isotopes because they have the same protons but different neutrons.",
+    "coveredTopics": [
+      "atomic theory",
+      "atomic structure",
+      "periodic relationships",
+      "atomic and nuclear structure",
+      "elementary particles",
+      "nuclear reactions"
+    ],
+    "sourceSubject": "Chemistry"
   },
   {
     "cat": "Chemistry",
-    "title": "Chemical Bonding",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Chemical Bonding.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "covalent bonding"
-      },
-      {
-        "l": "Item 2",
-        "r": "ionic bonding"
-      },
-      {
-        "l": "Item 3",
-        "r": "metallic bonding"
-      },
-      {
-        "l": "Item 4",
-        "r": "network bonding"
-      },
-      {
-        "l": "Item 5",
-        "r": "dispersion forces"
-      },
-      {
-        "l": "Item 6",
-        "r": "hydrogen bonding"
-      },
-      {
-        "l": "Item 7",
-        "r": "structure-property relationships"
-      },
-      {
-        "l": "Item 8",
-        "r": "bond polarity"
-      },
-      {
-        "l": "Item 9",
-        "r": "electronegativity"
-      },
-      {
-        "l": "Item 10",
-        "r": "VSEPR theory"
-      },
-      {
-        "l": "Item 11",
-        "r": "Lewis electron-dot diagrams"
-      },
-      {
-        "l": "Item 12",
-        "r": "hybridization"
-      },
-      {
-        "l": "Item 13",
-        "r": "molecular geometry"
-      },
-      {
-        "l": "Item 14",
-        "r": "geometry of ions"
-      },
-      {
-        "l": "Item 15",
-        "r": "coordination complexes"
-      },
-      {
-        "l": "Item 16",
-        "r": "structural isomerism"
-      },
-      {
-        "l": "Item 17",
-        "r": "resonance"
-      },
-      {
-        "l": "Item 18",
-        "r": "sigma bonds"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "chemistry",
+      "bonding"
+    ],
+    "title": "Chemical Bonding, Molecular Structure & Intermolecular Forces",
+    "theory": "This card turns the Chemistry topic 'Chemical Bonding, Molecular Structure & Intermolecular Forces' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply chemical bonding, molecular structure & intermolecular forces ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Ionic: electron transfer\nCovalent: electron sharing\nVSEPR: electron groups repel → shape\nIMFs: dispersion, dipole, hydrogen bonding.",
+    "method": "Bonding predicts shape, polarity, boiling point, solubility, and reactivity.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Chemical Bonding, Molecula</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">chemical bonding</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">molecular structure</text>\n</svg>",
+    "caption": "Chemical Bonding, Molecular Structure & Intermolecular Forces: chemical bonding, molecular structure, Lewis structures...",
+    "steps": [
+      "Name the topic: Chemical Bonding, Molecular Structure & Intermolecular Forces. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Water is bent and polar, so it hydrogen bonds strongly.",
+    "coveredTopics": [
+      "chemical bonding",
+      "molecular structure",
+      "Lewis structures",
+      "ionic bonding",
+      "covalent bonding",
+      "molecular geometry",
+      "intermolecular forces"
+    ],
+    "sourceSubject": "Chemistry"
   },
   {
     "cat": "Chemistry",
-    "title": "Gases",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Gases.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "ideal gas laws"
-      },
-      {
-        "l": "Item 2",
-        "r": "equations of state"
-      },
-      {
-        "l": "Item 3",
-        "r": "mole concept"
-      },
-      {
-        "l": "Item 4",
-        "r": "Avogadro's number"
-      },
-      {
-        "l": "Item 5",
-        "r": "kinetic-molecular theory"
-      },
-      {
-        "l": "Item 6",
-        "r": "interpretation of ideal gas laws"
-      },
-      {
-        "l": "Item 7",
-        "r": "temperature and kinetic energy"
-      },
-      {
-        "l": "Item 8",
-        "r": "Boltzmann distribution"
-      },
-      {
-        "l": "Item 9",
-        "r": "deviations from ideal gas laws"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "chemistry",
+      "matter",
+      "solutions"
+    ],
+    "title": "States of Matter, Gas Laws, Solutions & Colligative Properties",
+    "theory": "This card turns the Chemistry topic 'States of Matter, Gas Laws, Solutions & Colligative Properties' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply states of matter, gas laws, solutions & colligative properties ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "PV=nRT\nMolarity M=mol/L\nColligative properties depend on number of dissolved particles, not identity.",
+    "method": "Matter-state questions ask how particles move, interact, and respond to temperature or pressure.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">States of Matter, Gas Laws</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">gases</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">liquids</text>\n</svg>",
+    "caption": "States of Matter, Gas Laws, Solutions & Colligative Properties: gases, liquids, solids...",
+    "steps": [
+      "Name the topic: States of Matter, Gas Laws, Solutions & Colligative Properties. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Doubling Kelvin temperature at constant pressure doubles gas volume.",
+    "coveredTopics": [
+      "gases",
+      "liquids",
+      "solids",
+      "states of matter",
+      "heat",
+      "thermodynamics",
+      "solutions",
+      "concentration",
+      "colligative properties"
+    ],
+    "sourceSubject": "Chemistry"
   },
   {
     "cat": "Chemistry",
-    "title": "Liquids and Solids",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Liquids and Solids.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "kinetic-molecular viewpoint"
-      },
-      {
-        "l": "Item 2",
-        "r": "phase diagrams"
-      },
-      {
-        "l": "Item 3",
-        "r": "changes of state"
-      },
-      {
-        "l": "Item 4",
-        "r": "critical phenomena"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "chemistry",
+      "stoichiometry"
+    ],
+    "title": "Chemical Equations, Mole Concept & Stoichiometry",
+    "theory": "This card turns the Chemistry topic 'Chemical Equations, Mole Concept & Stoichiometry' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply chemical equations, mole concept & stoichiometry ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "1 mol = 6.022×10²³ particles\nBalanced coefficients give mole ratios\nPercent yield = actual/theoretical × 100.",
+    "method": "Stoichiometry turns a balanced equation into a recipe for amounts of reactants and products.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Chemical Equations, Mole C</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">chemical equations</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">balancing equations</text>\n</svg>",
+    "caption": "Chemical Equations, Mole Concept & Stoichiometry: chemical equations, balancing equations, mole concept...",
+    "steps": [
+      "Name the topic: Chemical Equations, Mole Concept & Stoichiometry. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: 2H₂ + O₂ → 2H₂O. Two moles H₂ produce two moles H₂O when O₂ is sufficient.",
+    "coveredTopics": [
+      "chemical equations",
+      "balancing equations",
+      "mole concept",
+      "stoichiometric calculations",
+      "limiting reagent",
+      "percent yield"
+    ],
+    "sourceSubject": "Chemistry"
   },
   {
     "cat": "Chemistry",
-    "title": "Solutions",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Solutions.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "types of solutions"
-      },
-      {
-        "l": "Item 2",
-        "r": "factors affecting solubility"
-      },
-      {
-        "l": "Item 3",
-        "r": "methods of expressing concentration"
-      },
-      {
-        "l": "Item 4",
-        "r": "colligative properties"
-      },
-      {
-        "l": "Item 5",
-        "r": "Raoult's law"
-      },
-      {
-        "l": "Item 6",
-        "r": "interionic attraction"
-      },
-      {
-        "l": "Item 7",
-        "r": "solubility"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "chemistry",
+      "reactions"
+    ],
+    "title": "Reaction Types: Acid-Base, Precipitation & Redox",
+    "theory": "This card turns the Chemistry topic 'Reaction Types: Acid-Base, Precipitation & Redox' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply reaction types: acid-base, precipitation & redox ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Acid + base → salt + water\nPrecipitation forms insoluble solid\nOxidation loses e⁻; reduction gains e⁻.",
+    "method": "Classifying reaction type helps predict products and choose the correct calculation.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Reaction Types: Acid-Base,</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">reaction types</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">precipitation</text>\n</svg>",
+    "caption": "Reaction Types: Acid-Base, Precipitation & Redox: reaction types, precipitation, acid-base reactions...",
+    "steps": [
+      "Name the topic: Reaction Types: Acid-Base, Precipitation & Redox. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: AgNO₃ + NaCl → AgCl(s) + NaNO₃ is precipitation.",
+    "coveredTopics": [
+      "reaction types",
+      "precipitation",
+      "acid-base reactions",
+      "oxidation-reduction",
+      "chemical reactivity and products"
+    ],
+    "sourceSubject": "Chemistry"
   },
   {
     "cat": "Chemistry",
-    "title": "Reaction Types",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Reaction Types.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "Arrhenius acids and bases"
-      },
-      {
-        "l": "Item 2",
-        "r": "Bronsted-Lowry acids and bases"
-      },
-      {
-        "l": "Item 3",
-        "r": "Lewis acids and bases"
-      },
-      {
-        "l": "Item 4",
-        "r": "amphoterism"
-      },
-      {
-        "l": "Item 5",
-        "r": "coordination complex reactions"
-      },
-      {
-        "l": "Item 6",
-        "r": "precipitation reactions"
-      },
-      {
-        "l": "Item 7",
-        "r": "oxidation-reduction reactions"
-      },
-      {
-        "l": "Item 8",
-        "r": "oxidation number"
-      },
-      {
-        "l": "Item 9",
-        "r": "electron role in redox"
-      },
-      {
-        "l": "Item 10",
-        "r": "electrochemistry"
-      },
-      {
-        "l": "Item 11",
-        "r": "electrolytic cells"
-      },
-      {
-        "l": "Item 12",
-        "r": "standard half-cell potentials"
-      },
-      {
-        "l": "Item 13",
-        "r": "predicting redox direction"
-      },
-      {
-        "l": "Item 14",
-        "r": "concentration effects in redox"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "chemistry",
+      "equilibrium",
+      "acids-bases"
+    ],
+    "title": "Equilibrium, Acids/Bases, Ksp, Buffers & Common Ion",
+    "theory": "This card turns the Chemistry topic 'Equilibrium, Acids/Bases, Ksp, Buffers & Common Ion' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply equilibrium, acids/bases, ksp, buffers & common ion ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "K = products/reactants\npH=-log[H⁺]\npK=-logK\nKsp predicts precipitation\nBuffer resists pH change.",
+    "method": "Equilibrium questions ask which direction a system shifts and how much product or ion exists at balance.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Equilibrium, Acids/Bases, </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Le Chatelier</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">Kc</text>\n</svg>",
+    "caption": "Equilibrium, Acids/Bases, Ksp, Buffers & Common Ion: Le Chatelier, Kc, Kp...",
+    "steps": [
+      "Name the topic: Equilibrium, Acids/Bases, Ksp, Buffers & Common Ion. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Adding common ion Cl⁻ lowers AgCl solubility by shifting equilibrium left.",
+    "coveredTopics": [
+      "Le Chatelier",
+      "Kc",
+      "Kp",
+      "equilibrium constants",
+      "acids and bases",
+      "pK",
+      "pH",
+      "solubility product",
+      "precipitation",
+      "slightly soluble compounds",
+      "complex ions",
+      "common ion effect",
+      "buffers"
+    ],
+    "sourceSubject": "Chemistry"
   },
   {
     "cat": "Chemistry",
-    "title": "Equations and Stoichiometry",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Equations and Stoichiometry.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "ionic species"
-      },
-      {
-        "l": "Item 2",
-        "r": "molecular species"
-      },
-      {
-        "l": "Item 3",
-        "r": "net-ionic equations"
-      },
-      {
-        "l": "Item 4",
-        "r": "mass relations"
-      },
-      {
-        "l": "Item 5",
-        "r": "volume relations"
-      },
-      {
-        "l": "Item 6",
-        "r": "mole concept"
-      },
-      {
-        "l": "Item 7",
-        "r": "balancing equations"
-      },
-      {
-        "l": "Item 8",
-        "r": "balancing redox equations"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "chemistry",
+      "kinetics"
+    ],
+    "title": "Kinetics: Rate Laws, Activation Energy & Catalysts",
+    "theory": "This card turns the Chemistry topic 'Kinetics: Rate Laws, Activation Energy & Catalysts' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply kinetics: rate laws, activation energy & catalysts ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Rate = k[A]^m[B]^n\nArrhenius: higher T usually increases k\nCatalyst lowers activation energy.",
+    "method": "Kinetics explains how fast a reaction happens, not just whether it can happen.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Kinetics: Rate Laws, Activ</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">rate of reaction</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">order of reaction</text>\n</svg>",
+    "caption": "Kinetics: Rate Laws, Activation Energy & Catalysts: rate of reaction, order of reaction, rate constant...",
+    "steps": [
+      "Name the topic: Kinetics: Rate Laws, Activation Energy & Catalysts. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: If doubling [A] doubles rate, reaction is first order in A.",
+    "coveredTopics": [
+      "rate of reaction",
+      "order of reaction",
+      "rate constant",
+      "experimental data",
+      "temperature change",
+      "activation energy",
+      "catalysts",
+      "rate-determining step",
+      "reaction mechanism"
+    ],
+    "sourceSubject": "Chemistry"
   },
   {
     "cat": "Chemistry",
-    "title": "Equilibrium",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Equilibrium.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "dynamic equilibrium"
-      },
-      {
-        "l": "Item 2",
-        "r": "Le Chatelier's principle"
-      },
-      {
-        "l": "Item 3",
-        "r": "equilibrium constants"
-      },
-      {
-        "l": "Item 4",
-        "r": "Kc"
-      },
-      {
-        "l": "Item 5",
-        "r": "Kp"
-      },
-      {
-        "l": "Item 6",
-        "r": "solution equilibrium constants"
-      },
-      {
-        "l": "Item 7",
-        "r": "acid constants"
-      },
-      {
-        "l": "Item 8",
-        "r": "base constants"
-      },
-      {
-        "l": "Item 9",
-        "r": "pK"
-      },
-      {
-        "l": "Item 10",
-        "r": "pH"
-      },
-      {
-        "l": "Item 11",
-        "r": "solubility product constants"
-      },
-      {
-        "l": "Item 12",
-        "r": "precipitation applications"
-      },
-      {
-        "l": "Item 13",
-        "r": "dissolution of slightly soluble compounds"
-      },
-      {
-        "l": "Item 14",
-        "r": "complex ion constants"
-      },
-      {
-        "l": "Item 15",
-        "r": "common ion effect"
-      },
-      {
-        "l": "Item 16",
-        "r": "buffers"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "chemistry",
+      "thermodynamics"
+    ],
+    "title": "Thermodynamics: Enthalpy, Entropy, Free Energy & Hess's Law",
+    "theory": "This card turns the Chemistry topic 'Thermodynamics: Enthalpy, Entropy, Free Energy & Hess's Law' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply thermodynamics: enthalpy, entropy, free energy & hess's law ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "ΔG=ΔH−TΔS\nΔG<0 spontaneous\nq=mcΔT\nHess: add reactions → add ΔH values.",
+    "method": "Thermodynamics tells whether a reaction is energetically favorable and how heat moves.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Thermodynamics: Enthalpy, </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">state functions</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">first law</text>\n</svg>",
+    "caption": "Thermodynamics: Enthalpy, Entropy, Free Energy & Hess's Law: state functions, first law, heat of formation...",
+    "steps": [
+      "Name the topic: Thermodynamics: Enthalpy, Entropy, Free Energy & Hess's Law. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: If ΔH is negative and ΔS positive, ΔG is negative at all temperatures.",
+    "coveredTopics": [
+      "state functions",
+      "first law",
+      "heat of formation",
+      "heat of reaction",
+      "enthalpy",
+      "Hess's law",
+      "heat capacity",
+      "heats of vaporization and fusion",
+      "second law",
+      "free energy",
+      "entropy",
+      "equilibrium constants",
+      "electrode potentials"
+    ],
+    "sourceSubject": "Chemistry"
   },
   {
     "cat": "Chemistry",
-    "title": "Kinetics",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Kinetics.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "rate of reaction"
-      },
-      {
-        "l": "Item 2",
-        "r": "order of reaction"
-      },
-      {
-        "l": "Item 3",
-        "r": "rate constant"
-      },
-      {
-        "l": "Item 4",
-        "r": "experimental determination of order"
-      },
-      {
-        "l": "Item 5",
-        "r": "temperature effects on rates"
-      },
-      {
-        "l": "Item 6",
-        "r": "activation energy"
-      },
-      {
-        "l": "Item 7",
-        "r": "catalysts"
-      },
-      {
-        "l": "Item 8",
-        "r": "rate-determining step"
-      },
-      {
-        "l": "Item 9",
-        "r": "reaction mechanism"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "chemistry",
+      "lab",
+      "organic"
+    ],
+    "title": "Descriptive & Experimental Chemistry",
+    "theory": "This card turns the Chemistry topic 'Descriptive & Experimental Chemistry' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply descriptive & experimental chemistry ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Functional group controls organic behavior\nLab method: observe → measure → calculate → interpret.",
+    "method": "Descriptive and lab questions test whether principles match real substances, equipment, observations, and data.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Descriptive &amp; Experimental</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">descriptive chemistry</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">main groups</text>\n</svg>",
+    "caption": "Descriptive & Experimental Chemistry: descriptive chemistry, main groups, transition elements...",
+    "steps": [
+      "Name the topic: Descriptive & Experimental Chemistry. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Alcohols contain –OH; structural isomers can share a formula but differ in connectivity.",
+    "coveredTopics": [
+      "descriptive chemistry",
+      "main groups",
+      "transition elements",
+      "organic chemistry",
+      "functional groups",
+      "isomerism",
+      "laboratory equipment",
+      "observations",
+      "calculations",
+      "interpretation of results",
+      "basic tools of chemistry"
+    ],
+    "sourceSubject": "Chemistry"
   },
   {
-    "cat": "Chemistry",
-    "title": "Thermodynamics",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Thermodynamics.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "state functions"
-      },
-      {
-        "l": "Item 2",
-        "r": "first law"
-      },
-      {
-        "l": "Item 3",
-        "r": "heat of formation"
-      },
-      {
-        "l": "Item 4",
-        "r": "heat of reaction"
-      },
-      {
-        "l": "Item 5",
-        "r": "enthalpy change"
-      },
-      {
-        "l": "Item 6",
-        "r": "Hess's law"
-      },
-      {
-        "l": "Item 7",
-        "r": "heat capacity"
-      },
-      {
-        "l": "Item 8",
-        "r": "heats of vaporization"
-      },
-      {
-        "l": "Item 9",
-        "r": "heats of fusion"
-      },
-      {
-        "l": "Item 10",
-        "r": "second law"
-      },
-      {
-        "l": "Item 11",
-        "r": "free energy of formation"
-      },
-      {
-        "l": "Item 12",
-        "r": "free energy of reaction"
-      },
-      {
-        "l": "Item 13",
-        "r": "free energy dependence on enthalpy and entropy"
-      },
-      {
-        "l": "Item 14",
-        "r": "free energy and equilibrium constants"
-      },
-      {
-        "l": "Item 15",
-        "r": "free energy and electrode potentials"
-      }
-    ]
+    "cat": "Algebra",
+    "tags": [
+      "linguastem",
+      "college-algebra",
+      "algebra"
+    ],
+    "title": "Algebraic Operations: Exponents, Polynomials, Expressions & Logs",
+    "theory": "This card turns the College Algebra topic 'Algebraic Operations: Exponents, Polynomials, Expressions & Logs' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply algebraic operations: exponents, polynomials, expressions & logs ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "a^m·a^n=a^(m+n)\nlog(ab)=log a+log b\n|x| = distance from 0\nFactor before solving.",
+    "method": "Algebraic operations simplify expressions so equations and functions become easier to analyze.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Algebraic Operations: Expo</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">operations with exponents</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">factoring polynomials</text>\n</svg>",
+    "caption": "Algebraic Operations: Exponents, Polynomials, Expressions & Logs: operations with exponents, factoring polynomials, expanding polynomials...",
+    "steps": [
+      "Name the topic: Algebraic Operations: Exponents, Polynomials, Expressions & Logs. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: x²+5x+6 factors to (x+2)(x+3).",
+    "coveredTopics": [
+      "operations with exponents",
+      "factoring polynomials",
+      "expanding polynomials",
+      "algebraic expressions",
+      "absolute value",
+      "properties of logarithms"
+    ],
+    "sourceSubject": "College Algebra"
   },
   {
-    "cat": "Chemistry",
-    "title": "Descriptive Chemistry",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Descriptive Chemistry.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "chemical reactivity"
-      },
-      {
-        "l": "Item 2",
-        "r": "products of chemical reactions"
-      },
-      {
-        "l": "Item 3",
-        "r": "periodic table relationships"
-      },
-      {
-        "l": "Item 4",
-        "r": "main group chemistry"
-      },
-      {
-        "l": "Item 5",
-        "r": "transition element chemistry"
-      },
-      {
-        "l": "Item 6",
-        "r": "systematic nomenclature"
-      },
-      {
-        "l": "Item 7",
-        "r": "organic functional groups"
-      },
-      {
-        "l": "Item 8",
-        "r": "organic isomerism"
-      }
-    ]
+    "cat": "Algebra",
+    "tags": [
+      "linguastem",
+      "college-algebra",
+      "equations"
+    ],
+    "title": "Equations & Inequalities: Linear, Quadratic, Absolute, Systems, Exponential & Log",
+    "theory": "This card turns the College Algebra topic 'Equations & Inequalities: Linear, Quadratic, Absolute, Systems, Exponential & Log' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply equations & inequalities: linear, quadratic, absolute, systems, exponential & log ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Linear: ax+b=0\nQuadratic: ax²+bx+c=0\nSystem: solve for values satisfying all equations\nLog/exponential are inverses.",
+    "method": "Solving means finding all input values that make a statement true.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Equations &amp; Inequalities: </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">linear equations</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">linear inequalities</text>\n</svg>",
+    "caption": "Equations & Inequalities: Linear, Quadratic, Absolute, Systems, Exponential & Log: linear equations, linear inequalities, quadratic equations...",
+    "steps": [
+      "Name the topic: Equations & Inequalities: Linear, Quadratic, Absolute, Systems, Exponential & Log. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: 2x+3=11 → x=4.",
+    "coveredTopics": [
+      "linear equations",
+      "linear inequalities",
+      "quadratic equations",
+      "quadratic inequalities",
+      "absolute value equations",
+      "absolute value inequalities",
+      "systems of equations",
+      "systems of inequalities",
+      "exponential equations",
+      "logarithmic equations"
+    ],
+    "sourceSubject": "College Algebra"
   },
   {
-    "cat": "Chemistry",
-    "title": "Experimental Chemistry",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "AP/CLEP content area for Chemistry covering Experimental Chemistry.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "laboratory equipment"
-      },
-      {
-        "l": "Item 2",
-        "r": "laboratory observations"
-      },
-      {
-        "l": "Item 3",
-        "r": "laboratory calculations"
-      },
-      {
-        "l": "Item 4",
-        "r": "interpretation of experimental results"
-      },
-      {
-        "l": "Item 5",
-        "r": "basic tools of chemistry"
-      }
-    ]
+    "cat": "Algebra",
+    "tags": [
+      "linguastem",
+      "college-algebra",
+      "functions"
+    ],
+    "title": "Functions: Modeling, Domain, Range, Algebra, Graphs, Transformations & Inverses",
+    "theory": "This card turns the College Algebra topic 'Functions: Modeling, Domain, Range, Algebra, Graphs, Transformations & Inverses' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply functions: modeling, domain, range, algebra, graphs, transformations & inverses ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Function: each input has exactly one output\nDomain = allowed inputs\nRange = outputs\nInverse swaps x and y.",
+    "method": "Function questions ask you to connect formulas, tables, graphs, words, and real-world models.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Functions: Modeling, Domai</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">definition of function</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">interpretation</text>\n</svg>",
+    "caption": "Functions: Modeling, Domain, Range, Algebra, Graphs, Transformations & Inverses: definition of function, interpretation, representation...",
+    "steps": [
+      "Name the topic: Functions: Modeling, Domain, Range, Algebra, Graphs, Transformations & Inverses. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: f(x)=x² has domain all real numbers and range y≥0.",
+    "coveredTopics": [
+      "definition of function",
+      "interpretation",
+      "representation",
+      "modeling",
+      "domain",
+      "range",
+      "evaluation of functions",
+      "algebra of functions",
+      "graphs",
+      "intercepts",
+      "symmetry",
+      "transformations",
+      "inverse functions"
+    ],
+    "sourceSubject": "College Algebra"
   },
   {
-    "cat": "College Algebra",
-    "title": "Algebraic Operations (25%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Algebra covering Algebraic Operations (25%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "operations with exponents"
-      },
-      {
-        "l": "Item 2",
-        "r": "factoring polynomials"
-      },
-      {
-        "l": "Item 3",
-        "r": "expanding polynomials"
-      },
-      {
-        "l": "Item 4",
-        "r": "operations with algebraic expressions"
-      },
-      {
-        "l": "Item 5",
-        "r": "absolute value"
-      },
-      {
-        "l": "Item 6",
-        "r": "properties of logarithms"
-      }
-    ]
-  },
-  {
-    "cat": "College Algebra",
-    "title": "Equations and Inequalities (25%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Algebra covering Equations and Inequalities (25%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "linear equations"
-      },
-      {
-        "l": "Item 2",
-        "r": "linear inequalities"
-      },
-      {
-        "l": "Item 3",
-        "r": "quadratic equations"
-      },
-      {
-        "l": "Item 4",
-        "r": "quadratic inequalities"
-      },
-      {
-        "l": "Item 5",
-        "r": "absolute value equations"
-      },
-      {
-        "l": "Item 6",
-        "r": "absolute value inequalities"
-      },
-      {
-        "l": "Item 7",
-        "r": "systems of equations"
-      },
-      {
-        "l": "Item 8",
-        "r": "systems of inequalities"
-      },
-      {
-        "l": "Item 9",
-        "r": "exponential equations"
-      },
-      {
-        "l": "Item 10",
-        "r": "logarithmic equations"
-      }
-    ]
-  },
-  {
-    "cat": "College Algebra",
-    "title": "Functions and Their Properties (30%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Algebra covering Functions and Their Properties (30%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "definition of functions"
-      },
-      {
-        "l": "Item 2",
-        "r": "interpretation of functions"
-      },
-      {
-        "l": "Item 3",
-        "r": "representation of functions"
-      },
-      {
-        "l": "Item 4",
-        "r": "modeling with functions"
-      },
-      {
-        "l": "Item 5",
-        "r": "domain"
-      },
-      {
-        "l": "Item 6",
-        "r": "range"
-      },
-      {
-        "l": "Item 7",
-        "r": "evaluation of functions"
-      },
-      {
-        "l": "Item 8",
-        "r": "algebra of functions"
-      },
-      {
-        "l": "Item 9",
-        "r": "graphs and intercepts"
-      },
-      {
-        "l": "Item 10",
-        "r": "symmetry"
-      },
-      {
-        "l": "Item 11",
-        "r": "transformations"
-      },
-      {
-        "l": "Item 12",
-        "r": "inverse functions"
-      }
-    ]
-  },
-  {
-    "cat": "College Algebra",
-    "title": "Number Systems and Operations (20%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Algebra covering Number Systems and Operations (20%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "real numbers"
-      },
-      {
-        "l": "Item 2",
-        "r": "complex numbers"
-      },
-      {
-        "l": "Item 3",
-        "r": "factorials"
-      },
-      {
-        "l": "Item 4",
-        "r": "binomial theorem"
-      }
-    ]
+    "cat": "Algebra",
+    "tags": [
+      "linguastem",
+      "college-algebra",
+      "numbers",
+      "complex"
+    ],
+    "title": "Number Systems: Real, Complex, Factorials & Binomial Theorem",
+    "theory": "This card turns the College Algebra topic 'Number Systems: Real, Complex, Factorials & Binomial Theorem' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply number systems: real, complex, factorials & binomial theorem ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "i²=-1\nn! = n(n-1)...1\n(a+b)^n expands using binomial coefficients.",
+    "method": "Number systems extend what equations can solve; complex numbers allow roots of negative values.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Number Systems: Real, Comp</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">real numbers</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">complex numbers</text>\n</svg>",
+    "caption": "Number Systems: Real, Complex, Factorials & Binomial Theorem: real numbers, complex numbers, factorials...",
+    "steps": [
+      "Name the topic: Number Systems: Real, Complex, Factorials & Binomial Theorem. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: x²+1=0 has solutions x=±i.",
+    "coveredTopics": [
+      "real numbers",
+      "complex numbers",
+      "factorials",
+      "binomial theorem"
+    ],
+    "sourceSubject": "College Algebra"
   },
   {
     "cat": "College Mathematics",
-    "title": "Algebra and Functions (20%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Mathematics covering Algebra and Functions (20%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "solving equations"
-      },
-      {
-        "l": "Item 2",
-        "r": "linear inequalities"
-      },
-      {
-        "l": "Item 3",
-        "r": "systems of linear equations analytically"
-      },
-      {
-        "l": "Item 4",
-        "r": "systems of linear equations graphically"
-      },
-      {
-        "l": "Item 5",
-        "r": "function interpretation"
-      },
-      {
-        "l": "Item 6",
-        "r": "function representation"
-      },
-      {
-        "l": "Item 7",
-        "r": "function evaluation"
-      },
-      {
-        "l": "Item 8",
-        "r": "function graphs"
-      },
-      {
-        "l": "Item 9",
-        "r": "translations"
-      },
-      {
-        "l": "Item 10",
-        "r": "reflections"
-      },
-      {
-        "l": "Item 11",
-        "r": "symmetry"
-      },
-      {
-        "l": "Item 12",
-        "r": "linear growth"
-      },
-      {
-        "l": "Item 13",
-        "r": "exponential growth"
-      },
-      {
-        "l": "Item 14",
-        "r": "applications"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "college-mathematics",
+      "functions"
+    ],
+    "title": "Algebra, Functions & Growth Models",
+    "theory": "This card turns the College Mathematics topic 'Algebra, Functions & Growth Models' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply algebra, functions & growth models ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Linear: y=mx+b\nExponential: y=a·b^x\nTransform: f(x)+k shifts up; f(x-h) shifts right.",
+    "method": "College math function problems focus on interpreting graphs and models, not just manipulating symbols.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Algebra, Functions &amp; Growt</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">solving equations</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">linear inequalities</text>\n</svg>",
+    "caption": "Algebra, Functions & Growth Models: solving equations, linear inequalities, systems of linear equations...",
+    "steps": [
+      "Name the topic: Algebra, Functions & Growth Models. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: y=100(1.05)^t models 5% growth per time period.",
+    "coveredTopics": [
+      "solving equations",
+      "linear inequalities",
+      "systems of linear equations",
+      "analytic methods",
+      "graphical methods",
+      "function interpretation",
+      "function representation",
+      "function evaluation",
+      "translations",
+      "reflections",
+      "symmetry",
+      "linear growth",
+      "exponential growth",
+      "applications"
+    ],
+    "sourceSubject": "College Mathematics"
   },
   {
     "cat": "College Mathematics",
-    "title": "Counting and Probability (10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Mathematics covering Counting and Probability (10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "multiplication rule"
-      },
-      {
-        "l": "Item 2",
-        "r": "combinations"
-      },
-      {
-        "l": "Item 3",
-        "r": "permutations"
-      },
-      {
-        "l": "Item 4",
-        "r": "union"
-      },
-      {
-        "l": "Item 5",
-        "r": "intersection"
-      },
-      {
-        "l": "Item 6",
-        "r": "independent events"
-      },
-      {
-        "l": "Item 7",
-        "r": "mutually exclusive events"
-      },
-      {
-        "l": "Item 8",
-        "r": "complementary events"
-      },
-      {
-        "l": "Item 9",
-        "r": "conditional probabilities"
-      },
-      {
-        "l": "Item 10",
-        "r": "expected value"
-      },
-      {
-        "l": "Item 11",
-        "r": "applications"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "college-mathematics",
+      "probability"
+    ],
+    "title": "Counting & Probability",
+    "theory": "This card turns the College Mathematics topic 'Counting & Probability' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply counting & probability ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Permutation: nPr=n!/(n-r)!\nCombination: nCr=n!/[r!(n-r)!]\nP(A or B)=P(A)+P(B)-P(A and B).",
+    "method": "Counting tells how many outcomes exist; probability compares favorable outcomes to total outcomes.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Counting &amp; Probability</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">multiplication rule</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">combinations</text>\n</svg>",
+    "caption": "Counting & Probability: multiplication rule, combinations, permutations...",
+    "steps": [
+      "Name the topic: Counting & Probability. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Choosing 2 people from 5: 5C2=10.",
+    "coveredTopics": [
+      "multiplication rule",
+      "combinations",
+      "permutations",
+      "probability",
+      "union",
+      "intersection",
+      "independent events",
+      "mutually exclusive events",
+      "complementary events",
+      "conditional probabilities",
+      "expected value",
+      "applications"
+    ],
+    "sourceSubject": "College Mathematics"
   },
   {
     "cat": "College Mathematics",
-    "title": "Data Analysis and Statistics (15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Mathematics covering Data Analysis and Statistics (15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "tables"
-      },
-      {
-        "l": "Item 2",
-        "r": "bar graphs"
-      },
-      {
-        "l": "Item 3",
-        "r": "line graphs"
-      },
-      {
-        "l": "Item 4",
-        "r": "circle graphs"
-      },
-      {
-        "l": "Item 5",
-        "r": "pie charts"
-      },
-      {
-        "l": "Item 6",
-        "r": "scatterplots"
-      },
-      {
-        "l": "Item 7",
-        "r": "histograms"
-      },
-      {
-        "l": "Item 8",
-        "r": "mean"
-      },
-      {
-        "l": "Item 9",
-        "r": "median"
-      },
-      {
-        "l": "Item 10",
-        "r": "mode"
-      },
-      {
-        "l": "Item 11",
-        "r": "range"
-      },
-      {
-        "l": "Item 12",
-        "r": "standard deviation"
-      },
-      {
-        "l": "Item 13",
-        "r": "normal distribution"
-      },
-      {
-        "l": "Item 14",
-        "r": "applications"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "college-mathematics",
+      "statistics"
+    ],
+    "title": "Data Analysis, Statistics & Normal Distribution",
+    "theory": "This card turns the College Mathematics topic 'Data Analysis, Statistics & Normal Distribution' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply data analysis, statistics & normal distribution ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Mean=sum/n\nRange=max-min\nStandard deviation measures spread\nNormal distribution is bell-shaped.",
+    "method": "Statistics questions ask what the data show, not just how to compute a number.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Data Analysis, Statistics </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">tables</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">bar graphs</text>\n</svg>",
+    "caption": "Data Analysis, Statistics & Normal Distribution: tables, bar graphs, line graphs...",
+    "steps": [
+      "Name the topic: Data Analysis, Statistics & Normal Distribution. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Data 2, 3, 7 has mean 4 and range 5.",
+    "coveredTopics": [
+      "tables",
+      "bar graphs",
+      "line graphs",
+      "circle graphs",
+      "pie charts",
+      "scatterplots",
+      "histograms",
+      "mean",
+      "median",
+      "mode",
+      "range",
+      "standard deviation",
+      "normal distribution",
+      "applications"
+    ],
+    "sourceSubject": "College Mathematics"
   },
   {
     "cat": "College Mathematics",
-    "title": "Financial Mathematics (20%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Mathematics covering Financial Mathematics (20%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "percents"
-      },
-      {
-        "l": "Item 2",
-        "r": "percent change"
-      },
-      {
-        "l": "Item 3",
-        "r": "markups"
-      },
-      {
-        "l": "Item 4",
-        "r": "discounts"
-      },
-      {
-        "l": "Item 5",
-        "r": "taxes"
-      },
-      {
-        "l": "Item 6",
-        "r": "profit"
-      },
-      {
-        "l": "Item 7",
-        "r": "loss"
-      },
-      {
-        "l": "Item 8",
-        "r": "simple interest"
-      },
-      {
-        "l": "Item 9",
-        "r": "compound interest"
-      },
-      {
-        "l": "Item 10",
-        "r": "continuous interest"
-      },
-      {
-        "l": "Item 11",
-        "r": "effective interest rate"
-      },
-      {
-        "l": "Item 12",
-        "r": "annual percentage rate"
-      },
-      {
-        "l": "Item 13",
-        "r": "present value"
-      },
-      {
-        "l": "Item 14",
-        "r": "future value"
-      },
-      {
-        "l": "Item 15",
-        "r": "applications"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "college-mathematics",
+      "finance"
+    ],
+    "title": "Financial Mathematics",
+    "theory": "This card turns the College Mathematics topic 'Financial Mathematics' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply financial mathematics ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Percent change=(new-old)/old\nSimple interest I=Prt\nCompound A=P(1+r/n)^(nt)\nContinuous A=Pe^(rt)\nPV=FV/(1+r)^t.",
+    "method": "Financial math converts rates and time into real costs, profit, savings, and debt.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Financial Mathematics</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">percents</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">percent change</text>\n</svg>",
+    "caption": "Financial Mathematics: percents, percent change, markups...",
+    "steps": [
+      "Name the topic: Financial Mathematics. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: $1000 at 5% simple interest for 3 years earns $150.",
+    "coveredTopics": [
+      "percents",
+      "percent change",
+      "markups",
+      "discounts",
+      "taxes",
+      "profit",
+      "loss",
+      "simple interest",
+      "compound interest",
+      "continuous interest",
+      "effective interest rate",
+      "effective annual yield",
+      "APR",
+      "present value",
+      "future value",
+      "applications"
+    ],
+    "sourceSubject": "College Mathematics"
   },
   {
     "cat": "College Mathematics",
-    "title": "Geometry (10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Mathematics covering Geometry (10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "triangles"
-      },
-      {
-        "l": "Item 2",
-        "r": "quadrilaterals"
-      },
-      {
-        "l": "Item 3",
-        "r": "perimeter"
-      },
-      {
-        "l": "Item 4",
-        "r": "area"
-      },
-      {
-        "l": "Item 5",
-        "r": "similarity"
-      },
-      {
-        "l": "Item 6",
-        "r": "Pythagorean theorem"
-      },
-      {
-        "l": "Item 7",
-        "r": "parallel lines"
-      },
-      {
-        "l": "Item 8",
-        "r": "perpendicular lines"
-      },
-      {
-        "l": "Item 9",
-        "r": "circles"
-      },
-      {
-        "l": "Item 10",
-        "r": "circumference"
-      },
-      {
-        "l": "Item 11",
-        "r": "central angles"
-      },
-      {
-        "l": "Item 12",
-        "r": "inscribed angles"
-      },
-      {
-        "l": "Item 13",
-        "r": "sectors"
-      },
-      {
-        "l": "Item 14",
-        "r": "applications"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "college-mathematics",
+      "geometry"
+    ],
+    "title": "Geometry: Triangles, Quadrilaterals, Lines & Circles",
+    "theory": "This card turns the College Mathematics topic 'Geometry: Triangles, Quadrilaterals, Lines & Circles' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply geometry: triangles, quadrilaterals, lines & circles ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Pythagorean: a²+b²=c²\nCircle: C=2πr, A=πr²\nSector area=(θ/360)πr².",
+    "method": "Geometry problems translate shapes into measurements and relationships.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Geometry: Triangles, Quadr</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">triangles</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">quadrilaterals</text>\n</svg>",
+    "caption": "Geometry: Triangles, Quadrilaterals, Lines & Circles: triangles, quadrilaterals, perimeter...",
+    "steps": [
+      "Name the topic: Geometry: Triangles, Quadrilaterals, Lines & Circles. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A 3-4-5 triangle is right because 3²+4²=5².",
+    "coveredTopics": [
+      "triangles",
+      "quadrilaterals",
+      "perimeter",
+      "area",
+      "similarity",
+      "Pythagorean theorem",
+      "parallel lines",
+      "perpendicular lines",
+      "circles",
+      "circumference",
+      "area",
+      "central angles",
+      "inscribed angles",
+      "sectors",
+      "applications"
+    ],
+    "sourceSubject": "College Mathematics"
   },
   {
     "cat": "College Mathematics",
-    "title": "Logic and Sets (15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Mathematics covering Logic and Sets (15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "conditional statements"
-      },
-      {
-        "l": "Item 2",
-        "r": "conjunctions"
-      },
-      {
-        "l": "Item 3",
-        "r": "disjunctions"
-      },
-      {
-        "l": "Item 4",
-        "r": "negations"
-      },
-      {
-        "l": "Item 5",
-        "r": "hypotheses"
-      },
-      {
-        "l": "Item 6",
-        "r": "logical conclusions"
-      },
-      {
-        "l": "Item 7",
-        "r": "converses"
-      },
-      {
-        "l": "Item 8",
-        "r": "inverses"
-      },
-      {
-        "l": "Item 9",
-        "r": "counterexamples"
-      },
-      {
-        "l": "Item 10",
-        "r": "contrapositives"
-      },
-      {
-        "l": "Item 11",
-        "r": "logical equivalence"
-      },
-      {
-        "l": "Item 12",
-        "r": "set relationships"
-      },
-      {
-        "l": "Item 13",
-        "r": "subsets"
-      },
-      {
-        "l": "Item 14",
-        "r": "disjoint sets"
-      },
-      {
-        "l": "Item 15",
-        "r": "equality of sets"
-      },
-      {
-        "l": "Item 16",
-        "r": "Venn diagrams"
-      },
-      {
-        "l": "Item 17",
-        "r": "union of sets"
-      },
-      {
-        "l": "Item 18",
-        "r": "intersection of sets"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "college-mathematics",
+      "logic",
+      "sets"
+    ],
+    "title": "Logic & Sets",
+    "theory": "This card turns the College Mathematics topic 'Logic & Sets' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply logic & sets ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Conditional: P→Q\nContrapositive: not Q→not P\nUnion A∪B\nIntersection A∩B\nComplement Aᶜ.",
+    "method": "Logic and sets teach precise reasoning: what must be true, what might be true, and what belongs where.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Logic &amp; Sets</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">conditional statements</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">conjunctions</text>\n</svg>",
+    "caption": "Logic & Sets: conditional statements, conjunctions, disjunctions...",
+    "steps": [
+      "Name the topic: Logic & Sets. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A={1,2}, B={2,3}; A∩B={2}, A∪B={1,2,3}.",
+    "coveredTopics": [
+      "conditional statements",
+      "conjunctions",
+      "disjunctions",
+      "negations",
+      "hypotheses",
+      "logical conclusions",
+      "converses",
+      "inverses",
+      "counterexamples",
+      "contrapositives",
+      "logical equivalence",
+      "set relationships",
+      "subsets",
+      "disjoint sets",
+      "equality of sets",
+      "Venn diagrams",
+      "union",
+      "intersection",
+      "complement",
+      "applications"
+    ],
+    "sourceSubject": "College Mathematics"
   },
   {
     "cat": "College Mathematics",
-    "title": "Numbers (10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for College Mathematics covering Numbers (10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "integers"
-      },
-      {
-        "l": "Item 2",
-        "r": "rational numbers"
-      },
-      {
-        "l": "Item 3",
-        "r": "irrational numbers"
-      },
-      {
-        "l": "Item 4",
-        "r": "real numbers"
-      },
-      {
-        "l": "Item 5",
-        "r": "rational vs irrational recognition"
-      },
-      {
-        "l": "Item 6",
-        "r": "factors"
-      },
-      {
-        "l": "Item 7",
-        "r": "divisibility"
-      },
-      {
-        "l": "Item 8",
-        "r": "primes"
-      },
-      {
-        "l": "Item 9",
-        "r": "composites"
-      },
-      {
-        "l": "Item 10",
-        "r": "odd integers"
-      },
-      {
-        "l": "Item 11",
-        "r": "even integers"
-      },
-      {
-        "l": "Item 12",
-        "r": "fundamental theorem of arithmetic"
-      },
-      {
-        "l": "Item 13",
-        "r": "unit conversion"
-      },
-      {
-        "l": "Item 14",
-        "r": "scientific notation"
-      },
-      {
-        "l": "Item 15",
-        "r": "numerical precision"
-      },
-      {
-        "l": "Item 16",
-        "r": "absolute value"
-      },
-      {
-        "l": "Item 17",
-        "r": "applications"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "college-mathematics",
+      "numbers"
+    ],
+    "title": "Numbers, Number Theory, Measurement & Precision",
+    "theory": "This card turns the College Mathematics topic 'Numbers, Number Theory, Measurement & Precision' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply numbers, number theory, measurement & precision ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Prime factorization is unique\nScientific notation: a×10^n\nAbsolute value = distance from zero\nPrecision depends on measurement limits.",
+    "method": "Number questions test classification, divisibility, units, and how exact a value is.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Numbers, Number Theory, Me</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">integers</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">rational numbers</text>\n</svg>",
+    "caption": "Numbers, Number Theory, Measurement & Precision: integers, rational numbers, irrational numbers...",
+    "steps": [
+      "Name the topic: Numbers, Number Theory, Measurement & Precision. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: 84=2²·3·7 by prime factorization.",
+    "coveredTopics": [
+      "integers",
+      "rational numbers",
+      "irrational numbers",
+      "real numbers",
+      "factors",
+      "divisibility",
+      "primes",
+      "composites",
+      "odd integers",
+      "even integers",
+      "fundamental theorem of arithmetic",
+      "unit conversion",
+      "scientific notation",
+      "numerical precision",
+      "absolute value",
+      "applications"
+    ],
+    "sourceSubject": "College Mathematics"
   },
   {
     "cat": "Natural Sciences",
-    "title": "Biological Science (50%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Natural Sciences covering Biological Science (50%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "origin and evolution of life"
-      },
-      {
-        "l": "Item 2",
-        "r": "classification of organisms"
-      },
-      {
-        "l": "Item 3",
-        "r": "cell organization"
-      },
-      {
-        "l": "Item 4",
-        "r": "cell division"
-      },
-      {
-        "l": "Item 5",
-        "r": "chemical nature of the gene"
-      },
-      {
-        "l": "Item 6",
-        "r": "bioenergetics"
-      },
-      {
-        "l": "Item 7",
-        "r": "biosynthesis"
-      },
-      {
-        "l": "Item 8",
-        "r": "structure in organisms"
-      },
-      {
-        "l": "Item 9",
-        "r": "function in organisms"
-      },
-      {
-        "l": "Item 10",
-        "r": "development in organisms"
-      },
-      {
-        "l": "Item 11",
-        "r": "patterns of heredity"
-      },
-      {
-        "l": "Item 12",
-        "r": "population biology"
-      },
-      {
-        "l": "Item 13",
-        "r": "ecology"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "natural-sciences",
+      "biology"
+    ],
+    "title": "Life Origins, Evolution & Classification",
+    "theory": "This card turns the Natural Sciences topic 'Life Origins, Evolution & Classification' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply life origins, evolution & classification ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Evolution explains change through time; classification groups organisms by shared traits and ancestry.",
+    "method": "Natural science connects biological history to evidence, classification, and diversity.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Life Origins, Evolution &amp; </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">origin and evolution of life</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">classification of organisms</text>\n</svg>",
+    "caption": "Life Origins, Evolution & Classification: origin and evolution of life, classification of organisms",
+    "steps": [
+      "Name the topic: Life Origins, Evolution & Classification. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Species in the same genus are more closely related than species only in the same kingdom.",
+    "coveredTopics": [
+      "origin and evolution of life",
+      "classification of organisms"
+    ],
+    "sourceSubject": "Natural Sciences"
   },
   {
     "cat": "Natural Sciences",
-    "title": "Physical Science (50%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Natural Sciences covering Physical Science (50%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "atomic structure"
-      },
-      {
-        "l": "Item 2",
-        "r": "nuclear structure"
-      },
-      {
-        "l": "Item 3",
-        "r": "elementary particles"
-      },
-      {
-        "l": "Item 4",
-        "r": "nuclear reactions"
-      },
-      {
-        "l": "Item 5",
-        "r": "chemical elements"
-      },
-      {
-        "l": "Item 6",
-        "r": "chemical compounds"
-      },
-      {
-        "l": "Item 7",
-        "r": "chemical reactions"
-      },
-      {
-        "l": "Item 8",
-        "r": "molecular structure"
-      },
-      {
-        "l": "Item 9",
-        "r": "bonding"
-      },
-      {
-        "l": "Item 10",
-        "r": "heat"
-      },
-      {
-        "l": "Item 11",
-        "r": "thermodynamics"
-      },
-      {
-        "l": "Item 12",
-        "r": "states of matter"
-      },
-      {
-        "l": "Item 13",
-        "r": "classical mechanics"
-      },
-      {
-        "l": "Item 14",
-        "r": "relativity"
-      },
-      {
-        "l": "Item 15",
-        "r": "electricity"
-      },
-      {
-        "l": "Item 16",
-        "r": "magnetism"
-      },
-      {
-        "l": "Item 17",
-        "r": "waves"
-      },
-      {
-        "l": "Item 18",
-        "r": "light"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "natural-sciences",
+      "biology"
+    ],
+    "title": "Cells, Genes, Bioenergetics & Biosynthesis",
+    "theory": "This card turns the Natural Sciences topic 'Cells, Genes, Bioenergetics & Biosynthesis' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply cells, genes, bioenergetics & biosynthesis ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Cells organize life\nGenes store information\nBioenergetics tracks energy\nBiosynthesis builds molecules.",
+    "method": "This topic integrates cell structure, inheritance, and energy use.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Cells, Genes, Bioenergetic</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">cell organization</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">cell division</text>\n</svg>",
+    "caption": "Cells, Genes, Bioenergetics & Biosynthesis: cell organization, cell division, chemical nature of the gene...",
+    "steps": [
+      "Name the topic: Cells, Genes, Bioenergetics & Biosynthesis. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Cells use ATP from respiration to power biosynthesis.",
+    "coveredTopics": [
+      "cell organization",
+      "cell division",
+      "chemical nature of the gene",
+      "bioenergetics",
+      "biosynthesis"
+    ],
+    "sourceSubject": "Natural Sciences"
+  },
+  {
+    "cat": "Natural Sciences",
+    "tags": [
+      "linguastem",
+      "natural-sciences",
+      "biology"
+    ],
+    "title": "Organism Structure, Function, Development & Heredity",
+    "theory": "This card turns the Natural Sciences topic 'Organism Structure, Function, Development & Heredity' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply organism structure, function, development & heredity ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Structure supports function; development builds body form; heredity transmits traits.",
+    "method": "Questions connect how organisms are built, how they work, and how traits pass to offspring.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Organism Structure, Functi</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">structure in organisms</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">function in organisms</text>\n</svg>",
+    "caption": "Organism Structure, Function, Development & Heredity: structure in organisms, function in organisms, development in organisms...",
+    "steps": [
+      "Name the topic: Organism Structure, Function, Development & Heredity. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A bird wing's structure supports flight; inherited genes influence its development.",
+    "coveredTopics": [
+      "structure in organisms",
+      "function in organisms",
+      "development in organisms",
+      "patterns of heredity"
+    ],
+    "sourceSubject": "Natural Sciences"
+  },
+  {
+    "cat": "Natural Sciences",
+    "tags": [
+      "linguastem",
+      "natural-sciences",
+      "ecology"
+    ],
+    "title": "Population Biology & Ecology",
+    "theory": "This card turns the Natural Sciences topic 'Population Biology & Ecology' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply population biology & ecology ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Population size changes through births, deaths, immigration, and emigration; ecology studies organism-environment interactions.",
+    "method": "Ecology explains how living and nonliving factors shape survival.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Population Biology &amp; Ecolo</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">population biology</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">ecology</text>\n</svg>",
+    "caption": "Population Biology & Ecology: population biology, ecology",
+    "steps": [
+      "Name the topic: Population Biology & Ecology. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Competition for limited food can regulate population growth.",
+    "coveredTopics": [
+      "population biology",
+      "ecology"
+    ],
+    "sourceSubject": "Natural Sciences"
+  },
+  {
+    "cat": "Natural Sciences",
+    "tags": [
+      "linguastem",
+      "natural-sciences",
+      "physics",
+      "chemistry"
+    ],
+    "title": "Atomic/Nuclear Structure, Particles & Nuclear Reactions",
+    "theory": "This card turns the Natural Sciences topic 'Atomic/Nuclear Structure, Particles & Nuclear Reactions' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply atomic/nuclear structure, particles & nuclear reactions ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Atoms have nuclei and electrons; nuclear reactions change nuclei and release energy.",
+    "method": "Physical science uses particle models to explain matter and energy.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Atomic/Nuclear Structure, </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">atomic structure</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">nuclear structure</text>\n</svg>",
+    "caption": "Atomic/Nuclear Structure, Particles & Nuclear Reactions: atomic structure, nuclear structure, properties...",
+    "steps": [
+      "Name the topic: Atomic/Nuclear Structure, Particles & Nuclear Reactions. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Alpha decay lowers atomic number by 2 and mass number by 4.",
+    "coveredTopics": [
+      "atomic structure",
+      "nuclear structure",
+      "properties",
+      "elementary particles",
+      "nuclear reactions"
+    ],
+    "sourceSubject": "Natural Sciences"
+  },
+  {
+    "cat": "Natural Sciences",
+    "tags": [
+      "linguastem",
+      "natural-sciences",
+      "chemistry"
+    ],
+    "title": "Elements, Compounds, Reactions, Bonding & Molecular Structure",
+    "theory": "This card turns the Natural Sciences topic 'Elements, Compounds, Reactions, Bonding & Molecular Structure' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply elements, compounds, reactions, bonding & molecular structure ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Elements combine into compounds; bonding and molecular structure determine properties.",
+    "method": "Chemistry explains what substances are made of and how they change.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Elements, Compounds, React</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">chemical elements</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">compounds</text>\n</svg>",
+    "caption": "Elements, Compounds, Reactions, Bonding & Molecular Structure: chemical elements, compounds, reactions...",
+    "steps": [
+      "Name the topic: Elements, Compounds, Reactions, Bonding & Molecular Structure. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Na and Cl form ionic NaCl through electron transfer.",
+    "coveredTopics": [
+      "chemical elements",
+      "compounds",
+      "reactions",
+      "molecular structure",
+      "bonding"
+    ],
+    "sourceSubject": "Natural Sciences"
+  },
+  {
+    "cat": "Natural Sciences",
+    "tags": [
+      "linguastem",
+      "natural-sciences",
+      "physics"
+    ],
+    "title": "Heat, Thermodynamics, Matter, Mechanics & Relativity",
+    "theory": "This card turns the Natural Sciences topic 'Heat, Thermodynamics, Matter, Mechanics & Relativity' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply heat, thermodynamics, matter, mechanics & relativity ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Heat is energy transfer; mechanics studies motion and forces; relativity refines space-time at high speed or strong gravity.",
+    "method": "Physical science connects everyday motion and temperature to universal laws.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Heat, Thermodynamics, Matt</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">heat</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">thermodynamics</text>\n</svg>",
+    "caption": "Heat, Thermodynamics, Matter, Mechanics & Relativity: heat, thermodynamics, states of matter...",
+    "steps": [
+      "Name the topic: Heat, Thermodynamics, Matter, Mechanics & Relativity. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Heating a gas increases particle motion and can raise pressure.",
+    "coveredTopics": [
+      "heat",
+      "thermodynamics",
+      "states of matter",
+      "classical mechanics",
+      "relativity"
+    ],
+    "sourceSubject": "Natural Sciences"
+  },
+  {
+    "cat": "Natural Sciences",
+    "tags": [
+      "linguastem",
+      "natural-sciences",
+      "physics"
+    ],
+    "title": "Electricity, Magnetism, Waves, Light & Sound",
+    "theory": "This card turns the Natural Sciences topic 'Electricity, Magnetism, Waves, Light & Sound' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply electricity, magnetism, waves, light & sound ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Wave speed v=fλ\nElectricity and magnetism are linked fields\nLight is electromagnetic; sound is mechanical.",
+    "method": "This topic explains circuits, communication, optics, hearing, and electromagnetic effects.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Electricity, Magnetism, Wa</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">electricity</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">magnetism</text>\n</svg>",
+    "caption": "Electricity, Magnetism, Waves, Light & Sound: electricity, magnetism, waves...",
+    "steps": [
+      "Name the topic: Electricity, Magnetism, Waves, Light & Sound. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Higher frequency sound has higher pitch.",
+    "coveredTopics": [
+      "electricity",
+      "magnetism",
+      "waves",
+      "light",
+      "sound"
+    ],
+    "sourceSubject": "Natural Sciences"
+  },
+  {
+    "cat": "Natural Sciences",
+    "tags": [
+      "linguastem",
+      "natural-sciences",
+      "earth-space"
+    ],
+    "title": "Universe, Earth Systems & Geologic History",
+    "theory": "This card turns the Natural Sciences topic 'Universe, Earth Systems & Geologic History' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply universe, earth systems & geologic history ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Stars form and evolve; Earth systems cycle air, water, rock, and energy through geologic time.",
+    "method": "Earth and space science connects local geology to planetary and cosmic systems.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Universe, Earth Systems &amp; </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">galaxies</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">stars</text>\n</svg>",
+    "caption": "Universe, Earth Systems & Geologic History: galaxies, stars, solar system...",
+    "steps": [
+      "Name the topic: Universe, Earth Systems & Geologic History. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Plate tectonics helps explain earthquakes, volcanoes, mountains, and ocean basins.",
+    "coveredTopics": [
+      "galaxies",
+      "stars",
+      "solar system",
+      "atmosphere",
+      "hydrosphere",
+      "structural features of Earth",
+      "geologic processes",
+      "geologic history"
+    ],
+    "sourceSubject": "Natural Sciences"
   },
   {
     "cat": "Precalculus",
-    "title": "Algebraic Expressions, Equations, and Inequalities (20%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Precalculus covering Algebraic Expressions, Equations, and Inequalities (20%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "operations on algebraic expressions"
-      },
-      {
-        "l": "Item 2",
-        "r": "linear equations"
-      },
-      {
-        "l": "Item 3",
-        "r": "quadratic equations"
-      },
-      {
-        "l": "Item 4",
-        "r": "absolute value equations"
-      },
-      {
-        "l": "Item 5",
-        "r": "polynomial equations"
-      },
-      {
-        "l": "Item 6",
-        "r": "rational equations"
-      },
-      {
-        "l": "Item 7",
-        "r": "radical equations"
-      },
-      {
-        "l": "Item 8",
-        "r": "exponential equations"
-      },
-      {
-        "l": "Item 9",
-        "r": "logarithmic equations"
-      },
-      {
-        "l": "Item 10",
-        "r": "trigonometric equations"
-      },
-      {
-        "l": "Item 11",
-        "r": "linear inequalities"
-      },
-      {
-        "l": "Item 12",
-        "r": "quadratic inequalities"
-      },
-      {
-        "l": "Item 13",
-        "r": "absolute value inequalities"
-      },
-      {
-        "l": "Item 14",
-        "r": "polynomial inequalities"
-      },
-      {
-        "l": "Item 15",
-        "r": "rational inequalities"
-      },
-      {
-        "l": "Item 16",
-        "r": "systems of linear equations"
-      },
-      {
-        "l": "Item 17",
-        "r": "systems of nonlinear equations"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "precalculus",
+      "algebra"
+    ],
+    "title": "Algebraic Expressions, Equations & Inequalities",
+    "theory": "This card turns the Precalculus topic 'Algebraic Expressions, Equations & Inequalities' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply algebraic expressions, equations & inequalities ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Solve by matching equation type to method: factor, isolate, graph, substitute, eliminate, log both sides, or use trig identities.",
+    "method": "Precalculus algebra prepares you to solve advanced functions before calculus.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Algebraic Expressions, Equ</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">operations on algebraic expr</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">linear equations</text>\n</svg>",
+    "caption": "Algebraic Expressions, Equations & Inequalities: operations on algebraic expressions, linear equations, quadratic equations...",
+    "steps": [
+      "Name the topic: Algebraic Expressions, Equations & Inequalities. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: For √(x+1)=3, square both sides: x+1=9 so x=8; check in original.",
+    "coveredTopics": [
+      "operations on algebraic expressions",
+      "linear equations",
+      "quadratic equations",
+      "absolute value equations",
+      "polynomial equations",
+      "rational equations",
+      "radical equations",
+      "exponential equations",
+      "logarithmic equations",
+      "trigonometric equations",
+      "systems of equations",
+      "linear systems",
+      "nonlinear systems"
+    ],
+    "sourceSubject": "Precalculus"
   },
   {
     "cat": "Precalculus",
-    "title": "Functions: Concept, Properties, and Operations (15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Precalculus covering Functions: Concept, Properties, and Operations (15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "concept of a function"
-      },
-      {
-        "l": "Item 2",
-        "r": "domain"
-      },
-      {
-        "l": "Item 3",
-        "r": "range"
-      },
-      {
-        "l": "Item 4",
-        "r": "function notation"
-      },
-      {
-        "l": "Item 5",
-        "r": "evaluation of functions"
-      },
-      {
-        "l": "Item 6",
-        "r": "inverse functions"
-      },
-      {
-        "l": "Item 7",
-        "r": "symbolic operations with functions"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "precalculus",
+      "functions"
+    ],
+    "title": "Function Concepts, Properties, Operations & Inverses",
+    "theory": "This card turns the Precalculus topic 'Function Concepts, Properties, Operations & Inverses' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply function concepts, properties, operations & inverses ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "f(a) means output at input a\nDomain = legal inputs\nInverse function reverses input and output.",
+    "method": "Functions are machines: input goes in, output comes out, and operations combine machines.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Function Concepts, Propert</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">concept of a function</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">domain</text>\n</svg>",
+    "caption": "Function Concepts, Properties, Operations & Inverses: concept of a function, domain, range...",
+    "steps": [
+      "Name the topic: Function Concepts, Properties, Operations & Inverses. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: If f(x)=2x+1, then f(3)=7 and f⁻¹(x)=(x-1)/2.",
+    "coveredTopics": [
+      "concept of a function",
+      "domain",
+      "range",
+      "function notation",
+      "symbolic operations with functions",
+      "evaluation",
+      "inverse functions"
+    ],
+    "sourceSubject": "Precalculus"
   },
   {
     "cat": "Precalculus",
-    "title": "Representations of Functions (30%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Precalculus covering Representations of Functions (30%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "symbolic representations"
-      },
-      {
-        "l": "Item 2",
-        "r": "graphical representations"
-      },
-      {
-        "l": "Item 3",
-        "r": "tabular representations"
-      },
-      {
-        "l": "Item 4",
-        "r": "function transformations"
-      },
-      {
-        "l": "Item 5",
-        "r": "linear functions"
-      },
-      {
-        "l": "Item 6",
-        "r": "quadratic functions"
-      },
-      {
-        "l": "Item 7",
-        "r": "absolute value functions"
-      },
-      {
-        "l": "Item 8",
-        "r": "square root functions"
-      },
-      {
-        "l": "Item 9",
-        "r": "polynomial functions"
-      },
-      {
-        "l": "Item 10",
-        "r": "rational functions"
-      },
-      {
-        "l": "Item 11",
-        "r": "exponential functions"
-      },
-      {
-        "l": "Item 12",
-        "r": "logarithmic functions"
-      },
-      {
-        "l": "Item 13",
-        "r": "trigonometric functions"
-      },
-      {
-        "l": "Item 14",
-        "r": "inverse trigonometric functions"
-      },
-      {
-        "l": "Item 15",
-        "r": "piecewise-defined functions"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "precalculus",
+      "functions",
+      "graphs"
+    ],
+    "title": "Representations & Transformations of Functions",
+    "theory": "This card turns the Precalculus topic 'Representations & Transformations of Functions' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply representations & transformations of functions ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Parent function + transformation\nf(x)+k up/down\nf(x-h) right/left\na·f(x) stretch/reflect.",
+    "method": "Representation questions ask you to translate between formulas, tables, graphs, and descriptions.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Representations &amp; Transfor</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">symbolic functions</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">graphical functions</text>\n</svg>",
+    "caption": "Representations & Transformations of Functions: symbolic functions, graphical functions, tabular functions...",
+    "steps": [
+      "Name the topic: Representations & Transformations of Functions. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: |x-2|+3 is the absolute value graph shifted right 2 and up 3.",
+    "coveredTopics": [
+      "symbolic functions",
+      "graphical functions",
+      "tabular functions",
+      "operations and transformations",
+      "linear functions",
+      "quadratic functions",
+      "absolute value functions",
+      "square root functions",
+      "polynomial functions",
+      "rational functions",
+      "exponential functions",
+      "logarithmic functions",
+      "trigonometric functions",
+      "inverse trigonometric functions",
+      "piecewise-defined functions"
+    ],
+    "sourceSubject": "Precalculus"
   },
   {
     "cat": "Precalculus",
-    "title": "Analytic Geometry (10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Precalculus covering Analytic Geometry (10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "lines"
-      },
-      {
-        "l": "Item 2",
-        "r": "circles"
-      },
-      {
-        "l": "Item 3",
-        "r": "parabolas"
-      },
-      {
-        "l": "Item 4",
-        "r": "ellipses"
-      },
-      {
-        "l": "Item 5",
-        "r": "hyperbolas"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "precalculus",
+      "geometry"
+    ],
+    "title": "Analytic Geometry: Lines, Circles, Parabolas, Ellipses & Hyperbolas",
+    "theory": "This card turns the Precalculus topic 'Analytic Geometry: Lines, Circles, Parabolas, Ellipses & Hyperbolas' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply analytic geometry: lines, circles, parabolas, ellipses & hyperbolas ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Line: y=mx+b\nCircle: (x-h)²+(y-k)²=r²\nParabola, ellipse, hyperbola are conic sections.",
+    "method": "Analytic geometry turns curves into equations and equations into shapes.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Analytic Geometry: Lines, </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">analytic geometry</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">lines</text>\n</svg>",
+    "caption": "Analytic Geometry: Lines, Circles, Parabolas, Ellipses & Hyperbolas: analytic geometry, lines, circles...",
+    "steps": [
+      "Name the topic: Analytic Geometry: Lines, Circles, Parabolas, Ellipses & Hyperbolas. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: (x-1)²+(y+2)²=9 is a circle centered at (1,-2) with radius 3.",
+    "coveredTopics": [
+      "analytic geometry",
+      "lines",
+      "circles",
+      "parabolas",
+      "ellipses",
+      "hyperbolas"
+    ],
+    "sourceSubject": "Precalculus"
   },
   {
     "cat": "Precalculus",
-    "title": "Trigonometry and Applications (15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Precalculus covering Trigonometry and Applications (15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "basic trigonometric functions"
-      },
-      {
-        "l": "Item 2",
-        "r": "inverse trigonometric functions"
-      },
-      {
-        "l": "Item 3",
-        "r": "right triangle ratios"
-      },
-      {
-        "l": "Item 4",
-        "r": "unit circle"
-      },
-      {
-        "l": "Item 5",
-        "r": "trigonometric identities"
-      },
-      {
-        "l": "Item 6",
-        "r": "trigonometric problem solving"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "precalculus",
+      "trigonometry"
+    ],
+    "title": "Trigonometry, Inverse Trig & Applications",
+    "theory": "This card turns the Precalculus topic 'Trigonometry, Inverse Trig & Applications' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply trigonometry, inverse trig & applications ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "sinθ=opp/hyp\ncosθ=adj/hyp\ntanθ=opp/adj\nUnit circle point=(cosθ,sinθ).",
+    "method": "Trig connects angles, circles, waves, triangles, and periodic models.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Trigonometry, Inverse Trig</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">trigonometric functions</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">inverse trigonometric functi</text>\n</svg>",
+    "caption": "Trigonometry, Inverse Trig & Applications: trigonometric functions, inverse trigonometric functions, trigonometric equations...",
+    "steps": [
+      "Name the topic: Trigonometry, Inverse Trig & Applications. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: sin(30°)=1/2 because a 30-60-90 triangle has opposite side half the hypotenuse.",
+    "coveredTopics": [
+      "trigonometric functions",
+      "inverse trigonometric functions",
+      "trigonometric equations",
+      "unit circle",
+      "triangles",
+      "applications"
+    ],
+    "sourceSubject": "Precalculus"
   },
   {
     "cat": "Precalculus",
-    "title": "Functions as Models (10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Precalculus covering Functions as Models (10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "interpreting functions as models"
-      },
-      {
-        "l": "Item 2",
-        "r": "constructing functions as models"
-      },
-      {
-        "l": "Item 3",
-        "r": "symbolic translation"
-      },
-      {
-        "l": "Item 4",
-        "r": "graphical translation"
-      },
-      {
-        "l": "Item 5",
-        "r": "tabular translation"
-      },
-      {
-        "l": "Item 6",
-        "r": "verbal translation"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "precalculus",
+      "modeling"
+    ],
+    "title": "Functions as Models: Symbolic, Graphical, Tabular & Verbal",
+    "theory": "This card turns the Precalculus topic 'Functions as Models: Symbolic, Graphical, Tabular & Verbal' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply functions as models: symbolic, graphical, tabular & verbal ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Modeling loop: define variables → choose function type → fit rule → interpret parameters → check reasonableness.",
+    "method": "Modeling questions ask whether a function represents a situation and what its parameters mean.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Functions as Models: Symbo</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">symbolic representation of f</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">graphical representation of </text>\n</svg>",
+    "caption": "Functions as Models: Symbolic, Graphical, Tabular & Verbal: symbolic representation of functions, graphical representation of functions, tabular representation of functions...",
+    "steps": [
+      "Name the topic: Functions as Models: Symbolic, Graphical, Tabular & Verbal. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A table growing by the same factor each step suggests an exponential model.",
+    "coveredTopics": [
+      "symbolic representation of functions",
+      "graphical representation of functions",
+      "tabular representation of functions",
+      "verbal representation of functions"
+    ],
+    "sourceSubject": "Precalculus"
   },
   {
-    "cat": "Financial Accounting",
-    "title": "General Topics (20%-30%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Financial Accounting covering General Topics (20%-30%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "generally accepted accounting principles"
-      },
-      {
-        "l": "Item 2",
-        "r": "double-entry accounting"
-      },
-      {
-        "l": "Item 3",
-        "r": "transaction analysis"
-      },
-      {
-        "l": "Item 4",
-        "r": "accounting equation"
-      },
-      {
-        "l": "Item 5",
-        "r": "accounting cycle"
-      },
-      {
-        "l": "Item 6",
-        "r": "business ethics"
-      },
-      {
-        "l": "Item 7",
-        "r": "financial statement purpose"
-      },
-      {
-        "l": "Item 8",
-        "r": "financial statement presentation"
-      },
-      {
-        "l": "Item 9",
-        "r": "relationships between financial statements"
-      },
-      {
-        "l": "Item 10",
-        "r": "forms of business"
-      }
-    ]
+    "cat": "Accounting",
+    "tags": [
+      "linguastem",
+      "financial-accounting",
+      "business",
+      "finance"
+    ],
+    "title": "GAAP, Double-Entry, Accounting Equation & Accounting Cycle",
+    "theory": "This card turns the Financial Accounting topic 'GAAP, Double-Entry, Accounting Equation & Accounting Cycle' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply gaap, double-entry, accounting equation & accounting cycle ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Assets = Liabilities + Equity\nDebits = Credits\nAccounting cycle: analyze → journalize → post → trial balance → adjust → statements → close.",
+    "method": "Accounting is a structured language for recording business activity fairly and consistently.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">GAAP, Double-Entry, Accoun</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">generally accepted accountin</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">double-entry accounting</text>\n</svg>",
+    "caption": "GAAP, Double-Entry, Accounting Equation & Accounting Cycle: generally accepted accounting principles, double-entry accounting, transaction analysis...",
+    "steps": [
+      "Name the topic: GAAP, Double-Entry, Accounting Equation & Accounting Cycle. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Buying supplies for cash increases Supplies and decreases Cash; total assets stay balanced.",
+    "coveredTopics": [
+      "generally accepted accounting principles",
+      "double-entry accounting",
+      "transaction analysis",
+      "accounting equation",
+      "accounting cycle",
+      "business ethics",
+      "forms of business"
+    ],
+    "sourceSubject": "Financial Accounting"
   },
   {
-    "cat": "Financial Accounting",
-    "title": "Income Statement (20%-30%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Financial Accounting covering Income Statement (20%-30%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "single-step format"
-      },
-      {
-        "l": "Item 2",
-        "r": "multi-step format"
-      },
-      {
-        "l": "Item 3",
-        "r": "revenue recognition"
-      },
-      {
-        "l": "Item 4",
-        "r": "expense recognition"
-      },
-      {
-        "l": "Item 5",
-        "r": "cost of goods sold"
-      },
-      {
-        "l": "Item 6",
-        "r": "nonoperational gains"
-      },
-      {
-        "l": "Item 7",
-        "r": "nonoperational losses"
-      },
-      {
-        "l": "Item 8",
-        "r": "profitability analysis"
-      }
-    ]
+    "cat": "Accounting",
+    "tags": [
+      "linguastem",
+      "financial-accounting",
+      "business",
+      "finance"
+    ],
+    "title": "Financial Statements: Purpose, Presentation & Relationships",
+    "theory": "This card turns the Financial Accounting topic 'Financial Statements: Purpose, Presentation & Relationships' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply financial statements: purpose, presentation & relationships ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Income statement → net income\nStatement of retained earnings updates equity\nBalance sheet reports A=L+E\nCash flow explains cash changes.",
+    "method": "Statements connect: profit affects equity, and balance sheet accounts explain financial position.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Financial Statements: Purp</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">purpose of financial stateme</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">presentation of financial st</text>\n</svg>",
+    "caption": "Financial Statements: Purpose, Presentation & Relationships: purpose of financial statements, presentation of financial statements, relationships between financial statements",
+    "steps": [
+      "Name the topic: Financial Statements: Purpose, Presentation & Relationships. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Net income increases retained earnings, which appears in equity on the balance sheet.",
+    "coveredTopics": [
+      "purpose of financial statements",
+      "presentation of financial statements",
+      "relationships between financial statements"
+    ],
+    "sourceSubject": "Financial Accounting"
   },
   {
-    "cat": "Financial Accounting",
-    "title": "Balance Sheet (30%-40%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Financial Accounting covering Balance Sheet (30%-40%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "cash"
-      },
-      {
-        "l": "Item 2",
-        "r": "internal controls"
-      },
-      {
-        "l": "Item 3",
-        "r": "accounts receivable valuation"
-      },
-      {
-        "l": "Item 4",
-        "r": "notes receivable valuation"
-      },
-      {
-        "l": "Item 5",
-        "r": "bad debts"
-      },
-      {
-        "l": "Item 6",
-        "r": "inventory valuation"
-      },
-      {
-        "l": "Item 7",
-        "r": "long-term asset acquisition"
-      },
-      {
-        "l": "Item 8",
-        "r": "long-term asset disposal"
-      },
-      {
-        "l": "Item 9",
-        "r": "depreciation"
-      },
-      {
-        "l": "Item 10",
-        "r": "amortization"
-      },
-      {
-        "l": "Item 11",
-        "r": "depletion"
-      },
-      {
-        "l": "Item 12",
-        "r": "intangible assets"
-      },
-      {
-        "l": "Item 13",
-        "r": "patents"
-      },
-      {
-        "l": "Item 14",
-        "r": "goodwill"
-      },
-      {
-        "l": "Item 15",
-        "r": "accounts payable"
-      },
-      {
-        "l": "Item 16",
-        "r": "notes payable"
-      },
-      {
-        "l": "Item 17",
-        "r": "long-term liabilities"
-      },
-      {
-        "l": "Item 18",
-        "r": "bonds payable"
-      }
-    ]
+    "cat": "Accounting",
+    "tags": [
+      "linguastem",
+      "financial-accounting",
+      "business",
+      "finance"
+    ],
+    "title": "Income Statement: Revenue, Expenses, COGS, Gains/Losses & Profitability",
+    "theory": "This card turns the Financial Accounting topic 'Income Statement: Revenue, Expenses, COGS, Gains/Losses & Profitability' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply income statement: revenue, expenses, cogs, gains/losses & profitability ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Net income = Revenues - Expenses\nGross profit = Sales - COGS\nProfit margin = Net income / Sales.",
+    "method": "Income statements show whether operations and nonoperating events created profit.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Income Statement: Revenue,</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">single-step income statement</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">multi-step income statement</text>\n</svg>",
+    "caption": "Income Statement: Revenue, Expenses, COGS, Gains/Losses & Profitability: single-step income statement, multi-step income statement, revenue recognition...",
+    "steps": [
+      "Name the topic: Income Statement: Revenue, Expenses, COGS, Gains/Losses & Profitability. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Sales 100, COGS 60 → gross profit 40.",
+    "coveredTopics": [
+      "single-step income statement",
+      "multi-step income statement",
+      "revenue recognition",
+      "expense recognition",
+      "cost of goods sold",
+      "nonoperational items",
+      "gains",
+      "losses",
+      "profitability analysis"
+    ],
+    "sourceSubject": "Financial Accounting"
   },
   {
-    "cat": "Financial Accounting",
-    "title": "Statement of Cash Flows (5%-10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Financial Accounting covering Statement of Cash Flows (5%-10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "indirect method"
-      },
-      {
-        "l": "Item 2",
-        "r": "cash flow analysis"
-      },
-      {
-        "l": "Item 3",
-        "r": "operating activities"
-      },
-      {
-        "l": "Item 4",
-        "r": "financing activities"
-      },
-      {
-        "l": "Item 5",
-        "r": "investing activities"
-      },
-      {
-        "l": "Item 6",
-        "r": "noncash financing activities"
-      },
-      {
-        "l": "Item 7",
-        "r": "noncash investing activities"
-      }
-    ]
+    "cat": "Accounting",
+    "tags": [
+      "linguastem",
+      "financial-accounting",
+      "business",
+      "finance"
+    ],
+    "title": "Balance Sheet: Assets, Liabilities, Equity & Analysis",
+    "theory": "This card turns the Financial Accounting topic 'Balance Sheet: Assets, Liabilities, Equity & Analysis' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply balance sheet: assets, liabilities, equity & analysis ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Assets = Liabilities + Equity\nCurrent ratio = current assets/current liabilities\nBook value = cost - accumulated depreciation.",
+    "method": "The balance sheet shows resources, claims, and owner interest at a point in time.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Balance Sheet: Assets, Lia</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">cash</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">internal controls</text>\n</svg>",
+    "caption": "Balance Sheet: Assets, Liabilities, Equity & Analysis: cash, internal controls, accounts receivable...",
+    "steps": [
+      "Name the topic: Balance Sheet: Assets, Liabilities, Equity & Analysis. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Equipment cost 10,000 with 2,000 accumulated depreciation has book value 8,000.",
+    "coveredTopics": [
+      "cash",
+      "internal controls",
+      "accounts receivable",
+      "notes receivable",
+      "bad debts",
+      "inventories",
+      "long-term assets",
+      "depreciation",
+      "amortization",
+      "depletion",
+      "intangible assets",
+      "patents",
+      "goodwill",
+      "accounts payable",
+      "notes payable",
+      "long-term liabilities",
+      "bonds payable",
+      "owner's equity",
+      "preferred stock",
+      "common stock",
+      "retained earnings",
+      "liquidity analysis",
+      "solvency analysis",
+      "activity analysis"
+    ],
+    "sourceSubject": "Financial Accounting"
   },
   {
-    "cat": "Financial Accounting",
-    "title": "Miscellaneous (Less than 5%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Financial Accounting covering Miscellaneous (Less than 5%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "investments"
-      },
-      {
-        "l": "Item 2",
-        "r": "contingent liabilities"
-      }
-    ]
+    "cat": "Accounting",
+    "tags": [
+      "linguastem",
+      "financial-accounting",
+      "business",
+      "finance"
+    ],
+    "title": "Cash Flows, Investments & Contingent Liabilities",
+    "theory": "This card turns the Financial Accounting topic 'Cash Flows, Investments & Contingent Liabilities' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply cash flows, investments & contingent liabilities ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Cash flow sections: operating, investing, financing\nIndirect method starts with net income and adjusts to cash from operations.",
+    "method": "Cash flow analysis separates profit from actual cash movement.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Cash Flows, Investments &amp; </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">indirect method</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">cash flow analysis</text>\n</svg>",
+    "caption": "Cash Flows, Investments & Contingent Liabilities: indirect method, cash flow analysis, operating activities...",
+    "steps": [
+      "Name the topic: Cash Flows, Investments & Contingent Liabilities. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Depreciation reduces net income but not cash, so it is added back under the indirect method.",
+    "coveredTopics": [
+      "indirect method",
+      "cash flow analysis",
+      "operating activities",
+      "financing activities",
+      "investing activities",
+      "noncash financing",
+      "noncash investing",
+      "investments",
+      "contingent liabilities"
+    ],
+    "sourceSubject": "Financial Accounting"
   },
   {
     "cat": "Information Systems",
-    "title": "Office and Technology Applications (20%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Information Systems covering Office and Technology Applications (20%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "word processing"
-      },
-      {
-        "l": "Item 2",
-        "r": "spreadsheet software"
-      },
-      {
-        "l": "Item 3",
-        "r": "presentation software"
-      },
-      {
-        "l": "Item 4",
-        "r": "database package"
-      },
-      {
-        "l": "Item 5",
-        "r": "software suites"
-      },
-      {
-        "l": "Item 6",
-        "r": "email systems"
-      },
-      {
-        "l": "Item 7",
-        "r": "conferencing"
-      },
-      {
-        "l": "Item 8",
-        "r": "collaborative work"
-      },
-      {
-        "l": "Item 9",
-        "r": "document imaging"
-      },
-      {
-        "l": "Item 10",
-        "r": "OCR"
-      },
-      {
-        "l": "Item 11",
-        "r": "system resources"
-      },
-      {
-        "l": "Item 12",
-        "r": "voice recognition systems"
-      },
-      {
-        "l": "Item 13",
-        "r": "knowledge management"
-      },
-      {
-        "l": "Item 14",
-        "r": "expert systems"
-      },
-      {
-        "l": "Item 15",
-        "r": "TPS"
-      },
-      {
-        "l": "Item 16",
-        "r": "OLTP"
-      },
-      {
-        "l": "Item 17",
-        "r": "DSS"
-      },
-      {
-        "l": "Item 18",
-        "r": "GIS"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "information-systems",
+      "technology",
+      "business"
+    ],
+    "title": "Office, Productivity, Specialized & Enterprise Systems",
+    "theory": "This card turns the Information Systems topic 'Office, Productivity, Specialized & Enterprise Systems' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply office, productivity, specialized & enterprise systems ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "TPS records transactions\nDSS supports decisions\nBI/OLAP analyzes data\nERP integrates enterprise processes\nCRM manages customers\nSCM manages supply chains.",
+    "method": "Information systems improve work by collecting, processing, sharing, and analyzing information.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Office, Productivity, Spec</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">productivity software</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">word processing</text>\n</svg>",
+    "caption": "Office, Productivity, Specialized & Enterprise Systems: productivity software, word processing, spreadsheet...",
+    "steps": [
+      "Name the topic: Office, Productivity, Specialized & Enterprise Systems. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A CRM tracks customer interactions so sales and support teams share the same history.",
+    "coveredTopics": [
+      "productivity software",
+      "word processing",
+      "spreadsheet",
+      "presentation package",
+      "database package",
+      "office suites",
+      "email",
+      "conferencing",
+      "collaborative work",
+      "document imaging",
+      "OCR",
+      "system resources",
+      "voice recognition",
+      "knowledge management",
+      "expert systems",
+      "TPS",
+      "OLTP",
+      "DSS",
+      "GIS",
+      "BI",
+      "OLAP",
+      "ERP",
+      "CRM",
+      "SCM"
+    ],
+    "sourceSubject": "Information Systems"
   },
   {
     "cat": "Information Systems",
-    "title": "Internet and World Wide Web (15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Information Systems covering Internet and World Wide Web (15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "intranet"
-      },
-      {
-        "l": "Item 2",
-        "r": "extranet"
-      },
-      {
-        "l": "Item 3",
-        "r": "governance"
-      },
-      {
-        "l": "Item 4",
-        "r": "internet content"
-      },
-      {
-        "l": "Item 5",
-        "r": "search engines"
-      },
-      {
-        "l": "Item 6",
-        "r": "cloud storage"
-      },
-      {
-        "l": "Item 7",
-        "r": "content streaming"
-      },
-      {
-        "l": "Item 8",
-        "r": "protocols"
-      },
-      {
-        "l": "Item 9",
-        "r": "push communication"
-      },
-      {
-        "l": "Item 10",
-        "r": "pull communication"
-      },
-      {
-        "l": "Item 11",
-        "r": "web 2.0"
-      },
-      {
-        "l": "Item 12",
-        "r": "web browsers"
-      },
-      {
-        "l": "Item 13",
-        "r": "URLs"
-      },
-      {
-        "l": "Item 14",
-        "r": "web standards"
-      },
-      {
-        "l": "Item 15",
-        "r": "browser history"
-      },
-      {
-        "l": "Item 16",
-        "r": "cookies"
-      },
-      {
-        "l": "Item 17",
-        "r": "resource allocation"
-      },
-      {
-        "l": "Item 18",
-        "r": "browser functionality"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "information-systems",
+      "technology",
+      "business"
+    ],
+    "title": "E-Commerce, Business Strategy & Information Processing",
+    "theory": "This card turns the Information Systems topic 'E-Commerce, Business Strategy & Information Processing' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply e-commerce, business strategy & information processing ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Real-time = immediate\nBatch = grouped later\nProcess model maps work steps\nE-commerce uses digital transactions.",
+    "method": "Digital strategy connects technology decisions to business processes and competitive advantage.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">E-Commerce, Business Strat</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">e-commerce</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">EDI</text>\n</svg>",
+    "caption": "E-Commerce, Business Strategy & Information Processing: e-commerce, EDI, standards...",
+    "steps": [
+      "Name the topic: E-Commerce, Business Strategy & Information Processing. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Payroll often runs in batch; credit-card approval needs real-time processing.",
+    "coveredTopics": [
+      "e-commerce",
+      "EDI",
+      "standards",
+      "tools",
+      "transaction types",
+      "business models",
+      "competition",
+      "process reengineering",
+      "process modeling",
+      "TQM",
+      "workflow management",
+      "project management",
+      "real-time processing",
+      "transaction processing",
+      "batch processing"
+    ],
+    "sourceSubject": "Information Systems"
   },
   {
     "cat": "Information Systems",
-    "title": "Security (10%-15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Information Systems covering Security (10%-15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "viruses"
-      },
-      {
-        "l": "Item 2",
-        "r": "worms"
-      },
-      {
-        "l": "Item 3",
-        "r": "Trojan horses"
-      },
-      {
-        "l": "Item 4",
-        "r": "ransomware"
-      },
-      {
-        "l": "Item 5",
-        "r": "adware"
-      },
-      {
-        "l": "Item 6",
-        "r": "spyware"
-      },
-      {
-        "l": "Item 7",
-        "r": "scareware"
-      },
-      {
-        "l": "Item 8",
-        "r": "denial of service"
-      },
-      {
-        "l": "Item 9",
-        "r": "privacy concerns"
-      },
-      {
-        "l": "Item 10",
-        "r": "identity theft"
-      },
-      {
-        "l": "Item 11",
-        "r": "authorization"
-      },
-      {
-        "l": "Item 12",
-        "r": "authentication"
-      },
-      {
-        "l": "Item 13",
-        "r": "system access"
-      },
-      {
-        "l": "Item 14",
-        "r": "database security"
-      },
-      {
-        "l": "Item 15",
-        "r": "secure transactions"
-      },
-      {
-        "l": "Item 16",
-        "r": "remote data access"
-      },
-      {
-        "l": "Item 17",
-        "r": "device security"
-      },
-      {
-        "l": "Item 18",
-        "r": "application security"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "information-systems",
+      "web",
+      "technology"
+    ],
+    "title": "Internet, Web, Cloud, Browsers & Website Development",
+    "theory": "This card turns the Information Systems topic 'Internet, Web, Cloud, Browsers & Website Development' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply internet, web, cloud, browsers & website development ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "URL identifies resource\nHTML structure, CSS style, JS behavior\nCloud stores/services over network\nAccessibility makes sites usable.",
+    "method": "Web systems combine protocols, browsers, content, code, and user-centered design.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Internet, Web, Cloud, Brow</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">intranet</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">extranet</text>\n</svg>",
+    "caption": "Internet, Web, Cloud, Browsers & Website Development: intranet, extranet, internet governance...",
+    "steps": [
+      "Name the topic: Internet, Web, Cloud, Browsers & Website Development. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A login page uses HTML inputs, CSS layout, JavaScript validation, and HTTPS transfer.",
+    "coveredTopics": [
+      "intranet",
+      "extranet",
+      "internet governance",
+      "internet content",
+      "search engines",
+      "cloud storage",
+      "content streaming",
+      "protocols",
+      "push/pull",
+      "web 2.0",
+      "web browsers",
+      "URLs",
+      "standards",
+      "cookies",
+      "resource allocation",
+      "HTML",
+      "CSS",
+      "XML",
+      "JavaScript",
+      "web architectures",
+      "website analysis",
+      "design",
+      "functionality",
+      "accessibility"
+    ],
+    "sourceSubject": "Information Systems"
   },
   {
     "cat": "Information Systems",
-    "title": "Hardware and Systems Technology (15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Information Systems covering Hardware and Systems Technology (15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "processing devices"
-      },
-      {
-        "l": "Item 2",
-        "r": "storage devices"
-      },
-      {
-        "l": "Item 3",
-        "r": "input devices"
-      },
-      {
-        "l": "Item 4",
-        "r": "output devices"
-      },
-      {
-        "l": "Item 5",
-        "r": "telecommunications devices"
-      },
-      {
-        "l": "Item 6",
-        "r": "networking devices"
-      },
-      {
-        "l": "Item 7",
-        "r": "Internet of Things"
-      },
-      {
-        "l": "Item 8",
-        "r": "computer functions"
-      },
-      {
-        "l": "Item 9",
-        "r": "operating systems"
-      },
-      {
-        "l": "Item 10",
-        "r": "telecommunications functions"
-      },
-      {
-        "l": "Item 11",
-        "r": "network hardware"
-      },
-      {
-        "l": "Item 12",
-        "r": "LAN"
-      },
-      {
-        "l": "Item 13",
-        "r": "WAN"
-      },
-      {
-        "l": "Item 14",
-        "r": "PAN"
-      },
-      {
-        "l": "Item 15",
-        "r": "VPN"
-      },
-      {
-        "l": "Item 16",
-        "r": "enterprise networks"
-      },
-      {
-        "l": "Item 17",
-        "r": "mainframe"
-      },
-      {
-        "l": "Item 18",
-        "r": "personal computer"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "information-systems",
+      "security"
+    ],
+    "title": "Security, Privacy, Controls & Disaster Recovery",
+    "theory": "This card turns the Information Systems topic 'Security, Privacy, Controls & Disaster Recovery' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply security, privacy, controls & disaster recovery ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Authentication proves identity\nAuthorization grants permission\nBackup + recovery plan restores service\nMalware disrupts confidentiality, integrity, or availability.",
+    "method": "Security cards should teach the threat, the control, and the recovery plan together.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Security, Privacy, Control</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">malware</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">viruses</text>\n</svg>",
+    "caption": "Security, Privacy, Controls & Disaster Recovery: malware, viruses, worms...",
+    "steps": [
+      "Name the topic: Security, Privacy, Controls & Disaster Recovery. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Multi-factor authentication reduces account takeover risk even if a password leaks.",
+    "coveredTopics": [
+      "malware",
+      "viruses",
+      "worms",
+      "Trojan horses",
+      "ransomware",
+      "adware",
+      "spyware",
+      "scareware",
+      "denial of service",
+      "privacy concerns",
+      "identity theft",
+      "authorization",
+      "authentication",
+      "system access",
+      "database security",
+      "secure transactions",
+      "remote data access",
+      "device controls",
+      "application controls",
+      "disaster recovery",
+      "recovery planning"
+    ],
+    "sourceSubject": "Information Systems"
   },
   {
     "cat": "Information Systems",
-    "title": "Software Development (10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Information Systems covering Software Development (10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "prototyping"
-      },
-      {
-        "l": "Item 2",
-        "r": "SDLC"
-      },
-      {
-        "l": "Item 3",
-        "r": "RAD"
-      },
-      {
-        "l": "Item 4",
-        "r": "CASE"
-      },
-      {
-        "l": "Item 5",
-        "r": "JAD"
-      },
-      {
-        "l": "Item 6",
-        "r": "agile"
-      },
-      {
-        "l": "Item 7",
-        "r": "spiral"
-      },
-      {
-        "l": "Item 8",
-        "r": "feasibility"
-      },
-      {
-        "l": "Item 9",
-        "r": "systems analysis"
-      },
-      {
-        "l": "Item 10",
-        "r": "systems design"
-      },
-      {
-        "l": "Item 11",
-        "r": "end-user development"
-      },
-      {
-        "l": "Item 12",
-        "r": "testing"
-      },
-      {
-        "l": "Item 13",
-        "r": "training"
-      },
-      {
-        "l": "Item 14",
-        "r": "data conversion"
-      },
-      {
-        "l": "Item 15",
-        "r": "system conversion"
-      },
-      {
-        "l": "Item 16",
-        "r": "system maintenance"
-      },
-      {
-        "l": "Item 17",
-        "r": "post-implementation activities"
-      },
-      {
-        "l": "Item 18",
-        "r": "documentation"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "information-systems",
+      "hardware",
+      "networks"
+    ],
+    "title": "Hardware, Operating Systems, Networks & Wireless",
+    "theory": "This card turns the Information Systems topic 'Hardware, Operating Systems, Networks & Wireless' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply hardware, operating systems, networks & wireless ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "CPU processes\nRAM holds active data\nStorage keeps files\nLAN local, WAN wide, VPN private tunnel\nOS manages resources.",
+    "method": "Hardware and networks are the physical and logical foundation for information systems.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Hardware, Operating System</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">processing devices</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">storage devices</text>\n</svg>",
+    "caption": "Hardware, Operating Systems, Networks & Wireless: processing devices, storage devices, input devices...",
+    "steps": [
+      "Name the topic: Hardware, Operating Systems, Networks & Wireless. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A smartwatch is an IoT device using sensors, Bluetooth, and networked apps.",
+    "coveredTopics": [
+      "processing devices",
+      "storage devices",
+      "input devices",
+      "output devices",
+      "telecommunications",
+      "networking",
+      "Internet of Things",
+      "computer functions",
+      "operating systems",
+      "telecommunications functions",
+      "network hardware",
+      "LAN",
+      "WAN",
+      "PAN",
+      "VPN",
+      "enterprise network",
+      "mainframe",
+      "personal computer",
+      "client/server",
+      "workstation",
+      "supercomputer",
+      "Wi-Fi",
+      "cellular",
+      "satellite",
+      "GPS",
+      "RFID",
+      "Bluetooth"
+    ],
+    "sourceSubject": "Information Systems"
   },
   {
     "cat": "Information Systems",
-    "title": "Data Management and Programming Concepts (15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Information Systems covering Data Management and Programming Concepts (15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "data warehousing"
-      },
-      {
-        "l": "Item 2",
-        "r": "data mining"
-      },
-      {
-        "l": "Item 3",
-        "r": "big data"
-      },
-      {
-        "l": "Item 4",
-        "r": "validation"
-      },
-      {
-        "l": "Item 5",
-        "r": "migration"
-      },
-      {
-        "l": "Item 6",
-        "r": "storage"
-      },
-      {
-        "l": "Item 7",
-        "r": "obsolescence"
-      },
-      {
-        "l": "Item 8",
-        "r": "data concepts"
-      },
-      {
-        "l": "Item 9",
-        "r": "data types"
-      },
-      {
-        "l": "Item 10",
-        "r": "data structures"
-      },
-      {
-        "l": "Item 11",
-        "r": "digital representation of data"
-      },
-      {
-        "l": "Item 12",
-        "r": "data transfer"
-      },
-      {
-        "l": "Item 13",
-        "r": "file organization"
-      },
-      {
-        "l": "Item 14",
-        "r": "memory management"
-      },
-      {
-        "l": "Item 15",
-        "r": "file management"
-      },
-      {
-        "l": "Item 16",
-        "r": "relational DBMS"
-      },
-      {
-        "l": "Item 17",
-        "r": "hierarchical DBMS"
-      },
-      {
-        "l": "Item 18",
-        "r": "network DBMS"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "information-systems",
+      "software"
+    ],
+    "title": "Software Development: SDLC, Agile, Testing & Documentation",
+    "theory": "This card turns the Information Systems topic 'Software Development: SDLC, Agile, Testing & Documentation' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply software development: sdlc, agile, testing & documentation ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "SDLC: planning → analysis → design → implementation → maintenance\nAgile: iterative sprints and feedback.",
+    "method": "Development methods reduce risk by organizing how systems are planned, built, tested, deployed, and maintained.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Software Development: SDLC</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">prototyping</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">SDLC</text>\n</svg>",
+    "caption": "Software Development: SDLC, Agile, Testing & Documentation: prototyping, SDLC, RAD...",
+    "steps": [
+      "Name the topic: Software Development: SDLC, Agile, Testing & Documentation. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A pilot conversion runs a new system for one group before full rollout.",
+    "coveredTopics": [
+      "prototyping",
+      "SDLC",
+      "RAD",
+      "CASE",
+      "JAD",
+      "agile",
+      "spiral",
+      "feasibility",
+      "systems analysis",
+      "systems design",
+      "end-user development",
+      "testing",
+      "training",
+      "data conversion",
+      "system conversion",
+      "maintenance",
+      "post-implementation activities",
+      "documentation",
+      "proprietary standards",
+      "open source standards"
+    ],
+    "sourceSubject": "Information Systems"
   },
   {
     "cat": "Information Systems",
-    "title": "Social and Ethical Implications (10%-15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Information Systems covering Social and Ethical Implications (10%-15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "outsourcing"
-      },
-      {
-        "l": "Item 2",
-        "r": "insourcing"
-      },
-      {
-        "l": "Item 3",
-        "r": "offshoring"
-      },
-      {
-        "l": "Item 4",
-        "r": "green computing"
-      },
-      {
-        "l": "Item 5",
-        "r": "technology investment"
-      },
-      {
-        "l": "Item 6",
-        "r": "intellectual property rights"
-      },
-      {
-        "l": "Item 7",
-        "r": "legal property rights"
-      },
-      {
-        "l": "Item 8",
-        "r": "ownership of materials"
-      },
-      {
-        "l": "Item 9",
-        "r": "open-source software"
-      },
-      {
-        "l": "Item 10",
-        "r": "open-source hardware"
-      },
-      {
-        "l": "Item 11",
-        "r": "effects on jobs"
-      },
-      {
-        "l": "Item 12",
-        "r": "telecommuting"
-      },
-      {
-        "l": "Item 13",
-        "r": "virtual teams"
-      },
-      {
-        "l": "Item 14",
-        "r": "job design"
-      },
-      {
-        "l": "Item 15",
-        "r": "staffing"
-      },
-      {
-        "l": "Item 16",
-        "r": "ergonomics"
-      },
-      {
-        "l": "Item 17",
-        "r": "IS careers"
-      },
-      {
-        "l": "Item 18",
-        "r": "responsibilities"
-      }
-    ]
+    "tags": [
+      "linguastem",
+      "information-systems",
+      "data",
+      "ethics"
+    ],
+    "title": "Data Management, Databases, Programming Logic & Ethics",
+    "theory": "This card turns the Information Systems topic 'Data Management, Databases, Programming Logic & Ethics' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply data management, databases, programming logic & ethics ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Database: organized data\nSQL retrieves/updates data\nBoolean logic: AND, OR, NOT\nEthics asks who is affected and what rights apply.",
+    "method": "Modern IS combines data skills with responsible decisions about ownership, labor, sustainability, and social effects.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Data Management, Databases</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">data warehousing</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">data mining</text>\n</svg>",
+    "caption": "Data Management, Databases, Programming Logic & Ethics: data warehousing, data mining, big data...",
+    "steps": [
+      "Name the topic: Data Management, Databases, Programming Logic & Ethics. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A relational table uses a primary key to uniquely identify each row.",
+    "coveredTopics": [
+      "data warehousing",
+      "data mining",
+      "big data",
+      "validation",
+      "migration",
+      "storage",
+      "obsolescence",
+      "data concepts",
+      "data types",
+      "data structures",
+      "digital representation",
+      "data transfer",
+      "file organization",
+      "memory management",
+      "file management",
+      "database management systems",
+      "relational databases",
+      "hierarchical databases",
+      "network databases",
+      "data access",
+      "Boolean logic",
+      "arithmetic logic",
+      "SQL",
+      "object-oriented methodology",
+      "structured methodology",
+      "outsourcing",
+      "insourcing",
+      "offshoring",
+      "green computing",
+      "investment in technology",
+      "intellectual property",
+      "legal property rights",
+      "ownership",
+      "open-source software/hardware",
+      "telecommuting",
+      "virtual teams",
+      "job design",
+      "staffing",
+      "ergonomics",
+      "careers in IS",
+      "social networking",
+      "benefits",
+      "risks",
+      "ethics"
+    ],
+    "sourceSubject": "Information Systems"
   },
   {
-    "cat": "Introductory Business Law",
-    "title": "History and Sources of American Law/Constitutional Law (5%-10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Introductory Business Law covering History and Sources of American Law/Constitutional Law (5%-10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "history of American law"
-      },
-      {
-        "l": "Item 2",
-        "r": "sources of American law"
-      },
-      {
-        "l": "Item 3",
-        "r": "constitutional law"
-      }
-    ]
+    "cat": "Business Law",
+    "tags": [
+      "linguastem",
+      "introductory-business-law",
+      "law",
+      "business"
+    ],
+    "title": "Contracts: Formation, Capacity, Consideration & Third Parties",
+    "theory": "This card turns the Introductory Business Law topic 'Contracts: Formation, Capacity, Consideration & Third Parties' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply contracts: formation, capacity, consideration & third parties ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Contract = offer + acceptance + consideration + capacity + legality\nConsideration = bargained-for exchange.",
+    "method": "Contract questions ask whether an enforceable promise exists and who can enforce it.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Contracts: Formation, Capa</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">meanings of terms</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">formation of contracts</text>\n</svg>",
+    "caption": "Contracts: Formation, Capacity, Consideration & Third Parties: meanings of terms, formation of contracts, capacity...",
+    "steps": [
+      "Name the topic: Contracts: Formation, Capacity, Consideration & Third Parties. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A minor may lack capacity, so some contracts can be voidable.",
+    "coveredTopics": [
+      "meanings of terms",
+      "formation of contracts",
+      "capacity",
+      "consideration",
+      "joint obligations",
+      "contracts for the benefit of third parties"
+    ],
+    "sourceSubject": "Introductory Business Law"
   },
   {
-    "cat": "Introductory Business Law",
-    "title": "American Legal Systems and Procedures (5%-10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Introductory Business Law covering American Legal Systems and Procedures (5%-10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "American legal systems"
-      },
-      {
-        "l": "Item 2",
-        "r": "legal procedures"
-      }
-    ]
+    "cat": "Business Law",
+    "tags": [
+      "linguastem",
+      "introductory-business-law",
+      "law",
+      "business"
+    ],
+    "title": "Contract Transfer, Statute of Frauds, Breach, Remedies & Discharge",
+    "theory": "This card turns the Introductory Business Law topic 'Contract Transfer, Statute of Frauds, Breach, Remedies & Discharge' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply contract transfer, statute of frauds, breach, remedies & discharge ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Assignment transfers rights\nDelegation transfers duties\nBreach = failure to perform\nRemedy often aims to put injured party in expected position.",
+    "method": "This card handles what happens after a contract exists: transfer, performance, breach, and remedies.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Contract Transfer, Statute</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">assignment</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">delegation</text>\n</svg>",
+    "caption": "Contract Transfer, Statute of Frauds, Breach, Remedies & Discharge: assignment, delegation, statute of frauds...",
+    "steps": [
+      "Name the topic: Contract Transfer, Statute of Frauds, Breach, Remedies & Discharge. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A written contract may be required under the statute of frauds for certain agreements.",
+    "coveredTopics": [
+      "assignment",
+      "delegation",
+      "statute of frauds",
+      "scopes and meanings of contracts",
+      "breach of contract",
+      "remedies",
+      "bar to remedies",
+      "discharge of contracts",
+      "illegal contracts"
+    ],
+    "sourceSubject": "Introductory Business Law"
   },
   {
-    "cat": "Introductory Business Law",
-    "title": "Contracts (30%-40%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Introductory Business Law covering Contracts (30%-40%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "meanings of terms"
-      },
-      {
-        "l": "Item 2",
-        "r": "formation of contracts"
-      },
-      {
-        "l": "Item 3",
-        "r": "capacity"
-      },
-      {
-        "l": "Item 4",
-        "r": "consideration"
-      },
-      {
-        "l": "Item 5",
-        "r": "joint obligations"
-      },
-      {
-        "l": "Item 6",
-        "r": "third-party beneficiary contracts"
-      },
-      {
-        "l": "Item 7",
-        "r": "assignment"
-      },
-      {
-        "l": "Item 8",
-        "r": "delegation"
-      },
-      {
-        "l": "Item 9",
-        "r": "statute of frauds"
-      },
-      {
-        "l": "Item 10",
-        "r": "scope of contracts"
-      },
-      {
-        "l": "Item 11",
-        "r": "meaning of contracts"
-      },
-      {
-        "l": "Item 12",
-        "r": "breach of contract"
-      },
-      {
-        "l": "Item 13",
-        "r": "remedies"
-      },
-      {
-        "l": "Item 14",
-        "r": "bar to remedies"
-      },
-      {
-        "l": "Item 15",
-        "r": "discharge of contracts"
-      },
-      {
-        "l": "Item 16",
-        "r": "illegal contracts"
-      }
-    ]
+    "cat": "Business Law",
+    "tags": [
+      "linguastem",
+      "introductory-business-law",
+      "law",
+      "business"
+    ],
+    "title": "Legal Environment: Ethics, Regulation, Antitrust, Employment, Product & Consumer Law",
+    "theory": "This card turns the Introductory Business Law topic 'Legal Environment: Ethics, Regulation, Antitrust, Employment, Product & Consumer Law' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply legal environment: ethics, regulation, antitrust, employment, product & consumer law ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Regulation shapes business conduct\nAntitrust protects competition\nProduct liability concerns harm from defective products.",
+    "method": "Business law connects corporate decisions to duties owed to workers, consumers, competitors, governments, and society.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Legal Environment: Ethics,</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">ethics</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">social responsibility of cor</text>\n</svg>",
+    "caption": "Legal Environment: Ethics, Regulation, Antitrust, Employment, Product & Consumer Law: ethics, social responsibility of corporations, government regulation...",
+    "steps": [
+      "Name the topic: Legal Environment: Ethics, Regulation, Antitrust, Employment, Product & Consumer Law. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: False advertising can trigger consumer protection issues.",
+    "coveredTopics": [
+      "ethics",
+      "social responsibility of corporations",
+      "government regulation",
+      "administrative agencies",
+      "antitrust law",
+      "employment law",
+      "product liability",
+      "consumer protection",
+      "international business law"
+    ],
+    "sourceSubject": "Introductory Business Law"
   },
   {
-    "cat": "Introductory Business Law",
-    "title": "Legal Environment (20%-25%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Introductory Business Law covering Legal Environment (20%-25%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "ethics"
-      },
-      {
-        "l": "Item 2",
-        "r": "corporate social responsibility"
-      },
-      {
-        "l": "Item 3",
-        "r": "government regulation"
-      },
-      {
-        "l": "Item 4",
-        "r": "administrative agencies"
-      },
-      {
-        "l": "Item 5",
-        "r": "antitrust law"
-      },
-      {
-        "l": "Item 6",
-        "r": "employment law"
-      },
-      {
-        "l": "Item 7",
-        "r": "product liability"
-      },
-      {
-        "l": "Item 8",
-        "r": "consumer protection"
-      },
-      {
-        "l": "Item 9",
-        "r": "international business law"
-      }
-    ]
+    "cat": "Business Law",
+    "tags": [
+      "linguastem",
+      "introductory-business-law",
+      "law",
+      "business"
+    ],
+    "title": "Agency, Partnerships, Corporations & Sales",
+    "theory": "This card turns the Introductory Business Law topic 'Agency, Partnerships, Corporations & Sales' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply agency, partnerships, corporations & sales ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Agent acts for principal\nPartnership shares ownership/liability\nCorporation is separate legal entity\nSales law governs transfer of goods.",
+    "method": "Business forms and sales rules explain who has authority, who is liable, and how goods move in commerce.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Agency, Partnerships, Corp</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">agency</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">partnerships</text>\n</svg>",
+    "caption": "Agency, Partnerships, Corporations & Sales: agency, partnerships, corporations...",
+    "steps": [
+      "Name the topic: Agency, Partnerships, Corporations & Sales. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A manager acting within authority can bind the company to a contract.",
+    "coveredTopics": [
+      "agency",
+      "partnerships",
+      "corporations",
+      "sales"
+    ],
+    "sourceSubject": "Introductory Business Law"
   },
   {
-    "cat": "Introductory Business Law",
-    "title": "Torts (10%-15%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Introductory Business Law covering Torts (10%-15%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "torts"
-      }
-    ]
+    "cat": "Management",
+    "tags": [
+      "linguastem",
+      "principles-of-management",
+      "business",
+      "management"
+    ],
+    "title": "Human Resources, Motivation, Diversity & Labor Relations",
+    "theory": "This card turns the Principles of Management topic 'Human Resources, Motivation, Diversity & Labor Relations' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply human resources, motivation, diversity & labor relations ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "HR cycle: recruit → select → train → appraise → reward → develop\nMotivation aligns needs, rewards, and work design.",
+    "method": "Managers build performance by hiring fairly, developing people, and aligning rewards with goals.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Human Resources, Motivatio</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">personnel administration</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">human relations</text>\n</svg>",
+    "caption": "Human Resources, Motivation, Diversity & Labor Relations: personnel administration, human relations, motivation...",
+    "steps": [
+      "Name the topic: Human Resources, Motivation, Diversity & Labor Relations. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A performance appraisal should use job-related criteria and documented evidence.",
+    "coveredTopics": [
+      "personnel administration",
+      "human relations",
+      "motivation",
+      "training and development",
+      "performance appraisal",
+      "organizational development",
+      "legal concerns",
+      "workforce diversity",
+      "recruiting",
+      "selecting",
+      "compensation",
+      "benefits",
+      "collective bargaining"
+    ],
+    "sourceSubject": "Principles of Management"
   },
   {
-    "cat": "Introductory Business Law",
-    "title": "Miscellaneous (5%-10%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Introductory Business Law covering Miscellaneous (5%-10%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "agency"
-      },
-      {
-        "l": "Item 2",
-        "r": "partnerships"
-      },
-      {
-        "l": "Item 3",
-        "r": "corporations"
-      },
-      {
-        "l": "Item 4",
-        "r": "sales"
-      }
-    ]
+    "cat": "Management",
+    "tags": [
+      "linguastem",
+      "principles-of-management",
+      "business",
+      "operations"
+    ],
+    "title": "Operations, Quality, Scheduling, Strategy & Productivity",
+    "theory": "This card turns the Principles of Management topic 'Operations, Quality, Scheduling, Strategy & Productivity' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply operations, quality, scheduling, strategy & productivity ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Productivity = output/input\nTQM = continuous improvement focused on customer quality\nStrategy links resources to goals.",
+    "method": "Operations management turns plans into efficient, reliable work processes.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Operations, Quality, Sched</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">operations planning</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">operations control</text>\n</svg>",
+    "caption": "Operations, Quality, Scheduling, Strategy & Productivity: operations planning, operations control, work scheduling...",
+    "steps": [
+      "Name the topic: Operations, Quality, Scheduling, Strategy & Productivity. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Reducing rework raises productivity because the same input produces more usable output.",
+    "coveredTopics": [
+      "operations planning",
+      "operations control",
+      "work scheduling",
+      "quality management",
+      "TQM",
+      "information processing",
+      "strategic planning",
+      "strategic analysis",
+      "productivity"
+    ],
+    "sourceSubject": "Principles of Management"
   },
   {
-    "cat": "Principles of Management",
-    "title": "Organization and Human Resources (15%-25%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Principles of Management covering Organization and Human Resources (15%-25%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "personnel administration"
-      },
-      {
-        "l": "Item 2",
-        "r": "human relations"
-      },
-      {
-        "l": "Item 3",
-        "r": "motivation"
-      },
-      {
-        "l": "Item 4",
-        "r": "training and development"
-      },
-      {
-        "l": "Item 5",
-        "r": "performance appraisal"
-      },
-      {
-        "l": "Item 6",
-        "r": "organizational development"
-      },
-      {
-        "l": "Item 7",
-        "r": "legal concerns"
-      },
-      {
-        "l": "Item 8",
-        "r": "workforce diversity"
-      },
-      {
-        "l": "Item 9",
-        "r": "recruiting"
-      },
-      {
-        "l": "Item 10",
-        "r": "selecting"
-      },
-      {
-        "l": "Item 11",
-        "r": "compensation"
-      },
-      {
-        "l": "Item 12",
-        "r": "benefits"
-      },
-      {
-        "l": "Item 13",
-        "r": "collective bargaining"
-      }
-    ]
+    "cat": "Management",
+    "tags": [
+      "linguastem",
+      "principles-of-management",
+      "business",
+      "management"
+    ],
+    "title": "Core Management Functions, Authority, Structure & Teams",
+    "theory": "This card turns the Principles of Management topic 'Core Management Functions, Authority, Structure & Teams' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply core management functions, authority, structure & teams ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "POLC: Planning → Organizing → Leading → Controlling\nAuthority = right to make decisions\nControl = compare results to goals.",
+    "method": "Management functions explain what managers do and how organizations coordinate people and resources.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Core Management Functions,</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">planning</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">organizing</text>\n</svg>",
+    "caption": "Core Management Functions, Authority, Structure & Teams: planning, organizing, leading...",
+    "steps": [
+      "Name the topic: Core Management Functions, Authority, Structure & Teams. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A budget is a planning and control tool because it sets expectations and compares results.",
+    "coveredTopics": [
+      "planning",
+      "organizing",
+      "leading",
+      "controlling",
+      "authority",
+      "decision-making",
+      "organization charts",
+      "leadership",
+      "organizational structure",
+      "budgeting",
+      "problem-solving",
+      "group dynamics",
+      "team functions",
+      "conflict resolution",
+      "communication",
+      "change",
+      "organizational theory",
+      "historical aspects"
+    ],
+    "sourceSubject": "Principles of Management"
   },
   {
-    "cat": "Principles of Management",
-    "title": "Operational Aspects of Management (10%-20%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Principles of Management covering Operational Aspects of Management (10%-20%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "operations planning"
-      },
-      {
-        "l": "Item 2",
-        "r": "operations control"
-      },
-      {
-        "l": "Item 3",
-        "r": "work scheduling"
-      },
-      {
-        "l": "Item 4",
-        "r": "quality management"
-      },
-      {
-        "l": "Item 5",
-        "r": "TQM"
-      },
-      {
-        "l": "Item 6",
-        "r": "information processing"
-      },
-      {
-        "l": "Item 7",
-        "r": "information management"
-      },
-      {
-        "l": "Item 8",
-        "r": "strategic planning"
-      },
-      {
-        "l": "Item 9",
-        "r": "strategic analysis"
-      },
-      {
-        "l": "Item 10",
-        "r": "productivity"
-      }
-    ]
+    "cat": "Management",
+    "tags": [
+      "linguastem",
+      "principles-of-management",
+      "business",
+      "global"
+    ],
+    "title": "International Management, Ethics, Systems & Innovation",
+    "theory": "This card turns the Principles of Management topic 'International Management, Ethics, Systems & Innovation' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply international management, ethics, systems & innovation ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Systems thinking: organization inputs → processes → outputs → feedback\nEthics asks what decision is responsible, not just profitable.",
+    "method": "Global management requires cultural awareness, regulation awareness, ethical judgment, and innovation.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">International Management, </text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">value dimensions</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">regional economic integratio</text>\n</svg>",
+    "caption": "International Management, Ethics, Systems & Innovation: value dimensions, regional economic integration, trading alliances...",
+    "steps": [
+      "Name the topic: International Management, Ethics, Systems & Innovation. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A global team may adapt leadership style because value dimensions differ across cultures.",
+    "coveredTopics": [
+      "value dimensions",
+      "regional economic integration",
+      "trading alliances",
+      "global environment",
+      "social responsibilities of business",
+      "ethics",
+      "systems",
+      "environment",
+      "government regulation",
+      "management theories and theorists",
+      "e-business",
+      "creativity",
+      "innovation"
+    ],
+    "sourceSubject": "Principles of Management"
   },
   {
-    "cat": "Principles of Management",
-    "title": "Functional Aspects of Management (45%-55%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Principles of Management covering Functional Aspects of Management (45%-55%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "planning"
-      },
-      {
-        "l": "Item 2",
-        "r": "organizing"
-      },
-      {
-        "l": "Item 3",
-        "r": "leading"
-      },
-      {
-        "l": "Item 4",
-        "r": "controlling"
-      },
-      {
-        "l": "Item 5",
-        "r": "authority"
-      },
-      {
-        "l": "Item 6",
-        "r": "decision-making"
-      },
-      {
-        "l": "Item 7",
-        "r": "organization charts"
-      },
-      {
-        "l": "Item 8",
-        "r": "leadership"
-      },
-      {
-        "l": "Item 9",
-        "r": "organizational structure"
-      },
-      {
-        "l": "Item 10",
-        "r": "budgeting"
-      },
-      {
-        "l": "Item 11",
-        "r": "problem-solving"
-      },
-      {
-        "l": "Item 12",
-        "r": "group dynamics"
-      },
-      {
-        "l": "Item 13",
-        "r": "team functions"
-      },
-      {
-        "l": "Item 14",
-        "r": "conflict resolution"
-      },
-      {
-        "l": "Item 15",
-        "r": "communication"
-      },
-      {
-        "l": "Item 16",
-        "r": "change"
-      },
-      {
-        "l": "Item 17",
-        "r": "organizational theory"
-      },
-      {
-        "l": "Item 18",
-        "r": "historical aspects"
-      }
-    ]
+    "cat": "Marketing",
+    "tags": [
+      "linguastem",
+      "principles-of-marketing",
+      "business",
+      "marketing"
+    ],
+    "title": "Marketing in Society: Ethics, Nonprofit & International Marketing",
+    "theory": "This card turns the Principles of Marketing topic 'Marketing in Society: Ethics, Nonprofit & International Marketing' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply marketing in society: ethics, nonprofit & international marketing ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Marketing creates, communicates, and delivers value\nEthical marketing avoids deception and respects stakeholders.",
+    "method": "Marketing affects society by shaping choices, public causes, and global exchange.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Marketing in Society: Ethi</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">ethics</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">nonprofit marketing</text>\n</svg>",
+    "caption": "Marketing in Society: Ethics, Nonprofit & International Marketing: ethics, nonprofit marketing, international marketing",
+    "steps": [
+      "Name the topic: Marketing in Society: Ethics, Nonprofit & International Marketing. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A nonprofit campaign markets behavior change, not just a product.",
+    "coveredTopics": [
+      "ethics",
+      "nonprofit marketing",
+      "international marketing"
+    ],
+    "sourceSubject": "Principles of Marketing"
   },
   {
-    "cat": "Principles of Management",
-    "title": "International Management and Contemporary Issues (10%-20%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Principles of Management covering International Management and Contemporary Issues (10%-20%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "value dimensions"
-      },
-      {
-        "l": "Item 2",
-        "r": "regional economic integration"
-      },
-      {
-        "l": "Item 3",
-        "r": "trading alliances"
-      },
-      {
-        "l": "Item 4",
-        "r": "global environment"
-      },
-      {
-        "l": "Item 5",
-        "r": "social responsibilities of business"
-      },
-      {
-        "l": "Item 6",
-        "r": "ethics"
-      },
-      {
-        "l": "Item 7",
-        "r": "systems"
-      },
-      {
-        "l": "Item 8",
-        "r": "environment"
-      },
-      {
-        "l": "Item 9",
-        "r": "government regulation"
-      },
-      {
-        "l": "Item 10",
-        "r": "management theories"
-      },
-      {
-        "l": "Item 11",
-        "r": "management theorists"
-      },
-      {
-        "l": "Item 12",
-        "r": "e-business"
-      },
-      {
-        "l": "Item 13",
-        "r": "creativity"
-      },
-      {
-        "l": "Item 14",
-        "r": "innovation"
-      }
-    ]
+    "cat": "Marketing",
+    "tags": [
+      "linguastem",
+      "principles-of-marketing",
+      "business",
+      "marketing"
+    ],
+    "title": "Marketing Strategy, Environment, Research & Information Systems",
+    "theory": "This card turns the Principles of Marketing topic 'Marketing Strategy, Environment, Research & Information Systems' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply marketing strategy, environment, research & information systems ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "STP + 4Ps\nResearch question → data → insight → decision\nMarketing environment includes customers, competitors, culture, economy, law, technology.",
+    "method": "Marketing decisions improve when they are based on customer needs and good data.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Marketing Strategy, Enviro</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">marketing concept</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">marketing strategy</text>\n</svg>",
+    "caption": "Marketing Strategy, Environment, Research & Information Systems: marketing concept, marketing strategy, marketing environment...",
+    "steps": [
+      "Name the topic: Marketing Strategy, Environment, Research & Information Systems. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Survey data can reveal which feature customers value most before launch.",
+    "coveredTopics": [
+      "marketing concept",
+      "marketing strategy",
+      "marketing environment",
+      "marketing decision system",
+      "marketing research",
+      "marketing information system"
+    ],
+    "sourceSubject": "Principles of Marketing"
   },
   {
-    "cat": "Principles of Marketing",
-    "title": "Role of Marketing in Society (8%-13%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Principles of Marketing covering Role of Marketing in Society (8%-13%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "ethics"
-      },
-      {
-        "l": "Item 2",
-        "r": "nonprofit marketing"
-      },
-      {
-        "l": "Item 3",
-        "r": "international marketing"
-      }
-    ]
+    "cat": "Marketing",
+    "tags": [
+      "linguastem",
+      "principles-of-marketing",
+      "business",
+      "marketing"
+    ],
+    "title": "Target Marketing: Consumer Behavior, Segmentation, Positioning & B2B",
+    "theory": "This card turns the Principles of Marketing topic 'Target Marketing: Consumer Behavior, Segmentation, Positioning & B2B' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply target marketing: consumer behavior, segmentation, positioning & b2b ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Segmentation divides market\nTargeting selects segment\nPositioning defines place in customer's mind.",
+    "method": "Target marketing matches offerings to specific customer groups instead of treating everyone the same.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Target Marketing: Consumer</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">consumer behavior</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">segmentation</text>\n</svg>",
+    "caption": "Target Marketing: Consumer Behavior, Segmentation, Positioning & B2B: consumer behavior, segmentation, positioning...",
+    "steps": [
+      "Name the topic: Target Marketing: Consumer Behavior, Segmentation, Positioning & B2B. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A rugged laptop may be positioned for field engineers rather than casual home users.",
+    "coveredTopics": [
+      "consumer behavior",
+      "segmentation",
+      "positioning",
+      "business-to-business markets"
+    ],
+    "sourceSubject": "Principles of Marketing"
   },
   {
-    "cat": "Principles of Marketing",
-    "title": "Role of Marketing in an Organization (17%-24%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Principles of Marketing covering Role of Marketing in an Organization (17%-24%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "marketing concept"
-      },
-      {
-        "l": "Item 2",
-        "r": "marketing strategy"
-      },
-      {
-        "l": "Item 3",
-        "r": "marketing environment"
-      },
-      {
-        "l": "Item 4",
-        "r": "marketing decision system"
-      },
-      {
-        "l": "Item 5",
-        "r": "marketing research"
-      },
-      {
-        "l": "Item 6",
-        "r": "marketing information system"
-      }
-    ]
+    "cat": "Marketing",
+    "tags": [
+      "linguastem",
+      "principles-of-marketing",
+      "business",
+      "marketing"
+    ],
+    "title": "Marketing Mix: Product, Branding, Pricing, Distribution, Promotion & E-Commerce",
+    "theory": "This card turns the Principles of Marketing topic 'Marketing Mix: Product, Branding, Pricing, Distribution, Promotion & E-Commerce' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply marketing mix: product, branding, pricing, distribution, promotion & e-commerce ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "4Ps: Product, Price, Place, Promotion\nBrand = identity + promise\nChannel/logistics deliver value.",
+    "method": "The marketing mix turns strategy into action customers can see, buy, and experience.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Marketing Mix: Product, Br</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">product and service manageme</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">branding</text>\n</svg>",
+    "caption": "Marketing Mix: Product, Branding, Pricing, Distribution, Promotion & E-Commerce: product and service management, branding, pricing policies...",
+    "steps": [
+      "Name the topic: Marketing Mix: Product, Branding, Pricing, Distribution, Promotion & E-Commerce. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A subscription app combines pricing, digital distribution, branding, and online promotion.",
+    "coveredTopics": [
+      "product and service management",
+      "branding",
+      "pricing policies",
+      "distribution channels",
+      "logistics",
+      "integrated marketing communications",
+      "promotion",
+      "e-commerce applications"
+    ],
+    "sourceSubject": "Principles of Marketing"
   },
   {
-    "cat": "Principles of Marketing",
-    "title": "Target Marketing (22%-27%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Principles of Marketing covering Target Marketing (22%-27%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "consumer behavior"
-      },
-      {
-        "l": "Item 2",
-        "r": "segmentation"
-      },
-      {
-        "l": "Item 3",
-        "r": "positioning"
-      },
-      {
-        "l": "Item 4",
-        "r": "business-to-business markets"
-      }
-    ]
+    "cat": "Literature",
+    "tags": [
+      "linguastem",
+      "analyzing-and-interpreting-literature",
+      "reading",
+      "humanities"
+    ],
+    "title": "Reading Prose, Poetry & Drama with Understanding",
+    "theory": "This card turns the Analyzing and Interpreting Literature topic 'Reading Prose, Poetry & Drama with Understanding' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply reading prose, poetry & drama with understanding ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Genre affects reading strategy: poetry compresses language, prose develops narration/argument, drama reveals meaning through dialogue and stage action.",
+    "method": "Literature questions ask what the passage says and how the form shapes meaning.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Reading Prose, Poetry &amp; Dr</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">prose</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">poetry</text>\n</svg>",
+    "caption": "Reading Prose, Poetry & Drama with Understanding: prose, poetry, drama...",
+    "steps": [
+      "Name the topic: Reading Prose, Poetry & Drama with Understanding. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: In drama, a pause or stage direction may reveal conflict without direct explanation.",
+    "coveredTopics": [
+      "prose",
+      "poetry",
+      "drama",
+      "ability to read with understanding"
+    ],
+    "sourceSubject": "Analyzing and Interpreting Literature"
   },
   {
-    "cat": "Principles of Marketing",
-    "title": "Marketing Mix (40%-50%)",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Principles of Marketing covering Marketing Mix (40%-50%).",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "product and service management"
-      },
-      {
-        "l": "Item 2",
-        "r": "branding"
-      },
-      {
-        "l": "Item 3",
-        "r": "pricing policies"
-      },
-      {
-        "l": "Item 4",
-        "r": "distribution channels"
-      },
-      {
-        "l": "Item 5",
-        "r": "logistics"
-      },
-      {
-        "l": "Item 6",
-        "r": "integrated marketing communications"
-      },
-      {
-        "l": "Item 7",
-        "r": "promotion"
-      },
-      {
-        "l": "Item 8",
-        "r": "marketing in e-commerce"
-      }
-    ]
+    "cat": "Literature",
+    "tags": [
+      "linguastem",
+      "analyzing-and-interpreting-literature",
+      "reading",
+      "analysis"
+    ],
+    "title": "Literary Elements: Meaning, Tone, Imagery & Style",
+    "theory": "This card turns the Analyzing and Interpreting Literature topic 'Literary Elements: Meaning, Tone, Imagery & Style' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply literary elements: meaning, tone, imagery & style ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Tone = attitude\nImagery = sensory language\nStyle = pattern of diction, syntax, and figurative choices.",
+    "method": "Close reading connects word choice to emotional and intellectual effect.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Literary Elements: Meaning</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">elements of a literary passa</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">nuances of meaning</text>\n</svg>",
+    "caption": "Literary Elements: Meaning, Tone, Imagery & Style: elements of a literary passage, nuances of meaning, tone...",
+    "steps": [
+      "Name the topic: Literary Elements: Meaning, Tone, Imagery & Style. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Harsh consonants and dark imagery can create a threatening tone.",
+    "coveredTopics": [
+      "elements of a literary passage",
+      "nuances of meaning",
+      "tone",
+      "imagery",
+      "style"
+    ],
+    "sourceSubject": "Analyzing and Interpreting Literature"
   },
   {
-    "cat": "Analyzing and Interpreting Literature",
-    "title": "Core Literary Abilities",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Analyzing and Interpreting Literature covering Core Literary Abilities.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "reading prose with understanding"
-      },
-      {
-        "l": "Item 2",
-        "r": "reading poetry with understanding"
-      },
-      {
-        "l": "Item 3",
-        "r": "reading drama with understanding"
-      },
-      {
-        "l": "Item 4",
-        "r": "analyzing elements of a literary passage"
-      },
-      {
-        "l": "Item 5",
-        "r": "nuances of meaning"
-      },
-      {
-        "l": "Item 6",
-        "r": "tone"
-      },
-      {
-        "l": "Item 7",
-        "r": "imagery"
-      },
-      {
-        "l": "Item 8",
-        "r": "style"
-      },
-      {
-        "l": "Item 9",
-        "r": "interpreting metaphors"
-      },
-      {
-        "l": "Item 10",
-        "r": "rhetorical devices"
-      },
-      {
-        "l": "Item 11",
-        "r": "stylistic devices"
-      },
-      {
-        "l": "Item 12",
-        "r": "parts and wholes relationships"
-      },
-      {
-        "l": "Item 13",
-        "r": "speaker attitudes"
-      },
-      {
-        "l": "Item 14",
-        "r": "author attitudes"
-      },
-      {
-        "l": "Item 15",
-        "r": "means of literary effects"
-      },
-      {
-        "l": "Item 16",
-        "r": "basic literary terminology"
-      }
-    ]
+    "cat": "Literature",
+    "tags": [
+      "linguastem",
+      "analyzing-and-interpreting-literature",
+      "reading",
+      "rhetoric"
+    ],
+    "title": "Metaphor, Rhetorical Devices, Structure & Speaker Attitude",
+    "theory": "This card turns the Analyzing and Interpreting Literature topic 'Metaphor, Rhetorical Devices, Structure & Speaker Attitude' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply metaphor, rhetorical devices, structure & speaker attitude ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Metaphor: one thing understood through another\nDevice → effect → meaning\nPart-whole structure shows how details support the full passage.",
+    "method": "Analysis questions usually require naming the device and explaining its effect.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Metaphor, Rhetorical Devic</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">metaphors</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">rhetorical devices</text>\n</svg>",
+    "caption": "Metaphor, Rhetorical Devices, Structure & Speaker Attitude: metaphors, rhetorical devices, stylistic devices...",
+    "steps": [
+      "Name the topic: Metaphor, Rhetorical Devices, Structure & Speaker Attitude. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Calling time a thief suggests loss and inevitability.",
+    "coveredTopics": [
+      "metaphors",
+      "rhetorical devices",
+      "stylistic devices",
+      "relationships between parts and wholes",
+      "speaker attitudes",
+      "author attitudes"
+    ],
+    "sourceSubject": "Analyzing and Interpreting Literature"
   },
   {
-    "cat": "Analyzing and Interpreting Literature",
-    "title": "Genre",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Analyzing and Interpreting Literature covering Genre.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "poetry"
-      },
-      {
-        "l": "Item 2",
-        "r": "prose fiction"
-      },
-      {
-        "l": "Item 3",
-        "r": "prose nonfiction"
-      },
-      {
-        "l": "Item 4",
-        "r": "drama"
-      }
-    ]
+    "cat": "Literature",
+    "tags": [
+      "linguastem",
+      "analyzing-and-interpreting-literature",
+      "reading",
+      "terms"
+    ],
+    "title": "Literary Effects & Terminology",
+    "theory": "This card turns the Analyzing and Interpreting Literature topic 'Literary Effects & Terminology' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply literary effects & terminology ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Term + evidence + effect: identify the device, quote/paraphrase the clue, explain how it shapes meaning.",
+    "method": "Terminology is useful only when it helps explain what the passage does.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Literary Effects &amp; Termino</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">means by which literary effe</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">basic terminology used to di</text>\n</svg>",
+    "caption": "Literary Effects & Terminology: means by which literary effects are achieved, basic terminology used to discuss literary texts",
+    "steps": [
+      "Name the topic: Literary Effects & Terminology. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: Alliteration repeats initial sounds; it may create musical emphasis or harshness.",
+    "coveredTopics": [
+      "means by which literary effects are achieved",
+      "basic terminology used to discuss literary texts"
+    ],
+    "sourceSubject": "Analyzing and Interpreting Literature"
   },
   {
-    "cat": "Analyzing and Interpreting Literature",
-    "title": "National Tradition",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Analyzing and Interpreting Literature covering National Tradition.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "British literature"
-      },
-      {
-        "l": "Item 2",
-        "r": "Postcolonial literature"
-      },
-      {
-        "l": "Item 3",
-        "r": "American literature"
-      },
-      {
-        "l": "Item 4",
-        "r": "works in translation"
-      }
-    ]
-  },
-  {
-    "cat": "Analyzing and Interpreting Literature",
-    "title": "Period",
-    "emoji": "",
-    "formula": "Topic → subtopic → practice explanation",
-    "desc": "CLEP content area for Analyzing and Interpreting Literature covering Period.",
-    "examples": [
-      {
-        "l": "Item 1",
-        "r": "Classical and pre-Renaissance"
-      },
-      {
-        "l": "Item 2",
-        "r": "Renaissance and 17th Century"
-      },
-      {
-        "l": "Item 3",
-        "r": "18th and 19th Centuries"
-      },
-      {
-        "l": "Item 4",
-        "r": "20th and 21st Centuries"
-      }
-    ]
+    "cat": "Literature",
+    "tags": [
+      "linguastem",
+      "analyzing-and-interpreting-literature",
+      "reading",
+      "genre"
+    ],
+    "title": "Genres, Traditions & Period Awareness Without Percentages",
+    "theory": "This card turns the Analyzing and Interpreting Literature topic 'Genres, Traditions & Period Awareness Without Percentages' into a practical study unit. Start by naming the key idea, then connect it to the listed subtopics so the topic is learned as one system instead of disconnected facts.",
+    "reality": "You use this when answering exam questions that ask you to recognize, explain, solve, classify, compare, or apply genres, traditions & period awareness without percentages ideas in realistic reading, lab, business, math, or science situations.",
+    "formula": "Genre + tradition + period can shape assumptions, but answer choices must still come from the passage.",
+    "method": "The exam does not require memorizing every author; broad reading helps you recognize forms and terminology.",
+    "svg": "<svg viewBox=\"0 0 260 118\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"8\" y=\"10\" width=\"244\" height=\"98\" rx=\"12\" fill=\"rgba(122,171,207,.08)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <circle cx=\"52\" cy=\"59\" r=\"28\" fill=\"rgba(122,176,96,.13)\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n  <rect x=\"106\" y=\"25\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(201,160,96,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"55\" width=\"126\" height=\"22\" rx=\"7\" fill=\"rgba(122,171,207,.12)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <rect x=\"106\" y=\"85\" width=\"126\" height=\"16\" rx=\"6\" fill=\"rgba(192,112,112,.10)\" stroke=\"currentColor\" stroke-width=\"1\"/>\n  <text x=\"52\" y=\"55\" text-anchor=\"middle\" font-size=\"9\" fill=\"currentColor\">STEM</text>\n  <text x=\"52\" y=\"68\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">card</text>\n  <text x=\"169\" y=\"40\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">Genres, Traditions &amp; Perio</text>\n  <text x=\"169\" y=\"70\" text-anchor=\"middle\" font-size=\"8\" fill=\"currentColor\">poetry</text>\n  <text x=\"169\" y=\"97\" text-anchor=\"middle\" font-size=\"7\" fill=\"currentColor\">prose fiction</text>\n</svg>",
+    "caption": "Genres, Traditions & Period Awareness Without Percentages: poetry, prose fiction, prose nonfiction...",
+    "steps": [
+      "Name the topic: Genres, Traditions & Period Awareness Without Percentages. Write a one-sentence definition before solving or explaining.",
+      "Match the prompt to the correct subtopic, rule, model, formula, or reading strategy.",
+      "Work through the idea step by step: identify givens, apply the rule, and show the reasoning.",
+      "Check the result against the real meaning of the topic, not just the wording of the question.",
+      "Finish with a short explanation that connects the answer back to the original subject."
+    ],
+    "example": "Example: A translated classical passage may use unfamiliar setting, but tone and imagery can still be analyzed from the text.",
+    "coveredTopics": [
+      "poetry",
+      "prose fiction",
+      "prose nonfiction",
+      "drama",
+      "British and Postcolonial Literature",
+      "American Literature",
+      "works in translation",
+      "classical and pre-Renaissance",
+      "Renaissance and seventeenth century",
+      "eighteenth and nineteenth centuries",
+      "twentieth and twenty-first centuries"
+    ],
+    "sourceSubject": "Analyzing and Interpreting Literature"
   }
-]);
+];
+
+const LINGUASTEM_STEM_AUDIT = {
+  addedCards: LINGUASTEM_STEM_CARDS.length,
+  removedWeakGeneratedBlock: true,
+  note: 'The previous auto-generated topic cards used only percentage-style headings and generic placeholder text. They were replaced with complete STEM cards containing explanation, formula/method, steps, examples, and coveredTopics.'
+};
+
+STEM_TOPICS.push(...LINGUASTEM_STEM_CARDS);
 
 
 // --- data/strategyCards.js ---
@@ -38087,7 +37016,19 @@ function filters(){return `<div class="card"><input class="search" data-mq place
 function morphCard(e){return `<div class="morphcard"><div class="morph">${esc(e.m)}</div><div class="meta">${esc(e.type)} · ${esc(e.origin)}</div><div class="meaning">${esc(e.meaning)}</div><div class="muted">${esc(e.examples)}</div><div class="row" style="margin-top:6px">${(e.cats||[]).map(tag).join('')}</div></div>`}
 function morph(){const item=letters[state.cur],base=entriesFor(item.l),list=filterMorph(base);return `<div class="content"><div class="soft"><div class="title">${item.l} Word Parts</div><div class="muted">${base.length} entries · ${typeCount(base,'prefix')} prefixes · ${typeCount(base,'root')} roots · ${typeCount(base,'suffix')} suffixes</div></div>${filters()}<div class="muted">Showing ${list.length} of ${base.length} entries for ${item.l}.</div><div class="grid">${list.map(morphCard).join('')}</div></div>`}
 function counts(){const all=allMorph(),list=filterMorph(all),tot={total:all.length,prefix:typeCount(all,'prefix'),root:typeCount(all,'root'),suffix:typeCount(all,'suffix')};return `<div class="content"><div class="card"><div class="title">Morpheme Index</div><div class="muted">Full prefix, root, suffix, origin, and category browser.</div><div class="countgrid">${Object.entries(tot).map(([k,v])=>`<div class="countcard"><div class="big">${v}</div><div class="small">${k}</div></div>`).join('')}</div></div>${filters()}<div class="muted">Showing ${list.length} matching entries.</div><div class="grid">${list.map(morphCard).join('')}</div></div>`}
-function stem(){const cats=['All',...new Set(STEM_TOPICS.map(x=>x.cat||x.area||'STEM'))];const list=state.stemCat==='All'?STEM_TOPICS:STEM_TOPICS.filter(x=>(x.cat||x.area)===state.stemCat);return `<div class="content"><div class="card"><div class="title">Formula Lab</div><div class="muted">STEM formula cards, method guides, examples, and diagrams.</div><div class="row" style="margin-top:8px">${cats.map(c=>`<button class="chip ${state.stemCat===c?'active':''}" data-stemcat="${esc(c)}">${esc(c)}</button>`).join('')}</div></div><div class="stemgrid">${[...QUICK_STEM_METHODS,...list].map(s=>`<div class="soft"><div class="name">${esc(s.title||s.subject||s.name)}</div><div class="muted">${esc(s.sub||s.area||s.cat||'')}</div>${s.svg?`<div class="svgbox">${s.svg}</div>`:''}${s.caption?`<div class="text">${esc(s.caption)}</div>`:''}${s.reality?`<div class="muted">${esc(s.reality)}</div>`:''}${s.formula?`<div class="formula">${esc(s.formula)}</div>`:''}${s.steps?section('Method')+s.steps.map((x,i)=>`<div class="text">${i+1}. ${esc(x)}</div>`).join(''):''}${s.example?section('Example')+`<div class="text">${esc(s.example)}</div>`:''}</div>`).join('')}</div></div>`}
+function stemCard(s){
+  const title = s.title || s.subject || s.name || 'STEM Card';
+  const sub = s.sub || s.area || s.cat || s.sourceSubject || 'STEM';
+  const examples = Array.isArray(s.examples) ? s.examples : [];
+  const covered = Array.isArray(s.coveredTopics) ? s.coveredTopics : [];
+  return `<div class="soft"><div class="name">${esc(title)}</div><div class="muted">${esc(sub)}${s.sourceSubject&&s.sourceSubject!==sub?` · ${esc(s.sourceSubject)}`:''}</div>${s.tags?`<div class="row" style="margin-top:6px">${s.tags.slice(0,5).map(tag).join('')}</div>`:''}${s.svg?`<div class="svgbox">${s.svg}</div>`:''}${s.caption?`<div class="text">${esc(s.caption)}</div>`:''}${s.theory?section('Concept')+`<div class="text">${esc(s.theory)}</div>`:''}${s.desc?section('Overview')+`<div class="text">${esc(s.desc)}</div>`:''}${s.reality?section('Use')+`<div class="muted">${esc(s.reality)}</div>`:''}${s.formula?section('Formula / Rule')+`<div class="formula">${esc(s.formula)}</div>`:''}${s.method?section('Method')+`<div class="text">${esc(s.method)}</div>`:''}${s.steps?section('Steps')+s.steps.map((x,i)=>`<div class="text">${i+1}. ${esc(x)}</div>`).join(''):''}${s.example?section('Example')+`<div class="text">${esc(s.example)}</div>`:''}${examples.length?section('Examples')+examples.map(x=>`<div class="text"><span class="smalltitle">${esc(x.l||x.t||'Example')}</span> — ${esc(x.r||x.d||'')}</div>`).join(''):''}${covered.length?section('Covered Topics')+`<div class="row">${covered.slice(0,18).map(tag).join('')}${covered.length>18?tag('+'+(covered.length-18)+' more'):''}</div>`:''}</div>`;
+}
+function stem(){
+  const cats=['All',...new Set(STEM_TOPICS.map(x=>x.cat||x.area||'STEM'))];
+  const list=state.stemCat==='All'?STEM_TOPICS:STEM_TOPICS.filter(x=>(x.cat||x.area)===state.stemCat);
+  const cards=[...QUICK_STEM_METHODS,...list];
+  return `<div class="content"><div class="card"><div class="title">Formula Lab</div><div class="muted">STEM formula cards, method guides, examples, and diagrams. LinguaSTEM topics are included without percentage weights; weak placeholder cards were removed.</div><div class="row" style="margin-top:8px">${cats.map(c=>`<button class="chip ${state.stemCat===c?'active':''}" data-stemcat="${esc(c)}">${esc(c)}</button>`).join('')}</div></div><div class="stemgrid">${cards.map(stemCard).join('')}</div></div>`;
+}
 const STRAT_CATS=['All','Reading','Writing','Pronunciation','Foreign Language Listening','Memory'];
 function strategy(){const list=state.strategy==='All'?STRATEGY_CARDS:STRATEGY_CARDS.filter(s=>s.cat===state.strategy);return `<div class="content"><div class="card"><div class="title">Study Science</div><div class="muted">Research-backed strategies for reading, writing, pronunciation, listening, and memory.</div><div class="row" style="margin-top:8px">${STRAT_CATS.map(c=>`<button class="chip ${state.strategy===c?'active':''}" data-strat="${esc(c)}">${esc(c)}</button>`).join('')}</div></div>${list.map(s=>`<div class="soft"><div class="name">${esc(s.title)}</div><div class="muted">${esc(s.sub||s.cat)}</div>${s.formula?`<div class="formula">${esc(s.formula)}</div>`:''}${section('Method')}${(s.steps||[]).map((x,i)=>`<div class="text">${i+1}. ${esc(x)}</div>`).join('')}${s.topics?section('Topics')+s.topics.map(t=>`<div class="text"><span class="smalltitle">${esc(t.t||t.title)}</span> — ${esc(t.d||t.desc)}</div>`).join(''):''}${s.practice?section('Practice')+s.practice.map((p,i)=>`<div class="qa"><div class="smalltitle">Q${i+1}. ${esc(p.q)}</div><div class="text"><b>Answer:</b> ${esc(p.a)}</div>${p.explanation?`<div class="muted"><b>Explanation:</b> ${esc(p.explanation)}</div>`:''}</div>`).join(''):''}</div>`).join('')}</div>`}
 const TRACKS=[["quiz", "Mixed Quiz"], ["ap", "AP"], ["clep", "CLEP"], ["accuplacer", "ACCUPLACER"]], QUIZ_CATS=[["mixed", "Mixed"], ["arithmetic", "Arithmetic"], ["algebra", "Algebra"], ["geometry", "Geometry"], ["statistics", "Statistics"], ["calculus", "Calculus"], ["chemistry", "Chemistry"], ["reading", "Reading"], ["writing", "Writing"], ["morphemes", "Morphemes"], ["college-english-composition", "College English Composition"], ["biology", "Biology"], ["college-algebra", "College Algebra"], ["college-mathematics", "College Mathematics"], ["natural-sciences", "Natural Sciences"], ["precalculus", "Precalculus"], ["financial-accounting", "Financial Accounting"], ["information-systems", "Information Systems"], ["introductory-business-law", "Introductory Business Law"], ["principles-of-management", "Principles of Management"], ["principles-of-marketing", "Principles of Marketing"], ["analyzing-interpreting-literature", "Analyzing and Interpreting Literature"]], AP_CATS=[["calculus", "Calculus"], ["biology", "Biology"], ["chemistry", "Chemistry"], ["college-english-composition", "English Composition"]], CLEP_CATS=[["college-english-composition", "College English Composition"], ["biology", "Biology"], ["calculus", "Calculus"], ["chemistry", "Chemistry"], ["college-algebra", "College Algebra"], ["college-mathematics", "College Mathematics"], ["natural-sciences", "Natural Sciences"], ["precalculus", "Precalculus"], ["financial-accounting", "Financial Accounting"], ["information-systems", "Information Systems"], ["introductory-business-law", "Introductory Business Law"], ["principles-of-management", "Principles of Management"], ["principles-of-marketing", "Principles of Marketing"], ["analyzing-interpreting-literature", "Analyzing and Interpreting Literature"]], ACCU_CATS=[["arithmetic", "Arithmetic"], ["quantitative-reasoning", "Quantitative Reasoning"], ["advanced-algebra", "Advanced Algebra"], ["reading", "Reading"], ["writing", "Writing"], ["essay", "WritePlacer Essay"]];
