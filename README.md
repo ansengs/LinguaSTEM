@@ -1,6 +1,7 @@
-# STEM Study Lab — React Native / Expo
+# STEM Study Lab — React Native/Expo & Static Site
 
 A separated React Native version of the original single-file STEM Study Lab HTML app.
+https://ansengs.github.io/LinguaSTEM/
 
 ## Screenshots
 
